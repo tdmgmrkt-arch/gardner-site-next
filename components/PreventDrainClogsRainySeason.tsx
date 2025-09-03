@@ -1,6 +1,5 @@
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
-import Image from "next/image";
 import { 
   ArrowLeft,
   Calendar,
@@ -14,56 +13,72 @@ import {
 } from "lucide-react";
 import React from 'react';
 
-
 // --- Blog Post Data ---
 // In a real app, this data would be fetched based on the page's URL slug.
 const postData = {
-  slug: "plumbing-upgrades-boost-home-value",
-  category: "Home Improvement",
-  title: "Plumbing Upgrades That Boost Your Home’s Value (And Are Worth Every Penny)",
+  slug: "prevent-drain-clogs-rainy-season",
+  category: "Drain Cleaning",
+  title: "How to Prevent Drain Clogs During Murrieta’s Rainy Season: Expert Advice",
   author: "Gardner Plumbing Co.",
-  date: "May 15, 2025",
-  readTime: "6 min read",
-  image: "/Wholehousewaterfiltration.webp",
+  date: "March 25, 2025",
+  readTime: "5 min read",
+  image: "/raindrainclog.webp",
   content: `
-    <h2 class="text-2xl font-bold text-red-400 mb-4">Why Smart Plumbing Pays Off in Lake Elsinore</h2>
-    <p>Home improvement in Lake Elsinore isn’t just about looks—it’s also about boosting resale value and functionality. And when it comes to ROI, plumbing upgrades often fly under the radar. Whether you’re planning to sell soon or simply want a more efficient home, investing in the right plumbing features can dramatically increase property value while offering everyday comfort.</p>
-    <p>In this guide, we’ll break down the top plumbing improvements that Lake Elsinore homeowners should consider—and why now is the perfect time to act.</p>
+    <h2 class="text-2xl font-bold text-red-400 mb-4">Why Drain Clogs Spike During the Wet Season</h2>
+    <p>Murrieta’s rainy season may be short, but when the storms roll in, they bring more than just puddles and wet driveways. Homeowners often experience a spike in clogged drains, especially in older properties or homes with trees nearby. Heavy rainfall can flush debris into outdoor drains and expose pre-existing issues in indoor plumbing. In this article, we’ll explain why clogs are more common during the rainy months and what you can do to prevent costly water damage or sewer backups.</p>
     
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">1. Tankless Water Heater Installation</h3>
-    <p>Tankless water heaters are a game-changer in today’s market. They provide endless hot water, take up less space, and use up to 30% less energy compared to traditional tanks.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Why It Matters in Lake Elsinore:</b> With energy efficiency being a top priority in California, a tankless unit appeals to environmentally-conscious buyers. It’s also a great feature in larger homes common around Tuscany Hills and Canyon Hills where water demand is high.</p>
-
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">2. Whole-House Water Filtration System</h3>
-    <p>Installing a filtration system improves water quality throughout your home by removing chlorine, sediment, and hard minerals. This upgrade protects your plumbing fixtures, boosts appliance longevity, and improves taste and skin health.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Added Bonus:</b> Lake Elsinore’s hard water can lead to buildup in pipes and water heaters. A filtration system is a long-term value-add and a key selling point for potential buyers.</p>
-
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">3. Bathroom Fixture Upgrades</h3>
-    <p>Replacing outdated faucets, showerheads, and toilets with modern, water-saving models makes an immediate visual and functional impact. It’s one of the most cost-effective ways to refresh your space while meeting low-flow California building code standards.</p>
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">What Causes Drain Clogs in the Rainy Season?</h3>
+    <p>While clogs can happen any time of year, the rainy season adds new pressure to your drainage system.</p>
+    <p class="mt-4">Common Culprits Include:</p>
     <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300">
-        <li>Dual-flush toilets</li>
-        <li>Brushed nickel or matte black fixtures</li>
-        <li>Rainfall showerheads with pressure optimization</li>
+        <li>Yard debris like leaves and soil entering outdoor drains</li>
+        <li>Tree root intrusions seeking water through cracked pipes</li>
+        <li>Grease and food buildup from increased indoor cooking during cooler months</li>
+        <li>Poorly maintained gutter systems that back up and flood entry points</li>
     </ul>
+    <p class="mt-4">When these issues aren’t addressed early, they can result in sewage backups, water damage, or even health hazards.</p>
 
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">4. Smart Leak Detection Devices</h3>
-    <p>Installing smart water monitors can detect leaks early and alert you via your smartphone—protecting your home from costly damage.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Lake Elsinore:</b> Homes near the lake or in older communities are more prone to shifting foundations and hidden leaks. These systems add peace of mind to homeowners and buyers alike.</p>
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">Signs Your Drains May Be at Risk</h3>
+    <p>Murrieta homeowners should stay alert for these red flags:</p>
+    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300">
+        <li>Slow drainage in sinks, tubs, or showers</li>
+        <li>Gurgling sounds from toilets or drains</li>
+        <li>Water backing up during heavy rain</li>
+        <li>Foul odors from sinks or yard drains</li>
+        <li>Standing water in yard or driveway</li>
+    </ul>
+    <p class="mt-4">If you notice any of these signs before or during a storm, it’s best to call a professional plumber right away.</p>
+
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">Preventative Tips: Keep Your Drains Flowing</h3>
+    <h4 class="text-lg font-semibold text-white mt-6 mb-2">1. Clean Gutters and Downspouts</h4>
+    <p>Gutters should be cleaned at least twice per year—ideally before the rainy season begins. Clogged gutters can force water to overflow and seep into your home or overwhelm outdoor drains.</p>
+    <h4 class="text-lg font-semibold text-white mt-6 mb-2">2. Install Drain Covers and Screens</h4>
+    <p>Protect your yard and patio drains with mesh screens that prevent debris from entering. These inexpensive tools can save you from big repair bills.</p>
+    <h4 class="text-lg font-semibold text-white mt-6 mb-2">3. Schedule Seasonal Drain Cleaning</h4>
+    <p>Professional drain cleaning in late fall or early winter helps remove buildup before the first big storm hits. At Gardner Plumbing Co., we use hydro jetting and advanced rooter tools to safely clean your pipes without damage.</p>
+    <h4 class="text-lg font-semibold text-white mt-6 mb-2">4. Avoid Flushing Grease or Wipes</h4>
+    <p>During colder months, grease can harden faster in your pipes. Never pour fats or oils down the drain, and avoid flushing wipes—even those labeled “flushable.”</p>
     
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">5. Sewer Line Inspection and Replacement (If Needed)</h3>
-    <p>For older homes, a clean sewer line report during a home inspection can make or break a sale. Proactively replacing damaged or root-invaded lines can prevent costly last-minute issues.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Tip:</b> Include the inspection report in your home’s disclosure packet to reassure buyers.</p>
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">How We Help Murrieta Homeowners Stay Dry</h3>
+    <p>Our local team at Gardner Plumbing Co. knows the Murrieta area well—from the hillside homes in Copper Canyon to the family neighborhoods near Los Alamos. We offer:</p>
+    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300">
+        <li>Emergency drain clearing</li>
+        <li>Annual inspection plans</li>
+        <li>Root intrusion detection</li>
+        <li>Outdoor yard drain installation and maintenance</li>
+    </ul>
+    <p class="mt-4">We’re licensed, local, and available when you need us most.</p>
   `
 };
 
 // --- Other recent posts for the sidebar ---
 const recentPosts = [
+    { slug: "plumbing-upgrades-boost-home-value", title: "Plumbing Upgrades That Boost Your Home’s Value", category: "Home Improvement"},
     { slug: "ultimate-water-leak-detection-guide", title: "The Ultimate Water Leak Detection Guide", category: "Leak Detection"},
-    { slug: "5-signs-you-need-toilet-repair", title: "5 Signs You Need Toilet Repair in Perris", category: "Appliances"},
-    { slug: "tankless-water-heaters-temecula-upgrade", title: "Tankless Water Heaters: Temecula’s Top Upgrade", category: "Water Heaters"},
+    { slug: "5-signs-you-need-toilet-repair-perris", title: "5 Signs You Need Toilet Repair in Perris", category: "Appliances"},
 ];
 
-export function PlumbingUpgradesThatBoostYourHomeValue() {
+export function PreventDrainClogsRainySeason() {
 
   // In a real app, you might get the base URL dynamically.
   const baseUrl = "https://yourwebsite.com"; 
@@ -178,12 +193,12 @@ export function PlumbingUpgradesThatBoostYourHomeValue() {
              <div className="absolute inset-x-0 top-0 h-1/2 bg-gray-900/50"></div>
              <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="p-8 sm:p-10 bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-red-500/30 rounded-3xl text-center shadow-2xl">
-                    <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Ready to Upgrade Your Plumbing?</h3>
-                    <p className="text-gray-300 mb-6 max-w-2xl mx-auto">From Tuscany Hills to Historic Downtown, our team at Gardner Plumbing Co. helps homeowners make high-ROI upgrades that pay off in value and performance.</p>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Don’t Let a Clogged Drain Ruin Your Rainy Day</h3>
+                    <p className="text-gray-300 mb-6 max-w-2xl mx-auto">Stay ahead of the storm this season with proactive plumbing care. Whether it’s routine maintenance or a last-minute call during a downpour, Gardner Plumbing Co. is here to help.</p>
                     <a href="/contact-us">
                         <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                             <Phone className="h-5 w-5 mr-3 group-hover:scale-110 transition-transform" />
-                            Get a Free Estimate
+                            (951) 246–4337
                         </Button>
                     </a>
                 </div>
@@ -193,6 +208,4 @@ export function PlumbingUpgradesThatBoostYourHomeValue() {
     </div>
   );
 }
-
-
 

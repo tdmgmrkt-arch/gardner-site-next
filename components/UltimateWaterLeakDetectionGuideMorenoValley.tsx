@@ -1,6 +1,5 @@
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
-import Image from "next/image";
 import { 
   ArrowLeft,
   Calendar,
@@ -14,56 +13,70 @@ import {
 } from "lucide-react";
 import React from 'react';
 
-
 // --- Blog Post Data ---
 // In a real app, this data would be fetched based on the page's URL slug.
 const postData = {
-  slug: "plumbing-upgrades-boost-home-value",
-  category: "Home Improvement",
-  title: "Plumbing Upgrades That Boost Your Home’s Value (And Are Worth Every Penny)",
+  slug: "ultimate-water-leak-detection-guide-moreno-valley",
+  category: "Leak Detection",
+  title: "The Ultimate Water Leak Detection Guide for Moreno Valley Homes",
   author: "Gardner Plumbing Co.",
-  date: "May 15, 2025",
-  readTime: "6 min read",
-  image: "/Wholehousewaterfiltration.webp",
+  date: "April 26, 2025",
+  readTime: "7 min read",
+  image: "/plumbingleak.webp",
   content: `
-    <h2 class="text-2xl font-bold text-red-400 mb-4">Why Smart Plumbing Pays Off in Lake Elsinore</h2>
-    <p>Home improvement in Lake Elsinore isn’t just about looks—it’s also about boosting resale value and functionality. And when it comes to ROI, plumbing upgrades often fly under the radar. Whether you’re planning to sell soon or simply want a more efficient home, investing in the right plumbing features can dramatically increase property value while offering everyday comfort.</p>
-    <p>In this guide, we’ll break down the top plumbing improvements that Lake Elsinore homeowners should consider—and why now is the perfect time to act.</p>
+    <h2 class="text-2xl font-bold text-red-400 mb-4">Small Leaks, Big Problems</h2>
+    <p>A hidden leak can wreak havoc on your home—raising your water bill, damaging your foundation, and even leading to mold growth. For homeowners in Moreno Valley, where soil conditions and aging plumbing systems can worsen leak risks, early detection is key. In this guide, we’ll show you how to spot water leaks, when to call in the pros, and how Gardner Plumbing Co. can help protect your property.</p>
     
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">1. Tankless Water Heater Installation</h3>
-    <p>Tankless water heaters are a game-changer in today’s market. They provide endless hot water, take up less space, and use up to 30% less energy compared to traditional tanks.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Why It Matters in Lake Elsinore:</b> With energy efficiency being a top priority in California, a tankless unit appeals to environmentally-conscious buyers. It’s also a great feature in larger homes common around Tuscany Hills and Canyon Hills where water demand is high.</p>
-
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">2. Whole-House Water Filtration System</h3>
-    <p>Installing a filtration system improves water quality throughout your home by removing chlorine, sediment, and hard minerals. This upgrade protects your plumbing fixtures, boosts appliance longevity, and improves taste and skin health.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Added Bonus:</b> Lake Elsinore’s hard water can lead to buildup in pipes and water heaters. A filtration system is a long-term value-add and a key selling point for potential buyers.</p>
-
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">3. Bathroom Fixture Upgrades</h3>
-    <p>Replacing outdated faucets, showerheads, and toilets with modern, water-saving models makes an immediate visual and functional impact. It’s one of the most cost-effective ways to refresh your space while meeting low-flow California building code standards.</p>
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">Why Leak Detection Matters in Moreno Valley</h3>
+    <p>Moreno Valley homes—especially those built before the 1990s—often have aging pipes that are more prone to corrosion, slab leaks, and pinhole fractures. In addition, the area’s clay soil can shift during droughts or storms, increasing pressure on underground plumbing.</p>
+    <p class="mt-4">Ignoring a leak can lead to:</p>
     <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300">
-        <li>Dual-flush toilets</li>
-        <li>Brushed nickel or matte black fixtures</li>
-        <li>Rainfall showerheads with pressure optimization</li>
+        <li>Water-damaged drywall or floors</li>
+        <li>Mold and mildew growth</li>
+        <li>High water bills</li>
+        <li>Structural damage to your foundation</li>
     </ul>
 
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">4. Smart Leak Detection Devices</h3>
-    <p>Installing smart water monitors can detect leaks early and alert you via your smartphone—protecting your home from costly damage.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Lake Elsinore:</b> Homes near the lake or in older communities are more prone to shifting foundations and hidden leaks. These systems add peace of mind to homeowners and buyers alike.</p>
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">Common Signs You May Have a Hidden Leak</h3>
+    <p>Not all leaks are obvious. Keep an eye out for these subtle indicators:</p>
+    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300">
+        <li>Unexplained spike in your water bill</li>
+        <li>Mildew smell or persistent dampness</li>
+        <li>Warped floors or bubbling paint</li>
+        <li>Hot spots on the floor (possible slab leak)</li>
+        <li>Sound of running water when all fixtures are off</li>
+    </ul>
+    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic">If you live in a hilly neighborhood like Hidden Springs or a more established area like Edgemont, these warning signs are especially important to catch early.</p>
+
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">DIY Leak Checks You Can Try First</h3>
+    <p>Before calling a plumber, you can try these homeowner-friendly checks:</p>
+    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300">
+        <li><b>Meter Check:</b> Turn off all water sources and watch your water meter. If it moves, you likely have a leak.</li>
+        <li><b>Toilet Dye Test:</b> Put food coloring in the toilet tank—if the color shows up in the bowl without flushing, the flapper valve is leaking.</li>
+        <li><b>Check for Outdoor Leaks:</b> Look for wet patches in the yard, especially when it hasn’t rained.</li>
+    </ul>
+    <p class="mt-4">While DIY tests can be helpful, they often miss leaks behind walls or under the slab—which require professional equipment to detect.</p>
     
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">5. Sewer Line Inspection and Replacement (If Needed)</h3>
-    <p>For older homes, a clean sewer line report during a home inspection can make or break a sale. Proactively replacing damaged or root-invaded lines can prevent costly last-minute issues.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Tip:</b> Include the inspection report in your home’s disclosure packet to reassure buyers.</p>
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">Professional Leak Detection: What to Expect</h3>
+    <p>At Gardner Plumbing Co., we use advanced acoustic listening devices and infrared cameras to pinpoint leaks without destructive digging. Whether it’s under concrete, behind drywall, or in your irrigation system, we find and fix the source with precision.</p>
+    <p class="mt-4">Our Services Include:</p>
+    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300">
+        <li>Slab leak detection and repair</li>
+        <li>Whole-home plumbing inspection</li>
+        <li>Pipe camera inspections</li>
+        <li>Leak repair and pipe rerouting</li>
+    </ul>
   `
 };
 
 // --- Other recent posts for the sidebar ---
 const recentPosts = [
-    { slug: "ultimate-water-leak-detection-guide", title: "The Ultimate Water Leak Detection Guide", category: "Leak Detection"},
+    { slug: "plumbing-upgrades-boost-home-value", title: "Plumbing Upgrades That Boost Your Home’s Value", category: "Home Improvement"},
     { slug: "5-signs-you-need-toilet-repair", title: "5 Signs You Need Toilet Repair in Perris", category: "Appliances"},
     { slug: "tankless-water-heaters-temecula-upgrade", title: "Tankless Water Heaters: Temecula’s Top Upgrade", category: "Water Heaters"},
 ];
 
-export function PlumbingUpgradesThatBoostYourHomeValue() {
+export function UltimateWaterLeakDetectionGuideMorenoValley() {
 
   // In a real app, you might get the base URL dynamically.
   const baseUrl = "https://yourwebsite.com"; 
@@ -178,12 +191,12 @@ export function PlumbingUpgradesThatBoostYourHomeValue() {
              <div className="absolute inset-x-0 top-0 h-1/2 bg-gray-900/50"></div>
              <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="p-8 sm:p-10 bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-red-500/30 rounded-3xl text-center shadow-2xl">
-                    <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Ready to Upgrade Your Plumbing?</h3>
-                    <p className="text-gray-300 mb-6 max-w-2xl mx-auto">From Tuscany Hills to Historic Downtown, our team at Gardner Plumbing Co. helps homeowners make high-ROI upgrades that pay off in value and performance.</p>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Protect Your Home — Schedule a Leak Inspection Today</h3>
+                    <p className="text-gray-300 mb-6 max-w-2xl mx-auto">Don’t wait for small leaks to become big disasters. If you suspect a hidden water leak in your Moreno Valley home, call the experts at Gardner Plumbing Co. for fast, non-invasive diagnostics and honest, upfront pricing.</p>
                     <a href="/contact-us">
                         <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                             <Phone className="h-5 w-5 mr-3 group-hover:scale-110 transition-transform" />
-                            Get a Free Estimate
+                            (951) 246–4337
                         </Button>
                     </a>
                 </div>
@@ -193,6 +206,4 @@ export function PlumbingUpgradesThatBoostYourHomeValue() {
     </div>
   );
 }
-
-
 

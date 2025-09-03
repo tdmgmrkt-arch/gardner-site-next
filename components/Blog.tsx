@@ -2,6 +2,7 @@
 
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
+import Image from "next/image";
 import { Input } from "./ui/input";
 import { 
   ArrowRight,
@@ -23,27 +24,27 @@ const allBlogPosts = [
     author: "Gardner Plumbing Co",
     date: "May 15, 2025",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1740&auto=format&fit=crop",
+    image: "/Wholehousewaterfiltration.webp",
     excerpt: "Home improvement in Lake Elsinore isn’t just about looks—it’s also about boosting resale value and functionality. And when it comes to ROI, plumbing..."
   },
   {
-    slug: "ultimate-water-leak-detection-guide",
+    slug: "ultimate-water-leak-detection-guide-moreno-valley",
     category: "Leak Detection",
     title: "The Ultimate Water Leak Detection Guide for Moreno Valley",
     author: "Gardner Plumbing Co",
     date: "April 26, 2025",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1555819726-a6de3445b292?q=80&w=1740&auto=format&fit=crop",
+    image: "/plumbingleak.webp",
     excerpt: "A hidden leak can wreak havoc on your home—raising your water bill, damaging your foundation, and even leading to mold growth. For homeowners in Moreno Valley, where..."
   },
   {
-    slug: "5-signs-you-need-toilet-repair",
+    slug: "5-signs-you-need-toilet-repair-perris",
     category: "Appliances",
     title: "5 Signs You Need Toilet Repair in Perris—Before It Becomes a Bigger Problem",
     author: "Gardner Plumbing Co",
     date: "April 9, 2025",
     readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1603135432024-d74c4355e424?q=80&w=1740&auto=format&fit=crop",
+    image: "/newtoilet.webp",
     excerpt: "Your toilet might seem like it’s working fine—until it’s not. For many homeowners in Perris, subtle issues with their toilets can escalate into serious plumbing..."
   },
   {
@@ -53,7 +54,7 @@ const allBlogPosts = [
     author: "Gardner Plumbing Co",
     date: "March 25, 2025",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1740&auto=format&fit=crop",
+    image: "/raindrainclog.webp",
     excerpt: "Murrieta’s rainy season may be short, but when the storms roll in, they bring more than just puddles and wet driveways. Homeowners often experience a..."
   },
   {

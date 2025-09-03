@@ -10,11 +10,9 @@ export const metadata = {
 export default function PlumbingUpgradesPage() {
   return (
     <div className="bg-background text-foreground min-h-screen">
-
       <main>
         <PlumbingUpgradesThatBoostYourHomeValue />
       </main>
-
     </div>
   );
 }

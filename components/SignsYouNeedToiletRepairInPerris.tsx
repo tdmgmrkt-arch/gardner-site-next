@@ -1,6 +1,5 @@
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
-import Image from "next/image";
 import { 
   ArrowLeft,
   Calendar,
@@ -14,56 +13,49 @@ import {
 } from "lucide-react";
 import React from 'react';
 
-
 // --- Blog Post Data ---
 // In a real app, this data would be fetched based on the page's URL slug.
 const postData = {
-  slug: "plumbing-upgrades-boost-home-value",
-  category: "Home Improvement",
-  title: "Plumbing Upgrades That Boost Your Home’s Value (And Are Worth Every Penny)",
+  slug: "5-signs-you-need-toilet-repair-perris",
+  category: "Appliances",
+  title: "5 Signs You Need Toilet Repair in Perris—Before It Becomes a Bigger Problem",
   author: "Gardner Plumbing Co.",
-  date: "May 15, 2025",
-  readTime: "6 min read",
-  image: "/Wholehousewaterfiltration.webp",
+  date: "April 9, 2025",
+  readTime: "5 min read",
+  image: "/newtoilet.webp",
   content: `
-    <h2 class="text-2xl font-bold text-red-400 mb-4">Why Smart Plumbing Pays Off in Lake Elsinore</h2>
-    <p>Home improvement in Lake Elsinore isn’t just about looks—it’s also about boosting resale value and functionality. And when it comes to ROI, plumbing upgrades often fly under the radar. Whether you’re planning to sell soon or simply want a more efficient home, investing in the right plumbing features can dramatically increase property value while offering everyday comfort.</p>
-    <p>In this guide, we’ll break down the top plumbing improvements that Lake Elsinore homeowners should consider—and why now is the perfect time to act.</p>
+    <h2 class="text-2xl font-bold text-red-400 mb-4">Don’t Flush Away Warning Signs</h2>
+    <p>Your toilet might seem like it’s working fine—until it’s not. For many homeowners in Perris, subtle issues with their toilets can escalate into serious plumbing emergencies if ignored. Whether it’s a minor leak or a constantly running tank, early repairs can save you money and stress. In this article, we’ll cover the top signs you may need toilet repair and when to call in the pros at Gardner Plumbing Co.</p>
     
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">1. Tankless Water Heater Installation</h3>
-    <p>Tankless water heaters are a game-changer in today’s market. They provide endless hot water, take up less space, and use up to 30% less energy compared to traditional tanks.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Why It Matters in Lake Elsinore:</b> With energy efficiency being a top priority in California, a tankless unit appeals to environmentally-conscious buyers. It’s also a great feature in larger homes common around Tuscany Hills and Canyon Hills where water demand is high.</p>
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">1. Constant Running Water</h3>
+    <p>If your toilet keeps running long after you flush, you’re not just wasting water—you’re likely throwing money down the drain. A continuously running toilet can waste hundreds of gallons a day and may indicate problems with the flapper, fill valve, or float.</p>
+    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Why It Matters in Perris:</b> Water conservation is essential in Riverside County, where drought-conscious households need every drop to count. Addressing a running toilet quickly is one of the easiest ways to lower your utility bills.</p>
 
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">2. Whole-House Water Filtration System</h3>
-    <p>Installing a filtration system improves water quality throughout your home by removing chlorine, sediment, and hard minerals. This upgrade protects your plumbing fixtures, boosts appliance longevity, and improves taste and skin health.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Added Bonus:</b> Lake Elsinore’s hard water can lead to buildup in pipes and water heaters. A filtration system is a long-term value-add and a key selling point for potential buyers.</p>
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">2. Weak or Incomplete Flush</h3>
+    <p>Does it feel like your toilet doesn’t flush with the same force anymore? A weak flush can signal a clog, a low water level in the tank, or mineral deposits affecting flow. Left untreated, these issues can worsen into full blockages.</p>
+    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Pro Tip:</b> If your home in Perris has hard water (common in the region), buildup in the flush holes under the rim may be restricting water pressure.</p>
 
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">3. Bathroom Fixture Upgrades</h3>
-    <p>Replacing outdated faucets, showerheads, and toilets with modern, water-saving models makes an immediate visual and functional impact. It’s one of the most cost-effective ways to refresh your space while meeting low-flow California building code standards.</p>
-    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300">
-        <li>Dual-flush toilets</li>
-        <li>Brushed nickel or matte black fixtures</li>
-        <li>Rainfall showerheads with pressure optimization</li>
-    </ul>
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">3. Water Around the Base</h3>
+    <p>Water collecting at the base of your toilet is never a good sign. It could be due to a worn wax ring, cracked toilet base, or even loose bolts. Even a small leak can lead to subfloor damage, mold growth, and costly repairs.</p>
+    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Act Fast:</b> This is one issue where time is critical. If you notice water pooling, shut off the water supply and contact a licensed plumber immediately.</p>
 
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">4. Smart Leak Detection Devices</h3>
-    <p>Installing smart water monitors can detect leaks early and alert you via your smartphone—protecting your home from costly damage.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Lake Elsinore:</b> Homes near the lake or in older communities are more prone to shifting foundations and hidden leaks. These systems add peace of mind to homeowners and buyers alike.</p>
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">4. Frequent Clogs</h3>
+    <p>Are you reaching for the plunger more than once a week? Recurring clogs often indicate a deeper issue in the trap or main sewer line—not just too much toilet paper.</p>
+    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Common in Older Homes:</b> Many homes in historic Perris neighborhoods may have aging plumbing systems that need professional inspection.</p>
     
-    <h3 class="text-xl font-bold text-white mt-8 mb-4">5. Sewer Line Inspection and Replacement (If Needed)</h3>
-    <p>For older homes, a clean sewer line report during a home inspection can make or break a sale. Proactively replacing damaged or root-invaded lines can prevent costly last-minute issues.</p>
-    <p class="mt-2 pl-4 border-l-2 border-red-500/50 text-gray-400 italic"><b>Tip:</b> Include the inspection report in your home’s disclosure packet to reassure buyers.</p>
+    <h3 class="text-xl font-bold text-white mt-8 mb-4">5. Strange Noises or Bubbling</h3>
+    <p>If your toilet gurgles when you flush or when nearby fixtures are used, it could be a venting problem or partial sewer blockage. These sounds may seem harmless, but they often precede larger drainage issues.</p>
   `
 };
 
 // --- Other recent posts for the sidebar ---
 const recentPosts = [
+    { slug: "plumbing-upgrades-boost-home-value", title: "Plumbing Upgrades That Boost Your Home’s Value", category: "Home Improvement"},
     { slug: "ultimate-water-leak-detection-guide", title: "The Ultimate Water Leak Detection Guide", category: "Leak Detection"},
-    { slug: "5-signs-you-need-toilet-repair", title: "5 Signs You Need Toilet Repair in Perris", category: "Appliances"},
     { slug: "tankless-water-heaters-temecula-upgrade", title: "Tankless Water Heaters: Temecula’s Top Upgrade", category: "Water Heaters"},
 ];
 
-export function PlumbingUpgradesThatBoostYourHomeValue() {
+export function SignsYouNeedToiletRepairInPerris() {
 
   // In a real app, you might get the base URL dynamically.
   const baseUrl = "https://yourwebsite.com"; 
@@ -178,12 +170,12 @@ export function PlumbingUpgradesThatBoostYourHomeValue() {
              <div className="absolute inset-x-0 top-0 h-1/2 bg-gray-900/50"></div>
              <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="p-8 sm:p-10 bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-red-500/30 rounded-3xl text-center shadow-2xl">
-                    <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Ready to Upgrade Your Plumbing?</h3>
-                    <p className="text-gray-300 mb-6 max-w-2xl mx-auto">From Tuscany Hills to Historic Downtown, our team at Gardner Plumbing Co. helps homeowners make high-ROI upgrades that pay off in value and performance.</p>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Don’t Wait Until It’s Too Late</h3>
+                    <p className="text-gray-300 mb-6 max-w-2xl mx-auto">Small toilet problems can quickly escalate. If you notice any of these signs, have your system inspected by the experts at Gardner Plumbing Co. for fast, affordable repairs in Perris.</p>
                     <a href="/contact-us">
                         <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                             <Phone className="h-5 w-5 mr-3 group-hover:scale-110 transition-transform" />
-                            Get a Free Estimate
+                            (951) 246–4337
                         </Button>
                     </a>
                 </div>
@@ -193,6 +185,4 @@ export function PlumbingUpgradesThatBoostYourHomeValue() {
     </div>
   );
 }
-
-
 
