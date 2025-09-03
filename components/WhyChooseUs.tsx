@@ -435,8 +435,8 @@ export function WhyChooseUs() {
             <div className="lg:col-span-1 flex justify-center items-center order-last sm:order-none">
               <div className="relative group">
                 <Image
-                  src="/bbbratingbadge.webp"
-                  alt="BBB Accredited Business - A+ Rating"
+                  src="/American-Home-Shield.webp"
+                  alt="Trusted American Home Shield Contractor"
                   width={150}
                   height={100}
                   loading="lazy"
