@@ -1,0 +1,214 @@
+/* src/styles/global.css */
+
+/* 👇 make Tailwind scan all Astro/TSX files, including React islands */
+@source "../**/*.{astro,html,js,jsx,ts,tsx,md,mdx}";
+
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: #1f1f1f;
+  --card: #ffffff;
+  --card-foreground: #1f1f1f;
+  --popover: #ffffff;
+  --popover-foreground: #1f1f1f;
+  --primary: #dc2626;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f5f5;
+  --secondary-foreground: #1f1f1f;
+  --muted: #f8f9fa;
+  --muted-foreground: #6b7280;
+  --accent: #e5e7eb;
+  --accent-foreground: #1f1f1f;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #ffffff;
+  --input-background: #ffffff;
+  --ring: #dc2626;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --radius: 8px;
+  
+  /* Custom Gardner Plumbing Co. colors */
+  --gardner-red: #dc2626;
+  --gardner-gray-50: #f9fafb;
+  --gardner-gray-100: #f3f4f6;
+  --gardner-gray-200: #e5e7eb;
+  --gardner-gray-300: #d1d5db;
+  --gardner-gray-400: #9ca3af;
+  --gardner-gray-500: #6b7280;
+  --gardner-gray-600: #4b5563;
+  --gardner-gray-700: #374151;
+  --gardner-gray-800: #1f2937;
+  --gardner-gray-900: #111827;
+  --gardner-black: #000000;
+  --gardner-white: #ffffff;
+}
+
+.dark {
+  --background: #111827;
+  --foreground: #f9fafb;
+  --card: #1f2937;
+  --card-foreground: #f9fafb;
+  --popover: #1f2937;
+  --popover-foreground: #f9fafb;
+  --primary: #dc2626;
+  --primary-foreground: #ffffff;
+  --secondary: #374151;
+  --secondary-foreground: #f9fafb;
+  --muted: #374151;
+  --muted-foreground: #9ca3af;
+  --accent: #4b5563;
+  --accent-foreground: #f9fafb;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #374151;
+  --input: #374151;
+  --ring: #dc2626;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Custom Gardner colors */
+  --color-gardner-red: var(--gardner-red);
+  --color-gardner-gray-50: var(--gardner-gray-50);
+  --color-gardner-gray-100: var(--gardner-gray-100);
+  --color-gardner-gray-200: var(--gardner-gray-200);
+  --color-gardner-gray-300: var(--gardner-gray-300);
+  --color-gardner-gray-400: var(--gardner-gray-400);
+  --color-gardner-gray-500: var(--gardner-gray-500);
+  --color-gardner-gray-600: var(--gardner-gray-600);
+  --color-gardner-gray-700: var(--gardner-gray-700);
+  --color-gardner-gray-800: var(--gardner-gray-800);
+  --color-gardner-gray-900: var(--gardner-gray-900);
+  --color-gardner-black: var(--gardner-black);
+  --color-gardner-white: var(--gardner-white);
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+}
+
+
+/**
+ * Corporate Typography System
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: 3rem;
+      font-weight: var(--font-weight-bold);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      font-weight: var(--font-weight-bold);
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      font-size: 1.875rem;
+      font-weight: var(--font-weight-medium);
+      line-height: 1.4;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      font-weight: var(--font-weight-medium);
+      line-height: 1.4;
+    }
+
+    h5 {
+      font-size: 1.25rem;
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h6 {
+      font-size: 1.125rem;
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: var(--font-weight-normal);
+      line-height: 1.6;
+    }
+
+    .lead {
+      font-size: 1.25rem;
+      font-weight: var(--font-weight-normal);
+      line-height: 1.6;
+    }
+
+    .small {
+      font-size: 0.875rem;
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: 0.875rem;
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: 1rem;
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: 1rem;
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+
+html {
+  font-size: var(--font-size);
+}
+
+html {
+  scroll-padding-top: 80px; /* match your sticky header height */
+}
