@@ -29,10 +29,6 @@ import {
   Star,
   AlertTriangle
 } from "lucide-react";
-const IntroImage = "/leakdetectionserviceintro.webp";
-const beforeafterImage = "/leakdetectionbeforeandafter.webp";
-const whychooseusImage = "/gardnertecharrival3.webp"
-const EmergencyLeakDetectionImage = "/gardnertecharrival.webp";
 
 const cityLinks: Record<string, string> = {
   Temecula: "https://temeculaca.gov",
@@ -465,11 +461,14 @@ const services = [
             {/* Left Column - Image */}
             <div className="relative group">
               <div className="relative overflow-hidden rounded-3xl shadow-luxury group-hover:shadow-2xl transition-all duration-500">
-                <img
-                    src={whychooseusImage}
+                <Image
+                  src="/gardnertecharrival3.webp"
                   alt="Professional Gardner Plumbing Co. technician with leak detection equipment"
+                  width={1000}
+                  height={700}
                   className="w-full h-200 object-cover rounded-3xl"
                 />
+
                 
                 {/* Premium overlay effects */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl"></div>
