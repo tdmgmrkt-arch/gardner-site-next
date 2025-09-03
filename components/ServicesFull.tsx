@@ -28,19 +28,22 @@ export function ServicesFull() {
       icon: Droplets,
       title: "Drain\nCleaning",
       description: "Professional drain clearing and maintenance services to keep your plumbing flowing smoothly.",
-      features: ["Hydro-Jetting", "Video Inspection", "Root Removal", "Preventive Maintenance"]
+      features: ["Hydro-Jetting", "Video Inspection", "Root Removal", "Preventive Maintenance"],
+      link: "/services/drain-cleaning"
     },
     {
       icon: Wrench,
       title: "Leak Detection/\nRepair",
       description: "Advanced leak detection technology and expert repair services for quick, efficient solutions.",
-      features: ["Electronic Detection", "Slab Leak Repair", "Pipe Replacement", "Emergency Service"]
+      features: ["Electronic Detection", "Slab Leak Repair", "Pipe Replacement", "Emergency Service"],
+      link: "/services/leak-detection"
     },
     {
       icon: Zap,
       title: "Water Heater Service",
       description: "Complete water heater installation, repair, and maintenance for optimal performance.",
-      features: ["Tank & Tankless", "Energy Efficient", "Same-Day Service", "Warranty Included"]
+      features: ["Tank & Tankless", "Energy Efficient", "Same-Day Service", "Warranty Included"],
+      link: "/services/water-heater-service"
     },
     {
       icon: Home,
@@ -58,7 +61,8 @@ export function ServicesFull() {
       icon: Layers,
       title: "Pipe\nReplacement",
       description: "Complete pipe replacement services using modern materials and techniques.",
-      features: ["Copper Piping", "PEX Installation", "Slab Repairs", "Whole House Repiping"]
+      features: ["Copper Piping", "PEX Installation", "Slab Repairs", "Whole House Repiping"],
+      link: "/services/piping-and-repiping"
     },
     {
       icon: Thermometer,
@@ -79,13 +83,15 @@ export function ServicesFull() {
       icon: Building,
       title: "Commercial Plumbing",
       description: "Professional plumbing solutions for businesses and commercial properties.",
-      features: ["System Design", "Maintenance Plans", "Emergency Service", "Code Compliance"]
+      features: ["System Design", "Maintenance Plans", "Emergency Service", "Code Compliance"],
+      link: "/services/commercial-plumbing"
     },
     {
       icon: Wrench,
       title: "Hydro-Jetting",
       description: "High-pressure water jetting for thorough pipe cleaning and blockage removal.",
-      features: ["Eco-Friendly", "Root Cutting", "Grease Removal", "Video Verification"]
+      features: ["Eco-Friendly", "Root Cutting", "Grease Removal", "Video Verification"],
+      link: "/services/hydro-jetting"
     },
     {
       icon: Hammer,
@@ -106,19 +112,22 @@ export function ServicesFull() {
       icon: AlertTriangle,
       title: "Sewer Line\nRepair",
       description: "Complete sewer line inspection, cleaning, and repair services.",
-      features: ["Trenchless Repair", "Full Replacement", "Root Removal", "Video Inspection"]
+      features: ["Trenchless Repair", "Full Replacement", "Root Removal", "Video Inspection"],
+      link: "/services/sewer-and-septic"
     },
     {
       icon: MapPin,
       title: "Gas Line\nServices",
       description: "Safe and professional gas line installation and repair services.",
-      features: ["Leak Detection", "Line Installation", "Pressure Testing", "Safety Inspections"]
+      features: ["Leak Detection", "Line Installation", "Pressure Testing", "Safety Inspections"],
+      link: "/services/gas-lines"
     },
     {
       icon: Shield,
       title: "Water Quality\nSolutions",
       description: "Comprehensive water testing and filtration system installation.",
-      features: ["Water Testing", "Filtration Systems", "Softener Installation", "UV Sterilization"]
+      features: ["Water Testing", "Filtration Systems", "Softener Installation", "UV Sterilization"],
+      link: "/services/water-filtration-system"
     },
     {
       icon: Settings,
@@ -290,12 +299,14 @@ export function ServicesFull() {
                                 </li>
                               ))}
                             </ul>
+                            <a href={service.link}>
                             <Button className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl py-3 group/btn">
                               <span className="flex items-center justify-center gap-2">
                                 Learn More
                                 <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                               </span>
                             </Button>
+                            </a>
                           </CardContent>
                         </div>
                       </Card>
@@ -370,12 +381,14 @@ export function ServicesFull() {
                                   </li>
                                 ))}
                               </ul>
+                              <a href={service.link}>
                               <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl py-3 px-8 group/btn">
                                 <span className="flex items-center justify-center gap-2">
                                   Learn More
                                   <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                                 </span>
                               </Button>
+                              </a>
                             </div>
                           </div>
                         </CardContent>
@@ -460,12 +473,14 @@ export function ServicesFull() {
                                 </li>
                               ))}
                             </ul>
+                            <a href={service.link}>
                             <Button className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl py-3 group/btn">
                               <span className="flex items-center justify-center gap-2">
                                 Learn More
                                 <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                               </span>
                             </Button>
+                            </a>
                           </CardContent>
                         </div>
                       </Card>
