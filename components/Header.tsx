@@ -77,7 +77,7 @@ export function Header() {
     "Water Damage": "/services/water-damage",
     "Gas Lines": "/services/gas-lines",
     "Backups": "/services/backups",
-    "No Heat/Hot Water": "/services/no-heat-hot-water",
+    "No Hot Water": "/services/no-hot-water",
   };
   // --------------------------------
 

@@ -12,6 +12,8 @@ import {
   Shield,
   CheckCircle,
   ArrowRight,
+  Factory,
+  ShieldCheck,
   type LucideIcon,
 } from "lucide-react";
 
@@ -65,23 +67,59 @@ export function Services() {
   ];
 
   const commercialServices: ServiceItem[] = [
-    {
-      icon: Building,
-      title: "Commercial Plumbing",
-      description: "Professional plumbing solutions for businesses and commercial properties.",
-      features: ["System Design", "Maintenance Plans", "Emergency Service", "Code Compliance"],
-      link: "/services/commercial-plumbing",
-    },
-    {
-      icon: Wrench,
-      title: "Hydro-Jetting",
-      description:
-        "High-pressure water jetting for thorough pipe cleaning and blockage removal.",
-      features: ["Eco-Friendly", "Root Cutting", "Grease Removal", "Video Verification"],
-      link: "/services/hydro-jetting",
-    },
-    
-  ];
+  {
+    icon: Building,
+    title: "Commercial Plumbing",
+    description:
+      "Professional plumbing solutions for businesses and commercial properties.",
+    features: [
+      "System Design",
+      "Maintenance Plans",
+      "Emergency Service",
+      "Code Compliance",
+    ],
+    link: "/services/commercial-plumbing",
+  },
+  {
+    icon: Wrench,
+    title: "Hydro-Jetting",
+    description:
+      "High-pressure water jetting for thorough pipe cleaning and blockage removal.",
+    features: [
+      "Eco-Friendly",
+      "Root Cutting",
+      "Grease Removal",
+      "Video Verification",
+    ],
+    link: "/services/hydro-jetting",
+  },
+  {
+    icon: Factory,
+    title: "Industrial Plumbing",
+    description:
+      "Heavy-duty plumbing solutions for factories, warehouses, and manufacturing facilities.",
+    features: [
+      "Process Piping",
+      "High-Capacity Systems",
+      "Regulatory Compliance",
+      "Preventive Maintenance",
+    ],
+    link: "/services/industrial-plumbing",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Backflow Prevention",
+    description:
+      "Installation and testing of backflow prevention devices to protect water supply safety.",
+    features: [
+      "Certified Testing",
+      "Device Installation",
+      "Annual Inspections",
+      "Code Compliance",
+    ],
+    link: "/services/backflow-prevention",
+  },
+];
 
   return (
     <section className="py-12 sm:py-16 lg:py-28 relative overflow-hidden">
@@ -375,9 +413,10 @@ export function Services() {
                             </ul>
 
                             <a href={service.link} className="block">
+                              
                               <Button className="w-full sm:w-auto bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 rounded-lg sm:rounded-xl py-2.5 sm:py-3 px-6 sm:px-8 text-sm sm:text-base group/btn">
                                 <span className="flex items-center justify-center gap-1.5 sm:gap-2">
-                                  Get Quote
+                                  Learn More
                                   <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                                 </span>
                               </Button>

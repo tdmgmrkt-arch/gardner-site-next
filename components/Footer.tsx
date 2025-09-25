@@ -184,32 +184,23 @@ export function Footer() {
                   </ul>
                 </div>
 
-                {/* Newsletter & Social */}
+                {/* Blog Teaser & Social */}
                 <div className="sm:col-span-2 md:col-span-1 glassmorphism-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-luxury hover-lift transition-all duration-500 border border-white/10">
-                  <h4 className="text-base sm:text-lg text-white mb-4 sm:mb-6 pb-2 sm:pb-3 border-b-2 border-red-600 drop-shadow-sm">Stay Connected</h4>
+                  <h4 className="text-base sm:text-lg text-white mb-4 sm:mb-6 pb-2 sm:pb-3 border-b-2 border-red-600 drop-shadow-sm">
+                    From Our Blog
+                  </h4>
 
                   <p className="text-gray-300 text-xs sm:text-sm mb-4 sm:mb-6 leading-relaxed">
-                    Subscribe for plumbing tips, special offers, and service updates.
+                    Get expert plumbing tips, home maintenance advice, and industry insights from our latest blog posts.
                   </p>
 
                   <div className="mb-6 sm:mb-8">
-                    <div className="space-y-2 sm:space-y-3">
-                      <Input
-                        type="email"
-                        placeholder="Your email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        className="bg-black/20 border-white/20 text-white placeholder:text-gray-400 w-full focus:border-red-500 focus:ring-red-500/30 backdrop-blur-sm hover:bg-black/30 transition-all duration-300 rounded-lg sm:rounded-xl shadow-sm text-sm h-10 sm:h-auto"
-                        required
-                      />
-                      <Button
-                        type="submit"
-                        onClick={handleNewsletterSubmit}
-                        className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 w-full shadow-lg hover:shadow-xl transition-all duration-300 rounded-lg sm:rounded-xl border border-red-400/20 text-sm py-2 sm:py-3"
-                      >
-                        Subscribe
-                      </Button>
-                    </div>
+                    <a
+                      href="/blog"
+                      className="block w-full text-center bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 rounded-lg sm:rounded-xl border border-red-400/20 text-sm py-2 sm:py-3"
+                    >
+                      Visit Our Blog
+                    </a>
                   </div>
 
                   {/* Social Media */}

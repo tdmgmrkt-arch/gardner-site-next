@@ -437,8 +437,8 @@ export function WhyChooseUs() {
                 <Image
                   src="/American-Home-Shield.webp"
                   alt="Trusted American Home Shield Contractor"
-                  width={150}
-                  height={100}
+                  width={450}
+                  height={300}
                   loading="lazy"
                   className="w-20 sm:w-24 lg:w-36 h-auto max-w-full filter drop-shadow-lg group-hover:scale-105 transition-transform duration-300"
                 />
