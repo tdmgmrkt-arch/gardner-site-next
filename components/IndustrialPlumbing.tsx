@@ -164,7 +164,7 @@ export function IndustrialPlumbing() {
             </div>
             <div className="relative group animate-slide-up">
               <div className="relative overflow-hidden rounded-3xl shadow-luxury">
-                <Image src="/industrial-piping-facility.webp" alt="Complex industrial piping in a manufacturing plant" width={1000} height={600} className="w-full h-[400px] lg:h-[500px] object-cover rounded-3xl" />
+                <Image src="/industrialplumbing.webp" alt="Complex industrial piping in a manufacturing plant" width={1000} height={600} className="w-full h-[400px] lg:h-[500px] object-cover rounded-3xl" />
               </div>
             </div>
           </div>

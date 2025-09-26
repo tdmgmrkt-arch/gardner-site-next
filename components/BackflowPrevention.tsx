@@ -142,7 +142,7 @@ export function BackflowPrevention() {
             </div>
             <div className="relative group animate-slide-up">
               <div className="relative overflow-hidden rounded-3xl shadow-luxury">
-                <Image src="/backflow-preventer-assembly.webp" alt="Commercial backflow preventer assembly on the side of a building" width={1000} height={600} className="w-full h-[400px] lg:h-[500px] object-cover rounded-3xl" />
+                <Image src="/backflowservices.webp" alt="Commercial backflow preventer assembly on the side of a building" width={1000} height={600} className="w-full h-[400px] lg:h-[500px] object-cover rounded-3xl" />
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@ export function BackflowPrevention() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative group">
-              <Image src="/gardner-technician-testing.webp" alt="Technician testing a backflow device with gauges" width={1000} height={700} className="w-full h-96 object-cover rounded-3xl shadow-luxury" />
+              <Image src="/gardnercrewarrival.webp" alt="Technician testing a backflow device with gauges" width={1000} height={700} className="w-full h-96 object-cover rounded-3xl shadow-luxury" />
             </div>
             <div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8">

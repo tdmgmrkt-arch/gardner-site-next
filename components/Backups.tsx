@@ -180,7 +180,7 @@ const emergencyReasons = [
             </div>
             <div className="relative group animate-slide-up">
               <div className="relative overflow-hidden rounded-3xl shadow-luxury">
-                <Image src="/sewer-backup-emergency.webp" alt="Sewer water backing up into a residential shower" width={1000} height={600} className="w-full h-[400px] lg:h-[500px] object-cover rounded-3xl"/>
+                <Image src="/sewerbackup.webp" alt="Sewer water backing up into a residential shower" width={1000} height={600} className="w-full h-[400px] lg:h-[500px] object-cover rounded-3xl"/>
                 <div className="absolute bottom-6 left-6 glassmorphism-dark rounded-2xl p-4 border border-white/20 shadow-luxury bg-black/60 backdrop-blur-md">
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-gradient-to-br from-red-600 to-red-500 rounded-full flex items-center justify-center"><AlertTriangle className="h-4 w-4 text-white" /></div>
