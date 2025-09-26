@@ -435,25 +435,71 @@ const emergencyReasons = [
           </div>
         </div>
       </section>
+      
       {/* Final CTA Section */}
-      <section className="py-16 relative">
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
-              Need Professional <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Sewer Backup</span> Service?
-            </h2>
-            <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
-              Contact our 24/7 team immediately to handle hazardous sewer backups safely and effectively.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
-              <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-3 rounded-xl shadow-lg">
-                  <Phone className="h-4 w-4 mr-2" /> Call (951) 246-4337
-              </Button>
-              <Button onClick={() => setIsModalOpen(true)} size="lg" className="border-2 border-white/60 text-white bg-transparent px-6 py-3 rounded-xl shadow-lg">
-                  <Mail className="h-4 w-4 mr-2" /> Get Free Estimate
-              </Button>
-            </div>
+<section className="relative overflow-hidden">
+  <div
+    className="py-12 sm:py-16"
+    style={{
+      background: `
+        radial-gradient(ellipse at center, #1f2937 0%, #111827 50%, #000000 100%),
+        linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
+      `,
+      boxShadow: `
+        0 -12px 32px rgba(0, 0, 0, 0.4),
+        0 12px 32px rgba(0, 0, 0, 0.6),
+        0 -8px 24px rgba(31, 41, 55, 0.3),
+        0 8px 24px rgba(31, 41, 55, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.2)
+      `
+    }}
+  >
+    <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="mb-4">
+        <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+          <Phone className="h-6 w-6 text-white" />
         </div>
-      </section>
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 drop-shadow-lg">
+          Need Professional{" "}
+          <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+            Sewer Backup
+          </span>{" "}
+          Service?
+        </h2>
+        <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
+          Contact our 24/7 team immediately to handle hazardous sewer backups
+          safely and effectively.
+        </p>
+      </div>
+
+      <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">
+        <a href="tel:9512464337" className="flex-1">
+          <Button
+            size="lg"
+            className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-6 py-3 rounded-xl shadow-lg border border-red-400/20 group w-full"
+          >
+            <span className="flex items-center justify-center gap-2">
+              <Phone className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
+              Call (951) 246-4337
+            </span>
+          </Button>
+        </a>
+        <Button
+          onClick={() => setIsModalOpen(true)}
+          size="lg"
+          className="border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-xl shadow-lg transition-all duration-300 group bg-transparent flex-1"
+        >
+          <span className="flex items-center justify-center gap-2">
+            <Mail className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
+            Get Free Estimate
+          </span>
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
+
       
       <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <LeadForm />

@@ -899,9 +899,9 @@ const services = [
 
       {/* Final CTA Section */}
       <section className="relative overflow-hidden">
-        <div 
+        <div
           className="py-12 sm:py-16"
-          style={{ 
+          style={{
             background: `
               radial-gradient(ellipse at center, #1f2937 0%, #111827 50%, #000000 100%),
               linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
@@ -917,60 +917,65 @@ const services = [
           }}
         >
           <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-  <div className="mb-4">
-    <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-      <Phone className="h-6 w-6 text-white" />
-    </div>
-    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 drop-shadow-lg">
-      Ready for Professional <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Gas Line Service?</span>
-    </h2>
-    <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
-      Three decades of trusted service. Contact us for expert gas line installation and repair.
-    </p>
-  </div>
+            <div className="mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <Phone className="h-6 w-6 text-white" />
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 drop-shadow-lg">
+                Ready for Professional{" "}
+                <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                  Gas Line Service?
+                </span>
+              </h2>
+              <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
+                Three decades of trusted service. Contact us for expert gas line
+                installation and repair.
+              </p>
+            </div>
 
-  <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">
-    <a href="tel:9512464337" className="flex-1">
-      <Button
-        size="lg"
-        className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-6 py-3 rounded-xl shadow-lg border border-red-400/20 group w-full"
-      >
-        <span className="flex items-center justify-center gap-2">
-          <Phone className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
-          Call (951) 246-4337
-        </span>
-      </Button>
-    </a>
-    <a href="mailto:office@gardnerplumbingco.com?subject=Free%20Gas%20Line%20Inspection&body=Hi%20Gardner%20Plumbing%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20gas%20line%20inspection.%0A%0AName%3A%0APhone%3A%0AAddress%3A%0ADetails%3A" className="flex-1">
-      <Button
-        size="lg"
-        className="border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-xl shadow-lg transition-all duration-300 group bg-transparent w-full"
-      >
-        <span className="flex items-center justify-center gap-2">
-          <Mail className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
-          Get Free Inspection
-        </span>
-      </Button>
-    </a>
-  </div>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">
+              <a href="tel:9512464337" className="flex-1">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-6 py-3 rounded-xl shadow-lg border border-red-400/20 group w-full"
+                >
+                  <span className="flex items-center justify-center gap-2">
+                    <Phone className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
+                    Call (951) 246-4337
+                  </span>
+                </Button>
+              </a>
 
-  <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-center text-sm max-w-2xl mx-auto">
-    <div className="flex items-center gap-2">
-      <Clock className="h-4 w-4 text-green-400" />
-      <span className="text-gray-300">24/7 Emergency</span>
-    </div>
-    <div className="flex items-center gap-2">
-      <Shield className="h-4 w-4 text-green-400" />
-      <span className="text-gray-300">Licensed & Insured</span>
-    </div>
-    <div className="flex items-center gap-2">
-      <Star className="h-4 w-4 text-green-400" />
-      <span className="text-gray-300">4.9 Star Rating</span>
-    </div>
-  </div>
-</div>
+              <Button
+                onClick={() => setIsModalOpen(true)}
+                size="lg"
+                className="border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-xl shadow-lg transition-all duration-300 group bg-transparent flex-1"
+              >
+                <span className="flex items-center justify-center gap-2">
+                  <Mail className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
+                  Get Free Estimate
+                </span>
+              </Button>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-center text-sm max-w-2xl mx-auto">
+              <div className="flex items-center gap-2">
+                <Clock className="h-4 w-4 text-green-400" />
+                <span className="text-gray-300">24/7 Emergency</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Shield className="h-4 w-4 text-green-400" />
+                <span className="text-gray-300">Licensed & Insured</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Star className="h-4 w-4 text-green-400" />
+                <span className="text-gray-300">4.9 Star Rating</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
 
       {/* ✅ Modal */}
     <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}>
