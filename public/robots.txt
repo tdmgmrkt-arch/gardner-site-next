@@ -1,0 +1,8 @@
+# robots.txt for Gardner Plumbing Co.
+
+# Allow all well-behaved crawlers to access everything
+User-agent: *
+Allow: /
+
+# Point crawlers to the sitemap index
+Sitemap: https://gardnerplumbingco.com/sitemap_index.xml
