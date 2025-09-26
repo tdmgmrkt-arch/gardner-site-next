@@ -277,7 +277,7 @@ export function Footer() {
                   <a href="/terms-and-services" className="text-gray-400 hover:text-red-400 transition-colors duration-300 hover-lift">
                     Terms of Service
                   </a>
-                  <a href="/sitemap" className="text-gray-400 hover:text-red-400 transition-colors duration-300 hover-lift">
+                  <a href="/sitemap_index.xml" className="text-gray-400 hover:text-red-400 transition-colors duration-300 hover-lift">
                     Sitemap
                   </a>
                 </div>
