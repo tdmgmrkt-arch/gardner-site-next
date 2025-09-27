@@ -2,6 +2,7 @@
 
 import { SchedulerModal } from "./SchedulerModal";
 import { useState } from "react";
+import Link from "next/link";
 import { Modal } from "./Modal";
 import Image from "next/image";
 import { LeadForm } from "./LeadForm";
@@ -218,7 +219,7 @@ const emergencyReasons = [
               </h1>
 
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Fast, clean installs and reliable repairs for running, leaking, or clogged toilets—done right the first time.
+                Fast, clean installs and reliable repairs for running, leaking, or clogged toilets—done right the first time. Need <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency service</Link>?
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -517,7 +518,7 @@ const emergencyReasons = [
               </h2>
 
               <p className="text-lg text-gray-300 mb-8 leading-relaxed text-[16px]">
-                Clean work, clear pricing, and installs that stay leak-free. We stock the right parts to fix most issues on the first visit.
+                Clean work, clear pricing, and installs that stay leak-free. We stock the right parts to fix most issues on the first visit. View all our <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing services</Link>.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -898,7 +899,7 @@ const emergencyReasons = [
                 </span>
               </h2>
               <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
-                Same-day repairs and clean installs—done right, guaranteed.
+                Same-day repairs and clean installs—done right, guaranteed. We follow <a href="https://www.epa.gov/watersense" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">EPA WaterSense standards</a> for efficiency.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">

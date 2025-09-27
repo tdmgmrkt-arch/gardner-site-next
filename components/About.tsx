@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Modal } from "./Modal";
 import Image from "next/image";
 import { LeadForm } from "./LeadForm"
@@ -328,13 +329,13 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               
               <div className="space-y-6 text-gray-300 leading-relaxed">
                 <p className="text-lg">
-                  Gardner Plumbing Co. was founded in 1993 with a simple mission: provide honest, reliable plumbing services to our community. What started as a small family business has grown into one of Riverside County's most trusted plumbing companies.
+                  Gardner Plumbing Co. was founded in 1993 with a simple mission: provide honest, reliable plumbing services to our community. What started as a small family business has grown into one of Riverside County's most trusted <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing companies</Link>.
                 </p>
                 <p>
-                  Our founder believed that quality work and fair pricing should be the foundation of every customer relationship. This philosophy continues to guide us today as we serve thousands of satisfied customers across the region.
+                  Our founder believed that quality work and fair pricing should be the foundation of every customer relationship. This philosophy continues to guide us today as we serve thousands of <Link href="/reviews" className="text-red-400 hover:text-red-300 underline">satisfied customers</Link> across the region.
                 </p>
                 <p>
-                  From emergency repairs to complete system installations, we've built our reputation one satisfied customer at a time. Our team of licensed professionals brings decades of combined experience to every job, ensuring quality results you can count on.
+                  From <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency repairs</Link> to complete system installations, we've built our reputation one satisfied customer at a time. Our team of licensed professionals brings decades of combined experience to every job, ensuring quality results you can count on according to <a href="https://www.contractorcheckup.com/articles/hiring-licensed-plumber/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry standards</a>.
                 </p>
               </div>
               
@@ -349,8 +350,9 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                   </div>
                 </div>
                 <p className="text-gray-300 leading-relaxed">
-                  To provide exceptional plumbing services while building lasting relationships with our customers through honesty, reliability, and superior craftsmanship.
-                </p>
+                To provide exceptional <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing services</Link> while building lasting relationships with our customers through honesty, reliability, and superior craftsmanship, backed by <a href="https://g.page/r/CQ_tg7-i5ofvEBM/review" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline"> Google Business customer reviews</a>.
+              </p>
+
               </div>
             </div>
           </div>
@@ -668,14 +670,14 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href = "tel:9512464337">
+                <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 transition-all duration-300 rounded-xl shadow-lg group">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
                     Call (951) 246-4337
                   </span>
                 </Button>
-                </a>
+                </Link>
               </div>
             </div>
             

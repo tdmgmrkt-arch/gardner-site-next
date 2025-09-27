@@ -1,5 +1,6 @@
 import { DollarSign, UserCheck, CheckCircle, Clock, Award, Shield, Star, Users, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "./ui/card";
 
@@ -84,7 +85,7 @@ export function WhyChooseUs() {
                 Why Choose <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Gardner Plumbing Co.</span>
               </h2>
               <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-xl">
-                Three decades of excellence in plumbing services. We combine traditional craftsmanship with modern technology to deliver unmatched quality and customer satisfaction throughout Riverside County.
+                Three decades of excellence in <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing services</Link>. We combine traditional craftsmanship with modern technology to deliver unmatched quality and customer satisfaction throughout Riverside County. Our standards meet <a href="https://www.phccweb.org/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry best practices</a>.
               </p>
             </div>
             
@@ -410,7 +411,7 @@ export function WhyChooseUs() {
                 <h3 className="text-lg sm:text-xl font-bold text-white">Trusted & Reliable</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                30+ years serving the community with unwavering commitment to quality and customer satisfaction.
+                30+ years serving the community with unwavering commitment to quality and <Link href="/reviews" className="text-red-400 hover:text-red-300 underline">customer satisfaction</Link>.
               </p>
             </div>
             

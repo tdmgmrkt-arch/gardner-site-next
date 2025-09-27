@@ -129,7 +129,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   <Card className="bg-gray-800/30 border border-white/10 text-center shadow-lg">
                     <div className="p-6">
                       <Image
-                        src="/gardner-logo-icon.png"
+                        src="/GPAUTHORLOGO.png"
                         alt="Gardner Plumbing Co. Logo"
                         width={80}
                         height={80}

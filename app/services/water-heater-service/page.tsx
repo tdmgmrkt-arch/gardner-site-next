@@ -1,5 +1,5 @@
 
-import { WHservice } from "@/components/WHservice"; // 👈 match filename exactly
+import { WHService } from "@/components/WHService"; // 👈 match filename exactly
 
 export const metadata = {
   title: "Water Heater Services | Gardner Plumbing Co.",
@@ -11,7 +11,7 @@ export default function WHServicePage() {
     <div className="bg-background text-foreground min-h-screen">
 
       <main>
-        <WHservice /> {/* 👈 match the component export name */}
+        <WHService /> {/* 👈 match the component export name */}
       </main>
 
     </div>

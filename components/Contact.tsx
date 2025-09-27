@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { SchedulerModal } from "./SchedulerModal";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader } from "./ui/card";
@@ -224,27 +225,27 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
               </div>
               
               <p className="text-xl text-gray-300 leading-relaxed mb-8 max-w-xl">
-                Ready to solve your plumbing needs? Our expert team is here to help with professional service, transparent pricing, and 30+ years of experience serving Riverside County.
+                Ready to solve your plumbing needs? Our expert team is here to help with professional service, transparent pricing, and 30+ years of experience serving <Link href="/about-us" className="text-red-400 hover:text-red-300 underline">Riverside County</Link>. We follow <a href="https://www.iapmo.org/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">IAPMO plumbing codes</a>.
               </p>
               
              {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9512464337" className="w-full sm:w-auto">
+                <Link href="tel:9512464337" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
                       Call (951) 246-4337
                     </span>
                   </Button>
-                </a>
-                <a href="mailto:office@gardnerplumbingco.com" className="w-full sm:w-auto">
+                  </Link>
+                <Link href="mailto:office@gardnerplumbingco.com" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-xl shadow-lg transition-all duration-300 group bg-transparent">
                     <span className="flex items-center justify-center gap-3">
                       <Mail className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
                       office@gardnerplumbingco.com
                     </span>
                   </Button>
-                </a>
+                </Link>
               </div>
 
             </div>

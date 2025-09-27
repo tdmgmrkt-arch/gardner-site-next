@@ -1,6 +1,7 @@
-import { 
-  Shield, FileText, Scale, DollarSign, Users, Wrench, Briefcase, ClipboardCheck, Lock, Phone, Mail, MapPin, Calendar, Info 
+import {
+  Shield, FileText, Scale, DollarSign, Users, Wrench, Briefcase, ClipboardCheck, Lock, Phone, Mail, MapPin, Calendar, Info
 } from "lucide-react";
+import Link from "next/link";
 
 export function TermsServ() {
   return (
@@ -28,7 +29,7 @@ export function TermsServ() {
           </h1>
 
           <p className="text-lg text-gray-300 max-w-2xl mb-4">
-            Please read these terms carefully before using Gardner Plumbing Co. services. 
+            Please read these terms carefully before using <Link href="/services" className="text-red-400 hover:text-red-300 underline">Gardner Plumbing Co. services</Link>.
             Your trusted local plumbing experts serving Riverside County for over 20 years.
           </p>
 
@@ -153,8 +154,8 @@ export function TermsServ() {
               <Lock className="h-6 w-6 text-teal-500" /> 8. Privacy and Confidentiality
             </h2>
             <p className="text-gray-300">
-              We respect your privacy and confidentiality. Personal data will only be used for service delivery, scheduling, and billing purposes. 
-              For more details, see our Privacy Policy.
+              We respect your privacy and confidentiality. Personal data will only be used for service delivery, scheduling, and billing purposes.
+              For more details, see our <Link href="/privacy-policy" className="text-red-400 hover:text-red-300 underline">Privacy Policy</Link>. Learn more about professional standards at <a href="https://www.phccweb.org" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">PHCC</a>.
             </p>
           </div>
 

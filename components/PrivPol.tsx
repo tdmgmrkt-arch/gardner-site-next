@@ -1,9 +1,10 @@
-import { 
-  Shield, FileText, Database, Eye, Lock, Cookie, Phone, Mail, MapPin, Users, Clock, Scale, Info, Calendar, 
+import {
+  Shield, FileText, Database, Eye, Lock, Cookie, Phone, Mail, MapPin, Users, Clock, Scale, Info, Calendar,
   OptionIcon,
   DoorOpen,
   List
 } from "lucide-react";
+import Link from "next/link";
 
 export function PrivPol() {
   return (
@@ -31,8 +32,8 @@ export function PrivPol() {
           </h1>
 
           <p className="text-lg text-gray-300 max-w-2xl mb-4">
-            Your privacy is important to us. This policy explains how Gardner Plumbing Co. 
-            collects, uses, and protects your personal information when you use our services.
+            Your privacy is important to us. This policy explains how Gardner Plumbing Co.
+            collects, uses, and protects your personal information when you use our <Link href="/services" className="text-red-400 hover:text-red-300 underline">services</Link>.
           </p>
 
           {/* Effective/Updated dates */}
@@ -88,7 +89,7 @@ export function PrivPol() {
               <Shield className="h-6 w-6 text-red-500" /> 3. Data Protection
             </h2>
             <p className="text-gray-300">
-              We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
+              We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. Our practices follow industry standards including <a href="https://www.ftc.gov/business-guidance/privacy-security" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">FTC privacy guidelines</a>.
             </p>
           </div>
 

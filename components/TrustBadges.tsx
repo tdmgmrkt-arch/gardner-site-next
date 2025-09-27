@@ -1,4 +1,5 @@
 import { Star, Clock, Shield, Award } from "lucide-react";
+import Link from "next/link";
 
 export function TrustBadges() {
   const badges = [

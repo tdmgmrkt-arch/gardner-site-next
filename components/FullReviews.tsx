@@ -1,6 +1,7 @@
 import { SchedulerModal } from "./SchedulerModal";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { 
   Star, 
@@ -233,7 +234,7 @@ export function FullReviews() {
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Read authentic reviews from satisfied customers throughout Riverside County who trust Gardner Plumbing for all their plumbing needs.
+                Read authentic reviews from satisfied customers throughout Riverside County who trust Gardner Plumbing for all their <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing needs</Link>.
               </p>
 
               {/* CTA Buttons */}
@@ -538,7 +539,7 @@ export function FullReviews() {
               Real Stories from <span className="text-gradient bg-gradient-to-r from-green-400 to-blue-600 bg-clip-text text-transparent">Real Customers</span>
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
-              Read authentic reviews from homeowners throughout Riverside County who have experienced our exceptional plumbing services firsthand.
+              Read authentic reviews from homeowners throughout Riverside County who have experienced our exceptional <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing services</Link> firsthand.
             </p>
           </div>
 

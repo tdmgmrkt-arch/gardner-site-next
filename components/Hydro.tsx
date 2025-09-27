@@ -2,6 +2,7 @@
 
 import { SchedulerModal } from "./SchedulerModal";
 import { useState } from "react";
+import Link from "next/link";
 import { Modal } from "./Modal";
 import Image from "next/image";
 import { LeadForm } from "./LeadForm";

@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { 
@@ -185,7 +186,7 @@ export function ServicesFull() {
                   Professional <span className="text-white">Plumbing</span> <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Services</span>
                 </h1>
                 <p className="text-lg text-gray-300 leading-relaxed max-w-xl">
-                  From routine maintenance to emergency repairs, Gardner Plumbing Co. provides comprehensive plumbing solutions for homes and businesses throughout Temecula, Murrieta, Perris, Menifee, Canyon Lake, Lake Elsinore, Corona, Moreno Valley, Riverside, and surrounding Riverside County communities.
+                  From routine maintenance to <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency repairs</Link>, Gardner Plumbing Co. provides comprehensive plumbing solutions for homes and businesses throughout Temecula, Murrieta, Perris, Menifee, Canyon Lake, Lake Elsinore, Corona, Moreno Valley, Riverside, and surrounding Riverside County communities.
                 </p>
               </div>
               

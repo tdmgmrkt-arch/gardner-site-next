@@ -3,6 +3,7 @@
 
 import { SchedulerModal } from "./SchedulerModal";
 import { useState } from "react";
+import Link from "next/link";
 import { Modal } from "./Modal";
 import Image from "next/image";
 import { LeadForm } from "./LeadForm";
@@ -214,7 +215,7 @@ const emergencyReasons = [
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Reliable solutions for sewer line backups, septic tank maintenance, and drain cleaning throughout Riverside County.
+                Reliable solutions for sewer line backups, septic tank maintenance, and <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">drain cleaning</Link> throughout Riverside County.
               </p>
 
               {/* Key Benefits */}
@@ -781,7 +782,7 @@ const emergencyReasons = [
               </h2>
               
               <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                Don't let a sewer backup or septic failure cause major damage. We provide 24/7 emergency services throughout Riverside County with rapid response times.
+                Don't let a sewer backup or septic failure cause major damage. We provide <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency services</Link> throughout Riverside County with rapid response times.
               </p>
 
               <div className="mb-8">
@@ -863,7 +864,7 @@ const emergencyReasons = [
                 Need Professional <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Sewer & Septic</span> Service?
               </h2>
               <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
-                Three decades of trusted service. Contact us for expert sewer and septic solutions today.
+                Three decades of trusted service. Contact us for expert sewer and septic solutions today. Learn more about <a href="https://www.epa.gov/septic" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">EPA septic system standards</a>.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">

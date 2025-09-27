@@ -99,7 +99,7 @@ export function Blog() {
             </h1>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Your trusted resource for plumbing advice, maintenance tips, and the
-              latest in home water management from the experts at Gardner Plumbing Co.
+              latest in home water management from the experts at <Link href="/about-us" className="text-red-400 hover:text-red-300 underline">Gardner Plumbing Co</Link>. Our content follows <a href="https://www.phccweb.org/consumers" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry best practices</a>.
             </p>
           </div>
 

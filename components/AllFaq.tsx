@@ -9,6 +9,7 @@ import {
 import { HelpCircle, Phone, Search } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 // --- Comprehensive FAQ Data Structure ---
@@ -182,7 +183,7 @@ export function AllFaq() {
               Frequently Asked <span className="text-gradient bg-gradient-to-r from-blue-400 to-red-600 bg-clip-text text-transparent">Questions</span>
             </h2>
             <p className="text-sm sm:text-base lg:text-[16px] text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-              Find answers to common questions about our plumbing services, pricing, and policies. If you don't find your answer here, please don't hesitate to contact us.
+              Find answers to common questions about our <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing services</Link>, pricing, and policies. If you don't find your answer here, please don't hesitate to <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact us</Link>.
             </p>
           </div>
 
@@ -255,7 +256,7 @@ export function AllFaq() {
           <div className="text-center animate-fade-in">
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">Still Have Questions?</h3>
               <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                Our friendly team is ready to provide the answers you need. Contact us today for expert advice or to schedule your service.
+                Our friendly team is ready to provide the answers you need. Contact us today for expert advice or to schedule your <Link href="/services" className="text-red-400 hover:text-red-300 underline">service</Link>.
               </p>
               <a href="/contact-us">
                 <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">

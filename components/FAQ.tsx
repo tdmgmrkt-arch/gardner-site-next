@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
+import Link from "next/link";
 import { HelpCircle, ArrowRight, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -159,25 +160,26 @@ export function FAQ() {
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">Have More Questions?</h3>
             </div>
             <p className="text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto text-sm sm:text-base">
-              Can't find what you're looking for? Our comprehensive FAQ section has additional answers, or contact our friendly team directly for personalized assistance.
+              Can't find what you're looking for? Our comprehensive FAQ section has additional answers, or <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our friendly team</Link> directly for personalized assistance. We follow <a href="https://www.cslb.ca.gov/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">California licensing standards</a>.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center">
-              <a href = "/frequently-asked-questions">
+              <Link href="/frequently-asked-questions">
               <Button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-6 sm:px-8 py-3 sm:py-3 lg:py-4 transition-all duration-300 rounded-lg sm:rounded-xl shadow-lg border border-blue-400/20 text-sm sm:text-base group">
                 <span className="flex items-center justify-center gap-2 sm:gap-3">
                   <HelpCircle className="h-4 w-4 sm:h-4 sm:w-4 lg:h-5 lg:w-5 group-hover:scale-110 transition-transform duration-300" />
                   View Full FAQ
                 </span>
               </Button>
-              </a>
-              <a href = "/reviews">
+              </Link>
+            
+            <Link href="/contact-us">
               <Button className="w-full sm:w-auto bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-6 sm:px-8 py-3 sm:py-3 lg:py-4 transition-all duration-300 rounded-lg sm:rounded-xl shadow-lg border border-red-400/20 text-sm sm:text-base group">
                 <span className="flex items-center justify-center gap-2 sm:gap-3">
                   <Phone className="h-4 w-4 sm:h-4 sm:w-4 lg:h-5 lg:w-5 group-hover:scale-110 transition-transform duration-300" />
                   Contact Us
                 </span>
               </Button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

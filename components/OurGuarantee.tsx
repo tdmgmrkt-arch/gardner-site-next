@@ -2,6 +2,7 @@
 
 import React, { FC, ReactNode } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Wrench,
   ArrowRight,
@@ -129,7 +130,7 @@ export function OurGuarantee() {
                 Guarantee
               </h1>
               <p className="text-xl text-gray-300 mb-8 max-w-xl">
-                We're not just providing plumbing services; we're building a
+                We're not just providing <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing services</Link>; we're building a
                 relationship based on trust. Our guarantee is our promise to
                 deliver exceptional quality and stand behind our work, every
                 time.
@@ -186,8 +187,8 @@ export function OurGuarantee() {
             </h2>
             <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
               Our guarantee is built on four key promises to ensure you have the
-              best possible experience when you choose us for your plumbing
-              needs.
+              best possible experience when you choose us for your <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing
+              needs</Link>.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16 animate-slide-up">

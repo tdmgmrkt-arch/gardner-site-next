@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 import { MapPin, Phone, CheckCircle } from "lucide-react";
 import Image from "next/image";
 
@@ -49,7 +50,7 @@ export default function ServiceAreas() {
               </span>
             </h2>
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-6 sm:mb-8">
-              Gardner Plumbing Co. provides comprehensive plumbing services throughout Riverside County and surrounding areas.
+              Gardner Plumbing Co. provides comprehensive <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing services</Link> throughout Riverside County and surrounding areas.
             </p>
 
             {/* Cities */}

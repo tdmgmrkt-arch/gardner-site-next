@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import {
@@ -125,7 +126,7 @@ export function BackflowPrevention() {
                 Certified <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Backflow Prevention</span> Services
               </h1>
               <p className="text-xl text-gray-300 mb-8 max-w-xl">
-                Protect your water supply and stay compliant with local regulations. We provide certified backflow testing, repairs, and installations for commercial properties.
+                Protect your water supply and stay compliant with local regulations. We provide certified backflow testing, repairs, and installations for <Link href="/services/commercial-plumbing" className="text-red-400 hover:text-red-300 underline">commercial properties</Link>. Our services meet <a href="https://www.awwa.org/Resources-Tools/Resource-Topics/Backflow-Prevention" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">AWWA standards</a>.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="tel:9512464337">
@@ -133,11 +134,11 @@ export function BackflowPrevention() {
                     <span className="flex items-center gap-3"><Phone className="h-5 w-5" />(951) 246-4337</span>
                   </Button>
                 </a>
-                <a href="/contact-us">
+                <Link href="/contact-us">
                   <Button size="lg" variant="outline" className="border-2 border-blue/60 text-black hover:bg-black hover:text-white px-8 py-4 rounded-xl">
                     <span className="flex items-center gap-3"><Calendar className="h-5 w-5" />Schedule a Test</span>
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="relative group animate-slide-up">

@@ -2,6 +2,7 @@
 
 import { SchedulerModal } from "./SchedulerModal";
 import { useState } from "react";
+import Link from "next/link";
 import { Modal } from "./Modal";
 import Image from "next/image";
 import { LeadForm } from "./LeadForm";
@@ -50,7 +51,7 @@ const cityLinks: Record<string, string> = {
   Wildomar: "https://cityofwildomar.org",
 };
 
-export function WHservice() {
+export function WHService() {
 const [isModalOpen, setIsModalOpen] = useState(false);
 
 const emergencyReasons = [
@@ -241,7 +242,7 @@ const services = [
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Professional water heater installation and repair throughout Riverside County. Same-day service available with 30+ years of experience serving all brands and models.
+                Professional water heater installation and repair throughout Riverside County. Same-day service available with 30+ years of experience serving all brands and models. Our installations meet <a href="https://www.energy.gov/energysaver/water-heating" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">Energy Star efficiency standards</a>.
               </p>
 
               {/* Key Benefits */}
@@ -383,7 +384,7 @@ const services = [
               Complete <span className="text-gradient bg-gradient-to-r from-blue-400 to-green-600 bg-clip-text text-transparent">Water Heater</span> Solutions
             </h2>
             <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-              From new installations to emergency repairs, our experienced technicians provide comprehensive water heater services for all brands and models.
+              From new installations to <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency repairs</Link>, our experienced technicians provide comprehensive water heater services for all brands and models.
             </p>
           </div>
 
@@ -536,7 +537,7 @@ const services = [
               </h2>
               
               <p className="text-lg text-gray-300 mb-8 leading-relaxed text-[16px]">
-                With over three decades of experience serving Riverside County, we've installed and repaired thousands of water heaters and earned our reputation as the area's most reliable water heater professionals.
+                With over three decades of experience serving <Link href="/about-us" className="text-red-400 hover:text-red-300 underline">Riverside County</Link>, we've installed and repaired thousands of water heaters and earned our reputation as the area's most reliable water heater professionals.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -770,25 +771,23 @@ const services = [
                 Can’t find what you’re looking for? Our water heater repair and installation experts are standing by to answer your questions and schedule your professional service today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-                <a href="/contact-us" className="w-full sm:w-auto">
-                <a href = "/frequently-asked-questions">
+                <Link href="/frequently-asked-questions">
                 <Button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 sm:py-4 transition-all duration-300 rounded-xl shadow-lg border border-blue-400/20 group">
                   <span className="flex items-center justify-center gap-3">
                     <HelpCircle className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
                     View Full FAQ
                   </span>
                 </Button>
-                </a>
-                </a>
+                </Link>
 
-                <a href="/contact-us" className="w-full sm:w-auto">
+                <Link href="/contact-us" className="w-full sm:w-auto">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-3 sm:py-4 transition-all duration-300 rounded-xl shadow-lg border border-red-400/20 group">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
                     Contact Us
                   </span>
                 </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

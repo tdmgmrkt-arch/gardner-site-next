@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import {
@@ -189,7 +190,7 @@ export function Plumbingcommercial() {
               </h1>
 
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                From design/build to urgent repairs and maintenance, we keep your facility compliant and operational with minimal downtime.
+                From design/build to <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">urgent repairs</Link> and maintenance, we keep your facility compliant and operational with minimal downtime. Our work follows <a href="https://www.ibc-codes.org/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">IBC standards</a>.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">

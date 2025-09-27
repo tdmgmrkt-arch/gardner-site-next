@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader } from "./ui/card";
+import Link from "next/link";
 import { Input } from "./ui/input";
 import Image from "next/image";
 import { Label } from "./ui/label";
@@ -112,7 +113,7 @@ export function MaintenanceAgreement() {
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Secure your home's future with comprehensive plumbing maintenance agreements that provide numerous benefits and peace of mind for homeowners.
+                Secure your home's future with comprehensive plumbing maintenance agreements that provide numerous benefits and peace of mind for homeowners. View our complete <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing services</Link>.
               </p>
 
               {/* Key Benefits */}
@@ -250,7 +251,7 @@ export function MaintenanceAgreement() {
               Complete <span className="text-gradient bg-gradient-to-r from-blue-400 to-green-600 bg-clip-text text-transparent">Maintenance</span> Programs
             </h2>
             <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-              Regular maintenance is key to preventing major plumbing issues before they arise. Our experienced plumbers conduct thorough inspections and routine maintenance, identifying and addressing minor problems early.
+              Regular maintenance is key to preventing major plumbing issues before they arise. Our experienced plumbers conduct thorough inspections and routine maintenance, identifying and addressing minor problems early. Learn about <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency services</Link> when you need them.
             </p>
           </div>
 
@@ -570,7 +571,7 @@ export function MaintenanceAgreement() {
               </h2>
               
               <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                Investing in a plumbing maintenance agreement with Gardner Plumbing Co. is a wise decision for any homeowner. From preventing costly repairs and extending the lifespan of your plumbing fixtures to improving water quality and ensuring peace of mind, the benefits are clear.
+                Investing in a plumbing maintenance agreement with Gardner Plumbing Co. is a wise decision for any homeowner. From preventing costly repairs and extending the lifespan of your plumbing fixtures to improving water quality and ensuring peace of mind, the benefits are clear. Professional standards follow <a href="https://www.phccweb.org" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">PHCC industry guidelines</a>.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">

@@ -3,6 +3,7 @@
 
 import { SchedulerModal } from "./SchedulerModal";
 import { useState } from "react";
+import Link from "next/link";
 import { Modal } from "./Modal";
 import Image from "next/image";
 import { LeadForm } from "./LeadForm";
@@ -164,7 +165,7 @@ const emergencyReasons = [
                 Emergency <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Sewer & Drain</span> Backup
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                24/7 emergency service for hazardous sewer backups. We clear the line, clean the mess, and restore safety to your home.
+                24/7 <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency service</Link> for hazardous sewer backups. We clear the line, clean the mess, and restore safety to your home. Our cleanup follows <a href="https://www.epa.gov/mold/sewage-cleanup" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">EPA guidelines</a>.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[{ icon: Clock, text: "24/7 Emergency" }, { icon: Shield, text: "Sanitization" }, { icon: Zap, text: "Hydro Jetting" }, { icon: Phone, text: "Immediate Dispatch" }].map((item, idx) => (

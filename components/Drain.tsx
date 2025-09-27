@@ -2,6 +2,7 @@
 
 import { SchedulerModal } from "./SchedulerModal";
 import { useState } from "react";
+import Link from "next/link";
 import { Modal } from "./Modal";
 import { LeadForm } from "./LeadForm";
 import Image from "next/image";
@@ -207,7 +208,7 @@ const services = [
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Fast, effective drain cleaning throughout Riverside County. Same-day service available with 30+ years of experience clearing even the toughest clogs.
+                Fast, effective drain cleaning throughout Riverside County. Same-day service available with 30+ years of experience clearing even the toughest clogs. Our methods comply with <a href="https://www.epa.gov/watersense" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">EPA WaterSense standards</a>.
               </p>
 
               {/* Key Benefits */}
@@ -308,14 +309,14 @@ const services = [
               </div>
 
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                <a href="tel:9512464337" className="w-full sm:w-auto">
+                <Link href="tel:9512464337" className="w-full sm:w-auto">
                 <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
                   <Phone className="h-5 w-5 text-red-100" />
                   <span className="text-white font-bold text-lg">
                     (951) 246-4337
                   </span>
                 </div>
-                </a>
+                </Link>
                 <span className="text-red-100 font-semibold text-sm sm:text-base">
                   24/7 Service Available
                 </span>
@@ -350,7 +351,7 @@ const services = [
               Complete <span className="text-gradient bg-gradient-to-r from-blue-400 to-green-600 bg-clip-text text-transparent">Drain Cleaning</span> Solutions
             </h2>
             <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-              From simple clogs to complex blockages, our experienced technicians use the latest equipment and techniques to restore your drains to perfect working condition.
+              From simple clogs to complex blockages, our experienced technicians use the latest equipment and techniques to restore your drains to perfect working condition. We also provide <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting services</Link> for thorough cleaning.
             </p>
           </div>
 
@@ -503,7 +504,7 @@ const services = [
               </h2>
               
               <p className="text-lg text-gray-300 mb-8 leading-relaxed text-[16px]">
-                With over three decades of experience serving Riverside County, we've cleared thousands of drains and earned our reputation as the area's most reliable plumbing professionals.
+                With over three decades of experience serving Riverside County, we've cleared thousands of drains and earned our reputation as the area's most reliable <Link href="/about-us" className="text-red-400 hover:text-red-300 underline">plumbing professionals</Link>.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -737,25 +738,25 @@ const services = [
                 <h3 className="text-2xl sm:text-3xl font-bold text-white">Have More Questions?</h3>
               </div>
               <p className="text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-                Can't find what you're looking for? Our drain cleaning and repair experts are standing by to answer your questions and schedule your professional drain cleaning service.
+                Can't find what you're looking for? Our drain cleaning and repair experts are standing by to answer your questions and schedule your professional drain cleaning service. Need immediate help? Visit our <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency service page</Link>.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-                <a href = "/frequently-asked-questions">
+                <Link href="/frequently-asked-questions">
                 <Button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 sm:py-4 transition-all duration-300 rounded-xl shadow-lg border border-blue-400/20 group">
                   <span className="flex items-center justify-center gap-3">
                     <HelpCircle className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
                     View Full FAQ
                   </span>
                 </Button>
-                </a>
-                <a href = "/contact-us">
+                </Link>
+                <Link href="/contact-us">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-3 sm:py-4 transition-all duration-300 rounded-xl shadow-lg border border-red-400/20 group">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
                     Contact Us
                   </span>
                 </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

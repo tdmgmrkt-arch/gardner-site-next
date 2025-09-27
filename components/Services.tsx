@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import {
@@ -67,59 +68,59 @@ export function Services() {
   ];
 
   const commercialServices: ServiceItem[] = [
-  {
-    icon: Building,
-    title: "Commercial Plumbing",
-    description:
-      "Professional plumbing solutions for businesses and commercial properties.",
-    features: [
-      "System Design",
-      "Maintenance Plans",
-      "Emergency Service",
-      "Code Compliance",
-    ],
-    link: "/services/commercial-plumbing",
-  },
-  {
-    icon: Wrench,
-    title: "Hydro-Jetting",
-    description:
-      "High-pressure water jetting for thorough pipe cleaning and blockage removal.",
-    features: [
-      "Eco-Friendly",
-      "Root Cutting",
-      "Grease Removal",
-      "Video Verification",
-    ],
-    link: "/services/hydro-jetting",
-  },
-  {
-    icon: Factory,
-    title: "Industrial Plumbing",
-    description:
-      "Heavy-duty plumbing solutions for factories, warehouses, and manufacturing facilities.",
-    features: [
-      "Process Piping",
-      "High-Capacity Systems",
-      "Regulatory Compliance",
-      "Preventive Maintenance",
-    ],
-    link: "/services/industrial-plumbing",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Backflow Prevention",
-    description:
-      "Installation and testing of backflow prevention devices to protect water supply safety.",
-    features: [
-      "Certified Testing",
-      "Device Installation",
-      "Annual Inspections",
-      "Code Compliance",
-    ],
-    link: "/services/backflow-prevention",
-  },
-];
+    {
+      icon: Building,
+      title: "Commercial Plumbing",
+      description:
+        "Professional plumbing solutions for businesses and commercial properties.",
+      features: [
+        "System Design",
+        "Maintenance Plans",
+        "Emergency Service",
+        "Code Compliance",
+      ],
+      link: "/services/commercial-plumbing",
+    },
+    {
+      icon: Wrench,
+      title: "Hydro-Jetting",
+      description:
+        "High-pressure water jetting for thorough pipe cleaning and blockage removal.",
+      features: [
+        "Eco-Friendly",
+        "Root Cutting",
+        "Grease Removal",
+        "Video Verification",
+      ],
+      link: "/services/hydro-jetting",
+    },
+    {
+      icon: Factory,
+      title: "Industrial Plumbing",
+      description:
+        "Heavy-duty plumbing solutions for factories, warehouses, and manufacturing facilities.",
+      features: [
+        "Process Piping",
+        "High-Capacity Systems",
+        "Regulatory Compliance",
+        "Preventive Maintenance",
+      ],
+      link: "/services/industrial-plumbing",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Backflow Prevention",
+      description:
+        "Installation and testing of backflow prevention devices to protect water supply safety.",
+      features: [
+        "Certified Testing",
+        "Device Installation",
+        "Annual Inspections",
+        "Code Compliance",
+      ],
+      link: "/services/backflow-prevention",
+    },
+  ];
 
   return (
     <section className="py-12 sm:py-16 lg:py-28 relative overflow-hidden">
@@ -167,9 +168,25 @@ export function Services() {
                 </span>
               </h2>
               <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-xl">
-                From routine maintenance to emergency repairs, Gardner Plumbing Co.
-                provides comprehensive plumbing solutions for homes and businesses throughout
-                Riverside County communities.
+                From routine maintenance to{" "}
+                <Link
+                  href="/services/emergency-service"
+                  className="text-red-400 hover:text-red-300 underline"
+                >
+                  emergency repairs
+                </Link>
+                , Gardner Plumbing Co. provides comprehensive plumbing solutions
+                for homes and businesses throughout Riverside County communities.
+                Our work follows{" "}
+                <Link
+                  href="https://www.phccweb.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 underline"
+                >
+                  professional plumbing standards
+                </Link>
+                .
               </p>
             </div>
 
@@ -194,8 +211,12 @@ export function Services() {
                       <Wrench className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                     </div>
                     <div>
-                      <div className="text-white font-bold text-xs sm:text-sm">Professional Fleet</div>
-                      <div className="text-gray-300 text-[10px] sm:text-xs">Ready to Serve</div>
+                      <div className="text-white font-bold text-xs sm:text-sm">
+                        Professional Fleet
+                      </div>
+                      <div className="text-gray-300 text-[10px] sm:text-xs">
+                        Ready to Serve
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -259,7 +280,7 @@ export function Services() {
 
                       <div className="relative z-10">
                         <CardHeader className="text-center pb-3 sm:pb-4 pt-6 sm:pt-8 flex-shrink-0">
-                          <a href={service.link} className="block focus:outline-none">
+                          <Link href={service.link} className="block focus:outline-none">
                             <div className="relative mb-4 sm:mb-6">
                               <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-red-600/30 to-red-500/30 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto group-hover:from-red-600 group-hover:to-red-500 transition-all duration-500 shadow-lg backdrop-blur-sm border border-red-500/20">
                                 <Icon className="h-7 w-7 sm:h-8 sm:w-8 lg:h-10 lg:w-10 text-red-400 group-hover:text-white transition-all duration-500" />
@@ -275,7 +296,7 @@ export function Services() {
                                 </span>
                               ))}
                             </h4>
-                          </a>
+                          </Link>
                         </CardHeader>
 
                         <CardContent className="px-4 sm:px-6 pb-6 sm:pb-8 flex flex-col flex-grow">
@@ -285,7 +306,10 @@ export function Services() {
 
                           <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 flex-grow">
                             {service.features.map((feature) => (
-                              <li key={feature} className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm group/item">
+                              <li
+                                key={feature}
+                                className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm group/item"
+                              >
                                 <div className="w-4 h-4 sm:w-5 sm:h-5 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-green-500/30 transition-colors duration-300">
                                   <CheckCircle className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-green-400 transition-transform duration-300" />
                                 </div>
@@ -296,14 +320,14 @@ export function Services() {
                             ))}
                           </ul>
 
-                          <a href={service.link}>
+                          <Link href={service.link}>
                             <Button className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 rounded-lg sm:rounded-xl py-2.5 sm:py-3 text-sm sm:text-base group/btn">
                               <span className="flex items-center justify-center gap-1.5 sm:gap-2">
                                 Learn More
                                 <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                               </span>
                             </Button>
-                          </a>
+                          </Link>
                         </CardContent>
                       </div>
                     </Card>
@@ -311,16 +335,15 @@ export function Services() {
                 })}
               </div>
               <div className="mt-10 flex justify-center">
-                <a href="/services">
+                <Link href="/services">
                   <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-2">
                       View All Services
                       <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                     </span>
                   </Button>
-                </a>
+                </Link>
               </div>
-
             </div>
           </div>
         </div>
@@ -379,19 +402,19 @@ export function Services() {
 
                       <CardContent className="relative z-10 p-6 sm:p-8 lg:p-10 flex flex-col flex-grow">
                         <div className="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left gap-4 sm:gap-6 flex-grow">
-                          <a href={service.link} className="relative block">
+                          <Link href={service.link} className="relative block">
                             <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 bg-gradient-to-br from-red-600/30 to-red-500/30 rounded-xl sm:rounded-2xl flex items-center justify-center group-hover:from-red-600 group-hover:to-red-500 transition-all duration-500 shadow-lg backdrop-blur-sm border border-red-500/20">
                               <Icon className="h-8 w-8 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-red-400 group-hover:text-white transition-all duration-500" />
                             </div>
                             <div className="absolute -inset-2 bg-gradient-to-r from-red-600 to-red-500 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-20 blur transition-opacity duration-500" />
-                          </a>
+                          </Link>
 
                           <div className="flex-1">
-                            <a href={service.link} className="no-underline">
+                            <Link href={service.link} className="no-underline">
                               <h4 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4 group-hover:text-red-100 transition-colors duration-300">
                                 {service.title}
                               </h4>
-                            </a>
+                            </Link>
                             <p className="text-gray-300 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg group-hover:text-gray-200 transition-colors duration-300">
                               {service.description}
                             </p>
@@ -412,15 +435,14 @@ export function Services() {
                               ))}
                             </ul>
 
-                            <a href={service.link} className="block">
-                              
+                            <Link href={service.link} className="block">
                               <Button className="w-full sm:w-auto bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 rounded-lg sm:rounded-xl py-2.5 sm:py-3 px-6 sm:px-8 text-sm sm:text-base group/btn">
                                 <span className="flex items-center justify-center gap-1.5 sm:gap-2">
                                   Learn More
                                   <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                                 </span>
                               </Button>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </CardContent>
@@ -430,7 +452,7 @@ export function Services() {
               </div>
               {/* Single Button under Commercial services grid */}
               <div className="mt-10 flex justify-center">
-                <a href="/services">
+                <Link href="/services">
                   <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 
                                     text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-2">
@@ -438,9 +460,8 @@ export function Services() {
                       <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                     </span>
                   </Button>
-                </a>
+                </Link>
               </div>
-
             </div>
           </div>
         </div>
@@ -449,7 +470,7 @@ export function Services() {
         <div className="mb-12 sm:mb-16 lg:mb-20 animate-slide-up">
           <div className="glassmorphism-dark rounded-2xl sm:rounded-3xl backdrop-blur-xl border border-white/10 shadow-luxury overflow-hidden hover-lift">
             {/* Banner with link to emergency page */}
-            <a
+            <Link
               href="/services/emergency-service"
               className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 block focus:outline-none"
               style={{
@@ -482,7 +503,7 @@ export function Services() {
                   24/7 Emergency Service
                 </h3>
               </div>
-            </a>
+            </Link>
 
             <div className="p-4 sm:p-6 lg:p-8">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-start">
@@ -492,7 +513,7 @@ export function Services() {
                     Always Available When You Need Us
                   </h4>
                   <div className="mb-4 sm:mb-6 flex justify-center lg:justify-start">
-                    <a href="/services/emergency-service" className="relative group block">
+                    <Link href="/services/emergency-service" className="relative group block">
                       <Image
                         src={professionalTechnician}
                         alt="Professional Gardner Plumbing Co. technician providing reliable emergency service"
@@ -501,9 +522,8 @@ export function Services() {
                         loading="lazy"
                         className="w-full max-w-xs mx-auto rounded-xl sm:rounded-2xl border border-gray-600/30 shadow-luxury group-hover:shadow-2xl transition-all duration-500"
                       />
-
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    </a>
+                    </Link>
                   </div>
                   <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
                     Plumbing emergencies don't wait for business hours. Our emergency team is
@@ -515,7 +535,7 @@ export function Services() {
                 {/* Middle column */}
                 <div className="flex flex-col order-3 lg:order-2">
                   <div className="mb-4 sm:mb-6 flex justify-center">
-                    <a href="/services/emergency-service" className="relative group block">
+                    <Link href="/services/emergency-service" className="relative group block">
                       <Image
                         src={gardnerTruck}
                         alt="Gardner Plumbing Co. service van ready for emergency calls"
@@ -524,18 +544,18 @@ export function Services() {
                         loading="lazy"
                         className="w-full max-w-sm mx-auto rounded-xl sm:rounded-2xl shadow-luxury group-hover:shadow-2xl transition-all duration-500"
                       />
-
-                    </a>
+                    </Link>
                   </div>
                   <div className="space-y-3 sm:space-y-4">
                     {[
                       { icon: Clock, title: "24/7 Availability", desc: "Day, night, weekends & holidays", link: "/emergency-service" },
-                      { icon: Shield, title: "Licensed & Insured", desc: "Full protection & peace of mind", href: "about-us" },
-                      { icon: CheckCircle, title: "Rapid Response", desc: "Fast arrival times guaranteed", href: "/emergency-service" },
-                      { icon: Wrench, title: "Fully Equipped Trucks", desc: "All tools & parts ready to go", href: "/about-us"},
+                      { icon: Shield, title: "Licensed & Insured", desc: "Full protection & peace of mind", link: "/about-us" },
+                      { icon: CheckCircle, title: "Rapid Response", desc: "Fast arrival times guaranteed", link: "/emergency-service" },
+                      { icon: Wrench, title: "Fully Equipped Trucks", desc: "All tools & parts ready to go", link: "/about-us"},
                     ].map((item, idx) => (
-                      <div
+                      <Link
                         key={idx}
+                        href={item.link}
                         className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 glassmorphism-dark rounded-lg sm:rounded-xl border border-white/10 hover:border-red-500/30 transition-all duration-300 group/item hover-lift"
                       >
                         <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-red-600/30 to-red-500/30 rounded-lg sm:rounded-xl flex items-center justify-center group-hover/item:from-red-600 group-hover/item:to-red-500 transition-all duration-300">
@@ -549,7 +569,7 @@ export function Services() {
                             {item.desc}
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -580,11 +600,15 @@ export function Services() {
                       }}
                     />
                     <div className="relative p-4 sm:p-6 text-center">
-                      <a href="tel:9512464337" aria-label="Call (951) 246-4337 for emergency service" className="block">
+                      <Link
+                        href="tel:9512464337"
+                        aria-label="Call (951) 246-4337 for emergency service"
+                        className="block"
+                      >
                         <div className="text-2xl sm:text-3xl font-bold text-white mb-2 drop-shadow-lg">
                           (951) 246-4337
                         </div>
-                      </a>
+                      </Link>
                       <div className="text-red-100 font-semibold mb-1 text-sm sm:text-base drop-shadow-sm">
                         Call Now for Emergency Service
                       </div>
@@ -595,7 +619,7 @@ export function Services() {
                   </div>
 
                   <div className="mb-4 sm:mb-6 flex justify-center">
-                    <a href="/services/emergency-service" className="relative group block">
+                    <Link href="/services/emergency-service" className="relative group block">
                       <Image
                         src={customerServiceRep}
                         alt="Gardner Plumbing Co. customer service representative ready to take your emergency call"
@@ -604,11 +628,10 @@ export function Services() {
                         loading="lazy"
                         className="w-full max-w-xs mx-auto rounded-xl sm:rounded-2xl border border-red-600/30 shadow-luxury group-hover:shadow-2xl transition-all duration-500"
                       />
-
-                    </a>
+                    </Link>
                   </div>
 
-                  <a href="tel:9512464337">
+                  <Link href="tel:9512464337">
                     <Button
                       size="lg"
                       className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-6 sm:px-8 py-3 sm:py-4 transition-all duration-300 mt-auto rounded-xl sm:rounded-2xl shadow-luxury border border-red-400/20 hover-lift group text-sm sm:text-base"
@@ -618,7 +641,7 @@ export function Services() {
                         Emergency Call Now
                       </span>
                     </Button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
