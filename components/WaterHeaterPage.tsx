@@ -51,7 +51,7 @@ const cityLinks: Record<string, string> = {
   Wildomar: "https://cityofwildomar.org",
 };
 
-export function WHService() {
+export function WaterHeaterPage() {
 const [isModalOpen, setIsModalOpen] = useState(false);
 
 const emergencyReasons = [
