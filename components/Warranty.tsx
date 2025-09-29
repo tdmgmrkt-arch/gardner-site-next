@@ -178,7 +178,7 @@ export function Warranty() {
               <p className="text-xl text-gray-300 mb-8 max-w-xl">
                 We stand behind our work. Every job is backed by a comprehensive
                 warranty on both workmanship and the high-quality parts we use,
-                giving you complete peace of mind. Our warranties meet <a href="https://www.contractorslicense.org/california/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">California contractor standards</a>.
+                giving you complete peace of mind. Our warranties meet <a href="https://www.cslb.ca.gov/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">California contractor standards</a>.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button

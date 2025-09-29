@@ -68,7 +68,7 @@ export const posts: Post[] = [
     <p>Before calling a plumber, you can try these homeowner-friendly checks. If you discover issues, <a href="/blog/how-to-find-a-water-leak" class="text-blue-400 hover:text-blue-300 underline">our leak detection guide</a> covers 8 ways to find water leaks throughout your home.</p>
 
     <h3 class="text-xl font-bold text-white mt-8 mb-4">Professional Leak Detection: What to Expect</h3>
-    <p>At Gardner Plumbing Co., we use advanced acoustic listening devices and infrared cameras to pinpoint leaks without destructive digging. For homes with aging pipes, consider <a href="/services/repiping" class="text-blue-400 hover:text-blue-300 underline">repiping services</a> to prevent recurring slab leaks and long-term damage.</p>
+    <p>At Gardner Plumbing Co., we use advanced acoustic listening devices and infrared cameras to pinpoint leaks without destructive digging. For homes with aging pipes, consider <a href="/services/piping-and-repiping" class="text-blue-400 hover:text-blue-300 underline">repiping services</a> to prevent recurring slab leaks and long-term damage.</p>
 
     <h3 class="text-2xl font-bold text-red-400 mt-10 mb-4">Protect Your Home — Schedule a Leak Inspection Today</h3>
     <p>Don’t wait for small leaks to become big disasters. If you suspect a hidden water leak in your Moreno Valley home, call the experts at Gardner Plumbing Co. for fast, non-invasive diagnostics and honest, upfront pricing.</p>
@@ -196,7 +196,7 @@ export const posts: Post[] = [
 
     <h3 class="text-xl font-bold text-white mt-8 mb-4">What to Consider Before Installing One</h3>
     <p><b>Hire a Licensed Plumber</b> – Proper installation is critical. <a href="/contact-us" class="text-blue-400 hover:text-blue-300 underline">Contact our Temecula plumbing team</a> to ensure your system is correctly sized and vented.</p>
-    <p><b>Address Hard Water</b> – Temecula is known for its hard water. Adding a <a href="/services/water-softeners" class="text-blue-400 hover:text-blue-300 underline">water softener system</a> alongside your tankless unit can protect it from scale buildup and extend its lifespan.</p>
+    <p><b>Address Hard Water</b> – Temecula is known for its hard water. Adding a <a href="/services/services/water-filtration" class="text-blue-400 hover:text-blue-300 underline">water softener system</a> alongside your tankless unit can protect it from scale buildup and extend its lifespan.</p>
 
     <h3 class="text-2xl font-bold text-red-400 mt-10 mb-4">Final Thoughts</h3>
     <p>If you’re considering an upgrade, a tankless water heater is one of the best investments for long-term savings and convenience. For more maintenance advice, read our <a href="/blog/how-to-protect-your-plumbing" class="text-blue-400 hover:text-blue-300 underline">plumbing protection tips</a> blog to keep your new system in top shape.</p>
@@ -258,7 +258,7 @@ export const posts: Post[] = [
     <p>Simple steps like routine <a href="/services/drain-cleaning" class="text-blue-400 hover:text-blue-300 underline">drain cleaning</a> and professional <a href="/services/leak-detection" class="text-blue-400 hover:text-blue-300 underline">leak detection</a> can prevent major issues. Preventative maintenance often saves homeowners thousands in repair costs over time.</p>
 
     <h3 class="text-xl font-bold text-white mt-8 mb-4">2. Know Your Shut-Off Valve</h3>
-    <p>Always know where your main water shut-off valve is located. In case of a burst pipe or sudden leak, shutting it off quickly can minimize <a href="/services/water-damage" class="text-blue-400 hover:text-blue-300 underline">water damage</a>. The <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/water-damage.html" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline">American Red Cross</a> recommends homeowners familiarize themselves with valve locations before an emergency occurs.</p>
+    <p>Always know where your main water shut-off valve is located. In case of a burst pipe or sudden leak, shutting it off quickly can minimize <a href="/services/water-damage" class="text-blue-400 hover:text-blue-300 underline">water damage</a>. The <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/disaster-cleanup.html" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline">American Red Cross</a> recommends homeowners familiarize themselves with valve locations before an emergency occurs.</p>
 
     <h3 class="text-xl font-bold text-white mt-8 mb-4">3. Schedule Annual Inspections</h3>
     <p>Older homes in Murrieta and Temecula benefit from a yearly <a href="/services/65-point-inspection" class="text-blue-400 hover:text-blue-300 underline">65-point plumbing inspection</a>. Inspections help uncover hidden leaks, corrosion, or outdated piping before they lead to bigger issues.</p>
@@ -334,7 +334,7 @@ export const posts: Post[] = [
     <p>Routine cleaning reduces the risk of backups that can cause flooding or sewer overflows. Many Murrieta homeowners pair it with <a href="/services/hydro-jetting" class="text-blue-400 hover:text-blue-300 underline">hydro jetting services</a> for a deep and effective clean.</p>
 
     <h3 class="text-xl font-bold text-white mt-8 mb-4">2. Protects Your Septic System</h3>
-    <p>Clogs that make it into your septic system can cause long-term damage. Regular drain maintenance works hand-in-hand with <a href="/services/sewer-and-septic" class="text-blue-400 hover:text-blue-300 underline">sewer and septic care</a> to keep everything running smoothly. Learn more from the <a href="https://www.epa.gov/septic/septic-systems-overview" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline">EPA’s Septic System Guide</a>.</p>
+    <p>Clogs that make it into your septic system can cause long-term damage. Regular drain maintenance works hand-in-hand with <a href="/services/sewer-and-septic" class="text-blue-400 hover:text-blue-300 underline">sewer and septic care</a> to keep everything running smoothly. Learn more from the <a href="https://www.epa.gov/septic" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline">EPA’s Septic System Guide</a>.</p>
 
     <h3 class="text-xl font-bold text-white mt-8 mb-4">3. Extends the Life of Your Plumbing</h3>
     <p>Build-up of grease, soap scum, and debris wears out pipes faster. Preventive cleaning and scheduled <a href="/services/65-point-inspection" class="text-blue-400 hover:text-blue-300 underline">65-point inspections</a> can extend the lifespan of your plumbing system.</p>

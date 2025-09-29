@@ -548,9 +548,9 @@ export function Services() {
                   </div>
                   <div className="space-y-3 sm:space-y-4">
                     {[
-                      { icon: Clock, title: "24/7 Availability", desc: "Day, night, weekends & holidays", link: "/emergency-service" },
+                      { icon: Clock, title: "24/7 Availability", desc: "Day, night, weekends & holidays", link: "services/emergency-service" },
                       { icon: Shield, title: "Licensed & Insured", desc: "Full protection & peace of mind", link: "/about-us" },
-                      { icon: CheckCircle, title: "Rapid Response", desc: "Fast arrival times guaranteed", link: "/emergency-service" },
+                      { icon: CheckCircle, title: "Rapid Response", desc: "Fast arrival times guaranteed", link: "services/emergency-service" },
                       { icon: Wrench, title: "Fully Equipped Trucks", desc: "All tools & parts ready to go", link: "/about-us"},
                     ].map((item, idx) => (
                       <Link

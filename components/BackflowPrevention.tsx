@@ -126,7 +126,7 @@ export function BackflowPrevention() {
                 Certified <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Backflow Prevention</span> Services
               </h1>
               <p className="text-xl text-gray-300 mb-8 max-w-xl">
-                Protect your water supply and stay compliant with local regulations. We provide certified backflow testing, repairs, and installations for <Link href="/services/commercial-plumbing" className="text-red-400 hover:text-red-300 underline">commercial properties</Link>. Our services meet <a href="https://www.awwa.org/Resources-Tools/Resource-Topics/Backflow-Prevention" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">AWWA standards</a>.
+                Protect your water supply and stay compliant with local regulations. We provide certified backflow testing, repairs, and installations for <Link href="/services/commercial-plumbing" className="text-red-400 hover:text-red-300 underline">commercial properties</Link>. Our services meet <a href="https://www.awwa.org/policy-statement/cross-connection" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">AWWA standards</a>.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="tel:9512464337">
