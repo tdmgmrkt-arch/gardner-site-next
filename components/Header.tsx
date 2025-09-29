@@ -15,8 +15,10 @@ export function Header() {
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
    const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+   const [isMobileEmergencyOpen, setIsMobileEmergencyOpen] = useState(false);
 
-  // ---------- Link maps ----------
+
+// ---------- Link maps ----------
   const serviceLinks: Record<string, string> = {
     "Drain Cleaning": "/services/drain-cleaning",
     "Leak Detection": "/services/leak-detection",
@@ -28,7 +30,11 @@ export function Header() {
     "Hydro Jetting": "/services/hydro-jetting",
     "Sewer & Septic": "/services/sewer-and-septic",
     "Maintenance Plans": "/services/maintenance-plans",
-    "Emergency Service": "/services/emergency-service",
+    // --- CHANGE START ---
+    "Industrial Plumbing": "/services/industrial-plumbing", // ADDED
+    "Backflow Prevention": "/services/backflow-prevention", // ADDED
+    // "Emergency Service": "/services/emergency-service", // REMOVED
+    // --- CHANGE END ---
     "Moen Flo Installation" : "/services/moen-flo-installation",
     "System Inspections": "/services/65-point-inspection",
     "Gas Lines": "/services/gas-lines",
@@ -55,7 +61,11 @@ export function Header() {
     "Hydro Jetting": "/services/hydro-jetting",
     "Sewer & Septic": "/services/sewer-and-septic",
     "Maintenance Plans": "/services/maintenance-plans",
-    "Emergency Service": "/services/emergency-service",
+    // --- CHANGE START ---
+    "Industrial Plumbing": "/services/industrial-plumbing", // ADDED
+    "Backflow Prevention": "/services/backflow-prevention", // ADDED
+    // "Emergency Service": "/services/emergency-service", // REMOVED
+    // --- CHANGE END ---
     "Moen Flo Installation" : "/services/moen-flo-installation",
     "System Inspections": "/services/65-point-inspection",
     "Gas Lines": "/services/gas-lines",
@@ -64,10 +74,14 @@ export function Header() {
 
   const commercialLinks: Record<string, string> = {
     "Commercial Plumbing": "/services/commercial-plumbing",
+    // --- CHANGE START ---
+    "Industrial Plumbing": "/services/industrial-plumbing", // ADDED
+    "Backflow Prevention": "/services/backflow-prevention", // ADDED
+    // "Emergency Service": "/services/emergency-service", // REMOVED
+    // --- CHANGE END ---
     "Hydro Jetting": "/services/hydro-jetting",
     "Sewer & Septic": "/services/sewer-and-septic",
     "Maintenance Plans": "/services/maintenance-plans",
-    "Emergency Service": "/services/emergency-service",
     "System Inspections": "/services/65-point-inspection",
   };
 
@@ -218,15 +232,15 @@ export function Header() {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-  href="/services"
-  className="flex items-center gap-1 text-white hover:text-red-400 font-medium transition-all duration-300 hover-lift drop-shadow-sm py-4 px-1"
->
-  Services
-  <ChevronDown
-    className="h-4 w-4 transition-transform duration-300"
-    style={{ transform: isServicesOpen ? "rotate(180deg)" : "rotate(0deg)" }}
-  />
-</a>
+                    href="/services"
+                    className="flex items-center gap-1 text-white hover:text-red-400 font-medium transition-all duration-300 hover-lift drop-shadow-sm py-4 px-1"
+                  >
+                    Services
+                    <ChevronDown
+                      className="h-4 w-4 transition-transform duration-300"
+                      style={{ transform: isServicesOpen ? "rotate(180deg)" : "rotate(0deg)" }}
+                    />
+                  </a>
 
                   {isServicesOpen && (
                     <>
@@ -265,11 +279,19 @@ export function Header() {
                         <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 pt-4 pb-8">
                           <div className="max-w-7xl mx-auto">
                             <div className="grid grid-cols-12 gap-8">
+
                               {/* Branding column */}
-                              <div className="col-span-4">
-                                <div className="glassmorphism-dark rounded-2xl p-6 sm:p-8 h-full border border-white/10 shadow-luxury hover-lift transition-all duration-500">
-                                  <img src={logo} alt="Gardner Plumbing Co." className="h-16 w-auto mb-4 drop-shadow-lg" />
-                                  <h3 className="text-xl font-bold text-white mb-3 drop-shadow-sm">Gardner Plumbing Co.</h3>
+                            <div className="col-span-4">
+                              <div className="glassmorphism-dark rounded-2xl p-6 sm:p-8 h-full border border-white/10 shadow-luxury hover-lift transition-all duration-500 flex flex-col justify-between">
+                                <div>
+                                  <img
+                                    src={logo}
+                                    alt="Gardner Plumbing Co."
+                                    className="h-16 w-auto mb-4 drop-shadow-lg"
+                                  />
+                                  <h3 className="text-xl font-bold text-white mb-3 drop-shadow-sm">
+                                    Gardner Plumbing Co.
+                                  </h3>
 
                                   {/* Business Hours */}
                                   <div className="mb-6">
@@ -277,25 +299,18 @@ export function Header() {
                                       Business Hours
                                     </h4>
                                     <div className="space-y-1.5">
-                                      {/* Office Hours */}
                                       <div className="flex justify-between items-center">
                                         <span className="text-gray-300 text-sm">Office (Mon - Fri)</span>
                                         <span className="text-gray-400 text-sm">8:00 AM - 4:00 PM</span>
                                       </div>
-
-                                      {/* Service Hours */}
                                       <div className="flex justify-between items-center">
                                         <span className="text-gray-300 text-sm">Service (Mon - Fri)</span>
                                         <span className="text-gray-400 text-sm">8:00 AM - 5:00 PM</span>
                                       </div>
-
-                                      {/* Weekend */}
                                       <div className="flex justify-between items-center">
                                         <span className="text-gray-300 text-sm">Saturday - Sunday</span>
                                         <span className="text-gray-400 text-sm">Emergency Only</span>
                                       </div>
-
-                                      {/* Emergency */}
                                       <div className="pt-1.5 border-t border-gray-600">
                                         <div className="flex justify-between items-center">
                                           <span className="text-red-400 text-sm font-medium">Emergency</span>
@@ -304,7 +319,8 @@ export function Header() {
                                       </div>
                                     </div>
                                   </div>
-                                                                    {/* Trust indicators */}
+
+                                  {/* Trust indicators */}
                                   <div className="space-y-3 mb-6">
                                     <a href="/services/emergency-service" className="flex items-center gap-3 group hover-lift">
                                       <div className="w-8 h-8 bg-gradient-to-br from-red-600 to-red-500 rounded-full flex items-center justify-center shadow-lg">
@@ -325,15 +341,17 @@ export function Header() {
                                       <span className="text-gray-300 text-sm font-medium drop-shadow-sm">4.9★ Customer Rating</span>
                                     </a>
                                   </div>
-
-                                  <a href="tel:9512464337">
-                                    <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-6 py-3 w-full shadow-lg hover:shadow-xl transition-all duration-300 hover-lift rounded-xl border border-red-400/20">
-                                      <Phone className="mr-2 h-4 w-4" />
-                                      Call Now
-                                    </Button>
-                                  </a>
                                 </div>
+
+                                {/* CTA at bottom */}
+                                <a href="tel:9512464337">
+                                  <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-6 py-3 w-full shadow-lg hover:shadow-xl transition-all duration-300 hover-lift rounded-xl border border-red-400/20">
+                                    <Phone className="mr-2 h-4 w-4" />
+                                    Call Now
+                                  </Button>
+                                </a>
                               </div>
+                            </div>
 
                           
                               {/* Services grid */}
@@ -347,20 +365,29 @@ export function Header() {
                                     </a>
                                     <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
                                       {[
+                                         // 🔴 Highest Priority
+                                        { name: "Emergency Service", desc: "24/7 response" },
                                         { name: "Drain Cleaning", desc: "Professional clearing" },
-                                        { name: "Commercial Plumbing", desc: "Business solutions" },
                                         { name: "Leak Detection", desc: "Quick detection & fix" },
                                         { name: "Water Heaters", desc: "Install & service" },
-                                        { name: "Hydro Jetting", desc: "High-pressure cleaning" },
+
+                                        // 🟠 Core Residential Services
                                         { name: "Toilet Repair", desc: "Complete solutions" },
-                                        { name: "Piping & Repiping", desc: "New & replacement" },
                                         { name: "Garbage Disposals", desc: "Faucets & sinks" },
-                                        { name: "Sewer & Septic", desc: "Main line service" },
-                                        { name: "Maintenance Plans", desc: "Preventive care" },
+                                        { name: "Piping & Repiping", desc: "New & replacement" },
                                         { name: "Water Filtration", desc: "Pure Water Solutions" },
+
+                                        // 🟡 Heavy-Duty / Business Services
+                                        { name: "Commercial Plumbing", desc: "Business solutions" },
+                                        { name: "Industrial Plumbing", desc: "Heavy-duty solutions" }, // ADDED
+                                        { name: "Hydro Jetting", desc: "High-pressure cleaning" },
+                                        { name: "Sewer & Septic", desc: "Main line service" },
+
+                                        // 🟢 Preventive / Specialty
+                                        { name: "Backflow Prevention", desc: "Protecting water supply" },
+                                        { name: "Maintenance Plans", desc: "Preventive care" },
                                         { name: "System Inspections", desc: "Complete checks" },
-                                        { name: "Moen Flo Installation", desc: "Smart Water Monitors"},
-                                        { name: "Emergency Service", desc: "24/7 response" },
+                                        { name: "Moen Flo Installation", desc: "Smart Water Monitors" },
                                       ].map((service) => (
                                         <li key={service.name}>
                                           <a
@@ -380,40 +407,44 @@ export function Header() {
                                   </div>
 
                                   {/* Emergency */}
-                                  <div className="col-span-4 glassmorphism-dark rounded-2xl p-6 shadow-luxury hover-lift transition-all duration-500 border border-white/10">
-                                    <a href="/services/emergency-service">
-                                      <h4 className="text-lg font-bold text-white mb-4 pb-3 border-b-2 border-red-600 drop-shadow-sm hover:text-red-400 transition-colors duration-300">
-                                        Emergency
-                                      </h4>
-                                    </a>
-                                    <ul className="grid grid-cols-2 gap-y-3">
-                                      {[
-                                        { name: "24/7 Service", desc: "Always available" },
-                                        { name: "Burst Pipes", desc: "Immediate response" },
-                                        { name: "Water Damage", desc: "Prevention & repair" },
-                                        { name: "Gas Lines", desc: "Safe service" },
-                                        { name: "Backups", desc: "Sewer & drain" },
-                                        { name: "No Hot Water", desc: "Water heater" },
-                                      ].map((service) => (
-                                        <li key={service.name}>
-                                          <a
-                                            href={emergencyLinks[service.name] ?? "/placeholder"}
-                                            className="group block p-2 rounded-lg hover:bg-white/5 transition-all duration-300"
-                                          >
-                                            <div className="nav-dropdown-service-name font-medium transition-colors duration-300 drop-shadow-sm">
-                                              {service.name}
-                                            </div>
-                                            <div className="nav-dropdown-service-desc text-xs transition-colors duration-300">
-                                              {service.desc}
-                                            </div>
-                                          </a>
-                                        </li>
-                                      ))}
-                                    </ul>
+                                  <div className="col-span-4 glassmorphism-dark rounded-2xl p-6 shadow-luxury hover-lift transition-all duration-500 border border-white/10 flex flex-col justify-between h-full">
+                                    <div>
+                                      <a href="/services/emergency-service">
+                                        <h4 className="text-lg font-bold text-white mb-4 pb-3 border-b-2 border-red-600 drop-shadow-sm hover:text-red-400 transition-colors duration-300">
+                                          Emergency
+                                        </h4>
+                                      </a>
+                                      <ul className="grid grid-cols-2 gap-y-3">
+                                        {[
+                                          { name: "24/7 Service", desc: "Always available" },
+                                          { name: "Burst Pipes", desc: "Immediate response" },
+                                          { name: "Water Damage", desc: "Prevention & repair" },
+                                          { name: "Gas Lines", desc: "Safe service" },
+                                          { name: "Backups", desc: "Sewer & drain" },
+                                          { name: "No Hot Water", desc: "Water heater" },
+                                        ].map((service) => (
+                                          <li key={service.name}>
+                                            <a
+                                              href={emergencyLinks[service.name] ?? "/placeholder"}
+                                              className="group block p-2 rounded-lg hover:bg-white/5 transition-all duration-300"
+                                            >
+                                              <div className="nav-dropdown-service-name hover:text-red-500 font-medium transition-colors duration-300 drop-shadow-sm">
+                                                {service.name}
+                                              </div>
+                                              <div className="nav-dropdown-service-desc text-xs text-gray-400 transition-colors duration-300 hover:text-gray-200">
+                                                {service.desc}
+                                              </div>
+
+                                            </a>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                  </div>
+
 
                                     {/* Emergency CTA */}
                                     <div
-                                      className="mt-40 text-center relative overflow-hidden rounded-xl p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift"
+                                      className="mt-6 text-center relative overflow-hidden rounded-xl p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift"
                                       style={{
                                         background: `linear-gradient(135deg, rgba(139, 0, 0, 0.9) 0%, rgba(220, 38, 38, 0.9) 100%)`,
                                         boxShadow: `
@@ -545,7 +576,7 @@ export function Header() {
                               </button>
 
                               {isMobileServicesOpen && (
-                                <ul className="mt-3 grid grid-cols-2 gap-2 bg-[#111827] p-1rounded-lg border border-white/10 shadow-md">
+                                <ul className="mt-3 grid grid-cols-2 gap-2 bg-[#111827] p-1 rounded-lg border border-white/10 shadow-md">
                                   {Object.entries(serviceLinks).map(([name, href]) => (
                                     <li key={name}>
                                       <a
@@ -575,6 +606,40 @@ export function Header() {
                           )}
                         </div>
                       ))}
+
+                      {/* Emergency Services */}
+                      <div>
+                        <button
+                          onClick={() => setIsMobileEmergencyOpen((prev) => !prev)}
+                          className="w-full flex justify-between items-center text-left text-base font-medium text-white hover:text-red-400 px-4 py-3 rounded-lg bg-[#1f2937] border border-white/10 shadow-sm transition"
+                        >
+                          <span className="flex items-center gap-2">
+                            <Clock className="h-5 w-5 text-red-400" />
+                            Emergency
+                          </span>
+                          <ChevronDown
+                            className={`h-5 w-5 transition-transform duration-300 ${
+                              isMobileEmergencyOpen ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+
+                        {isMobileEmergencyOpen && (
+                          <ul className="mt-3 grid grid-cols-1 gap-2 bg-[#111827] p-2 rounded-lg border border-white/10 shadow-md">
+                            {Object.entries(emergencyLinks).map(([name, href]) => (
+                              <li key={name}>
+                                <a
+                                  href={href}
+                                  onClick={() => setIsMenuOpen(false)}
+                                  className="block px-3 py-2 text-sm font-medium text-gray-200 rounded-md bg-gradient-to-br from-[#1f2937] to-[#111827] border border-white/5 hover:from-red-600 hover:to-red-500 hover:text-white transition-all duration-300"
+                                >
+                                  {name}
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
                     </nav>
 
                     {/* Footer with Socials + CTA */}

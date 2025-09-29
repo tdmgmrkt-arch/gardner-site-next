@@ -143,7 +143,7 @@ export function Emergency() {
               </h1>
 
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Burst pipe? Sewage backup? No hot water? Get rapid, expert help anywhere in Riverside County — day or night. Our <Link href="/services" className="text-red-400 hover:text-red-300 underline">emergency services</Link> follow <a href="https://www.phccweb.org/emergency-response" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry protocols</a>.
+                Burst pipe? Sewage backup? No hot water? Get rapid, expert help anywhere in Riverside County — day or night. Our <Link href="/services" className="text-red-400 hover:text-red-300 underline">emergency services</Link> follow <a href="https://community.phccweb.org/preparedness/home" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry protocols</a>.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">

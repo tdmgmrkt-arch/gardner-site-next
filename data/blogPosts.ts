@@ -196,7 +196,7 @@ export const posts: Post[] = [
 
     <h3 class="text-xl font-bold text-white mt-8 mb-4">What to Consider Before Installing One</h3>
     <p><b>Hire a Licensed Plumber</b> – Proper installation is critical. <a href="/contact-us" class="text-blue-400 hover:text-blue-300 underline">Contact our Temecula plumbing team</a> to ensure your system is correctly sized and vented.</p>
-    <p><b>Address Hard Water</b> – Temecula is known for its hard water. Adding a <a href="/services/services/water-filtration" class="text-blue-400 hover:text-blue-300 underline">water softener system</a> alongside your tankless unit can protect it from scale buildup and extend its lifespan.</p>
+    <p><b>Address Hard Water</b> – Temecula is known for its hard water. Adding a <a href="/services/water-filtration-system" class="text-blue-400 hover:text-blue-300 underline">water softener system</a> alongside your tankless unit can protect it from scale buildup and extend its lifespan.</p>
 
     <h3 class="text-2xl font-bold text-red-400 mt-10 mb-4">Final Thoughts</h3>
     <p>If you’re considering an upgrade, a tankless water heater is one of the best investments for long-term savings and convenience. For more maintenance advice, read our <a href="/blog/how-to-protect-your-plumbing" class="text-blue-400 hover:text-blue-300 underline">plumbing protection tips</a> blog to keep your new system in top shape.</p>

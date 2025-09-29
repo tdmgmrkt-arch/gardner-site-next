@@ -1,26 +1,23 @@
 "use client";
 
+
 import { SchedulerModal } from "./SchedulerModal";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Checkbox } from "./ui/checkbox";
-import { Phone, Star, Calendar } from "lucide-react";
+import { Phone, Star } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 
 export function Hero() {
-
-const [schedulerOpen, setSchedulerOpen] = useState(false);
-
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
     postalCode: "",
-    desiredService: "", // ✅ new field
+    desiredService: "",
     consent: false,
   });
 
@@ -38,16 +35,14 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
         "https://services.leadconnectorhq.com/hooks/kfDjJzsEadItLomlnfYH/webhook-trigger/bc3b8cb4-2ed4-49b5-85a9-99ba593b29ad",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams({
             first_name: formData.firstName,
             last_name: formData.lastName,
             email: formData.email,
             phone: formData.phone,
             postal_code: formData.postalCode,
-            desired_service: formData.desiredService, // ✅ added
+            desired_service: formData.desiredService,
             terms_and_conditions: formData.consent ? "true" : "false",
           }),
         }
@@ -61,7 +56,7 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
           email: "",
           phone: "",
           postalCode: "",
-          desiredService: "", // reset
+          desiredService: "",
           consent: false,
         });
       } else {
@@ -93,24 +88,10 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30" />
       </div>
 
-
-      {/* Bottom shadow */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-20 pointer-events-none z-30"
-        style={{
-          background: `linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.2) 100%)`,
-          boxShadow: `
-            0 25px 50px rgba(0, 0, 0, 0.3),
-            0 15px 35px rgba(0, 0, 0, 0.2),
-            0 8px 20px rgba(0, 0, 0, 0.15)
-          `,
-        }}
-      />
-
       {/* Content grid */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          {/* Left content */}
+          {/* Left column */}
           <div className="text-left animate-fade-in">
             <div className="mb-4 sm:mb-6 animate-slide-up">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-2 sm:mb-3 text-white drop-shadow-lg tracking-tight">
@@ -120,65 +101,31 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
                 Your Trusted Local Plumbing Experts
               </h2>
               <p className="text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed mb-4 sm:mb-6 max-w-xl drop-shadow-sm">
-                Need trusted plumbing professionals for your home or business?
-                Gardner Plumbing Co. is your local, licensed team ready for
-                repairs, installs, or remodels. From leaky pipes to major
-                projects, we're just a call away.
+                Need trusted plumbing professionals for your home or business? Gardner Plumbing Co. is your local,
+                licensed team ready for repairs, installs, or remodels. From leaky pipes to major projects, we're just a
+                call away.
               </p>
-            </div>
-
-            {/* Trust text */}
-            <div className="text-white mb-3 sm:mb-4">
-              <p className="text-xs sm:text-sm font-medium text-gray-300 drop-shadow-sm">
-                Trusted by Hundreds of Local Customers
-              </p>
-            </div>
-
-            {/* Trust indicators */}
-            <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 mt-6 mb-6 sm:mb-8">
-              {/* Google */}
-              <a href="/reviews#customer-testimonials" className="flex items-center gap-2 sm:gap-3 group hover-lift">
-                <div className="flex items-center gap-1.5 sm:gap-2 bg-white/10 backdrop-blur-sm text-white px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg shadow-lg border border-white/20">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 bg-blue-500/20 backdrop-blur-sm rounded flex items-center justify-center border border-blue-400/30">
-                    <span className="text-xs sm:text-sm font-bold text-blue-200">G</span>
-                  </div>
-                  <div className="flex items-center gap-0.5 sm:gap-1">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Star key={i} className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-yellow-400 fill-current drop-shadow-sm" />
-                    ))}
-                    <span className="text-white font-bold ml-0.5 sm:ml-1 drop-shadow-sm text-xs sm:text-sm">4.9</span>
-                  </div>
-                </div>
-              </a>
-              {/* Yelp */}
-              <a href="/reviews#customer-testimonials" className="flex items-center gap-2 sm:gap-3 group hover-lift">
-                <div className="flex items-center gap-1.5 sm:gap-2 bg-white/10 backdrop-blur-sm text-white px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg shadow-lg border border-white/20">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 bg-red-500/20 backdrop-blur-sm rounded flex items-center justify-center border border-red-400/30">
-                    <span className="text-xs sm:text-sm font-bold text-red-200">Y</span>
-                  </div>
-                  <div className="flex items-center gap-0.5 sm:gap-1">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Star key={i} className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-yellow-400 fill-current drop-shadow-sm" />
-                    ))}
-                    <span className="text-white font-bold ml-0.5 sm:ml-1 drop-shadow-sm text-xs sm:text-sm">4.8</span>
-                  </div>
-                </div>
-              </a>
             </div>
 
             {/* Action buttons */}
             <div className="flex flex-col gap-3 sm:gap-4 mb-6 sm:mb-8">
+              {/* Call Now */}
               <a href="tel:9512464337" className="w-full">
                 <Button
                   size="lg"
-                  className="w-full bg-gradient-to-r from-red-600 via-red-500 to-red-600 hover:from-red-700 hover:via-red-600 hover:to-red-700 text-white px-4 sm:px-6 py-3 font-bold shadow-luxury rounded-xl border border-red-400/20 hover-lift"
+                  className="w-full bg-gradient-to-r from-red-600 via-red-500 to-red-600 
+                            hover:from-red-700 hover:via-red-600 hover:to-red-700 
+                            text-white px-4 sm:px-6 py-3 font-bold shadow-luxury 
+                            rounded-xl border border-red-400/20 hover-lift"
                 >
                   <Phone className="h-4 w-4 mr-2" /> Call Now: (951) 246-4337
                 </Button>
               </a>
-              <SchedulerModal/>
-            </div>
-          </div>
+
+              {/* Book Online via ServiceTitan */}
+              <SchedulerModal />
+            </div> {/* This closes the "Action buttons" div */}
+          </div> {/* This closes the "Left column" div */}
 
           {/* ✅ Right form with preserved styling */}
           <div className="animate-fade-in mt-6 lg:mt-0">
