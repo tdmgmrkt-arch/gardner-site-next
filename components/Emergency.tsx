@@ -1,5 +1,6 @@
 "use client";
 
+import {Breadcrumbs} from "@/components/Breadcrumbs"; // 
 import { Button } from "./ui/button";
 import Link from "next/link";
 import Image from "next/image";
@@ -119,16 +120,16 @@ export function Emergency() {
             {/* Left */}
             <div className="text-left animate-fade-in">
               <nav className="mb-6">
-                <div className="flex items-center space-x-2 text-sm text-gray-400">
-                  <span>Home</span>
-                  <ArrowRight className="h-4 w-4" />
-                  <span>Services</span>
-                  <ArrowRight className="h-4 w-4" />
-                  <span className="text-red-400">Emergency Service</span>
-                </div>
-              </nav>
-
-              <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
+  <div className="flex items-center space-x-2 text-sm text-gray-400">
+    <Breadcrumbs
+      items={[
+        { label: "Home", href: "/" },
+        { label: "Services", href: "/services" },
+        { label: "Emergency Service" } // no href = current page
+      ]}
+    />
+  </div>
+</nav>              <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
                 <AlertTriangle className="h-5 w-5 text-red-400" />
                 <span className="text-red-400 font-semibold text-sm uppercase tracking-wider">
                   24/7 Emergency Plumbing
@@ -143,7 +144,7 @@ export function Emergency() {
               </h1>
 
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Burst pipe? Sewage backup? No hot water? Get rapid, expert help anywhere in Riverside County — day or night. Our <Link href="/services" className="text-red-400 hover:text-red-300 underline">emergency services</Link> follow <a href="https://community.phccweb.org/preparedness/home" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry protocols</a>.
+                Burst pipe? Sewage backup? No hot water? Get rapid, expert help anywhere in Riverside County — day or night. Our <Link href="/services" className="text-red-400 hover:text-red-300 underline">emergency services</Link> follow <a href="https://www.iccsafe.org/content/international-plumbing-code-ipc-home-page/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry protocols</a>.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">

@@ -1,5 +1,6 @@
 "use client";
 
+import {Breadcrumbs} from "@/components/Breadcrumbs"
 import Link from "next/link";
 import { SchedulerModal } from "./SchedulerModal";
 import { Button } from "./ui/button";
@@ -151,32 +152,41 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
     <div className="min-h-screen">
       {/* Combined Contact Hero & Information Section */}
       <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
-        {/* Enhanced Background */}
-        <div className="absolute inset-0">
-          <div 
-            className="absolute inset-0"
-            style={{ 
-              background: `
-                radial-gradient(ellipse at center, #1f2937 0%, #111827 50%, #000000 100%),
-                linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
-              `
-            }}
-          />
-          
-          {/* Premium texture overlay */}
-          <div 
-            className="absolute inset-0 opacity-15"
-            style={{
-              backgroundImage: `
-                radial-gradient(circle at 20% 80%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%)
-              `
-            }}
-          />
-        </div>
-        
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  {/* Backgrounds */}
+  <div className="absolute inset-0">
+    <div
+      className="absolute inset-0"
+      style={{
+        background: `
+          radial-gradient(ellipse at center, #1f2937 0%, #111827 50%, #000000 100%),
+          linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
+        `
+      }}
+    />
+    <div
+      className="absolute inset-0 opacity-15"
+      style={{
+        backgroundImage: `
+          radial-gradient(circle at 20% 80%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+          radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%)
+        `
+      }}
+    />
+  </div>
+
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* ✅ Breadcrumbs */}
+    <nav className="mb-6">
+      <div className="flex items-center space-x-2 text-sm text-gray-400">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Contact Us" } // no href = current page
+          ]}
+        />
+      </div>
+    </nav>     
           {/* Two Column Layout - Hero Content and Hero Image + Contact Info */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
             

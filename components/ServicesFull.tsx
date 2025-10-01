@@ -1,3 +1,4 @@
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import Image from "next/image";
@@ -167,6 +168,18 @@ export function ServicesFull() {
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+           {/* ✅ Breadcrumbs */}
+          <nav className="mb-6">
+            <div className="flex items-center space-x-2 text-sm text-gray-400">
+              <Breadcrumbs
+                items={[
+                  { label: "Home", href: "/" },
+                  { label: "Services" } // current page
+                ]}
+              />
+            </div>
+          </nav>
           
           {/* Enhanced Section Header - Two Column Layout */}
           <div className="mb-16 sm:mb-20 animate-fade-in">

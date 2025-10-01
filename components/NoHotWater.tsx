@@ -1,5 +1,6 @@
 "use client";
 
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SchedulerModal } from "./SchedulerModal";
 import { useState } from "react";
 import { Modal } from "./Modal";
@@ -59,8 +60,17 @@ export function NoHotWater() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div className="text-left animate-fade-in">
-                    <nav className="mb-6"><div className="flex items-center space-x-2 text-sm text-gray-400"><span>Home</span><ArrowRight className="h-4 w-4" /><span>Services</span><ArrowRight className="h-4 w-4" /><span className="text-red-400">No Hot Water</span></div></nav>
-                    <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm"><Thermometer className="h-5 w-5 text-red-400" /><span className="text-red-400 font-semibold text-sm uppercase tracking-wider">Same-Day Water Heater Repair</span></div>
+                    <nav className="mb-6">
+  <div className="flex items-center space-x-2 text-sm text-gray-400">
+    <Breadcrumbs
+      items={[
+        { label: "Home", href: "/" },
+        { label: "Services", href: "/services" },
+        { label: "No Hot Water" } // no href = current page
+      ]}
+    />
+  </div>
+</nav>                    <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm"><Thermometer className="h-5 w-5 text-red-400" /><span className="text-red-400 font-semibold text-sm uppercase tracking-wider">Same-Day Water Heater Repair</span></div>
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 drop-shadow-lg leading-tight">No Hot Water? <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Fast Emergency</span> Service</h1>
                     <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">Our expert technicians provide rapid diagnostics and repair to restore your hot water today.</p>
                     <div className="grid grid-cols-2 gap-4 mb-8">

@@ -1,5 +1,6 @@
 "use client";
 
+import {Breadcrumbs} from "@/components/Breadcrumbs"; // 
 import React, { FC, ReactNode } from "react";
 import {
   Phone,
@@ -94,8 +95,9 @@ export function Financing() {
     {
       icon: TrendingUp,
       title: "Competitive Rates",
+      // --- CHANGE: Updated description to mention GreenSky ---
       description:
-        "We partner with leading providers to offer you flexible plans and competitive interest rates.",
+        "We partner with GreenSky® to offer you flexible plans and competitive interest rates.",
     },
     {
       icon: Shield,
@@ -115,8 +117,9 @@ export function Financing() {
     {
       step: "02",
       title: "Apply in Minutes",
+      // --- CHANGE: Updated description to mention GreenSky ---
       description:
-        "Fill out a quick and simple digital application with our financing partner.",
+        "Fill out a quick and simple digital application through our partner, GreenSky®.",
     },
     {
       step: "03",
@@ -135,18 +138,21 @@ export function Financing() {
   const faqs = [
     {
       question: "What are the interest rates for financing?",
+      // --- CHANGE: Updated answer to mention GreenSky ---
       answer:
-        "Interest rates vary based on your credit score, the loan amount, and the term length. We work with our financing partners to find the most competitive and affordable options available for you.",
+        "Interest rates vary based on your credit score, the loan amount, and the term length. GreenSky® offers a variety of plans, and we work with you to find the most competitive and affordable options available.",
     },
     {
       question: "Is a credit check required?",
+      // --- CHANGE: Updated answer to mention GreenSky ---
       answer:
-        "Yes, our financing partners require a credit check as part of the application process to determine eligibility and the terms of the financing offer.",
+        "Yes, our financing partner, GreenSky®, requires a credit check as part of the application process to determine eligibility and the terms of the financing offer.",
     },
     {
       question: "How long does the application process take?",
+      // --- CHANGE: Updated answer to mention GreenSky ---
       answer:
-        "The application is digital and typically takes only a few minutes to complete. Most applicants receive a decision almost instantly.",
+        "The application is digital and typically takes only a few minutes to complete with GreenSky®. Most applicants receive a decision almost instantly.",
     },
     {
       question: "Can I finance smaller plumbing repairs?",
@@ -155,8 +161,9 @@ export function Financing() {
     },
     {
       question: "Can I pay off the loan early without penalties?",
+      // --- CHANGE: Updated answer to mention GreenSky ---
       answer:
-        "Yes, the financing plans we offer through our partners typically allow you to pay off your loan at any time without prepayment penalties.",
+        "Yes, the financing plans offered through GreenSky® typically allow you to pay off your loan at any time without prepayment penalties.",
     },
   ];
 
@@ -175,11 +182,12 @@ export function Financing() {
             <div className="text-left animate-fade-in">
               <nav className="mb-6">
                 <div className="flex items-center space-x-2 text-sm text-gray-400">
-                  <span>Home</span>
-                  <ArrowRight className="h-4 w-4" />
-                  <span>Services</span>
-                  <ArrowRight className="h-4 w-4" />
-                  <span className="text-red-400">Financing</span>
+                  <Breadcrumbs
+                  items={[
+                  { label: "Home", href: "/" },
+                  { label: "Financing" } // no href = current page
+                ]}
+                  />
                 </div>
               </nav>
               <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-green-600/20 to-green-500/20 rounded-full border border-green-500/30 backdrop-blur-sm">
@@ -188,17 +196,15 @@ export function Financing() {
                   Flexible Payment Options
                 </span>
               </div>
+              {/* --- CHANGE: Updated headline to mention GreenSky --- */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8">
-                Flexible{" "}
-                <span className="text-gradient bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-                  Financing
-                </span>{" "}
-                For Your Plumbing Needs
+                GreenSky® Financing For Your Plumbing Needs
               </h1>
+              {/* --- CHANGE: Updated description to mention GreenSky --- */}
               <p className="text-xl text-gray-300 mb-8 max-w-xl">
                 Don't let unexpected plumbing costs disrupt your budget. We
-                offer simple, fast financing options to help you get the repairs
-                you need now and pay over time.
+                offer simple, fast financing options through our partnership with
+                GreenSky® to help you get the repairs you need now and pay over time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="/#financing-options">
@@ -206,16 +212,17 @@ export function Financing() {
                     size="lg"
                     className="bg-gradient-to-r from-green-600 to-green-500 text-white px-8 py-4 rounded-xl shadow-lg"
                   >
-                    View Financing Options
+                    View GreenSky® Financing Options
                   </Button>
                 </a>
               </div>
             </div>
             <div className="relative group animate-slide-up">
+              {/* --- SUGGESTION: You can replace this image with a GreenSky® logo or a branded graphic. --- */}
               <div className="relative overflow-hidden rounded-3xl shadow-luxury">
                 <img
-                  src="https://placehold.co/1000x600/1f2937/ffffff?text=Easy+Financing+Options"
-                  alt="Illustration of easy financing options for plumbing services"
+                  src="https://placehold.co/1000x600/1f2937/ffffff?text=GreenSky%C2%AE+Financing"
+                  alt="Illustration of easy financing options for plumbing services with GreenSky®"
                   width="1000"
                   height="600"
                   className="w-full h-[400px] lg:h-[500px] object-cover rounded-3xl"
@@ -319,8 +326,9 @@ export function Financing() {
             ))}
           </div>
           <div className="text-center mt-16">
+            {/* --- CHANGE: Updated button text to mention GreenSky --- */}
             <Button className="bg-gradient-to-r from-green-600 to-blue-500 text-white">
-              Get Pre-Qualified Now
+              Apply for GreenSky® Financing
             </Button>
           </div>
         </div>
@@ -459,8 +467,9 @@ export function Financing() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
               Ready to Start Your Project?
             </h2>
+            {/* --- CHANGE: Updated description to mention GreenSky --- */}
             <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
-              Don't wait. Apply for financing today and get the peace of mind
+              Don't wait. Apply for GreenSky® financing today and get the peace of mind
               that comes with a professionally completed plumbing project.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">
@@ -468,7 +477,8 @@ export function Financing() {
                 <Button className="bg-gradient-to-r from-green-600 to-blue-500 text-white w-full py-3 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-2">
                     <FileText className="h-4 w-4" />
-                    Apply Now
+                    {/* --- CHANGE: Updated button text --- */}
+                    Apply for GreenSky®
                   </span>
                 </Button>
               </a>

@@ -1,6 +1,7 @@
 // BurstPipes.tsx
 "use client";
 
+import {Breadcrumbs} from "@/components/Breadcrumbs"; // 
 import { SchedulerModal } from "./SchedulerModal";
 import { useState } from "react";
 import Link from "next/link";
@@ -155,9 +156,15 @@ const emergencyReasons = [
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="text-left animate-fade-in">
-              <nav className="mb-6">
+              <nav className="mb-6 -mt-8">
                 <div className="flex items-center space-x-2 text-sm text-gray-400">
-                  <span>Home</span><ArrowRight className="h-4 w-4" /><span>Services</span><ArrowRight className="h-4 w-4" /><span className="text-red-400">Burst Pipe Repair</span>
+                  <Breadcrumbs
+                  items={[
+                  { label: "Home", href: "/" },
+                  { label: "Services", href: "/services" },
+                  { label: "Burst Pipe Repair" } // no href = current page
+                ]}
+                  />
                 </div>
               </nav>
               <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">

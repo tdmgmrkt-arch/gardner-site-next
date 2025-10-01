@@ -1,3 +1,4 @@
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SchedulerModal } from "./SchedulerModal";
 import { Button } from "./ui/button";
 import Link from "next/link";
@@ -182,16 +183,16 @@ const emergencyReasons = [ // Renamed from leakSources to match original variabl
             <div className="text-left animate-fade-in">
               {/* Breadcrumb - STYLED LIKE HYDRO-JETTING */}
               <nav className="mb-6">
-                <div className="flex items-center space-x-2 text-sm text-gray-400">
-                  <a href="/" className="hover:text-white">Home</a>
-                  <ArrowRight className="h-4 w-4" />
-                  <a href="/services" className="hover:text-white">Services</a>
-                  <ArrowRight className="h-4 w-4" />
-                  <span className="text-red-400">Moen Flow Installation</span>
-                </div>
-              </nav>
-
-              {/* Badge - STYLED LIKE HYDRO-JETTING */}
+  <div className="flex items-center space-x-2 text-sm text-gray-400">
+    <Breadcrumbs
+      items={[
+        { label: "Home", href: "/" },
+        { label: "Services", href: "/services" },
+        { label: "Moen Flow Installation" } // no href = current page
+      ]}
+    />
+  </div>
+</nav>              {/* Badge - STYLED LIKE HYDRO-JETTING */}
               <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
                 <Award className="h-5 w-5 text-red-400" />
                 <span className="text-red-400 font-semibold text-sm uppercase tracking-wider">Certified Moen Installer</span>

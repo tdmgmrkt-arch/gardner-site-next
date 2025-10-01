@@ -1,3 +1,4 @@
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SchedulerModal } from "./SchedulerModal";
 import { Button } from "./ui/button";
 import Image from "next/image";
@@ -178,16 +179,16 @@ export function Inspection() {
             <div className="text-left animate-fade-in">
               {/* Breadcrumb */}
               <nav className="mb-6">
-                <div className="flex items-center space-x-2 text-sm text-gray-400">
-                  <span>Home</span>
-                  <ArrowRight className="h-4 w-4" />
-                  <span>Services</span>
-                  <ArrowRight className="h-4 w-4" />
-                  <span className="text-red-400">65 Point Inspection</span>
-                </div>
-              </nav>
-
-              {/* Badge */}
+  <div className="flex items-center space-x-2 text-sm text-gray-400">
+    <Breadcrumbs
+      items={[
+        { label: "Home", href: "/" },
+        { label: "Services", href: "/services" },
+        { label: "65 Point Inspection" } // no href = current page
+      ]}
+    />
+  </div>
+</nav>              {/* Badge */}
               <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
                 <CheckCircle className="h-5 w-5 text-red-400" />
                 <span className="text-red-400 font-semibold text-sm uppercase tracking-wider">Comprehensive Home Inspection</span>

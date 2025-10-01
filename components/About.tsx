@@ -1,5 +1,6 @@
 "use client";
 
+import {Breadcrumbs} from "@/components/Breadcrumbs"; // 
 import { useState } from "react";
 import Link from "next/link";
 import { Modal } from "./Modal";
@@ -81,20 +82,18 @@ const [isModalOpen, setIsModalOpen] = useState(false);
     <div className="min-h-screen">
       {/* Hero Section */}
 <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
-  {/* Enhanced Background */}
+  {/* Backgrounds */}
   <div className="absolute inset-0">
-    <div 
+    <div
       className="absolute inset-0"
-      style={{ 
+      style={{
         background: `
           radial-gradient(ellipse at top, #1f2937 0%, #111827 50%, #000000 100%),
           linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
         `
       }}
     />
-    
-    {/* Premium texture overlay */}
-    <div 
+    <div
       className="absolute inset-0 opacity-10"
       style={{
         backgroundImage: `
@@ -105,6 +104,20 @@ const [isModalOpen, setIsModalOpen] = useState(false);
       }}
     />
   </div>
+
+  {/* ✅ Breadcrumbs + Content aligned together */}
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="mb-6">
+      <div className="flex items-center space-x-2 text-sm text-gray-400">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "About Us" } // no href = current page
+          ]}
+        />
+      </div>
+    </nav>
+    </div>
   
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     {/* Hero Content */}

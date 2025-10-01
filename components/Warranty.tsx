@@ -1,5 +1,6 @@
 "use client";
 
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import React, { useState, FC, ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
