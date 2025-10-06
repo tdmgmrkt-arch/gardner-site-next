@@ -1,6 +1,5 @@
 "use client";
 
-import {Breadcrumbs} from "@/components/Breadcrumbs"; // 
 import React, { FC, ReactNode } from "react";
 import {
   Phone,
@@ -79,6 +78,22 @@ const CardContent: FC<React.HTMLAttributes<HTMLDivElement>> = ({
 }) => <div className={`p-6 pt-0 ${className}`} {...props} />;
 
 export function Financing() {
+
+  const greenSkyModuleHtml = `
+  <div class="financing-module" style="box-sizing: border-box; margin: 0px; text-align: left; border-width: 5px; border-style: solid; border-color: #207e20; width: 650px; border-radius: 4px;"><div><img src=https://www.greensky.com/merchantkit/images/finance_buttons/headers/header_640.jpg?v=3.0.612 width="640" alt="Financing Options from GreenSky" tabindex="0" /></div><div><img src=https://www.greensky.com/merchantkit/images/finance_buttons/product_headers/plumbing_product_header_640.jpg?v=3.0.612 width="640" alt="Finance Your Project" tabindex="0" /></div><div><a href=https://projects.greensky.com/MerchantLoanApplication?apptype=short&merchant=81122934&dealerplan=1519&channel=External-Button-03 target="_blank" tabindex="0"><img src=https://www.greensky.com/merchantkit/images/finance_buttons/plans/1519_640x50.jpg?v=3.0.612 width="640" alt="Plan 1519" /></a></div><div><a href=https://projects.greensky.com/MerchantLoanApplication?apptype=short&merchant=81122934&dealerplan=2613&channel=External-Button-03 target="_blank" tabindex="0"><img src=https://www.greensky.com/merchantkit/images/finance_buttons/plans/2613_640x50.jpg?v=3.0.612 width="640" alt="Plan 2613" /></a></div><div><img src=https://www.greensky.com/merchantkit/images/finance_buttons/footers/footer_640.jpg?v=3.0.612 width="640" alt="*Subject to credit approval. These examples are estimates only. Actual payment amounts based on amount and timing of purchases. Call 866-936-0602 for financing costs and terms. Loans for the GreenSky® consumer loan program are provided by Synovus Bank, Member FDIC, NMLS #408043, without regard to age, race, color, religion, national origin, gender, disability, or familial status. GreenSky Servicing, LLC services the loans on behalf of your lender, NMLS #1416362. www.nmlsconsumeraccess.org. GreenSky® is a registered trademark of GreenSky, LLC and is licensed to banks and other financial institutions for their use in connection with that consumer loan program. GreenSky Servicing, LLC is a financial technology company that manages the GreenSky® consumer loan program by providing origination and servicing support to banks and other financial institutions that make or hold program loans. GreenSky, LLC and GreenSky Servicing, LLC are not lenders. All credit decisions and loan terms are determined by program lenders." tabindex="0" /></div></div>
+  `;
+
+  const greenSkyPromoContent = [
+    {
+      title: "Reduced Rate 11.99% for 180 months",
+      description: "Subject to credit approval. Fixed APR of 11.99% for 180 months. Payment example: for $10,000 purchase on approval date, 180 payments of $119.95."
+    },
+    {
+      title: "No Interest if Paid in Full in 12 Months",
+      description: "Subject to credit approval. Minimum monthly payments required. Interest is billed during the promotional period but all interest is waived if the purchase amount is paid in full within 12 months. Making minimum monthly payments will not pay off the entire purchase balance before the end of the promotional period."
+    }
+  ];
+
   const benefits = [
     {
       icon: Clock,
@@ -95,7 +110,6 @@ export function Financing() {
     {
       icon: TrendingUp,
       title: "Competitive Rates",
-      // --- CHANGE: Updated description to mention GreenSky ---
       description:
         "We partner with GreenSky® to offer you flexible plans and competitive interest rates.",
     },
@@ -117,7 +131,6 @@ export function Financing() {
     {
       step: "02",
       title: "Apply in Minutes",
-      // --- CHANGE: Updated description to mention GreenSky ---
       description:
         "Fill out a quick and simple digital application through our partner, GreenSky®.",
     },
@@ -138,19 +151,16 @@ export function Financing() {
   const faqs = [
     {
       question: "What are the interest rates for financing?",
-      // --- CHANGE: Updated answer to mention GreenSky ---
       answer:
         "Interest rates vary based on your credit score, the loan amount, and the term length. GreenSky® offers a variety of plans, and we work with you to find the most competitive and affordable options available.",
     },
     {
       question: "Is a credit check required?",
-      // --- CHANGE: Updated answer to mention GreenSky ---
       answer:
         "Yes, our financing partner, GreenSky®, requires a credit check as part of the application process to determine eligibility and the terms of the financing offer.",
     },
     {
       question: "How long does the application process take?",
-      // --- CHANGE: Updated answer to mention GreenSky ---
       answer:
         "The application is digital and typically takes only a few minutes to complete with GreenSky®. Most applicants receive a decision almost instantly.",
     },
@@ -161,7 +171,6 @@ export function Financing() {
     },
     {
       question: "Can I pay off the loan early without penalties?",
-      // --- CHANGE: Updated answer to mention GreenSky ---
       answer:
         "Yes, the financing plans offered through GreenSky® typically allow you to pay off your loan at any time without prepayment penalties.",
     },
@@ -182,12 +191,11 @@ export function Financing() {
             <div className="text-left animate-fade-in">
               <nav className="mb-6">
                 <div className="flex items-center space-x-2 text-sm text-gray-400">
-                  <Breadcrumbs
-                  items={[
-                  { label: "Home", href: "/" },
-                  { label: "Financing" } // no href = current page
-                ]}
-                  />
+                  <span>Home</span>
+                  <ArrowRight className="h-4 w-4" />
+                  <span>Services</span>
+                  <ArrowRight className="h-4 w-4" />
+                  <span className="text-red-400">Financing</span>
                 </div>
               </nav>
               <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-green-600/20 to-green-500/20 rounded-full border border-green-500/30 backdrop-blur-sm">
@@ -196,18 +204,16 @@ export function Financing() {
                   Flexible Payment Options
                 </span>
               </div>
-              {/* --- CHANGE: Updated headline to mention GreenSky --- */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8">
                 GreenSky® Financing For Your Plumbing Needs
               </h1>
-              {/* --- CHANGE: Updated description to mention GreenSky --- */}
               <p className="text-xl text-gray-300 mb-8 max-w-xl">
                 Don't let unexpected plumbing costs disrupt your budget. We
                 offer simple, fast financing options through our partnership with
                 GreenSky® to help you get the repairs you need now and pay over time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="/#financing-options">
+                <a href="#greensky-options">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-green-600 to-green-500 text-white px-8 py-4 rounded-xl shadow-lg"
@@ -217,11 +223,11 @@ export function Financing() {
                 </a>
               </div>
             </div>
-            <div className="relative group animate-slide-up">
-              {/* --- SUGGESTION: You can replace this image with a GreenSky® logo or a branded graphic. --- */}
+            {/* --- CHANGE: Hidden the hero image on mobile with 'hidden' class, but shown on desktop with 'lg:block' --- */}
+            <div className="relative group animate-slide-up hidden lg:block">
               <div className="relative overflow-hidden rounded-3xl shadow-luxury">
                 <img
-                  src="https://placehold.co/1000x600/1f2937/ffffff?text=GreenSky%C2%AE+Financing"
+                  src="/financing-greensky.webp"
                   alt="Illustration of easy financing options for plumbing services with GreenSky®"
                   width="1000"
                   height="600"
@@ -275,7 +281,6 @@ export function Financing() {
 
       {/* How It Works Section */}
       <section
-        id="financing-options"
         className="py-16 sm:py-20 lg:py-28 relative overflow-hidden"
       >
         <div
@@ -325,15 +330,62 @@ export function Financing() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-16">
-            {/* --- CHANGE: Updated button text to mention GreenSky --- */}
-            <Button className="bg-gradient-to-r from-green-600 to-blue-500 text-white">
-              Apply for GreenSky® Financing
-            </Button>
-          </div>
         </div>
       </section>
 
+      {/* --- DEDICATED GREEN SKY FINANCING MODULE SECTION --- */}
+      <section
+        id="greensky-options"
+        className="py-16 sm:py-20 lg:py-28 relative overflow-hidden"
+      >
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `radial-gradient(ellipse at top, #1f2937 0%, #111827 50%, #000000 100%)`,
+          }}
+        ></div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 sm:mb-20">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              View Our Exclusive GreenSky® Financing Options
+            </h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-10">
+              Select a financing plan below to get started on your quick and secure application.
+            </p>
+          </div>
+          {/* --- CHANGE: The promo content is hidden on mobile and shown on desktop --- */}
+          <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-12 items-stretch mb-16">
+            {/* Left Column: Promotional Plans */}
+            <div className="lg:col-span-1 hidden lg:flex flex-col justify-between">
+              <h3 className="text-2xl font-bold text-white text-left mb-6">Current Promotional Plans:</h3>
+              <div className="flex flex-col justify-between flex-1 gap-6">
+                {greenSkyPromoContent.map((promo, index) => (
+                  <Card
+                    key={index}
+                    className="p-6 text-left h-full flex flex-col justify-center"
+                    style={{
+                      backgroundColor: "transparent",
+                      border: "5px solid rgba(32,126,32,0.7)",
+                      backgroundImage: "linear-gradient(145deg, #1f2937 0%, #1a1a1a 100%)",
+                    }}
+                  >
+                    <h4 className="text-xl font-semibold text-white mb-2">{promo.title}</h4>
+                    <p className="text-gray-400">{promo.description}</p>
+                  </Card>
+                ))}
+              </div>
+            </div>
+            {/* Right Column: GreenSky Module */}
+            <div className="lg:col-span-1 mt-10 lg:mt-0">
+              <h3 className="text-2xl font-bold text-white text-left mb-6">Select a button below to apply for your preferred plan:</h3>
+              <div className="flex justify-center lg:justify-start overflow-x-auto">
+                <div className="max-w-full" dangerouslySetInnerHTML={{ __html: greenSkyModuleHtml }} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* FAQ Section */}
       <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
         <div className="absolute inset-0">
@@ -467,18 +519,16 @@ export function Financing() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
               Ready to Start Your Project?
             </h2>
-            {/* --- CHANGE: Updated description to mention GreenSky --- */}
             <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
-              Don't wait. Apply for GreenSky® financing today and get the peace of mind
+              Don't wait. View your financing options today and get the peace of mind
               that comes with a professionally completed plumbing project.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">
-              <a href="/#financing-options" className="flex-1">
+              <a href="#greensky-options" className="flex-1">
                 <Button className="bg-gradient-to-r from-green-600 to-blue-500 text-white w-full py-3 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-2">
                     <FileText className="h-4 w-4" />
-                    {/* --- CHANGE: Updated button text --- */}
-                    Apply for GreenSky®
+                    View GreenSky® Financing
                   </span>
                 </Button>
               </a>

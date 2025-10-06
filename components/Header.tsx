@@ -1,8 +1,9 @@
 "use client";
 
 import { SchedulerModal } from "./SchedulerModal";
+
 import { Button } from "./ui/button";
-import { Phone, Mail, Menu, MapPin, ChevronDown, Clock, Star, X,Wrench, Home, User, Facebook, Instagram, Calendar } from "lucide-react";
+import { Phone, Mail, Menu, MapPin, ChevronDown, Clock, Star, X,Wrench, Home, User, BanknoteIcon, Facebook, Instagram, Calendar } from "lucide-react";
 import { useState, useCallback, useRef, useEffect } from "react";
 
 const logo = "/gplogo.svg";
@@ -342,9 +343,14 @@ export function Header() {
                                     </a>
                                   </div>
                                 </div>
-
+                              
                                 {/* CTA at bottom */}
-                                <a href="tel:9512464337">
+                                <a href="/financing">
+                                  <Button className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-6 py-3 w-full shadow-lg hover:shadow-xl transition-all duration-300 hover-lift rounded-xl border border-red-400/20">
+                                    <BanknoteIcon className="mr-2 h-4 w-4" />
+                                    View Our Financing Options
+                                  </Button>
+                                  </a>                                <a href="tel:9512464337">
                                   <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-6 py-3 w-full shadow-lg hover:shadow-xl transition-all duration-300 hover-lift rounded-xl border border-red-400/20">
                                     <Phone className="mr-2 h-4 w-4" />
                                     Call Now
@@ -352,6 +358,7 @@ export function Header() {
                                 </a>
                               </div>
                             </div>
+                            
 
                           
                               {/* Services grid */}
@@ -466,7 +473,13 @@ export function Header() {
                                           )`,
                                         }}
                                       />
-                                      <div className="relative">
+                                      
+                                      <div className="relative text-center">
+                                        <img 
+                                          src="/GardnerPlumbingCoEmergencyTech.webp" 
+                                          alt="Emergency Icon" 
+                                          className="mx-auto mb-3 object-contain drop-shadow-md"
+                                        />
                                         <div className="text-red-100 font-medium text-sm mb-2 drop-shadow-sm">
                                           Emergency? Call Now!
                                         </div>
