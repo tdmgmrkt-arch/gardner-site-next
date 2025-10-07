@@ -5,16 +5,10 @@ import { Input } from "./ui/input";
 import { Phone, Mail, MapPin, Facebook, Youtube, Instagram, Star } from "lucide-react";
 import { useState } from "react";
 
-const logo = "/gplogo.svg";
+const logo = "/gardner_logo.webp";
 
 export function Footer() {
   const [email, setEmail] = useState("");
-
-  const handleNewsletterSubmit = (e) => {
-    e.preventDefault();
-    console.log("Newsletter subscription:", email);
-    setEmail("");
-  };
 
   return (
     <footer className="relative bg-cover bg-center bg-no-repeat">
@@ -46,7 +40,7 @@ export function Footer() {
           {/* Company Branding Section (always visible) */}
           <div className="lg:col-span-5 lg:border-r lg:border-white/10 lg:pr-8">
             <div className="glassmorphism-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-luxury hover-lift transition-all duration-500">
-              <img src={logo} alt="Gardner Plumbing Co." className="h-12 sm:h-14 w-auto mb-3 sm:mb-4 drop-shadow-lg" />
+              <img src={logo} alt="Gardner Plumbing Co. logo" className="h-12 sm:h-14 w-auto mb-3 sm:mb-4 drop-shadow-lg" />
               <p className="text-gray-300 mb-6 sm:mb-8 leading-relaxed text-xs sm:text-sm lg:text-[14px]">
                 Professional plumbing services backed by 30+ years of experience and a commitment to
                 excellence. Whether you need repairs, installations, or emergency service—we've got you covered.
@@ -73,7 +67,7 @@ export function Footer() {
                   </div>
                 </a>
                 <a
-                  href="https://www.google.com/maps/place/Gardner+Plumbing+Company/data=!4m2!3m1!1s0x0:0xef87e6a2bf83ed0f?sa=X&ved=1t:2428&ictx=111"
+                  href="https://maps.app.goo.gl/aCp4BuCRRPcyEWxo9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-2 sm:gap-3 group hover-lift"

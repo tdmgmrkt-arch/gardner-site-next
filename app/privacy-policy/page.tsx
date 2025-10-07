@@ -3,11 +3,11 @@ import { PrivPol } from "@/components/PrivPol";
 import { Footer } from "@/components/Footer";
 
 export const metadata = {
-  title: "Customer Reviews | Gardner Plumbing Co.",
-  description: "See full reviews and testimonials from our satisfied customers.",
+  title: "Privacy Policy | Gardner Plumbing Co.",
+  description: "Learn about the privacy practices and data usage of Gardner Plumbing Co.",
 };
 
-export default function FullReviewsPage() {
+export default function PrivacyPolicyPage() {
   return (
     <div className="bg-background text-foreground min-h-screen">
       <Header />

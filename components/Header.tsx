@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { Phone, Mail, Menu, MapPin, ChevronDown, Clock, Star, X,Wrench, Home, User, BanknoteIcon, Facebook, Instagram, Calendar } from "lucide-react";
 import { useState, useCallback, useRef, useEffect } from "react";
 
-const logo = "/gplogo.svg";
+const logo = "/gardner_logo.webp";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,11 +31,8 @@ export function Header() {
     "Hydro Jetting": "/services/hydro-jetting",
     "Sewer & Septic": "/services/sewer-and-septic",
     "Maintenance Plans": "/services/maintenance-plans",
-    // --- CHANGE START ---
-    "Industrial Plumbing": "/services/industrial-plumbing", // ADDED
-    "Backflow Prevention": "/services/backflow-prevention", // ADDED
-    // "Emergency Service": "/services/emergency-service", // REMOVED
-    // --- CHANGE END ---
+    "Industrial Plumbing": "/services/industrial-plumbing",
+    "Backflow Prevention": "/services/backflow-prevention",
     "Moen Flo Installation" : "/services/moen-flo-installation",
     "System Inspections": "/services/65-point-inspection",
     "Gas Lines": "/services/gas-lines",
@@ -49,37 +46,11 @@ export function Header() {
     { href: "/reviews", label: "Reviews" },
     { href: "/contact-us", label: "Contact" },
   ];
-
-  // ---------- Link maps ----------
-  const residentialLinks: Record<string, string> = {
-   "Drain Cleaning": "/services/drain-cleaning",
-    "Leak Detection": "/services/leak-detection",
-    "Water Heaters": "/services/water-heater-service",
-    "Toilet Repair": "/services/toilet-installation-and-repair",
-    "Piping & Repiping": "/services/piping-and-repiping",
-    "Garbage Disposals": "/services/garbage-disposal-service",
-    "Commercial Plumbing": "/services/commercial-plumbing",
-    "Hydro Jetting": "/services/hydro-jetting",
-    "Sewer & Septic": "/services/sewer-and-septic",
-    "Maintenance Plans": "/services/maintenance-plans",
-    // --- CHANGE START ---
-    "Industrial Plumbing": "/services/industrial-plumbing", // ADDED
-    "Backflow Prevention": "/services/backflow-prevention", // ADDED
-    // "Emergency Service": "/services/emergency-service", // REMOVED
-    // --- CHANGE END ---
-    "Moen Flo Installation" : "/services/moen-flo-installation",
-    "System Inspections": "/services/65-point-inspection",
-    "Gas Lines": "/services/gas-lines",
-    "Water Filtration": "/services/water-filtration-system",
-  };
-
+ 
   const commercialLinks: Record<string, string> = {
     "Commercial Plumbing": "/services/commercial-plumbing",
-    // --- CHANGE START ---
-    "Industrial Plumbing": "/services/industrial-plumbing", // ADDED
-    "Backflow Prevention": "/services/backflow-prevention", // ADDED
-    // "Emergency Service": "/services/emergency-service", // REMOVED
-    // --- CHANGE END ---
+    "Industrial Plumbing": "/services/industrial-plumbing",
+    "Backflow Prevention": "/services/backflow-prevention",
     "Hydro Jetting": "/services/hydro-jetting",
     "Sewer & Septic": "/services/sewer-and-septic",
     "Maintenance Plans": "/services/maintenance-plans",
@@ -213,7 +184,7 @@ export function Header() {
               {/* Logo */}
               <div className="flex items-center hover-lift">
                 <a href="/" aria-label="Go to homepage">
-                  <img src={logo} alt="Gardner Plumbing Co." className="h-8 sm:h-10 lg:h-12 xl:h-14 w-auto drop-shadow-lg" />
+                  <img src={logo} alt="Gardner Plumbing Co. logo" className="h-12 sm:h-15 lg:h-14 xl:h-16 w-auto drop-shadow-lg" />
                 </a>
               </div>
 
@@ -287,7 +258,7 @@ export function Header() {
                                 <div>
                                   <img
                                     src={logo}
-                                    alt="Gardner Plumbing Co."
+                                    alt="Gardner Plumbing Co. logo"
                                     className="h-16 w-auto mb-4 drop-shadow-lg"
                                   />
                                   <h3 className="text-xl font-bold text-white mb-3 drop-shadow-sm">
@@ -386,7 +357,7 @@ export function Header() {
 
                                         // 🟡 Heavy-Duty / Business Services
                                         { name: "Commercial Plumbing", desc: "Business solutions" },
-                                        { name: "Industrial Plumbing", desc: "Heavy-duty solutions" }, // ADDED
+                                        { name: "Industrial Plumbing", desc: "Heavy-duty solutions" },
                                         { name: "Hydro Jetting", desc: "High-pressure cleaning" },
                                         { name: "Sewer & Septic", desc: "Main line service" },
 
@@ -398,7 +369,7 @@ export function Header() {
                                       ].map((service) => (
                                         <li key={service.name}>
                                           <a
-                                            href={residentialLinks[service.name] ?? "/services/commercial-plumbing"}
+                                            href={serviceLinks[service.name] ?? "/services/commercial-plumbing"}
                                             className="group block p-2 rounded-lg hover:bg-white/3 transition-all duration-300"
                                           >
                                             <div className="nav-dropdown-service-name hover:text-red-500 font-medium transition-colors duration-300 drop-shadow-sm">
@@ -533,7 +504,7 @@ export function Header() {
                     {/* Header (logo + close only) */}
                     <div className="flex justify-between items-center p-2 border-b border-white/10 bg-[#111827]">
                       <a href="/" onClick={() => setIsMenuOpen(false)}>
-                        <img src={logo} alt="Gardner Plumbing Co." className="pl-2 h-8 w-auto" />
+                        <img src={logo} alt="Gardner Plumbing Co. logo" className="pl-2 h-8 w-auto" />
                       </a>
                       <button
                         onClick={() => setIsMenuOpen(false)}

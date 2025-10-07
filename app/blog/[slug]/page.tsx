@@ -130,7 +130,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     <div className="p-6">
                       <Image
                         src="/GPAUTHORLOGO.png"
-                        alt="Gardner Plumbing Co. Logo"
+                        alt="Gardner Plumbing Co. logo used for author card"
                         width={80}
                         height={80}
                         className="w-20 h-20 mx-auto rounded-full bg-gray-700 p-2 mb-4 border-2 border-red-500/50"
