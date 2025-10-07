@@ -37,7 +37,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   // Share links
-  const baseUrl = "http://localhost:3000"; // TODO: replace with your real domain in production
+  const baseUrl = "https://gardnerplumbingco.com"; //
   const shareUrl = `${baseUrl}/blog/${post.slug}`;
   const shareTitle = encodeURIComponent(post.title);
 

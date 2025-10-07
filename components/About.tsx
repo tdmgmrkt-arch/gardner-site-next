@@ -140,7 +140,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
         <div className="block lg:hidden mb-6 relative group">
           <div className="relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/gardnertrucks.webp"
+              src="/GardnerTechVanTools.webp"
               alt="Professional Gardner Plumbing Co. technician ready to help with your plumbing needs"
               width={1000}
               height={700}

@@ -149,7 +149,7 @@ export function OurGuarantee() {
             <div className="relative group animate-slide-up">
               <div className="relative overflow-hidden rounded-3xl shadow-luxury">
                 <Image
-                  src="/placeholderimage.webp"
+                  src="/gardnervanready.webp"
                   alt="Customer satisfaction guarantee"
                   width={1000}
                   height={600}

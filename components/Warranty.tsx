@@ -195,8 +195,8 @@ export function Warranty() {
             <div className="relative group animate-slide-up">
               <div className="relative overflow-hidden rounded-3xl shadow-luxury">
                 <Image
-                  src="/placeholderimage.webp"
-                  alt="Warranty illustration"
+                  src="/gardnerteammembersunloading.webp"
+                  alt="Gardner Techs with Tools"
                   width={1000}
                   height={600}
                   className="w-full h-[400px] lg:h-[500px] object-cover rounded-3xl"
@@ -296,7 +296,7 @@ export function Warranty() {
             <div className="relative group">
               <div className="relative overflow-hidden rounded-3xl shadow-luxury group-hover:shadow-2xl transition-all duration-500">
                 <Image
-                  src="/placeholderimage.webp"
+                  src="/gardnertech2.webp"
                   alt="Professional Gardner Plumbing Co. technician"
                   width={1000}
                   height={600}
