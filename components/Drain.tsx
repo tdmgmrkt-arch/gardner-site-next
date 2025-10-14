@@ -188,7 +188,7 @@ const services = [
             {/* Left Column - Content */}
             <div className="text-left animate-fade-in">
               {/* Breadcrumb */}
-              <nav className="mb-6">
+              <nav className="absolute top-[-75px] mb-6">
             <div className="flex items-center space-x-2 text-sm text-gray-400">
               <Breadcrumbs
                 items={[
