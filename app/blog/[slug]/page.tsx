@@ -13,6 +13,7 @@ import {
   Facebook,
   Linkedin,
 } from "lucide-react";
+import { Metadata } from "next";
 
 // Props for Next.js dynamic routes
 type BlogPostPageProps = {
@@ -22,6 +23,48 @@ type BlogPostPageProps = {
 // Generate static paths for all blog posts
 export async function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
+}
+
+// Generate metadata for each blog post
+export async function generateMetadata({
+  params,
+}: BlogPostPageProps): Promise<Metadata> {
+  const post = posts.find((p) => p.slug === params.slug);
+
+  if (!post) {
+    return {
+      title: "Post Not Found | Gardner Plumbing Co.",
+      description: "The requested blog post could not be found.",
+    };
+  }
+
+  return {
+    title: `${post.title} | Gardner Plumbing Co.`,
+    description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${post.slug}`
+    },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      images: [
+        {
+          url: post.image,
+          alt: post.title,
+        },
+      ],
+      type: "article",
+      publishedTime: post.date,
+      authors: [post.author],
+      url: `/blog/${post.slug}`
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
+  };
 }
 
 // ✅ Default export = page component
@@ -36,6 +79,36 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     );
   }
 
+  // Article Schema for SEO
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": `https://gardnerplumbingco.com${post.image}`,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": post.author,
+      "url": "https://gardnerplumbingco.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Gardner Plumbing Co.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://gardnerplumbingco.com/gardner_logo.webp"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://gardnerplumbingco.com/blog/${post.slug}`
+    },
+    "articleSection": post.category,
+    "keywords": post.category
+  };
+
   // Share links
   const baseUrl = "https://gardnerplumbingco.com"; //
   const shareUrl = `${baseUrl}/blog/${post.slug}`;
@@ -47,8 +120,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     .slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      <section className="relative overflow-hidden">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <div className="min-h-screen bg-gray-900 text-white">
+        <section className="relative overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0">
           <div
@@ -257,5 +335,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </section>
     </div>
+    </>
   );
 }
