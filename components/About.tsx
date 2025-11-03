@@ -8,21 +8,20 @@ import Image from "next/image";
 import { LeadForm } from "./LeadForm"
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader } from "./ui/card";
-import { 
-  Award, 
-  Users, 
-  Calendar, 
-  MapPin, 
-  Shield, 
-  Star, 
-  CheckCircle, 
+import {
+  Award,
+  Users,
+  Calendar,
+  MapPin,
+  Shield,
+  Star,
+  CheckCircle,
   Phone,
   Mail,
   Clock,
   Wrench,
   Building,
   Heart,
-  Target,
   ShieldCheck,
   Wallet,
   ThumbsUp,
@@ -33,32 +32,37 @@ export function About() {
 const [isModalOpen, setIsModalOpen] = useState(false);
 
   const stats = [
-    { icon: Calendar, number: "30+", text: "Years in Business", subtext: "Trusted Experience" },
-    { icon: Users, number: "5,000+", text: "Happy Customers", subtext: "Satisfied Clients" },
-    { icon: Wrench, number: "15,000+", text: "Jobs Completed", subtext: "Successful Projects" },
-    { icon: Star, number: "4.9", text: "Average Rating", subtext: "Customer Reviews" }
+    { icon: Calendar, number: "30+", text: "Years in Business", subtext: "Since 1995" },
+    { icon: Users, number: "15,000+", text: "Active Clients", subtext: "Trusted Customers" },
+    { icon: Wrench, number: "25,000+", text: "Jobs Completed", subtext: "Successful Projects" },
+    { icon: Star, number: "5.0", text: "Average Rating", subtext: "400+ Reviews" }
   ];
 
   const values = [
     {
+      icon: Heart,
+      title: "Servanthood",
+      description: "We lead by serving others — customers, team members, and our community with dedication and care."
+    },
+    {
       icon: Shield,
       title: "Integrity",
-      description: "We conduct business with honesty, transparency, and ethical practices in every interaction with our customers."
+      description: "We do what's right, even when no one's watching. Honest and ethical in every interaction."
     },
     {
       icon: Star,
       title: "Excellence",
-      description: "We strive for the highest quality in our workmanship, using premium materials and proven techniques."
+      description: "We pursue craftsmanship, communication, and professionalism in all we do with superior quality."
+    },
+    {
+      icon: Users,
+      title: "Unity",
+      description: "One family, one team — respecting and uplifting one another in every project we undertake."
     },
     {
       icon: Heart,
-      title: "Customer Focus",
-      description: "Your satisfaction is our priority. We listen, understand, and deliver solutions that exceed expectations."
-    },
-    {
-      icon: Target,
-      title: "Reliability",
-      description: "Count on us to be there when you need us most, with prompt service and dependable solutions."
+      title: "Grace",
+      description: "We lead with patience, forgiveness, and understanding in all our customer relationships."
     }
   ];
 
@@ -70,12 +74,12 @@ const [isModalOpen, setIsModalOpen] = useState(false);
   ];
 
   const timeline = [
-    { year: "1993", event: "Gardner Plumbing Co. founded", description: "Started as a small family business in Riverside County" },
-    { year: "2000", event: "Team Expansion", description: "Grew to 5 licensed plumbers serving the region" },
-    { year: "2010", event: "Commercial Division", description: "Expanded services to include commercial plumbing projects" },
-    { year: "2015", event: "24/7 Emergency Service", description: "Launched round-the-clock emergency response" },
-    { year: "2020", event: "Technology Upgrade", description: "Invested in advanced diagnostic and repair equipment" },
-    { year: "2024", event: "30+ Years Strong", description: "Celebrating three decades of trusted service" }
+    { year: "1995", event: "Founded as New Bar Plumbing", description: "Started serving Riverside County with commitment to quality and integrity" },
+    { year: "2010", event: "Commercial Division", description: "Expanded services to include commercial and industrial plumbing projects" },
+    { year: "2015", event: "24/7 Emergency Service", description: "Launched round-the-clock emergency response for our community" },
+    { year: "2020", event: "Gardner Family Ownership", description: "Gardner Family assumes ownership in September, continuing same ethics and professionalism" },
+    { year: "2024", event: "Rebranded as Gardner Plumbing Co.", description: "Operating as Gardner Plumbing Company serving 15,000+ active clients" },
+    { year: "2026", event: "Leadership Transition Planned", description: "Next generation transition planned while maintaining core values" }
   ];
 
   return (
@@ -168,7 +172,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
         </div>
 
         <p className="text-lg text-gray-300 leading-relaxed max-w-xl mb-8">
-          Since 1993, Gardner Plumbing Co. has been the trusted choice for residential and commercial plumbing services throughout Riverside County. Our commitment to quality, integrity, and customer satisfaction has made us a cornerstone of the community.
+          Since 1995, Gardner Plumbing Company has been the trusted choice for residential and commercial plumbing services throughout Riverside County. Based in Murrieta, CA, our commitment to quality, integrity, and customer satisfaction has made us a cornerstone of the community.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">
@@ -342,13 +346,13 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               
               <div className="space-y-6 text-gray-300 leading-relaxed">
                 <p className="text-lg">
-                  Gardner Plumbing Co. was founded in 1993 with a simple mission: provide honest, reliable plumbing services to our community. What started as a small family business has grown into one of Riverside County's most trusted <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing companies</Link>.
+                  Gardner Plumbing Company was founded in 1995 as New Bar Plumbing with a clear mission: provide honest, reliable plumbing services to our community. In September 2020, the Gardner Family assumed ownership, continuing the same commitment to ethics and professionalism that built our reputation.
                 </p>
                 <p>
-                  Our founder believed that quality work and fair pricing should be the foundation of every customer relationship. This philosophy continues to guide us today as we serve thousands of <Link href="/reviews" className="text-red-400 hover:text-red-300 underline">satisfied customers</Link> across the region.
+                  From our base in Murrieta, CA, we now serve over 15,000 active clients throughout Riverside County and beyond. Our philosophy of quality work and transparent pricing continues to guide us as we serve <Link href="/reviews" className="text-red-400 hover:text-red-300 underline">thousands of satisfied customers</Link> across the region.
                 </p>
                 <p>
-                  From <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency repairs</Link> to complete system installations, we've built our reputation one satisfied customer at a time. Our team of licensed professionals brings decades of combined experience to every job, ensuring quality results you can count on according to <a href="https://www.contractorcheckup.com/articles/hiring-licensed-plumber/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry standards</a>.
+                  From <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency repairs</Link> to complete system installations, we've built our reputation one satisfied customer at a time. Our team of licensed professionals (CSLB #1073177) brings decades of combined experience to every job, ensuring quality results you can count on according to <a href="https://www.contractorcheckup.com/articles/hiring-licensed-plumber/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry standards</a>.
                 </p>
               </div>
               
@@ -363,7 +367,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                   </div>
                 </div>
                 <p className="text-gray-300 leading-relaxed">
-                To provide exceptional <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing services</Link> while building lasting relationships with our customers through honesty, reliability, and superior craftsmanship, backed by <a href="https://g.page/r/CQ_tg7-i5ofvEBM/review" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline"> Google Business customer reviews</a>.
+                To serve our community with integrity, professionalism, and neighborly care — providing expert <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing solutions</Link> that build lasting trust and deliver peace of mind. We uphold the highest standards in workmanship and communication, treating every customer like a valued neighbor while solving problems with skill, honesty, and respect.
               </p>
 
               </div>
@@ -407,7 +411,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
             
             {/* Values Cards */}
             <div className="p-6 sm:p-8 lg:p-10">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
                 {values.map((value, index) => {
                   const IconComponent = value.icon;
                   return (
@@ -666,14 +670,14 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               </h2>
               
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                Gardner Plumbing Co. provides comprehensive plumbing services throughout Riverside County and surrounding areas. Our local knowledge and commitment to the community make us your trusted neighborhood plumbing experts.
+                Gardner Plumbing Company provides comprehensive plumbing services throughout Riverside County and surrounding cities within 45 miles of our Murrieta location. Our local knowledge and commitment to the community make us your trusted neighborhood plumbing experts.
               </p>
               
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
-                  "Temecula", "Murrieta", "Perris", "Menifee",
-                  "Canyon Lake", "Lake Elsinore", "Corona", "Moreno Valley",
-                  "Riverside", "Hemet", "San Jacinto", "Wildomar"
+                  "Temecula", "Murrieta", "Menifee", "Lake Elsinore",
+                  "Canyon Lake", "Wildomar", "Perris", "Corona",
+                  "Eastvale", "Chino Hills", "Riverside", "Palm Springs"
                 ].map((city, index) => (
                   <div key={index} className="flex items-center gap-3 p-3 glassmorphism-dark rounded-lg border border-white/10 hover:border-blue-500/30 transition-all duration-300">
                     <CheckCircle className="h-5 w-5 text-blue-400" />
@@ -683,11 +687,11 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="tel:9512464337">
+                <Link href="tel:9514285551">
                 <Button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 transition-all duration-300 rounded-xl shadow-lg group">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                    Call (951) 246-4337
+                    Call (951) 428-5551
                   </span>
                 </Button>
                 </Link>
@@ -759,11 +763,11 @@ const [isModalOpen, setIsModalOpen] = useState(false);
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-              <a href = "tel:9512464337">
+              <a href = "tel:9514285551">
               <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 transition-all duration-300 rounded-xl shadow-lg border border-red-400/20 group">
                 <span className="flex items-center justify-center gap-3">
                   <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                  Call (951) 246-4337
+                  Call (951) 428-5551
                 </span>
               </Button>
               </a>
@@ -789,7 +793,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               </div>
               <div className="flex items-center gap-2">
                 <Star className="h-4 w-4 text-yellow-400" />
-                <span>4.9 Star Rating</span>
+                <span>5.0 Star Rating</span>
               </div>
             </div>
           </div>
