@@ -21,6 +21,10 @@ const nextConfig: NextConfig = {
             key: 'Cross-Origin-Opener-Policy',
             value: 'same-origin-allow-popups',
           },
+          {
+            key: 'x-accessscan-key',
+            value: '45add0aacd4111ec9d640242ac120002',
+          },
         ],
       },
     ];
