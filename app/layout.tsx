@@ -178,7 +178,7 @@ export default function RootLayout({
         <Footer />
       </body>
 
-      {/* --- YOUR NEW SCRIPT (FIXED) --- */}
+      {/* --- ACSB SCRIPT --- */}
       <AcsbScript />
     </html>
   );
