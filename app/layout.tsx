@@ -140,25 +140,43 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Z0JKSKHPR3"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Z0JKSKHPR3');
+          `}
+        </Script>
         <Script
           id="local-business-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
           strategy="beforeInteractive"
         />
+        {/* ServiceTitan DNI */}
+        <Script id="servicetitan-dni" strategy="afterInteractive">
+          {`
+            dni = (function(q,w,e,r,t,y,u){q['ServiceTitanDniObject']=t;q[t]=q[t]||function(){
+              (q[t].q=q[t].q||[]).push(arguments)};q[t].l=1*new Date();y=w.createElement(e);
+              u=w.getElementsByTagName(e)[0];y.async=true;y.src=r;u.parentNode.insertBefore(y,u);
+              return q[t];
+            })(window,document,'script','https://static.servicetitan.com/marketing-ads/dni.js','dni');
+            dni('init', '877085251');
+            document.addEventListener('DOMContentLoaded', function() { dni('load'); }, false);
+          `}
+        </Script>
       </head>
       <body className="bg-background text-foreground antialiased min-h-screen">
         <Header />
         <main>{children}</main>
         <Footer />
       </body>
-
-      {/* Existing ServiceTitan Script */}
-      <Script id="servicetitan-dni" strategy="afterInteractive">
-        {`
-          // ... your servicetitan script
-        `}
-      </Script>
 
       {/* --- YOUR NEW SCRIPT (FIXED) --- */}
       <AcsbScript />
