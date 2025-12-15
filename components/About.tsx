@@ -74,7 +74,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
   ];
 
   const timeline = [
-    { year: "1995", event: "Founded as New Bar Plumbing", description: "Started serving Riverside County with commitment to quality and integrity" },
+    { year: "1995", event: "Founded as Nootbar Plumbing", description: "Started serving Riverside County with commitment to quality and integrity" },
     { year: "2010", event: "Commercial Division", description: "Expanded services to include commercial and industrial plumbing projects" },
     { year: "2015", event: "24/7 Emergency Service", description: "Launched round-the-clock emergency response for our community" },
     { year: "2020", event: "Gardner Family Ownership", description: "Gardner Family assumes ownership in September, continuing same ethics and professionalism" },
@@ -346,7 +346,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               
               <div className="space-y-6 text-gray-300 leading-relaxed">
                 <p className="text-lg">
-                  Gardner Plumbing Company was founded in 1995 as New Bar Plumbing with a clear mission: provide honest, reliable plumbing services to our community. In September 2020, the Gardner Family assumed ownership, continuing the same commitment to ethics and professionalism that built our reputation.
+                  Gardner Plumbing Company was founded in 1995 as Nootbar Plumbing with a clear mission: provide honest, reliable plumbing services to our community. In September 2020, the Gardner Family assumed ownership, continuing the same commitment to ethics and professionalism that built our reputation.
                 </p>
                 <p>
                   From our base in Murrieta, CA, we now serve over 15,000 active clients throughout Riverside County and beyond. Our philosophy of quality work and transparent pricing continues to guide us as we serve <Link href="/reviews" className="text-red-400 hover:text-red-300 underline">thousands of satisfied customers</Link> across the region.
