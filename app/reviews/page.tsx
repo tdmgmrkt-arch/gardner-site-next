@@ -4,7 +4,7 @@ import { FullReviews } from "@/components/FullReviews";
 
 export const metadata = {
   title: "Customer Reviews",
-  description: "See full reviews and testimonials from our satisfied customers in Riverside County. 5-star rated plumber with 400+ reviews.",
+  description: "See full reviews and testimonials from our satisfied customers in Riverside County. 5-star rated plumber with 600+ Reviews.",
   alternates: {
     canonical: '/reviews'
   },

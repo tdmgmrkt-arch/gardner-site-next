@@ -80,7 +80,7 @@ const ReviewsCarousel: FC = () => {
       >
         <span className="text-white font-bold text-lg">5-Star Rating</span>
         <span className="text-gray-400 font-medium">
-          on Google from <span className="text-white font-semibold">400+ Reviews</span>
+          on Google from <span className="text-white font-semibold">600+ Reviews</span>
         </span>
       </a>
       <div className="relative overflow-hidden h-20 sm:h-24">

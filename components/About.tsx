@@ -35,7 +35,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
     { icon: Calendar, number: "30+", text: "Years in Business", subtext: "Since 1995" },
     { icon: Users, number: "15,000+", text: "Active Clients", subtext: "Trusted Customers" },
     { icon: Wrench, number: "25,000+", text: "Jobs Completed", subtext: "Successful Projects" },
-    { icon: Star, number: "5.0", text: "Average Rating", subtext: "400+ Reviews" }
+    { icon: Star, number: "5.0", text: "Average Rating", subtext: "600+ Reviews" }
   ];
 
   const values = [

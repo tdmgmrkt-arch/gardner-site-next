@@ -365,7 +365,7 @@ grep "lastmod" public/sitemap*.xml
 - **Phone number confirmed:** +1-951-428-5551 (used in schema)
 - **Business location:** Temecula, CA (used in schema)
 - **Service area:** 12 cities in Riverside County
-- **Review stats:** 5 stars, 400+ reviews (confirmed from Hero component)
+- **Review stats:** 5 stars, 600+ Reviews (confirmed from Hero component)
 
 ---
 
