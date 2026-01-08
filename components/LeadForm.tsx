@@ -19,7 +19,7 @@ declare global {
   }
 }
 
-const RECAPTCHA_SITE_KEY = "6LeEL0QsAAAAAOdOJFRc9PxAimmuVchWMVZjBcBk";
+const RECAPTCHA_SITE_KEY = "6LcMW0QsAAAAAH5CNz1Xt0yG2GSgfHqBpqK90N11";
 
 export function LeadForm() {
   const [formData, setFormData] = useState({

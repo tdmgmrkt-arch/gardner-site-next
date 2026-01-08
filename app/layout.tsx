@@ -197,7 +197,7 @@ export default function RootLayout({
         </noscript>
         {/* Google reCAPTCHA Enterprise */}
         <Script
-          src="https://www.google.com/recaptcha/enterprise.js?render=6LeEL0QsAAAAAOdOJFRc9PxAimmuVchWMVZjBcBk"
+          src="https://www.google.com/recaptcha/enterprise.js?render=6LcMW0QsAAAAAH5CNz1Xt0yG2GSgfHqBpqK90N11"
           strategy="afterInteractive"
         />
       </head>
