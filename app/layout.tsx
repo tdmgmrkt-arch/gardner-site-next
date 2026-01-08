@@ -195,6 +195,11 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
+        {/* Google reCAPTCHA Enterprise */}
+        <Script
+          src="https://www.google.com/recaptcha/enterprise.js?render=6LeEL0QsAAAAAOdOJFRc9PxAimmuVchWMVZjBcBk"
+          strategy="afterInteractive"
+        />
       </head>
       <body className="bg-background text-foreground antialiased min-h-screen">
         <Header />

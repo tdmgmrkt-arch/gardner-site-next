@@ -7,6 +7,20 @@ import { Label } from "./ui/label";
 import { Checkbox } from "./ui/checkbox";
 import { Phone } from "lucide-react";
 
+// Extend window type for reCAPTCHA Enterprise
+declare global {
+  interface Window {
+    grecaptcha: {
+      enterprise: {
+        ready: (callback: () => void) => void;
+        execute: (siteKey: string, options: { action: string }) => Promise<string>;
+      };
+    };
+  }
+}
+
+const RECAPTCHA_SITE_KEY = "6LeEL0QsAAAAAOdOJFRc9PxAimmuVchWMVZjBcBk";
+
 export function LeadForm() {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -19,15 +33,76 @@ export function LeadForm() {
   });
 
   const [success, setSuccess] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (field: string, value: string | boolean) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
+  const executeRecaptcha = async (): Promise<string | null> => {
+    return new Promise((resolve) => {
+      if (!window.grecaptcha?.enterprise) {
+        console.error("reCAPTCHA Enterprise not loaded");
+        resolve(null);
+        return;
+      }
+
+      window.grecaptcha.enterprise.ready(async () => {
+        try {
+          const token = await window.grecaptcha.enterprise.execute(
+            RECAPTCHA_SITE_KEY,
+            { action: "SUBMIT_FORM" }
+          );
+          resolve(token);
+        } catch (error) {
+          console.error("reCAPTCHA execution error:", error);
+          resolve(null);
+        }
+      });
+    });
+  };
+
+  const verifyRecaptcha = async (token: string): Promise<boolean> => {
+    try {
+      const response = await fetch("/api/verify-recaptcha", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token, action: "SUBMIT_FORM" }),
+      });
+
+      const data = await response.json();
+      return data.success === true;
+    } catch (error) {
+      console.error("reCAPTCHA verification error:", error);
+      return false;
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSuccess("");
 
     try {
+      // Execute reCAPTCHA Enterprise
+      const recaptchaToken = await executeRecaptcha();
+
+      if (!recaptchaToken) {
+        setSuccess("❌ Security verification failed. Please refresh and try again.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      // Verify the token server-side
+      const isVerified = await verifyRecaptcha(recaptchaToken);
+
+      if (!isVerified) {
+        setSuccess("❌ Security check failed. Please try again later.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      // Submit form to lead connector
       const response = await fetch(
         "https://services.leadconnectorhq.com/hooks/kfDjJzsEadItLomlnfYH/webhook-trigger/bc3b8cb4-2ed4-49b5-85a9-99ba593b29ad",
         {
@@ -49,7 +124,7 @@ export function LeadForm() {
 
       if (response.ok) {
         setSuccess(
-          "✅ Thanks! Your request has been submitted. We’ll contact you shortly."
+          "✅ Thanks! Your request has been submitted. We'll contact you shortly."
         );
         setFormData({
           firstName: "",
@@ -66,6 +141,8 @@ export function LeadForm() {
     } catch (err) {
       console.error("⚡ Submission error:", err);
       setSuccess("⚡ Submission failed, please check your connection and try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -271,11 +348,23 @@ export function LeadForm() {
           <Button
             type="submit"
             size="lg"
-            disabled={!formData.consent}
+            disabled={!formData.consent || isSubmitting}
             className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold py-3 rounded-lg transition-all duration-300 disabled:opacity-50"
           >
-            <Phone className="h-4 w-4 mr-2" />
-            GET FREE ESTIMATE
+            {isSubmitting ? (
+              <>
+                <svg className="animate-spin h-4 w-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                SUBMITTING...
+              </>
+            ) : (
+              <>
+                <Phone className="h-4 w-4 mr-2" />
+                GET FREE ESTIMATE
+              </>
+            )}
           </Button>
         </div>
 
