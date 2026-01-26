@@ -376,7 +376,7 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
                   <p className="text-gray-400 text-xs group-hover:text-gray-300 transition-colors duration-300">Certified professionals</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-3 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 group">
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-500 rounded-lg flex items-center justify-center shadow-lg flex-shrink-0">
                   <Shield className="h-5 w-5 text-white group-hover:scale-110 transition-transform duration-300" />
@@ -386,7 +386,7 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
                   <p className="text-gray-400 text-xs group-hover:text-gray-300 transition-colors duration-300">100% satisfaction</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-3 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 group">
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-purple-500 rounded-lg flex items-center justify-center shadow-lg flex-shrink-0">
                   <Star className="h-5 w-5 text-white group-hover:scale-110 transition-transform duration-300" />
@@ -395,6 +395,25 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
                   <h3 className="text-white font-semibold text-sm group-hover:text-purple-100 transition-colors duration-300">30+ Years Experience</h3>
                   <p className="text-gray-400 text-xs group-hover:text-gray-300 transition-colors duration-300">Trusted local experts</p>
                 </div>
+              </div>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="flex items-center justify-between p-4 bg-white/5 rounded-xl">
+              <span className="text-gray-400 text-sm font-medium">Follow Us</span>
+              <div className="flex items-center gap-3">
+                <a href="https://www.facebook.com/gardnerplumbingco" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 hover:bg-blue-600/20 rounded-lg flex items-center justify-center transition-all duration-300 group">
+                  <svg className="w-5 h-5 text-gray-400 group-hover:text-blue-400 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/gardnerplumbingco" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 hover:bg-pink-600/20 rounded-lg flex items-center justify-center transition-all duration-300 group">
+                  <svg className="w-5 h-5 text-gray-400 group-hover:text-pink-400 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@gardnerplumbingco" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 hover:bg-red-600/20 rounded-lg flex items-center justify-center transition-all duration-300 group">
+                  <svg className="w-5 h-5 text-gray-400 group-hover:text-red-500 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+                <a href="https://www.yelp.com/biz/gardner-plumbing-murrieta" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 hover:bg-red-600/20 rounded-lg flex items-center justify-center transition-all duration-300 group">
+                  <svg className="w-5 h-5 text-gray-400 group-hover:text-red-600 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.622 5.39l-3.546-3.51c-.703-.696-.18-1.893.79-1.806l5.006.44a1.073 1.073 0 0 1 .94 1.218 9.194 9.194 0 0 1-1.418 3.523 1.073 1.073 0 0 1-1.772.135zm-5.931-1.896l-.695-5.04c-.134-.973 1.053-1.546 1.79-.865l3.79 3.497c.736.68.173 1.846-.85 1.758l-2.9-.255a1.073 1.073 0 0 1-1.135-1.095zM8.91 8.412l2.905 4.308c.564.83-.216 1.906-1.176 1.63l-4.995-1.433a1.073 1.073 0 0 1-.694-1.459 9.194 9.194 0 0 1 2.364-3.252 1.072 1.072 0 0 1 1.596.206zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.769 5.752l.001-4.68a1.073 1.073 0 0 1 1.073-1.072h.012a9.194 9.194 0 0 1 3.954.887 1.073 1.073 0 0 1 .365 1.676l-3.28 4.09c-.503.628-1.507.458-1.758-.324l-.367-1.146z"/></svg>
+                </a>
               </div>
             </div>
           </div>
