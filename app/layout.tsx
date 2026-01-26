@@ -205,6 +205,12 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        {/* TD Marketing Group Tracking */}
+        <Script
+          src="https://link.tdmarketinggroup.com/js/external-tracking.js"
+          data-tracking-id="tk_78a2590609e84e5cb64d7c9be0fc7cb3"
+          strategy="afterInteractive"
+        />
       </body>
 
       {/* --- ACSB SCRIPT --- */}
