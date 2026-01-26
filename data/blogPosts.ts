@@ -16,7 +16,7 @@ export const posts: Post[] = [
  {
   slug: "plumbing-upgrades-boost-home-value",
   category: "Home Improvement",
-  title: "Plumbing Upgrades That Boost Your Home’s Value (And Are Worth Every Penny)",
+  title: "Plumbing Upgrades That Boost Home Value",
   author: "Gardner Plumbing Co.",
   date: "May 15, 2025",
   readTime: "6 min read",
@@ -50,7 +50,7 @@ export const posts: Post[] = [
   {
   slug: "ultimate-water-leak-detection-guide-moreno-valley",
   category: "Leak Detection",
-  title: "The Ultimate Water Leak Detection Guide for Moreno Valley",
+  title: "Water Leak Detection Guide: Moreno Valley",
   author: "Gardner Plumbing Co.",
   date: "April 26, 2025",
   readTime: "7 min read",
@@ -78,7 +78,7 @@ export const posts: Post[] = [
   {
   slug: "signs-you-need-toilet-repair-perris",
   category: "Appliances",
-  title: "5 Signs You Need Toilet Repair in Perris—Before It Becomes a Bigger Problem",
+  title: "5 Signs You Need Toilet Repair in Perris",
   author: "Gardner Plumbing Co.",
   date: "April 9, 2025",
   readTime: "4 min read",
@@ -113,7 +113,7 @@ export const posts: Post[] = [
   {
   slug: "prevent-drain-clogs-rainy-season",
   category: "Drain Cleaning",
-  title: "How to Prevent Drain Clogs During Murrieta’s Rainy Season: Expert Advice",
+  title: "Prevent Drain Clogs This Rainy Season",
   author: "Gardner Plumbing Co.",
   date: "March 25, 2025",
   readTime: "5 min read",
@@ -170,7 +170,7 @@ export const posts: Post[] = [
  {
   slug: "tankless-water-heaters-temecula-upgrade",
   category: "Water Heaters",
-  title: "Tankless Water Heaters: Temecula’s Top Upgrade in 2025",
+  title: "Tankless Water Heaters: Temecula's Top Upgrade",
   author: "Gardner Plumbing Co.",
   date: "March 13, 2025",
   readTime: "6 min read",
@@ -206,7 +206,7 @@ export const posts: Post[] = [
 {
   slug: "should-i-install-moen-flo",
   category: "Smart Home & Filtration",
-  title: "Should I Install a Moen Flo Smart Water Monitor?",
+  title: "Should You Install a Moen Flo Monitor?",
   author: "Gardner Plumbing Co.",
   date: "June 21, 2024",
   readTime: "5 min read",
@@ -243,7 +243,7 @@ export const posts: Post[] = [
   {
   slug: "how-to-protect-your-plumbing",
   category: "Preventative Maintenance",
-  title: "How to Protect Your Home’s Plumbing: Expert Tips",
+  title: "How to Protect Your Home's Plumbing",
   author: "Gardner Plumbing Co.",
   date: "July 25, 2023",
   readTime: "6 min read",
@@ -275,7 +275,7 @@ export const posts: Post[] = [
  {
   slug: "how-to-find-a-water-leak",
   category: "Leak Detection",
-  title: "How To Find A Water Leak: 8 Ways To Detect",
+  title: "8 Ways to Detect a Water Leak",
   author: "Gardner Plumbing Co.",
   date: "October 25, 2022",
   readTime: "7 min read",
@@ -319,7 +319,7 @@ export const posts: Post[] = [
  {
   slug: "benefits-of-drain-cleaning",
   category: "Drain Cleaning",
-  title: "The Benefits Of Drain Cleaning: Why Is It So Important?",
+  title: "Why Drain Cleaning Matters for Your Home",
   author: "Gardner Plumbing Co.",
   date: "October 25, 2022",
   readTime: "4 min read",

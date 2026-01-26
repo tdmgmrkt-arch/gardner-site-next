@@ -179,9 +179,9 @@ export function AllFaq() {
               <HelpCircle className="h-4 w-4 sm:h-5 sm:w-5 text-blue-400" />
               <span className="text-blue-400 font-semibold text-xs sm:text-sm uppercase tracking-wider">FAQ</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-6 sm:mb-8 drop-shadow-lg">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-6 sm:mb-8 drop-shadow-lg">
               Frequently Asked <span className="text-gradient bg-gradient-to-r from-blue-400 to-red-600 bg-clip-text text-transparent">Questions</span>
-            </h2>
+            </h1>
             <p className="text-sm sm:text-base lg:text-[16px] text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
               Find answers to common questions about our <Link href="/services" className="text-red-400 hover:text-red-300 underline">plumbing services</Link>, pricing, and policies. If you don't find your answer here, please don't hesitate to <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact us</Link>.
             </p>
