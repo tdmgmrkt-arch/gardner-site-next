@@ -607,7 +607,7 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
                   />
                   <div className="flex flex-col gap-1.5">
                     <Label htmlFor="smsConsent" className="text-[10px] sm:text-xs text-gray-300 leading-relaxed">
-                      By submitting this form and signing up for texts, you agree to receive informational (appointment reminders, account notifications, etc.) and marketing (offers and promotions, etc.) messages from Gardner Plumbing at the number provided. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe. Reply HELP for help or email office@gardnerplumbingco.com. Customer opt-in data will not be shared or sold to third parties for marketing purposes.
+                      By submitting this form and signing up for texts, you agree to receive informational (appointment reminders, account notifications, etc.) and marketing (offers and promotions, etc.) messages from Gardner Plumbing at the number provided. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe. Reply HELP for help. Customer opt-in data will not be shared or sold to third parties for marketing purposes.
                     </Label>
                     <div className="flex items-center gap-2 text-[10px] sm:text-xs">
                       <a href="/privacy-policy" className="text-red-400 underline hover:text-red-300">
