@@ -107,7 +107,7 @@ export function PrivPol() {
               <li><b>Types of Messages:</b> We send both informational messages (appointment reminders, service confirmations, account notifications, technician arrival updates) and marketing messages (special offers, promotions, seasonal discounts, service recommendations).</li>
               <li><b>Message Frequency:</b> Message frequency varies based on your service activity and our promotional schedule. You may receive multiple messages per month.</li>
               <li><b>Message & Data Rates:</b> Message and data rates may apply depending on your mobile carrier and plan. Gardner Plumbing Co. is not responsible for any charges from your carrier.</li>
-              <li><b>How to Get Help:</b> Reply HELP to any message for assistance, or contact us at info@gardnerplumbing.com or call (951) 246-4337.</li>
+              <li><b>How to Get Help:</b> Reply HELP to any message for assistance, or contact us at office@gardnerplumbingco.com or call (951) 246-4337.</li>
               <li><b>How to Opt Out:</b> Reply STOP to any message to unsubscribe from our SMS program at any time. You will receive a confirmation message and will no longer receive text messages from us unless you opt in again.</li>
             </ul>
             <p className="text-gray-300 font-semibold bg-gray-900/50 p-3 rounded-lg border border-gray-700">
@@ -130,7 +130,7 @@ export function PrivPol() {
             </ul>
             <p className="text-gray-300">
               <b>Phone:</b> (951) 246-4337<br/>
-              <b>Email:</b> info@gardnerplumbing.com
+              <b>Email:</b> office@gardnerplumbingco.com
             </p>
           </div>
 

@@ -319,35 +319,39 @@ export function LeadForm() {
                 </div>
 
         {/* SMS Consent Disclosure */}
-        <div className="flex items-start gap-2">
+        <div className="flex items-start gap-2 sm:gap-3">
           <Checkbox
             id="smsConsent"
             checked={formData.consent}
             onCheckedChange={(checked) =>
               handleInputChange("consent", checked as boolean)
             }
-            className="mt-1 border-gray-500 data-[state=checked]:bg-blue-600 data-[state=checked]:border-blue-600 flex-shrink-0"
+            className="mt-0.5 border-gray-500 data-[state=checked]:bg-blue-600 data-[state=checked]:border-blue-600 flex-shrink-0"
             required
           />
-          <Label
-            htmlFor="smsConsent"
-            className="text-[10px] sm:text-xs text-gray-300 leading-relaxed"
-          >
-            By submitting this form and signing up for texts, you agree to receive informational (appointment reminders, account notifications, etc.) and marketing (offers and promotions, etc.) messages from Gardner Plumbing at the number provided. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe. Reply HELP for help or email info@gardnerplumbing.com. View our{" "}
-            <a
-              href="/privacy-policy"
-              className="text-blue-400 underline hover:text-blue-300"
+          <div className="flex flex-col gap-1.5">
+            <Label
+              htmlFor="smsConsent"
+              className="text-[10px] sm:text-xs text-gray-300 leading-relaxed"
             >
-              Privacy Policy
-            </a>{" "}
-            and{" "}
-            <a
-              href="/terms-and-services"
-              className="text-blue-400 underline hover:text-blue-300"
-            >
-              Terms & Conditions
-            </a>.
-          </Label>
+              By submitting this form and signing up for texts, you agree to receive informational (appointment reminders, account notifications, etc.) and marketing (offers and promotions, etc.) messages from Gardner Plumbing at the number provided. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe. Reply HELP for help or email office@gardnerplumbingco.com. Customer opt-in data will not be shared or sold to third parties for marketing purposes.
+            </Label>
+            <div className="flex items-center gap-2 text-[10px] sm:text-xs">
+              <a
+                href="/privacy-policy"
+                className="text-blue-400 underline hover:text-blue-300"
+              >
+                Privacy Policy
+              </a>
+              <span className="text-gray-500">|</span>
+              <a
+                href="/terms-and-services"
+                className="text-blue-400 underline hover:text-blue-300"
+              >
+                Terms & Conditions
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Submit */}

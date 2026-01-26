@@ -394,14 +394,18 @@ export function MaintenanceAgreement() {
               </div>
 
               {/* SMS Consent Disclosure - TCR Compliant */}
-              <div className="flex items-start space-x-3">
-                <Checkbox id="opt-in" className="mt-1 border-white/20 data-[state=checked]:bg-green-500 data-[state=checked]:border-green-500 flex-shrink-0" required />
-                <Label htmlFor="opt-in" className="text-[10px] sm:text-xs text-gray-300 leading-relaxed">
-                  By submitting this form and signing up for texts, you agree to receive informational (appointment reminders, account notifications, etc.) and marketing (offers and promotions, etc.) messages from Gardner Plumbing at the number provided. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe. Reply HELP for help or email info@gardnerplumbing.com. View our{" "}
-                  <a href="/privacy-policy" className="text-green-400 underline hover:text-green-300">Privacy Policy</a>{" "}
-                  and{" "}
-                  <a href="/terms-and-services" className="text-green-400 underline hover:text-green-300">Terms & Conditions</a>.
-                </Label>
+              <div className="flex items-start gap-2 sm:gap-3">
+                <Checkbox id="opt-in" className="mt-0.5 border-white/20 data-[state=checked]:bg-green-500 data-[state=checked]:border-green-500 flex-shrink-0" required />
+                <div className="flex flex-col gap-1.5">
+                  <Label htmlFor="opt-in" className="text-[10px] sm:text-xs text-gray-300 leading-relaxed">
+                    By submitting this form and signing up for texts, you agree to receive informational (appointment reminders, account notifications, etc.) and marketing (offers and promotions, etc.) messages from Gardner Plumbing at the number provided. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe. Reply HELP for help or email office@gardnerplumbingco.com. Customer opt-in data will not be shared or sold to third parties for marketing purposes.
+                  </Label>
+                  <div className="flex items-center gap-2 text-[10px] sm:text-xs">
+                    <a href="/privacy-policy" className="text-green-400 underline hover:text-green-300">Privacy Policy</a>
+                    <span className="text-gray-500">|</span>
+                    <a href="/terms-and-services" className="text-green-400 underline hover:text-green-300">Terms & Conditions</a>
+                  </div>
+                </div>
               </div>
 
               <Button 

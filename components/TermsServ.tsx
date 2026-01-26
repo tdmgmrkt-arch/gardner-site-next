@@ -157,6 +157,10 @@ export function TermsServ() {
               We respect your privacy and confidentiality. Personal data will only be used for service delivery, scheduling, and billing purposes.
               For more details, see our <Link href="/privacy-policy" className="text-red-400 hover:text-red-300 underline">Privacy Policy</Link>. Learn more about professional standards at <a href="https://www.phccweb.org" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">PHCC</a>.
             </p>
+            <p className="text-gray-300 mt-4">
+              <b>SMS Messaging</b><br />
+              If you opt in to receive SMS or text messages from Gardner Plumbing Co., such communications are governed by our Messaging Terms outlined in our <Link href="/privacy-policy" className="text-red-400 hover:text-red-300 underline">Privacy Policy</Link>. Message frequency may vary. Message and data rates may apply. You may opt out at any time by replying STOP. Reply HELP for assistance.
+            </p>
           </div>
 
           {/* 9. Dispute Resolution */}
