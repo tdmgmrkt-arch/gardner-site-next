@@ -29,6 +29,37 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
+  // Redirects for old/broken URLs
+  async redirects() {
+    return [
+      {
+        source: '/water-heater-solutions',
+        destination: '/services/water-heater-service',
+        permanent: true,
+      },
+      {
+        source: '/remodeling-and-new-construction',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/plumbing-services',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/leak-detection',
+        destination: '/services/leak-detection',
+        permanent: true,
+      },
+      {
+        source: '/drain-cleaning-and-repairs',
+        destination: '/services/drain-cleaning',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
