@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // Replace with actual verification code
+    google: 'Ji8WKO1-htmsFEGwW2zGn19UbNqnWxM1v4q6EN4-Pok',
   },
 };
 
@@ -90,7 +90,7 @@ export default function RootLayout({
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5",
-      "reviewCount": "400",
+      "reviewCount": "600",
       "bestRating": "5",
       "worstRating": "1"
     },

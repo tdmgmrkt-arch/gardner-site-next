@@ -1,12 +1,14 @@
 "use client";
 
-import { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect, cloneElement, ReactElement } from "react";
 import { Modal } from "./Modal";
-import Image from "next/image";
 import { Button } from "./ui/button";
 
+interface SchedulerModalProps {
+  trigger?: ReactElement;
+}
 
-export function SchedulerModal() {
+export function SchedulerModal({ trigger }: SchedulerModalProps) {
   const [open, setOpen] = useState(false);
 
   // Scroll to top only on desktop when opening
@@ -21,18 +23,25 @@ export function SchedulerModal() {
     }
   }, [open]);
 
+  // Default trigger button
+  const defaultTrigger = (
+    <Button
+      size="lg"
+      className="min-w-[220px] w-full justify-center sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg border border-blue-400/20 group"
+    >
+      <span className="flex items-center justify-center gap-3">
+        📅 Book Online
+      </span>
+    </Button>
+  );
+
+  // Use custom trigger or default
+  const triggerElement = trigger || defaultTrigger;
+
   return (
     <>
       {/* Trigger button */}
-      <Button
-        size="lg"
-        onClick={() => setOpen(true)}
-        className="min-w-[220px] w-full justify-center sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg border border-blue-400/20 group"
-      >
-        <span className="flex items-center justify-center gap-3">
-          📅 Book Online
-        </span>
-      </Button>
+      {cloneElement(triggerElement, { onClick: () => setOpen(true) })}
 
       {/* Popup */}
       <Modal open={open} onClose={() => setOpen(false)}>

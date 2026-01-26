@@ -4,5 +4,5 @@
 User-agent: *
 Allow: /
 
-# Point crawlers to the sitemap index
-Sitemap: https://gardnerplumbingco.com/sitemap_index.xml
+# Point crawlers to the sitemap
+Sitemap: https://gardnerplumbingco.com/sitemap.xml
