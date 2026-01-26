@@ -2,7 +2,8 @@ import {
   Shield, FileText, Database, Eye, Lock, Cookie, Phone, Mail, MapPin, Users, Clock, Scale, Info, Calendar,
   OptionIcon,
   DoorOpen,
-  List
+  List,
+  MessageSquare
 } from "lucide-react";
 import Link from "next/link";
 
@@ -83,7 +84,7 @@ export function PrivPol() {
             </ul>
           </div>
 
-          {/* 3. Information Sharing */}
+          {/* 3. Data Protection */}
           <div>
             <h2 className="text-2xl font-semibold flex items-center gap-2 mb-2">
               <Shield className="h-6 w-6 text-red-500" /> 3. Data Protection
@@ -93,38 +94,81 @@ export function PrivPol() {
             </p>
           </div>
 
-          {/* 4. Data Security */}
-          <div>
-            <h2 className="text-2xl font-semibold flex items-center gap-2 mb-2">
-              <List className="h-6 w-6 text-red-500" /> 4. Opt-Out Instructions
+          {/* 4. Messaging Terms */}
+          <div className="bg-gray-800/50 border border-red-500/30 rounded-xl p-6">
+            <h2 className="text-2xl font-semibold flex items-center gap-2 mb-4">
+              <MessageSquare className="h-6 w-6 text-red-500" /> 4. Messaging Terms
             </h2>
-            <p className="text-gray-300">
-              
-                You are in control of your data. You may opt out of receiving messages or data usage at any time by doing one of the following:
-                Reply STOP to any SMS message you receive from us.
-                Contact us directly at:<br></br><br></br>
-                <b>Phone:</b>  (951) 246-4337<br></br>
-                <b>Email:</b>  gardnerplumbingco@gmail.com
+            <p className="text-gray-300 mb-4">
+              Gardner Plumbing Co. offers SMS/text messaging services to provide you with important information about your plumbing services. By opting in to our messaging program, you agree to the following terms:
+            </p>
+            <ul className="list-disc pl-6 text-gray-400 space-y-2 mb-4">
+              <li><b>Company Name:</b> Gardner Plumbing Co.</li>
+              <li><b>Types of Messages:</b> We send both informational messages (appointment reminders, service confirmations, account notifications, technician arrival updates) and marketing messages (special offers, promotions, seasonal discounts, service recommendations).</li>
+              <li><b>Message Frequency:</b> Message frequency varies based on your service activity and our promotional schedule. You may receive multiple messages per month.</li>
+              <li><b>Message & Data Rates:</b> Message and data rates may apply depending on your mobile carrier and plan. Gardner Plumbing Co. is not responsible for any charges from your carrier.</li>
+              <li><b>How to Get Help:</b> Reply HELP to any message for assistance, or contact us at info@gardnerplumbing.com or call (951) 246-4337.</li>
+              <li><b>How to Opt Out:</b> Reply STOP to any message to unsubscribe from our SMS program at any time. You will receive a confirmation message and will no longer receive text messages from us unless you opt in again.</li>
+            </ul>
+            <p className="text-gray-300 font-semibold bg-gray-900/50 p-3 rounded-lg border border-gray-700">
+              Customer opt-in data will not be shared or sold to third parties for marketing purposes.
             </p>
           </div>
 
-          {/* 5. Data Retention */}
+          {/* 5. Opt-Out Instructions */}
           <div>
             <h2 className="text-2xl font-semibold flex items-center gap-2 mb-2">
-              <Clock className="h-6 w-6 text-red-500" /> 5. Data Retention
+              <List className="h-6 w-6 text-red-500" /> 5. Opt-Out Instructions
             </h2>
+            <p className="text-gray-300 mb-3">
+              You are in control of your data. You may opt out of receiving messages or data usage at any time by doing one of the following:
+            </p>
+            <ul className="list-disc pl-6 text-gray-400 space-y-1 mb-3">
+              <li>Reply <b>STOP</b> to any SMS message you receive from us to unsubscribe immediately.</li>
+              <li>Reply <b>HELP</b> to any SMS message for assistance with our messaging program.</li>
+              <li>Contact us directly via phone or email.</li>
+            </ul>
             <p className="text-gray-300">
-              We retain your data only as long as needed for service, legal, and warranty purposes.
+              <b>Phone:</b> (951) 246-4337<br/>
+              <b>Email:</b> info@gardnerplumbing.com
             </p>
           </div>
 
-          {/* 6. Changes */}
+          {/* 6. Data Retention */}
           <div>
             <h2 className="text-2xl font-semibold flex items-center gap-2 mb-2">
-              <Scale className="h-6 w-6 text-red-500" /> 6. Changes to This Policy
+              <Clock className="h-6 w-6 text-red-500" /> 6. Data Retention
             </h2>
             <p className="text-gray-300">
-              We may update this Privacy Policy from time to time. Updates will be posted on this page.
+              We retain your data only as long as needed for service, legal, and warranty purposes. Customer information is stored securely on encrypted servers and is only accessible to authorized personnel who need the information to perform their job functions.
+            </p>
+          </div>
+
+          {/* 7. Information Sharing */}
+          <div>
+            <h2 className="text-2xl font-semibold flex items-center gap-2 mb-2">
+              <Users className="h-6 w-6 text-red-500" /> 7. Information Sharing
+            </h2>
+            <p className="text-gray-300 mb-3">
+              We may share your information in limited circumstances:
+            </p>
+            <ul className="list-disc pl-6 text-gray-400 space-y-1">
+              <li>With service providers who assist us in delivering plumbing services (scheduling, payment processing).</li>
+              <li>When required by law or to protect our legal rights.</li>
+              <li>With your consent for specific purposes.</li>
+            </ul>
+            <p className="text-gray-300 mt-3 font-semibold">
+              We do NOT sell, rent, or share your personal information with third parties for their marketing purposes.
+            </p>
+          </div>
+
+          {/* 8. Changes */}
+          <div>
+            <h2 className="text-2xl font-semibold flex items-center gap-2 mb-2">
+              <Scale className="h-6 w-6 text-red-500" /> 8. Changes to This Policy
+            </h2>
+            <p className="text-gray-300">
+              We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised effective date.
             </p>
           </div>
 

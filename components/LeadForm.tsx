@@ -318,28 +318,35 @@ export function LeadForm() {
                   </div>
                 </div>
 
-        {/* Consent */}
+        {/* SMS Consent Disclosure */}
         <div className="flex items-start gap-2">
           <Checkbox
-            id="consent"
+            id="smsConsent"
             checked={formData.consent}
             onCheckedChange={(checked) =>
               handleInputChange("consent", checked as boolean)
             }
-            className="mt-1 border-gray-500 data-[state=checked]:bg-blue-600 data-[state=checked]:border-blue-600"
+            className="mt-1 border-gray-500 data-[state=checked]:bg-blue-600 data-[state=checked]:border-blue-600 flex-shrink-0"
+            required
           />
           <Label
-            htmlFor="consent"
-            className="text-xs text-gray-300 leading-relaxed"
+            htmlFor="smsConsent"
+            className="text-[10px] sm:text-xs text-gray-300 leading-relaxed"
           >
-            I agree to receive SMS messages from Gardner Plumbing Co.{" "}
+            By submitting this form and signing up for texts, you agree to receive informational (appointment reminders, account notifications, etc.) and marketing (offers and promotions, etc.) messages from Gardner Plumbing at the number provided. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe. Reply HELP for help or email info@gardnerplumbing.com. View our{" "}
             <a
               href="/privacy-policy"
               className="text-blue-400 underline hover:text-blue-300"
             >
-              privacy policy
-            </a>
-            . Reply STOP to opt-out.
+              Privacy Policy
+            </a>{" "}
+            and{" "}
+            <a
+              href="/terms-and-services"
+              className="text-blue-400 underline hover:text-blue-300"
+            >
+              Terms & Conditions
+            </a>.
           </Label>
         </div>
 
