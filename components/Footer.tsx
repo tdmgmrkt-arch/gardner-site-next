@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Phone, Mail, MapPin, Facebook, Youtube, Instagram, Star } from "lucide-react";
 import { useState } from "react";
+import { resetCookieConsent } from "./CookieConsentBanner";
 
 const logo = "/gardner_logo.webp";
 
@@ -320,6 +321,12 @@ export function Footer() {
                 <a href="/sitemap_index.xml" className="text-gray-400 hover:text-red-400 transition-colors duration-300 hover-lift">
                   Sitemap
                 </a>
+                <button
+                  onClick={resetCookieConsent}
+                  className="text-gray-400 hover:text-red-400 transition-colors duration-300 hover-lift"
+                >
+                  Cookie Settings
+                </button>
               </div>
             </div>
           </div>

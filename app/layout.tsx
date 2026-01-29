@@ -5,7 +5,8 @@ import "./global.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import Script from "next/script";
-import { AcsbScript } from "@/components/AcsbScript"; // <-- IMPORT IT
+import { AcsbScript } from "@/components/AcsbScript";
+import { CookieConsentBanner } from "@/components/CookieConsentBanner";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gardnerplumbingco.com'),
@@ -205,6 +206,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <CookieConsentBanner />
         {/* TD Marketing Group Tracking */}
         <Script
           src="https://link.tdmarketinggroup.com/js/external-tracking.js"
