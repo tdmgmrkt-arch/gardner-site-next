@@ -4,14 +4,10 @@ import React, { FC, ReactNode } from "react";
 import {
   Phone,
   ArrowRight,
-  Shield,
-  Clock,
-  CheckCircle,
   DollarSign,
   HelpCircle,
   FileText,
   TrendingUp,
-  FastForward,
 } from "lucide-react";
 
 import {
@@ -79,10 +75,6 @@ const CardContent: FC<React.HTMLAttributes<HTMLDivElement>> = ({
 
 export function Financing() {
 
-  const greenSkyModuleHtml = `
-  <div class="financing-module" style="box-sizing: border-box; margin: 0px; text-align: left; border-width: 5px; border-style: solid; border-color: #207e20; width: 650px; border-radius: 4px;"><div><img src=https://www.greensky.com/merchantkit/images/finance_buttons/headers/header_640.jpg?v=3.0.612 width="640" alt="Financing Options from GreenSky" tabindex="0" /></div><div><img src=https://www.greensky.com/merchantkit/images/finance_buttons/product_headers/plumbing_product_header_640.jpg?v=3.0.612 width="640" alt="Finance Your Project" tabindex="0" /></div><div><a href=https://projects.greensky.com/MerchantLoanApplication?apptype=short&merchant=81122934&dealerplan=1519&channel=External-Button-03 target="_blank" tabindex="0"><img src=https://www.greensky.com/merchantkit/images/finance_buttons/plans/1519_640x50.jpg?v=3.0.612 width="640" alt="Plan 1519" /></a></div><div><a href=https://projects.greensky.com/MerchantLoanApplication?apptype=short&merchant=81122934&dealerplan=2613&channel=External-Button-03 target="_blank" tabindex="0"><img src=https://www.greensky.com/merchantkit/images/finance_buttons/plans/2613_640x50.jpg?v=3.0.612 width="640" alt="Plan 2613" /></a></div><div><img src=https://www.greensky.com/merchantkit/images/finance_buttons/footers/footer_640.jpg?v=3.0.612 width="640" alt="*Subject to credit approval. These examples are estimates only. Actual payment amounts based on amount and timing of purchases. Call 866-936-0602 for financing costs and terms. Loans for the GreenSky® consumer loan program are provided by Synovus Bank, Member FDIC, NMLS #408043, without regard to age, race, color, religion, national origin, gender, disability, or familial status. GreenSky Servicing, LLC services the loans on behalf of your lender, NMLS #1416362. www.nmlsconsumeraccess.org. GreenSky® is a registered trademark of GreenSky, LLC and is licensed to banks and other financial institutions for their use in connection with that consumer loan program. GreenSky Servicing, LLC is a financial technology company that manages the GreenSky® consumer loan program by providing origination and servicing support to banks and other financial institutions that make or hold program loans. GreenSky, LLC and GreenSky Servicing, LLC are not lenders. All credit decisions and loan terms are determined by program lenders." tabindex="0" /></div></div>
-  `;
-
   const greenSkyPromoContent = [
     {
       title: "Reduced Rate 11.99% for 180 months",
@@ -94,75 +86,49 @@ export function Financing() {
     }
   ];
 
-  const benefits = [
-    {
-      icon: Clock,
-      title: "Get Repairs Now, Pay Later",
-      description:
-        "Don't let budget constraints delay critical plumbing repairs. Secure your home now and pay over time.",
-    },
-    {
-      icon: FastForward,
-      title: "Quick & Easy Application",
-      description:
-        "Our simple application process takes just a few minutes to complete, with decisions often made instantly.",
-    },
-    {
-      icon: TrendingUp,
-      title: "Competitive Rates",
-      description:
-        "We partner with GreenSky® to offer you flexible plans and competitive interest rates.",
-    },
-    {
-      icon: Shield,
-      title: "Peace of Mind",
-      description:
-        "Financing allows you to choose the best long-term solution, not just the cheapest temporary fix.",
-    },
-  ];
-
-  const howItWorks = [
+  const processSteps = [
     {
       step: "01",
       title: "Get a Free Estimate",
-      description:
-        "Our technician provides a detailed, upfront quote for your plumbing project.",
+      description: "Our technician provides a detailed, upfront quote for your plumbing project.",
     },
     {
       step: "02",
       title: "Apply in Minutes",
-      description:
-        "Fill out a quick and simple digital application through our partner, GreenSky®.",
+      description: "Choose a lender and fill out a quick, secure digital application.",
     },
     {
       step: "03",
       title: "Instant Decision",
-      description:
-        "Receive a credit decision in seconds so you can move forward without delay.",
+      description: "Receive a credit decision in seconds so you can move forward without delay.",
     },
     {
       step: "04",
       title: "Start Your Project",
-      description:
-        "Once approved, we can schedule and begin your plumbing work immediately.",
+      description: "Once approved, we schedule and begin your plumbing work immediately.",
     },
   ];
 
   const faqs = [
     {
+      question: "Which financing partner should I choose?",
+      answer:
+        "Both GreenSky® and Service Finance Company are trusted national lenders we've vetted and partnered with. GreenSky® is well known for promotional plans like no-interest-if-paid-in-full and long-term fixed-rate options. Service Finance Company is an FHA Title I approved lender that specializes in home improvement financing. We recommend applying with whichever feels like the better fit — you can also apply with both to compare the offers you receive.",
+    },
+    {
       question: "What are the interest rates for financing?",
       answer:
-        "Interest rates vary based on your credit score, the loan amount, and the term length. GreenSky® offers a variety of plans, and we work with you to find the most competitive and affordable options available.",
+        "Interest rates vary based on your credit score, the loan amount, and the term length. Both of our lender partners offer a variety of plans, including promotional terms, and we'll work with you to find the most competitive and affordable option available.",
     },
     {
       question: "Is a credit check required?",
       answer:
-        "Yes, our financing partner, GreenSky®, requires a credit check as part of the application process to determine eligibility and the terms of the financing offer.",
+        "Yes. Both GreenSky® and Service Finance Company require a credit check as part of the application process to determine eligibility and the terms of your financing offer.",
     },
     {
       question: "How long does the application process take?",
       answer:
-        "The application is digital and typically takes only a few minutes to complete with GreenSky®. Most applicants receive a decision almost instantly.",
+        "Both applications are digital and typically take only a few minutes to complete. Most applicants receive a credit decision almost instantly.",
     },
     {
       question: "Can I finance smaller plumbing repairs?",
@@ -172,216 +138,277 @@ export function Financing() {
     {
       question: "Can I pay off the loan early without penalties?",
       answer:
-        "Yes, the financing plans offered through GreenSky® typically allow you to pay off your loan at any time without prepayment penalties.",
+        "In most cases, yes — the financing plans offered through both of our lender partners typically allow you to pay off your loan at any time without prepayment penalties. Confirm the specific terms with the lender you apply with.",
     },
   ];
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative py-20 sm:py-28 lg:py-36 overflow-hidden">
+      {/* Hero + 4-Step Process — one continuous dark section */}
+      <section className="relative overflow-hidden">
         <div
           className="absolute inset-0"
           style={{
-            background: `radial-gradient(ellipse at center top, #1f2937 0%, #111827 50%, #000000 100%)`,
+            background: `linear-gradient(180deg, #1f2937 0%, #111827 40%, #050810 100%)`,
           }}
         />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="text-left animate-fade-in">
-              <nav className="mb-6">
-                <div className="flex items-center space-x-2 text-sm text-gray-400">
-                  <span>Home</span>
-                  <ArrowRight className="h-4 w-4" />
-                  <span>Services</span>
-                  <ArrowRight className="h-4 w-4" />
-                  <span className="text-red-400">Financing</span>
-                </div>
-              </nav>
-              <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-green-600/20 to-green-500/20 rounded-full border border-green-500/30 backdrop-blur-sm">
-                <DollarSign className="h-5 w-5 text-green-400" />
-                <span className="text-green-400 font-semibold text-sm uppercase tracking-wider">
-                  Flexible Payment Options
-                </span>
-              </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8">
-                GreenSky® Financing For Your Plumbing Needs
-              </h1>
-              <p className="text-xl text-gray-300 mb-8 max-w-xl">
-                Don't let unexpected plumbing costs disrupt your budget. We
-                offer simple, fast financing options through our partnership with
-                GreenSky® to help you get the repairs you need now and pay over time.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a href="#greensky-options">
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-green-600 to-green-500 text-white px-8 py-4 rounded-xl shadow-lg"
-                  >
-                    View GreenSky® Financing Options
-                  </Button>
-                </a>
-              </div>
-            </div>
-            {/* --- CHANGE: Hidden the hero image on mobile with 'hidden' class, but shown on desktop with 'lg:block' --- */}
-            <div className="relative group animate-slide-up hidden lg:block">
-              <div className="relative overflow-hidden rounded-3xl shadow-luxury">
-                <img
-                  src="/financing-greensky.webp"
-                  alt="Illustration of easy financing options for plumbing services with GreenSky®"
-                  width="1000"
-                  height="600"
-                  className="w-full h-[400px] lg:h-[500px] object-cover rounded-3xl"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Benefits Section */}
-      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `radial-gradient(ellipse at bottom, #374151 0%, #1f2937 50%, #111827 100%)`,
-          }}
-        ></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 sm:mb-20 animate-fade-in">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center mb-8 drop-shadow-lg">
-              The Benefits of Financing Your Project
-            </h2>
+        {/* Hero copy */}
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-14 sm:pt-16 lg:pt-20 pb-10 sm:pb-12">
+          <nav className="mb-6">
+            <div className="flex items-center justify-center space-x-2 text-sm text-gray-400">
+              <span>Home</span>
+              <ArrowRight className="h-4 w-4" />
+              <span>Services</span>
+              <ArrowRight className="h-4 w-4" />
+              <span className="text-red-400">Financing</span>
+            </div>
+          </nav>
+          <div className="inline-flex items-center gap-3 mb-6 px-5 py-2 bg-gradient-to-r from-blue-600/20 to-blue-500/20 rounded-full border border-blue-500/30 backdrop-blur-sm animate-fade-in">
+            <DollarSign className="h-4 w-4 text-blue-400" />
+            <span className="text-blue-400 font-semibold text-xs uppercase tracking-wider">
+              Flexible Payment Options
+            </span>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16 animate-slide-up">
-            {benefits.map((benefit, index) => (
-              <Card
-                key={index}
-                className="group relative border-none overflow-hidden shadow-luxury hover-lift transition-all duration-500"
-                style={{
-                  backgroundColor: "#202020",
-                  backgroundImage:
-                    "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
-                }}
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5 animate-slide-up leading-tight">
+            Flexible Financing For Your Plumbing Project
+          </h1>
+          <p className="text-base sm:text-lg text-gray-300 mb-8 max-w-2xl mx-auto animate-slide-up">
+            Don&apos;t let unexpected plumbing costs disrupt your budget. Gardner Plumbing Co. partners with
+            two trusted lenders — <span className="text-white font-semibold">GreenSky®</span> and{" "}
+            <span className="text-white font-semibold">Service Finance Company</span> — so you can pick the plan that fits
+            your needs.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="#financing-options">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-4 rounded-xl shadow-lg text-base"
               >
-                <div className="relative z-10 p-6 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-600/30 to-blue-500/30 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <benefit.icon className="h-8 w-8 text-green-400" />
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-3">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-gray-400">{benefit.description}</p>
-                </div>
-              </Card>
-            ))}
+                <span className="flex items-center gap-2">
+                  View Financing Options
+                  <ArrowRight className="h-4 w-4" />
+                </span>
+              </Button>
+            </a>
+            <a href="tel:9512464337">
+              <Button
+                size="lg"
+                className="border-2 border-white/60 text-white bg-transparent px-8 py-4 rounded-xl shadow-lg text-base hover:bg-white/10"
+              >
+                <span className="flex items-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  Call (951) 246-4337
+                </span>
+              </Button>
+            </a>
           </div>
         </div>
-      </section>
 
-      {/* How It Works Section */}
-      <section
-        className="py-16 sm:py-20 lg:py-28 relative overflow-hidden"
-      >
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `radial-gradient(ellipse at top, #1f2937 0%, #111827 50%, #000000 100%)`,
-          }}
-        ></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 sm:mb-20">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8">
+        {/* 4-Step Process Bar */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20 lg:pb-24">
+          <div className="text-center mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">
               Simple 4-Step Process
             </h2>
           </div>
-          <div className="relative">
+          <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
+            {/* Horizontal connector line (desktop only) */}
             <div
-              className="absolute left-1/2 top-0 bottom-0 w-px bg-gray-700 hidden md:block"
+              className="hidden lg:block absolute top-7 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-500/40 to-transparent"
               aria-hidden="true"
-            ></div>
-            {howItWorks.map((item, index) => (
+            />
+            {processSteps.map((item, index) => (
               <div
                 key={index}
-                className="relative md:grid md:grid-cols-2 md:gap-x-8 items-center mb-12"
+                className="relative text-center px-2"
               >
-                <div
-                  className={`text-center md:text-right ${
-                    index % 2 === 0 ? "md:pr-8" : "md:pl-8 md:order-2"
-                  }`}
-                >
-                  <div className="text-6xl font-bold text-gray-600">
+                <div className="relative z-10 w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-red-600 to-red-500 rounded-full flex items-center justify-center shadow-luxury border border-red-400/30">
+                  <span className="text-white font-bold text-lg drop-shadow-sm">
                     {item.step}
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mt-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-400 mt-2">{item.description}</p>
+                  </span>
                 </div>
-                <div
-                  className={`flex justify-center mt-4 md:mt-0 ${
-                    index % 2 === 0 ? "" : "md:order-1"
-                  }`}
-                >
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-green-500 to-blue-500 flex items-center justify-center text-white shadow-lg">
-                    <FileText className="h-12 w-12" />
-                  </div>
-                </div>
+                <h3 className="text-base sm:text-lg font-bold text-white mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed max-w-[220px] mx-auto">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* --- DEDICATED GREEN SKY FINANCING MODULE SECTION --- */}
+      {/* --- UNIFIED FINANCING OPTIONS SECTION (50/50) --- */}
       <section
-        id="greensky-options"
-        className="py-16 sm:py-20 lg:py-28 relative overflow-hidden"
+        id="financing-options"
+        className="pt-16 pb-16 sm:pt-20 sm:pb-20 lg:pt-24 lg:pb-28 relative overflow-hidden"
       >
         <div
           className="absolute inset-0"
           style={{
-            background: `radial-gradient(ellipse at top, #1f2937 0%, #111827 50%, #000000 100%)`,
+            background: `linear-gradient(180deg, #050810 0%, #0a0f1a 30%, #111827 60%, #000000 100%)`,
           }}
         ></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 sm:mb-20">
+          <div className="text-center mb-12 sm:mb-14 lg:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              View Our Exclusive GreenSky® Financing Options
+              Choose Your Financing Partner
             </h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-10">
-              Select a financing plan below to get started on your quick and secure application.
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+              Two trusted lenders, one goal — helping you get the plumbing work you need without delay.
+              Pick the lender that works best for you and apply in minutes.
             </p>
           </div>
-          {/* --- CHANGE: The promo content is hidden on mobile and shown on desktop --- */}
-          <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-12 items-stretch mb-16">
-            {/* Left Column: Promotional Plans */}
-            <div className="lg:col-span-1 hidden lg:flex flex-col justify-between">
-              <h3 className="text-2xl font-bold text-white text-left mb-6">Current Promotional Plans:</h3>
-              <div className="flex flex-col justify-between flex-1 gap-6">
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+            {/* GreenSky Card */}
+            <Card
+              id="greensky-options"
+              className="p-8 sm:p-10 flex flex-col"
+              style={{
+                backgroundColor: "transparent",
+                border: "3px solid rgba(34, 197, 94, 0.6)",
+                backgroundImage: "linear-gradient(145deg, #1f2937 0%, #1a1a1a 100%)",
+              }}
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-600/30 to-green-500/30 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <TrendingUp className="h-8 w-8 text-green-400" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">GreenSky®</h3>
+                  <p className="text-sm text-gray-400">Consumer loan program · Synovus Bank</p>
+                </div>
+              </div>
+
+              <p className="text-gray-300 mb-6">
+                A long-standing Gardner Plumbing partner offering competitive rates and promotional plans for home
+                improvement projects.
+              </p>
+
+              <div className="space-y-4 mb-8 flex-1">
+                <h4 className="text-sm font-semibold text-green-400 uppercase tracking-wider">Current Promotional Plans</h4>
                 {greenSkyPromoContent.map((promo, index) => (
-                  <Card
+                  <div
                     key={index}
-                    className="p-6 text-left h-full flex flex-col justify-center"
-                    style={{
-                      backgroundColor: "transparent",
-                      border: "5px solid rgba(32,126,32,0.7)",
-                      backgroundImage: "linear-gradient(145deg, #1f2937 0%, #1a1a1a 100%)",
-                    }}
+                    className="p-4 rounded-lg border border-green-500/20 bg-black/30"
                   >
-                    <h4 className="text-xl font-semibold text-white mb-2">{promo.title}</h4>
-                    <p className="text-gray-400">{promo.description}</p>
-                  </Card>
+                    <h5 className="text-base font-semibold text-white mb-1">{promo.title}</h5>
+                    <p className="text-xs text-gray-400 leading-relaxed">{promo.description}</p>
+                  </div>
                 ))}
               </div>
-            </div>
-            {/* Right Column: GreenSky Module */}
-            <div className="lg:col-span-1 mt-10 lg:mt-0">
-              <h3 className="text-2xl font-bold text-white text-left mb-6">Select a button below to apply for your preferred plan:</h3>
-              <div className="flex justify-center lg:justify-start overflow-x-auto">
-                <div className="max-w-full" dangerouslySetInnerHTML={{ __html: greenSkyModuleHtml }} />
+
+              <div className="flex flex-col gap-3 mt-auto">
+                <a
+                  href="https://projects.greensky.com/MerchantLoanApplication?apptype=short&merchant=81122934&dealerplan=2613&channel=External-Button-03"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    size="lg"
+                    className="w-full bg-transparent border-2 border-green-500/60 text-white py-6 rounded-xl shadow-lg text-base hover:bg-green-500/10"
+                  >
+                    <span className="flex items-center justify-center gap-2">
+                      Apply — No Interest if Paid in 12 mo
+                      <ArrowRight className="h-4 w-4" />
+                    </span>
+                  </Button>
+                </a>
+                <a
+                  href="https://projects.greensky.com/MerchantLoanApplication?apptype=short&merchant=81122934&dealerplan=1519&channel=External-Button-03"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    size="lg"
+                    className="w-full bg-gradient-to-r from-green-600 to-green-500 text-white py-6 rounded-xl shadow-lg text-base"
+                  >
+                    <span className="flex items-center justify-center gap-2">
+                      Apply — 11.99% Fixed (180 mo)
+                      <ArrowRight className="h-4 w-4" />
+                    </span>
+                  </Button>
+                </a>
               </div>
-            </div>
+
+              <p className="text-[10px] text-gray-500 mt-4 leading-relaxed">
+                Subject to credit approval. Loans provided by Synovus Bank, Member FDIC, NMLS #408043.
+                GreenSky® is a registered trademark of GreenSky, LLC. Serviced by GreenSky Servicing, LLC, NMLS #1416362.
+              </p>
+            </Card>
+
+            {/* Service Finance Company Card */}
+            <Card
+              id="svc-financing"
+              className="p-8 sm:p-10 flex flex-col"
+              style={{
+                backgroundColor: "transparent",
+                border: "3px solid rgba(59, 130, 246, 0.6)",
+                backgroundImage: "linear-gradient(145deg, #1f2937 0%, #1a1a1a 100%)",
+              }}
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600/30 to-blue-500/30 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <FileText className="h-8 w-8 text-blue-400" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Service Finance Company</h3>
+                  <p className="text-sm text-gray-400">FHA Title I Lender · Home improvement financing</p>
+                </div>
+              </div>
+
+              <p className="text-gray-300 mb-6">
+                An FHA Title I approved lender specializing in home improvement financing, with a fast, secure
+                online application and flexible terms.
+              </p>
+
+              <div className="space-y-4 mb-8 flex-1">
+                <h4 className="text-sm font-semibold text-blue-400 uppercase tracking-wider">Why Service Finance</h4>
+                <ul className="space-y-3">
+                  <li className="p-4 rounded-lg border border-blue-500/20 bg-black/30">
+                    <h5 className="text-base font-semibold text-white mb-1">Quick &amp; Secure Application</h5>
+                    <p className="text-xs text-gray-400 leading-relaxed">Fill out a short online form and get a credit decision fast.</p>
+                  </li>
+                  <li className="p-4 rounded-lg border border-blue-500/20 bg-black/30">
+                    <h5 className="text-base font-semibold text-white mb-1">Flexible Home Improvement Terms</h5>
+                    <p className="text-xs text-gray-400 leading-relaxed">Loan terms tailored to plumbing and home improvement projects.</p>
+                  </li>
+                  <li className="p-4 rounded-lg border border-blue-500/20 bg-black/30">
+                    <h5 className="text-base font-semibold text-white mb-1">Trusted FHA Title I Lender</h5>
+                    <p className="text-xs text-gray-400 leading-relaxed">Established nationwide lender serving contractors for decades.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <form
+                target="_blank"
+                rel="noopener noreferrer"
+                action="https://apply.svcfin.com/home/dealerAuthentication"
+                method="post"
+                className="mt-auto"
+              >
+                <input name="id" type="hidden" value="184125522" />
+                <input name="key" type="hidden" value="1742219857" />
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full bg-gradient-to-r from-blue-600 to-blue-500 text-white py-6 rounded-xl shadow-lg text-base"
+                >
+                  <span className="flex items-center justify-center gap-2">
+                    Apply With Service Finance
+                    <ArrowRight className="h-4 w-4" />
+                  </span>
+                </Button>
+              </form>
+
+              <p className="text-[10px] text-gray-500 mt-4 leading-relaxed">
+                Subject to credit approval. Service Finance Company, LLC — 555 S. Federal Highway Suite 200,
+                Boca Raton, FL 33432 · (866) 393-0033. FHA Title I Lender · svcfin.com.
+              </p>
+            </Card>
           </div>
         </div>
       </section>
@@ -444,11 +471,11 @@ export function Financing() {
                 <div
                   className="absolute inset-0 opacity-30"
                   style={{
-                    background: `linear-gradient(135deg, 
-                      transparent 0%, 
-                      rgba(255, 255, 255, 0.1) 25%, 
-                      rgba(255, 255, 255, 0.2) 50%, 
-                      rgba(255, 255, 255, 0.1) 75%, 
+                    background: `linear-gradient(135deg,
+                      transparent 0%,
+                      rgba(255, 255, 255, 0.1) 25%,
+                      rgba(255, 255, 255, 0.2) 50%,
+                      rgba(255, 255, 255, 0.1) 75%,
                       transparent 100%
                     )`,
                   }}
@@ -524,11 +551,11 @@ export function Financing() {
               that comes with a professionally completed plumbing project.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">
-              <a href="#greensky-options" className="flex-1">
-                <Button className="bg-gradient-to-r from-green-600 to-blue-500 text-white w-full py-3 rounded-xl shadow-lg">
+              <a href="#financing-options" className="flex-1">
+                <Button className="bg-gradient-to-r from-blue-600 to-blue-500 text-white w-full py-3 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-2">
                     <FileText className="h-4 w-4" />
-                    View GreenSky® Financing
+                    View Financing Options
                   </span>
                 </Button>
               </a>
