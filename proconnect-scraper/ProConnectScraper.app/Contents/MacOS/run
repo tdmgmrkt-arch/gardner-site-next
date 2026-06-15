@@ -1,0 +1,23 @@
+#!/bin/bash
+# Launcher for the ProConnect Scraper Mac app.
+# Opens Terminal, cd's to the config folder, and runs the Python scraper so
+# the user sees live progress output in a visible window.
+
+# Resolve the absolute path of the bundled script.py (inside Contents/Resources)
+APP_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+SCRIPT="$APP_DIR/Resources/script.py"
+
+# Config folder holds the Google service account JSON (kept outside the .app
+# so the secret isn't bundled and can be updated independently).
+CONFIG_DIR="$HOME/proconnect-scraper"
+
+# Finder-launched apps inherit a minimal PATH. Add common Python install
+# locations so `python3` resolves on both Apple Silicon and Intel Macs.
+EXTRA_PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+
+osascript <<EOF
+tell application "Terminal"
+    activate
+    do script "export PATH='$EXTRA_PATH:\$PATH'; cd '$CONFIG_DIR' && python3 '$SCRIPT'; echo; echo '--- Done. Press any key to close this window ---'; read -n 1"
+end tell
+EOF

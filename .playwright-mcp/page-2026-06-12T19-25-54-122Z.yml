@@ -1,0 +1,1145 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "24/7 Emergency Service" [ref=e8] [cursor=pointer]:
+          - /url: /services/emergency-service
+          - img [ref=e9]
+        - link "24/7 Emergency Service" [ref=e12] [cursor=pointer]:
+          - /url: /services/emergency-service
+      - generic [ref=e13]:
+        - link "See Reviews" [ref=e14] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e15]
+        - link "4.9★ Rated Service" [ref=e17] [cursor=pointer]:
+          - /url: /reviews
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - link "Service Area" [ref=e20] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e21]
+        - link "Serving Greater Riverside Area" [ref=e24] [cursor=pointer]:
+          - /url: "#service-area"
+      - generic [ref=e25]:
+        - link "Call (951) 246-4337" [ref=e26] [cursor=pointer]:
+          - /url: tel:9512464337
+          - img [ref=e27]
+        - link "(951) 246-4337" [ref=e29] [cursor=pointer]:
+          - /url: tel:9512464337
+  - banner [ref=e30]:
+    - navigation [ref=e32]:
+      - generic [ref=e34]:
+        - link "Go to homepage" [ref=e36] [cursor=pointer]:
+          - /url: /
+          - img "Gardner Plumbing Co. logo" [ref=e37]
+        - generic [ref=e38]:
+          - link "Home" [ref=e39] [cursor=pointer]:
+            - /url: /
+          - link "About Us" [ref=e40] [cursor=pointer]:
+            - /url: /about-us
+          - link "Plumbing" [ref=e42] [cursor=pointer]:
+            - /url: /services
+            - text: Plumbing
+            - img [ref=e43]
+          - link "HVAC" [ref=e1582] [cursor=pointer]:
+            - /url: /services/hvac
+            - text: HVAC
+            - img [ref=e47]
+          - link "Electrical" [ref=e1583] [cursor=pointer]:
+            - /url: /services/electrical
+            - text: Electrical
+            - img [ref=e51]
+          - link "Reviews" [ref=e53] [cursor=pointer]:
+            - /url: /reviews
+          - link "Contact" [ref=e54] [cursor=pointer]:
+            - /url: /contact-us
+  - main [ref=e55]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - img "Hero background" [ref=e61]
+          - generic [ref=e63]:
+            - generic [ref=e64]:
+              - heading "Gardner Plumbing Co." [level=1] [ref=e65]
+              - heading "Your Trusted Local Plumbing Experts" [level=2] [ref=e66]
+              - paragraph [ref=e67]: Need trusted plumbing professionals for your home or business? Gardner Plumbing Co. is your local, licensed team ready for repairs, installs, or remodels. From leaky pipes to major projects, we're just a call away.
+            - generic [ref=e68]:
+              - generic [ref=e69]:
+                - img "Google Logo" [ref=e70]
+                - img [ref=e71]
+                - img [ref=e73]
+                - img [ref=e75]
+                - img [ref=e77]
+                - img [ref=e79]
+              - link "5-Star Rating on Google from 900+ Reviews" [ref=e81] [cursor=pointer]:
+                - /url: https://www.google.com/search?q=Gardner+Plumbing+Company+Reviews
+                - generic [ref=e82]: 5-Star Rating
+                - generic [ref=e83]: on Google from 900+ Reviews
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - paragraph [ref=e86]: "\"Gardner Plumbing Co. was fantastic! They were quick, professional, and fixed my issue perfectly. Highly recommend their service!\""
+                  - paragraph [ref=e87]: "- Jane D."
+                - generic [ref=e88]:
+                  - paragraph [ref=e89]: "\"Great experience with this team. They were knowledgeable and friendly. The work was done efficiently and the price was fair.\""
+                  - paragraph [ref=e90]: "- John S."
+                - generic [ref=e91]:
+                  - paragraph [ref=e92]: "\"I had a major leak, and they responded immediately. The technician was great and solved the problem with no hassle. A true lifesaver.\""
+                  - paragraph [ref=e93]: "- Robert C."
+            - generic [ref=e94]:
+              - button "Book Online Now" [ref=e95]:
+                - img
+                - text: Book Online Now
+              - button "Get Free Estimate" [ref=e96]:
+                - img
+                - text: Get Free Estimate
+            - 'link "Or call us: (951) 428-5551" [ref=e98] [cursor=pointer]':
+              - /url: tel:9514285551
+              - img [ref=e99]
+              - generic [ref=e101]: "Or call us: (951) 428-5551"
+            - generic [ref=e102]:
+              - generic [ref=e103]:
+                - img [ref=e104]
+                - generic [ref=e106]: Licensed & Insured
+              - generic [ref=e107]:
+                - img [ref=e108]
+                - generic [ref=e110]: 30+ Years Experience
+              - generic [ref=e111]:
+                - img [ref=e112]
+                - generic [ref=e114]: 24/7 Emergency Service
+        - generic [ref=e121]:
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - generic [ref=e126]:
+                - img [ref=e127]
+                - generic [ref=e129]: Premium Services
+              - heading "Professional Plumbing Services" [level=2] [ref=e130]
+              - paragraph [ref=e131]:
+                - text: From routine maintenance to
+                - link "emergency repairs" [ref=e132] [cursor=pointer]:
+                  - /url: /services/emergency-service
+                - text: ", Gardner Plumbing Co. provides comprehensive plumbing solutions for homes and businesses throughout Riverside County communities. Our work follows"
+                - link "professional plumbing standards" [ref=e133] [cursor=pointer]:
+                  - /url: https://www.phccweb.org/
+                - text: .
+            - generic [ref=e135]:
+              - img "Gardner Plumbing Co. facility and fleet" [ref=e136]
+              - generic [ref=e140]:
+                - img [ref=e142]
+                - generic [ref=e144]:
+                  - generic [ref=e145]: Professional Fleet
+                  - generic [ref=e146]: Ready to Serve
+          - generic [ref=e148]:
+            - generic [ref=e151]:
+              - img [ref=e153]
+              - heading "Residential Services" [level=3] [ref=e156]
+            - generic [ref=e157]:
+              - generic [ref=e158]:
+                - generic [ref=e162]:
+                  - link "Drain Cleaning" [ref=e164] [cursor=pointer]:
+                    - /url: /services/drain-cleaning
+                    - img [ref=e167]
+                    - heading "Drain Cleaning" [level=4] [ref=e171]:
+                      - generic [ref=e172]: Drain
+                      - text: Cleaning
+                  - generic [ref=e173]:
+                    - paragraph [ref=e174]: Professional drain clearing and maintenance services to keep your plumbing flowing smoothly.
+                    - list [ref=e175]:
+                      - listitem [ref=e176]:
+                        - img [ref=e178]
+                        - generic [ref=e181]: Hydro-Jetting
+                      - listitem [ref=e182]:
+                        - img [ref=e184]
+                        - generic [ref=e187]: Video Inspection
+                      - listitem [ref=e188]:
+                        - img [ref=e190]
+                        - generic [ref=e193]: Root Removal
+                      - listitem [ref=e194]:
+                        - img [ref=e196]
+                        - generic [ref=e199]: Preventive Maintenance
+                    - link "Learn More" [ref=e200] [cursor=pointer]:
+                      - /url: /services/drain-cleaning
+                      - button "Learn More" [ref=e201]:
+                        - generic [ref=e202]:
+                          - text: Learn More
+                          - img
+                - generic [ref=e206]:
+                  - link "Leak Detection/ Repair" [ref=e208] [cursor=pointer]:
+                    - /url: /services/leak-detection
+                    - img [ref=e211]
+                    - heading "Leak Detection/ Repair" [level=4] [ref=e214]:
+                      - generic [ref=e215]: Leak Detection/
+                      - text: Repair
+                  - generic [ref=e216]:
+                    - paragraph [ref=e217]: Advanced leak detection technology and expert repair services for quick, efficient solutions.
+                    - list [ref=e218]:
+                      - listitem [ref=e219]:
+                        - img [ref=e221]
+                        - generic [ref=e224]: Electronic Detection
+                      - listitem [ref=e225]:
+                        - img [ref=e227]
+                        - generic [ref=e230]: Slab Leak Repair
+                      - listitem [ref=e231]:
+                        - img [ref=e233]
+                        - generic [ref=e236]: Pipe Replacement
+                      - listitem [ref=e237]:
+                        - img [ref=e239]
+                        - generic [ref=e242]: Emergency Service
+                    - link "Learn More" [ref=e243] [cursor=pointer]:
+                      - /url: /services/leak-detection
+                      - button "Learn More" [ref=e244]:
+                        - generic [ref=e245]:
+                          - text: Learn More
+                          - img
+                - generic [ref=e249]:
+                  - link "Water Heater Service" [ref=e251] [cursor=pointer]:
+                    - /url: /services/water-heater-service
+                    - img [ref=e254]
+                    - heading "Water Heater Service" [level=4] [ref=e257]
+                  - generic [ref=e258]:
+                    - paragraph [ref=e259]: Complete water heater installation, repair, and maintenance for optimal performance.
+                    - list [ref=e260]:
+                      - listitem [ref=e261]:
+                        - img [ref=e263]
+                        - generic [ref=e266]: Tank & Tankless
+                      - listitem [ref=e267]:
+                        - img [ref=e269]
+                        - generic [ref=e272]: Energy Efficient
+                      - listitem [ref=e273]:
+                        - img [ref=e275]
+                        - generic [ref=e278]: Same-Day Service
+                      - listitem [ref=e279]:
+                        - img [ref=e281]
+                        - generic [ref=e284]: Warranty Included
+                    - link "Learn More" [ref=e285] [cursor=pointer]:
+                      - /url: /services/water-heater-service
+                      - button "Learn More" [ref=e286]:
+                        - generic [ref=e287]:
+                          - text: Learn More
+                          - img
+                - generic [ref=e291]:
+                  - link "Bathroom Plumbing" [ref=e293] [cursor=pointer]:
+                    - /url: /services/toilet-installation-and-repair
+                    - img [ref=e296]
+                    - heading "Bathroom Plumbing" [level=4] [ref=e300]
+                  - generic [ref=e301]:
+                    - paragraph [ref=e302]: Complete bathroom plumbing solutions from fixture repairs to full bathroom remodels.
+                    - list [ref=e303]:
+                      - listitem [ref=e304]:
+                        - img [ref=e306]
+                        - generic [ref=e309]: Toilet Repair
+                      - listitem [ref=e310]:
+                        - img [ref=e312]
+                        - generic [ref=e315]: Shower/Tub Installation
+                      - listitem [ref=e316]:
+                        - img [ref=e318]
+                        - generic [ref=e321]: Fixture Upgrades
+                      - listitem [ref=e322]:
+                        - img [ref=e324]
+                        - generic [ref=e327]: Pipe Relocation
+                    - link "Learn More" [ref=e328] [cursor=pointer]:
+                      - /url: /services/toilet-installation-and-repair
+                      - button "Learn More" [ref=e329]:
+                        - generic [ref=e330]:
+                          - text: Learn More
+                          - img
+              - link "View All Services" [ref=e332] [cursor=pointer]:
+                - /url: /services
+                - button "View All Services" [ref=e333]:
+                  - generic [ref=e334]:
+                    - text: View All Services
+                    - img
+          - generic [ref=e336]:
+            - generic [ref=e339]:
+              - img [ref=e341]
+              - heading "Commercial Services" [level=3] [ref=e344]
+            - generic [ref=e345]:
+              - generic [ref=e346]:
+                - generic [ref=e351]:
+                  - link [ref=e352] [cursor=pointer]:
+                    - /url: /services/commercial-plumbing
+                    - img [ref=e354]
+                  - generic [ref=e358]:
+                    - link "Commercial Plumbing" [ref=e359] [cursor=pointer]:
+                      - /url: /services/commercial-plumbing
+                      - heading "Commercial Plumbing" [level=4] [ref=e360]
+                    - paragraph [ref=e361]: Professional plumbing solutions for businesses and commercial properties.
+                    - list [ref=e362]:
+                      - listitem [ref=e363]:
+                        - img [ref=e365]
+                        - generic [ref=e368]: System Design
+                      - listitem [ref=e369]:
+                        - img [ref=e371]
+                        - generic [ref=e374]: Maintenance Plans
+                      - listitem [ref=e375]:
+                        - img [ref=e377]
+                        - generic [ref=e380]: Emergency Service
+                      - listitem [ref=e381]:
+                        - img [ref=e383]
+                        - generic [ref=e386]: Code Compliance
+                    - link "Learn More" [ref=e387] [cursor=pointer]:
+                      - /url: /services/commercial-plumbing
+                      - button "Learn More" [ref=e388]:
+                        - generic [ref=e389]:
+                          - text: Learn More
+                          - img
+                - generic [ref=e394]:
+                  - link [ref=e395] [cursor=pointer]:
+                    - /url: /services/hydro-jetting
+                    - img [ref=e397]
+                  - generic [ref=e400]:
+                    - link "Hydro-Jetting" [ref=e401] [cursor=pointer]:
+                      - /url: /services/hydro-jetting
+                      - heading "Hydro-Jetting" [level=4] [ref=e402]
+                    - paragraph [ref=e403]: High-pressure water jetting for thorough pipe cleaning and blockage removal.
+                    - list [ref=e404]:
+                      - listitem [ref=e405]:
+                        - img [ref=e407]
+                        - generic [ref=e410]: Eco-Friendly
+                      - listitem [ref=e411]:
+                        - img [ref=e413]
+                        - generic [ref=e416]: Root Cutting
+                      - listitem [ref=e417]:
+                        - img [ref=e419]
+                        - generic [ref=e422]: Grease Removal
+                      - listitem [ref=e423]:
+                        - img [ref=e425]
+                        - generic [ref=e428]: Video Verification
+                    - link "Learn More" [ref=e429] [cursor=pointer]:
+                      - /url: /services/hydro-jetting
+                      - button "Learn More" [ref=e430]:
+                        - generic [ref=e431]:
+                          - text: Learn More
+                          - img
+                - generic [ref=e436]:
+                  - link [ref=e437] [cursor=pointer]:
+                    - /url: /services/industrial-plumbing
+                    - img [ref=e439]
+                  - generic [ref=e442]:
+                    - link "Industrial Plumbing" [ref=e443] [cursor=pointer]:
+                      - /url: /services/industrial-plumbing
+                      - heading "Industrial Plumbing" [level=4] [ref=e444]
+                    - paragraph [ref=e445]: Heavy-duty plumbing solutions for factories, warehouses, and manufacturing facilities.
+                    - list [ref=e446]:
+                      - listitem [ref=e447]:
+                        - img [ref=e449]
+                        - generic [ref=e452]: Process Piping
+                      - listitem [ref=e453]:
+                        - img [ref=e455]
+                        - generic [ref=e458]: High-Capacity Systems
+                      - listitem [ref=e459]:
+                        - img [ref=e461]
+                        - generic [ref=e464]: Regulatory Compliance
+                      - listitem [ref=e465]:
+                        - img [ref=e467]
+                        - generic [ref=e470]: Preventive Maintenance
+                    - link "Learn More" [ref=e471] [cursor=pointer]:
+                      - /url: /services/industrial-plumbing
+                      - button "Learn More" [ref=e472]:
+                        - generic [ref=e473]:
+                          - text: Learn More
+                          - img
+                - generic [ref=e478]:
+                  - link [ref=e479] [cursor=pointer]:
+                    - /url: /services/backflow-prevention
+                    - img [ref=e481]
+                  - generic [ref=e485]:
+                    - link "Backflow Prevention" [ref=e486] [cursor=pointer]:
+                      - /url: /services/backflow-prevention
+                      - heading "Backflow Prevention" [level=4] [ref=e487]
+                    - paragraph [ref=e488]: Installation and testing of backflow prevention devices to protect water supply safety.
+                    - list [ref=e489]:
+                      - listitem [ref=e490]:
+                        - img [ref=e492]
+                        - generic [ref=e495]: Certified Testing
+                      - listitem [ref=e496]:
+                        - img [ref=e498]
+                        - generic [ref=e501]: Device Installation
+                      - listitem [ref=e502]:
+                        - img [ref=e504]
+                        - generic [ref=e507]: Annual Inspections
+                      - listitem [ref=e508]:
+                        - img [ref=e510]
+                        - generic [ref=e513]: Code Compliance
+                    - link "Learn More" [ref=e514] [cursor=pointer]:
+                      - /url: /services/backflow-prevention
+                      - button "Learn More" [ref=e515]:
+                        - generic [ref=e516]:
+                          - text: Learn More
+                          - img
+              - link "View All Services" [ref=e518] [cursor=pointer]:
+                - /url: /services
+                - button "View All Services" [ref=e519]:
+                  - generic [ref=e520]:
+                    - text: View All Services
+                    - img
+          - generic [ref=e522]:
+            - link "Go to Emergency Plumbing service" [ref=e523] [cursor=pointer]:
+              - /url: /services/emergency-service
+              - generic [ref=e525]:
+                - img [ref=e527]
+                - heading "24/7 Emergency Service" [level=3] [ref=e529]
+            - generic [ref=e531]:
+              - generic [ref=e532]:
+                - heading "Always Available When You Need Us" [level=4] [ref=e533]
+                - link "Professional Gardner Plumbing Co. technician providing reliable emergency service" [ref=e535] [cursor=pointer]:
+                  - /url: /services/emergency-service
+                  - img "Professional Gardner Plumbing Co. technician providing reliable emergency service" [ref=e536]
+                - paragraph [ref=e538]: Plumbing emergencies don't wait for business hours. Our emergency team is available 24/7 to handle urgent plumbing issues with rapid response and professional expertise.
+              - generic [ref=e539]:
+                - generic:
+                  - link "Gardner Plumbing Co. service van ready for emergency calls":
+                    - /url: /services/emergency-service
+                    - img "Gardner Plumbing Co. service van ready for emergency calls"
+                - generic [ref=e540]:
+                  - link "24/7 Availability Day, night, weekends & holidays" [ref=e541] [cursor=pointer]:
+                    - /url: services/emergency-service
+                    - img [ref=e543]
+                    - generic [ref=e546]:
+                      - generic [ref=e547]: 24/7 Availability
+                      - generic [ref=e548]: Day, night, weekends & holidays
+                  - link "Licensed & Insured Full protection & peace of mind" [ref=e549] [cursor=pointer]:
+                    - /url: /about-us
+                    - img [ref=e551]
+                    - generic [ref=e553]:
+                      - generic [ref=e554]: Licensed & Insured
+                      - generic [ref=e555]: Full protection & peace of mind
+                  - link "Rapid Response Fast arrival times guaranteed" [ref=e556] [cursor=pointer]:
+                    - /url: services/emergency-service
+                    - img [ref=e558]
+                    - generic [ref=e561]:
+                      - generic [ref=e562]: Rapid Response
+                      - generic [ref=e563]: Fast arrival times guaranteed
+                  - link "Fully Equipped Trucks All tools & parts ready to go" [ref=e564] [cursor=pointer]:
+                    - /url: /about-us
+                    - img [ref=e566]
+                    - generic [ref=e568]:
+                      - generic [ref=e569]: Fully Equipped Trucks
+                      - generic [ref=e570]: All tools & parts ready to go
+              - generic [ref=e571]:
+                - generic [ref=e574]:
+                  - link "Call (951) 246-4337 for emergency service" [ref=e575] [cursor=pointer]:
+                    - /url: tel:9512464337
+                    - generic [ref=e576]: (951) 246-4337
+                  - generic [ref=e577]: Call Now for Emergency Service
+                  - generic [ref=e578]: Available 24 hours a day, 7 days a week
+                - link "Gardner Plumbing Co. customer service representative ready to take your emergency call" [ref=e580] [cursor=pointer]:
+                  - /url: /services/emergency-service
+                  - img "Gardner Plumbing Co. customer service representative ready to take your emergency call" [ref=e581]
+                - link "Emergency Call Now" [ref=e582] [cursor=pointer]:
+                  - /url: tel:9512464337
+                  - button "Emergency Call Now" [ref=e583]:
+                    - generic [ref=e584]:
+                      - img
+                      - text: Emergency Call Now
+        - generic [ref=e589]:
+          - generic [ref=e591]:
+            - generic [ref=e592]:
+              - generic [ref=e594]:
+                - img [ref=e595]
+                - generic [ref=e598]: Why Choose Us
+              - heading "Why Choose Gardner Plumbing Co." [level=2] [ref=e599]
+              - paragraph [ref=e600]:
+                - text: Three decades of excellence in
+                - link "plumbing services" [ref=e601] [cursor=pointer]:
+                  - /url: /services
+                - text: . We combine traditional craftsmanship with modern technology to deliver unmatched quality and customer satisfaction throughout Riverside County. Our standards meet
+                - link "industry best practices" [ref=e602] [cursor=pointer]:
+                  - /url: https://www.phccweb.org/
+                - text: .
+            - generic [ref=e604]:
+              - img "Gardner Plumbing Co. professional technician ready to provide expert plumbing services" [ref=e605]
+              - generic [ref=e609]:
+                - img [ref=e611]
+                - generic [ref=e614]:
+                  - generic [ref=e615]: Expert Technician
+                  - generic [ref=e616]: Licensed & Certified
+          - generic [ref=e618]:
+            - generic [ref=e621]:
+              - img [ref=e623]
+              - heading "Our Achievements" [level=3] [ref=e626]
+            - generic [ref=e628]:
+              - generic [ref=e632]:
+                - img [ref=e635]
+                - generic [ref=e639]: 30+
+                - generic [ref=e640]: Years in Business
+                - generic [ref=e641]: Trusted Experience
+              - generic [ref=e645]:
+                - img [ref=e648]
+                - generic [ref=e654]: 15K+
+                - generic [ref=e655]: Happy Customers
+                - generic [ref=e656]: Satisfied Clients
+              - generic [ref=e660]:
+                - img [ref=e663]
+                - generic [ref=e666]: "4.9"
+                - generic [ref=e667]: Customer Rating
+                - generic [ref=e668]: Excellent Reviews
+              - generic [ref=e672]:
+                - img [ref=e675]
+                - generic [ref=e678]: 100%
+                - generic [ref=e679]: Licensed & Insured
+                - generic [ref=e680]: Full Protection
+          - generic [ref=e682]:
+            - generic [ref=e685]:
+              - img [ref=e687]
+              - heading "Why We're Different" [level=3] [ref=e690]
+            - generic [ref=e691]:
+              - generic [ref=e692]:
+                - img "Professional Gardner Plumbing Co. team members ready to serve" [ref=e693]
+                - generic [ref=e700]:
+                  - img [ref=e703]
+                  - generic [ref=e707]:
+                    - generic [ref=e708]: 30+
+                    - generic [ref=e709]: Years Experience
+                - generic [ref=e714]:
+                  - img [ref=e717]
+                  - generic [ref=e720]:
+                    - generic [ref=e721]: 4.9★
+                    - generic [ref=e722]: Customer Rating
+              - generic [ref=e724]:
+                - generic [ref=e728]:
+                  - generic [ref=e729]:
+                    - img [ref=e732]
+                    - heading "Transparent Pricing" [level=4] [ref=e735]:
+                      - generic [ref=e736]: Transparent
+                      - text: Pricing
+                  - generic [ref=e737]:
+                    - paragraph [ref=e738]: Clear, upfront pricing with no hidden fees or surprises. You'll know the exact cost before we start any work on your system.
+                    - generic [ref=e739]: No Hidden Fees
+                    - button "Learn More" [ref=e740]:
+                      - generic [ref=e741]:
+                        - text: Learn More
+                        - img
+                - generic [ref=e745]:
+                  - generic [ref=e746]:
+                    - img [ref=e749]
+                    - heading "Licensed Experts" [level=4] [ref=e754]:
+                      - generic [ref=e755]: Licensed
+                      - text: Experts
+                  - generic [ref=e756]:
+                    - paragraph [ref=e757]: Our team consists of fully licensed, certified professionals with extensive plumbing training and expertise.
+                    - generic [ref=e758]: Fully Licensed
+                    - button "Learn More" [ref=e759]:
+                      - generic [ref=e760]:
+                        - text: Learn More
+                        - img
+                - generic [ref=e764]:
+                  - generic [ref=e765]:
+                    - img [ref=e768]
+                    - heading "Quality Guaranteed" [level=4] [ref=e772]
+                  - generic [ref=e773]:
+                    - paragraph [ref=e774]: We stand behind every job with comprehensive warranties and satisfaction guarantees. Your peace of mind is our priority.
+                    - generic [ref=e775]: 100% Guaranteed
+                    - button "Learn More" [ref=e776]:
+                      - generic [ref=e777]:
+                        - text: Learn More
+                        - img
+                - generic [ref=e781]:
+                  - generic [ref=e782]:
+                    - img [ref=e785]
+                    - heading "Reliable Service" [level=4] [ref=e789]:
+                      - generic [ref=e790]: Reliable
+                      - text: Service
+                  - generic [ref=e791]:
+                    - paragraph [ref=e792]: Punctual, professional service that respects your time and property. We arrive when scheduled and complete work efficiently.
+                    - generic [ref=e793]: On-Time Promise
+                    - button "Learn More" [ref=e794]:
+                      - generic [ref=e795]:
+                        - text: Learn More
+                        - img
+          - generic [ref=e798]:
+            - generic [ref=e799]:
+              - generic [ref=e800]:
+                - img [ref=e802]
+                - heading "Trusted & Reliable" [level=3] [ref=e804]
+              - paragraph [ref=e805]:
+                - text: 30+ years serving the community with unwavering commitment to quality and
+                - link "customer satisfaction" [ref=e806] [cursor=pointer]:
+                  - /url: /reviews
+                - text: .
+            - generic [ref=e808]:
+              - generic [ref=e809]:
+                - img [ref=e810]
+                - generic [ref=e813]: Prompt Service
+              - generic [ref=e814]:
+                - img [ref=e815]
+                - generic [ref=e817]: Licensed & Insured
+              - generic [ref=e818]:
+                - img [ref=e819]
+                - generic [ref=e822]: Quality Guaranteed
+              - generic [ref=e823]:
+                - img [ref=e824]
+                - generic [ref=e826]: 5-Star Rated
+            - img "Trusted American Home Shield Contractor" [ref=e829]
+            - generic [ref=e831]:
+              - generic [ref=e832]:
+                - generic [ref=e833]: (951) 246-4337
+                - generic [ref=e834]: Call for Free Estimate
+              - button "Get Quote" [ref=e835]:
+                - generic [ref=e836]:
+                  - img
+                  - text: Get Quote
+        - generic [ref=e1064]:
+          - generic [ref=e1065]:
+            - generic [ref=e1066]:
+              - img [ref=e1067]
+              - generic [ref=e1069]: Customer Reviews
+            - heading "What Customers Say About Gardner Plumbing Co." [level=2] [ref=e1070]
+            - paragraph [ref=e1071]:
+              - text: Don't take our word for it - hear from satisfied customers who trust Gardner Plumbing Co. for all their
+              - link "plumbing needs" [ref=e1072] [cursor=pointer]:
+                - /url: /services
+              - text: . Our reviews are verified by
+              - link "Google's review system" [ref=e1073] [cursor=pointer]:
+                - /url: https://support.google.com/business/answer/7091
+              - text: .
+          - generic [ref=e1075]:
+            - generic [ref=e1078]:
+              - generic [ref=e1079]:
+                - img [ref=e1081]
+                - heading "Customer Reviews" [level=3] [ref=e1084]
+              - generic [ref=e1085]:
+                - generic [ref=e1086]:
+                  - img [ref=e1088]
+                  - img [ref=e1092]
+                  - img [ref=e1096]
+                  - img [ref=e1100]
+                  - img [ref=e1104]
+                - generic [ref=e1107]:
+                  - generic [ref=e1108]: 4.9/5
+                  - generic [ref=e1109]: Excellence Rating
+            - generic [ref=e1110]:
+              - generic [ref=e1111]:
+                - generic [ref=e1115]:
+                  - generic [ref=e1116]:
+                    - img [ref=e1119]
+                    - generic [ref=e1123]:
+                      - img [ref=e1124]
+                      - img [ref=e1126]
+                      - img [ref=e1128]
+                      - img [ref=e1130]
+                      - img [ref=e1132]
+                    - heading "Christopher M." [level=4] [ref=e1134]
+                    - paragraph [ref=e1135]: Temecula
+                  - generic [ref=e1136]:
+                    - paragraph [ref=e1137]: "\"Great installer and great work. Super easy to work with. Up front and honest through the whole process. Definitely recommend!\""
+                    - generic [ref=e1138]:
+                      - generic [ref=e1139]:
+                        - img [ref=e1141]
+                        - generic [ref=e1144]: Water Heater Installation
+                      - generic [ref=e1145]:
+                        - img [ref=e1147]
+                        - generic [ref=e1150]: Verified Customer
+                    - button "Read Full Review" [ref=e1151]:
+                      - generic [ref=e1152]:
+                        - text: Read Full Review
+                        - img
+                - generic [ref=e1156]:
+                  - generic [ref=e1157]:
+                    - img [ref=e1160]
+                    - generic [ref=e1164]:
+                      - img [ref=e1165]
+                      - img [ref=e1167]
+                      - img [ref=e1169]
+                      - img [ref=e1171]
+                      - img [ref=e1173]
+                    - heading "Marshall M." [level=4] [ref=e1175]
+                    - paragraph [ref=e1176]: Murrieta
+                  - generic [ref=e1177]:
+                    - paragraph [ref=e1178]: "\"Jerome was extremely helpful. Clear and concise in everything he did, patient, and a pleasure to work with.\""
+                    - generic [ref=e1179]:
+                      - generic [ref=e1180]:
+                        - img [ref=e1182]
+                        - generic [ref=e1185]: Emergency Plumbing
+                      - generic [ref=e1186]:
+                        - img [ref=e1188]
+                        - generic [ref=e1191]: Verified Customer
+                    - button "Read Full Review" [ref=e1192]:
+                      - generic [ref=e1193]:
+                        - text: Read Full Review
+                        - img
+                - generic [ref=e1197]:
+                  - generic [ref=e1198]:
+                    - img [ref=e1201]
+                    - generic [ref=e1205]:
+                      - img [ref=e1206]
+                      - img [ref=e1208]
+                      - img [ref=e1210]
+                      - img [ref=e1212]
+                      - img [ref=e1214]
+                    - heading "Aletha N." [level=4] [ref=e1216]
+                    - paragraph [ref=e1217]: Temecula
+                  - generic [ref=e1218]:
+                    - paragraph [ref=e1219]: "\"Quick booking, fair pricing, and the tech was professional, courteous and informative. Would definitely hire again!\""
+                    - generic [ref=e1220]:
+                      - generic [ref=e1221]:
+                        - img [ref=e1223]
+                        - generic [ref=e1226]: Drain Cleaning
+                      - generic [ref=e1227]:
+                        - img [ref=e1229]
+                        - generic [ref=e1232]: Verified Customer
+                    - button "Read Full Review" [ref=e1233]:
+                      - generic [ref=e1234]:
+                        - text: Read Full Review
+                        - img
+                - generic [ref=e1238]:
+                  - generic [ref=e1239]:
+                    - img [ref=e1242]
+                    - generic [ref=e1246]:
+                      - img [ref=e1247]
+                      - img [ref=e1249]
+                      - img [ref=e1251]
+                      - img [ref=e1253]
+                      - img [ref=e1255]
+                    - heading "David R." [level=4] [ref=e1257]
+                    - paragraph [ref=e1258]: Murrieta
+                  - generic [ref=e1259]:
+                    - paragraph [ref=e1260]: "\"Outstanding service! They arrived on time, diagnosed the problem quickly, and had everything fixed within an hour. Highly recommended!\""
+                    - generic [ref=e1261]:
+                      - generic [ref=e1262]:
+                        - img [ref=e1264]
+                        - generic [ref=e1267]: Leak Repair
+                      - generic [ref=e1268]:
+                        - img [ref=e1270]
+                        - generic [ref=e1273]: Verified Customer
+                    - button "Read Full Review" [ref=e1274]:
+                      - generic [ref=e1275]:
+                        - text: Read Full Review
+                        - img
+              - generic [ref=e1277]:
+                - generic [ref=e1278]:
+                  - generic [ref=e1279]: Verified On
+                  - generic [ref=e1280]: Review Platforms
+                - link "G 4.9 Google" [ref=e1281] [cursor=pointer]:
+                  - /url: https://www.google.com/search?q=gardner+plumbing+co+google+reviews
+                  - generic [ref=e1283]:
+                    - generic [ref=e1286]: G
+                    - generic [ref=e1287]:
+                      - generic [ref=e1288]:
+                        - img [ref=e1289]
+                        - img [ref=e1291]
+                        - img [ref=e1293]
+                        - img [ref=e1295]
+                        - img [ref=e1297]
+                      - generic [ref=e1299]: "4.9"
+                      - generic [ref=e1300]: Google
+                - link "Y 4.8 Yelp" [ref=e1301] [cursor=pointer]:
+                  - /url: https://www.yelp.com/biz/gardner-plumbing-company-murrieta-9
+                  - generic [ref=e1303]:
+                    - generic [ref=e1305]: "Y"
+                    - generic [ref=e1306]:
+                      - generic [ref=e1307]:
+                        - img [ref=e1308]
+                        - img [ref=e1310]
+                        - img [ref=e1312]
+                        - img [ref=e1314]
+                        - img [ref=e1316]
+                      - generic [ref=e1318]: "4.8"
+                      - generic [ref=e1319]: Yelp
+                - generic [ref=e1320]:
+                  - generic [ref=e1321]: 500+ Reviews
+                  - generic [ref=e1322]: Live Ratings
+          - generic [ref=e1324]:
+            - generic [ref=e1325]:
+              - img [ref=e1327]
+              - heading "Ready to Experience Our Service?" [level=3] [ref=e1332]
+            - paragraph [ref=e1333]:
+              - text: Join hundreds of satisfied customers in Temecula, Murrieta, Perris, Menifee, Canyon Lake, Lake Elsinore, Corona, Moreno Valley, Riverside, and surrounding areas who trust Gardner Plumbing Co. for exceptional service. Visit our
+              - link "about us page" [ref=e1334] [cursor=pointer]:
+                - /url: /about-us
+              - text: to learn more.
+            - generic [ref=e1335]:
+              - button "Get Your Free Quote" [ref=e1336]:
+                - generic [ref=e1337]:
+                  - img
+                  - text: Get Your Free Quote
+              - link "Read More Reviews" [ref=e1338] [cursor=pointer]:
+                - /url: /reviews
+                - button "Read More Reviews" [ref=e1339]:
+                  - generic [ref=e1340]:
+                    - img
+                    - text: Read More Reviews
+        - generic [ref=e841]:
+          - generic [ref=e842]:
+            - heading "Proudly Serving Riverside County" [level=2] [ref=e843]
+            - paragraph [ref=e844]:
+              - text: Gardner Plumbing Co. provides comprehensive
+              - link "plumbing services" [ref=e845] [cursor=pointer]:
+                - /url: /services
+              - text: throughout Riverside County and surrounding areas.
+            - generic [ref=e846]:
+              - link "Temecula" [ref=e847] [cursor=pointer]:
+                - /url: https://temeculaca.gov
+                - img [ref=e848]
+                - generic [ref=e851]: Temecula
+              - link "Murrieta" [ref=e852] [cursor=pointer]:
+                - /url: https://murrietaca.gov
+                - img [ref=e853]
+                - generic [ref=e856]: Murrieta
+              - link "Perris" [ref=e857] [cursor=pointer]:
+                - /url: https://www.cityofperris.org
+                - img [ref=e858]
+                - generic [ref=e861]: Perris
+              - link "Menifee" [ref=e862] [cursor=pointer]:
+                - /url: https://cityofmenifee.us
+                - img [ref=e863]
+                - generic [ref=e866]: Menifee
+              - link "Canyon Lake" [ref=e867] [cursor=pointer]:
+                - /url: https://www.canyonlakeca.gov
+                - img [ref=e868]
+                - generic [ref=e871]: Canyon Lake
+              - link "Lake Elsinore" [ref=e872] [cursor=pointer]:
+                - /url: https://www.lake-elsinore.org
+                - img [ref=e873]
+                - generic [ref=e876]: Lake Elsinore
+              - link "Corona" [ref=e877] [cursor=pointer]:
+                - /url: https://www.coronaca.gov
+                - img [ref=e878]
+                - generic [ref=e881]: Corona
+              - link "Moreno Valley" [ref=e882] [cursor=pointer]:
+                - /url: https://moval.org
+                - img [ref=e883]
+                - generic [ref=e886]: Moreno Valley
+              - link "Riverside" [ref=e887] [cursor=pointer]:
+                - /url: https://riversideca.gov
+                - img [ref=e888]
+                - generic [ref=e891]: Riverside
+              - link "Hemet" [ref=e892] [cursor=pointer]:
+                - /url: https://www.hemetca.gov
+                - img [ref=e893]
+                - generic [ref=e896]: Hemet
+              - link "San Jacinto" [ref=e897] [cursor=pointer]:
+                - /url: https://www.sanjacintoca.gov
+                - img [ref=e898]
+                - generic [ref=e901]: San Jacinto
+              - link "Wildomar" [ref=e902] [cursor=pointer]:
+                - /url: https://cityofwildomar.org
+                - img [ref=e903]
+                - generic [ref=e906]: Wildomar
+          - generic [ref=e909] [cursor=pointer]:
+            - img "Click to load map" [ref=e910]
+            - generic [ref=e912]: Click to Load Map
+        - generic [ref=e1345]:
+          - generic [ref=e1346]:
+            - generic [ref=e1347]:
+              - img [ref=e1348]
+              - generic [ref=e1351]: FAQ
+            - heading "Frequently Asked Questions" [level=2] [ref=e1352]
+            - paragraph [ref=e1353]: Find answers to common questions about our plumbing services, pricing, and policies.
+          - generic [ref=e1355]:
+            - generic [ref=e1358]:
+              - img [ref=e1360]
+              - heading "Questions & Answers" [level=3] [ref=e1363]
+            - generic [ref=e1365]:
+              - heading "What areas do you service?" [level=3] [ref=e1370]:
+                - button "What areas do you service?" [ref=e1371]:
+                  - generic [ref=e1372]:
+                    - img [ref=e1374]
+                    - generic [ref=e1377]: What areas do you service?
+                  - img
+              - heading "Do you offer emergency plumbing services?" [level=3] [ref=e1382]:
+                - button "Do you offer emergency plumbing services?" [ref=e1383]:
+                  - generic [ref=e1384]:
+                    - img [ref=e1386]
+                    - generic [ref=e1389]: Do you offer emergency plumbing services?
+                  - img
+              - heading "Are your plumbers licensed and insured?" [level=3] [ref=e1394]:
+                - button "Are your plumbers licensed and insured?" [ref=e1395]:
+                  - generic [ref=e1396]:
+                    - img [ref=e1398]
+                    - generic [ref=e1401]: Are your plumbers licensed and insured?
+                  - img
+              - heading "Do you provide free estimates?" [level=3] [ref=e1406]:
+                - button "Do you provide free estimates?" [ref=e1407]:
+                  - generic [ref=e1408]:
+                    - img [ref=e1410]
+                    - generic [ref=e1413]: Do you provide free estimates?
+                  - img
+              - heading "What payment methods do you accept?" [level=3] [ref=e1418]:
+                - button "What payment methods do you accept?" [ref=e1419]:
+                  - generic [ref=e1420]:
+                    - img [ref=e1422]
+                    - generic [ref=e1425]: What payment methods do you accept?
+                  - img
+              - heading "Do you offer warranties on your work?" [level=3] [ref=e1430]:
+                - button "Do you offer warranties on your work?" [ref=e1431]:
+                  - generic [ref=e1432]:
+                    - img [ref=e1434]
+                    - generic [ref=e1437]: Do you offer warranties on your work?
+                  - img
+          - generic [ref=e1439]:
+            - generic [ref=e1440]:
+              - img [ref=e1442]
+              - heading "Have More Questions?" [level=3] [ref=e1445]
+            - paragraph [ref=e1446]:
+              - text: Can't find what you're looking for? Our comprehensive FAQ section has additional answers, or
+              - link "contact our friendly team" [ref=e1447] [cursor=pointer]:
+                - /url: /contact-us
+              - text: directly for personalized assistance. We follow
+              - link "California licensing standards" [ref=e1448] [cursor=pointer]:
+                - /url: https://www.cslb.ca.gov/
+              - text: .
+            - generic [ref=e1449]:
+              - link "View Full FAQ" [ref=e1450] [cursor=pointer]:
+                - /url: /frequently-asked-questions
+                - button "View Full FAQ" [ref=e1451]:
+                  - generic [ref=e1452]:
+                    - img
+                    - text: View Full FAQ
+              - link "Contact Us" [ref=e1453] [cursor=pointer]:
+                - /url: /contact-us
+                - button "Contact Us" [ref=e1454]:
+                  - generic [ref=e1455]:
+                    - img
+                    - text: Contact Us
+        - generic [ref=e1460]:
+          - generic [ref=e1461]:
+            - generic [ref=e1462]:
+              - img [ref=e1463]
+              - generic [ref=e1466]: Expert Content
+            - heading "Latest From Our Plumbing Blog" [level=2] [ref=e1467]
+            - paragraph [ref=e1468]: Stay informed with expert plumbing advice, maintenance tips, and industry insights from Gardner Plumbing Co.'s experienced professionals.
+          - generic [ref=e1472]:
+            - generic [ref=e1474]:
+              - generic [ref=e1475]:
+                - img "Plumbing Upgrades That Boost Home Value" [ref=e1476]
+                - generic [ref=e1478]: Home Improvement
+                - generic [ref=e1480]: 6 min read
+              - generic [ref=e1481]:
+                - generic [ref=e1482]:
+                  - img [ref=e1483]
+                  - generic [ref=e1485]: May 15, 2025
+                - heading "Plumbing Upgrades That Boost Home Value" [level=4] [ref=e1486]
+              - generic [ref=e1487]:
+                - paragraph [ref=e1488]: Home improvement in Lake Elsinore isn’t just about looks—it’s also about boosting resale value and functionality...
+                - link "Read Article" [ref=e1489] [cursor=pointer]:
+                  - /url: /blog/plumbing-upgrades-boost-home-value
+                  - button "Read Article" [ref=e1490]:
+                    - generic [ref=e1491]:
+                      - text: Read Article
+                      - img
+            - generic [ref=e1493]:
+              - generic [ref=e1494]:
+                - 'img "Water Leak Detection Guide: Moreno Valley" [ref=e1495]'
+                - generic [ref=e1497]: Leak Detection
+                - generic [ref=e1499]: 7 min read
+              - generic [ref=e1500]:
+                - generic [ref=e1501]:
+                  - img [ref=e1502]
+                  - generic [ref=e1504]: April 26, 2025
+                - 'heading "Water Leak Detection Guide: Moreno Valley" [level=4] [ref=e1505]'
+              - generic [ref=e1506]:
+                - paragraph [ref=e1507]: A hidden leak can wreak havoc on your home—raising your water bill, damaging your foundation, and even leading to mold growth...
+                - link "Read Article" [ref=e1508] [cursor=pointer]:
+                  - /url: /blog/ultimate-water-leak-detection-guide-moreno-valley
+                  - button "Read Article" [ref=e1509]:
+                    - generic [ref=e1510]:
+                      - text: Read Article
+                      - img
+            - generic [ref=e1512]:
+              - generic [ref=e1513]:
+                - img "5 Signs You Need Toilet Repair in Perris" [ref=e1514]
+                - generic [ref=e1516]: Appliances
+                - generic [ref=e1518]: 4 min read
+              - generic [ref=e1519]:
+                - generic [ref=e1520]:
+                  - img [ref=e1521]
+                  - generic [ref=e1523]: April 9, 2025
+                - heading "5 Signs You Need Toilet Repair in Perris" [level=4] [ref=e1524]
+              - generic [ref=e1525]:
+                - paragraph [ref=e1526]: Your toilet might seem like it’s working fine—until it’s not. For many homeowners in Perris, subtle issues with their toilets can escalate into serious plumbing problems...
+                - link "Read Article" [ref=e1527] [cursor=pointer]:
+                  - /url: /blog/signs-you-need-toilet-repair-perris
+                  - button "Read Article" [ref=e1528]:
+                    - generic [ref=e1529]:
+                      - text: Read Article
+                      - img
+            - generic [ref=e1531]:
+              - generic [ref=e1532]:
+                - img "Prevent Drain Clogs This Rainy Season" [ref=e1533]
+                - generic [ref=e1535]: Drain Cleaning
+                - generic [ref=e1537]: 5 min read
+              - generic [ref=e1538]:
+                - generic [ref=e1539]:
+                  - img [ref=e1540]
+                  - generic [ref=e1542]: March 25, 2025
+                - heading "Prevent Drain Clogs This Rainy Season" [level=4] [ref=e1543]
+              - generic [ref=e1544]:
+                - paragraph [ref=e1545]: Murrieta’s rainy season may be short, but it often brings clogs, backups, and other preventable plumbing headaches...
+                - link "Read Article" [ref=e1546] [cursor=pointer]:
+                  - /url: /blog/prevent-drain-clogs-rainy-season
+                  - button "Read Article" [ref=e1547]:
+                    - generic [ref=e1548]:
+                      - text: Read Article
+                      - img
+          - generic [ref=e1550]:
+            - heading "Want More Plumbing Tips?" [level=3] [ref=e1551]
+            - paragraph [ref=e1552]: Have questions about plumbing? Browse our FAQs or explore all our posts for expert advice and insights.
+            - generic [ref=e1553]:
+              - link "Visit FAQ Page" [ref=e1554] [cursor=pointer]:
+                - /url: /frequently-asked-questions
+                - button "Visit FAQ Page" [ref=e1555]
+              - link "View All Posts" [ref=e1556] [cursor=pointer]:
+                - /url: /blog
+                - button "View All Posts" [ref=e1557]
+  - contentinfo [ref=e913]:
+    - generic [ref=e916]:
+      - generic [ref=e917]:
+        - generic [ref=e919]:
+          - img "Gardner Plumbing Co. logo" [ref=e920]
+          - paragraph [ref=e921]: Professional plumbing services backed by 30+ years of experience and a commitment to excellence. Whether you need repairs, installations, or emergency service—we've got you covered.
+          - generic [ref=e922]:
+            - link "(951) 246-4337 24/7 Emergency Service" [ref=e923] [cursor=pointer]:
+              - /url: tel:19512464337
+              - img [ref=e925]
+              - generic [ref=e927]:
+                - paragraph [ref=e928]: (951) 246-4337
+                - paragraph [ref=e929]: 24/7 Emergency Service
+            - link "office@gardnerplumbingco.com Email for Estimates" [ref=e930] [cursor=pointer]:
+              - /url: mailto:office@gardnerplumbingco.com
+              - img [ref=e932]
+              - generic [ref=e935]:
+                - paragraph [ref=e936]: office@gardnerplumbingco.com
+                - paragraph [ref=e937]: Email for Estimates
+            - link "30714 Wealth St, Murrieta, CA 92563 Location" [ref=e938] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/aCp4BuCRRPcyEWxo9
+              - img [ref=e940]
+              - generic [ref=e943]:
+                - paragraph [ref=e944]: 30714 Wealth St, Murrieta, CA 92563
+                - paragraph [ref=e945]: Location
+          - generic [ref=e946]:
+            - heading "Business Hours" [level=4] [ref=e947]
+            - generic [ref=e948]:
+              - generic [ref=e949]:
+                - generic [ref=e950]: Office (Mon - Fri)
+                - generic [ref=e951]: 8:00 AM - 4:00 PM
+              - generic [ref=e952]:
+                - generic [ref=e953]: Service (Mon - Fri)
+                - generic [ref=e954]: 8:00 AM - 5:00 PM
+              - generic [ref=e955]:
+                - generic [ref=e956]: Saturday - Sunday
+                - generic [ref=e957]: Emergency Only
+              - generic [ref=e959]:
+                - generic [ref=e960]: Emergency
+                - generic [ref=e961]: 24/7 Available
+        - generic [ref=e963]:
+          - generic [ref=e964]:
+            - heading "About Us" [level=4] [ref=e965]
+            - list [ref=e966]:
+              - listitem [ref=e967]:
+                - link "Gardner Plumbing Co. Our story & team" [ref=e968] [cursor=pointer]:
+                  - /url: /about-us
+                  - generic [ref=e969]: Gardner Plumbing Co.
+                  - generic [ref=e970]: Our story & team
+              - listitem [ref=e971]:
+                - link "Contact Us Get in touch today" [ref=e972] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e973]: Contact Us
+                  - generic [ref=e974]: Get in touch today
+              - listitem [ref=e975]:
+                - link "Customer Reviews See what clients say" [ref=e976] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e977]: Customer Reviews
+                  - generic [ref=e978]: See what clients say
+              - listitem [ref=e979]:
+                - link "Service Areas Where we work" [ref=e980] [cursor=pointer]:
+                  - /url: /about-us#service-area
+                  - generic [ref=e981]: Service Areas
+                  - generic [ref=e982]: Where we work
+              - listitem [ref=e983]:
+                - link "Testimonials Success stories" [ref=e984] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e985]: Testimonials
+                  - generic [ref=e986]: Success stories
+              - listitem [ref=e987]:
+                - link "Our Guarantee Quality promise" [ref=e988] [cursor=pointer]:
+                  - /url: /guarantee
+                  - generic [ref=e989]: Our Guarantee
+                  - generic [ref=e990]: Quality promise
+          - generic [ref=e991]:
+            - heading "Quick Links" [level=4] [ref=e992]
+            - list [ref=e993]:
+              - listitem [ref=e994]:
+                - link "Request Service Schedule appointment" [ref=e995] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e996]: Request Service
+                  - generic [ref=e997]: Schedule appointment
+              - listitem [ref=e998]:
+                - link "Emergency Service 24/7 urgent help" [ref=e999] [cursor=pointer]:
+                  - /url: /services/emergency-service
+                  - generic [ref=e1000]: Emergency Service
+                  - generic [ref=e1001]: 24/7 urgent help
+              - listitem [ref=e1002]:
+                - link "FAQ Common questions" [ref=e1003] [cursor=pointer]:
+                  - /url: /frequently-asked-questions
+                  - generic [ref=e1004]: FAQ
+                  - generic [ref=e1005]: Common questions
+              - listitem [ref=e1006]:
+                - link "Blog Tips & insights" [ref=e1007] [cursor=pointer]:
+                  - /url: /blog
+                  - generic [ref=e1008]: Blog
+                  - generic [ref=e1009]: Tips & insights
+              - listitem [ref=e1010]:
+                - link "Financing Payment options" [ref=e1011] [cursor=pointer]:
+                  - /url: /financing
+                  - generic [ref=e1012]: Financing
+                  - generic [ref=e1013]: Payment options
+              - listitem [ref=e1014]:
+                - link "Warranty Info Coverage details" [ref=e1015] [cursor=pointer]:
+                  - /url: /warranty
+                  - generic [ref=e1016]: Warranty Info
+                  - generic [ref=e1017]: Coverage details
+          - generic [ref=e1018]:
+            - heading "From Our Blog" [level=4] [ref=e1019]
+            - paragraph [ref=e1020]: Get expert plumbing tips, home maintenance advice, and industry insights from our latest blog posts.
+            - link "Visit Our Blog" [ref=e1022] [cursor=pointer]:
+              - /url: /blog
+            - generic [ref=e1023]:
+              - paragraph [ref=e1024]: Follow Us
+              - generic [ref=e1025]:
+                - link [ref=e1026] [cursor=pointer]:
+                  - /url: https://www.facebook.com/people/Gardner-Plumbing-Company/100063665179161/#
+                  - img [ref=e1028]
+                - link [ref=e1030] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCn8DkWu_niFYrW7jCtsUkUg
+                  - img [ref=e1032]
+                - link [ref=e1035] [cursor=pointer]:
+                  - /url: https://www.instagram.com/gardnerplumbingco/
+                  - img [ref=e1037]
+            - generic [ref=e1042]:
+              - generic [ref=e1043]: Emergency? Call Now!
+              - link "(951) 246-4337" [ref=e1044] [cursor=pointer]:
+                - /url: tel:19512464337
+                - button "(951) 246-4337" [ref=e1045]
+      - generic [ref=e1048]:
+        - generic [ref=e1049]:
+          - paragraph [ref=e1050]: © 2024-2025 Gardner Plumbing Co. All rights reserved.
+          - generic [ref=e1051]:
+            - img [ref=e1052]
+            - generic [ref=e1054]: 4.9★ Rated Service
+        - generic [ref=e1055]:
+          - link "Privacy Policy" [ref=e1056] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Service" [ref=e1057] [cursor=pointer]:
+            - /url: /terms-and-services
+          - link "Sitemap" [ref=e1058] [cursor=pointer]:
+            - /url: /sitemap_index.xml
+          - button "Cookie Settings" [ref=e1059]
+  - button "Open Next.js Dev Tools" [ref=e1563] [cursor=pointer]:
+    - img [ref=e1564]
+  - alert [ref=e1567]
+  - generic [ref=e1568]:
+    - generic [ref=e1570]:
+      - text: We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking "Accept All", you consent to our use of cookies.
+      - link "Privacy Policy" [ref=e1571] [cursor=pointer]:
+        - /url: /privacy-policy
+    - generic [ref=e1572]:
+      - button "Decline cookies" [ref=e1573] [cursor=pointer]: Decline
+      - button "Accept cookies" [ref=e1574] [cursor=pointer]: Accept All
+  - iframe [ref=e1577]:
+    - generic [ref=f10e2]:
+      - generic [ref=f10e6]:
+        - text: Localhost is not in the list of
+        - link "supported domains" [ref=f10e7] [cursor=pointer]:
+          - /url: https://cloud.google.com/recaptcha/docs/troubleshoot-recaptcha-issues#localhost-error
+        - text: for this site key.
+      - generic [ref=f10e11]: reCAPTCHA

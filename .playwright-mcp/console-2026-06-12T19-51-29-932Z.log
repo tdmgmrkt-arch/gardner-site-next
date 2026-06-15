@@ -1,0 +1,10 @@
+[     637ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14537
+[    1341ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://cdn.acsbapp.com/config/localhost:3000/config.json:0
+[    1348ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5949
+[    1396ms] [LOG] acsb: This website is not registered or its license is expired. @ https://acsbapp.com/apps/app/dist/js/app.js:22
+[    1406ms] [LOG] [Fast Refresh] done in 160ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5809
+[    1447ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://mads-dni-go.servicetitan.com/api/dni?tenantId=877085251&host=localhost&url=localhost/services/hvac/ac-repair&api-version=2020-12-01:0
+[    8110ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5949
+[    8210ms] [LOG] [Fast Refresh] done in 202ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5809
+[   45803ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5949
+[   46227ms] [LOG] [Fast Refresh] done in 507ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5809

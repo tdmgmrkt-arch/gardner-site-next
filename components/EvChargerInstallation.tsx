@@ -1,0 +1,1136 @@
+"use client";
+
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { SchedulerModal } from "./SchedulerModal";
+import { useState } from "react";
+import Link from "next/link";
+import { Modal } from "./Modal";
+import { LeadForm } from "./LeadForm";
+import Image from "next/image";
+import { Button } from "./ui/button";
+import { Card, CardContent, CardHeader } from "./ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
+import {
+  Clock,
+  Shield,
+  CheckCircle,
+  Phone,
+  DollarSign,
+  Zap,
+  Award,
+  HelpCircle,
+  MapPin,
+  Mail,
+  Star,
+  AlertTriangle,
+  FileCheck,
+  Activity,
+  Wifi,
+} from "lucide-react";
+import { ImagePromptPlaceholder } from "./ImagePromptPlaceholder";
+
+// ─── Image prompt constants (sourced from seo/electrical-image-prompts/ev-charger-installation.md) ───
+
+const HERO_PROMPT =
+  "Photo of an electrician mounting a Level 2 EV charger unit to a garage wall in an Inland Empire home, medium shot showing the tech at the wall with charger partially installed. Technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots, red Milwaukee tool bag on hip. Conduit run visible along the wall, drill in hand securing the charger bracket, a parked electric vehicle visible blurred in the background of the garage. Overhead garage lighting supplemented by open garage-door daylight. Calm, focused, mid-task. 50mm equivalent lens, shallow depth of field. Cinematic realism, documentary photography style. Style and likeness of attached reference image.";
+
+const HERO_NEGATIVE =
+  "no stock photo look, no white lab coat, no safety vest, no orange or yellow hi-vis vest, no cartoon, no illustration, no text overlay, no watermark, no exposed live wires (safety implication), no obvious shock or spark theatrics, no plumbing tools or pipes, no HVAC equipment, no green grass lawn, no snow";
+
+const HERO_REF =
+  "Attach gardnertecharrival.webp or gardnertecharrival2.webp — natural daylight field-work posture; the reference carries face and uniform style data. Do not describe face, age, or ethnicity in the prompt — the reference handles it.";
+
+const BEFORE_AFTER_PROMPT =
+  "Split-scene product photograph, single frame divided at vertical center. LEFT HALF: bare garage drywall with only a standard 120V duplex outlet at mid-height — a plain white outlet, no dedicated circuit signage, drab garage interior light. RIGHT HALF: same garage wall after installation — sleek Level 2 EV charger unit mounted at proper height, conduit run neatly along the wall to the outlet box below, charge cable coiled and hanging on the built-in holster. Seamless lighting match across both halves, straight-on 35mm lens, no people, no hands, technical documentation style. Painted drywall garage wall background.";
+
+const BEFORE_AFTER_NEGATIVE =
+  "no people, no hands visible, no text overlay, no cartoon, no split-screen border or line artifact between halves, no wildly different lighting between left and right, no stock photo softness, no watermark, no plumbing fixtures, no HVAC equipment";
+
+// ─── Data ────────────────────────────────────────────────────────────────────
+
+const cityLinks: Record<string, string> = {
+  Temecula: "https://temeculaca.gov",
+  Murrieta: "https://murrietaca.gov",
+  Perris: "https://www.cityofperris.org",
+  Menifee: "https://cityofmenifee.us",
+  "Canyon Lake": "https://www.canyonlakeca.gov",
+  "Lake Elsinore": "https://www.lake-elsinore.org",
+  Corona: "https://www.coronaca.gov",
+  "Moreno Valley": "https://moval.org",
+  Riverside: "https://riversideca.gov",
+  Hemet: "https://www.hemetca.gov",
+};
+
+const serviceAreas = [
+  "Temecula",
+  "Murrieta",
+  "Perris",
+  "Menifee",
+  "Canyon Lake",
+  "Lake Elsinore",
+  "Corona",
+  "Moreno Valley",
+  "Riverside",
+  "Hemet",
+];
+
+const emergencyReasons = [
+  "EV charger trips the breaker on every session",
+  "240V outlet stopped working",
+  "Charger not communicating with vehicle",
+  "Burning smell from outlet or charger location",
+  "Breaker for charger circuit runs hot",
+  "Existing outlet found to be unpermitted",
+  "Power outage affecting only the charger circuit",
+  "Moving in — need charger circuit assessed before first charge",
+];
+
+const services = [
+  {
+    icon: Zap,
+    title: "Level 2 (240V) Charger Installation",
+    description:
+      "The standard home EV charging upgrade. A dedicated 240V, 40–50 amp circuit powers a Level 2 EVSE charger — adding 20 to 30 miles of range per hour of charging for most electric vehicles.",
+    features: [
+      "240V Dedicated Circuit",
+      "40–50 Amp Breaker",
+      "NEMA 14-50 or Hardwire",
+      "Charger Mount & Connection",
+    ],
+  },
+  {
+    icon: Activity,
+    title: "Panel Capacity Assessment",
+    description:
+      "Most Murrieta homes built before 2015 have 100-amp panels. A Level 2 charger draws 40–50 amps continuously. We check your panel first — and if an upgrade is needed, we scope it before the charger goes in, not after.",
+    features: [
+      "Load Calculation On-Site",
+      "Available Capacity Check",
+      "Panel Upgrade Flagged If Needed",
+      "Sub-Panel Option Available",
+    ],
+  },
+  {
+    icon: FileCheck,
+    title: "Permitted EV Charger Installation",
+    description:
+      "Riverside County and the City of Murrieta require a permit for Level 2 EV charger installation. We pull the permit as part of every installation — no unpermitted work, ever. The permit protects your insurance and confirms the installation meets NEC Article 625.",
+    features: [
+      "City Permit Pulled",
+      "NEC 625 Compliant Install",
+      "City Inspection Included",
+      "Documentation Provided",
+    ],
+  },
+  {
+    icon: Wifi,
+    title: "Smart EV Charger Setup",
+    description:
+      "Smart chargers with app control, off-peak scheduling, and energy tracking need the same dedicated 240V circuit as standard units — but proper load management wiring ensures your smart charger communicates correctly with your home's electrical system.",
+    features: [
+      "Smart Charger Wiring",
+      "Load Management Prep",
+      "App-Controlled Scheduling",
+      "Pairs with Smart Home Systems",
+    ],
+  },
+];
+
+const benefits = [
+  {
+    icon: FileCheck,
+    title: "Permits Pulled, Always",
+    description:
+      "Every EV charger installation we complete is permitted and inspected. An unpermitted charger is a homeowner's insurance gap and a problem at resale. We handle the permit — it's part of the installation, not an add-on.",
+  },
+  {
+    icon: Activity,
+    title: "Panel Assessment First",
+    description:
+      "We check your panel capacity before scheduling the installation. If a panel upgrade is needed, we tell you upfront with a combined quote — not after we've already pulled the permit for just the charger.",
+  },
+  {
+    icon: Shield,
+    title: "Licensed Electricians",
+    description:
+      "Every tech holds a valid CA C-10 electrical license. Charger installations involve 240V circuits — this is not a DIY or handyman scope.",
+  },
+  {
+    icon: DollarSign,
+    title: "Upfront Pricing",
+    description:
+      "You receive a written quote that covers the circuit, the permit, the inspection, and the charger mounting — before we schedule. No add-ons after the job starts.",
+  },
+];
+
+const faqs = [
+  {
+    question: "Do I need a permit to install a Level 2 EV charger in Murrieta?",
+    answer:
+      "Yes. The City of Murrieta requires a permit for Level 2 (240V) EV charger installation. The permit triggers an electrical inspection to confirm the circuit meets NEC Article 625 — the code section governing EV charging equipment. This applies whether you're installing a hardwired unit or a NEMA 14-50 outlet. Unpermitted 240V circuits void homeowner's insurance for any fire or electrical damage claim originating from that circuit, and must be disclosed as unpermitted work during a home sale. Every installation our electrical team completes includes the permit and the inspection — it is built into our pricing, not billed as a separate item.",
+  },
+  {
+    question:
+      "Does my current electrical panel support a Level 2 EV charger?",
+    answer: (
+      <>
+        Most Inland Empire homes built before 2015 run on 100-amp service. A
+        Level 2 charger at 40 amps draws 40% of a 100-amp panel&apos;s total
+        capacity — continuously, while the car is charging. That leaves limited
+        headroom for the rest of the house during a charging session. Whether
+        your panel can support a charger depends on your actual load calculation,
+        not just the panel size. Our electricians run the calculation on-site. If
+        your panel has the capacity, we install the dedicated circuit. If it
+        doesn&apos;t, we quote the charger circuit and the{" "}
+        <Link
+          href="/services/electrical/electrical-panel-upgrade"
+          className="text-red-400 hover:text-red-300 underline"
+        >
+          panel upgrade
+        </Link>{" "}
+        together so you see the full cost in one number.
+      </>
+    ),
+  },
+  {
+    question:
+      "What is the difference between Level 1 and Level 2 EV charging?",
+    answer:
+      "Level 1 charging uses a standard 120V household outlet and adds approximately 3 to 5 miles of range per hour. For a 300-mile-range EV, a full charge from empty takes 60 to 80 hours on Level 1. That works as an emergency backup but not as a daily driver solution. Level 2 charging uses a 240V dedicated circuit — the same voltage as a clothes dryer or oven — and adds 20 to 30 miles of range per hour. Most Inland Empire commuters who drive 30 to 60 miles per day are fully recharged each morning with a Level 2 charger running overnight. Level 3 (DC fast charging) requires commercial-grade infrastructure not practical for residential installation.",
+  },
+  {
+    question: "What EV charger brands do you install?",
+    answer: (
+      <>
+        Our electricians install the electrical circuit and mounting — the charger
+        itself can be any UL-listed Level 2 unit the homeowner selects. Popular
+        options in the Murrieta market include ChargePoint Home Flex, Emporia
+        Energy, Grizzl-E, and JuiceBox, as well as the Tesla Wall Connector (for
+        Tesla vehicles). We also wire for NEMA 14-50 outlets, which are
+        charger-agnostic and allow the homeowner to plug in any Level 2 EVSE now
+        or in the future. Smart charger installations — those with app control and
+        off-peak scheduling — pair well with our{" "}
+        <Link
+          href="/services/electrical/smart-home-electrical"
+          className="text-red-400 hover:text-red-300 underline"
+        >
+          smart home electrical services
+        </Link>{" "}
+        if you&apos;re also planning automated load management for your
+        home&apos;s energy use.
+      </>
+    ),
+  },
+  {
+    question: "How long does EV charger installation take?",
+    answer:
+      "Most straightforward installations — panel has available capacity, garage has accessible wire runs to the panel — take 3 to 5 hours on-site. The permit is typically approved within 3 to 7 business days depending on city processing, so the total timeline from quote to energized charger is usually 1 to 2 weeks. If a panel upgrade is also required, the panel work adds a day and the permit timeline overlaps with the charger permit. We schedule both together to avoid two separate permit windows. For homes where the garage is detached from the main panel by a long run, we assess wire routing options during the quote visit.",
+  },
+  {
+    question: "How much does EV charger installation cost in Murrieta?",
+    answer: (
+      <>
+        A standard Level 2 EV charger installation — dedicated 240V circuit,
+        40-amp breaker, NEMA 14-50 outlet or hardwire connection, permit, and
+        inspection — typically runs $700 to $1,500 in Murrieta, depending on the
+        distance from the panel to the garage and the complexity of the wire run.
+        If a panel upgrade is also needed, that adds $2,500 to $4,500 to the
+        project (see our{" "}
+        <Link
+          href="/services/electrical/electrical-panel-upgrade"
+          className="text-red-400 hover:text-red-300 underline"
+        >
+          panel upgrade page
+        </Link>{" "}
+        for panel-specific cost context). Financing is available for combined
+        installations; see our{" "}
+        <Link
+          href="/financing"
+          className="text-red-400 hover:text-red-300 underline"
+        >
+          financing page
+        </Link>
+        . Some utility and state incentive programs may reduce the net cost — we
+        note applicable programs in the quote visit.
+      </>
+    ),
+  },
+];
+
+// ─── Component ───────────────────────────────────────────────────────────────
+
+export function EvChargerInstallation() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const lastUpdated = "June 2026";
+
+  return (
+    <div className="min-h-screen">
+      {/* ── Hero Section ── */}
+      <section className="relative py-20 sm:py-28 lg:py-36 overflow-hidden">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0"
+            style={{
+              background: `
+                radial-gradient(ellipse at center top, #1f2937 0%, #111827 50%, #000000 100%),
+                linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
+              `,
+            }}
+          />
+          <div
+            className="absolute inset-0 opacity-10"
+            style={{
+              backgroundImage: `
+                radial-gradient(circle at 20% 80%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(34, 197, 94, 0.1) 0%, transparent 50%)
+              `,
+            }}
+          />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="text-left animate-fade-in">
+              <nav className="absolute top-[-75px] mb-6">
+                <div className="flex items-center space-x-2 text-sm text-gray-400">
+                  <Breadcrumbs
+                    items={[
+                      { label: "Home", href: "/" },
+                      { label: "Services", href: "/services" },
+                      { label: "Electrical", href: "/services/electrical" },
+                      { label: "EV Charger Installation" },
+                    ]}
+                  />
+                </div>
+              </nav>
+
+              <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
+                <Zap className="h-5 w-5 text-red-400" />
+                <span className="text-red-400 font-semibold text-sm uppercase tracking-wider">
+                  Licensed Electrical Service
+                </span>
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg leading-tight">
+                EV Charger Installation in Murrieta —{" "}
+                <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                  Level 2 Home
+                </span>{" "}
+                Charging
+              </h1>
+
+              <p className="text-sm text-gray-500 mb-4">
+                Last Updated: {lastUpdated}
+              </p>
+
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
+                Inland Empire car culture runs on EVs now. Our licensed
+                electricians install permitted Level 2 (240V) home charging
+                stations — with a panel capacity check first — so you&apos;re
+                charging at full speed, every night.
+              </p>
+
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                {[
+                  { icon: Zap, text: "Level 2 (240V) Installation" },
+                  { icon: Shield, text: "Licensed & Insured" },
+                  { icon: FileCheck, text: "Permits Pulled — Always" },
+                  { icon: DollarSign, text: "Upfront Pricing" },
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-3 text-gray-300">
+                    <item.icon className="h-5 w-5 text-green-400" />
+                    <span className="font-medium">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="tel:9512464337">
+                  <Button
+                    size="lg"
+                    className="min-w-[220px] bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
+                  >
+                    <span className="flex items-center justify-center gap-3">
+                      <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+                      Call (951) 246-4337
+                    </span>
+                  </Button>
+                </a>
+                <SchedulerModal />
+              </div>
+            </div>
+
+            <div className="relative group animate-slide-up">
+              <div className="relative overflow-hidden rounded-3xl shadow-luxury hover:shadow-2xl transition-all duration-500">
+                <Image
+                  src="/ev-charger-installation-hero.webp"
+                  alt="Gardner electrician installing a Level 2 EV charger in a Murrieta garage"
+                  width={1000}
+                  height={600}
+                  priority
+                  className="w-full h-[400px] lg:h-[500px] object-cover rounded-3xl"
+                />
+
+                <div className="absolute bottom-6 left-6 glassmorphism-dark rounded-2xl p-4 border border-white/20 shadow-luxury animate-fade-in bg-black/60 backdrop-blur-md">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-red-600 to-red-500 rounded-full flex items-center justify-center">
+                      <Zap className="h-4 w-4 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-white font-bold text-sm">
+                        Licensed Electrical Service
+                      </div>
+                      <div className="text-gray-300 text-xs">
+                        Murrieta & Inland Empire
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Emergency Alert Banner ── */}
+      <section className="relative overflow-hidden">
+        <div
+          className="relative overflow-hidden py-2 sm:py-3"
+          style={{
+            background: `linear-gradient(135deg, #8B0000 0%, #DC2626 50%, #B91C1C 100%)`,
+            boxShadow: `
+              inset 0 2px 0 rgba(255, 255, 255, 0.2),
+              inset 0 -2px 0 rgba(0, 0, 0, 0.2),
+              0 8px 32px rgba(139, 0, 0, 0.4),
+              0 -8px 32px rgba(139, 0, 0, 0.3),
+              0 12px 24px rgba(0, 0, 0, 0.6),
+              0 -12px 24px rgba(0, 0, 0, 0.4)
+            `,
+          }}
+        >
+          <div
+            className="absolute inset-0 opacity-30"
+            style={{
+              background: `linear-gradient(135deg,
+                transparent 0%,
+                rgba(255, 255, 255, 0.1) 25%,
+                rgba(255, 255, 255, 0.2) 50%,
+                rgba(255, 255, 255, 0.1) 75%,
+                transparent 100%
+              )`,
+            }}
+          />
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-center">
+              <div className="flex items-center gap-3">
+                <AlertTriangle className="h-6 w-6 text-white animate-pulse flex-shrink-0" />
+                <span className="text-white font-bold text-lg sm:text-xl">
+                  Just bought an EV in Murrieta and need a home charger fast?
+                </span>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+                <Link href="tel:9512464337" className="w-full sm:w-auto">
+                  <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
+                    <Phone className="h-5 w-5 text-red-100" />
+                    <span className="text-white font-bold text-lg">
+                      (951) 246-4337
+                    </span>
+                  </div>
+                </Link>
+                <span className="text-red-100 font-semibold text-sm sm:text-base">
+                  Panel assessed · installation scheduled · permit included
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Service Overview ── */}
+      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0"
+            style={{
+              background: `
+                radial-gradient(ellipse at bottom, #374151 0%, #1f2937 50%, #111827 100%),
+                linear-gradient(135deg, #2c2c2c 0%, #374151 50%, #1f2937 100%)
+              `,
+            }}
+          />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 sm:mb-20 animate-fade-in">
+            <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-green-600/20 to-green-500/20 rounded-full border border-green-500/30 backdrop-blur-sm">
+              <Zap className="h-5 w-5 text-green-400" />
+              <span className="text-green-400 font-semibold text-sm uppercase tracking-wider">
+                Our Services
+              </span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center mb-8 drop-shadow-lg">
+              EV Charger Installation Services in the{" "}
+              <span className="text-gradient bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                Inland Empire
+              </span>
+            </h2>
+            <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
+              Murrieta, Temecula, and the broader Inland Empire are car-dependent
+              suburbs. EV adoption in Riverside County is growing fast — and most
+              homeowners who buy an electric vehicle discover their Level 1 (120V)
+              outlet charges at 3 to 5 miles per hour. That is not a practical
+              daily charger. A Level 2 (240V) installation charges at 20 to 30
+              miles per hour. Our electricians assess your panel capacity, install
+              the dedicated circuit, and pull the permit — so the installation is
+              done right and ready for the city inspector. View our{" "}
+              <Link
+                href="/services/electrical/power"
+                className="text-red-400 hover:text-red-300 underline"
+              >
+                power upgrade services
+              </Link>
+              .
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16 animate-slide-up">
+            {services.map((service, index) => {
+              const IconComponent = service.icon;
+              return (
+                <Card
+                  key={index}
+                  className="group relative border-none overflow-hidden shadow-luxury hover-lift transition-all duration-500"
+                  style={{
+                    backgroundColor: "#202020",
+                    backgroundImage:
+                      "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
+                    animationDelay: `${index * 100}ms`,
+                  }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
+                  <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg"></div>
+
+                  <div className="relative z-10">
+                    <CardHeader className="text-center pb-4 pt-8">
+                      <div className="relative mb-6">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-green-600/30 to-blue-500/30 rounded-2xl flex items-center justify-center mx-auto group-hover:from-green-600 group-hover:to-blue-500 transition-all duration-500 shadow-lg">
+                          <IconComponent className="h-8 w-8 sm:h-10 sm:w-10 text-green-400 group-hover:text-white transition-all duration-500" />
+                        </div>
+                      </div>
+                      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-100 transition-colors duration-300">
+                        {service.title}
+                      </h3>
+                    </CardHeader>
+                    <CardContent className="px-6 pb-8">
+                      <p className="text-gray-300 mb-6 leading-relaxed text-center group-hover:text-gray-200 transition-colors duration-300">
+                        {service.description}
+                      </p>
+                      <ul className="space-y-2">
+                        {service.features.map((feature, idx) => (
+                          <li
+                            key={idx}
+                            className="flex items-center gap-3 text-sm"
+                          >
+                            <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
+                            <span className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                              {feature}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
+
+          <div className="glassmorphism-dark rounded-3xl p-8 border border-white/10 shadow-luxury">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">
+                  What Changes After a Level 2 EV Charger Installation
+                </h3>
+                <div className="space-y-4 text-gray-300">
+                  {[
+                    "20–30 miles of range added per hour — full overnight charge for most EVs",
+                    "Dedicated 240V circuit — no shared load with other appliances",
+                    "City permit closed — installation is on record and insurance-compliant",
+                    "Charger mounted at the right height and location for daily convenience",
+                    "NEMA 14-50 outlet or hardwired connection per manufacturer spec",
+                    "Panel capacity verified — no breaker trips from charger draw",
+                  ].map((item, idx) => (
+                    <div key={idx} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-luxury w-full h-64">
+                  <Image
+                    src="/ev-charger-installation-before-after.webp"
+                    alt="Before and after EV charger installation showing standard outlet upgraded to Level 2 charging station by Gardner Electrical in Murrieta"
+                    width={800}
+                    height={400}
+                    className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-transparent pointer-events-none">
+                    <div className="absolute inset-0 flex">
+                      <div className="w-1/2 bg-gradient-to-r from-red-900/40 to-transparent flex items-center justify-center">
+                        <span className="text-white font-bold bg-red-600/80 px-3 py-1 rounded-full text-sm">
+                          BEFORE
+                        </span>
+                      </div>
+                      <div className="w-1/2 bg-gradient-to-l from-green-900/40 to-transparent flex items-center justify-center">
+                        <span className="text-white font-bold bg-green-600/80 px-3 py-1 rounded-full text-sm">
+                          AFTER
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Why Choose Us ── */}
+      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0"
+            style={{
+              background: `
+                radial-gradient(ellipse at top, #1f2937 0%, #111827 50%, #000000 100%),
+                linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
+              `,
+            }}
+          />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
+            <div className="relative group">
+              <div className="relative overflow-hidden rounded-3xl shadow-luxury group-hover:shadow-2xl transition-all duration-500 h-96 lg:h-full lg:min-h-[600px]">
+                <Image
+                  src="/gardnertechvanbackground.webp"
+                  alt="Gardner Plumbing Co. electrician and service van ready for EV charger installation"
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover object-[center_30%] rounded-3xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl"></div>
+              </div>
+
+              <div className="absolute bottom-6 left-6 glassmorphism-dark rounded-2xl p-4 border border-white/20 shadow-luxury animate-fade-in bg-black/60 backdrop-blur-md">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center">
+                    <Award className="h-4 w-4 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-white font-bold text-sm">100+</div>
+                    <div className="text-gray-300 text-xs">
+                      EV Chargers Installed
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-green-600/20 to-green-500/20 rounded-full border border-green-500/30 backdrop-blur-sm">
+                <Shield className="h-5 w-5 text-green-400" />
+                <span className="text-green-400 font-semibold text-sm uppercase tracking-wider">
+                  Why Choose Our Electrical Team
+                </span>
+              </div>
+
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 drop-shadow-lg leading-tight">
+                Why Inland Empire Homeowners{" "}
+                <span className="text-gradient bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                  Choose Us
+                </span>{" "}
+                for EV Charging
+              </h2>
+
+              <p className="text-lg text-gray-300 mb-8 leading-relaxed text-[16px]">
+                Gardner Plumbing Co. is a licensed electrical contractor serving
+                Murrieta, Temecula, Menifee, and the greater Inland Empire (CA
+                Contractor&apos;s License{" "}
+                <span className="text-yellow-400 font-semibold">
+                  &#123;&#123;CSLB_C10_LICENSE_TBD&#125;&#125;
+                </span>
+                ). Our electricians have installed over 100 EV chargers across
+                Riverside County — in Murrieta tract homes, Temecula wine country
+                estates, and Menifee new builds. Every installation includes a
+                panel assessment first, so no homeowner discovers a needed panel
+                upgrade after the charger is already on the wall.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                {benefits.map((benefit, index) => {
+                  const IconComponent = benefit.icon;
+                  return (
+                    <div
+                      key={index}
+                      className="flex items-start gap-4 p-4 glassmorphism-dark rounded-xl border border-white/10 hover:border-green-500/30 transition-all duration-300 group hover-lift"
+                    >
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-600/30 to-green-500/30 rounded-xl flex items-center justify-center group-hover:from-green-600 group-hover:to-green-500 transition-all duration-300 flex-shrink-0">
+                        <IconComponent className="h-6 w-6 text-green-400 group-hover:text-white transition-colors duration-300" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-white text-lg mb-2 group-hover:text-green-100 transition-colors duration-300">
+                          {benefit.title}
+                        </h4>
+                        <p className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">
+                          {benefit.description}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <Button
+                onClick={() => setIsModalOpen(true)}
+                className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-3 rounded-xl shadow-lg border border-green-400/20 group"
+              >
+                <span className="flex items-center justify-center gap-3">
+                  <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+                  Get Free Estimate
+                </span>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Service Areas ── */}
+      <section id="service-area" className="py-16 sm:py-20 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0"
+            style={{
+              background: `
+                radial-gradient(ellipse at bottom, #374151 0%, #1f2937 50%, #111827 100%),
+                linear-gradient(135deg, #2c2c2c 0%, #374151 50%, #1f2937 100%)
+              `,
+            }}
+          />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-blue-600/20 to-blue-500/20 rounded-full border border-blue-500/30 backdrop-blur-sm">
+              <MapPin className="h-5 w-5 text-blue-400" />
+              <span className="text-blue-400 font-semibold text-sm uppercase tracking-wider">
+                Service Areas
+              </span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 drop-shadow-lg">
+              Serving Murrieta, Temecula, and All of{" "}
+              <span className="text-gradient bg-gradient-to-r from-blue-400 to-red-600 bg-clip-text text-transparent">
+                Riverside County
+              </span>
+            </h2>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              EV charger installation service is available across the Inland
+              Empire, dispatched from our Murrieta base. We cover Temecula,
+              Menifee, Perris, Canyon Lake, Lake Elsinore, Corona, Moreno Valley,
+              Riverside, and Hemet — with same-week scheduling throughout.
+            </p>
+          </div>
+
+          <div
+            className="grid gap-4 mb-12"
+            style={{ gridTemplateColumns: "repeat(5, 1fr)" }}
+          >
+            {serviceAreas.map((area, index) => (
+              <a
+                key={index}
+                href={cityLinks[area] ?? "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visit the official website for ${area}`}
+                className="glassmorphism-dark rounded-xl p-4 border border-white/10 text-center hover:border-blue-500/30 transition-all duration-300 hover-lift block"
+              >
+                <MapPin className="h-6 w-6 text-blue-400 mx-auto mb-2" />
+                <span className="text-white font-medium">{area}</span>
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <div className="glassmorphism-dark rounded-2xl p-8 border border-white/10 shadow-luxury inline-block">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Don&apos;t See Your Area?
+              </h3>
+              <p className="text-gray-300 mb-6">
+                We serve additional areas throughout Riverside County. Call to
+                confirm service availability.
+              </p>
+              <a href="tel:9512464337" className="w-full sm:w-auto">
+                <Button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 rounded-xl shadow-lg">
+                  <span className="flex items-center justify-center gap-3">
+                    <Phone className="h-5 w-5" />
+                    Check Service Area
+                  </span>
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ Section ── */}
+      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0"
+            style={{
+              background: `
+                radial-gradient(ellipse at top left, #2c2c2c 0%, #1f2937 50%, #111827 100%),
+                linear-gradient(135deg, #374151 0%, #1f2937 50%, #000000 100%)
+              `,
+            }}
+          />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 sm:mb-20 animate-fade-in">
+            <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-blue-600/20 to-blue-500/20 rounded-full border border-blue-500/30 backdrop-blur-sm">
+              <HelpCircle className="h-5 w-5 text-blue-400" />
+              <span className="text-blue-400 font-semibold text-sm uppercase tracking-wider">
+                FAQ
+              </span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center mb-8 drop-shadow-lg">
+              EV Charger Installation{" "}
+              <span className="text-gradient bg-gradient-to-r from-blue-400 to-red-600 bg-clip-text text-transparent">
+                Questions and Answers
+              </span>
+            </h2>
+            <p className="text-[16px] text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
+              Find answers to common questions about EV charger installation in
+              Murrieta and the Inland Empire.
+            </p>
+          </div>
+
+          <div className="mb-16 sm:mb-20 animate-slide-up">
+            <div className="glassmorphism-dark rounded-3xl backdrop-blur-xl border border-white/10 shadow-luxury overflow-hidden hover-lift">
+              <div
+                className="relative overflow-hidden px-6 sm:px-8 py-6 sm:py-8"
+                style={{
+                  background: `linear-gradient(135deg, #8B0000 0%, #DC2626 50%, #B91C1C 100%)`,
+                  boxShadow: `
+                    inset 0 2px 0 rgba(255, 255, 255, 0.2),
+                    inset 0 -2px 0 rgba(0, 0, 0, 0.2),
+                    0 8px 32px rgba(139, 0, 0, 0.4)
+                  `,
+                }}
+              >
+                <div
+                  className="absolute inset-0 opacity-30"
+                  style={{
+                    background: `linear-gradient(135deg,
+                      transparent 0%,
+                      rgba(255, 255, 255, 0.1) 25%,
+                      rgba(255, 255, 255, 0.2) 50%,
+                      rgba(255, 255, 255, 0.1) 75%,
+                      transparent 100%
+                    )`,
+                  }}
+                />
+                <div className="relative flex items-center justify-center gap-4">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/30 shadow-inner">
+                    <HelpCircle className="h-6 w-6 sm:h-7 sm:w-7 text-white drop-shadow-sm" />
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg">
+                    Questions & Answers
+                  </h3>
+                </div>
+              </div>
+
+              <div className="p-6 sm:p-8 lg:p-10">
+                <Accordion
+                  type="single"
+                  collapsible
+                  className="w-full space-y-4 sm:space-y-6"
+                >
+                  {faqs.map((faq, index) => (
+                    <AccordionItem
+                      key={index}
+                      value={`item-${index}`}
+                      className="group relative border-none overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 animate-scale-in rounded-2xl"
+                      style={{
+                        backgroundColor: "#202020",
+                        backgroundImage:
+                          "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
+                        animationDelay: `${index * 100}ms`,
+                      }}
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                      <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl"></div>
+
+                      <div className="relative z-10">
+                        <AccordionTrigger className="text-left hover:no-underline text-white hover:text-green-400 data-[state=open]:text-green-500 px-6 sm:px-8 py-6 sm:py-8 transition-colors duration-300 text-base sm:text-lg font-semibold group/trigger">
+                          <span className="flex items-center gap-4">
+                            <div className="w-8 h-8 bg-gradient-to-br from-green-600/30 to-green-500/30 rounded-full flex items-center justify-center group-hover/trigger:from-green-600 group-hover/trigger:to-green-500 transition-all duration-300">
+                              <HelpCircle className="h-4 w-4 text-green-400 group-hover/trigger:text-white transition-colors duration-300" />
+                            </div>
+                            {faq.question}
+                          </span>
+                        </AccordionTrigger>
+                        <AccordionContent className="text-gray-300 pb-6 sm:pb-8 pt-0 px-6 sm:px-8 ml-12 border-l-2 border-green-500/20 text-base sm:text-lg leading-relaxed">
+                          <div className="glassmorphism rounded-xl p-4 sm:p-6 border border-white/10">
+                            {faq.answer}
+                          </div>
+                        </AccordionContent>
+                      </div>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            </div>
+          </div>
+
+          <div className="glassmorphism-dark rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 shadow-luxury hover-lift animate-fade-in">
+            <div className="text-center">
+              <div className="flex items-center justify-center gap-4 mb-6">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-600 to-blue-500 rounded-full flex items-center justify-center shadow-glow">
+                  <HelpCircle className="h-6 w-6 sm:h-7 sm:w-7 text-white" />
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                  Have More Questions?
+                </h3>
+              </div>
+              <p className="text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
+                Can&apos;t find what you&apos;re looking for? Our electrical team
+                is standing by to answer your questions and schedule your EV
+                charger installation. Need immediate help? Call our{" "}
+                <Link
+                  href="tel:9512464337"
+                  className="text-red-400 hover:text-red-300 underline"
+                >
+                  direct line
+                </Link>
+                .
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
+                <Link href="/frequently-asked-questions">
+                  <Button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 sm:py-4 transition-all duration-300 rounded-xl shadow-lg border border-blue-400/20 group">
+                    <span className="flex items-center justify-center gap-3">
+                      <HelpCircle className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
+                      View Full FAQ
+                    </span>
+                  </Button>
+                </Link>
+                <Link href="/contact-us">
+                  <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-3 sm:py-4 transition-all duration-300 rounded-xl shadow-lg border border-red-400/20 group">
+                    <span className="flex items-center justify-center gap-3">
+                      <Phone className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-300" />
+                      Contact Us
+                    </span>
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Emergency Section ── */}
+      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0"
+            style={{
+              background: `
+                radial-gradient(ellipse at center, #1f2937 0%, #111827 50%, #000000 100%),
+                linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
+              `,
+            }}
+          />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
+                <AlertTriangle className="h-5 w-5 text-red-400" />
+                <span className="text-red-400 font-semibold text-sm uppercase tracking-wider">
+                  Emergency Service
+                </span>
+              </div>
+
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 drop-shadow-lg leading-tight">
+                When Your EV Charging Setup Has an{" "}
+                <span className="text-gradient bg-gradient-to-r from-red-400 to-orange-500 bg-clip-text text-transparent">
+                  Electrical Problem
+                </span>
+              </h2>
+
+              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                A charger that trips the breaker, a 240V outlet that stopped
+                working, or a circuit that fails to hold the load are same-day
+                electrical calls. Our electricians troubleshoot EV charging circuit
+                problems across Murrieta and the Inland Empire seven days a week.
+              </p>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold text-white mb-6">
+                  Common Emergency Situations:
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {emergencyReasons.map((reason, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-3 text-gray-300"
+                    >
+                      <AlertTriangle className="h-4 w-4 text-red-400 flex-shrink-0" />
+                      <span className="text-sm">{reason}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="tel:9512464337">
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
+                  >
+                    <span className="flex items-center justify-center gap-3">
+                      <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+                      Emergency: (951) 246-4337
+                    </span>
+                  </Button>
+                </a>
+              </div>
+            </div>
+
+            <div className="relative group">
+              <div className="relative overflow-hidden rounded-3xl shadow-luxury hover:shadow-2xl transition-all duration-500">
+                <Image
+                  src="/gardnertecharrival.webp"
+                  alt="Emergency electrical service — Gardner electrician responding to EV charger problem"
+                  width={1000}
+                  height={700}
+                  className="w-full h-96 object-cover rounded-3xl"
+                />
+
+                <div className="absolute top-6 right-6 glassmorphism-dark rounded-2xl p-4 border border-white/20 shadow-luxury animate-fade-in bg-black/60 backdrop-blur-md">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-red-600 to-red-500 rounded-full flex items-center justify-center">
+                      <Clock className="h-4 w-4 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-white font-bold text-sm">7 Days</div>
+                      <div className="text-gray-300 text-xs">
+                        Emergency Service
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Final CTA Section ── */}
+      <section className="relative overflow-hidden">
+        <div
+          className="py-12 sm:py-16"
+          style={{
+            background: `
+              radial-gradient(ellipse at center, #1f2937 0%, #111827 50%, #000000 100%),
+              linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
+            `,
+            boxShadow: `
+              0 -12px 32px rgba(0, 0, 0, 0.4),
+              0 12px 32px rgba(0, 0, 0, 0.6),
+              0 -8px 24px rgba(31, 41, 55, 0.3),
+              0 8px 24px rgba(31, 41, 55, 0.5),
+              inset 0 1px 0 rgba(255, 255, 255, 0.1),
+              inset 0 -1px 0 rgba(0, 0, 0, 0.2)
+            `,
+          }}
+        >
+          <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <Phone className="h-6 w-6 text-white" />
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 drop-shadow-lg">
+                Ready to{" "}
+                <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                  Install Your Home EV Charger?
+                </span>
+              </h2>
+              <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
+                EV charger installation across Murrieta, Temecula, and the Inland
+                Empire. Panel assessment first, permits pulled, licensed
+                electricians. Call now or schedule online — our electrical team
+                picks up.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">
+              <a href="tel:9512464337" className="flex-1">
+                <Button
+                  size="lg"
+                  className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-6 py-3 rounded-xl shadow-lg border border-red-400/20 group"
+                >
+                  <span className="flex items-center justify-center gap-2">
+                    <Phone className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
+                    Call (951) 246-4337
+                  </span>
+                </Button>
+              </a>
+
+              <Button
+                size="lg"
+                onClick={() => setIsModalOpen(true)}
+                className="border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-xl shadow-lg transition-all duration-300 group bg-transparent flex-1"
+              >
+                <span className="flex items-center justify-center gap-2">
+                  <Mail className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
+                  Get Free Estimate
+                </span>
+              </Button>
+            </div>
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-center text-sm max-w-2xl mx-auto">
+              <div className="flex items-center gap-2">
+                <FileCheck className="h-4 w-4 text-green-400" />
+                <span className="text-gray-300">Permitted Work</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Shield className="h-4 w-4 text-green-400" />
+                <span className="text-gray-300">Licensed & Insured</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Star className="h-4 w-4 text-green-400" />
+                <span className="text-gray-300">4.9 Star Rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Modal */}
+      <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <LeadForm />
+      </Modal>
+    </div>
+  );
+}

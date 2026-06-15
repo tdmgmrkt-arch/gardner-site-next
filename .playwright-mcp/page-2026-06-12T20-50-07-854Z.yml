@@ -1,0 +1,653 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "24/7 Emergency Service" [ref=e8] [cursor=pointer]:
+          - /url: /services/emergency-service
+          - img [ref=e9]
+        - link "24/7 Emergency Service" [ref=e12] [cursor=pointer]:
+          - /url: /services/emergency-service
+      - generic [ref=e13]:
+        - link "See Reviews" [ref=e14] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e15]
+        - link "4.9★ Rated Service" [ref=e17] [cursor=pointer]:
+          - /url: /reviews
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - link "Service Area" [ref=e20] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e21]
+        - link "Serving Greater Riverside Area" [ref=e24] [cursor=pointer]:
+          - /url: "#service-area"
+      - generic [ref=e25]:
+        - link "Call (951) 246-4337" [ref=e26] [cursor=pointer]:
+          - /url: tel:9512464337
+          - img [ref=e27]
+        - link "(951) 246-4337" [ref=e29] [cursor=pointer]:
+          - /url: tel:9512464337
+  - banner [ref=e30]:
+    - navigation [ref=e32]:
+      - generic [ref=e34]:
+        - link "Go to homepage" [ref=e36] [cursor=pointer]:
+          - /url: /
+          - img "Gardner Plumbing Co. logo" [ref=e37]
+        - generic [ref=e38]:
+          - link "Home" [ref=e39] [cursor=pointer]:
+            - /url: /
+          - link "About Us" [ref=e40] [cursor=pointer]:
+            - /url: /about-us
+          - link "Plumbing" [ref=e42] [cursor=pointer]:
+            - /url: /services
+            - text: Plumbing
+            - img [ref=e43]
+          - link "HVAC" [ref=e46] [cursor=pointer]:
+            - /url: /services/hvac
+            - text: HVAC
+            - img [ref=e47]
+          - link "Electrical" [ref=e50] [cursor=pointer]:
+            - /url: /services/electrical
+            - text: Electrical
+            - img [ref=e51]
+          - link "Reviews" [ref=e53] [cursor=pointer]:
+            - /url: /reviews
+          - link "Contact" [ref=e54] [cursor=pointer]:
+            - /url: /contact-us
+  - main [ref=e55]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - navigation [ref=e66]:
+              - navigation [ref=e68]:
+                - generic [ref=e69]:
+                  - generic [ref=e70]:
+                    - link "Home" [ref=e71] [cursor=pointer]:
+                      - /url: /
+                    - img [ref=e72]
+                  - generic [ref=e74]:
+                    - link "Services" [ref=e75] [cursor=pointer]:
+                      - /url: /services
+                    - img [ref=e76]
+                  - generic [ref=e78]:
+                    - link "HVAC" [ref=e79] [cursor=pointer]:
+                      - /url: /services/hvac
+                    - img [ref=e80]
+                  - generic [ref=e83]: Heat Pump Systems
+            - generic [ref=e84]:
+              - img [ref=e85]
+              - generic [ref=e87]: All-Electric HVAC System
+            - heading "Heat Pump Installation in Murrieta — One System for Heating and Cooling" [level=1] [ref=e88]
+            - paragraph [ref=e89]: "Last Updated: June 2026"
+            - paragraph [ref=e90]: A single heat pump replaces your furnace and air conditioner — heating in winter, cooling in summer — with no gas line required and SCE rebates available.
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - img [ref=e93]
+                - generic [ref=e95]: Heats & Cools — One System
+              - generic [ref=e96]:
+                - img [ref=e97]
+                - generic [ref=e99]: Licensed & Insured
+              - generic [ref=e100]:
+                - img [ref=e101]
+                - generic [ref=e103]: SCE Rebates Available
+              - generic [ref=e104]:
+                - img [ref=e105]
+                - generic [ref=e107]: Free In-Home Estimate
+            - generic [ref=e108]:
+              - link "Call (951) 246-4337" [ref=e109] [cursor=pointer]:
+                - /url: tel:9512464337
+                - button "Call (951) 246-4337" [ref=e110]:
+                  - generic [ref=e111]:
+                    - img
+                    - text: Call (951) 246-4337
+              - button "Get Free Estimate" [ref=e112]:
+                - generic [ref=e113]: Get Free Estimate
+          - generic [ref=e115]:
+            - img "Gardner HVAC technician servicing an outdoor heat pump unit at a Murrieta Inland Empire residential home" [ref=e116]:
+              - generic [ref=e117]:
+                - generic [ref=e118]:
+                  - generic [ref=e119]: IMAGE PLACEHOLDER — HERO
+                  - generic [ref=e120]:
+                    - text: 1000 × 600px |
+                    - generic [ref=e121]: /public/hvac/heat-pump-systems-hero.webp
+                - button "Copy prompt to clipboard" [ref=e122]: Copy prompt
+              - generic [ref=e123]:
+                - generic [ref=e124]: Prompt
+                - generic [ref=e125]: Photo of an HVAC technician kneeling beside an outdoor heat pump unit on a concrete pad at a Southern California suburban home, holding a refrigerant manifold gauge set connected to the service port, focused diagnostic posture. Technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots, red Milwaukee tool bag on hip, visible arm tattoos. Heat pump unit is taller than a standard AC condenser with a single top-mounted fan, modern look. Stucco wall, desert-dry landscaping, midday SoCal directional sunlight. 50mm equivalent lens, documentary photography style. No studio lighting. Style and likeness of attached reference image.
+              - generic [ref=e126]:
+                - generic [ref=e127]: "Negative: no stock photo look, no white lab coat, no safety vest, no Carhartt tan jacket, no orange or yellow hi-vis vest, no cartoon, no illustration, no text overlay, no watermark, no swimming pool heat pump, no geothermal ground loops, no visible gas flames or fire, no excessive lens flare"
+                - generic [ref=e128]: "Ref image: Attach the two real Gardner team reference photos (provided 2026-06-12) — uniform & face/likeness reference. Don't describe face, age, or ethnicity."
+                - generic [ref=e129]: "Alt text: Gardner HVAC technician servicing an outdoor heat pump unit at a Murrieta Inland Empire residential home"
+            - generic [ref=e132]:
+              - img [ref=e134]
+              - generic [ref=e136]:
+                - generic [ref=e137]: All-Electric HVAC System
+                - generic [ref=e138]: Murrieta & Inland Empire
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - img [ref=e145]
+            - generic [ref=e147]: Replacing your furnace or AC in Murrieta?
+          - generic [ref=e148]:
+            - link "(951) 246-4337" [ref=e149] [cursor=pointer]:
+              - /url: tel:9512464337
+              - generic [ref=e150]:
+                - img [ref=e151]
+                - generic [ref=e153]: (951) 246-4337
+            - generic [ref=e154]: One heat pump handles both — free in-home estimate
+        - generic [ref=e158]:
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - img [ref=e161]
+              - generic [ref=e163]: Our Services
+            - heading "Comprehensive Heat Pump Installation Services in the Inland Empire" [level=2] [ref=e164]
+            - paragraph [ref=e165]:
+              - text: The Inland Empire climate is one of the best environments for heat pump systems. IE winters are mild — Murrieta and Temecula rarely see temperatures below freezing — which means a heat pump operates near peak efficiency all season without backup heat strips running constantly. One system for heating and cooling, no gas required. View
+              - link "all heating services" [ref=e166] [cursor=pointer]:
+                - /url: /services/hvac/heating
+              - text: .
+          - generic [ref=e167]:
+            - generic [ref=e171]:
+              - generic [ref=e172]:
+                - img [ref=e175]
+                - heading "Standard Split Heat Pump" [level=3] [ref=e177]
+              - generic [ref=e178]:
+                - paragraph [ref=e179]: A central ducted heat pump replaces your existing furnace and air conditioner — same ductwork, same thermostat wiring, but all-electric operation and utility rebate eligibility.
+                - list [ref=e180]:
+                  - listitem [ref=e181]:
+                    - img [ref=e182]
+                    - generic [ref=e185]: Replaces Furnace + AC
+                  - listitem [ref=e186]:
+                    - img [ref=e187]
+                    - generic [ref=e190]: Uses Existing Ductwork
+                  - listitem [ref=e191]:
+                    - img [ref=e192]
+                    - generic [ref=e195]: SCE Rebate-Eligible
+                  - listitem [ref=e196]:
+                    - img [ref=e197]
+                    - generic [ref=e200]: 16–20 SEER2 Efficiency
+            - generic [ref=e204]:
+              - generic [ref=e205]:
+                - img [ref=e208]
+                - heading "Ductless Mini-Split Heat Pump" [level=3] [ref=e211]
+              - generic [ref=e212]:
+                - paragraph [ref=e213]: For additions, garages, and rooms without ducts, a ductless heat pump delivers zoned heating and cooling with no ductwork modification required.
+                - list [ref=e214]:
+                  - listitem [ref=e215]:
+                    - img [ref=e216]
+                    - generic [ref=e219]: No Ductwork Required
+                  - listitem [ref=e220]:
+                    - img [ref=e221]
+                    - generic [ref=e224]: Zoned Temperature Control
+                  - listitem [ref=e225]:
+                    - img [ref=e226]
+                    - generic [ref=e229]: Quiet Indoor Unit
+                  - listitem [ref=e230]:
+                    - img [ref=e231]
+                    - generic [ref=e234]: Ideal for Additions & ADUs
+            - generic [ref=e238]:
+              - generic [ref=e239]:
+                - img [ref=e242]
+                - heading "Heat Pump Sizing & Load Calc" [level=3] [ref=e245]
+              - generic [ref=e246]:
+                - paragraph [ref=e247]: A heat pump sized too small won't keep up on hot July afternoons. Too large and it short-cycles. We perform a Manual J calculation before selecting your unit.
+                - list [ref=e248]:
+                  - listitem [ref=e249]:
+                    - img [ref=e250]
+                    - generic [ref=e253]: Manual J Load Calculation
+                  - listitem [ref=e254]:
+                    - img [ref=e255]
+                    - generic [ref=e258]: Duct Leakage Assessment
+                  - listitem [ref=e259]:
+                    - img [ref=e260]
+                    - generic [ref=e263]: Electrical Panel Capacity Check
+                  - listitem [ref=e264]:
+                    - img [ref=e265]
+                    - generic [ref=e268]: Brand-Neutral Recommendations
+            - generic [ref=e272]:
+              - generic [ref=e273]:
+                - img [ref=e276]
+                - heading "Heat Pump Repair & Service" [level=3] [ref=e278]
+              - generic [ref=e279]:
+                - paragraph [ref=e280]: Already have a heat pump that isn't heating or cooling properly? Our technicians diagnose refrigerant issues, reversing valve failures, and electrical faults.
+                - list [ref=e281]:
+                  - listitem [ref=e282]:
+                    - img [ref=e283]
+                    - generic [ref=e286]: Reversing Valve Diagnosis
+                  - listitem [ref=e287]:
+                    - img [ref=e288]
+                    - generic [ref=e291]: Refrigerant Recharge
+                  - listitem [ref=e292]:
+                    - img [ref=e293]
+                    - generic [ref=e296]: Defrost Board Testing
+                  - listitem [ref=e297]:
+                    - img [ref=e298]
+                    - generic [ref=e301]: Capacitor & Contactor Repair
+          - generic [ref=e303]:
+            - generic [ref=e304]:
+              - heading "What Changes After a Professional Heat Pump Installation" [level=3] [ref=e305]
+              - generic [ref=e306]:
+                - generic [ref=e307]:
+                  - img [ref=e308]
+                  - generic [ref=e311]: Single system handles heating and cooling — two bills become one
+                - generic [ref=e312]:
+                  - img [ref=e313]
+                  - generic [ref=e316]: No gas line required — eliminates monthly gas service charge
+                - generic [ref=e317]:
+                  - img [ref=e318]
+                  - generic [ref=e321]: Refrigerant charged to manufacturer spec and leak-tested
+                - generic [ref=e322]:
+                  - img [ref=e323]
+                  - generic [ref=e326]: Electrical disconnect, breaker, and wiring confirmed to code
+                - generic [ref=e327]:
+                  - img [ref=e328]
+                  - generic [ref=e331]: Thermostat programmed for heat pump operation — O/B wire confirmed
+                - generic [ref=e332]:
+                  - img [ref=e333]
+                  - generic [ref=e336]: Both heating and cooling modes run-tested before installation is complete
+            - generic [ref=e338]:
+              - img "Before and after heat pump installation showing old gas furnace replaced with modern heat pump air handler by Gardner HVAC in the Inland Empire" [ref=e339]:
+                - generic [ref=e340]:
+                  - generic [ref=e341]:
+                    - generic [ref=e342]: IMAGE PLACEHOLDER — BEFORE / AFTER
+                    - generic [ref=e343]:
+                      - text: 800 × 400px |
+                      - generic [ref=e344]: /public/hvac/heat-pump-systems-before-after.webp
+                  - button "Copy prompt to clipboard" [ref=e345]: Copy prompt
+                - generic [ref=e346]:
+                  - generic [ref=e347]: Prompt
+                  - generic [ref=e348]: "Split-scene product photograph, single frame divided at vertical center. LEFT HALF: an older standalone gas furnace cabinet in a residential utility closet — boxy rectangular housing, older-style exhaust flue, dust-coated, dated appearance. RIGHT HALF: the same utility closet space now showing a modern high-efficiency heat pump air handler — sleek cabinet, PVC condensate line, new electrical work, clean modern appearance representing a full system upgrade. Seamless lighting match across both halves, straight-on 35mm lens, no people, no hands, technical documentation style. Fluorescent utility light, concrete floor visible."
+                - generic [ref=e349]:
+                  - generic [ref=e350]: "Negative: no people, no hands visible, no text overlay, no cartoon, no split-screen border or line artifact, no wildly different lighting between halves, no stock photo softness, no watermark, no swimming pool equipment, no gas flames or fire, no outdoor unit in this shot (indoor air handler contrast only)"
+                  - generic [ref=e351]: "Alt text: Before and after heat pump installation showing old gas furnace replaced with modern heat pump air handler by Gardner HVAC in the Inland Empire"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: BEFORE
+                  - generic:
+                    - generic: AFTER
+        - generic [ref=e356]:
+          - generic [ref=e357]:
+            - img "Gardner Plumbing Co. HVAC technician and service van ready for heat pump installation" [ref=e359]
+            - generic [ref=e362]:
+              - img [ref=e364]
+              - generic [ref=e367]:
+                - generic [ref=e368]: 100+
+                - generic [ref=e369]: Heat Pumps Installed
+          - generic [ref=e370]:
+            - generic [ref=e371]:
+              - img [ref=e372]
+              - generic [ref=e374]: Why Choose Our HVAC Team
+            - heading "Why Inland Empire Homeowners Choose Us for Heat Pump Installation" [level=2] [ref=e375]
+            - paragraph [ref=e376]:
+              - text: "Gardner Plumbing Co. is a licensed HVAC contractor serving Murrieta, Temecula, Menifee, and the greater Inland Empire (CA Contractor's License {{CSLB_C20_LICENSE_TBD}}). Our HVAC team has installed over 100 heat pump systems across Riverside County — including standard split systems, ductless units, and heat pump upgrades from gas furnaces. Many Inland Empire homeowners replace both their aging AC and furnace with a single heat pump system. See our"
+              - link "AC installation services" [ref=e377] [cursor=pointer]:
+                - /url: /services/hvac/ac-installation
+              - text: for full cooling system options.
+            - generic [ref=e378]:
+              - generic [ref=e379]:
+                - img [ref=e381]
+                - generic [ref=e383]:
+                  - heading "All-Electric — No Gas Required" [level=4] [ref=e384]
+                  - paragraph [ref=e385]: A heat pump operates entirely on electricity. Murrieta homeowners eliminating gas service save the monthly SCG service charge in addition to energy savings.
+              - generic [ref=e386]:
+                - img [ref=e388]
+                - generic [ref=e390]:
+                  - heading "SCE Rebate Navigation" [level=4] [ref=e391]
+                  - paragraph [ref=e392]: Southern California Edison offers rebates on qualifying heat pump installations. Our team identifies eligible equipment and provides documentation for rebate submission.
+              - generic [ref=e393]:
+                - img [ref=e395]
+                - generic [ref=e397]:
+                  - heading "Upfront Installation Pricing" [level=4] [ref=e398]
+                  - paragraph [ref=e399]: Full itemized quote — equipment, labor, electrical work, permit, and haul-away — before any work begins. Financing available for qualified homeowners.
+              - generic [ref=e400]:
+                - img [ref=e402]
+                - generic [ref=e405]:
+                  - heading "IE Climate Specialists" [level=4] [ref=e406]
+                  - paragraph [ref=e407]: We specify heat pumps rated for the IE climate — units that handle 110°F summer days and 30°F winter nights without auxiliary heat strips running unnecessarily.
+            - button "Get Free Estimate" [ref=e408]:
+              - generic [ref=e409]:
+                - img
+                - text: Get Free Estimate
+        - generic [ref=e413]:
+          - generic [ref=e414]:
+            - generic [ref=e415]:
+              - img [ref=e416]
+              - generic [ref=e419]: Service Areas
+            - heading "Serving Murrieta, Temecula, and All of Riverside County" [level=2] [ref=e420]
+            - paragraph [ref=e421]: Heat pump installation service is available across the Inland Empire, with in-home estimates from our Murrieta base. We cover Temecula, Menifee, Perris, Canyon Lake, Lake Elsinore, Corona, Moreno Valley, Riverside, and Hemet — throughout Riverside County.
+          - generic [ref=e422]:
+            - link "Visit the official website for Temecula" [ref=e423] [cursor=pointer]:
+              - /url: https://temeculaca.gov
+              - img [ref=e424]
+              - text: Temecula
+            - link "Visit the official website for Murrieta" [ref=e427] [cursor=pointer]:
+              - /url: https://murrietaca.gov
+              - img [ref=e428]
+              - text: Murrieta
+            - link "Visit the official website for Perris" [ref=e431] [cursor=pointer]:
+              - /url: https://www.cityofperris.org
+              - img [ref=e432]
+              - text: Perris
+            - link "Visit the official website for Menifee" [ref=e435] [cursor=pointer]:
+              - /url: https://cityofmenifee.us
+              - img [ref=e436]
+              - text: Menifee
+            - link "Visit the official website for Canyon Lake" [ref=e439] [cursor=pointer]:
+              - /url: https://www.canyonlakeca.gov
+              - img [ref=e440]
+              - text: Canyon Lake
+            - link "Visit the official website for Lake Elsinore" [ref=e443] [cursor=pointer]:
+              - /url: https://www.lake-elsinore.org
+              - img [ref=e444]
+              - text: Lake Elsinore
+            - link "Visit the official website for Corona" [ref=e447] [cursor=pointer]:
+              - /url: https://www.coronaca.gov
+              - img [ref=e448]
+              - text: Corona
+            - link "Visit the official website for Moreno Valley" [ref=e451] [cursor=pointer]:
+              - /url: https://moval.org
+              - img [ref=e452]
+              - text: Moreno Valley
+            - link "Visit the official website for Riverside" [ref=e455] [cursor=pointer]:
+              - /url: https://riversideca.gov
+              - img [ref=e456]
+              - text: Riverside
+            - link "Visit the official website for Hemet" [ref=e459] [cursor=pointer]:
+              - /url: https://www.hemetca.gov
+              - img [ref=e460]
+              - text: Hemet
+          - generic [ref=e464]:
+            - heading "Don't See Your Area?" [level=3] [ref=e465]
+            - paragraph [ref=e466]: We serve additional areas throughout Riverside County. Call to confirm service availability.
+            - link "Check Service Area" [ref=e467] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Check Service Area" [ref=e468]:
+                - generic [ref=e469]:
+                  - img
+                  - text: Check Service Area
+        - generic [ref=e474]:
+          - generic [ref=e475]:
+            - generic [ref=e476]:
+              - img [ref=e477]
+              - generic [ref=e480]: FAQ
+            - heading "Heat Pump Questions and Answers" [level=2] [ref=e481]
+            - paragraph [ref=e482]: Find answers to common questions about heat pump installation in Murrieta and the Inland Empire.
+          - generic [ref=e484]:
+            - generic [ref=e487]:
+              - img [ref=e489]
+              - heading "Questions & Answers" [level=3] [ref=e492]
+            - generic [ref=e494]:
+              - heading "Do heat pumps work well in the Inland Empire climate?" [level=3] [ref=e499]:
+                - button "Do heat pumps work well in the Inland Empire climate?" [ref=e500]:
+                  - generic [ref=e501]:
+                    - img [ref=e503]
+                    - text: Do heat pumps work well in the Inland Empire climate?
+                  - img
+              - heading "Will a heat pump replace my furnace and my air conditioner?" [level=3] [ref=e510]:
+                - button "Will a heat pump replace my furnace and my air conditioner?" [ref=e511]:
+                  - generic [ref=e512]:
+                    - img [ref=e514]
+                    - text: Will a heat pump replace my furnace and my air conditioner?
+                  - img
+              - heading "What does heat pump installation cost in Murrieta?" [level=3] [ref=e521]:
+                - button "What does heat pump installation cost in Murrieta?" [ref=e522]:
+                  - generic [ref=e523]:
+                    - img [ref=e525]
+                    - text: What does heat pump installation cost in Murrieta?
+                  - img
+              - heading "How efficient is a heat pump compared to a gas furnace?" [level=3] [ref=e532]:
+                - button "How efficient is a heat pump compared to a gas furnace?" [ref=e533]:
+                  - generic [ref=e534]:
+                    - img [ref=e536]
+                    - text: How efficient is a heat pump compared to a gas furnace?
+                  - img
+              - heading "Are there rebates available for heat pump installation in Murrieta?" [level=3] [ref=e543]:
+                - button "Are there rebates available for heat pump installation in Murrieta?" [ref=e544]:
+                  - generic [ref=e545]:
+                    - img [ref=e547]
+                    - text: Are there rebates available for heat pump installation in Murrieta?
+                  - img
+              - heading "How do I know if my home needs electrical panel upgrades for a heat pump?" [level=3] [ref=e554]:
+                - button "How do I know if my home needs electrical panel upgrades for a heat pump?" [ref=e555]:
+                  - generic [ref=e556]:
+                    - img [ref=e558]
+                    - text: How do I know if my home needs electrical panel upgrades for a heat pump?
+                  - img
+          - generic [ref=e562]:
+            - generic [ref=e563]:
+              - img [ref=e565]
+              - heading "Have More Questions?" [level=3] [ref=e568]
+            - paragraph [ref=e569]:
+              - text: Can't find what you're looking for? Our HVAC technicians are standing by to answer your heat pump questions and schedule your free in-home estimate. Call
+              - link "(951) 246-4337" [ref=e570] [cursor=pointer]:
+                - /url: tel:9512464337
+              - text: .
+            - generic [ref=e571]:
+              - link "View Full FAQ" [ref=e572] [cursor=pointer]:
+                - /url: /frequently-asked-questions
+                - button "View Full FAQ" [ref=e573]:
+                  - generic [ref=e574]:
+                    - img
+                    - text: View Full FAQ
+              - link "Contact Us" [ref=e575] [cursor=pointer]:
+                - /url: /contact-us
+                - button "Contact Us" [ref=e576]:
+                  - generic [ref=e577]:
+                    - img
+                    - text: Contact Us
+        - generic [ref=e582]:
+          - generic [ref=e583]:
+            - generic [ref=e584]:
+              - img [ref=e585]
+              - generic [ref=e587]: System Replacement
+            - heading "When Your Heating or Cooling System Needs Immediate Replacement" [level=2] [ref=e588]
+            - paragraph [ref=e589]: A failed air conditioner in July or a failed furnace in December are not situations that allow for weeks of research. When your system is beyond repair, a heat pump replacement can often be completed within 3–5 business days. Call us — we'll tell you honestly whether repair or replacement makes more sense.
+            - generic [ref=e590]:
+              - heading "Common Replacement Scenarios:" [level=3] [ref=e591]
+              - generic [ref=e592]:
+                - generic [ref=e593]:
+                  - img [ref=e594]
+                  - generic [ref=e596]: AC and furnace both aging — replace with one system
+                - generic [ref=e597]:
+                  - img [ref=e598]
+                  - generic [ref=e600]: Furnace condemned — heat exchanger cracked
+                - generic [ref=e601]:
+                  - img [ref=e602]
+                  - generic [ref=e604]: AC compressor failed — replacement more economical than repair
+                - generic [ref=e605]:
+                  - img [ref=e606]
+                  - generic [ref=e608]: Going all-electric — eliminating gas service
+                - generic [ref=e609]:
+                  - img [ref=e610]
+                  - generic [ref=e612]: Home addition or ADU needs zoned heating and cooling
+                - generic [ref=e613]:
+                  - img [ref=e614]
+                  - generic [ref=e616]: Existing heat pump not heating or cooling properly
+                - generic [ref=e617]:
+                  - img [ref=e618]
+                  - generic [ref=e620]: Reversing valve failure — system stuck in one mode
+                - generic [ref=e621]:
+                  - img [ref=e622]
+                  - generic [ref=e624]: Heat pump refrigerant leak — not cooling or heating
+            - link "Call (951) 246-4337" [ref=e626] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Call (951) 246-4337" [ref=e627]:
+                - generic [ref=e628]:
+                  - img
+                  - text: Call (951) 246-4337
+          - generic [ref=e630]:
+            - img "Gardner HVAC service team arriving for heat pump installation in Murrieta" [ref=e631]
+            - generic [ref=e633]:
+              - img [ref=e635]
+              - generic [ref=e638]:
+                - generic [ref=e639]: 3–5 Days
+                - generic [ref=e640]: Install Scheduling
+        - generic [ref=e643]:
+          - generic [ref=e644]:
+            - img [ref=e646]
+            - heading "Ready to Install a Heat Pump in Murrieta?" [level=2] [ref=e648]
+            - paragraph [ref=e649]: Heat pump installation across Murrieta, Temecula, and the Inland Empire. All-electric, SCE rebate-eligible, one system for heating and cooling. Call now or request a free in-home estimate — our HVAC team picks up.
+          - generic [ref=e650]:
+            - link "Call (951) 246-4337" [ref=e651] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Call (951) 246-4337" [ref=e652]:
+                - generic [ref=e653]:
+                  - img
+                  - text: Call (951) 246-4337
+            - button "Get Free Estimate" [ref=e654]:
+              - generic [ref=e655]:
+                - img
+                - text: Get Free Estimate
+          - generic [ref=e656]:
+            - generic [ref=e657]:
+              - img [ref=e658]
+              - generic [ref=e660]: All-Electric System
+            - generic [ref=e661]:
+              - img [ref=e662]
+              - generic [ref=e664]: Licensed & Insured
+            - generic [ref=e665]:
+              - img [ref=e666]
+              - generic [ref=e668]: 4.9 Star Rating
+  - contentinfo [ref=e669]:
+    - generic [ref=e672]:
+      - generic [ref=e673]:
+        - generic [ref=e675]:
+          - img "Gardner Plumbing Co. logo" [ref=e676]
+          - paragraph [ref=e677]: Professional plumbing services backed by 30+ years of experience and a commitment to excellence. Whether you need repairs, installations, or emergency service—we've got you covered.
+          - generic [ref=e678]:
+            - link "(951) 246-4337 24/7 Emergency Service" [ref=e679] [cursor=pointer]:
+              - /url: tel:19512464337
+              - img [ref=e681]
+              - generic [ref=e683]:
+                - paragraph [ref=e684]: (951) 246-4337
+                - paragraph [ref=e685]: 24/7 Emergency Service
+            - link "office@gardnerplumbingco.com Email for Estimates" [ref=e686] [cursor=pointer]:
+              - /url: mailto:office@gardnerplumbingco.com
+              - img [ref=e688]
+              - generic [ref=e691]:
+                - paragraph [ref=e692]: office@gardnerplumbingco.com
+                - paragraph [ref=e693]: Email for Estimates
+            - link "30714 Wealth St, Murrieta, CA 92563 Location" [ref=e694] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/aCp4BuCRRPcyEWxo9
+              - img [ref=e696]
+              - generic [ref=e699]:
+                - paragraph [ref=e700]: 30714 Wealth St, Murrieta, CA 92563
+                - paragraph [ref=e701]: Location
+          - generic [ref=e702]:
+            - heading "Business Hours" [level=4] [ref=e703]
+            - generic [ref=e704]:
+              - generic [ref=e705]:
+                - generic [ref=e706]: Office (Mon - Fri)
+                - generic [ref=e707]: 8:00 AM - 4:00 PM
+              - generic [ref=e708]:
+                - generic [ref=e709]: Service (Mon - Fri)
+                - generic [ref=e710]: 8:00 AM - 5:00 PM
+              - generic [ref=e711]:
+                - generic [ref=e712]: Saturday - Sunday
+                - generic [ref=e713]: Emergency Only
+              - generic [ref=e715]:
+                - generic [ref=e716]: Emergency
+                - generic [ref=e717]: 24/7 Available
+        - generic [ref=e719]:
+          - generic [ref=e720]:
+            - heading "About Us" [level=4] [ref=e721]
+            - list [ref=e722]:
+              - listitem [ref=e723]:
+                - link "Gardner Plumbing Co. Our story & team" [ref=e724] [cursor=pointer]:
+                  - /url: /about-us
+                  - generic [ref=e725]: Gardner Plumbing Co.
+                  - generic [ref=e726]: Our story & team
+              - listitem [ref=e727]:
+                - link "Contact Us Get in touch today" [ref=e728] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e729]: Contact Us
+                  - generic [ref=e730]: Get in touch today
+              - listitem [ref=e731]:
+                - link "Customer Reviews See what clients say" [ref=e732] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e733]: Customer Reviews
+                  - generic [ref=e734]: See what clients say
+              - listitem [ref=e735]:
+                - link "Service Areas Where we work" [ref=e736] [cursor=pointer]:
+                  - /url: /about-us#service-area
+                  - generic [ref=e737]: Service Areas
+                  - generic [ref=e738]: Where we work
+              - listitem [ref=e739]:
+                - link "Testimonials Success stories" [ref=e740] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e741]: Testimonials
+                  - generic [ref=e742]: Success stories
+              - listitem [ref=e743]:
+                - link "Our Guarantee Quality promise" [ref=e744] [cursor=pointer]:
+                  - /url: /guarantee
+                  - generic [ref=e745]: Our Guarantee
+                  - generic [ref=e746]: Quality promise
+          - generic [ref=e747]:
+            - heading "Quick Links" [level=4] [ref=e748]
+            - list [ref=e749]:
+              - listitem [ref=e750]:
+                - link "Request Service Schedule appointment" [ref=e751] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e752]: Request Service
+                  - generic [ref=e753]: Schedule appointment
+              - listitem [ref=e754]:
+                - link "Emergency Service 24/7 urgent help" [ref=e755] [cursor=pointer]:
+                  - /url: /services/emergency-service
+                  - generic [ref=e756]: Emergency Service
+                  - generic [ref=e757]: 24/7 urgent help
+              - listitem [ref=e758]:
+                - link "FAQ Common questions" [ref=e759] [cursor=pointer]:
+                  - /url: /frequently-asked-questions
+                  - generic [ref=e760]: FAQ
+                  - generic [ref=e761]: Common questions
+              - listitem [ref=e762]:
+                - link "Blog Tips & insights" [ref=e763] [cursor=pointer]:
+                  - /url: /blog
+                  - generic [ref=e764]: Blog
+                  - generic [ref=e765]: Tips & insights
+              - listitem [ref=e766]:
+                - link "Financing Payment options" [ref=e767] [cursor=pointer]:
+                  - /url: /financing
+                  - generic [ref=e768]: Financing
+                  - generic [ref=e769]: Payment options
+              - listitem [ref=e770]:
+                - link "Warranty Info Coverage details" [ref=e771] [cursor=pointer]:
+                  - /url: /warranty
+                  - generic [ref=e772]: Warranty Info
+                  - generic [ref=e773]: Coverage details
+          - generic [ref=e774]:
+            - heading "From Our Blog" [level=4] [ref=e775]
+            - paragraph [ref=e776]: Get expert plumbing tips, home maintenance advice, and industry insights from our latest blog posts.
+            - link "Visit Our Blog" [ref=e778] [cursor=pointer]:
+              - /url: /blog
+            - generic [ref=e779]:
+              - paragraph [ref=e780]: Follow Us
+              - generic [ref=e781]:
+                - link [ref=e782] [cursor=pointer]:
+                  - /url: https://www.facebook.com/people/Gardner-Plumbing-Company/100063665179161/#
+                  - img [ref=e784]
+                - link [ref=e786] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCn8DkWu_niFYrW7jCtsUkUg
+                  - img [ref=e788]
+                - link [ref=e791] [cursor=pointer]:
+                  - /url: https://www.instagram.com/gardnerplumbingco/
+                  - img [ref=e793]
+            - generic [ref=e798]:
+              - generic [ref=e799]: Emergency? Call Now!
+              - link "(951) 246-4337" [ref=e800] [cursor=pointer]:
+                - /url: tel:19512464337
+                - button "(951) 246-4337" [ref=e801]
+      - generic [ref=e804]:
+        - generic [ref=e805]:
+          - paragraph [ref=e806]: © 2024-2025 Gardner Plumbing Co. All rights reserved.
+          - generic [ref=e807]:
+            - img [ref=e808]
+            - generic [ref=e810]: 4.9★ Rated Service
+        - generic [ref=e811]:
+          - link "Privacy Policy" [ref=e812] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Service" [ref=e813] [cursor=pointer]:
+            - /url: /terms-and-services
+          - link "Sitemap" [ref=e814] [cursor=pointer]:
+            - /url: /sitemap_index.xml
+          - button "Cookie Settings" [ref=e815]

@@ -1,0 +1,645 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "24/7 Emergency Service" [ref=e8] [cursor=pointer]:
+          - /url: /services/emergency-service
+          - img [ref=e9]
+        - link "24/7 Emergency Service" [ref=e12] [cursor=pointer]:
+          - /url: /services/emergency-service
+      - generic [ref=e13]:
+        - link "See Reviews" [ref=e14] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e15]
+        - link "4.9★ Rated Service" [ref=e17] [cursor=pointer]:
+          - /url: /reviews
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - link "Service Area" [ref=e20] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e21]
+        - link "Serving Greater Riverside Area" [ref=e24] [cursor=pointer]:
+          - /url: "#service-area"
+      - generic [ref=e25]:
+        - link "Call (951) 246-4337" [ref=e26] [cursor=pointer]:
+          - /url: tel:9512464337
+          - img [ref=e27]
+        - link "(951) 246-4337" [ref=e29] [cursor=pointer]:
+          - /url: tel:9512464337
+  - banner [ref=e30]:
+    - navigation [ref=e32]:
+      - generic [ref=e34]:
+        - link "Go to homepage" [ref=e36] [cursor=pointer]:
+          - /url: /
+          - img "Gardner Plumbing Co. logo" [ref=e37]
+        - generic [ref=e38]:
+          - link "Home" [ref=e39] [cursor=pointer]:
+            - /url: /
+          - link "About Us" [ref=e40] [cursor=pointer]:
+            - /url: /about-us
+          - link "Plumbing" [ref=e42] [cursor=pointer]:
+            - /url: /services
+            - text: Plumbing
+            - img [ref=e43]
+          - link "HVAC" [ref=e46] [cursor=pointer]:
+            - /url: /services/hvac
+            - text: HVAC
+            - img [ref=e47]
+          - link "Electrical" [ref=e50] [cursor=pointer]:
+            - /url: /services/electrical
+            - text: Electrical
+            - img [ref=e51]
+          - link "Reviews" [ref=e53] [cursor=pointer]:
+            - /url: /reviews
+          - link "Contact" [ref=e54] [cursor=pointer]:
+            - /url: /contact-us
+  - main [ref=e55]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - navigation [ref=e66]:
+              - navigation [ref=e68]:
+                - generic [ref=e69]:
+                  - generic [ref=e70]:
+                    - link "Home" [ref=e71] [cursor=pointer]:
+                      - /url: /
+                    - img [ref=e72]
+                  - generic [ref=e74]:
+                    - link "Services" [ref=e75] [cursor=pointer]:
+                      - /url: /services
+                    - img [ref=e76]
+                  - generic [ref=e78]:
+                    - link "Electrical" [ref=e79] [cursor=pointer]:
+                      - /url: /services/electrical
+                    - img [ref=e80]
+                  - generic [ref=e83]: Emergency Electrical
+            - generic [ref=e84]:
+              - img [ref=e85]
+              - generic [ref=e87]: 24/7 Emergency Electrical
+            - heading "Emergency Electrician in Murrieta — Licensed, 24/7, Fast" [level=1] [ref=e88]
+            - paragraph [ref=e89]: "Last Updated: June 2026"
+            - paragraph [ref=e90]: "Licensed electrician on call around the clock (CA Contractor's License {{CSLB_C10_LICENSE_TBD}}). Sparking outlets, burning smells, full power loss — call (951) 246-4337 now."
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - img [ref=e93]
+                - generic [ref=e95]: Call (951) 246-4337 Now
+              - generic [ref=e96]:
+                - img [ref=e97]
+                - generic [ref=e100]: Avg 60-Min Arrival
+              - generic [ref=e101]:
+                - img [ref=e102]
+                - generic [ref=e104]: Licensed Electrician
+              - generic [ref=e105]:
+                - img [ref=e106]
+                - generic [ref=e108]: Nights, Weekends & Holidays
+            - generic [ref=e109]:
+              - link "Call (951) 246-4337" [ref=e110] [cursor=pointer]:
+                - /url: tel:9512464337
+                - button "Call (951) 246-4337" [ref=e111]:
+                  - generic [ref=e112]:
+                    - img
+                    - text: Call (951) 246-4337
+              - button "📅 Book Online" [ref=e113]:
+                - generic [ref=e114]: 📅 Book Online
+          - generic [ref=e116]:
+            - img "Gardner electrician arriving for 24/7 emergency electrical service at a Murrieta home at dusk" [ref=e117]:
+              - generic [ref=e118]:
+                - generic [ref=e119]:
+                  - generic [ref=e120]: IMAGE PLACEHOLDER — HERO
+                  - generic [ref=e121]:
+                    - text: 1000 × 600px |
+                    - generic [ref=e122]: /public/electrical/emergency-electrical-hero.webp
+                - button "Copy prompt to clipboard" [ref=e123]: Copy prompt
+              - generic [ref=e124]:
+                - generic [ref=e125]: Prompt
+                - generic [ref=e126]: Photo of an electrician arriving at an Inland Empire residential home at dusk, medium shot showing the tech approaching the front door with flashlight and tool bag. Technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots, red Milwaukee tool bag on hip, visible arm tattoos. Bright LED flashlight beam cutting through early-evening light, Gardner-branded service van with headlights on parked partially visible at curb behind the tech. Urgency and professionalism — tech in motion, purposeful stride. Dusk blue-hour ambient light with warm porch light from the house. 50mm equivalent lens. Cinematic realism, documentary photography style. Style and likeness of attached reference image.
+              - generic [ref=e127]:
+                - generic [ref=e128]: "Negative: no stock photo look, no white lab coat, no safety vest, no orange or yellow hi-vis vest, no cartoon, no illustration, no text overlay, no watermark, no exposed live wires (safety implication), no obvious shock or spark theatrics (urgency comes from context not pyrotechnics), no plumbing tools or pipes, no HVAC equipment, no green grass lawn, no snow"
+                - generic [ref=e129]: "Ref image: Attach gardnertecharrival.webp or gardnertecharrival2.webp — arrival posture shot is particularly relevant here. Do not describe face, age, or ethnicity in the prompt — the reference handles it."
+                - generic [ref=e130]: "Alt text: Gardner electrician arriving for 24/7 emergency electrical service at a Murrieta home at dusk"
+            - generic [ref=e132]:
+              - img [ref=e134]
+              - generic [ref=e136]:
+                - generic [ref=e137]: 24/7 EMERGENCY RESPONSE
+                - generic [ref=e138]: Murrieta & Inland Empire
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - img [ref=e145]
+            - generic [ref=e147]: Electrical emergency in Murrieta or the Inland Empire?
+          - generic [ref=e148]:
+            - link "(951) 246-4337" [ref=e149] [cursor=pointer]:
+              - /url: tel:9512464337
+              - generic [ref=e150]:
+                - img [ref=e151]
+                - generic [ref=e153]: (951) 246-4337
+            - generic [ref=e154]: Licensed electricians · available 24/7 including holidays
+        - generic [ref=e158]:
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - img [ref=e161]
+              - generic [ref=e163]: Our Services
+            - heading "24/7 Emergency Electrical Services for the Inland Empire" [level=2] [ref=e164]
+            - paragraph [ref=e165]: Electrical emergencies don't follow business hours. A sparking outlet at 11 PM, a burning smell from your panel on a Saturday, a full power loss after a Murrieta summer storm — these situations need a licensed electrician now, not a voicemail and a callback tomorrow. Our emergency electrical team dispatches around the clock across Murrieta, Temecula, Menifee, Lake Elsinore, and the wider Inland Empire. Call (951) 246-4337.
+          - generic [ref=e166]:
+            - generic [ref=e170]:
+              - generic [ref=e171]:
+                - img [ref=e174]
+                - heading "Sparking Outlets & Arcing" [level=3] [ref=e176]
+              - generic [ref=e177]:
+                - paragraph [ref=e178]: An outlet that sparks or arcs is a fire hazard. We de-energize the circuit, identify the cause — failed outlet, loose wiring, or a damaged neutral — and restore the circuit safely the same visit.
+                - list [ref=e179]:
+                  - listitem [ref=e180]:
+                    - img [ref=e181]
+                    - generic [ref=e184]: Circuit De-Energized Immediately
+                  - listitem [ref=e185]:
+                    - img [ref=e186]
+                    - generic [ref=e189]: Arcing Source Located
+                  - listitem [ref=e190]:
+                    - img [ref=e191]
+                    - generic [ref=e194]: Outlet or Wiring Replaced
+                  - listitem [ref=e195]:
+                    - img [ref=e196]
+                    - generic [ref=e199]: Circuit Tested Before Re-Energizing
+            - generic [ref=e203]:
+              - generic [ref=e204]:
+                - img [ref=e207]
+                - heading "Burning Smell or Smoke" [level=3] [ref=e209]
+              - generic [ref=e210]:
+                - paragraph [ref=e211]: A burning electrical smell without a visible source means heat is building somewhere inside the wall or panel. This is the warning before a fire. Call (951) 246-4337 and do not use the affected circuit until a licensed electrician clears it.
+                - list [ref=e212]:
+                  - listitem [ref=e213]:
+                    - img [ref=e214]
+                    - generic [ref=e217]: Thermal Inspection of Panel
+                  - listitem [ref=e218]:
+                    - img [ref=e219]
+                    - generic [ref=e222]: Wall Wiring Assessment
+                  - listitem [ref=e223]:
+                    - img [ref=e224]
+                    - generic [ref=e227]: Overloaded Circuit Identification
+                  - listitem [ref=e228]:
+                    - img [ref=e229]
+                    - generic [ref=e232]: Source Repair & Circuit Restoration
+            - generic [ref=e236]:
+              - generic [ref=e237]:
+                - img [ref=e240]
+                - heading "Full or Partial Power Loss" [level=3] [ref=e242]
+              - generic [ref=e243]:
+                - paragraph [ref=e244]: Complete power loss after a storm, a partial outage affecting one side of the home, or a main breaker that won&apos;t hold — all require immediate diagnosis. Inland Empire summer storms and PSPS (utility-mandated shutoff) restoration events are recurring triggers we respond to regularly.
+                - list [ref=e245]:
+                  - listitem [ref=e246]:
+                    - img [ref=e247]
+                    - generic [ref=e250]: Utility vs. Internal Fault Diagnosis
+                  - listitem [ref=e251]:
+                    - img [ref=e252]
+                    - generic [ref=e255]: Main Breaker Testing
+                  - listitem [ref=e256]:
+                    - img [ref=e257]
+                    - generic [ref=e260]: Panel Inspection & Reset
+                  - listitem [ref=e261]:
+                    - img [ref=e262]
+                    - generic [ref=e265]: Post-Outage Circuit Verification
+            - generic [ref=e269]:
+              - generic [ref=e270]:
+                - img [ref=e273]
+                - heading "Water & Electrical Contact" [level=3] [ref=e276]
+              - generic [ref=e277]:
+                - paragraph [ref=e278]:
+                  - text: Water and electricity in the same space is a life-safety emergency — no exceptions. Storm flooding near a panel, a burst pipe near wiring, or a pooling water event near outlets requires immediate de-energizing before any other work begins. Cross-reference our
+                  - link "water damage service" [ref=e279] [cursor=pointer]:
+                    - /url: /services/water-damage
+                  - text: for coordinated response.
+                - list [ref=e280]:
+                  - listitem [ref=e281]:
+                    - img [ref=e282]
+                    - generic [ref=e285]: Immediate Circuit De-Energization
+                  - listitem [ref=e286]:
+                    - img [ref=e287]
+                    - generic [ref=e290]: Water Intrusion Assessment
+                  - listitem [ref=e291]:
+                    - img [ref=e292]
+                    - generic [ref=e295]: Safe Restoration Protocol
+                  - listitem [ref=e296]:
+                    - img [ref=e297]
+                    - generic [ref=e300]: Coordination with Water Damage Team
+          - generic [ref=e302]:
+            - generic [ref=e303]:
+              - heading "What Happens After Our Emergency Electrician Arrives" [level=3] [ref=e304]
+              - generic [ref=e305]:
+                - generic [ref=e306]:
+                  - img [ref=e307]
+                  - generic [ref=e310]: Hazard identified and the affected circuit de-energized within minutes of arrival
+                - generic [ref=e311]:
+                  - img [ref=e312]
+                  - generic [ref=e315]: Root cause located — not just the tripped breaker reset
+                - generic [ref=e316]:
+                  - img [ref=e317]
+                  - generic [ref=e320]: Immediate repair completed or temporary safe isolation while parts are sourced
+                - generic [ref=e321]:
+                  - img [ref=e322]
+                  - generic [ref=e325]: All affected circuits tested before power is restored
+                - generic [ref=e326]:
+                  - img [ref=e327]
+                  - generic [ref=e330]: Written documentation of what was found and what was done
+                - generic [ref=e331]:
+                  - img [ref=e332]
+                  - generic [ref=e335]: Follow-up appointment scheduled if a larger repair or panel work is needed
+            - generic [ref=e337]:
+              - img "Before and after emergency electrical repair showing tripped and scorched breaker restored by Gardner Electrical in Murrieta" [ref=e338]:
+                - generic [ref=e339]:
+                  - generic [ref=e340]:
+                    - generic [ref=e341]: IMAGE PLACEHOLDER — BEFORE / AFTER
+                    - generic [ref=e342]:
+                      - text: 800 × 400px |
+                      - generic [ref=e343]: /public/electrical/emergency-electrical-before-after.webp
+                  - button "Copy prompt to clipboard" [ref=e344]: Copy prompt
+                - generic [ref=e345]:
+                  - generic [ref=e346]: Prompt
+                  - generic [ref=e347]: "Split-scene product photograph, single frame divided at vertical center. LEFT HALF: electrical breaker panel interior with a tripped breaker — one breaker clearly in the off-tripped position, faint scorch mark on the breaker face, dark dramatic low-key lighting suggesting a power-loss situation. RIGHT HALF: same panel after emergency repair — tripped breaker replaced and reset, all breakers in proper on position, panel interior lit brightly and clean, no scorch marks. Seamless composition across both halves, straight-on 35mm lens, no people, no hands, technical documentation style. Panel interior background."
+                - generic [ref=e348]:
+                  - generic [ref=e349]: "Negative: no people, no hands visible, no text overlay, no cartoon, no split-screen border or line artifact between halves, no stock photo softness, no watermark, no plumbing fixtures, no HVAC equipment, no excessive sparks or lightning bolt clichés even on the before half, no wildly different lighting between left and right (keep it readable)"
+                  - generic [ref=e350]: "Alt text: Before and after emergency electrical repair showing tripped and scorched breaker restored by Gardner Electrical in Murrieta"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: BEFORE
+                  - generic:
+                    - generic: AFTER
+        - generic [ref=e355]:
+          - generic [ref=e356]:
+            - img "Gardner Plumbing Co. electrician and service van ready for 24/7 emergency electrical response in Murrieta" [ref=e358]
+            - generic [ref=e361]:
+              - img [ref=e363]
+              - generic [ref=e366]:
+                - generic [ref=e367]: 24/7 Response
+                - generic [ref=e368]: Avg 60-Min Arrival
+          - generic [ref=e369]:
+            - generic [ref=e370]:
+              - img [ref=e371]
+              - generic [ref=e373]: Why Choose Our Electrical Team
+            - heading "Why Choose Our Electrical Team for a Murrieta Emergency" [level=2] [ref=e374]
+            - paragraph [ref=e375]: "Gardner Plumbing Co. is a licensed electrical contractor serving Murrieta, Temecula, Menifee, and the greater Inland Empire (CA Contractor's License {{CSLB_C10_LICENSE_TBD}}). Our electrical team responds to emergencies around the clock — averaging 60-minute on-site arrival across our primary service area. In 4.9 stars across hundreds of Google reviews, fast emergency response is the quality homeowners mention most."
+            - generic [ref=e376]:
+              - generic [ref=e377]:
+                - img [ref=e379]
+                - generic [ref=e382]:
+                  - heading "Average 60-Min Arrival" [level=4] [ref=e383]
+                  - paragraph [ref=e384]: From our Murrieta base, we reach most Temecula, Menifee, Lake Elsinore, and Canyon Lake addresses in under 60 minutes. We tell you the estimated arrival time when you call — no guessing.
+              - generic [ref=e385]:
+                - img [ref=e387]
+                - generic [ref=e389]:
+                  - heading "Licensed Electricians Only" [level=4] [ref=e390]
+                  - paragraph [ref=e391]: Every technician dispatched to your home carries a valid CA electrical contractor license. Electrical emergencies are not the moment for unlicensed workers.
+              - generic [ref=e392]:
+                - img [ref=e394]
+                - generic [ref=e396]:
+                  - heading "Live Dispatch — No Voicemail" [level=4] [ref=e397]
+                  - paragraph [ref=e398]: Call (951) 246-4337 at 2 AM on a Sunday and a live dispatcher picks up. We do not use answering services that take a message and call back in the morning.
+              - generic [ref=e399]:
+                - img [ref=e401]
+                - generic [ref=e403]:
+                  - heading "Transparent Emergency Pricing" [level=4] [ref=e404]
+                  - paragraph [ref=e405]: Emergency rates are disclosed before dispatch. No surprise invoices. You know the rate before the truck rolls.
+            - button "Schedule Non-Emergency Visit" [ref=e406]:
+              - generic [ref=e407]:
+                - img
+                - text: Schedule Non-Emergency Visit
+        - generic [ref=e411]:
+          - generic [ref=e412]:
+            - generic [ref=e413]:
+              - img [ref=e414]
+              - generic [ref=e417]: Service Areas
+            - heading "Serving Murrieta, Temecula, and All of Riverside County" [level=2] [ref=e418]
+            - paragraph [ref=e419]: Emergency electrical service is available 24/7 across the Inland Empire. Our Murrieta base puts us within fast reach of Temecula, Menifee, Perris, Canyon Lake, Lake Elsinore, Corona, Moreno Valley, Riverside, and Hemet — call (951) 246-4337 for immediate dispatch.
+          - generic [ref=e420]:
+            - link "Visit the official website for Temecula" [ref=e421] [cursor=pointer]:
+              - /url: https://temeculaca.gov
+              - img [ref=e422]
+              - text: Temecula
+            - link "Visit the official website for Murrieta" [ref=e425] [cursor=pointer]:
+              - /url: https://murrietaca.gov
+              - img [ref=e426]
+              - text: Murrieta
+            - link "Visit the official website for Perris" [ref=e429] [cursor=pointer]:
+              - /url: https://www.cityofperris.org
+              - img [ref=e430]
+              - text: Perris
+            - link "Visit the official website for Menifee" [ref=e433] [cursor=pointer]:
+              - /url: https://cityofmenifee.us
+              - img [ref=e434]
+              - text: Menifee
+            - link "Visit the official website for Canyon Lake" [ref=e437] [cursor=pointer]:
+              - /url: https://www.canyonlakeca.gov
+              - img [ref=e438]
+              - text: Canyon Lake
+            - link "Visit the official website for Lake Elsinore" [ref=e441] [cursor=pointer]:
+              - /url: https://www.lake-elsinore.org
+              - img [ref=e442]
+              - text: Lake Elsinore
+            - link "Visit the official website for Corona" [ref=e445] [cursor=pointer]:
+              - /url: https://www.coronaca.gov
+              - img [ref=e446]
+              - text: Corona
+            - link "Visit the official website for Moreno Valley" [ref=e449] [cursor=pointer]:
+              - /url: https://moval.org
+              - img [ref=e450]
+              - text: Moreno Valley
+            - link "Visit the official website for Riverside" [ref=e453] [cursor=pointer]:
+              - /url: https://riversideca.gov
+              - img [ref=e454]
+              - text: Riverside
+            - link "Visit the official website for Hemet" [ref=e457] [cursor=pointer]:
+              - /url: https://www.hemetca.gov
+              - img [ref=e458]
+              - text: Hemet
+          - generic [ref=e462]:
+            - heading "Don't See Your Area?" [level=3] [ref=e463]
+            - paragraph [ref=e464]: We serve additional areas throughout Riverside County. Call to confirm service availability.
+            - link "Check Service Area" [ref=e465] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Check Service Area" [ref=e466]:
+                - generic [ref=e467]:
+                  - img
+                  - text: Check Service Area
+        - generic [ref=e472]:
+          - generic [ref=e473]:
+            - generic [ref=e474]:
+              - img [ref=e475]
+              - generic [ref=e478]: FAQ
+            - heading "Emergency Electrician Questions and Answers" [level=2] [ref=e479]
+            - paragraph [ref=e480]: What to know before you call an emergency electrician in Murrieta or the Inland Empire.
+          - generic [ref=e482]:
+            - generic [ref=e485]:
+              - img [ref=e487]
+              - heading "Questions & Answers" [level=3] [ref=e490]
+            - generic [ref=e492]:
+              - heading "What counts as an electrical emergency — when should I call 24/7?" [level=3] [ref=e497]:
+                - button "What counts as an electrical emergency — when should I call 24/7?" [ref=e498]:
+                  - generic [ref=e499]:
+                    - img [ref=e501]
+                    - text: What counts as an electrical emergency — when should I call 24/7?
+                  - img
+              - heading "Is it safe to reset my breaker during an electrical emergency?" [level=3] [ref=e508]:
+                - button "Is it safe to reset my breaker during an electrical emergency?" [ref=e509]:
+                  - generic [ref=e510]:
+                    - img [ref=e512]
+                    - text: Is it safe to reset my breaker during an electrical emergency?
+                  - img
+              - heading "What should I do while waiting for an emergency electrician to arrive?" [level=3] [ref=e519]:
+                - button "What should I do while waiting for an emergency electrician to arrive?" [ref=e520]:
+                  - generic [ref=e521]:
+                    - img [ref=e523]
+                    - text: What should I do while waiting for an emergency electrician to arrive?
+                  - img
+              - heading "How much does an emergency electrician cost in Murrieta?" [level=3] [ref=e530]:
+                - button "How much does an emergency electrician cost in Murrieta?" [ref=e531]:
+                  - generic [ref=e532]:
+                    - img [ref=e534]
+                    - text: How much does an emergency electrician cost in Murrieta?
+                  - img
+              - heading "Do Inland Empire summer storms cause electrical emergencies?" [level=3] [ref=e541]:
+                - button "Do Inland Empire summer storms cause electrical emergencies?" [ref=e542]:
+                  - generic [ref=e543]:
+                    - img [ref=e545]
+                    - text: Do Inland Empire summer storms cause electrical emergencies?
+                  - img
+              - heading "What if my electrical emergency also involves water damage or a burst pipe?" [level=3] [ref=e552]:
+                - button "What if my electrical emergency also involves water damage or a burst pipe?" [ref=e553]:
+                  - generic [ref=e554]:
+                    - img [ref=e556]
+                    - text: What if my electrical emergency also involves water damage or a burst pipe?
+                  - img
+          - generic [ref=e560]:
+            - generic [ref=e561]:
+              - img [ref=e563]
+              - heading "Have More Questions?" [level=3] [ref=e565]
+            - paragraph [ref=e566]: Don't wait. Call (951) 246-4337 now — a live dispatcher answers around the clock and will send a licensed electrician to your Murrieta or Inland Empire home.
+            - generic [ref=e567]:
+              - link "Call (951) 246-4337" [ref=e568] [cursor=pointer]:
+                - /url: tel:9512464337
+                - button "Call (951) 246-4337" [ref=e569]:
+                  - generic [ref=e570]:
+                    - img
+                    - text: Call (951) 246-4337
+              - link "Contact Us" [ref=e571] [cursor=pointer]:
+                - /url: /contact-us
+                - button "Contact Us" [ref=e572]:
+                  - generic [ref=e573]:
+                    - img
+                    - text: Contact Us
+        - generic [ref=e578]:
+          - generic [ref=e579]:
+            - generic [ref=e580]:
+              - img [ref=e581]
+              - generic [ref=e583]: What We Respond To
+            - heading "Inland Empire Electrical Emergencies We Respond to Every Week" [level=2] [ref=e584]
+            - paragraph [ref=e585]: Murrieta's combination of summer heat, monsoon storm season, and an aging housing stock from the 1990s creates a steady demand for after-hours electrical response. These are the scenarios our electricians handle most often across the Inland Empire — and every one of them requires a licensed electrician, not a wait until Monday.
+            - generic [ref=e586]:
+              - heading "Common Emergency Scenarios:" [level=3] [ref=e587]
+              - generic [ref=e588]:
+                - generic [ref=e589]:
+                  - img [ref=e590]
+                  - generic [ref=e592]: Sparking or arcing outlet or panel
+                - generic [ref=e593]:
+                  - img [ref=e594]
+                  - generic [ref=e596]: Burning smell from wall, panel, or switch
+                - generic [ref=e597]:
+                  - img [ref=e598]
+                  - generic [ref=e600]: Full home power loss after storm or surge
+                - generic [ref=e601]:
+                  - img [ref=e602]
+                  - generic [ref=e604]: Partial power loss — one side of home dark
+                - generic [ref=e605]:
+                  - img [ref=e606]
+                  - generic [ref=e608]: Breaker trips immediately on reset
+                - generic [ref=e609]:
+                  - img [ref=e610]
+                  - generic [ref=e612]: Water contact with panel or outlet wiring
+                - generic [ref=e613]:
+                  - img [ref=e614]
+                  - generic [ref=e616]: PSPS or utility restoration fault
+                - generic [ref=e617]:
+                  - img [ref=e618]
+                  - generic [ref=e620]: Buzzing, crackling, or hissing from electrical panel
+            - 'link "Emergency: (951) 246-4337" [ref=e622] [cursor=pointer]':
+              - /url: tel:9512464337
+              - 'button "Emergency: (951) 246-4337" [ref=e623]':
+                - generic [ref=e624]:
+                  - img
+                  - text: "Emergency: (951) 246-4337"
+          - generic [ref=e626]:
+            - img "Gardner Plumbing Co. electrician arriving for emergency electrical service in Murrieta" [ref=e627]
+            - generic [ref=e629]:
+              - img [ref=e631]
+              - generic [ref=e634]:
+                - generic [ref=e635]: 24/7
+                - generic [ref=e636]: Emergency Service
+        - generic [ref=e639]:
+          - generic [ref=e640]:
+            - img [ref=e642]
+            - heading "Electrical Emergency? Call Now — We're Available 24/7" [level=2] [ref=e644]
+            - paragraph [ref=e645]: Licensed emergency electrician serving Murrieta, Temecula, and the Inland Empire around the clock. Call (951) 246-4337 — a live dispatcher picks up, not a voicemail. Average on-site arrival 60 minutes across our primary service area.
+          - generic [ref=e646]:
+            - link "Call (951) 246-4337" [ref=e647] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Call (951) 246-4337" [ref=e648]:
+                - generic [ref=e649]:
+                  - img
+                  - text: Call (951) 246-4337
+            - button "Schedule Non-Emergency Visit" [ref=e650]:
+              - generic [ref=e651]:
+                - img
+                - text: Schedule Non-Emergency Visit
+          - generic [ref=e652]:
+            - generic [ref=e653]:
+              - img [ref=e654]
+              - generic [ref=e657]: 24/7 Live Dispatch
+            - generic [ref=e658]:
+              - img [ref=e659]
+              - generic [ref=e661]: Licensed Electrician
+            - generic [ref=e662]:
+              - img [ref=e663]
+              - generic [ref=e665]: 4.9 Star Rating
+  - contentinfo [ref=e666]:
+    - generic [ref=e669]:
+      - generic [ref=e670]:
+        - generic [ref=e672]:
+          - img "Gardner Plumbing Co. logo" [ref=e673]
+          - paragraph [ref=e674]: Professional plumbing services backed by 30+ years of experience and a commitment to excellence. Whether you need repairs, installations, or emergency service—we've got you covered.
+          - generic [ref=e675]:
+            - link "(951) 246-4337 24/7 Emergency Service" [ref=e676] [cursor=pointer]:
+              - /url: tel:19512464337
+              - img [ref=e678]
+              - generic [ref=e680]:
+                - paragraph [ref=e681]: (951) 246-4337
+                - paragraph [ref=e682]: 24/7 Emergency Service
+            - link "office@gardnerplumbingco.com Email for Estimates" [ref=e683] [cursor=pointer]:
+              - /url: mailto:office@gardnerplumbingco.com
+              - img [ref=e685]
+              - generic [ref=e688]:
+                - paragraph [ref=e689]: office@gardnerplumbingco.com
+                - paragraph [ref=e690]: Email for Estimates
+            - link "30714 Wealth St, Murrieta, CA 92563 Location" [ref=e691] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/aCp4BuCRRPcyEWxo9
+              - img [ref=e693]
+              - generic [ref=e696]:
+                - paragraph [ref=e697]: 30714 Wealth St, Murrieta, CA 92563
+                - paragraph [ref=e698]: Location
+          - generic [ref=e699]:
+            - heading "Business Hours" [level=4] [ref=e700]
+            - generic [ref=e701]:
+              - generic [ref=e702]:
+                - generic [ref=e703]: Office (Mon - Fri)
+                - generic [ref=e704]: 8:00 AM - 4:00 PM
+              - generic [ref=e705]:
+                - generic [ref=e706]: Service (Mon - Fri)
+                - generic [ref=e707]: 8:00 AM - 5:00 PM
+              - generic [ref=e708]:
+                - generic [ref=e709]: Saturday - Sunday
+                - generic [ref=e710]: Emergency Only
+              - generic [ref=e712]:
+                - generic [ref=e713]: Emergency
+                - generic [ref=e714]: 24/7 Available
+        - generic [ref=e716]:
+          - generic [ref=e717]:
+            - heading "About Us" [level=4] [ref=e718]
+            - list [ref=e719]:
+              - listitem [ref=e720]:
+                - link "Gardner Plumbing Co. Our story & team" [ref=e721] [cursor=pointer]:
+                  - /url: /about-us
+                  - generic [ref=e722]: Gardner Plumbing Co.
+                  - generic [ref=e723]: Our story & team
+              - listitem [ref=e724]:
+                - link "Contact Us Get in touch today" [ref=e725] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e726]: Contact Us
+                  - generic [ref=e727]: Get in touch today
+              - listitem [ref=e728]:
+                - link "Customer Reviews See what clients say" [ref=e729] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e730]: Customer Reviews
+                  - generic [ref=e731]: See what clients say
+              - listitem [ref=e732]:
+                - link "Service Areas Where we work" [ref=e733] [cursor=pointer]:
+                  - /url: /about-us#service-area
+                  - generic [ref=e734]: Service Areas
+                  - generic [ref=e735]: Where we work
+              - listitem [ref=e736]:
+                - link "Testimonials Success stories" [ref=e737] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e738]: Testimonials
+                  - generic [ref=e739]: Success stories
+              - listitem [ref=e740]:
+                - link "Our Guarantee Quality promise" [ref=e741] [cursor=pointer]:
+                  - /url: /guarantee
+                  - generic [ref=e742]: Our Guarantee
+                  - generic [ref=e743]: Quality promise
+          - generic [ref=e744]:
+            - heading "Quick Links" [level=4] [ref=e745]
+            - list [ref=e746]:
+              - listitem [ref=e747]:
+                - link "Request Service Schedule appointment" [ref=e748] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e749]: Request Service
+                  - generic [ref=e750]: Schedule appointment
+              - listitem [ref=e751]:
+                - link "Emergency Service 24/7 urgent help" [ref=e752] [cursor=pointer]:
+                  - /url: /services/emergency-service
+                  - generic [ref=e753]: Emergency Service
+                  - generic [ref=e754]: 24/7 urgent help
+              - listitem [ref=e755]:
+                - link "FAQ Common questions" [ref=e756] [cursor=pointer]:
+                  - /url: /frequently-asked-questions
+                  - generic [ref=e757]: FAQ
+                  - generic [ref=e758]: Common questions
+              - listitem [ref=e759]:
+                - link "Blog Tips & insights" [ref=e760] [cursor=pointer]:
+                  - /url: /blog
+                  - generic [ref=e761]: Blog
+                  - generic [ref=e762]: Tips & insights
+              - listitem [ref=e763]:
+                - link "Financing Payment options" [ref=e764] [cursor=pointer]:
+                  - /url: /financing
+                  - generic [ref=e765]: Financing
+                  - generic [ref=e766]: Payment options
+              - listitem [ref=e767]:
+                - link "Warranty Info Coverage details" [ref=e768] [cursor=pointer]:
+                  - /url: /warranty
+                  - generic [ref=e769]: Warranty Info
+                  - generic [ref=e770]: Coverage details
+          - generic [ref=e771]:
+            - heading "From Our Blog" [level=4] [ref=e772]
+            - paragraph [ref=e773]: Get expert plumbing tips, home maintenance advice, and industry insights from our latest blog posts.
+            - link "Visit Our Blog" [ref=e775] [cursor=pointer]:
+              - /url: /blog
+            - generic [ref=e776]:
+              - paragraph [ref=e777]: Follow Us
+              - generic [ref=e778]:
+                - link [ref=e779] [cursor=pointer]:
+                  - /url: https://www.facebook.com/people/Gardner-Plumbing-Company/100063665179161/#
+                  - img [ref=e781]
+                - link [ref=e783] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCn8DkWu_niFYrW7jCtsUkUg
+                  - img [ref=e785]
+                - link [ref=e788] [cursor=pointer]:
+                  - /url: https://www.instagram.com/gardnerplumbingco/
+                  - img [ref=e790]
+            - generic [ref=e795]:
+              - generic [ref=e796]: Emergency? Call Now!
+              - link "(951) 246-4337" [ref=e797] [cursor=pointer]:
+                - /url: tel:19512464337
+                - button "(951) 246-4337" [ref=e798]
+      - generic [ref=e801]:
+        - generic [ref=e802]:
+          - paragraph [ref=e803]: © 2024-2025 Gardner Plumbing Co. All rights reserved.
+          - generic [ref=e804]:
+            - img [ref=e805]
+            - generic [ref=e807]: 4.9★ Rated Service
+        - generic [ref=e808]:
+          - link "Privacy Policy" [ref=e809] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Service" [ref=e810] [cursor=pointer]:
+            - /url: /terms-and-services
+          - link "Sitemap" [ref=e811] [cursor=pointer]:
+            - /url: /sitemap_index.xml
+          - button "Cookie Settings" [ref=e812]

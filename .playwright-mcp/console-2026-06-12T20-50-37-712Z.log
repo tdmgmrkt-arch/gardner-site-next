@@ -1,0 +1,8 @@
+[     131ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5949
+[     576ms] [LOG] [Fast Refresh] done in 560ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5809
+[     682ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5949
+[    1098ms] [LOG] [Fast Refresh] done in 517ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5809
+[    1336ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14537
+[    2075ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://cdn.acsbapp.com/config/localhost:3000/config.json:0
+[    2266ms] [LOG] acsb: This website is not registered or its license is expired. @ https://acsbapp.com/apps/app/dist/js/app.js:22
+[    2313ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://mads-dni-go.servicetitan.com/api/dni?tenantId=877085251&host=localhost&url=localhost/services/hvac&api-version=2020-12-01:0

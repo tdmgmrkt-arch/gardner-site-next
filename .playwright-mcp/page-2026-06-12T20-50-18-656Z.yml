@@ -1,0 +1,653 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "24/7 Emergency Service" [ref=e8] [cursor=pointer]:
+          - /url: /services/emergency-service
+          - img [ref=e9]
+        - link "24/7 Emergency Service" [ref=e12] [cursor=pointer]:
+          - /url: /services/emergency-service
+      - generic [ref=e13]:
+        - link "See Reviews" [ref=e14] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e15]
+        - link "4.9★ Rated Service" [ref=e17] [cursor=pointer]:
+          - /url: /reviews
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - link "Service Area" [ref=e20] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e21]
+        - link "Serving Greater Riverside Area" [ref=e24] [cursor=pointer]:
+          - /url: "#service-area"
+      - generic [ref=e25]:
+        - link "Call (951) 246-4337" [ref=e26] [cursor=pointer]:
+          - /url: tel:9512464337
+          - img [ref=e27]
+        - link "(951) 246-4337" [ref=e29] [cursor=pointer]:
+          - /url: tel:9512464337
+  - banner [ref=e30]:
+    - navigation [ref=e32]:
+      - generic [ref=e34]:
+        - link "Go to homepage" [ref=e36] [cursor=pointer]:
+          - /url: /
+          - img "Gardner Plumbing Co. logo" [ref=e37]
+        - generic [ref=e38]:
+          - link "Home" [ref=e39] [cursor=pointer]:
+            - /url: /
+          - link "About Us" [ref=e40] [cursor=pointer]:
+            - /url: /about-us
+          - link "Plumbing" [ref=e42] [cursor=pointer]:
+            - /url: /services
+            - text: Plumbing
+            - img [ref=e43]
+          - link "HVAC" [ref=e46] [cursor=pointer]:
+            - /url: /services/hvac
+            - text: HVAC
+            - img [ref=e47]
+          - link "Electrical" [ref=e50] [cursor=pointer]:
+            - /url: /services/electrical
+            - text: Electrical
+            - img [ref=e51]
+          - link "Reviews" [ref=e53] [cursor=pointer]:
+            - /url: /reviews
+          - link "Contact" [ref=e54] [cursor=pointer]:
+            - /url: /contact-us
+  - main [ref=e55]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - navigation [ref=e66]:
+              - navigation [ref=e68]:
+                - generic [ref=e69]:
+                  - generic [ref=e70]:
+                    - link "Home" [ref=e71] [cursor=pointer]:
+                      - /url: /
+                    - img [ref=e72]
+                  - generic [ref=e74]:
+                    - link "Services" [ref=e75] [cursor=pointer]:
+                      - /url: /services
+                    - img [ref=e76]
+                  - generic [ref=e78]:
+                    - link "HVAC" [ref=e79] [cursor=pointer]:
+                      - /url: /services/hvac
+                    - img [ref=e80]
+                  - generic [ref=e83]: Air Duct Cleaning
+            - generic [ref=e84]:
+              - img [ref=e85]
+              - generic [ref=e89]: NADCA-Standard Cleaning
+            - heading "Air Duct Cleaning in Murrieta — Done by Your HVAC Team" [level=1] [ref=e90]
+            - paragraph [ref=e91]: "Last Updated: June 2026"
+            - paragraph [ref=e92]: Inland Empire homes collect dust, allergens, and wildfire particulates inside their ductwork. Our HVAC technicians clean the full system — supply lines, return lines, and register boots — with video documentation before and after.
+            - generic [ref=e93]:
+              - generic [ref=e94]:
+                - img [ref=e95]
+                - generic [ref=e99]: Whole-Home Duct Cleaning
+              - generic [ref=e100]:
+                - img [ref=e101]
+                - generic [ref=e103]: Licensed HVAC Technicians
+              - generic [ref=e104]:
+                - img [ref=e105]
+                - generic [ref=e108]: Before & After Documentation
+              - generic [ref=e109]:
+                - img [ref=e110]
+                - generic [ref=e112]: Same-Week Scheduling
+            - generic [ref=e113]:
+              - link "Call (951) 246-4337" [ref=e114] [cursor=pointer]:
+                - /url: tel:9512464337
+                - button "Call (951) 246-4337" [ref=e115]:
+                  - generic [ref=e116]:
+                    - img
+                    - text: Call (951) 246-4337
+              - button "📅 Book Online" [ref=e117]:
+                - generic [ref=e118]: 📅 Book Online
+          - generic [ref=e120]:
+            - img "Gardner HVAC technician cleaning air ducts at a return register in a Murrieta Inland Empire home" [ref=e121]:
+              - generic [ref=e122]:
+                - generic [ref=e123]:
+                  - generic [ref=e124]: IMAGE PLACEHOLDER — HERO
+                  - generic [ref=e125]:
+                    - text: 1000 × 600px |
+                    - generic [ref=e126]: /public/hvac/air-duct-cleaning-hero.webp
+                - button "Copy prompt to clipboard" [ref=e127]: Copy prompt
+              - generic [ref=e128]:
+                - generic [ref=e129]: Prompt
+                - generic [ref=e130]: Photo of an HVAC technician kneeling on a residential hallway floor, feeding a heavy-duty rotary duct-cleaning vacuum hose into a large HVAC return air register, fine dust visibly being extracted into the hose, focused working posture. Technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots, red Milwaukee tool bag on hip, visible arm tattoos. Register grille removed and leaning against the baseboard, dust motes visible in the air near the hose. Warm residential interior light, neutral walls and wood-look floor. 50mm equivalent lens, documentary photography style. No studio lighting. Style and likeness of attached reference image.
+              - generic [ref=e131]:
+                - generic [ref=e132]: "Negative: no stock photo look, no white lab coat, no safety vest, no Carhartt tan jacket, no orange or yellow hi-vis vest, no cartoon, no illustration, no text overlay, no watermark, no industrial dust mask theatrics, no exaggerated black mold imagery, no excessive lens flare"
+                - generic [ref=e133]: "Ref image: Attach the two real Gardner team reference photos (provided 2026-06-12) — uniform & face/likeness reference. Don't describe face, age, or ethnicity."
+                - generic [ref=e134]: "Alt text: Gardner HVAC technician cleaning air ducts at a return register in a Murrieta Inland Empire home"
+            - generic [ref=e137]:
+              - img [ref=e139]
+              - generic [ref=e143]:
+                - generic [ref=e144]: NADCA-Standard Cleaning
+                - generic [ref=e145]: Murrieta & Inland Empire
+        - generic [ref=e150]:
+          - generic [ref=e151]:
+            - img [ref=e152]
+            - generic [ref=e154]: Noticing dust buildup, a musty smell, or reduced airflow?
+          - generic [ref=e155]:
+            - link "(951) 246-4337" [ref=e156] [cursor=pointer]:
+              - /url: tel:9512464337
+              - generic [ref=e157]:
+                - img [ref=e158]
+                - generic [ref=e160]: (951) 246-4337
+            - generic [ref=e161]: Same-week scheduling · licensed HVAC team
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - img [ref=e168]
+              - generic [ref=e172]: Our Services
+            - heading "Comprehensive Air Duct Cleaning Services in the Inland Empire" [level=2] [ref=e173]
+            - paragraph [ref=e174]:
+              - text: "Inland Empire homes deal with desert dust, seasonal wildfire smoke, and year-round pollen — all of it pulled through your ductwork every time the system runs. Our HVAC technicians clean the full duct system using NADCA Air Systems Cleaning Specialist methodology: negative pressure, high-efficiency vacuuming, and agitation throughout every branch line. View"
+              - link "all indoor air quality services" [ref=e175] [cursor=pointer]:
+                - /url: /services/hvac/indoor-air-quality
+              - text: .
+          - generic [ref=e176]:
+            - generic [ref=e180]:
+              - generic [ref=e181]:
+                - img [ref=e184]
+                - heading "Supply & Return Duct Cleaning" [level=3] [ref=e188]
+              - generic [ref=e189]:
+                - paragraph [ref=e190]: Every supply line and return duct cleaned under negative pressure — NADCA-standard methodology that removes debris without spreading it through the home.
+                - list [ref=e191]:
+                  - listitem [ref=e192]:
+                    - img [ref=e193]
+                    - generic [ref=e196]: Negative Pressure Vacuum
+                  - listitem [ref=e197]:
+                    - img [ref=e198]
+                    - generic [ref=e201]: Supply Line Cleaning
+                  - listitem [ref=e202]:
+                    - img [ref=e203]
+                    - generic [ref=e206]: Return Duct Cleaning
+                  - listitem [ref=e207]:
+                    - img [ref=e208]
+                    - generic [ref=e211]: Branch Line Agitation
+            - generic [ref=e215]:
+              - generic [ref=e216]:
+                - img [ref=e219]
+                - heading "Video Inspection & Documentation" [level=3] [ref=e222]
+              - generic [ref=e223]:
+                - paragraph [ref=e224]: Camera inspection of your duct interior before we start and after we finish — you see exactly what was in there and exactly what we removed.
+                - list [ref=e225]:
+                  - listitem [ref=e226]:
+                    - img [ref=e227]
+                    - generic [ref=e230]: Pre-Clean Camera Inspection
+                  - listitem [ref=e231]:
+                    - img [ref=e232]
+                    - generic [ref=e235]: Post-Clean Verification
+                  - listitem [ref=e236]:
+                    - img [ref=e237]
+                    - generic [ref=e240]: Mold & Damage Spotting
+                  - listitem [ref=e241]:
+                    - img [ref=e242]
+                    - generic [ref=e245]: Photo/Video Report
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - img [ref=e253]
+                - heading "Register Boot & Diffuser Cleaning" [level=3] [ref=e256]
+              - generic [ref=e257]:
+                - paragraph [ref=e258]: Supply and return registers pulled, cleaned, and reinstalled. Boot interiors vacuumed and wiped — the sections most overlooked by discount cleaning operations.
+                - list [ref=e259]:
+                  - listitem [ref=e260]:
+                    - img [ref=e261]
+                    - generic [ref=e264]: Register Removal & Clean
+                  - listitem [ref=e265]:
+                    - img [ref=e266]
+                    - generic [ref=e269]: Boot Interior Vacuuming
+                  - listitem [ref=e270]:
+                    - img [ref=e271]
+                    - generic [ref=e274]: Diffuser Reinstall
+                  - listitem [ref=e275]:
+                    - img [ref=e276]
+                    - generic [ref=e279]: Airflow Spot-Check
+            - generic [ref=e283]:
+              - generic [ref=e284]:
+                - img [ref=e287]
+                - heading "Mold & Allergen Remediation" [level=3] [ref=e289]
+              - generic [ref=e290]:
+                - paragraph [ref=e291]: When inspection reveals mold growth or significant allergen buildup, we address it directly — not with a spray-and-bill approach, but with source identification and targeted treatment.
+                - list [ref=e292]:
+                  - listitem [ref=e293]:
+                    - img [ref=e294]
+                    - generic [ref=e297]: Mold Source Identification
+                  - listitem [ref=e298]:
+                    - img [ref=e299]
+                    - generic [ref=e302]: EPA-Registered Treatment
+                  - listitem [ref=e303]:
+                    - img [ref=e304]
+                    - generic [ref=e307]: Moisture Source Referral
+                  - listitem [ref=e308]:
+                    - img [ref=e309]
+                    - generic [ref=e312]: Follow-Up Verification
+          - generic [ref=e314]:
+            - generic [ref=e315]:
+              - heading "What Changes After Professional Duct Cleaning" [level=3] [ref=e316]
+              - generic [ref=e317]:
+                - generic [ref=e318]:
+                  - img [ref=e319]
+                  - generic [ref=e322]: Visible dust and debris removed from every duct branch
+                - generic [ref=e323]:
+                  - img [ref=e324]
+                  - generic [ref=e327]: Allergen load reduced across supply and return paths
+                - generic [ref=e328]:
+                  - img [ref=e329]
+                  - generic [ref=e332]: Airflow improved at supply registers — measurable before and after
+                - generic [ref=e333]:
+                  - img [ref=e334]
+                  - generic [ref=e337]: Wildfire particulate and smoke residue cleared from duct walls
+                - generic [ref=e338]:
+                  - img [ref=e339]
+                  - generic [ref=e342]: Mold and microbial growth identified and treated at the source
+                - generic [ref=e343]:
+                  - img [ref=e344]
+                  - generic [ref=e347]: System efficiency improved — less strain on the air handler and blower
+            - generic [ref=e349]:
+              - img "Before and after air duct cleaning showing dusty duct interior cleared by Gardner HVAC service in the Inland Empire" [ref=e350]:
+                - generic [ref=e351]:
+                  - generic [ref=e352]:
+                    - generic [ref=e353]: IMAGE PLACEHOLDER — BEFORE / AFTER
+                    - generic [ref=e354]:
+                      - text: 800 × 400px |
+                      - generic [ref=e355]: /public/hvac/air-duct-cleaning-before-after.webp
+                  - button "Copy prompt to clipboard" [ref=e356]: Copy prompt
+                - generic [ref=e357]:
+                  - generic [ref=e358]: Prompt
+                  - generic [ref=e359]: "Split-scene product photograph, single frame divided at vertical center. LEFT HALF: endoscope camera POV looking into a residential duct interior — heavy dust and debris coating the sheet metal walls, dark particulate layer, cobwebs at a joint, dim view suggesting years of buildup. RIGHT HALF: the same duct interior after professional cleaning — sheet metal surfaces visible and relatively clean, no dust layer, no debris, slightly brighter ambient look from the clean walls. Seamless lighting match across both halves, straight-on 35mm lens, no people, no hands, technical documentation style. Raw sheet-metal duct-interior as background."
+                - generic [ref=e360]:
+                  - generic [ref=e361]: "Negative: no people, no hands visible, no text overlay, no cartoon, no split-screen border or line artifact, no wildly different lighting between halves, no stock photo softness, no watermark, no exaggerated black mold, no extreme horror-level contamination, no industrial setting"
+                  - generic [ref=e362]: "Alt text: Before and after air duct cleaning showing dusty duct interior cleared by Gardner HVAC service in the Inland Empire"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: BEFORE
+                  - generic:
+                    - generic: AFTER
+        - generic [ref=e367]:
+          - generic [ref=e368]:
+            - img "Gardner Plumbing Co. HVAC technician and service van ready for air duct cleaning" [ref=e370]
+            - generic [ref=e373]:
+              - img [ref=e375]
+              - generic [ref=e378]:
+                - generic [ref=e379]: 300+
+                - generic [ref=e380]: Homes Air-Sealed & Cleaned
+          - generic [ref=e381]:
+            - generic [ref=e382]:
+              - img [ref=e383]
+              - generic [ref=e385]: Why Choose Our IAQ Team
+            - heading "Why Inland Empire Homeowners Trust Our HVAC Team for Duct Cleaning" [level=2] [ref=e386]
+            - paragraph [ref=e387]:
+              - text: "Gardner Plumbing Co. is a licensed HVAC contractor serving Murrieta, Temecula, Menifee, and the greater Inland Empire (CA Contractor's License {{CSLB_C20_LICENSE_TBD}}). Unlike carpet-cleaning companies that offer duct cleaning as an upsell, our HVAC technicians understand the full system — so if they find a damaged flex duct, a disconnected boot, or early mold growth, they can address it directly on the same visit. You can also view our"
+              - link "air filtration systems" [ref=e388] [cursor=pointer]:
+                - /url: /services/hvac/air-filtration-systems
+              - text: to keep ducts cleaner between service visits.
+            - generic [ref=e389]:
+              - generic [ref=e390]:
+                - img [ref=e392]
+                - generic [ref=e395]:
+                  - heading "NADCA-Standard Process" [level=4] [ref=e396]
+                  - paragraph [ref=e397]: Our cleaning follows the NADCA Air Systems Cleaning Specialist methodology — negative pressure, agitation, and full containment. Not a "blow and go" service.
+              - generic [ref=e398]:
+                - img [ref=e400]
+                - generic [ref=e403]:
+                  - heading "Before & After Video Proof" [level=4] [ref=e404]
+                  - paragraph [ref=e405]: You receive a camera inspection report showing duct conditions before we start and after we finish. Every home. Every time.
+              - generic [ref=e406]:
+                - img [ref=e408]
+                - generic [ref=e410]:
+                  - heading "Licensed HVAC Technicians" [level=4] [ref=e411]
+                  - paragraph [ref=e412]: The same technicians who service your AC and furnace clean your ducts — they know the system, the airflow paths, and what normal looks like.
+              - generic [ref=e413]:
+                - img [ref=e415]
+                - generic [ref=e418]:
+                  - heading "Complete the System Upgrade" [level=4] [ref=e419]
+                  - paragraph [ref=e420]: After cleaning, our team can install air filtration systems — MERV 13+ media filters or electronic air cleaners that keep ducts cleaner between service visits.
+            - button "Get Free Estimate" [ref=e421]:
+              - generic [ref=e422]:
+                - img
+                - text: Get Free Estimate
+        - generic [ref=e426]:
+          - generic [ref=e427]:
+            - generic [ref=e428]:
+              - img [ref=e429]
+              - generic [ref=e432]: Service Areas
+            - heading "Serving Murrieta, Temecula, and All of Riverside County" [level=2] [ref=e433]
+            - paragraph [ref=e434]: Air duct cleaning service is available across the Inland Empire, with fast scheduling from our Murrieta base. We serve Temecula, Menifee, Perris, Canyon Lake, Lake Elsinore, Corona, Moreno Valley, Riverside, and Hemet — same-week availability throughout.
+          - generic [ref=e435]:
+            - link "Visit the official website for Temecula" [ref=e436] [cursor=pointer]:
+              - /url: https://temeculaca.gov
+              - img [ref=e437]
+              - text: Temecula
+            - link "Visit the official website for Murrieta" [ref=e440] [cursor=pointer]:
+              - /url: https://murrietaca.gov
+              - img [ref=e441]
+              - text: Murrieta
+            - link "Visit the official website for Perris" [ref=e444] [cursor=pointer]:
+              - /url: https://www.cityofperris.org
+              - img [ref=e445]
+              - text: Perris
+            - link "Visit the official website for Menifee" [ref=e448] [cursor=pointer]:
+              - /url: https://cityofmenifee.us
+              - img [ref=e449]
+              - text: Menifee
+            - link "Visit the official website for Canyon Lake" [ref=e452] [cursor=pointer]:
+              - /url: https://www.canyonlakeca.gov
+              - img [ref=e453]
+              - text: Canyon Lake
+            - link "Visit the official website for Lake Elsinore" [ref=e456] [cursor=pointer]:
+              - /url: https://www.lake-elsinore.org
+              - img [ref=e457]
+              - text: Lake Elsinore
+            - link "Visit the official website for Corona" [ref=e460] [cursor=pointer]:
+              - /url: https://www.coronaca.gov
+              - img [ref=e461]
+              - text: Corona
+            - link "Visit the official website for Moreno Valley" [ref=e464] [cursor=pointer]:
+              - /url: https://moval.org
+              - img [ref=e465]
+              - text: Moreno Valley
+            - link "Visit the official website for Riverside" [ref=e468] [cursor=pointer]:
+              - /url: https://riversideca.gov
+              - img [ref=e469]
+              - text: Riverside
+            - link "Visit the official website for Hemet" [ref=e472] [cursor=pointer]:
+              - /url: https://www.hemetca.gov
+              - img [ref=e473]
+              - text: Hemet
+          - generic [ref=e477]:
+            - heading "Don't See Your Area?" [level=3] [ref=e478]
+            - paragraph [ref=e479]: We serve additional areas throughout Riverside County. Call to confirm service availability.
+            - link "Check Service Area" [ref=e480] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Check Service Area" [ref=e481]:
+                - generic [ref=e482]:
+                  - img
+                  - text: Check Service Area
+        - generic [ref=e487]:
+          - generic [ref=e488]:
+            - generic [ref=e489]:
+              - img [ref=e490]
+              - generic [ref=e493]: FAQ
+            - heading "Air Duct Cleaning Questions and Answers" [level=2] [ref=e494]
+            - paragraph [ref=e495]: Find answers to common questions about air duct cleaning in Murrieta and the Inland Empire.
+          - generic [ref=e497]:
+            - generic [ref=e500]:
+              - img [ref=e502]
+              - heading "Questions & Answers" [level=3] [ref=e505]
+            - generic [ref=e507]:
+              - heading "How often should air ducts be cleaned in an Inland Empire home?" [level=3] [ref=e512]:
+                - button "How often should air ducts be cleaned in an Inland Empire home?" [ref=e513]:
+                  - generic [ref=e514]:
+                    - img [ref=e516]
+                    - text: How often should air ducts be cleaned in an Inland Empire home?
+                  - img
+              - heading "What does \"NADCA-standard\" air duct cleaning actually mean?" [level=3] [ref=e523]:
+                - button "What does \"NADCA-standard\" air duct cleaning actually mean?" [ref=e524]:
+                  - generic [ref=e525]:
+                    - img [ref=e527]
+                    - text: What does "NADCA-standard" air duct cleaning actually mean?
+                  - img
+              - heading "Is my ductwork actually dirty, or is this a scam service?" [level=3] [ref=e534]:
+                - button "Is my ductwork actually dirty, or is this a scam service?" [ref=e535]:
+                  - generic [ref=e536]:
+                    - img [ref=e538]
+                    - text: Is my ductwork actually dirty, or is this a scam service?
+                  - img
+              - heading "Can duct cleaning help with wildfire smoke smell in my home?" [level=3] [ref=e545]:
+                - button "Can duct cleaning help with wildfire smoke smell in my home?" [ref=e546]:
+                  - generic [ref=e547]:
+                    - img [ref=e549]
+                    - text: Can duct cleaning help with wildfire smoke smell in my home?
+                  - img
+              - heading "What's the difference between duct cleaning and AC maintenance?" [level=3] [ref=e556]:
+                - button "What's the difference between duct cleaning and AC maintenance?" [ref=e557]:
+                  - generic [ref=e558]:
+                    - img [ref=e560]
+                    - text: What's the difference between duct cleaning and AC maintenance?
+                  - img
+              - heading "How do I know if mold is growing in my ducts?" [level=3] [ref=e567]:
+                - button "How do I know if mold is growing in my ducts?" [ref=e568]:
+                  - generic [ref=e569]:
+                    - img [ref=e571]
+                    - text: How do I know if mold is growing in my ducts?
+                  - img
+          - generic [ref=e575]:
+            - generic [ref=e576]:
+              - img [ref=e578]
+              - heading "Have More Questions?" [level=3] [ref=e581]
+            - paragraph [ref=e582]:
+              - text: Can't find what you're looking for? Our HVAC technicians are standing by to answer your questions and schedule your duct cleaning service. Need immediate help? Call our
+              - link "scheduling line" [ref=e583] [cursor=pointer]:
+                - /url: tel:9512464337
+              - text: .
+            - generic [ref=e584]:
+              - link "View Full FAQ" [ref=e585] [cursor=pointer]:
+                - /url: /frequently-asked-questions
+                - button "View Full FAQ" [ref=e586]:
+                  - generic [ref=e587]:
+                    - img
+                    - text: View Full FAQ
+              - link "Contact Us" [ref=e588] [cursor=pointer]:
+                - /url: /contact-us
+                - button "Contact Us" [ref=e589]:
+                  - generic [ref=e590]:
+                    - img
+                    - text: Contact Us
+        - generic [ref=e595]:
+          - generic [ref=e596]:
+            - generic [ref=e597]:
+              - img [ref=e598]
+              - generic [ref=e600]: Urgent Cleaning Needs
+            - heading "When Duct Cleaning Becomes Urgent" [level=2] [ref=e601]
+            - paragraph [ref=e602]: Most air duct cleaning is scheduled, not emergency. But some situations need faster attention — a wildfire smoke event, a mold discovery during a renovation, or post-flood remediation where ductwork was exposed to moisture. Our scheduling line is available Monday through Saturday, with same-week availability across the Inland Empire.
+            - generic [ref=e603]:
+              - heading "Situations That Need Faster Attention:" [level=3] [ref=e604]
+              - generic [ref=e605]:
+                - generic [ref=e606]:
+                  - img [ref=e607]
+                  - generic [ref=e609]: Wildfire smoke infiltrated the home through the HVAC system
+                - generic [ref=e610]:
+                  - img [ref=e611]
+                  - generic [ref=e613]: Visible mold around supply or return registers
+                - generic [ref=e614]:
+                  - img [ref=e615]
+                  - generic [ref=e617]: Persistent musty smell when system runs
+                - generic [ref=e618]:
+                  - img [ref=e619]
+                  - generic [ref=e621]: Rodent intrusion discovered in ductwork
+                - generic [ref=e622]:
+                  - img [ref=e623]
+                  - generic [ref=e625]: Recent water damage near air handler or duct runs
+                - generic [ref=e626]:
+                  - img [ref=e627]
+                  - generic [ref=e629]: Post-renovation dust from remodel work
+                - generic [ref=e630]:
+                  - img [ref=e631]
+                  - generic [ref=e633]: Allergy symptoms that worsen when HVAC is running
+                - generic [ref=e634]:
+                  - img [ref=e635]
+                  - generic [ref=e637]: New home purchase — unknown duct cleaning history
+            - link "Call (951) 246-4337" [ref=e639] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Call (951) 246-4337" [ref=e640]:
+                - generic [ref=e641]:
+                  - img
+                  - text: Call (951) 246-4337
+          - generic [ref=e643]:
+            - img "Gardner HVAC team arriving for urgent air duct cleaning service in the Inland Empire" [ref=e644]
+            - generic [ref=e646]:
+              - img [ref=e648]
+              - generic [ref=e651]:
+                - generic [ref=e652]: Same-Week
+                - generic [ref=e653]: Scheduling Available
+        - generic [ref=e656]:
+          - generic [ref=e657]:
+            - img [ref=e659]
+            - heading "Ready to Schedule Your Duct Cleaning?" [level=2] [ref=e661]
+            - paragraph [ref=e662]: Whole-home air duct cleaning across Murrieta, Temecula, and the Inland Empire. NADCA-standard process, before-and-after video documentation, and licensed HVAC technicians on every job. Call now or schedule online — same-week availability.
+          - generic [ref=e663]:
+            - link "Call (951) 246-4337" [ref=e664] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Call (951) 246-4337" [ref=e665]:
+                - generic [ref=e666]:
+                  - img
+                  - text: Call (951) 246-4337
+            - button "Get Free Estimate" [ref=e667]:
+              - generic [ref=e668]:
+                - img
+                - text: Get Free Estimate
+          - generic [ref=e669]:
+            - generic [ref=e670]:
+              - img [ref=e671]
+              - generic [ref=e674]: NADCA-Standard Process
+            - generic [ref=e675]:
+              - img [ref=e676]
+              - generic [ref=e678]: Licensed & Insured
+            - generic [ref=e679]:
+              - img [ref=e680]
+              - generic [ref=e682]: 4.9 Star Rating
+  - contentinfo [ref=e683]:
+    - generic [ref=e686]:
+      - generic [ref=e687]:
+        - generic [ref=e689]:
+          - img "Gardner Plumbing Co. logo" [ref=e690]
+          - paragraph [ref=e691]: Professional plumbing services backed by 30+ years of experience and a commitment to excellence. Whether you need repairs, installations, or emergency service—we've got you covered.
+          - generic [ref=e692]:
+            - link "(951) 246-4337 24/7 Emergency Service" [ref=e693] [cursor=pointer]:
+              - /url: tel:19512464337
+              - img [ref=e695]
+              - generic [ref=e697]:
+                - paragraph [ref=e698]: (951) 246-4337
+                - paragraph [ref=e699]: 24/7 Emergency Service
+            - link "office@gardnerplumbingco.com Email for Estimates" [ref=e700] [cursor=pointer]:
+              - /url: mailto:office@gardnerplumbingco.com
+              - img [ref=e702]
+              - generic [ref=e705]:
+                - paragraph [ref=e706]: office@gardnerplumbingco.com
+                - paragraph [ref=e707]: Email for Estimates
+            - link "30714 Wealth St, Murrieta, CA 92563 Location" [ref=e708] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/aCp4BuCRRPcyEWxo9
+              - img [ref=e710]
+              - generic [ref=e713]:
+                - paragraph [ref=e714]: 30714 Wealth St, Murrieta, CA 92563
+                - paragraph [ref=e715]: Location
+          - generic [ref=e716]:
+            - heading "Business Hours" [level=4] [ref=e717]
+            - generic [ref=e718]:
+              - generic [ref=e719]:
+                - generic [ref=e720]: Office (Mon - Fri)
+                - generic [ref=e721]: 8:00 AM - 4:00 PM
+              - generic [ref=e722]:
+                - generic [ref=e723]: Service (Mon - Fri)
+                - generic [ref=e724]: 8:00 AM - 5:00 PM
+              - generic [ref=e725]:
+                - generic [ref=e726]: Saturday - Sunday
+                - generic [ref=e727]: Emergency Only
+              - generic [ref=e729]:
+                - generic [ref=e730]: Emergency
+                - generic [ref=e731]: 24/7 Available
+        - generic [ref=e733]:
+          - generic [ref=e734]:
+            - heading "About Us" [level=4] [ref=e735]
+            - list [ref=e736]:
+              - listitem [ref=e737]:
+                - link "Gardner Plumbing Co. Our story & team" [ref=e738] [cursor=pointer]:
+                  - /url: /about-us
+                  - generic [ref=e739]: Gardner Plumbing Co.
+                  - generic [ref=e740]: Our story & team
+              - listitem [ref=e741]:
+                - link "Contact Us Get in touch today" [ref=e742] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e743]: Contact Us
+                  - generic [ref=e744]: Get in touch today
+              - listitem [ref=e745]:
+                - link "Customer Reviews See what clients say" [ref=e746] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e747]: Customer Reviews
+                  - generic [ref=e748]: See what clients say
+              - listitem [ref=e749]:
+                - link "Service Areas Where we work" [ref=e750] [cursor=pointer]:
+                  - /url: /about-us#service-area
+                  - generic [ref=e751]: Service Areas
+                  - generic [ref=e752]: Where we work
+              - listitem [ref=e753]:
+                - link "Testimonials Success stories" [ref=e754] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e755]: Testimonials
+                  - generic [ref=e756]: Success stories
+              - listitem [ref=e757]:
+                - link "Our Guarantee Quality promise" [ref=e758] [cursor=pointer]:
+                  - /url: /guarantee
+                  - generic [ref=e759]: Our Guarantee
+                  - generic [ref=e760]: Quality promise
+          - generic [ref=e761]:
+            - heading "Quick Links" [level=4] [ref=e762]
+            - list [ref=e763]:
+              - listitem [ref=e764]:
+                - link "Request Service Schedule appointment" [ref=e765] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e766]: Request Service
+                  - generic [ref=e767]: Schedule appointment
+              - listitem [ref=e768]:
+                - link "Emergency Service 24/7 urgent help" [ref=e769] [cursor=pointer]:
+                  - /url: /services/emergency-service
+                  - generic [ref=e770]: Emergency Service
+                  - generic [ref=e771]: 24/7 urgent help
+              - listitem [ref=e772]:
+                - link "FAQ Common questions" [ref=e773] [cursor=pointer]:
+                  - /url: /frequently-asked-questions
+                  - generic [ref=e774]: FAQ
+                  - generic [ref=e775]: Common questions
+              - listitem [ref=e776]:
+                - link "Blog Tips & insights" [ref=e777] [cursor=pointer]:
+                  - /url: /blog
+                  - generic [ref=e778]: Blog
+                  - generic [ref=e779]: Tips & insights
+              - listitem [ref=e780]:
+                - link "Financing Payment options" [ref=e781] [cursor=pointer]:
+                  - /url: /financing
+                  - generic [ref=e782]: Financing
+                  - generic [ref=e783]: Payment options
+              - listitem [ref=e784]:
+                - link "Warranty Info Coverage details" [ref=e785] [cursor=pointer]:
+                  - /url: /warranty
+                  - generic [ref=e786]: Warranty Info
+                  - generic [ref=e787]: Coverage details
+          - generic [ref=e788]:
+            - heading "From Our Blog" [level=4] [ref=e789]
+            - paragraph [ref=e790]: Get expert plumbing tips, home maintenance advice, and industry insights from our latest blog posts.
+            - link "Visit Our Blog" [ref=e792] [cursor=pointer]:
+              - /url: /blog
+            - generic [ref=e793]:
+              - paragraph [ref=e794]: Follow Us
+              - generic [ref=e795]:
+                - link [ref=e796] [cursor=pointer]:
+                  - /url: https://www.facebook.com/people/Gardner-Plumbing-Company/100063665179161/#
+                  - img [ref=e798]
+                - link [ref=e800] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCn8DkWu_niFYrW7jCtsUkUg
+                  - img [ref=e802]
+                - link [ref=e805] [cursor=pointer]:
+                  - /url: https://www.instagram.com/gardnerplumbingco/
+                  - img [ref=e807]
+            - generic [ref=e812]:
+              - generic [ref=e813]: Emergency? Call Now!
+              - link "(951) 246-4337" [ref=e814] [cursor=pointer]:
+                - /url: tel:19512464337
+                - button "(951) 246-4337" [ref=e815]
+      - generic [ref=e818]:
+        - generic [ref=e819]:
+          - paragraph [ref=e820]: © 2024-2025 Gardner Plumbing Co. All rights reserved.
+          - generic [ref=e821]:
+            - img [ref=e822]
+            - generic [ref=e824]: 4.9★ Rated Service
+        - generic [ref=e825]:
+          - link "Privacy Policy" [ref=e826] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Service" [ref=e827] [cursor=pointer]:
+            - /url: /terms-and-services
+          - link "Sitemap" [ref=e828] [cursor=pointer]:
+            - /url: /sitemap_index.xml
+          - button "Cookie Settings" [ref=e829]

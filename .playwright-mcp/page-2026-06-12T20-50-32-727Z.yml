@@ -1,0 +1,664 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "24/7 Emergency Service" [ref=e8] [cursor=pointer]:
+          - /url: /services/emergency-service
+          - img [ref=e9]
+        - link "24/7 Emergency Service" [ref=e12] [cursor=pointer]:
+          - /url: /services/emergency-service
+      - generic [ref=e13]:
+        - link "See Reviews" [ref=e14] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e15]
+        - link "4.9★ Rated Service" [ref=e17] [cursor=pointer]:
+          - /url: /reviews
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - link "Service Area" [ref=e20] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e21]
+        - link "Serving Greater Riverside Area" [ref=e24] [cursor=pointer]:
+          - /url: "#service-area"
+      - generic [ref=e25]:
+        - link "Call (951) 246-4337" [ref=e26] [cursor=pointer]:
+          - /url: tel:9512464337
+          - img [ref=e27]
+        - link "(951) 246-4337" [ref=e29] [cursor=pointer]:
+          - /url: tel:9512464337
+  - banner [ref=e30]:
+    - navigation [ref=e32]:
+      - generic [ref=e34]:
+        - link "Go to homepage" [ref=e36] [cursor=pointer]:
+          - /url: /
+          - img "Gardner Plumbing Co. logo" [ref=e37]
+        - generic [ref=e38]:
+          - link "Home" [ref=e39] [cursor=pointer]:
+            - /url: /
+          - link "About Us" [ref=e40] [cursor=pointer]:
+            - /url: /about-us
+          - link "Plumbing" [ref=e42] [cursor=pointer]:
+            - /url: /services
+            - text: Plumbing
+            - img [ref=e43]
+          - link "HVAC" [ref=e46] [cursor=pointer]:
+            - /url: /services/hvac
+            - text: HVAC
+            - img [ref=e47]
+          - link "Electrical" [ref=e50] [cursor=pointer]:
+            - /url: /services/electrical
+            - text: Electrical
+            - img [ref=e51]
+          - link "Reviews" [ref=e53] [cursor=pointer]:
+            - /url: /reviews
+          - link "Contact" [ref=e54] [cursor=pointer]:
+            - /url: /contact-us
+  - main [ref=e55]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - navigation [ref=e66]:
+              - navigation [ref=e68]:
+                - generic [ref=e69]:
+                  - generic [ref=e70]:
+                    - link "Home" [ref=e71] [cursor=pointer]:
+                      - /url: /
+                    - img [ref=e72]
+                  - generic [ref=e74]:
+                    - link "Services" [ref=e75] [cursor=pointer]:
+                      - /url: /services
+                    - img [ref=e76]
+                  - generic [ref=e78]:
+                    - link "HVAC" [ref=e79] [cursor=pointer]:
+                      - /url: /services/hvac
+                    - img [ref=e80]
+                  - generic [ref=e83]: AC
+            - generic [ref=e84]:
+              - img [ref=e85]
+              - generic [ref=e90]: Licensed HVAC Service
+            - heading "Air Conditioning Services in Murrieta & the Inland Empire" [level=1] [ref=e91]
+            - paragraph [ref=e92]: "Last Updated: June 2026"
+            - paragraph [ref=e93]: Same-day AC repair, new system installation, seasonal tune-ups, and mini-split systems — one licensed HVAC team for every cooling need in your home.
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - img [ref=e96]
+                - generic [ref=e99]: Same-Day Response
+              - generic [ref=e100]:
+                - img [ref=e101]
+                - generic [ref=e103]: Licensed & Insured
+              - generic [ref=e104]:
+                - img [ref=e105]
+                - generic [ref=e107]: Upfront Pricing
+              - generic [ref=e108]:
+                - img [ref=e109]
+                - generic [ref=e111]: 24/7 Emergency Line
+            - generic [ref=e112]:
+              - link "Call (951) 246-4337" [ref=e113] [cursor=pointer]:
+                - /url: tel:9512464337
+                - button "Call (951) 246-4337" [ref=e114]:
+                  - generic [ref=e115]:
+                    - img
+                    - text: Call (951) 246-4337
+              - button "📅 Book Online" [ref=e116]:
+                - generic [ref=e117]: 📅 Book Online
+          - generic [ref=e119]:
+            - img "Gardner HVAC technician standing beside a residential AC condenser unit in the Inland Empire" [ref=e120]:
+              - generic [ref=e121]:
+                - generic [ref=e122]:
+                  - generic [ref=e123]: IMAGE PLACEHOLDER — HERO
+                  - generic [ref=e124]:
+                    - text: 1000 × 600px |
+                    - generic [ref=e125]: /public/hvac/ac-hub-hero.webp
+                - button "Copy prompt to clipboard" [ref=e126]: Copy prompt
+              - generic [ref=e127]:
+                - generic [ref=e128]: Prompt
+                - generic [ref=e129]: Portrait-style photo of an HVAC technician standing confidently beside a clean modern residential AC condenser unit on a concrete pad at a Southern California suburban home, Gardner service van slightly out of focus in the background, natural directional SoCal afternoon sunlight. Technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots, red Milwaukee tool bag on hip, visible arm tattoos. Relaxed authoritative stance, not posed or stiff — natural weight shift, arms at sides. Stucco house wall and desert-dry landscaping framing the scene. 50mm equivalent lens, shallow depth of field. Documentary photography style. No studio lighting. Style and likeness of attached reference image.
+              - generic [ref=e130]:
+                - generic [ref=e131]: "Negative: no stock photo look, no white lab coat, no safety vest, no Carhartt tan jacket, no orange or yellow hi-vis vest, no cartoon, no illustration, no text overlay, no watermark, no excessive lens flare, no green grass lawn, no snow, no city skyline, no posed thumbs-up or smile-at-camera pose"
+                - generic [ref=e132]: "Ref image: Attach the two real Gardner team reference photos (provided 2026-06-12) — uniform & face/likeness reference. Don't describe face, age, or ethnicity."
+                - generic [ref=e133]: "Alt text: Gardner HVAC technician standing beside a residential AC condenser unit in the Inland Empire"
+            - generic [ref=e135]:
+              - img [ref=e137]
+              - generic [ref=e142]:
+                - generic [ref=e143]: Licensed HVAC Service
+                - generic [ref=e144]: Murrieta & Inland Empire
+        - generic [ref=e149]:
+          - generic [ref=e150]:
+            - img [ref=e151]
+            - generic [ref=e153]: AC not cooling in Murrieta?
+          - generic [ref=e154]:
+            - link "(951) 246-4337" [ref=e155] [cursor=pointer]:
+              - /url: tel:9512464337
+              - generic [ref=e156]:
+                - img [ref=e157]
+                - generic [ref=e159]: (951) 246-4337
+            - generic [ref=e160]: Same-day response · nights & weekends
+        - generic [ref=e164]:
+          - generic [ref=e165]:
+            - generic [ref=e166]:
+              - img [ref=e167]
+              - generic [ref=e172]: Our Services
+            - heading "Air Conditioning Services We Offer in the Inland Empire" [level=2] [ref=e173]
+            - paragraph [ref=e174]:
+              - text: Whether your AC stopped cooling, your system is aging out, your energy bills are climbing, or you want to add ductless cooling to a room addition — our licensed HVAC team covers every scenario. Five services under one roof, all dispatched same-day from our Murrieta base across Riverside County. We also handle
+              - link "thermostat installation" [ref=e175] [cursor=pointer]:
+                - /url: /services/hvac/ac/thermostat-installation
+              - text: — smart and programmable thermostat upgrades that make your AC system more efficient and easier to control.
+          - generic [ref=e176]:
+            - link "AC Repair Same-day diagnosis and repair for capacitor failures, refrigerant leaks, frozen coils, and compressor issues — the most common AC failures in IE heat. 24/7 Emergency Dispatch Capacitor & Contactor Repair Refrigerant Recharge (EPA 608) Compressor & Coil Service" [ref=e177] [cursor=pointer]:
+              - /url: /services/hvac/ac/ac-repair
+              - generic [ref=e181]:
+                - generic [ref=e182]:
+                  - img [ref=e185]
+                  - heading "AC Repair" [level=3] [ref=e187]
+                - generic [ref=e188]:
+                  - paragraph [ref=e189]: Same-day diagnosis and repair for capacitor failures, refrigerant leaks, frozen coils, and compressor issues — the most common AC failures in IE heat.
+                  - list [ref=e190]:
+                    - listitem [ref=e191]:
+                      - img [ref=e192]
+                      - generic [ref=e195]: 24/7 Emergency Dispatch
+                    - listitem [ref=e196]:
+                      - img [ref=e197]
+                      - generic [ref=e200]: Capacitor & Contactor Repair
+                    - listitem [ref=e201]:
+                      - img [ref=e202]
+                      - generic [ref=e205]: Refrigerant Recharge (EPA 608)
+                    - listitem [ref=e206]:
+                      - img [ref=e207]
+                      - generic [ref=e210]: Compressor & Coil Service
+            - link "AC Installation New central AC system sizing, installation, and commissioning — matched to your home's square footage, duct layout, and Inland Empire climate demands. Load Calculation (Manual J) Carrier, Trane & Lennox Systems Existing Duct Integration System Commissioning & Test" [ref=e211] [cursor=pointer]:
+              - /url: /services/hvac/ac/ac-installation
+              - generic [ref=e215]:
+                - generic [ref=e216]:
+                  - img [ref=e219]
+                  - heading "AC Installation" [level=3] [ref=e221]
+                - generic [ref=e222]:
+                  - paragraph [ref=e223]: New central AC system sizing, installation, and commissioning — matched to your home's square footage, duct layout, and Inland Empire climate demands.
+                  - list [ref=e224]:
+                    - listitem [ref=e225]:
+                      - img [ref=e226]
+                      - generic [ref=e229]: Load Calculation (Manual J)
+                    - listitem [ref=e230]:
+                      - img [ref=e231]
+                      - generic [ref=e234]: Carrier, Trane & Lennox Systems
+                    - listitem [ref=e235]:
+                      - img [ref=e236]
+                      - generic [ref=e239]: Existing Duct Integration
+                    - listitem [ref=e240]:
+                      - img [ref=e241]
+                      - generic [ref=e244]: System Commissioning & Test
+            - link "AC Maintenance Annual tune-ups before the summer heat wave — coil cleaning, refrigerant check, electrical testing, and a full-system inspection to prevent mid-summer failures. Evaporator & Condenser Coil Clean Refrigerant Level Check Electrical Component Testing Airflow & Thermostat Calibration" [ref=e245] [cursor=pointer]:
+              - /url: /services/hvac/ac/ac-maintenance
+              - generic [ref=e249]:
+                - generic [ref=e250]:
+                  - img [ref=e253]
+                  - heading "AC Maintenance" [level=3] [ref=e256]
+                - generic [ref=e257]:
+                  - paragraph [ref=e258]: Annual tune-ups before the summer heat wave — coil cleaning, refrigerant check, electrical testing, and a full-system inspection to prevent mid-summer failures.
+                  - list [ref=e259]:
+                    - listitem [ref=e260]:
+                      - img [ref=e261]
+                      - generic [ref=e264]: Evaporator & Condenser Coil Clean
+                    - listitem [ref=e265]:
+                      - img [ref=e266]
+                      - generic [ref=e269]: Refrigerant Level Check
+                    - listitem [ref=e270]:
+                      - img [ref=e271]
+                      - generic [ref=e274]: Electrical Component Testing
+                    - listitem [ref=e275]:
+                      - img [ref=e276]
+                      - generic [ref=e279]: Airflow & Thermostat Calibration
+            - link "Mini-Split AC Ductless mini-split installation for room additions, garages, and homes without existing ductwork — zoned cooling without tearing into walls. Single & Multi-Zone Systems No Ductwork Required Mitsubishi & Daikin Units Wall, Ceiling & Floor Mounts" [ref=e280] [cursor=pointer]:
+              - /url: /services/hvac/ac/mini-split-ac
+              - generic [ref=e284]:
+                - generic [ref=e285]:
+                  - img [ref=e288]
+                  - heading "Mini-Split AC" [level=3] [ref=e293]
+                - generic [ref=e294]:
+                  - paragraph [ref=e295]: Ductless mini-split installation for room additions, garages, and homes without existing ductwork — zoned cooling without tearing into walls.
+                  - list [ref=e296]:
+                    - listitem [ref=e297]:
+                      - img [ref=e298]
+                      - generic [ref=e301]: Single & Multi-Zone Systems
+                    - listitem [ref=e302]:
+                      - img [ref=e303]
+                      - generic [ref=e306]: No Ductwork Required
+                    - listitem [ref=e307]:
+                      - img [ref=e308]
+                      - generic [ref=e311]: Mitsubishi & Daikin Units
+                    - listitem [ref=e312]:
+                      - img [ref=e313]
+                      - generic [ref=e316]: Wall, Ceiling & Floor Mounts
+          - generic [ref=e318]:
+            - generic [ref=e319]:
+              - heading "What Changes After a Professional AC Service" [level=3] [ref=e320]
+              - generic [ref=e321]:
+                - generic [ref=e322]:
+                  - img [ref=e323]
+                  - generic [ref=e326]: System cooling to the set temperature — not running endlessly without reaching it
+                - generic [ref=e327]:
+                  - img [ref=e328]
+                  - generic [ref=e331]: Refrigerant pressure at manufacturer spec — efficient heat transfer restored
+                - generic [ref=e332]:
+                  - img [ref=e333]
+                  - generic [ref=e336]: Evaporator and condenser coils clean and moving full airflow
+                - generic [ref=e337]:
+                  - img [ref=e338]
+                  - generic [ref=e341]: Electrical components tested — capacitors, contactors, and wiring confirmed safe
+                - generic [ref=e342]:
+                  - img [ref=e343]
+                  - generic [ref=e346]: Thermostat calibrated and communicating correctly with the air handler
+                - generic [ref=e347]:
+                  - img [ref=e348]
+                  - generic [ref=e351]: Energy consumption back to normal — lower monthly electric bills
+            - generic [ref=e353]:
+              - img "Before and after AC replacement showing old worn condenser unit replaced with new modern unit by Gardner HVAC in the Inland Empire" [ref=e354]:
+                - generic [ref=e355]:
+                  - generic [ref=e356]:
+                    - generic [ref=e357]: IMAGE PLACEHOLDER — BEFORE / AFTER
+                    - generic [ref=e358]:
+                      - text: 800 × 400px |
+                      - generic [ref=e359]: /public/hvac/ac-hub-before-after.webp
+                  - button "Copy prompt to clipboard" [ref=e360]: Copy prompt
+                - generic [ref=e361]:
+                  - generic [ref=e362]: Prompt
+                  - generic [ref=e363]: "Split-scene product photograph, single frame divided at vertical center. LEFT HALF: an old worn residential AC condenser unit on a concrete pad — rusted housing, bent fins, weathered plastic panels, clearly aging. RIGHT HALF: the same concrete pad with a brand-new modern AC condenser installed — clean white or gray housing, fresh refrigerant lines, new electrical disconnect, looks factory-fresh. Seamless lighting match across both halves, straight-on 35mm lens, no people, no hands, technical documentation style. Warm SoCal natural daylight, stucco wall in background."
+                - generic [ref=e364]:
+                  - generic [ref=e365]: "Negative: no people, no hands visible, no text overlay, no cartoon, no split-screen border or line artifact, no wildly different lighting between halves, no stock photo softness, no watermark, no indoor setting, no window AC unit"
+                  - generic [ref=e366]: "Alt text: Before and after AC replacement showing old worn condenser unit replaced with new modern unit by Gardner HVAC in the Inland Empire"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: BEFORE
+                  - generic:
+                    - generic: AFTER
+        - generic [ref=e371]:
+          - generic [ref=e372]:
+            - img "Gardner Plumbing Co. HVAC technician and service van ready for AC service" [ref=e374]
+            - generic [ref=e377]:
+              - img [ref=e379]
+              - generic [ref=e382]:
+                - generic [ref=e383]: 1,800+
+                - generic [ref=e384]: Cooling Jobs Completed
+          - generic [ref=e385]:
+            - generic [ref=e386]:
+              - img [ref=e387]
+              - generic [ref=e389]: Why Choose Our HVAC Team
+            - heading "Why Inland Empire Homeowners Choose Us for AC Service" [level=2] [ref=e390]
+            - paragraph [ref=e391]: "Gardner Plumbing Co. is a licensed HVAC contractor serving Murrieta, Temecula, Menifee, and the greater Inland Empire (CA Contractor's License {{CSLB_C20_LICENSE_TBD}}). Our HVAC team has completed over 1,800 cooling jobs across Riverside County — from emergency repairs in Canyon Lake to full AC replacements in Perris. Every job is quoted upfront and completed by a licensed technician."
+            - generic [ref=e392]:
+              - generic [ref=e393]:
+                - img [ref=e395]
+                - generic [ref=e398]:
+                  - heading "Same-Day AC Service" [level=4] [ref=e399]
+                  - paragraph [ref=e400]: Most calls booked before noon are on-site the same day. No overnight wait when your home is heating up in July.
+              - generic [ref=e401]:
+                - img [ref=e403]
+                - generic [ref=e405]:
+                  - heading "Licensed HVAC Technicians" [level=4] [ref=e406]
+                  - paragraph [ref=e407]: Every tech carries a valid CA HVAC license and passes background verification before stepping into your home.
+              - generic [ref=e408]:
+                - img [ref=e410]
+                - generic [ref=e412]:
+                  - heading "Upfront Pricing" [level=4] [ref=e413]
+                  - paragraph [ref=e414]: Written quote before work starts. The price on the quote is the price on the invoice — no add-ons after the job.
+              - generic [ref=e415]:
+                - img [ref=e417]
+                - generic [ref=e420]:
+                  - heading "30+ Years in the Field" [level=4] [ref=e421]
+                  - paragraph [ref=e422]: Three decades serving Riverside County means the team knows every failure mode the Inland Empire climate produces in AC systems.
+            - button "Get Free Estimate" [ref=e423]:
+              - generic [ref=e424]:
+                - img
+                - text: Get Free Estimate
+        - generic [ref=e428]:
+          - generic [ref=e429]:
+            - generic [ref=e430]:
+              - img [ref=e431]
+              - generic [ref=e434]: Service Areas
+            - heading "Serving Murrieta, Temecula, and All of Riverside County" [level=2] [ref=e435]
+            - paragraph [ref=e436]:
+              - text: Air conditioning service is available across the Inland Empire, dispatched from our Murrieta base. We cover Temecula, Menifee, Perris, Canyon Lake, Lake Elsinore, Corona, Moreno Valley, Riverside, and Hemet — same-day AC service availability throughout. See also our
+              - link "heating services" [ref=e437] [cursor=pointer]:
+                - /url: /services/hvac/heating
+              - text: and
+              - link "indoor air quality services" [ref=e438] [cursor=pointer]:
+                - /url: /services/hvac/indoor-air-quality
+              - text: .
+          - generic [ref=e439]:
+            - link "Visit the official website for Temecula" [ref=e440] [cursor=pointer]:
+              - /url: https://temeculaca.gov
+              - img [ref=e441]
+              - text: Temecula
+            - link "Visit the official website for Murrieta" [ref=e444] [cursor=pointer]:
+              - /url: https://murrietaca.gov
+              - img [ref=e445]
+              - text: Murrieta
+            - link "Visit the official website for Perris" [ref=e448] [cursor=pointer]:
+              - /url: https://www.cityofperris.org
+              - img [ref=e449]
+              - text: Perris
+            - link "Visit the official website for Menifee" [ref=e452] [cursor=pointer]:
+              - /url: https://cityofmenifee.us
+              - img [ref=e453]
+              - text: Menifee
+            - link "Visit the official website for Canyon Lake" [ref=e456] [cursor=pointer]:
+              - /url: https://www.canyonlakeca.gov
+              - img [ref=e457]
+              - text: Canyon Lake
+            - link "Visit the official website for Lake Elsinore" [ref=e460] [cursor=pointer]:
+              - /url: https://www.lake-elsinore.org
+              - img [ref=e461]
+              - text: Lake Elsinore
+            - link "Visit the official website for Corona" [ref=e464] [cursor=pointer]:
+              - /url: https://www.coronaca.gov
+              - img [ref=e465]
+              - text: Corona
+            - link "Visit the official website for Moreno Valley" [ref=e468] [cursor=pointer]:
+              - /url: https://moval.org
+              - img [ref=e469]
+              - text: Moreno Valley
+            - link "Visit the official website for Riverside" [ref=e472] [cursor=pointer]:
+              - /url: https://riversideca.gov
+              - img [ref=e473]
+              - text: Riverside
+            - link "Visit the official website for Hemet" [ref=e476] [cursor=pointer]:
+              - /url: https://www.hemetca.gov
+              - img [ref=e477]
+              - text: Hemet
+          - generic [ref=e481]:
+            - heading "Don't See Your Area?" [level=3] [ref=e482]
+            - paragraph [ref=e483]: We serve additional areas throughout Riverside County. Call to confirm service availability.
+            - link "Check Service Area" [ref=e484] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Check Service Area" [ref=e485]:
+                - generic [ref=e486]:
+                  - img
+                  - text: Check Service Area
+        - generic [ref=e491]:
+          - generic [ref=e492]:
+            - generic [ref=e493]:
+              - img [ref=e494]
+              - generic [ref=e497]: FAQ
+            - heading "Air Conditioning Questions and Answers" [level=2] [ref=e498]
+            - paragraph [ref=e499]: Common questions about AC repair, installation, and maintenance in Murrieta and the Inland Empire.
+          - generic [ref=e501]:
+            - generic [ref=e504]:
+              - img [ref=e506]
+              - heading "Questions & Answers" [level=3] [ref=e509]
+            - generic [ref=e511]:
+              - heading "How do I know if I should repair or replace my AC system?" [level=3] [ref=e516]:
+                - button "How do I know if I should repair or replace my AC system?" [ref=e517]:
+                  - generic [ref=e518]:
+                    - img [ref=e520]
+                    - text: How do I know if I should repair or replace my AC system?
+                  - img
+              - heading "What does an AC tune-up include, and when should I schedule one?" [level=3] [ref=e527]:
+                - button "What does an AC tune-up include, and when should I schedule one?" [ref=e528]:
+                  - generic [ref=e529]:
+                    - img [ref=e531]
+                    - text: What does an AC tune-up include, and when should I schedule one?
+                  - img
+              - heading "What AC brands does your team service and install?" [level=3] [ref=e538]:
+                - button "What AC brands does your team service and install?" [ref=e539]:
+                  - generic [ref=e540]:
+                    - img [ref=e542]
+                    - text: What AC brands does your team service and install?
+                  - img
+              - heading "What's the cost of AC repair vs. AC installation in Murrieta?" [level=3] [ref=e549]:
+                - button "What's the cost of AC repair vs. AC installation in Murrieta?" [ref=e550]:
+                  - generic [ref=e551]:
+                    - img [ref=e553]
+                    - text: What's the cost of AC repair vs. AC installation in Murrieta?
+                  - img
+              - heading "Do you offer emergency AC repair service in Murrieta on nights and weekends?" [level=3] [ref=e560]:
+                - button "Do you offer emergency AC repair service in Murrieta on nights and weekends?" [ref=e561]:
+                  - generic [ref=e562]:
+                    - img [ref=e564]
+                    - text: Do you offer emergency AC repair service in Murrieta on nights and weekends?
+                  - img
+              - heading "What area does your AC service cover?" [level=3] [ref=e571]:
+                - button "What area does your AC service cover?" [ref=e572]:
+                  - generic [ref=e573]:
+                    - img [ref=e575]
+                    - text: What area does your AC service cover?
+                  - img
+          - generic [ref=e579]:
+            - generic [ref=e580]:
+              - img [ref=e582]
+              - heading "Have More Questions?" [level=3] [ref=e585]
+            - paragraph [ref=e586]:
+              - text: Can't find what you're looking for? Our HVAC technicians are standing by to answer your questions and schedule AC service. Need immediate help? Call our
+              - link "24/7 emergency line" [ref=e587] [cursor=pointer]:
+                - /url: tel:9512464337
+              - text: .
+            - generic [ref=e588]:
+              - link "View Full FAQ" [ref=e589] [cursor=pointer]:
+                - /url: /frequently-asked-questions
+                - button "View Full FAQ" [ref=e590]:
+                  - generic [ref=e591]:
+                    - img
+                    - text: View Full FAQ
+              - link "Contact Us" [ref=e592] [cursor=pointer]:
+                - /url: /contact-us
+                - button "Contact Us" [ref=e593]:
+                  - generic [ref=e594]:
+                    - img
+                    - text: Contact Us
+        - generic [ref=e599]:
+          - generic [ref=e600]:
+            - generic [ref=e601]:
+              - img [ref=e602]
+              - generic [ref=e604]: Emergency Service
+            - heading "When You Need Emergency AC Repair" [level=2] [ref=e605]
+            - paragraph [ref=e606]: Some AC failures cannot wait until morning. Complete cooling failure, a system tripping the breaker, a refrigerant leak, or ice forming on the unit during a Murrieta heat advisory are all situations that need same-day attention. Our emergency line is live 24 hours a day, 7 days a week.
+            - generic [ref=e607]:
+              - heading "Common Emergency Situations:" [level=3] [ref=e608]
+              - generic [ref=e609]:
+                - generic [ref=e610]:
+                  - img [ref=e611]
+                  - generic [ref=e613]: Complete cooling failure
+                - generic [ref=e614]:
+                  - img [ref=e615]
+                  - generic [ref=e617]: AC tripping the circuit breaker
+                - generic [ref=e618]:
+                  - img [ref=e619]
+                  - generic [ref=e621]: Refrigerant leak detected indoors
+                - generic [ref=e622]:
+                  - img [ref=e623]
+                  - generic [ref=e625]: Frozen evaporator coil — no airflow
+                - generic [ref=e626]:
+                  - img [ref=e627]
+                  - generic [ref=e629]: Water leaking from indoor air handler
+                - generic [ref=e630]:
+                  - img [ref=e631]
+                  - generic [ref=e633]: Burning smell from vents or unit
+                - generic [ref=e634]:
+                  - img [ref=e635]
+                  - generic [ref=e637]: AC running constantly, not cooling
+                - generic [ref=e638]:
+                  - img [ref=e639]
+                  - generic [ref=e641]: System not responding to thermostat
+            - 'link "Emergency: (951) 246-4337" [ref=e643] [cursor=pointer]':
+              - /url: tel:9512464337
+              - 'button "Emergency: (951) 246-4337" [ref=e644]':
+                - generic [ref=e645]:
+                  - img
+                  - text: "Emergency: (951) 246-4337"
+          - generic [ref=e647]:
+            - img "Emergency AC repair service — Gardner HVAC technician responding to cooling failure" [ref=e648]
+            - generic [ref=e650]:
+              - img [ref=e652]
+              - generic [ref=e655]:
+                - generic [ref=e656]: 24/7
+                - generic [ref=e657]: Emergency Service
+        - generic [ref=e660]:
+          - generic [ref=e661]:
+            - img [ref=e663]
+            - heading "Ready to Schedule AC Service in Murrieta?" [level=2] [ref=e665]
+            - paragraph [ref=e666]: Same-day air conditioning service across Murrieta, Temecula, and the Inland Empire. Upfront pricing, licensed technicians, and a 24/7 emergency line. Call now or schedule online — our HVAC team picks up.
+          - generic [ref=e667]:
+            - link "Call (951) 246-4337" [ref=e668] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Call (951) 246-4337" [ref=e669]:
+                - generic [ref=e670]:
+                  - img
+                  - text: Call (951) 246-4337
+            - button "Get Free Estimate" [ref=e671]:
+              - generic [ref=e672]:
+                - img
+                - text: Get Free Estimate
+          - generic [ref=e673]:
+            - generic [ref=e674]:
+              - img [ref=e675]
+              - generic [ref=e678]: 24/7 Emergency
+            - generic [ref=e679]:
+              - img [ref=e680]
+              - generic [ref=e682]: Licensed & Insured
+            - generic [ref=e683]:
+              - img [ref=e684]
+              - generic [ref=e686]: 4.9 Star Rating
+  - contentinfo [ref=e687]:
+    - generic [ref=e690]:
+      - generic [ref=e691]:
+        - generic [ref=e693]:
+          - img "Gardner Plumbing Co. logo" [ref=e694]
+          - paragraph [ref=e695]: Professional plumbing services backed by 30+ years of experience and a commitment to excellence. Whether you need repairs, installations, or emergency service—we've got you covered.
+          - generic [ref=e696]:
+            - link "(951) 246-4337 24/7 Emergency Service" [ref=e697] [cursor=pointer]:
+              - /url: tel:19512464337
+              - img [ref=e699]
+              - generic [ref=e701]:
+                - paragraph [ref=e702]: (951) 246-4337
+                - paragraph [ref=e703]: 24/7 Emergency Service
+            - link "office@gardnerplumbingco.com Email for Estimates" [ref=e704] [cursor=pointer]:
+              - /url: mailto:office@gardnerplumbingco.com
+              - img [ref=e706]
+              - generic [ref=e709]:
+                - paragraph [ref=e710]: office@gardnerplumbingco.com
+                - paragraph [ref=e711]: Email for Estimates
+            - link "30714 Wealth St, Murrieta, CA 92563 Location" [ref=e712] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/aCp4BuCRRPcyEWxo9
+              - img [ref=e714]
+              - generic [ref=e717]:
+                - paragraph [ref=e718]: 30714 Wealth St, Murrieta, CA 92563
+                - paragraph [ref=e719]: Location
+          - generic [ref=e720]:
+            - heading "Business Hours" [level=4] [ref=e721]
+            - generic [ref=e722]:
+              - generic [ref=e723]:
+                - generic [ref=e724]: Office (Mon - Fri)
+                - generic [ref=e725]: 8:00 AM - 4:00 PM
+              - generic [ref=e726]:
+                - generic [ref=e727]: Service (Mon - Fri)
+                - generic [ref=e728]: 8:00 AM - 5:00 PM
+              - generic [ref=e729]:
+                - generic [ref=e730]: Saturday - Sunday
+                - generic [ref=e731]: Emergency Only
+              - generic [ref=e733]:
+                - generic [ref=e734]: Emergency
+                - generic [ref=e735]: 24/7 Available
+        - generic [ref=e737]:
+          - generic [ref=e738]:
+            - heading "About Us" [level=4] [ref=e739]
+            - list [ref=e740]:
+              - listitem [ref=e741]:
+                - link "Gardner Plumbing Co. Our story & team" [ref=e742] [cursor=pointer]:
+                  - /url: /about-us
+                  - generic [ref=e743]: Gardner Plumbing Co.
+                  - generic [ref=e744]: Our story & team
+              - listitem [ref=e745]:
+                - link "Contact Us Get in touch today" [ref=e746] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e747]: Contact Us
+                  - generic [ref=e748]: Get in touch today
+              - listitem [ref=e749]:
+                - link "Customer Reviews See what clients say" [ref=e750] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e751]: Customer Reviews
+                  - generic [ref=e752]: See what clients say
+              - listitem [ref=e753]:
+                - link "Service Areas Where we work" [ref=e754] [cursor=pointer]:
+                  - /url: /about-us#service-area
+                  - generic [ref=e755]: Service Areas
+                  - generic [ref=e756]: Where we work
+              - listitem [ref=e757]:
+                - link "Testimonials Success stories" [ref=e758] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e759]: Testimonials
+                  - generic [ref=e760]: Success stories
+              - listitem [ref=e761]:
+                - link "Our Guarantee Quality promise" [ref=e762] [cursor=pointer]:
+                  - /url: /guarantee
+                  - generic [ref=e763]: Our Guarantee
+                  - generic [ref=e764]: Quality promise
+          - generic [ref=e765]:
+            - heading "Quick Links" [level=4] [ref=e766]
+            - list [ref=e767]:
+              - listitem [ref=e768]:
+                - link "Request Service Schedule appointment" [ref=e769] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e770]: Request Service
+                  - generic [ref=e771]: Schedule appointment
+              - listitem [ref=e772]:
+                - link "Emergency Service 24/7 urgent help" [ref=e773] [cursor=pointer]:
+                  - /url: /services/emergency-service
+                  - generic [ref=e774]: Emergency Service
+                  - generic [ref=e775]: 24/7 urgent help
+              - listitem [ref=e776]:
+                - link "FAQ Common questions" [ref=e777] [cursor=pointer]:
+                  - /url: /frequently-asked-questions
+                  - generic [ref=e778]: FAQ
+                  - generic [ref=e779]: Common questions
+              - listitem [ref=e780]:
+                - link "Blog Tips & insights" [ref=e781] [cursor=pointer]:
+                  - /url: /blog
+                  - generic [ref=e782]: Blog
+                  - generic [ref=e783]: Tips & insights
+              - listitem [ref=e784]:
+                - link "Financing Payment options" [ref=e785] [cursor=pointer]:
+                  - /url: /financing
+                  - generic [ref=e786]: Financing
+                  - generic [ref=e787]: Payment options
+              - listitem [ref=e788]:
+                - link "Warranty Info Coverage details" [ref=e789] [cursor=pointer]:
+                  - /url: /warranty
+                  - generic [ref=e790]: Warranty Info
+                  - generic [ref=e791]: Coverage details
+          - generic [ref=e792]:
+            - heading "From Our Blog" [level=4] [ref=e793]
+            - paragraph [ref=e794]: Get expert plumbing tips, home maintenance advice, and industry insights from our latest blog posts.
+            - link "Visit Our Blog" [ref=e796] [cursor=pointer]:
+              - /url: /blog
+            - generic [ref=e797]:
+              - paragraph [ref=e798]: Follow Us
+              - generic [ref=e799]:
+                - link [ref=e800] [cursor=pointer]:
+                  - /url: https://www.facebook.com/people/Gardner-Plumbing-Company/100063665179161/#
+                  - img [ref=e802]
+                - link [ref=e804] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCn8DkWu_niFYrW7jCtsUkUg
+                  - img [ref=e806]
+                - link [ref=e809] [cursor=pointer]:
+                  - /url: https://www.instagram.com/gardnerplumbingco/
+                  - img [ref=e811]
+            - generic [ref=e816]:
+              - generic [ref=e817]: Emergency? Call Now!
+              - link "(951) 246-4337" [ref=e818] [cursor=pointer]:
+                - /url: tel:19512464337
+                - button "(951) 246-4337" [ref=e819]
+      - generic [ref=e822]:
+        - generic [ref=e823]:
+          - paragraph [ref=e824]: © 2024-2025 Gardner Plumbing Co. All rights reserved.
+          - generic [ref=e825]:
+            - img [ref=e826]
+            - generic [ref=e828]: 4.9★ Rated Service
+        - generic [ref=e829]:
+          - link "Privacy Policy" [ref=e830] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Service" [ref=e831] [cursor=pointer]:
+            - /url: /terms-and-services
+          - link "Sitemap" [ref=e832] [cursor=pointer]:
+            - /url: /sitemap_index.xml
+          - button "Cookie Settings" [ref=e833]

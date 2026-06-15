@@ -1,0 +1,649 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "24/7 Emergency Service" [ref=e8] [cursor=pointer]:
+          - /url: /services/emergency-service
+          - img [ref=e9]
+        - link "24/7 Emergency Service" [ref=e12] [cursor=pointer]:
+          - /url: /services/emergency-service
+      - generic [ref=e13]:
+        - link "See Reviews" [ref=e14] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e15]
+        - link "4.9★ Rated Service" [ref=e17] [cursor=pointer]:
+          - /url: /reviews
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - link "Service Area" [ref=e20] [cursor=pointer]:
+          - /url: /reviews
+          - img [ref=e21]
+        - link "Serving Greater Riverside Area" [ref=e24] [cursor=pointer]:
+          - /url: "#service-area"
+      - generic [ref=e25]:
+        - link "Call (951) 246-4337" [ref=e26] [cursor=pointer]:
+          - /url: tel:9512464337
+          - img [ref=e27]
+        - link "(951) 246-4337" [ref=e29] [cursor=pointer]:
+          - /url: tel:9512464337
+  - banner [ref=e30]:
+    - navigation [ref=e32]:
+      - generic [ref=e34]:
+        - link "Go to homepage" [ref=e36] [cursor=pointer]:
+          - /url: /
+          - img "Gardner Plumbing Co. logo" [ref=e37]
+        - generic [ref=e38]:
+          - link "Home" [ref=e39] [cursor=pointer]:
+            - /url: /
+          - link "About Us" [ref=e40] [cursor=pointer]:
+            - /url: /about-us
+          - link "Plumbing" [ref=e42] [cursor=pointer]:
+            - /url: /services
+            - text: Plumbing
+            - img [ref=e43]
+          - link "HVAC" [ref=e46] [cursor=pointer]:
+            - /url: /services/hvac
+            - text: HVAC
+            - img [ref=e47]
+          - link "Electrical" [ref=e50] [cursor=pointer]:
+            - /url: /services/electrical
+            - text: Electrical
+            - img [ref=e51]
+          - link "Reviews" [ref=e53] [cursor=pointer]:
+            - /url: /reviews
+          - link "Contact" [ref=e54] [cursor=pointer]:
+            - /url: /contact-us
+  - main [ref=e55]:
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - navigation [ref=e66]:
+              - navigation [ref=e68]:
+                - generic [ref=e69]:
+                  - generic [ref=e70]:
+                    - link "Home" [ref=e71] [cursor=pointer]:
+                      - /url: /
+                    - img [ref=e72]
+                  - generic [ref=e74]:
+                    - link "Services" [ref=e75] [cursor=pointer]:
+                      - /url: /services
+                    - img [ref=e76]
+                  - generic [ref=e78]:
+                    - link "Electrical" [ref=e79] [cursor=pointer]:
+                      - /url: /services/electrical
+                    - img [ref=e80]
+                  - generic [ref=e83]: Pool & Spa Wiring
+            - generic [ref=e84]:
+              - img [ref=e85]
+              - generic [ref=e88]: Licensed Electrical Service
+            - heading "Pool & Spa Wiring in Murrieta — NEC 680 Compliant, Licensed Electricians" [level=1] [ref=e89]
+            - paragraph [ref=e90]: "Last Updated: June 2026"
+            - paragraph [ref=e91]: Pool and spa electrical work is governed by NEC Article 680 for good reason — water and electricity have zero margin for error. Licensed electricians handle bonding, GFCI circuits, and sub-panel wiring across the Inland Empire.
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - img [ref=e94]
+                - generic [ref=e97]: NEC 680 Compliant
+              - generic [ref=e98]:
+                - img [ref=e99]
+                - generic [ref=e101]: Licensed & Insured
+              - generic [ref=e102]:
+                - img [ref=e103]
+                - generic [ref=e105]: Upfront Pricing
+              - generic [ref=e106]:
+                - img [ref=e107]
+                - generic [ref=e109]: Same-Day Scheduling
+            - generic [ref=e110]:
+              - link "Call (951) 246-4337" [ref=e111] [cursor=pointer]:
+                - /url: tel:9512464337
+                - button "Call (951) 246-4337" [ref=e112]:
+                  - generic [ref=e113]:
+                    - img
+                    - text: Call (951) 246-4337
+              - button "📅 Book Online" [ref=e114]:
+                - generic [ref=e115]: 📅 Book Online
+          - generic [ref=e117]:
+            - img "Gardner electrician inspecting pool equipment sub-panel wiring and bonding at a Murrieta home" [ref=e118]:
+              - generic [ref=e119]:
+                - generic [ref=e120]:
+                  - generic [ref=e121]: IMAGE PLACEHOLDER — HERO
+                  - generic [ref=e122]:
+                    - text: 1000 × 600px |
+                    - generic [ref=e123]: /public/electrical/pool-spa-wiring-hero.webp
+                - button "Copy prompt to clipboard" [ref=e124]: Copy prompt
+              - generic [ref=e125]:
+                - generic [ref=e126]: Prompt
+                - generic [ref=e127]: Photo of an electrician kneeling beside a pool equipment pad in a sunny Inland Empire backyard, midday directional SoCal sunlight. Technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots, red Milwaukee tool bag on hip, visible arm tattoos. Sub-panel door open beside the pad, green bonding wire visible running to pool pump housing, non-contact voltage tester in hand. Residential in-ground pool visible blurred in background, desert-dry landscaping. Safety-compliance vibe — methodical, not dramatic. 50mm equivalent lens, shallow depth of field. Cinematic realism, documentary photography style. Style and likeness of attached reference image.
+              - generic [ref=e128]:
+                - generic [ref=e129]: "Negative: no stock photo look, no white lab coat, no safety vest, no orange or yellow hi-vis vest, no cartoon, no illustration, no text overlay, no watermark, no exposed live wires (safety implication), no obvious shock or spark theatrics, no plumbing tools or pipes, no HVAC equipment, no pool cleaning nets or brushes (this is electrical not pool maintenance), no pool service technician vibe, no green grass lawn, no snow"
+                - generic [ref=e130]: "Ref image: Attach gardnertecharrival.webp or gardnertecharrival2.webp — natural daylight field-work posture; the reference carries face and uniform style data. Do not describe face, age, or ethnicity in the prompt — the reference handles it."
+                - generic [ref=e131]: "Alt text: Gardner electrician inspecting pool equipment sub-panel wiring and bonding at a Murrieta home"
+            - generic [ref=e134]:
+              - img [ref=e136]
+              - generic [ref=e139]:
+                - generic [ref=e140]: Licensed Electrical Service
+                - generic [ref=e141]: Murrieta & Inland Empire
+        - generic [ref=e146]:
+          - generic [ref=e147]:
+            - img [ref=e148]
+            - generic [ref=e150]: Pool or spa with an electrical fault? Don't swim until it's inspected.
+          - generic [ref=e151]:
+            - link "(951) 246-4337" [ref=e152] [cursor=pointer]:
+              - /url: tel:9512464337
+              - generic [ref=e153]:
+                - img [ref=e154]
+                - generic [ref=e156]: (951) 246-4337
+            - generic [ref=e157]: Same-day pool electrical · Murrieta
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - img [ref=e164]
+              - generic [ref=e167]: Our Services
+            - heading "Comprehensive Pool and Spa Electrical Wiring in the Inland Empire" [level=2] [ref=e168]
+            - paragraph [ref=e169]:
+              - text: NEC Article 680 establishes strict electrical requirements for pools, spas, and hot tubs — bonding grids, GFCI-protected circuits, minimum setback distances for outlets and equipment, and specific grounding requirements for metal pool components. Inland Empire homes with pools built before 2005 often have wiring that no longer meets current code. Our electricians handle new pool electrical installation, spa hookup, and fault diagnosis on existing pool wiring. View
+              - link "all electrical installation" [ref=e170] [cursor=pointer]:
+                - /url: /services/electrical/fixtures
+              - text: services.
+          - generic [ref=e171]:
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - img [ref=e179]
+                - heading "NEC 680 Bonding & Grounding" [level=3] [ref=e182]
+              - generic [ref=e183]:
+                - paragraph [ref=e184]: Pool bonding connects all metal components — pool shell rebar, pump, heater, handrails — into a single equipotential grid. Required by NEC 680 and CA code.
+                - list [ref=e185]:
+                  - listitem [ref=e186]:
+                    - img [ref=e187]
+                    - generic [ref=e190]: Equipotential Bonding Grid
+                  - listitem [ref=e191]:
+                    - img [ref=e192]
+                    - generic [ref=e195]: Metal Component Bonding
+                  - listitem [ref=e196]:
+                    - img [ref=e197]
+                    - generic [ref=e200]: Grounding Conductor Install
+                  - listitem [ref=e201]:
+                    - img [ref=e202]
+                    - generic [ref=e205]: Bonding Continuity Test
+            - generic [ref=e209]:
+              - generic [ref=e210]:
+                - img [ref=e213]
+                - heading "GFCI Circuit Installation" [level=3] [ref=e215]
+              - generic [ref=e216]:
+                - paragraph [ref=e217]: NEC 680 requires GFCI protection on all pool and spa circuits within specified distances. We install and verify GFCI breakers at the sub-panel for every pool circuit.
+                - list [ref=e218]:
+                  - listitem [ref=e219]:
+                    - img [ref=e220]
+                    - generic [ref=e223]: GFCI Breaker Install
+                  - listitem [ref=e224]:
+                    - img [ref=e225]
+                    - generic [ref=e228]: Pool Pump GFCI Circuit
+                  - listitem [ref=e229]:
+                    - img [ref=e230]
+                    - generic [ref=e233]: Spa & Hot Tub GFCI
+                  - listitem [ref=e234]:
+                    - img [ref=e235]
+                    - generic [ref=e238]: Code Setback Verification
+            - generic [ref=e242]:
+              - generic [ref=e243]:
+                - img [ref=e246]
+                - heading "Pool Sub-Panel Installation" [level=3] [ref=e249]
+              - generic [ref=e250]:
+                - paragraph [ref=e251]: Dedicated pool sub-panels keep pool equipment circuits separated from the home's main panel — required for most pool builds in Murrieta and Riverside County.
+                - list [ref=e252]:
+                  - listitem [ref=e253]:
+                    - img [ref=e254]
+                    - generic [ref=e257]: Sub-Panel Sizing
+                  - listitem [ref=e258]:
+                    - img [ref=e259]
+                    - generic [ref=e262]: Feeder Circuit from Main
+                  - listitem [ref=e263]:
+                    - img [ref=e264]
+                    - generic [ref=e267]: Pool Equipment Breakers
+                  - listitem [ref=e268]:
+                    - img [ref=e269]
+                    - generic [ref=e272]: Weatherproof Enclosure
+            - generic [ref=e276]:
+              - generic [ref=e277]:
+                - img [ref=e280]
+                - heading "Pool Pump & Equipment Wiring" [level=3] [ref=e282]
+              - generic [ref=e283]:
+                - paragraph [ref=e284]: Pool pump, heater, automation controller, and lighting wiring — including new equipment hookup and fault diagnosis on existing pool electrical.
+                - list [ref=e285]:
+                  - listitem [ref=e286]:
+                    - img [ref=e287]
+                    - generic [ref=e290]: Pump Motor Wiring
+                  - listitem [ref=e291]:
+                    - img [ref=e292]
+                    - generic [ref=e295]: Pool Heater Circuit
+                  - listitem [ref=e296]:
+                    - img [ref=e297]
+                    - generic [ref=e300]: Automation Controller Hook
+                  - listitem [ref=e301]:
+                    - img [ref=e302]
+                    - generic [ref=e305]: Pool Lighting Circuits
+          - generic [ref=e307]:
+            - generic [ref=e308]:
+              - heading "What Changes After Professional Pool & Spa Electrical Work" [level=3] [ref=e309]
+              - generic [ref=e310]:
+                - generic [ref=e311]:
+                  - img [ref=e312]
+                  - generic [ref=e315]: Bonding continuity verified across all metal pool components — grid complete
+                - generic [ref=e316]:
+                  - img [ref=e317]
+                  - generic [ref=e320]: GFCI breakers installed and tested on every pool and spa circuit
+                - generic [ref=e321]:
+                  - img [ref=e322]
+                  - generic [ref=e325]: All equipment within NEC 680 setback distances — no code violations
+                - generic [ref=e326]:
+                  - img [ref=e327]
+                  - generic [ref=e330]: Sub-panel load balanced — no overcrowded breaker slots
+                - generic [ref=e331]:
+                  - img [ref=e332]
+                  - generic [ref=e335]: Pool pump and heater wiring confirmed at rated amperage
+                - generic [ref=e336]:
+                  - img [ref=e337]
+                  - generic [ref=e340]: Grounding conductor continuity tested from sub-panel to equipment
+            - generic [ref=e342]:
+              - img "Before and after pool electrical wiring showing code-compliant GFCI panel and bonding installation by Gardner Electrical in the Inland Empire" [ref=e343]:
+                - generic [ref=e344]:
+                  - generic [ref=e345]:
+                    - generic [ref=e346]: IMAGE PLACEHOLDER — BEFORE / AFTER
+                    - generic [ref=e347]:
+                      - text: 800 × 400px |
+                      - generic [ref=e348]: /public/electrical/pool-spa-wiring-before-after.webp
+                  - button "Copy prompt to clipboard" [ref=e349]: Copy prompt
+                - generic [ref=e350]:
+                  - generic [ref=e351]: Prompt
+                  - generic [ref=e352]: "Split-scene product photograph, single frame divided at vertical center. LEFT HALF: pool equipment pad with unprotected wiring — exposed conduit runs, no GFCI breaker visible, corroded wire connectors at pump motor terminals, surface rust on sub-panel housing, flat daylight. RIGHT HALF: same equipment pad after professional electrical service — weatherproof sub-panel closed and labeled, GFCI breaker visible inside, green bonding wire run neatly to pump housing, clean conduit strapping, weatherproof fittings. Seamless lighting match across both halves, straight-on 35mm lens, no people, no hands, technical documentation style. Concrete pad and desert-dry landscaping background."
+                - generic [ref=e353]:
+                  - generic [ref=e354]: "Negative: no people, no hands visible, no text overlay, no cartoon, no split-screen border or line artifact between halves, no wildly different lighting between left and right, no stock photo softness, no watermark, no pool cleaning equipment, no plumbing fixtures, no HVAC equipment, no pool service vibe"
+                  - generic [ref=e355]: "Alt text: Before and after pool electrical wiring showing code-compliant GFCI panel and bonding installation by Gardner Electrical in the Inland Empire"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: BEFORE
+                  - generic:
+                    - generic: AFTER
+        - generic [ref=e360]:
+          - generic [ref=e361]:
+            - img "Gardner Plumbing Co. electrician and service van ready for pool and spa wiring" [ref=e363]
+            - generic [ref=e366]:
+              - img [ref=e368]
+              - generic [ref=e371]:
+                - generic [ref=e372]: 80+
+                - generic [ref=e373]: Pool/Spa Electrical Jobs
+          - generic [ref=e374]:
+            - generic [ref=e375]:
+              - img [ref=e376]
+              - generic [ref=e378]: Why Choose Our Electrical Team
+            - heading "Why Inland Empire Homeowners Choose Our Electrical Team for Pool Wiring" [level=2] [ref=e379]
+            - paragraph [ref=e380]: "Gardner Plumbing Co. is a licensed electrical contractor serving Murrieta, Temecula, Menifee, and the greater Inland Empire (CA Contractor's License {{CSLB_C10_LICENSE_TBD}}). Our electricians have completed over 80 pool and spa electrical jobs across Riverside County — NEC 680 bonding grids in Canyon Lake, spa sub-panel installs in Temecula, and pool pump wiring troubleshooting across Murrieta and Lake Elsinore. Pool electrical has zero margin for guesswork."
+            - generic [ref=e381]:
+              - generic [ref=e382]:
+                - img [ref=e384]
+                - generic [ref=e386]:
+                  - heading "NEC 680 Expertise" [level=4] [ref=e387]
+                  - paragraph [ref=e388]: Pool and spa electrical is one of the most code-regulated residential applications. Our electricians know NEC Article 680 — not just general wiring practice.
+              - generic [ref=e389]:
+                - img [ref=e391]
+                - generic [ref=e393]:
+                  - heading "Licensed, Permitted Work" [level=4] [ref=e394]
+                  - paragraph [ref=e395]: All pool electrical work in Murrieta requires a permit. We pull permits, coordinate the inspection, and provide you with a signed-off job — no open permits left behind.
+              - generic [ref=e396]:
+                - img [ref=e398]
+                - generic [ref=e401]:
+                  - heading "Multi-Trade Coordination" [level=4] [ref=e402]
+                  - paragraph [ref=e403]: Pool projects involve electrical, plumbing, and sometimes gas. Our multi-trade team coordinates the electrical scope without slowing down the rest of the job.
+              - generic [ref=e404]:
+                - img [ref=e406]
+                - generic [ref=e408]:
+                  - heading "Upfront Pricing" [level=4] [ref=e409]
+                  - paragraph [ref=e410]: Written quote before work begins. If the existing wiring requires remediation before new work can be added, we document it and price it first.
+            - button "Get Free Estimate" [ref=e411]:
+              - generic [ref=e412]:
+                - img
+                - text: Get Free Estimate
+        - generic [ref=e416]:
+          - generic [ref=e417]:
+            - generic [ref=e418]:
+              - img [ref=e419]
+              - generic [ref=e422]: Service Areas
+            - heading "Serving Murrieta, Temecula, and All of Riverside County" [level=2] [ref=e423]
+            - paragraph [ref=e424]: Pool and spa wiring service is available across the Inland Empire, with fast response times from our Murrieta base. We cover Temecula, Menifee, Perris, Canyon Lake, Lake Elsinore, Corona, Moreno Valley, Riverside, and Hemet — same-day availability throughout.
+          - generic [ref=e425]:
+            - link "Visit the official website for Temecula" [ref=e426] [cursor=pointer]:
+              - /url: https://temeculaca.gov
+              - img [ref=e427]
+              - text: Temecula
+            - link "Visit the official website for Murrieta" [ref=e430] [cursor=pointer]:
+              - /url: https://murrietaca.gov
+              - img [ref=e431]
+              - text: Murrieta
+            - link "Visit the official website for Perris" [ref=e434] [cursor=pointer]:
+              - /url: https://www.cityofperris.org
+              - img [ref=e435]
+              - text: Perris
+            - link "Visit the official website for Menifee" [ref=e438] [cursor=pointer]:
+              - /url: https://cityofmenifee.us
+              - img [ref=e439]
+              - text: Menifee
+            - link "Visit the official website for Canyon Lake" [ref=e442] [cursor=pointer]:
+              - /url: https://www.canyonlakeca.gov
+              - img [ref=e443]
+              - text: Canyon Lake
+            - link "Visit the official website for Lake Elsinore" [ref=e446] [cursor=pointer]:
+              - /url: https://www.lake-elsinore.org
+              - img [ref=e447]
+              - text: Lake Elsinore
+            - link "Visit the official website for Corona" [ref=e450] [cursor=pointer]:
+              - /url: https://www.coronaca.gov
+              - img [ref=e451]
+              - text: Corona
+            - link "Visit the official website for Moreno Valley" [ref=e454] [cursor=pointer]:
+              - /url: https://moval.org
+              - img [ref=e455]
+              - text: Moreno Valley
+            - link "Visit the official website for Riverside" [ref=e458] [cursor=pointer]:
+              - /url: https://riversideca.gov
+              - img [ref=e459]
+              - text: Riverside
+            - link "Visit the official website for Hemet" [ref=e462] [cursor=pointer]:
+              - /url: https://www.hemetca.gov
+              - img [ref=e463]
+              - text: Hemet
+          - generic [ref=e467]:
+            - heading "Don't See Your Area?" [level=3] [ref=e468]
+            - paragraph [ref=e469]: We serve additional areas throughout Riverside County. Call to confirm service availability.
+            - link "Check Service Area" [ref=e470] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Check Service Area" [ref=e471]:
+                - generic [ref=e472]:
+                  - img
+                  - text: Check Service Area
+        - generic [ref=e477]:
+          - generic [ref=e478]:
+            - generic [ref=e479]:
+              - img [ref=e480]
+              - generic [ref=e483]: FAQ
+            - heading "Pool and Spa Wiring Questions and Answers" [level=2] [ref=e484]
+            - paragraph [ref=e485]: Find answers to common questions about pool and spa electrical wiring in Murrieta and the Inland Empire.
+          - generic [ref=e487]:
+            - generic [ref=e490]:
+              - img [ref=e492]
+              - heading "Questions & Answers" [level=3] [ref=e495]
+            - generic [ref=e497]:
+              - heading "What is NEC Article 680 and why does it govern pool wiring?" [level=3] [ref=e502]:
+                - button "What is NEC Article 680 and why does it govern pool wiring?" [ref=e503]:
+                  - generic [ref=e504]:
+                    - img [ref=e506]
+                    - text: What is NEC Article 680 and why does it govern pool wiring?
+                  - img
+              - heading "What is pool bonding and why is it required?" [level=3] [ref=e513]:
+                - button "What is pool bonding and why is it required?" [ref=e514]:
+                  - generic [ref=e515]:
+                    - img [ref=e517]
+                    - text: What is pool bonding and why is it required?
+                  - img
+              - heading "How much does pool and spa electrical wiring cost in Murrieta?" [level=3] [ref=e524]:
+                - button "How much does pool and spa electrical wiring cost in Murrieta?" [ref=e525]:
+                  - generic [ref=e526]:
+                    - img [ref=e528]
+                    - text: How much does pool and spa electrical wiring cost in Murrieta?
+                  - img
+              - heading "My pool pump is tripping the breaker — is that dangerous?" [level=3] [ref=e535]:
+                - button "My pool pump is tripping the breaker — is that dangerous?" [ref=e536]:
+                  - generic [ref=e537]:
+                    - img [ref=e539]
+                    - text: My pool pump is tripping the breaker — is that dangerous?
+                  - img
+              - heading "Do I need a permit to add electrical to my pool in Murrieta?" [level=3] [ref=e546]:
+                - button "Do I need a permit to add electrical to my pool in Murrieta?" [ref=e547]:
+                  - generic [ref=e548]:
+                    - img [ref=e550]
+                    - text: Do I need a permit to add electrical to my pool in Murrieta?
+                  - img
+              - heading "Can I add pool lighting to an existing pool?" [level=3] [ref=e557]:
+                - button "Can I add pool lighting to an existing pool?" [ref=e558]:
+                  - generic [ref=e559]:
+                    - img [ref=e561]
+                    - text: Can I add pool lighting to an existing pool?
+                  - img
+          - generic [ref=e565]:
+            - generic [ref=e566]:
+              - img [ref=e568]
+              - heading "Have More Questions?" [level=3] [ref=e571]
+            - paragraph [ref=e572]:
+              - text: Can't find what you're looking for? Our electricians are standing by to answer your questions about pool and spa electrical compliance. Need immediate help? Call our
+              - link "24/7 emergency line" [ref=e573] [cursor=pointer]:
+                - /url: tel:9512464337
+              - text: .
+            - generic [ref=e574]:
+              - link "View Full FAQ" [ref=e575] [cursor=pointer]:
+                - /url: /frequently-asked-questions
+                - button "View Full FAQ" [ref=e576]:
+                  - generic [ref=e577]:
+                    - img
+                    - text: View Full FAQ
+              - link "Contact Us" [ref=e578] [cursor=pointer]:
+                - /url: /contact-us
+                - button "Contact Us" [ref=e579]:
+                  - generic [ref=e580]:
+                    - img
+                    - text: Contact Us
+        - generic [ref=e585]:
+          - generic [ref=e586]:
+            - generic [ref=e587]:
+              - img [ref=e588]
+              - generic [ref=e590]: Emergency Service
+            - heading "When Pool or Spa Wiring Needs Immediate Attention" [level=2] [ref=e591]
+            - paragraph [ref=e592]: Pool and spa electrical faults are life-safety emergencies. A tingling sensation in the water, a pump that keeps tripping its breaker, visible corrosion on bonding connections, or a GFCI that trips every time the pool equipment runs — these are not situations to assess after the weekend. Our line is live 24 hours a day.
+            - generic [ref=e593]:
+              - heading "Common Emergency Situations:" [level=3] [ref=e594]
+              - generic [ref=e595]:
+                - generic [ref=e596]:
+                  - img [ref=e597]
+                  - generic [ref=e599]: Tingling or shock sensation in pool or spa water
+                - generic [ref=e600]:
+                  - img [ref=e601]
+                  - generic [ref=e603]: Pool pump repeatedly tripping circuit breaker
+                - generic [ref=e604]:
+                  - img [ref=e605]
+                  - generic [ref=e607]: GFCI breaker tripping on pool or spa circuit
+                - generic [ref=e608]:
+                  - img [ref=e609]
+                  - generic [ref=e611]: Visible sparking at pool sub-panel or equipment
+                - generic [ref=e612]:
+                  - img [ref=e613]
+                  - generic [ref=e615]: Burning smell from pool pump motor or wiring
+                - generic [ref=e616]:
+                  - img [ref=e617]
+                  - generic [ref=e619]: Pool lighting flickering or shorting GFCI repeatedly
+                - generic [ref=e620]:
+                  - img [ref=e621]
+                  - generic [ref=e623]: Visible corrosion or damage on bonding conductors
+                - generic [ref=e624]:
+                  - img [ref=e625]
+                  - generic [ref=e627]: Pool heater causing electrical fault at panel
+            - 'link "Emergency: (951) 246-4337" [ref=e629] [cursor=pointer]':
+              - /url: tel:9512464337
+              - 'button "Emergency: (951) 246-4337" [ref=e630]':
+                - generic [ref=e631]:
+                  - img
+                  - text: "Emergency: (951) 246-4337"
+          - generic [ref=e633]:
+            - img "Emergency electrical service — Gardner electrician responding to pool wiring fault" [ref=e634]
+            - generic [ref=e636]:
+              - img [ref=e638]
+              - generic [ref=e641]:
+                - generic [ref=e642]: 24/7
+                - generic [ref=e643]: Emergency Service
+        - generic [ref=e646]:
+          - generic [ref=e647]:
+            - img [ref=e649]
+            - heading "Ready to Wire Your Pool or Spa the Right Way?" [level=2] [ref=e651]
+            - paragraph [ref=e652]: NEC 680-compliant pool and spa wiring across Murrieta, Temecula, and the Inland Empire. Bonding grids, GFCI circuits, sub-panel installation, and fault diagnosis — licensed electricians, upfront pricing, permitted work. Call now or schedule online.
+          - generic [ref=e653]:
+            - link "Call (951) 246-4337" [ref=e654] [cursor=pointer]:
+              - /url: tel:9512464337
+              - button "Call (951) 246-4337" [ref=e655]:
+                - generic [ref=e656]:
+                  - img
+                  - text: Call (951) 246-4337
+            - button "Get Free Estimate" [ref=e657]:
+              - generic [ref=e658]:
+                - img
+                - text: Get Free Estimate
+          - generic [ref=e659]:
+            - generic [ref=e660]:
+              - img [ref=e661]
+              - generic [ref=e664]: Same-Day Service
+            - generic [ref=e665]:
+              - img [ref=e666]
+              - generic [ref=e668]: Licensed & Insured
+            - generic [ref=e669]:
+              - img [ref=e670]
+              - generic [ref=e672]: 4.9 Star Rating
+  - contentinfo [ref=e673]:
+    - generic [ref=e676]:
+      - generic [ref=e677]:
+        - generic [ref=e679]:
+          - img "Gardner Plumbing Co. logo" [ref=e680]
+          - paragraph [ref=e681]: Professional plumbing services backed by 30+ years of experience and a commitment to excellence. Whether you need repairs, installations, or emergency service—we've got you covered.
+          - generic [ref=e682]:
+            - link "(951) 246-4337 24/7 Emergency Service" [ref=e683] [cursor=pointer]:
+              - /url: tel:19512464337
+              - img [ref=e685]
+              - generic [ref=e687]:
+                - paragraph [ref=e688]: (951) 246-4337
+                - paragraph [ref=e689]: 24/7 Emergency Service
+            - link "office@gardnerplumbingco.com Email for Estimates" [ref=e690] [cursor=pointer]:
+              - /url: mailto:office@gardnerplumbingco.com
+              - img [ref=e692]
+              - generic [ref=e695]:
+                - paragraph [ref=e696]: office@gardnerplumbingco.com
+                - paragraph [ref=e697]: Email for Estimates
+            - link "30714 Wealth St, Murrieta, CA 92563 Location" [ref=e698] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/aCp4BuCRRPcyEWxo9
+              - img [ref=e700]
+              - generic [ref=e703]:
+                - paragraph [ref=e704]: 30714 Wealth St, Murrieta, CA 92563
+                - paragraph [ref=e705]: Location
+          - generic [ref=e706]:
+            - heading "Business Hours" [level=4] [ref=e707]
+            - generic [ref=e708]:
+              - generic [ref=e709]:
+                - generic [ref=e710]: Office (Mon - Fri)
+                - generic [ref=e711]: 8:00 AM - 4:00 PM
+              - generic [ref=e712]:
+                - generic [ref=e713]: Service (Mon - Fri)
+                - generic [ref=e714]: 8:00 AM - 5:00 PM
+              - generic [ref=e715]:
+                - generic [ref=e716]: Saturday - Sunday
+                - generic [ref=e717]: Emergency Only
+              - generic [ref=e719]:
+                - generic [ref=e720]: Emergency
+                - generic [ref=e721]: 24/7 Available
+        - generic [ref=e723]:
+          - generic [ref=e724]:
+            - heading "About Us" [level=4] [ref=e725]
+            - list [ref=e726]:
+              - listitem [ref=e727]:
+                - link "Gardner Plumbing Co. Our story & team" [ref=e728] [cursor=pointer]:
+                  - /url: /about-us
+                  - generic [ref=e729]: Gardner Plumbing Co.
+                  - generic [ref=e730]: Our story & team
+              - listitem [ref=e731]:
+                - link "Contact Us Get in touch today" [ref=e732] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e733]: Contact Us
+                  - generic [ref=e734]: Get in touch today
+              - listitem [ref=e735]:
+                - link "Customer Reviews See what clients say" [ref=e736] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e737]: Customer Reviews
+                  - generic [ref=e738]: See what clients say
+              - listitem [ref=e739]:
+                - link "Service Areas Where we work" [ref=e740] [cursor=pointer]:
+                  - /url: /about-us#service-area
+                  - generic [ref=e741]: Service Areas
+                  - generic [ref=e742]: Where we work
+              - listitem [ref=e743]:
+                - link "Testimonials Success stories" [ref=e744] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e745]: Testimonials
+                  - generic [ref=e746]: Success stories
+              - listitem [ref=e747]:
+                - link "Our Guarantee Quality promise" [ref=e748] [cursor=pointer]:
+                  - /url: /guarantee
+                  - generic [ref=e749]: Our Guarantee
+                  - generic [ref=e750]: Quality promise
+          - generic [ref=e751]:
+            - heading "Quick Links" [level=4] [ref=e752]
+            - list [ref=e753]:
+              - listitem [ref=e754]:
+                - link "Request Service Schedule appointment" [ref=e755] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e756]: Request Service
+                  - generic [ref=e757]: Schedule appointment
+              - listitem [ref=e758]:
+                - link "Emergency Service 24/7 urgent help" [ref=e759] [cursor=pointer]:
+                  - /url: /services/emergency-service
+                  - generic [ref=e760]: Emergency Service
+                  - generic [ref=e761]: 24/7 urgent help
+              - listitem [ref=e762]:
+                - link "FAQ Common questions" [ref=e763] [cursor=pointer]:
+                  - /url: /frequently-asked-questions
+                  - generic [ref=e764]: FAQ
+                  - generic [ref=e765]: Common questions
+              - listitem [ref=e766]:
+                - link "Blog Tips & insights" [ref=e767] [cursor=pointer]:
+                  - /url: /blog
+                  - generic [ref=e768]: Blog
+                  - generic [ref=e769]: Tips & insights
+              - listitem [ref=e770]:
+                - link "Financing Payment options" [ref=e771] [cursor=pointer]:
+                  - /url: /financing
+                  - generic [ref=e772]: Financing
+                  - generic [ref=e773]: Payment options
+              - listitem [ref=e774]:
+                - link "Warranty Info Coverage details" [ref=e775] [cursor=pointer]:
+                  - /url: /warranty
+                  - generic [ref=e776]: Warranty Info
+                  - generic [ref=e777]: Coverage details
+          - generic [ref=e778]:
+            - heading "From Our Blog" [level=4] [ref=e779]
+            - paragraph [ref=e780]: Get expert plumbing tips, home maintenance advice, and industry insights from our latest blog posts.
+            - link "Visit Our Blog" [ref=e782] [cursor=pointer]:
+              - /url: /blog
+            - generic [ref=e783]:
+              - paragraph [ref=e784]: Follow Us
+              - generic [ref=e785]:
+                - link [ref=e786] [cursor=pointer]:
+                  - /url: https://www.facebook.com/people/Gardner-Plumbing-Company/100063665179161/#
+                  - img [ref=e788]
+                - link [ref=e790] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCn8DkWu_niFYrW7jCtsUkUg
+                  - img [ref=e792]
+                - link [ref=e795] [cursor=pointer]:
+                  - /url: https://www.instagram.com/gardnerplumbingco/
+                  - img [ref=e797]
+            - generic [ref=e802]:
+              - generic [ref=e803]: Emergency? Call Now!
+              - link "(951) 246-4337" [ref=e804] [cursor=pointer]:
+                - /url: tel:19512464337
+                - button "(951) 246-4337" [ref=e805]
+      - generic [ref=e808]:
+        - generic [ref=e809]:
+          - paragraph [ref=e810]: © 2024-2025 Gardner Plumbing Co. All rights reserved.
+          - generic [ref=e811]:
+            - img [ref=e812]
+            - generic [ref=e814]: 4.9★ Rated Service
+        - generic [ref=e815]:
+          - link "Privacy Policy" [ref=e816] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Service" [ref=e817] [cursor=pointer]:
+            - /url: /terms-and-services
+          - link "Sitemap" [ref=e818] [cursor=pointer]:
+            - /url: /sitemap_index.xml
+          - button "Cookie Settings" [ref=e819]

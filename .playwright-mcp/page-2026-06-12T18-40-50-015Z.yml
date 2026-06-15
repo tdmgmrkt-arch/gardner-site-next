@@ -1,0 +1,155 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - link "24/7 Emergency Service" [ref=e8] [cursor=pointer]:
+        - /url: /services/emergency-service
+        - img [ref=e9]
+      - link "24/7 Emergency Service" [ref=e12] [cursor=pointer]:
+        - /url: /services/emergency-service
+    - generic [ref=e14]:
+      - link "Call (951) 246-4337" [ref=e15] [cursor=pointer]:
+        - /url: tel:9512464337
+        - img [ref=e16]
+      - link "(951) 246-4337" [ref=e18] [cursor=pointer]:
+        - /url: tel:9512464337
+  - banner [ref=e19]:
+    - navigation [ref=e21]:
+      - generic [ref=e23]:
+        - link "Go to homepage" [ref=e25] [cursor=pointer]:
+          - /url: /
+          - img "Gardner Plumbing Co. logo" [ref=e26]
+        - button [ref=e28]:
+          - img [ref=e29]
+  - main [ref=e30]:
+    - main [ref=e32]:
+      - generic [ref=e34]:
+        - heading "AC Repair" [level=1] [ref=e35]
+        - paragraph [ref=e36]:
+          - text: Coming soon — call
+          - link "(951) 246-4337" [ref=e37] [cursor=pointer]:
+            - /url: tel:9512464337
+          - text: to schedule service today.
+        - generic [ref=e38]:
+          - link "Call (951) 246-4337" [ref=e39] [cursor=pointer]:
+            - /url: tel:9512464337
+          - link "Back to Services" [ref=e40] [cursor=pointer]:
+            - /url: /services
+  - contentinfo [ref=e41]:
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e47]:
+          - img "Gardner Plumbing Co. logo" [ref=e48]
+          - paragraph [ref=e49]: Professional plumbing services backed by 30+ years of experience and a commitment to excellence. Whether you need repairs, installations, or emergency service—we've got you covered.
+          - generic [ref=e50]:
+            - link "(951) 246-4337 24/7 Emergency Service" [ref=e51] [cursor=pointer]:
+              - /url: tel:19512464337
+              - img [ref=e53]
+              - generic [ref=e55]:
+                - paragraph [ref=e56]: (951) 246-4337
+                - paragraph [ref=e57]: 24/7 Emergency Service
+            - link "office@gardnerplumbingco.com Email for Estimates" [ref=e58] [cursor=pointer]:
+              - /url: mailto:office@gardnerplumbingco.com
+              - img [ref=e60]
+              - generic [ref=e63]:
+                - paragraph [ref=e64]: office@gardnerplumbingco.com
+                - paragraph [ref=e65]: Email for Estimates
+            - link "30714 Wealth St, Murrieta, CA 92563 Location" [ref=e66] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/aCp4BuCRRPcyEWxo9
+              - img [ref=e68]
+              - generic [ref=e71]:
+                - paragraph [ref=e72]: 30714 Wealth St, Murrieta, CA 92563
+                - paragraph [ref=e73]: Location
+          - generic [ref=e74]:
+            - heading "Business Hours" [level=4] [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e77]:
+                - generic [ref=e78]: Office (Mon - Fri)
+                - generic [ref=e79]: 8:00 AM - 4:00 PM
+              - generic [ref=e80]:
+                - generic [ref=e81]: Service (Mon - Fri)
+                - generic [ref=e82]: 8:00 AM - 5:00 PM
+              - generic [ref=e83]:
+                - generic [ref=e84]: Saturday - Sunday
+                - generic [ref=e85]: Emergency Only
+              - generic [ref=e87]:
+                - generic [ref=e88]: Emergency
+                - generic [ref=e89]: 24/7 Available
+        - generic [ref=e91]:
+          - heading "Quick Links & About" [level=4] [ref=e92]
+          - generic [ref=e93]:
+            - list [ref=e94]:
+              - listitem [ref=e95]:
+                - link "Gardner Plumbing Co. Our story & team" [ref=e96] [cursor=pointer]:
+                  - /url: /about-us
+                  - generic [ref=e97]: Gardner Plumbing Co.
+                  - generic [ref=e98]: Our story & team
+              - listitem [ref=e99]:
+                - link "Contact Us Get in touch today" [ref=e100] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e101]: Contact Us
+                  - generic [ref=e102]: Get in touch today
+              - listitem [ref=e103]:
+                - link "Customer Reviews See what clients say" [ref=e104] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e105]: Customer Reviews
+                  - generic [ref=e106]: See what clients say
+              - listitem [ref=e107]:
+                - link "Service Areas Where we work" [ref=e108] [cursor=pointer]:
+                  - /url: /about-us#service-area
+                  - generic [ref=e109]: Service Areas
+                  - generic [ref=e110]: Where we work
+              - listitem [ref=e111]:
+                - link "Testimonials Success stories" [ref=e112] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=e113]: Testimonials
+                  - generic [ref=e114]: Success stories
+              - listitem [ref=e115]:
+                - link "Our Guarantee Quality promise" [ref=e116] [cursor=pointer]:
+                  - /url: /guarantee
+                  - generic [ref=e117]: Our Guarantee
+                  - generic [ref=e118]: Quality promise
+            - list [ref=e119]:
+              - listitem [ref=e120]:
+                - link "Request Service Schedule appointment" [ref=e121] [cursor=pointer]:
+                  - /url: /contact-us
+                  - generic [ref=e122]: Request Service
+                  - generic [ref=e123]: Schedule appointment
+              - listitem [ref=e124]:
+                - link "Emergency Service 24/7 urgent help" [ref=e125] [cursor=pointer]:
+                  - /url: /services/emergency-service
+                  - generic [ref=e126]: Emergency Service
+                  - generic [ref=e127]: 24/7 urgent help
+              - listitem [ref=e128]:
+                - link "FAQ Common questions" [ref=e129] [cursor=pointer]:
+                  - /url: /frequently-asked-questions
+                  - generic [ref=e130]: FAQ
+                  - generic [ref=e131]: Common questions
+              - listitem [ref=e132]:
+                - link "Blog Tips & insights" [ref=e133] [cursor=pointer]:
+                  - /url: /blog
+                  - generic [ref=e134]: Blog
+                  - generic [ref=e135]: Tips & insights
+              - listitem [ref=e136]:
+                - link "Financing Payment options" [ref=e137] [cursor=pointer]:
+                  - /url: /financing
+                  - generic [ref=e138]: Financing
+                  - generic [ref=e139]: Payment options
+              - listitem [ref=e140]:
+                - link "Warranty Info Coverage details" [ref=e141] [cursor=pointer]:
+                  - /url: /warranty
+                  - generic [ref=e142]: Warranty Info
+                  - generic [ref=e143]: Coverage details
+      - generic [ref=e146]:
+        - generic [ref=e147]:
+          - paragraph [ref=e148]: © 2024-2025 Gardner Plumbing Co. All rights reserved.
+          - generic [ref=e149]:
+            - img [ref=e150]
+            - generic [ref=e152]: 4.9★ Rated Service
+        - generic [ref=e153]:
+          - link "Privacy Policy" [ref=e154] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Service" [ref=e155] [cursor=pointer]:
+            - /url: /terms-and-services
+          - link "Sitemap" [ref=e156] [cursor=pointer]:
+            - /url: /sitemap_index.xml
+          - button "Cookie Settings" [ref=e157]
