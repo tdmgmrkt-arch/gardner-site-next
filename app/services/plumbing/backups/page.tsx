@@ -4,12 +4,12 @@ export const metadata = {
   title: "Sewer & Drain Backup Services",
   description: "Emergency service for hazardous sewer and drain backups in Riverside County. We clear the clog, clean the spill, and sanitize your home to ensure it's safe.",
   alternates: {
-    canonical: '/services/backups'
+    canonical: '/services/plumbing/backups'
   },
   openGraph: {
     title: "Sewer & Drain Backup Services | Gardner Plumbing Co.",
     description: "Emergency service for hazardous sewer and drain backups. Professional cleanup and sanitization.",
-    url: '/services/backups',
+    url: '/services/plumbing/backups',
     images: ['/gardner_logo.webp']
   }
 };

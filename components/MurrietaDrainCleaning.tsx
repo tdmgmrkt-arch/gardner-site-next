@@ -157,7 +157,7 @@ export function MurrietaDrainCleaning() {
                     items={[
                       { label: "Home", href: "/" },
                       { label: "Services", href: "/services" },
-                      { label: "Drain Cleaning", href: "/services/drain-cleaning" },
+                      { label: "Drain Cleaning", href: "/services/plumbing/drain-cleaning" },
                       { label: "Murrieta" }
                     ]}
                   />
@@ -192,11 +192,11 @@ export function MurrietaDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button size="lg" className="min-w-[220px] bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Call (951) 428-5551
+                      Call (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -253,11 +253,11 @@ export function MurrietaDrainCleaning() {
                 </span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                <Link href="tel:9514285551">
+                <Link href="tel:9512464337">
                   <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
                     <Phone className="h-5 w-5 text-red-100" />
                     <span className="text-white font-bold text-lg">
-                      (951) 428-5551
+                      (951) 246-4337
                     </span>
                   </div>
                 </Link>
@@ -297,10 +297,10 @@ export function MurrietaDrainCleaning() {
                 As Murrieta has grown from a small town to a thriving city, our plumbing company has grown alongside it. We understand the drainage challenges unique to this area - from the newer developments in Vintage Hills where improper installation sometimes causes issues, to older neighborhoods like The Village where aging pipes and tree roots create recurring problems. Our technicians are familiar with every Murrieta neighborhood and the specific plumbing characteristics of properties throughout the city.
               </p>
               <p>
-                Our comprehensive <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">drain cleaning services</Link> utilize advanced technology including high-definition video cameras to diagnose problems and powerful <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting equipment</Link> to thoroughly clean your pipes. Unlike quick-fix solutions that only punch a hole through clogs, our methods completely remove buildup from pipe walls, providing long-lasting results that prevent recurring blockages.
+                Our comprehensive <Link href="/services/plumbing/drain-cleaning" className="text-red-400 hover:text-red-300 underline">drain cleaning services</Link> utilize advanced technology including high-definition video cameras to diagnose problems and powerful <Link href="/services/plumbing/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting equipment</Link> to thoroughly clean your pipes. Unlike quick-fix solutions that only punch a hole through clogs, our methods completely remove buildup from pipe walls, providing long-lasting results that prevent recurring blockages.
               </p>
               <p>
-                We also understand that drain emergencies create stress and disruption. That's why we offer <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link> throughout Murrieta with rapid response times - typically arriving within 90 minutes of your call. Our trucks carry complete drain cleaning equipment, allowing us to solve most problems on the first visit without delays for equipment or parts. From routine maintenance to urgent <Link href="/services/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line issues</Link>, we're Murrieta's trusted drain cleaning experts.
+                We also understand that drain emergencies create stress and disruption. That's why we offer <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link> throughout Murrieta with rapid response times - typically arriving within 90 minutes of your call. Our trucks carry complete drain cleaning equipment, allowing us to solve most problems on the first visit without delays for equipment or parts. From routine maintenance to urgent <Link href="/services/plumbing/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line issues</Link>, we're Murrieta's trusted drain cleaning experts.
               </p>
             </div>
           </div>
@@ -544,11 +544,11 @@ export function MurrietaDrainCleaning() {
               Our Murrieta drain cleaning specialists are ready to answer your questions and provide expert solutions. Contact us for <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">a free consultation</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="tel:9514285551">
+              <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </Link>
@@ -618,14 +618,14 @@ export function MurrietaDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
                   >
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Emergency: (951) 428-5551
+                      Emergency: (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -678,11 +678,11 @@ export function MurrietaDrainCleaning() {
               Serving Greer Ranch, Spencer's Crossing, Wildomar Heights, The Village, Vintage Hills, Copper Canyon, and all Murrieta neighborhoods.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a href="tel:9514285551">
+              <a href="tel:9512464337">
                 <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </a>

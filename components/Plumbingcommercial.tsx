@@ -77,21 +77,21 @@ export function Plumbingcommercial() {
       title: "Piping & Repiping",
       desc: "Copper, PEX, steel, and PVC for domestic, drain, and vent systems.",
       bullets: ["Corrosion solutions", "Isolation valving", "Phased work"],
-      link: "/services/piping-and-repiping",
+      link: "/services/plumbing/piping-and-repiping",
     },
     {
       icon: Droplets,
       title: "Drain & Sewer",
       desc: "Stoppages cleared and lines restored with minimal downtime.",
       bullets: ["Camera inspection", "Localized repair", "Grease management"],
-      link: "/services/sewer-and-septic",
+      link: "/services/plumbing/sewer-and-septic",
     },
     {
       icon: Zap,
       title: "Hydro Jetting",
       desc: "High-pressure jetting to cut roots, grease, and scale from mains.",
       bullets: ["Maintenance plans", "Video verification", "24/7 availability"],
-      link: "/services/hydro-jetting",
+      link: "/services/plumbing/hydro-jetting",
     },
     {
       icon: Clock,
@@ -191,7 +191,7 @@ export function Plumbingcommercial() {
               </h1>
 
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                From design/build to <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">urgent repairs</Link> and maintenance, we keep your facility compliant and operational with minimal downtime. Our work follows <a href="https://codes.iccsafe.org/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">IBC standards</a>.
+                From design/build to <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">urgent repairs</Link> and maintenance, we keep your facility compliant and operational with minimal downtime. Our work follows <a href="https://codes.iccsafe.org/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">IBC standards</a>.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">

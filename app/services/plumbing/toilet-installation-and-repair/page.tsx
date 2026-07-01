@@ -4,12 +4,12 @@ export const metadata = {
   title: "Toilet Repair & Installation",
   description: "Expert toilet repair and installation services for homes and businesses in Riverside County.",
   alternates: {
-    canonical: '/services/toilet-installation-and-repair'
+    canonical: '/services/plumbing/toilet-installation-and-repair'
   },
   openGraph: {
     title: "Toilet Repair & Installation | Gardner Plumbing Co.",
     description: "Expert toilet repair and installation services for homes and businesses in Riverside County.",
-    url: '/services/toilet-installation-and-repair',
+    url: '/services/plumbing/toilet-installation-and-repair',
     images: ['/gardner_logo.webp']
   }
 };

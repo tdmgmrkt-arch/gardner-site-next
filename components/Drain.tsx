@@ -15,13 +15,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-import { 
-  Droplets, 
-  Clock, 
-  Shield, 
-  CheckCircle, 
-  ArrowRight, 
-  Phone, 
+import {
+  Droplets,
+  Clock,
+  Shield,
+  CheckCircle,
+  ArrowRight,
+  Phone,
   DollarSign,
   Wrench,
   Calendar,
@@ -34,6 +34,8 @@ import {
   Star,
   AlertTriangle
 } from "lucide-react";
+import { GardnerPromise } from "./GardnerPromise";
+import { CleanVisitPromise } from "./CleanVisitPromise";
 
 const cityLinks: Record<string, string> = {
   Temecula: "https://temeculaca.gov",
@@ -50,7 +52,11 @@ const cityLinks: Record<string, string> = {
   Wildomar: "https://cityofwildomar.org",
 };
 
-export function Drain() {
+type DrainProps = {
+  reviewCount?: string;
+};
+
+export function Drain({ reviewCount = "900+" }: DrainProps = {}) {
 
 const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -353,7 +359,7 @@ const services = [
               Complete <span className="text-gradient bg-gradient-to-r from-blue-400 to-green-600 bg-clip-text text-transparent">Drain Cleaning</span> Solutions
             </h2>
             <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-              From simple clogs to complex blockages, our experienced technicians use the latest equipment and techniques to restore your drains to perfect working condition. We also provide <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting services</Link> for thorough cleaning.
+              From simple clogs to complex blockages, our experienced technicians use the latest equipment and techniques to restore your drains to perfect working condition. We also provide <Link href="/services/plumbing/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting services</Link> for thorough cleaning.
             </p>
           </div>
 
@@ -740,7 +746,7 @@ const services = [
                 <h3 className="text-2xl sm:text-3xl font-bold text-white">Have More Questions?</h3>
               </div>
               <p className="text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-                Can't find what you're looking for? Our drain cleaning and repair experts are standing by to answer your questions and schedule your professional drain cleaning service. Need immediate help? Visit our <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency service page</Link>.
+                Can't find what you're looking for? Our drain cleaning and repair experts are standing by to answer your questions and schedule your professional drain cleaning service. Need immediate help? Visit our <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency service page</Link>.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
                 <Link href="/frequently-asked-questions">
@@ -868,11 +874,17 @@ const services = [
 </section>
 
 
+      {/* Gardner Promise */}
+      <GardnerPromise reviewCount={reviewCount} />
+
+      {/* Clean Visit Promise */}
+      <CleanVisitPromise reviewCount={reviewCount} />
+
       {/* Final CTA Section */}
       <section className="relative overflow-hidden">
-        <div 
+        <div
           className="py-12 sm:py-16"
-          style={{ 
+          style={{
             background: `
               radial-gradient(ellipse at center, #1f2937 0%, #111827 50%, #000000 100%),
               linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)

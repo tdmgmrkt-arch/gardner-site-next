@@ -3,14 +3,14 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Lake Elsinore Drain Cleaning | Professional Service | Gardner Plumbing",
-  description: "Expert drain cleaning in Lake Elsinore, CA. Serving downtown, lakefront properties, Canyon Hills & Rosetta Canyon. Same-day service, 24/7 emergency. Call (951) 428-5551.",
+  description: "Expert drain cleaning in Lake Elsinore, CA. Serving downtown, lakefront properties, Canyon Hills & Rosetta Canyon. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
-    canonical: '/services/lake-elsinore-drain-cleaning'
+    canonical: '/services/plumbing/lake-elsinore-drain-cleaning'
   },
   openGraph: {
     title: "Lake Elsinore Drain Cleaning | Gardner Plumbing Co.",
     description: "Professional drain cleaning throughout Lake Elsinore. Fast response, licensed technicians, 30+ years experience.",
-    url: '/services/lake-elsinore-drain-cleaning',
+    url: '/services/plumbing/lake-elsinore-drain-cleaning',
     images: ['/gardner_logo.webp']
   }
 };
@@ -47,7 +47,7 @@ const faqs = [
 const breadcrumbs = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
-  { name: "Lake Elsinore Drain Cleaning", url: "/services/lake-elsinore-drain-cleaning" }
+  { name: "Lake Elsinore Drain Cleaning", url: "/services/plumbing/lake-elsinore-drain-cleaning" }
 ];
 
 // Generate FAQ Schema
@@ -85,7 +85,7 @@ const serviceSchema = {
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",
-    "telephone": "+1-951-428-5551",
+    "telephone": "+1-951-246-4337",
     "url": "https://gardnerplumbingco.com",
     "address": {
       "@type": "PostalAddress",

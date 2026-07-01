@@ -39,7 +39,7 @@ export function Services() {
       description:
         "Professional drain clearing and maintenance services to keep your plumbing flowing smoothly.",
       features: ["Hydro-Jetting", "Video Inspection", "Root Removal", "Preventive Maintenance"],
-      link: "/services/drain-cleaning",
+      link: "/services/plumbing/drain-cleaning",
     },
     {
       icon: Wrench,
@@ -47,7 +47,7 @@ export function Services() {
       description:
         "Advanced leak detection technology and expert repair services for quick, efficient solutions.",
       features: ["Electronic Detection", "Slab Leak Repair", "Pipe Replacement", "Emergency Service"],
-      link: "/services/leak-detection",
+      link: "/services/plumbing/leak-detection",
     },
     {
       icon: Zap,
@@ -55,7 +55,7 @@ export function Services() {
       description:
         "Complete water heater installation, repair, and maintenance for optimal performance.",
       features: ["Tank & Tankless", "Energy Efficient", "Same-Day Service", "Warranty Included"],
-      link: "/services/water-heater-service",
+      link: "/services/plumbing/water-heater-service",
     },
     {
       icon: Home,
@@ -63,7 +63,7 @@ export function Services() {
       description:
         "Complete bathroom plumbing solutions from fixture repairs to full bathroom remodels.",
       features: ["Toilet Repair", "Shower/Tub Installation", "Fixture Upgrades", "Pipe Relocation"],
-      link: "/services/toilet-installation-and-repair",
+      link: "/services/plumbing/toilet-installation-and-repair",
     },
   ];
 
@@ -79,7 +79,7 @@ export function Services() {
         "Emergency Service",
         "Code Compliance",
       ],
-      link: "/services/commercial-plumbing",
+      link: "/services/plumbing/commercial-plumbing",
     },
     {
       icon: Wrench,
@@ -92,7 +92,7 @@ export function Services() {
         "Grease Removal",
         "Video Verification",
       ],
-      link: "/services/hydro-jetting",
+      link: "/services/plumbing/hydro-jetting",
     },
     {
       icon: Factory,
@@ -105,7 +105,7 @@ export function Services() {
         "Regulatory Compliance",
         "Preventive Maintenance",
       ],
-      link: "/services/industrial-plumbing",
+      link: "/services/plumbing/industrial-plumbing",
     },
     {
       icon: ShieldCheck,
@@ -118,7 +118,7 @@ export function Services() {
         "Annual Inspections",
         "Code Compliance",
       ],
-      link: "/services/backflow-prevention",
+      link: "/services/plumbing/backflow-prevention",
     },
   ];
 
@@ -170,7 +170,7 @@ export function Services() {
               <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-xl">
                 From routine maintenance to{" "}
                 <Link
-                  href="/services/emergency-service"
+                  href="/services/plumbing/emergency-service"
                   className="text-red-400 hover:text-red-300 underline"
                 >
                   emergency repairs
@@ -471,7 +471,7 @@ export function Services() {
           <div className="glassmorphism-dark rounded-2xl sm:rounded-3xl backdrop-blur-xl border border-white/10 shadow-luxury overflow-hidden hover-lift">
             {/* Banner with link to emergency page */}
             <Link
-              href="/services/emergency-service"
+              href="/services/plumbing/emergency-service"
               className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 block focus:outline-none"
               style={{
                 background: `linear-gradient(135deg, #8B0000 0%, #DC2626 50%, #B91C1C 100%)`,
@@ -513,7 +513,7 @@ export function Services() {
                     Always Available When You Need Us
                   </h4>
                   <div className="mb-4 sm:mb-6 flex justify-center lg:justify-start">
-                    <Link href="/services/emergency-service" className="relative group block">
+                    <Link href="/services/plumbing/emergency-service" className="relative group block">
                       <Image
                         src={professionalTechnician}
                         alt="Professional Gardner Plumbing Co. technician providing reliable emergency service"
@@ -535,7 +535,7 @@ export function Services() {
                 {/* Middle column */}
                 <div className="flex flex-col order-3 lg:order-2">
                   <div className="mb-4 sm:mb-6 flex justify-center">
-                    <Link href="/services/emergency-service" className="relative group block">
+                    <Link href="/services/plumbing/emergency-service" className="relative group block">
                       <Image
                         src={gardnerTruck}
                         alt="Gardner Plumbing Co. service van ready for emergency calls"
@@ -619,7 +619,7 @@ export function Services() {
                   </div>
 
                   <div className="mb-4 sm:mb-6 flex justify-center">
-                    <Link href="/services/emergency-service" className="relative group block">
+                    <Link href="/services/plumbing/emergency-service" className="relative group block">
                       <Image
                         src={customerServiceRep}
                         alt="Gardner Plumbing Co. customer service representative ready to take your emergency call"

@@ -3,14 +3,14 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Riverside Drain Cleaning | Professional Service | Gardner Plumbing",
-  description: "Expert drain cleaning in Riverside, CA. Serving Downtown, Orangecrest, La Sierra & Canyon Crest. Same-day service, 24/7 emergency. Call (951) 428-5551.",
+  description: "Expert drain cleaning in Riverside, CA. Serving Downtown, Orangecrest, La Sierra & Canyon Crest. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
-    canonical: '/services/riverside-drain-cleaning'
+    canonical: '/services/plumbing/riverside-drain-cleaning'
   },
   openGraph: {
     title: "Riverside Drain Cleaning | Gardner Plumbing Co.",
     description: "Professional drain cleaning throughout Riverside. Fast response, licensed technicians, 30+ years experience.",
-    url: '/services/riverside-drain-cleaning',
+    url: '/services/plumbing/riverside-drain-cleaning',
     images: ['/gardner_logo.webp']
   }
 };
@@ -47,7 +47,7 @@ const faqs = [
 const breadcrumbs = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
-  { name: "Riverside Drain Cleaning", url: "/services/riverside-drain-cleaning" }
+  { name: "Riverside Drain Cleaning", url: "/services/plumbing/riverside-drain-cleaning" }
 ];
 
 // Generate FAQ Schema
@@ -85,7 +85,7 @@ const serviceSchema = {
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",
-    "telephone": "+1-951-428-5551",
+    "telephone": "+1-951-246-4337",
     "url": "https://gardnerplumbingco.com",
     "address": {
       "@type": "PostalAddress",

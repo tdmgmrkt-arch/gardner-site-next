@@ -3,14 +3,14 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Moreno Valley Drain Cleaning | Professional Service | Gardner Plumbing",
-  description: "Expert drain cleaning in Moreno Valley, CA. Serving Sunnymead Ranch, Rancho Belago, Towngate & Box Springs. Same-day service, 24/7 emergency. Call (951) 428-5551.",
+  description: "Expert drain cleaning in Moreno Valley, CA. Serving Sunnymead Ranch, Rancho Belago, Towngate & Box Springs. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
-    canonical: '/services/moreno-valley-drain-cleaning'
+    canonical: '/services/plumbing/moreno-valley-drain-cleaning'
   },
   openGraph: {
     title: "Moreno Valley Drain Cleaning | Gardner Plumbing Co.",
     description: "Professional drain cleaning throughout Moreno Valley. Fast response, licensed technicians, 30+ years experience.",
-    url: '/services/moreno-valley-drain-cleaning',
+    url: '/services/plumbing/moreno-valley-drain-cleaning',
     images: ['/gardner_logo.webp']
   }
 };
@@ -47,7 +47,7 @@ const faqs = [
 const breadcrumbs = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
-  { name: "Moreno Valley Drain Cleaning", url: "/services/moreno-valley-drain-cleaning" }
+  { name: "Moreno Valley Drain Cleaning", url: "/services/plumbing/moreno-valley-drain-cleaning" }
 ];
 
 // Generate FAQ Schema
@@ -85,7 +85,7 @@ const serviceSchema = {
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",
-    "telephone": "+1-951-428-5551",
+    "telephone": "+1-951-246-4337",
     "url": "https://gardnerplumbingco.com",
     "address": {
       "@type": "PostalAddress",

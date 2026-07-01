@@ -68,14 +68,14 @@ export function IndustrialPlumbing() {
       title: "Industrial Waste & Drains",
       desc: "Specialized drainage solutions for chemical, acid, and high-temp trade waste.",
       bullets: ["Acid waste systems (CPVC)", "Interceptor installation", "High-volume drainage"],
-      link: "/services/sewer-and-septic",
+      link: "/services/plumbing/sewer-and-septic",
     },
     {
       icon: Zap,
       title: "High-Pressure Hydro Jetting",
       desc: "Clearing large-diameter mains of industrial scale, debris, and blockages.",
       bullets: ["Scheduled line cleaning", "Confined space certified", "Restores full flow"],
-      link: "/services/hydro-jetting",
+      link: "/services/plumbing/hydro-jetting",
     },
     {
       icon: Wrench,
@@ -96,7 +96,7 @@ export function IndustrialPlumbing() {
       title: "Compliance & Safety",
       desc: "Backflow prevention, safety showers, and eyewash stations to meet OSHA/ANSI codes.",
       bullets: ["RPZ installation/testing", "Tempered water systems", "Annual certifications"],
-      link: "/services/backflow-prevention",
+      link: "/services/plumbing/backflow-prevention",
     },
   ];
 

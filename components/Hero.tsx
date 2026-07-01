@@ -8,7 +8,17 @@ import { SchedulerModal } from "./SchedulerModal";
 import { Modal } from "./Modal";
 import { LeadForm } from "./LeadForm";
 
-const ReviewsCarousel: FC = () => {
+type ReviewsCarouselProps = {
+  reviewCount?: string;
+  ratingLabel?: string;
+  ratingBadge?: React.ReactNode;
+};
+
+const ReviewsCarousel: FC<ReviewsCarouselProps> = ({
+  reviewCount = "900+",
+  ratingLabel = "5-Star",
+  ratingBadge,
+}) => {
   const reviews = [
     {
       id: 1,
@@ -53,25 +63,31 @@ const ReviewsCarousel: FC = () => {
         boxShadow: `0 0 20px rgba(59,130,246,0.2)`,
       }}
     >
-      <div className="flex items-center justify-center gap-2 mb-2">
-        <Image src="/google-logo.webp" alt="Google Logo" width={24} height={24} />
-        {Array(5)
-          .fill(null)
-          .map((_, i) => (
-            <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-          ))}
-      </div>
-      <a
-        href="https://www.google.com/search?q=Gardner+Plumbing+Company+Reviews"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-300 text-sm font-semibold mb-4 flex items-center justify-center gap-2 hover:text-white transition-colors"
-      >
-        <span className="text-white font-bold text-lg">5-Star Rating</span>
-        <span className="text-gray-400 font-medium">
-          on Google from <span className="text-white font-semibold">900+ Reviews</span>
-        </span>
-      </a>
+      {ratingBadge ? (
+        <div className="flex items-center justify-center mb-4">{ratingBadge}</div>
+      ) : (
+        <>
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <Image src="/google-logo.webp" alt="Google Logo" width={24} height={24} />
+            {Array(5)
+              .fill(null)
+              .map((_, i) => (
+                <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+              ))}
+          </div>
+          <a
+            href="https://www.google.com/search?q=Gardner+Plumbing+Company+Reviews"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 text-sm font-semibold mb-4 flex items-center justify-center gap-2 hover:text-white transition-colors"
+          >
+            <span className="text-white font-bold text-lg">5-Star Rating</span>
+            <span className="text-gray-400 font-medium">
+              on Google from <span className="text-white font-semibold">{reviewCount} Reviews</span>
+            </span>
+          </a>
+        </>
+      )}
       <div className="relative overflow-hidden h-20 sm:h-24">
         {reviews.map((review, index) => (
           <div
@@ -93,7 +109,13 @@ const ReviewsCarousel: FC = () => {
   );
 };
 
-export function Hero() {
+type HeroProps = {
+  reviewCount?: string;
+  ratingLabel?: string;
+  ratingBadge?: React.ReactNode;
+};
+
+export function Hero({ reviewCount, ratingLabel, ratingBadge }: HeroProps = {}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -190,7 +212,11 @@ export function Hero() {
           </div>
 
           {/* Reviews Carousel */}
-          <ReviewsCarousel />
+          <ReviewsCarousel
+            reviewCount={reviewCount}
+            ratingLabel={ratingLabel}
+            ratingBadge={ratingBadge}
+          />
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mt-8">
@@ -234,11 +260,11 @@ export function Hero() {
           {/* Call Now - Tertiary Option */}
           <div className="mt-6">
             <a
-              href="tel:9514285551"
+              href="tel:9512464337"
               className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-base sm:text-lg"
             >
               <Phone className="h-5 w-5" />
-              <span>Or call us: <span className="font-semibold text-white">(951) 428-5551</span></span>
+              <span>Or call us: <span className="font-semibold text-white">(951) 246-4337</span></span>
             </a>
           </div>
 

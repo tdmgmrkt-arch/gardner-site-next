@@ -157,7 +157,7 @@ export function LakeElsinoreDrainCleaning() {
                     items={[
                       { label: "Home", href: "/" },
                       { label: "Services", href: "/services" },
-                      { label: "Drain Cleaning", href: "/services/drain-cleaning" },
+                      { label: "Drain Cleaning", href: "/services/plumbing/drain-cleaning" },
                       { label: "Lake Elsinore" }
                     ]}
                   />
@@ -192,11 +192,11 @@ export function LakeElsinoreDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button size="lg" className="min-w-[220px] bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Call (951) 428-5551
+                      Call (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -253,11 +253,11 @@ export function LakeElsinoreDrainCleaning() {
                 </span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                <Link href="tel:9514285551">
+                <Link href="tel:9512464337">
                   <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
                     <Phone className="h-5 w-5 text-red-100" />
                     <span className="text-white font-bold text-lg">
-                      (951) 428-5551
+                      (951) 246-4337
                     </span>
                   </div>
                 </Link>
@@ -294,13 +294,13 @@ export function LakeElsinoreDrainCleaning() {
                 Lake Elsinore's distinctive geography creates diverse drainage challenges across the city. Downtown Lake Elsinore features some of the area's oldest infrastructure, with established homes containing plumbing systems that have served for decades. Lakefront properties along the shore contend with unique soil conditions and elevated groundwater that impact drain line stability. Meanwhile, hillside developments in Canyon Hills and Rosetta Canyon face different challenges related to slope and elevation. Gardner Plumbing Company brings specialized knowledge of each area's specific drainage characteristics.
               </p>
               <p>
-                Our familiarity with Lake Elsinore extends beyond geography to understanding seasonal patterns affecting drainage. The lake's changing water levels throughout the year influence groundwater tables and soil moisture near the shore, creating varying pressure on drain systems. Summer heat causes soil contraction that can stress pipes, while winter rains test the capacity of drainage infrastructure citywide. We provide <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning</Link> designed to address these Lake Elsinore-specific conditions, not generic one-size-fits-all approaches.
+                Our familiarity with Lake Elsinore extends beyond geography to understanding seasonal patterns affecting drainage. The lake's changing water levels throughout the year influence groundwater tables and soil moisture near the shore, creating varying pressure on drain systems. Summer heat causes soil contraction that can stress pipes, while winter rains test the capacity of drainage infrastructure citywide. We provide <Link href="/services/plumbing/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning</Link> designed to address these Lake Elsinore-specific conditions, not generic one-size-fits-all approaches.
               </p>
               <p>
-                Whether your property sits along the lakefront with recreational use patterns, in the historic downtown area with older plumbing, or in newer canyon developments, our technicians arrive equipped with comprehensive drain cleaning technology. Our <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting equipment</Link> thoroughly scours pipes clean of mineral buildup common in Lake Elsinore's hard water. Video camera inspections reveal hidden problems before they become emergencies, while professional-grade drain snakes handle routine clogs quickly and safely.
+                Whether your property sits along the lakefront with recreational use patterns, in the historic downtown area with older plumbing, or in newer canyon developments, our technicians arrive equipped with comprehensive drain cleaning technology. Our <Link href="/services/plumbing/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting equipment</Link> thoroughly scours pipes clean of mineral buildup common in Lake Elsinore's hard water. Video camera inspections reveal hidden problems before they become emergencies, while professional-grade drain snakes handle routine clogs quickly and safely.
               </p>
               <p>
-                Emergency drain situations demand immediate attention regardless of location or time. Our <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency plumbing service</Link> covers all Lake Elsinore neighborhoods with rapid response. When drain cleaning reveals damaged pipes requiring repair, we provide complete <Link href="/services/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair and replacement</Link> services to restore your system. For questions or to schedule service, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our team</Link> today.
+                Emergency drain situations demand immediate attention regardless of location or time. Our <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency plumbing service</Link> covers all Lake Elsinore neighborhoods with rapid response. When drain cleaning reveals damaged pipes requiring repair, we provide complete <Link href="/services/plumbing/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair and replacement</Link> services to restore your system. For questions or to schedule service, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our team</Link> today.
               </p>
             </div>
           </div>
@@ -541,14 +541,14 @@ export function LakeElsinoreDrainCleaning() {
           <div className="glassmorphism-dark rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 shadow-luxury text-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Need Drain Help in Lake Elsinore?</h3>
             <p className="text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-              Our Lake Elsinore drain experts are ready to solve your drainage problems. For urgent situations, we provide <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
+              Our Lake Elsinore drain experts are ready to solve your drainage problems. For urgent situations, we provide <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="tel:9514285551">
+              <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </Link>
@@ -618,14 +618,14 @@ export function LakeElsinoreDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
                   >
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Emergency: (951) 428-5551
+                      Emergency: (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -678,11 +678,11 @@ export function LakeElsinoreDrainCleaning() {
               Serving downtown Lake Elsinore, lakefront properties, Canyon Hills, Rosetta Canyon, and all Lake Elsinore neighborhoods with expert drain solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a href="tel:9514285551">
+              <a href="tel:9512464337">
                 <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </a>

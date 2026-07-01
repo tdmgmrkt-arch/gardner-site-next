@@ -352,7 +352,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                   From our base in Murrieta, CA, we now serve over 15,000 active clients throughout Riverside County and beyond. Our philosophy of quality work and transparent pricing continues to guide us as we serve <Link href="/reviews" className="text-red-400 hover:text-red-300 underline">thousands of satisfied customers</Link> across the region.
                 </p>
                 <p>
-                  From <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency repairs</Link> to complete system installations, we've built our reputation one satisfied customer at a time. Our team of licensed professionals (CSLB #1073177) brings decades of combined experience to every job, ensuring quality results you can count on according to <a href="https://www.contractorcheckup.com/articles/hiring-licensed-plumber/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry standards</a>.
+                  From <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency repairs</Link> to complete system installations, we've built our reputation one satisfied customer at a time. Our team of licensed professionals (CSLB #1073177) brings decades of combined experience to every job, ensuring quality results you can count on according to <a href="https://www.contractorcheckup.com/articles/hiring-licensed-plumber/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry standards</a>.
                 </p>
               </div>
               
@@ -687,11 +687,11 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="tel:9514285551">
+                <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 transition-all duration-300 rounded-xl shadow-lg group">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
                 </Link>
@@ -763,11 +763,11 @@ const [isModalOpen, setIsModalOpen] = useState(false);
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-              <a href = "tel:9514285551">
+              <a href = "tel:9512464337">
               <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 transition-all duration-300 rounded-xl shadow-lg border border-red-400/20 group">
                 <span className="flex items-center justify-center gap-3">
                   <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                  Call (951) 428-5551
+                  Call (951) 246-4337
                 </span>
               </Button>
               </a>

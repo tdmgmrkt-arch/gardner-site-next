@@ -3,14 +3,14 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Menifee Drain Cleaning | Expert Plumbing Service | Gardner Plumbing",
-  description: "Professional drain cleaning in Menifee, CA. Serving Sun City, Quail Valley, Heritage Lake & all areas. 24/7 emergency service. Call (951) 428-5551.",
+  description: "Professional drain cleaning in Menifee, CA. Serving Sun City, Quail Valley, Heritage Lake & all areas. 24/7 emergency service. Call (951) 246-4337.",
   alternates: {
-    canonical: '/services/menifee-drain-cleaning'
+    canonical: '/services/plumbing/menifee-drain-cleaning'
   },
   openGraph: {
     title: "Menifee Drain Cleaning | Gardner Plumbing Co.",
     description: "Expert drain cleaning throughout Menifee. Fast response, professional service, 30-day guarantee.",
-    url: '/services/menifee-drain-cleaning',
+    url: '/services/plumbing/menifee-drain-cleaning',
     images: ['/gardner_logo.webp']
   }
 };
@@ -47,7 +47,7 @@ const faqs = [
 const breadcrumbs = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
-  { name: "Menifee Drain Cleaning", url: "/services/menifee-drain-cleaning" }
+  { name: "Menifee Drain Cleaning", url: "/services/plumbing/menifee-drain-cleaning" }
 ];
 
 // Generate FAQ Schema
@@ -85,7 +85,7 @@ const serviceSchema = {
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",
-    "telephone": "+1-951-428-5551",
+    "telephone": "+1-951-246-4337",
     "url": "https://gardnerplumbingco.com",
     "address": {
       "@type": "PostalAddress",

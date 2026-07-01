@@ -157,7 +157,7 @@ export function CanyonLakeDrainCleaning() {
                     items={[
                       { label: "Home", href: "/" },
                       { label: "Services", href: "/services" },
-                      { label: "Drain Cleaning", href: "/services/drain-cleaning" },
+                      { label: "Drain Cleaning", href: "/services/plumbing/drain-cleaning" },
                       { label: "Canyon Lake" }
                     ]}
                   />
@@ -192,11 +192,11 @@ export function CanyonLakeDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button size="lg" className="min-w-[220px] bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Call (951) 428-5551
+                      Call (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -253,11 +253,11 @@ export function CanyonLakeDrainCleaning() {
                 </span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                <Link href="tel:9514285551">
+                <Link href="tel:9512464337">
                   <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
                     <Phone className="h-5 w-5 text-red-100" />
                     <span className="text-white font-bold text-lg">
-                      (951) 428-5551
+                      (951) 246-4337
                     </span>
                   </div>
                 </Link>
@@ -294,13 +294,13 @@ export function CanyonLakeDrainCleaning() {
                 Canyon Lake's private gated community presents unique plumbing challenges that require specialized knowledge and experience. From lakefront properties dealing with moisture and soil conditions to hillside homes navigating slope-related drainage issues, Gardner Plumbing Company understands the distinct needs of Canyon Lake residences. Our technicians are familiar with navigating the community's access requirements and addressing the specific plumbing infrastructure found throughout this exclusive neighborhood.
               </p>
               <p>
-                Many Canyon Lake homes operate on private septic systems rather than city sewer connections, which requires different approaches to drain cleaning. Our team is fully trained in servicing both system types safely and effectively. We understand the importance of protecting your septic system's bacterial balance while thoroughly cleaning drains, and we use methods specifically designed for septic-safe operation. For homes on city sewer, we provide comprehensive <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">drain cleaning services</Link> using the latest technology.
+                Many Canyon Lake homes operate on private septic systems rather than city sewer connections, which requires different approaches to drain cleaning. Our team is fully trained in servicing both system types safely and effectively. We understand the importance of protecting your septic system's bacterial balance while thoroughly cleaning drains, and we use methods specifically designed for septic-safe operation. For homes on city sewer, we provide comprehensive <Link href="/services/plumbing/drain-cleaning" className="text-red-400 hover:text-red-300 underline">drain cleaning services</Link> using the latest technology.
               </p>
               <p>
-                The lush landscaping that makes Canyon Lake so beautiful also creates plumbing challenges. Mature trees along the lakefront and throughout hillside properties send invasive roots into sewer lines, causing blockages that worsen over time. Our <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting services</Link> effectively cut through and remove tree roots while thoroughly scouring pipes clean. We also provide video camera inspections to identify exactly where roots have penetrated your lines and assess overall pipe condition.
+                The lush landscaping that makes Canyon Lake so beautiful also creates plumbing challenges. Mature trees along the lakefront and throughout hillside properties send invasive roots into sewer lines, causing blockages that worsen over time. Our <Link href="/services/plumbing/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting services</Link> effectively cut through and remove tree roots while thoroughly scouring pipes clean. We also provide video camera inspections to identify exactly where roots have penetrated your lines and assess overall pipe condition.
               </p>
               <p>
-                Emergency drain problems in Canyon Lake require immediate attention, whether it's a backed-up septic system or a main sewer line failure. Our <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link> covers the entire Canyon Lake community with rapid response. We coordinate gate access smoothly and arrive fully equipped to handle any drain emergency. When drain cleaning isn't enough and pipes need repair or replacement, we also offer complete <Link href="/services/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair services</Link> to restore your plumbing system.
+                Emergency drain problems in Canyon Lake require immediate attention, whether it's a backed-up septic system or a main sewer line failure. Our <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link> covers the entire Canyon Lake community with rapid response. We coordinate gate access smoothly and arrive fully equipped to handle any drain emergency. When drain cleaning isn't enough and pipes need repair or replacement, we also offer complete <Link href="/services/plumbing/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair services</Link> to restore your plumbing system.
               </p>
             </div>
           </div>
@@ -544,11 +544,11 @@ export function CanyonLakeDrainCleaning() {
               Our drain specialists understand Canyon Lake's unique requirements. <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">Contact us</Link> for expert service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="tel:9514285551">
+              <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </Link>
@@ -618,14 +618,14 @@ export function CanyonLakeDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
                   >
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Emergency: (951) 428-5551
+                      Emergency: (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -678,11 +678,11 @@ export function CanyonLakeDrainCleaning() {
               Serving Canyon Lake's gated community with specialized drain cleaning for lakefront properties, hillside homes, and all residences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a href="tel:9514285551">
+              <a href="tel:9512464337">
                 <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </a>

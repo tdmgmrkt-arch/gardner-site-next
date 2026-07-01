@@ -129,6 +129,8 @@ export function Footer() {
                     { name: "Service Areas", desc: "Where we work", link: "/about-us#service-area" },
                     { name: "Testimonials", desc: "Success stories", link: "/reviews" },
                     { name: "Our Guarantee", desc: "Quality promise", link: "/guarantee" },
+                    { name: "Clean Visit Promise", desc: "Clean-home standard", link: "/clean-visit-promise" },
+                    { name: "The Gardner Shield", desc: "Membership program", link: "/gardner-shield" },
                   ].map((item, index) => (
                     <li key={index}>
                       <a
@@ -149,11 +151,12 @@ export function Footer() {
                 <ul className="space-y-3 sm:space-y-4">
                   {[
                     { name: "Request Service", desc: "Schedule appointment", link: "/contact-us" },
-                    { name: "Emergency Service", desc: "24/7 urgent help", link: "/services/emergency-service" },
+                    { name: "Emergency Service", desc: "24/7 urgent help", link: "/services/plumbing/emergency-service" },
                     { name: "FAQ", desc: "Common questions", link: "/frequently-asked-questions" },
                     { name: "Blog", desc: "Tips & insights", link: "/blog" },
                     { name: "Financing", desc: "Payment options", link: "/financing" },
                     { name: "Warranty Info", desc: "Coverage details", link: "/warranty" },
+                    { name: "Transparent Pricing", desc: "Upfront flat rates", link: "/transparent-pricing" },
                   ].map((item, index) => (
                     <li key={index}>
                       <a
@@ -186,6 +189,8 @@ export function Footer() {
                     { name: "Service Areas", desc: "Where we work", link: "/about-us#service-area" },
                     { name: "Testimonials", desc: "Success stories", link: "/reviews" },
                     { name: "Our Guarantee", desc: "Quality promise", link: "/guarantee" },
+                    { name: "Clean Visit Promise", desc: "Clean-home standard", link: "/clean-visit-promise" },
+                    { name: "The Gardner Shield", desc: "Membership program", link: "/gardner-shield" },
                   ].map((item, index) => (
                     <li key={index}>
                       <a
@@ -209,11 +214,12 @@ export function Footer() {
                 <ul className="space-y-3 sm:space-y-4">
                   {[
                     { name: "Request Service", desc: "Schedule appointment", link: "/contact-us" },
-                    { name: "Emergency Service", desc: "24/7 urgent help", link: "/services/emergency-service" },
+                    { name: "Emergency Service", desc: "24/7 urgent help", link: "/services/plumbing/emergency-service" },
                     { name: "FAQ", desc: "Common questions", link: "/frequently-asked-questions" },
                     { name: "Blog", desc: "Tips & insights", link: "/blog" },
                     { name: "Financing", desc: "Payment options", link: "/financing" },
                     { name: "Warranty Info", desc: "Coverage details", link: "/warranty" },
+                    { name: "Transparent Pricing", desc: "Upfront flat rates", link: "/transparent-pricing" },
                   ].map((item, index) => (
                     <li key={index}>
                       <a
@@ -305,7 +311,7 @@ export function Footer() {
           <div className="glassmorphism-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-luxury">
             <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
-                <p className="text-gray-400 text-xs sm:text-sm">© 2024-2025 Gardner Plumbing Co. All rights reserved.</p>
+                <p className="text-gray-400 text-xs sm:text-sm">© {new Date().getFullYear()} Gardner Plumbing Co. All rights reserved.</p>
                 <div className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm">
                   <Star className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400 drop-shadow-sm" />
                   <span className="text-gray-400">4.9★ Rated Service</span>

@@ -157,7 +157,7 @@ export function MorenoValleyDrainCleaning() {
                     items={[
                       { label: "Home", href: "/" },
                       { label: "Services", href: "/services" },
-                      { label: "Drain Cleaning", href: "/services/drain-cleaning" },
+                      { label: "Drain Cleaning", href: "/services/plumbing/drain-cleaning" },
                       { label: "Moreno Valley" }
                     ]}
                   />
@@ -192,11 +192,11 @@ export function MorenoValleyDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button size="lg" className="min-w-[220px] bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Call (951) 428-5551
+                      Call (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -253,11 +253,11 @@ export function MorenoValleyDrainCleaning() {
                 </span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                <Link href="tel:9514285551">
+                <Link href="tel:9512464337">
                   <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
                     <Phone className="h-5 w-5 text-red-100" />
                     <span className="text-white font-bold text-lg">
-                      (951) 428-5551
+                      (951) 246-4337
                     </span>
                   </div>
                 </Link>
@@ -291,13 +291,13 @@ export function MorenoValleyDrainCleaning() {
                 Moreno Valley represents one of Riverside County's fastest-growing cities, with extensive residential development transforming the landscape over recent decades. Neighborhoods like Sunnymead Ranch, Rancho Belago, Towngate, Box Springs, and Moreno Valley Ranch feature predominantly newer construction with modern plumbing systems that differ significantly from older Inland Empire communities. Gardner Plumbing Company has grown alongside Moreno Valley, developing specialized expertise in the unique drainage challenges these newer developments present. From construction debris in recently completed homes to soil settlement issues in established tracts, we understand the specific problems Moreno Valley homeowners face.
               </p>
               <p>
-                The rapid development that characterizes Moreno Valley creates distinctive drain service needs. New construction sometimes leaves debris in drain lines that surfaces months or years after completion. Post-construction soil settlement can shift pipes, creating drainage problems that weren't present initially. Landscaping installation and irrigation systems added after home completion may impact drainage infrastructure. Our technicians are thoroughly familiar with these new-development issues and provide <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">specialized drain cleaning services</Link> that address construction-related problems other companies may not recognize. We also coordinate with builders and warranty departments when drain issues fall within coverage periods.
+                The rapid development that characterizes Moreno Valley creates distinctive drain service needs. New construction sometimes leaves debris in drain lines that surfaces months or years after completion. Post-construction soil settlement can shift pipes, creating drainage problems that weren't present initially. Landscaping installation and irrigation systems added after home completion may impact drainage infrastructure. Our technicians are thoroughly familiar with these new-development issues and provide <Link href="/services/plumbing/drain-cleaning" className="text-red-400 hover:text-red-300 underline">specialized drain cleaning services</Link> that address construction-related problems other companies may not recognize. We also coordinate with builders and warranty departments when drain issues fall within coverage periods.
               </p>
               <p>
-                Moreno Valley's newer plumbing systems typically feature PVC drain lines that respond well to modern cleaning technology. Our <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">professional hydro-jetting equipment</Link> thoroughly scours these pipes clean without the damage concerns that older pipe materials present. Video camera inspections verify proper installation and identify any construction defects or debris accumulation. For newer homeowners unfamiliar with their plumbing systems, we provide education about proper drain care and maintenance schedules that prevent future problems. Our preventive approach helps Moreno Valley families avoid the costly emergency repairs that often result from neglected maintenance.
+                Moreno Valley's newer plumbing systems typically feature PVC drain lines that respond well to modern cleaning technology. Our <Link href="/services/plumbing/hydro-jetting" className="text-red-400 hover:text-red-300 underline">professional hydro-jetting equipment</Link> thoroughly scours these pipes clean without the damage concerns that older pipe materials present. Video camera inspections verify proper installation and identify any construction defects or debris accumulation. For newer homeowners unfamiliar with their plumbing systems, we provide education about proper drain care and maintenance schedules that prevent future problems. Our preventive approach helps Moreno Valley families avoid the costly emergency repairs that often result from neglected maintenance.
               </p>
               <p>
-                Emergency drain situations require immediate professional response whether you live in Sunnymead Ranch, Towngate, or any Moreno Valley neighborhood. A backed-up sewer line doesn't wait for convenient timing, and DIY attempts often worsen problems in newer plumbing systems where homeowners lack experience. Our <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency drain service</Link> covers all Moreno Valley developments with rapid response and complete equipment. When camera inspection reveals damaged pipes requiring replacement beyond cleaning, we provide comprehensive <Link href="/services/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair and replacement</Link> services. To schedule service or discuss your Moreno Valley property's drainage needs, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our experienced team</Link> today.
+                Emergency drain situations require immediate professional response whether you live in Sunnymead Ranch, Towngate, or any Moreno Valley neighborhood. A backed-up sewer line doesn't wait for convenient timing, and DIY attempts often worsen problems in newer plumbing systems where homeowners lack experience. Our <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency drain service</Link> covers all Moreno Valley developments with rapid response and complete equipment. When camera inspection reveals damaged pipes requiring replacement beyond cleaning, we provide comprehensive <Link href="/services/plumbing/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair and replacement</Link> services. To schedule service or discuss your Moreno Valley property's drainage needs, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our experienced team</Link> today.
               </p>
             </div>
           </div>
@@ -538,14 +538,14 @@ export function MorenoValleyDrainCleaning() {
           <div className="glassmorphism-dark rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 shadow-luxury text-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Need Drain Help in Moreno Valley?</h3>
             <p className="text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-              Our Moreno Valley drain experts are ready to solve your drainage problems. For urgent situations, we provide <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
+              Our Moreno Valley drain experts are ready to solve your drainage problems. For urgent situations, we provide <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="tel:9514285551">
+              <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </Link>
@@ -615,14 +615,14 @@ export function MorenoValleyDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
                   >
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Emergency: (951) 428-5551
+                      Emergency: (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -675,11 +675,11 @@ export function MorenoValleyDrainCleaning() {
               Serving Sunnymead Ranch, Rancho Belago, Towngate, Box Springs, Moreno Valley Ranch, and all Moreno Valley neighborhoods with expert drain solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a href="tel:9514285551">
+              <a href="tel:9512464337">
                 <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </a>

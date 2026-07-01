@@ -157,7 +157,7 @@ export function CoronaDrainCleaning() {
                     items={[
                       { label: "Home", href: "/" },
                       { label: "Services", href: "/services" },
-                      { label: "Drain Cleaning", href: "/services/drain-cleaning" },
+                      { label: "Drain Cleaning", href: "/services/plumbing/drain-cleaning" },
                       { label: "Corona" }
                     ]}
                   />
@@ -192,11 +192,11 @@ export function CoronaDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button size="lg" className="min-w-[220px] bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Call (951) 428-5551
+                      Call (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -253,11 +253,11 @@ export function CoronaDrainCleaning() {
                 </span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                <Link href="tel:9514285551">
+                <Link href="tel:9512464337">
                   <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
                     <Phone className="h-5 w-5 text-red-100" />
                     <span className="text-white font-bold text-lg">
-                      (951) 428-5551
+                      (951) 246-4337
                     </span>
                   </div>
                 </Link>
@@ -291,13 +291,13 @@ export function CoronaDrainCleaning() {
                 Corona stands as one of Riverside County's most diverse cities, combining historic Circle City charm with modern commercial development along the 91 and 15 freeway corridors. This expansive city encompasses neighborhoods ranging from established downtown areas with decades-old infrastructure to brand-new residential developments in Corona Hills and Eagle Glen. Gardner Plumbing Company has served Corona properties for over thirty years, developing deep expertise in the city's varied plumbing systems. Whether your building sits in the heart of historic downtown or in South Corona's newer developments, our technicians understand the specific challenges each area presents.
               </p>
               <p>
-                Commercial properties throughout Corona face particularly demanding drainage requirements. Restaurants along the busy 91 corridor deal with heavy grease accumulation that requires specialized hydro-jetting equipment. Multi-unit residential complexes in Eagle Glen need coordinated drain service that minimizes disruption to residents. Retail centers serving Corona's growing population experience high-volume usage that accelerates drain wear. Our <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning services</Link> address these commercial demands with industrial-strength equipment and flexible scheduling. We work with property managers, business owners, and facility directors to provide maintenance programs that prevent emergency situations.
+                Commercial properties throughout Corona face particularly demanding drainage requirements. Restaurants along the busy 91 corridor deal with heavy grease accumulation that requires specialized hydro-jetting equipment. Multi-unit residential complexes in Eagle Glen need coordinated drain service that minimizes disruption to residents. Retail centers serving Corona's growing population experience high-volume usage that accelerates drain wear. Our <Link href="/services/plumbing/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning services</Link> address these commercial demands with industrial-strength equipment and flexible scheduling. We work with property managers, business owners, and facility directors to provide maintenance programs that prevent emergency situations.
               </p>
               <p>
-                Residential drain problems in Corona vary significantly by neighborhood age and construction type. Historic downtown properties often contain cast iron or clay sewer lines that require gentle cleaning methods to avoid damage. Newer developments typically feature PVC systems that can withstand aggressive <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting treatments</Link> for thorough cleaning. Our technicians begin every job with careful assessment, using video camera inspection when needed to evaluate pipe condition before selecting the appropriate cleaning technique. This diagnostic approach ensures effective results without risking damage to your plumbing infrastructure, regardless of your property's age or location within Corona.
+                Residential drain problems in Corona vary significantly by neighborhood age and construction type. Historic downtown properties often contain cast iron or clay sewer lines that require gentle cleaning methods to avoid damage. Newer developments typically feature PVC systems that can withstand aggressive <Link href="/services/plumbing/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting treatments</Link> for thorough cleaning. Our technicians begin every job with careful assessment, using video camera inspection when needed to evaluate pipe condition before selecting the appropriate cleaning technique. This diagnostic approach ensures effective results without risking damage to your plumbing infrastructure, regardless of your property's age or location within Corona.
               </p>
               <p>
-                Emergency drain failures don't respect business hours or convenient timing. A backed-up sewer line in a downtown Corona restaurant during dinner service demands immediate response. A clogged main drain in an Eagle Glen family home on Sunday morning can't wait until Monday. Our <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency plumbing service</Link> covers all Corona neighborhoods with rapid response times. When drain cleaning reveals damaged pipes requiring replacement rather than cleaning, we provide comprehensive <Link href="/services/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer repair and replacement services</Link>. For service throughout Corona or questions about your drainage system, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our experienced team</Link> today.
+                Emergency drain failures don't respect business hours or convenient timing. A backed-up sewer line in a downtown Corona restaurant during dinner service demands immediate response. A clogged main drain in an Eagle Glen family home on Sunday morning can't wait until Monday. Our <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency plumbing service</Link> covers all Corona neighborhoods with rapid response times. When drain cleaning reveals damaged pipes requiring replacement rather than cleaning, we provide comprehensive <Link href="/services/plumbing/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer repair and replacement services</Link>. For service throughout Corona or questions about your drainage system, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our experienced team</Link> today.
               </p>
             </div>
           </div>
@@ -538,14 +538,14 @@ export function CoronaDrainCleaning() {
           <div className="glassmorphism-dark rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 shadow-luxury text-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Need Drain Help in Corona?</h3>
             <p className="text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-              Our Corona drain experts are ready to solve your drainage problems. For urgent situations, we provide <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
+              Our Corona drain experts are ready to solve your drainage problems. For urgent situations, we provide <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="tel:9514285551">
+              <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </Link>
@@ -615,14 +615,14 @@ export function CoronaDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
                   >
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Emergency: (951) 428-5551
+                      Emergency: (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -675,11 +675,11 @@ export function CoronaDrainCleaning() {
               Serving Corona Hills, Eagle Glen, South Corona, Historic Downtown, Circle City, and all Corona neighborhoods with expert drain solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a href="tel:9514285551">
+              <a href="tel:9512464337">
                 <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </a>

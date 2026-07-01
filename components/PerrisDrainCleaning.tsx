@@ -157,7 +157,7 @@ export function PerrisDrainCleaning() {
                     items={[
                       { label: "Home", href: "/" },
                       { label: "Services", href: "/services" },
-                      { label: "Drain Cleaning", href: "/services/drain-cleaning" },
+                      { label: "Drain Cleaning", href: "/services/plumbing/drain-cleaning" },
                       { label: "Perris" }
                     ]}
                   />
@@ -192,11 +192,11 @@ export function PerrisDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button size="lg" className="min-w-[220px] bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Call (951) 428-5551
+                      Call (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -253,11 +253,11 @@ export function PerrisDrainCleaning() {
                 </span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                <Link href="tel:9514285551">
+                <Link href="tel:9512464337">
                   <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
                     <Phone className="h-5 w-5 text-red-100" />
                     <span className="text-white font-bold text-lg">
-                      (951) 428-5551
+                      (951) 246-4337
                     </span>
                   </div>
                 </Link>
@@ -294,13 +294,13 @@ export function PerrisDrainCleaning() {
                 Perris homeowners face unique drain challenges due to the area's hard water and aging infrastructure. Whether you're near Perris Lake, along the 215 corridor, or in one of Perris's established residential neighborhoods, Gardner Plumbing Company provides fast, professional drain cleaning that solves problems the first time.
               </p>
               <p>
-                Many Perris homes were built decades ago with cast iron or clay sewer pipes that are now reaching the end of their useful life. These older pipes are susceptible to root intrusion from mature trees, corrosion from mineral-laden water, and general deterioration. Our <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting services</Link> can thoroughly clean these pipes, extending their life and preventing costly replacements. For severely damaged lines, we also provide <Link href="/services/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer repair services</Link>.
+                Many Perris homes were built decades ago with cast iron or clay sewer pipes that are now reaching the end of their useful life. These older pipes are susceptible to root intrusion from mature trees, corrosion from mineral-laden water, and general deterioration. Our <Link href="/services/plumbing/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting services</Link> can thoroughly clean these pipes, extending their life and preventing costly replacements. For severely damaged lines, we also provide <Link href="/services/plumbing/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer repair services</Link>.
               </p>
               <p>
                 We use advanced video camera technology to inspect your drain lines before cleaning, identifying exactly what's causing the blockage. This diagnostic approach ensures we use the right method - whether it's cable snaking for simple clogs or high-pressure hydro-jetting for stubborn buildup and root intrusion. You'll see the problem and understand the solution before we begin work.
               </p>
               <p>
-                Drain emergencies don't respect schedules. That's why we offer <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency drain cleaning</Link> throughout Perris. When sewage backs up into your home or a toilet won't stop overflowing, our emergency team responds quickly with fully equipped trucks ready to solve the problem. We understand the urgency and stress of drain emergencies, and we work efficiently to restore your plumbing and protect your property from water damage. For comprehensive <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">drain cleaning solutions</Link>, contact Gardner Plumbing Company.
+                Drain emergencies don't respect schedules. That's why we offer <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency drain cleaning</Link> throughout Perris. When sewage backs up into your home or a toilet won't stop overflowing, our emergency team responds quickly with fully equipped trucks ready to solve the problem. We understand the urgency and stress of drain emergencies, and we work efficiently to restore your plumbing and protect your property from water damage. For comprehensive <Link href="/services/plumbing/drain-cleaning" className="text-red-400 hover:text-red-300 underline">drain cleaning solutions</Link>, contact Gardner Plumbing Company.
               </p>
             </div>
           </div>
@@ -544,11 +544,11 @@ export function PerrisDrainCleaning() {
               Our Perris drain cleaning experts are available to answer your questions and provide free estimates. <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">Contact us today</Link> for fast, professional service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="tel:9514285551">
+              <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </Link>
@@ -618,14 +618,14 @@ export function PerrisDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
                   >
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Emergency: (951) 428-5551
+                      Emergency: (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -678,11 +678,11 @@ export function PerrisDrainCleaning() {
               Serving all of Perris including Perris Boulevard, the 215 corridor, Perris Lake area, and surrounding neighborhoods.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a href="tel:9514285551">
+              <a href="tel:9512464337">
                 <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </a>

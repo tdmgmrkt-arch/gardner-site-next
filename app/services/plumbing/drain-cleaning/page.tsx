@@ -1,16 +1,18 @@
 import { Drain } from "@/components/Drain";
 import Script from "next/script";
+import { getGoogleReviews, formatReviewCount } from "@/lib/google-reviews";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata = {
   title: "Drain Cleaning Services",
   description: "Expert drain cleaning and repair services from Gardner Plumbing Co. Fast, reliable drain solutions in Riverside County.",
   alternates: {
-    canonical: '/services/drain-cleaning'
+    canonical: '/services/plumbing/drain-cleaning'
   },
   openGraph: {
     title: "Drain Cleaning Services | Gardner Plumbing Co.",
     description: "Expert drain cleaning and repair services from Gardner Plumbing Co.",
-    url: '/services/drain-cleaning',
+    url: '/services/plumbing/drain-cleaning',
     images: ['/gardner_logo.webp']
   }
 };
@@ -47,7 +49,7 @@ const faqs = [
 const breadcrumbs = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
-  { name: "Drain Cleaning", url: "/services/drain-cleaning" }
+  { name: "Drain Cleaning", url: "/services/plumbing/drain-cleaning" }
 ];
 
 // Generate FAQ Schema
@@ -85,7 +87,7 @@ const serviceSchema = {
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",
-    "telephone": "+1-951-428-5551",
+    "telephone": "+1-951-246-4337",
     "url": "https://gardnerplumbingco.com"
   },
   "areaServed": [
@@ -110,7 +112,13 @@ const serviceSchema = {
   }
 };
 
-export default function DrainPage() {
+export default async function DrainPage() {
+  const reviewData = await getGoogleReviews();
+  const reviewCount =
+    reviewData.userRatingCount != null
+      ? `${formatReviewCount(reviewData.userRatingCount)}+`
+      : `${formatReviewCount(siteConfig.googleRatingFallback.count)}+`;
+
   return (
     <div className="bg-background text-foreground min-h-screen">
       <Script
@@ -129,7 +137,7 @@ export default function DrainPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <main>
-        <Drain />
+        <Drain reviewCount={reviewCount} />
       </main>
     </div>
   );

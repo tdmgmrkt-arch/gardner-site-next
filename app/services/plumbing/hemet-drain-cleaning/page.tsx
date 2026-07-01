@@ -3,14 +3,14 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Hemet Drain Cleaning | Professional Service | Gardner Plumbing",
-  description: "Expert drain cleaning in Hemet, CA. Serving Seven Hills, Diamond Valley, Valle Vista & Florida Avenue. Same-day service, 24/7 emergency. Call (951) 428-5551.",
+  description: "Expert drain cleaning in Hemet, CA. Serving Seven Hills, Diamond Valley, Valle Vista & Florida Avenue. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
-    canonical: '/services/hemet-drain-cleaning'
+    canonical: '/services/plumbing/hemet-drain-cleaning'
   },
   openGraph: {
     title: "Hemet Drain Cleaning | Gardner Plumbing Co.",
     description: "Professional drain cleaning throughout Hemet. Fast response, licensed technicians, 30+ years experience.",
-    url: '/services/hemet-drain-cleaning',
+    url: '/services/plumbing/hemet-drain-cleaning',
     images: ['/gardner_logo.webp']
   }
 };
@@ -47,7 +47,7 @@ const faqs = [
 const breadcrumbs = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
-  { name: "Hemet Drain Cleaning", url: "/services/hemet-drain-cleaning" }
+  { name: "Hemet Drain Cleaning", url: "/services/plumbing/hemet-drain-cleaning" }
 ];
 
 // Generate FAQ Schema
@@ -85,7 +85,7 @@ const serviceSchema = {
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",
-    "telephone": "+1-951-428-5551",
+    "telephone": "+1-951-246-4337",
     "url": "https://gardnerplumbingco.com",
     "address": {
       "@type": "PostalAddress",

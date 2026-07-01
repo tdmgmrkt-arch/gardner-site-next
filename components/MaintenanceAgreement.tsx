@@ -252,7 +252,7 @@ export function MaintenanceAgreement() {
               Complete <span className="text-gradient bg-gradient-to-r from-blue-400 to-green-600 bg-clip-text text-transparent">Maintenance</span> Programs
             </h2>
             <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-              Regular maintenance is key to preventing major plumbing issues before they arise. Our experienced plumbers conduct thorough inspections and routine maintenance, identifying and addressing minor problems early. Learn about <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency services</Link> when you need them.
+              Regular maintenance is key to preventing major plumbing issues before they arise. Our experienced plumbers conduct thorough inspections and routine maintenance, identifying and addressing minor problems early. Learn about <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency services</Link> when you need them.
             </p>
           </div>
 

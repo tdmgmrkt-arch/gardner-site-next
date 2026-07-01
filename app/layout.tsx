@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import "./global.css";
 
-import { Header } from "@/components/Header";
+import HeaderShell from "@/components/HeaderShell";
 import { Footer } from "@/components/Footer";
 import Script from "next/script";
 import { AcsbScript } from "@/components/AcsbScript";
@@ -22,10 +22,11 @@ export const metadata: Metadata = {
     siteName: 'Gardner Plumbing Co.',
     images: [
       {
-        url: '/gardner_logo.webp',
+        url: '/og-image.jpg',
+        type: 'image/jpeg',
         width: 1200,
         height: 630,
-        alt: 'Gardner Plumbing Co. Logo'
+        alt: 'Gardner Plumbing Co. — Riverside County\'s Plumbing Experts, Trusted Since 1994'
       }
     ]
   },
@@ -58,19 +59,21 @@ export default function RootLayout({
     "name": "Gardner Plumbing Co.",
     "image": "https://gardnerplumbingco.com/gardner_logo.webp",
     "url": "https://gardnerplumbingco.com",
-    "telephone": "+1-951-428-5551",
+    "telephone": "+1-951-246-4337",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Temecula",
+      "addressLocality": "Murrieta",
       "addressRegion": "CA",
-      "addressCountry": "US",
-      "areaServed": [
-        "Temecula", "Murrieta", "Perris", "Menifee", "Canyon Lake",
-        "Lake Elsinore", "Corona", "Moreno Valley", "Riverside",
-        "Hemet", "San Jacinto", "Wildomar"
-      ]
+      "addressCountry": "US"
     },
+    "areaServed": [
+      "Banning", "Beaumont", "Calimesa", "Cathedral City", "Cherry Valley",
+      "Corona", "Eastvale", "Garnet", "Hemet", "Jurupa Valley",
+      "Lake Elsinore", "Menifee", "Mentone", "Moreno Valley", "Murrieta",
+      "North Palm Springs", "Palm Springs", "Palm Desert", "Pedley", "Perris",
+      "Redlands", "Riverside", "San Jacinto", "Temecula", "Yucaipa"
+    ],
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 33.4936,
@@ -90,8 +93,8 @@ export default function RootLayout({
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "600",
+      "ratingValue": "4.9",
+      "reviewCount": "900",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -203,7 +206,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-background text-foreground antialiased min-h-screen">
-        <Header />
+        <HeaderShell />
         <main>{children}</main>
         <Footer />
         <CookieConsentBanner />

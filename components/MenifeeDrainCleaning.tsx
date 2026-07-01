@@ -157,7 +157,7 @@ export function MenifeeDrainCleaning() {
                     items={[
                       { label: "Home", href: "/" },
                       { label: "Services", href: "/services" },
-                      { label: "Drain Cleaning", href: "/services/drain-cleaning" },
+                      { label: "Drain Cleaning", href: "/services/plumbing/drain-cleaning" },
                       { label: "Menifee" }
                     ]}
                   />
@@ -192,11 +192,11 @@ export function MenifeeDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button size="lg" className="min-w-[220px] bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Call (951) 428-5551
+                      Call (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -253,11 +253,11 @@ export function MenifeeDrainCleaning() {
                 </span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                <Link href="tel:9514285551">
+                <Link href="tel:9512464337">
                   <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
                     <Phone className="h-5 w-5 text-red-100" />
                     <span className="text-white font-bold text-lg">
-                      (951) 428-5551
+                      (951) 246-4337
                     </span>
                   </div>
                 </Link>
@@ -294,13 +294,13 @@ export function MenifeeDrainCleaning() {
                 Menifee's rapid growth has brought modern neighborhoods alongside established communities, each with distinct plumbing needs. Gardner Plumbing Company serves them all - from Sun City's mature properties to the newest developments near Menifee Town Center. Our technicians understand the plumbing infrastructure throughout Menifee and arrive prepared to handle any drain cleaning challenge.
               </p>
               <p>
-                Whether you live in Quail Valley, Heritage Lake, or along the Newport Road corridor, drain problems create the same frustration and inconvenience. Slow drains, recurring clogs, and sewage backups disrupt your daily life and potentially damage your home. Our <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning services</Link> resolve these issues completely using advanced equipment and proven techniques that provide lasting results.
+                Whether you live in Quail Valley, Heritage Lake, or along the Newport Road corridor, drain problems create the same frustration and inconvenience. Slow drains, recurring clogs, and sewage backups disrupt your daily life and potentially damage your home. Our <Link href="/services/plumbing/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning services</Link> resolve these issues completely using advanced equipment and proven techniques that provide lasting results.
               </p>
               <p>
-                We begin every drain cleaning job with a thorough assessment. For complex blockages or recurring problems, we use high-definition video camera inspection to see inside your pipes and identify the exact cause - whether it's grease buildup, root intrusion, pipe deterioration, or foreign objects. This diagnostic approach ensures we select the most effective cleaning method, from traditional cable snaking to powerful <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting</Link> that scours pipes completely clean.
+                We begin every drain cleaning job with a thorough assessment. For complex blockages or recurring problems, we use high-definition video camera inspection to see inside your pipes and identify the exact cause - whether it's grease buildup, root intrusion, pipe deterioration, or foreign objects. This diagnostic approach ensures we select the most effective cleaning method, from traditional cable snaking to powerful <Link href="/services/plumbing/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting</Link> that scours pipes completely clean.
               </p>
               <p>
-                Emergency drain problems require immediate attention. Our <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link> covers all of Menifee with rapid response times and fully equipped trucks. When sewage backs up into your home or a main line blocks completely, we understand the urgency. Our emergency team responds quickly to minimize damage, restore your plumbing, and get your household back to normal. For serious pipe damage, we also offer comprehensive <Link href="/services/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair</Link> and replacement services.
+                Emergency drain problems require immediate attention. Our <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link> covers all of Menifee with rapid response times and fully equipped trucks. When sewage backs up into your home or a main line blocks completely, we understand the urgency. Our emergency team responds quickly to minimize damage, restore your plumbing, and get your household back to normal. For serious pipe damage, we also offer comprehensive <Link href="/services/plumbing/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair</Link> and replacement services.
               </p>
             </div>
           </div>
@@ -544,11 +544,11 @@ export function MenifeeDrainCleaning() {
               Our drain cleaning professionals are ready to help. <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">Contact Gardner Plumbing Company</Link> for fast, reliable service throughout Menifee.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="tel:9514285551">
+              <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </Link>
@@ -618,14 +618,14 @@ export function MenifeeDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
                   >
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Emergency: (951) 428-5551
+                      Emergency: (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -678,11 +678,11 @@ export function MenifeeDrainCleaning() {
               Serving Sun City, Quail Valley, Heritage Lake, Wheatfield, Newport Road area, and all Menifee neighborhoods.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a href="tel:9514285551">
+              <a href="tel:9512464337">
                 <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </a>

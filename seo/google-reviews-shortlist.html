@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gardner Plumbing — Review Shortlist</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-card: #1e293b;
+      --bg-card-hover: #273449;
+      --border: #334155;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --accent: #f59e0b;
+      --accent-hover: #fbbf24;
+      --star: #facc15;
+      --quote-border: #475569;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      padding: 32px 24px;
+      border-bottom: 2px solid var(--accent);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(8px);
+    }
+    header h1 {
+      margin: 0 0 8px 0;
+      font-size: 24px;
+      letter-spacing: -0.5px;
+    }
+    header p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .meta-strip {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+    .meta-pill {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      color: var(--accent);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .toc {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+    .toc h2 {
+      margin: 0 0 12px 0;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+    }
+    .toc ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 8px;
+    }
+    .toc a {
+      color: var(--text);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: all 0.15s;
+      font-size: 14px;
+    }
+    .toc a:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .toc .count {
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--accent);
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    section.theme {
+      margin-bottom: 48px;
+      scroll-margin-top: 140px;
+    }
+    section.theme h2 {
+      font-size: 20px;
+      margin: 0 0 4px 0;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .back-top {
+      font-size: 12px;
+      color: var(--text-dim);
+      text-decoration: none;
+      font-weight: normal;
+      text-transform: none;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      transition: all 0.15s;
+    }
+    .back-top:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 16px;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .review-card:hover {
+      border-color: var(--accent);
+    }
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .option-tag {
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+    }
+    .author {
+      font-weight: 600;
+      color: var(--text);
+      font-size: 15px;
+    }
+    .date {
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+    .stars {
+      color: var(--star);
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    .review-text {
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.65;
+      border-left: 3px solid var(--quote-border);
+      padding-left: 16px;
+      margin: 12px 0 0 0;
+    }
+    .owner-response {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .owner-response strong {
+      color: var(--text);
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+    .empty {
+      color: var(--text-dim);
+      font-style: italic;
+      padding: 16px;
+      background: var(--bg-card);
+      border-radius: 8px;
+      border: 1px dashed var(--border);
+    }
+    @media (max-width: 640px) {
+      header { padding: 20px 16px; }
+      main { padding: 16px; }
+      .review-card { padding: 16px; }
+      section.theme h2 { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gardner Plumbing — Google Review Shortlist</h1>
+    <p>Story-driven candidates grouped by theme. Pick your favorites and reply with the picks.</p>
+    <div class="meta-strip">
+      <span class="meta-pill">787 5-star reviews scanned</span>
+      <span class="meta-pill">8 themes</span>
+      <span class="meta-pill">Sorted by story-signal score</span>
+    </div>
+  </header>
+  <main>
+    <div class="toc" id="top">
+      <h2>Jump to theme</h2>
+      <ul>
+        <li><a href="#water-heater"><span>WATER HEATER (replacement, install, no hot water, tankless)</span><span class="count">10</span></a></li>
+        <li><a href="#slab-leak"><span>SLAB LEAK / LEAK DETECTION</span><span class="count">10</span></a></li>
+        <li><a href="#drain-cleaning"><span>DRAIN CLEANING / MAIN LINE / HYDRO-JETTING / CAMERA INSPECTION</span><span class="count">10</span></a></li>
+        <li><a href="#burst-pipe-emergency"><span>BURST PIPE / EMERGENCY / AFTER HOURS</span><span class="count">10</span></a></li>
+        <li><a href="#faucet-fixture-install"><span>FAUCET / DISPOSAL / FIXTURE INSTALL</span><span class="count">10</span></a></li>
+        <li><a href="#maintenance-inspection"><span>MAINTENANCE PLAN / ANNUAL INSPECTION / SHIELD</span><span class="count">10</span></a></li>
+        <li><a href="#clean-visit"><span>CLEAN VISIT / SHOE COVERS / DROP CLOTHS / CLEANED UP</span><span class="count">10</span></a></li>
+        <li><a href="#transparent-pricing"><span>TRANSPARENT PRICING / UPFRONT QUOTE / NO SURPRISE FEES</span><span class="count">10</span></a></li>
+      </ul>
+    </div>
+
+    <section class="theme" id="water-heater">
+      <h2>WATER HEATER (replacement, install, no hot water, tankless)<a class="back-top" href="#top">↑ Back to top</a></h2>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 1</span>
+          <span class="author">Myrna Peets</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">I couldn't be happier with the service provided by Mitchell of Gardner Plumbing.  It was so refreshing to have a contractor that felt honest, reliable, competent, pleasant and easy to communicate with.  We had a Moen water shut off valve installed through the Moen/Safeco site and I will admit, I was nervous about who would be sent out.  Mitchell exceeded all my expectations with his knowledge, skill and advice on not only the shut off valve, but also our pressure valve and hot water tank timer. He came up with the best solution on how to install the device and went to work.  We were extremely happy with the work and the communication before and throughout the job.  We have definitely found our new reliable plumber!!  Thank you Mitchell and Gardner Plumbing.</p>
+        
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 2</span>
+          <span class="author">sandra rocha</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">3 months ago</span>
+        </div>
+        <p class="review-text">Thank you, Sandra, for your 5-star review! We truly appreciate you choosing Gardner Plumbing Co. for your water heater installation. Our team is committed to providing quality workmanship, dependable service, and a great overall customer experience from start to finish. We're grateful for your trust in us and are pleased to know you were satisfied with the service provided. If you ever need plumbing assistance in the future, we're always here to help. Thank you again for your support!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Sandra, for your 5-star review! We truly appreciate you choosing Gardner Plumbing Co. for your water heater installation. Our team is committed to providing quality workmanship, dependable service, and a great overall customer experience from start to finish. We're grateful for your trust in us and are pleased to know you were satisfied with the service provided. If you ever need plumbi...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 3</span>
+          <span class="author">Smarty Singh</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">6 months ago</span>
+        </div>
+        <p class="review-text">I recently used this plumbing company for a water heater repair, and they were great. The technician arrived on time, quickly diagnosed the issue, and the repair was done efficiently. TJ and Andrew were both great and provided an excellent customer service. I highly recommend them to anyone in need of reliable plumbing services!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Smarty,
+
+We’re so happy to hear that TJ and Andrew delivered such great service during … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 4</span>
+          <span class="author">Larry Smalley</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">Edited 2 years ago</span>
+        </div>
+        <p class="review-text">Tankless water heater flushing.<br><br>Wyatt did and outstanding job! Clean, professional and explained the service and process. I am going to sign up for bi-annual service. I would happily recommend them to others.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for choosing Gardner Plumbing Company, Larry! We are so glad that Wyatt was able to provide you with exceptional service during your tankless water heater flushing. Our team strives to always be clean, professional, and … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 5</span>
+          <span class="author">Ramon Raymundo</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">Thank you so much for the job well done by your technician “Mitchell “. He explained everything to us to our understanding. The water heater replacement was completed on time! Thank you again!</p>
+        
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 6</span>
+          <span class="author">Marie Cortez</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">9 months ago</span>
+        </div>
+        <p class="review-text">Gardner Plumbing was amazing, from Jenny in the office to Mitchell who installed our water heater. They are professional. Mitchell explained the whole process. I received a text with his picture so I knew exactly who was coming to my home. …</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Marie, thank you so much for the detailed review! We’re thrilled that Jenny and Mitchell made your experience smooth and stress-free. Knowing you felt informed, comfortable, and taken care of means the world to us. We’re honored to be your plumbing team and truly appreciate the recommendation!</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 7</span>
+          <span class="author">Neil Kreitz</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">6 months ago</span>
+        </div>
+        <p class="review-text">What’s having issues with high water pressure going from 60 psi to 150 psi. Andrew arrived and quickly diagnosed the problem as thermal expansion installed a thermal expansion tank and very tight quarters above the water heater. He was …</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Neil,
+
+We’re thrilled to hear Andrew was able to quickly diagnose and fix your high … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 8</span>
+          <span class="author">Maurice Bridges</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">Mitchell was an excellent technician. He performed a thorough job installing our new water heater. He displayed professional conduct &amp; answered any &amp; all questions we had. He's an excellent employee with top tier service. I would recommend him &amp; your company anytime. Very pleased &amp; satisfied with the service.</p>
+        
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 9</span>
+          <span class="author">Margo Mugica</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">6 months ago</span>
+        </div>
+        <p class="review-text">Great experience with Gardner Plumbing. Had issues with my new water heater turning off and on and Michell was able to resolve the issue. Left his work area very clean. I will gladly use them again</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Margo,
+
+Thank you so much for sharing your experience! We're thrilled to hear that … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 10</span>
+          <span class="author">Amanda Albrecht</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">5 months ago</span>
+        </div>
+        <p class="review-text">Jerome did a great Job! He installed a new water heater and made the process quick and easy! Very professional, would definitely recommend Gardener Plumbing Co to get the job done!</p>
+        
+      </div>
+    </section>
+
+    <section class="theme" id="slab-leak">
+      <h2>SLAB LEAK / LEAK DETECTION<a class="back-top" href="#top">↑ Back to top</a></h2>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 1</span>
+          <span class="author">Bobbi Calvin</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 months ago</span>
+        </div>
+        <p class="review-text">I had a water leak detection system installed today and Jacob Kinman was my technician. He was knowledgeable and professional. He explained everything that needed to be done before so there were no surprises. He cleaned up after himself and answered all my questions. I’m very happy with the work he did and would definitely recommend him and  his company.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Bobbi, for your kind review. We’re glad Jacob provided knowledgeable, professional service and made the process clear with no surprises. We appreciate your recommendation and are pleased you’re happy with the installation. Please contact us any time if you need further assistance.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 2</span>
+          <span class="author">Paul Martinez</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a year ago</span>
+        </div>
+        <p class="review-text">Jerome from Gardener Plumbing Co.  did great work at installing the Moen shut-off valve (leak detection) unit.  He helped with Moen app set-up.  He also relocated the piping and faucet.  It was a big improvement from before and after, clean and nice appearance next to the front door.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Paul,
+
+Thank you for the detailed and thoughtful review! We're so glad to hear Jerome … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 3</span>
+          <span class="author">Kristyn Soholt</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a day ago</span>
+        </div>
+        <p class="review-text">Jerome I believe is the service man came out was very knowledgeable, explained everything carefully, was very polite and very nice. I had to get new homeowners insurance and they required that I put in an automatic shut off water leak detection.  I would recommend this company</p>
+        
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 4</span>
+          <span class="author">Shirley Solomon</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">Edited 2 weeks ago</span>
+        </div>
+        <p class="review-text">Over multiple visits, Gardner Plumbing has been outstanding. Mitchell, TJ, and Jake have helped us with kitchen leak detection, repairing a bathtub leak, replacing toilet gaskets, and guiding us on a toilet replacement estimate. Each technician communicated clearly, gave us all options, and left us confident in our decisions. They were thorough, fair in pricing, and even made our 6-year-old—who has sensory processing challenges, is sensitive to loud noises, and is usually uncomfortable with strangers—feel completely at ease. Thanks, TJ, Mitch, and Jake, for all your customer service!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Shirley, for your wonderful review and for trusting Gardner Plumbing across multiple visits. We’re thrilled Mitchell, TJ, and Jake communicated clearly, offered fair pricing, and helped your son feel comfortable, as we take special pride in accommodating families' needs. We will share your praise with the team and appreciate your recommendation.
+
+Thank You From Gardner Plumbing Company</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 5</span>
+          <span class="author">Toni Sandell</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">7 months ago</span>
+        </div>
+        <p class="review-text">We had to install a leak detector for our homeowner's insurance company. Jerome Martinez explained each step and showed us how to notify the insurance company. He was personable, competent and professional. I'd gladly use them again.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Toni,
+
+Thank you for the wonderful feedback! We're so glad to hear Jerome made the … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 6</span>
+          <span class="author">Candi Christopher</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">3 months ago</span>
+        </div>
+        <p class="review-text">Hi Candi,<br><br>Thank you for taking the time to leave a review! We’re glad to hear you had a positive experience and that our team was able to assist with your plumbing leak detection service at a price you felt was reasonable.<br><br>We truly appreciate you choosing Gardner Plumbing Company and hope to be able to help you again whenever you need plumbing service in the future.<br><br>Warm regards,<br><br>The Gardner Plumbing Team</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Candi,
+
+Thank you for taking the time to leave a review! We’re glad to hear you had a positive experience and that our team was able to assist with your plumbing leak detection service at a price you felt was reasonable.
+
+We truly appreciate you choosing Gardner Plumbing Company and hope to be able to help you again whenever you need plumbing service in the future.
+
+Warm regards,
+The Gardner Pl...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 7</span>
+          <span class="author">Julian Velarde</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">10 months ago</span>
+        </div>
+        <p class="review-text">Jerome Martinez was awesome! He was professional, detailed, and figured out an easy installation process of our Moen water leak detection device, significantly cutting our costs. It is hard to find knowledgeable and good-natured service professionals these days. Thank you Jerome for re-instilling my trust!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Julian,
+
+Thank you for the glowing review! We’re thrilled to hear that Jerome provided … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 8</span>
+          <span class="author">Miles Valentine</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">3 months ago</span>
+        </div>
+        <p class="review-text">Hi Miles,<br><br>Thank you for taking the time to leave a review! We’re glad to hear you had a positive experience and that your plumbing leak detection service was completed at a price you felt was reasonable.<br><br>We truly appreciate you choosing Gardner Plumbing Company and are always here if you need assistance again in the future.<br><br>Warm regards,<br><br>**The Gardner Plumbing Team</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Miles,
+
+Thank you for taking the time to leave a review! We’re glad to hear you had a positive experience and that your plumbing leak detection service was completed at a price you felt was reasonable.
+
+We truly appreciate you choosing Gardner Plumbing Company and are always here if you need assistance again in the future.
+
+Warm regards,
+**The Gardner Plumbing Team</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 9</span>
+          <span class="author">Martin Laback</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a year ago</span>
+        </div>
+        <p class="review-text">Cody installed out new Flo smart water leak detector earlier today. He was in and out in less than an hour with everything set up and working. He explained everything and answered all my questions. Top notch service and I absolutely recommend him and Gardner Plumbing Co.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for your wonderful review, Martin! We're thrilled to hear that Cody provided top-notch service and effectively set up your new Flo smart water leak detector. Your recommendation means a lot to us! We look forward to serving you again in the future.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 10</span>
+          <span class="author">Shelly Harrison</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">11 months ago</span>
+        </div>
+        <p class="review-text">Wyatt and Jacob did an excellent job repairing our slab leak in our kitchen.  Everything went smooth - they were both very kind and worked diligently to get to the root of our leak and cleaned up the debris. 3rd time helping us with our plumbing needs. Great job guys!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Shelly,
+
+Thank you for the amazing review! We’re so glad to hear Wyatt and Jacob were … More</div>
+      </div>
+    </section>
+
+    <section class="theme" id="drain-cleaning">
+      <h2>DRAIN CLEANING / MAIN LINE / HYDRO-JETTING / CAMERA INSPECTION<a class="back-top" href="#top">↑ Back to top</a></h2>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 1</span>
+          <span class="author">Darwin Wearp</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 months ago</span>
+        </div>
+        <p class="review-text">We had a blocked drain below the garage floor which caused the 2nd story Tubs and Toilets to not flush or drain.  The whole house was backed up.  Cody with Gardner Plumbing Company ran cameras through all the clean-outs locating the failed pipe due to an incorrect repair from a previous company which allowed roots to enter and block the pipe.  Mitchel and TJ came out and cut out and repaired the damaged pipe and components including a 2-way sweep, new Y-section and Clean Out vertical pipe which is accessed through a removable plate on the garage floor.  They then backfilled the area with the dirt that was removed.  Very professional, friendly and knowledgeable guys that we will recommend highly to anyone needing services.  Gardner Plumbing Company is the best!!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Darwin, for the detailed and positive review. We’re glad Cody, Mitchel, and TJ were able to locate and repair the damaged pipe and get your home back to normal. We appreciate your kind words about our team’s professionalism and knowledge and your recommendation. If you need any future plumbing assistance, please don’t hesitate to contact Gardner Plumbing Company.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 2</span>
+          <span class="author">Victoria Basso</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a week ago</span>
+        </div>
+        <p class="review-text">We have used this company multiple times over the past year because we trust them, and they continue to earn that trust every time.<br><br>Most recently, they repaired a broken cold-water valve in our laundry room. During the installation, an unexpected issue came up because the new laundry box was configured differently than the original, which affected the condensate drain line from our upstairs A/C. Once the issue was identified, they returned promptly, took the time to understand exactly what was happening, and implemented a proper solution. The condensate line was extended correctly and everything is now draining exactly as it should.<br><br>What really stands out to us is how they handle situations when something unexpected comes up. No company is perfect, but this team stands behind their work and makes things right. That level of professionalism is hard to find.<br><br>Every technician who has come to our home has been knowledgeable, courteous, respectful, and professional. We’ve never felt rushed, and they’ve always taken the time to explain things clearly and answer our questions.<br><br>In our experience, this is one of the best service companies in the area. Their customer service, quality of work, and commitment to doing the job right have made us repeat customers, and we will absolutely continue to call them whenever we need plumbing services.<br><br>Highly recommended.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Victoria, for your continued trust and for sharing such a detailed review. We’re glad we could identify and properly resolve the condensate drain issue and appreciate your recognition of our technicians’ professionalism and clear communication. Your recommendation and repeat business mean a great deal to our team. We look forward to serving you whenever you need plumbing assistance.
+
+Th...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 3</span>
+          <span class="author">Robert Scott Ferera</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">TJ and Mike did a terrific job repairing our bathtub drain pipe underneath the house. I would highly recommend them for any job. Very friendly, polite, courteous and professional…down to earth. They had to repair the mistakes a previous plumber made and did it quickly and without drama. Thank you for making this an easy and painless transaction.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Robert,
+
+We’re so glad to hear that TJ and Mike provided such a smooth and professional experience! It’s great to know they not only fixed your bathtub drain pipe efficiently but also corrected the previous plumber’s mistakes with skill and care. Our team prides itself on being thorough, respectful, and down-to-earth, so your feedback really means a lot.
+
+Thank you for trusting Gardner Plumbing...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 4</span>
+          <span class="author">Sandy Summers</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">8 months ago</span>
+        </div>
+        <p class="review-text">Gardner plumbing was assigned to me by my Home Warranty to fix a clogged drain. The plumber was amazing. He explained everything, was personable professional and polite. But most of all he found the clog and fixed it.  I highly recommend Gardner Plumbing for your plumbing repairs.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Sandy,
+
+We’re so glad to hear your experience with Gardner Plumbing was such a positive … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 5</span>
+          <span class="author">Shelly Harrison</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">11 months ago</span>
+        </div>
+        <p class="review-text">Wyatt and Jacob did an excellent job repairing our slab leak in our kitchen.  Everything went smooth - they were both very kind and worked diligently to get to the root of our leak and cleaned up the debris. 3rd time helping us with our plumbing needs. Great job guys!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Shelly,
+
+Thank you for the amazing review! We’re so glad to hear Wyatt and Jacob were … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 6</span>
+          <span class="author">KY LIKES</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">7 months ago</span>
+        </div>
+        <p class="review-text">Was Assisted by Cody he came very Prompt &amp; Ready to get to the Root of the problem. I had some leaking that started to come from my ceiling &amp; as Soon as Cody Assessed the situation he Knew exactly what the problem was Cody Explained it was …</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi KY,
+
+We’re so glad to hear Cody was able to quickly diagnose and fix your leak — all … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 7</span>
+          <span class="author">Isaac Yocum</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a year ago</span>
+        </div>
+        <p class="review-text">Gardner plumbing were able to get me a next day appointment with Jake Smith to fix a drain issue we were having. Both Gardner dispatch and Jake were very friendly and professional. Jake took the extra time and effort to teach me a thing or …</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Isaac,
+
+Thank you for the fantastic review! We’re so glad we could get you a next-day … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 8</span>
+          <span class="author">Pradeep Vallakati</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">Huge thanks to Jerome Martinez for fixing my sink clog today! He was incredibly professional, kind, and got the job done quickly. It’s hard to find reliable service these days, but Jerome Martinez  exceeded expectations. Highly recommend!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Pradeep,
+
+We’re thrilled to hear that Jerome provided such excellent service! It’s great to know he was professional, kind, and efficient in clearing your sink clog — that’s exactly the standard we strive for at Gardner Plumbing. Reliable, high-quality work is what our team takes pride in, and your feedback means a lot.
+
+Thank you for taking the time to share your experience and for recommendin...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 9</span>
+          <span class="author">Stone Dennison</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 years ago</span>
+        </div>
+        <p class="review-text">As someone who works in customer service, it was refreshing to see a company that values their customers. Wyatt came out on a dime LATE at night and helped us with a clog in our kitchen sink and had 10/10 customer service. Friendly, professional, and informative. Highly recommend</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you Mr. Dennison! We appreciate your business sir.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 10</span>
+          <span class="author">Wendy Endresen</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">9 months ago</span>
+        </div>
+        <p class="review-text">Gardner Plumbing is beyond wonderful! We have used them three times; first to install a Moen Leak Detector, next to replace our propane water heater, and today to fix our clogged toilet. They are professional, personable, strive to please, …</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Wendy,
+
+What an amazing review—thank you so much for your continued trust in us! 🙏 We’re … More</div>
+      </div>
+    </section>
+
+    <section class="theme" id="burst-pipe-emergency">
+      <h2>BURST PIPE / EMERGENCY / AFTER HOURS<a class="back-top" href="#top">↑ Back to top</a></h2>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 1</span>
+          <span class="author">Alicia Harrison</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a month ago</span>
+        </div>
+        <p class="review-text">Went through my home warranty service for a broken water pressure regulator.  The technician was on time, explained everything, confirmed the issue as was able to get my PRV repair approved and replaced the same day.  His repair was thorough and he cleaned up the work area as if he had never been there.<br><br>Hard to find good plumbers and now I will be using these guys for future plumbing issues, regardless of whether its covered or not.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Alicia, for taking the time to share your experience. We're glad the technician arrived on time, clearly explained the issue, and completed the PRV repair and cleanup to your satisfaction. We appreciate your trust and are honored you'll call on us for future plumbing needs, covered or not. Please contact our office anytime you need assistance.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 2</span>
+          <span class="author">Ting L</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">6 days ago</span>
+        </div>
+        <p class="review-text">Jacob is my plumber today to install Moen shutoff Flo. He did an excellent work for me! He explained everything before he started the work, answered all my questions. Everything is clear for me. He is patient, polite, honest. He also told me how to download insurance letter, showed me how the emergency tools work if I have to shut off Moen device manually. Definitely I'll come back. I am so happy that I found a reliable plumber in my area!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for your kind review, Ting. We’re thrilled Jacob provided excellent, patient, and clear service during your Moen shutoff Flo installation and took the time to show you the emergency tools and insurance letter download. We’ll share your compliments with Jacob. We appreciate you choosing us and look forward to helping you again.
+
+Thank You From Gardner Plumbing Company</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 3</span>
+          <span class="author">Victoria Basso</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a week ago</span>
+        </div>
+        <p class="review-text">We have used this company multiple times over the past year because we trust them, and they continue to earn that trust every time.<br><br>Most recently, they repaired a broken cold-water valve in our laundry room. During the installation, an unexpected issue came up because the new laundry box was configured differently than the original, which affected the condensate drain line from our upstairs A/C. Once the issue was identified, they returned promptly, took the time to understand exactly what was happening, and implemented a proper solution. The condensate line was extended correctly and everything is now draining exactly as it should.<br><br>What really stands out to us is how they handle situations when something unexpected comes up. No company is perfect, but this team stands behind their work and makes things right. That level of professionalism is hard to find.<br><br>Every technician who has come to our home has been knowledgeable, courteous, respectful, and professional. We’ve never felt rushed, and they’ve always taken the time to explain things clearly and answer our questions.<br><br>In our experience, this is one of the best service companies in the area. Their customer service, quality of work, and commitment to doing the job right have made us repeat customers, and we will absolutely continue to call them whenever we need plumbing services.<br><br>Highly recommended.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Victoria, for your continued trust and for sharing such a detailed review. We’re glad we could identify and properly resolve the condensate drain issue and appreciate your recognition of our technicians’ professionalism and clear communication. Your recommendation and repeat business mean a great deal to our team. We look forward to serving you whenever you need plumbing assistance.
+
+Th...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 4</span>
+          <span class="author">Tina Marquez</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a month ago</span>
+        </div>
+        <p class="review-text">Your tech Mike was awesome. He the install in a very timely manner and explained everything about my new Moen.Emergency shut off unit</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for the kind review, Tina. We’re glad Mike provided a timely installation and clear explanation of your new Moen emergency shut-off unit. We’ll pass your compliment along to him. If you need any further assistance, please contact us.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 5</span>
+          <span class="author">Brandy Stone</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">7 months ago</span>
+        </div>
+        <p class="review-text">Our house was flooded and Cody came out, found the problem and fixed it. Not only was he quick and knowledgeable, he was super responsive to all my questions and was able to explain everything to me in a way I could understand! I wish more service techs were like him!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Brandy,
+
+We’re so glad Cody was able to step in and help during such a stressful … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 6</span>
+          <span class="author">Sandy Shammas</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">3 years ago</span>
+        </div>
+        <p class="review-text">Wyatt did a great job! Was very personable and professional. Very thorough. Thank you for the prompt attention and handling a broken water heater on the same day.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Sandy, for your kind words about Wyatt. We are thrilled to hear he was not only professional but also personable throughout the job. We appreciate you taking the time to let us know how much you valued his work, and we’re happy … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 7</span>
+          <span class="author">Shon</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">5 months ago</span>
+        </div>
+        <p class="review-text">We use Gardner to maintain our rental properties’ plumbing needs.  They have proven reliable, responsive and very reasonable.  Recently they responded within one hour to a severe plumbing emergency and quickly resolved the problem at a very …</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Shon,
+
+We sincerely appreciate your continued trust in Gardner Plumbing Company for … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 8</span>
+          <span class="author">Yvan Ramirez (Yvan)</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 months ago</span>
+        </div>
+        <p class="review-text">Customer service was excellent and they got the job done in a timely manner. They showed me how the app works and broke down the features for me.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for the kind review, Yvan. We’re glad our team completed the job promptly and that the app walkthrough and feature explanation were helpful. We appreciate your feedback and are here if you need anything else.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 9</span>
+          <span class="author">Lisa Reppucci</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 years ago</span>
+        </div>
+        <p class="review-text">My main water main broke at 4am. I called Gardner Plumbing and they came out quickly and fixed it. I was impressed with Wyatt. He was so professional, friendly and accommodating. I 100% recommend them for any of your plumbing needs.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you so much for your kind review, Lisa! We’re grateful you thought to call our team at Gardner Plumbing Company when you needed help with a main water line break in the middle of the night. … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 10</span>
+          <span class="author">Demaur Gholar</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 years ago</span>
+        </div>
+        <p class="review-text">&quot;I had an emergency situation with my hot water heater after hours, and Gardener Plumbing Service came to the rescue. Their prompt and efficient service in replacing the hot water heater was exceptional. Wyatt was professional, …</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hello Demaur,
+
+Thank you so much for your glowing review! We understand how stressful emergency … More</div>
+      </div>
+    </section>
+
+    <section class="theme" id="faucet-fixture-install">
+      <h2>FAUCET / DISPOSAL / FIXTURE INSTALL<a class="back-top" href="#top">↑ Back to top</a></h2>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 1</span>
+          <span class="author">kerry eastland</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">3 months ago</span>
+        </div>
+        <p class="review-text">Jerome M. is a friendly, knowledgeable plumber. He worked so hard and diligently and left a very clean work area. He was so focused on the work and doing the best job. He gave me all my options and was honest and up-front about the cost. I had a Moen auto shut-off switch and water pressure regulator installed and we could not be more satisfied with his work and the price tag. 100% recommendation!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for taking the time to leave this excellent review. We’re thrilled Jerome provided friendly, thorough, and transparent service and that the Moen auto shut-off switch and pressure regulator met your expectations. We appreciate your 100% recommendation and look forward to assisting you with any future plumbing needs.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 2</span>
+          <span class="author">Jovan Fonseca</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">3 weeks ago</span>
+        </div>
+        <p class="review-text">GREAT Service . My technician was named Mitchell Beers. He came to do a automatic shut off vavle using the Moen shut off system that was requiredfor my house insurance. Came, he did a fantastic job. Explained to me how my system would work. Helped me download the app i needed for the system and helped me set it up. Fully explained to me how to use it and what to monitor l. Went above and beyond explaining it to were I understood it more then me just messing around with the app alone. Did a very clean job with installation. Couldnt have ask for anything better. Very polite and easy to talk to would recommend them to everyone.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for the fantastic 5-star review, Jovan. We're thrilled Mitchell Beers provided a clean, professional installation of the Moen automatic shut-off valve and that he took the time to set up the app and clearly explain how the system works. We appreciate your recommendation and are glad he went above and beyond to make everything easy to understand. If you need any further assistance with th...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 3</span>
+          <span class="author">Ting L</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">6 days ago</span>
+        </div>
+        <p class="review-text">Jacob is my plumber today to install Moen shutoff Flo. He did an excellent work for me! He explained everything before he started the work, answered all my questions. Everything is clear for me. He is patient, polite, honest. He also told me how to download insurance letter, showed me how the emergency tools work if I have to shut off Moen device manually. Definitely I'll come back. I am so happy that I found a reliable plumber in my area!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for your kind review, Ting. We’re thrilled Jacob provided excellent, patient, and clear service during your Moen shutoff Flo installation and took the time to show you the emergency tools and insurance letter download. We’ll share your compliments with Jacob. We appreciate you choosing us and look forward to helping you again.
+
+Thank You From Gardner Plumbing Company</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 4</span>
+          <span class="author">Stefan Donawa</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">6 months ago</span>
+        </div>
+        <p class="review-text">Mitchell did an amazing job. He was on time, professional, and fixed both my toilets and sinks quickly with zero hassle. The work was clean, the price was fair, and he explained everything in a way that actually made sense. I’d recommend Mitchell to anyone who wants the job done right the first time.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Stefan,
+
+We’re so glad to hear Mitchell delivered such a smooth and professional … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 5</span>
+          <span class="author">Marcella Radford</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">I had the pleasure of meeting Mr Jerome Martinez, he installed Moen FloWater shutoff on today. He very knowledgeable reliable a very neat and clean worker. For your plumbing needs give this young man a call.@Gardner Plumbing Co.com. You will be glad that you did. He also replaced so water knobs that were old and rusty. My out door water system now is so pretty. Thank you again Jerome.</p>
+        
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 6</span>
+          <span class="author">Myrna Peets</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">I couldn't be happier with the service provided by Mitchell of Gardner Plumbing.  It was so refreshing to have a contractor that felt honest, reliable, competent, pleasant and easy to communicate with.  We had a Moen water shut off valve installed through the Moen/Safeco site and I will admit, I was nervous about who would be sent out.  Mitchell exceeded all my expectations with his knowledge, skill and advice on not only the shut off valve, but also our pressure valve and hot water tank timer. He came up with the best solution on how to install the device and went to work.  We were extremely happy with the work and the communication before and throughout the job.  We have definitely found our new reliable plumber!!  Thank you Mitchell and Gardner Plumbing.</p>
+        
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 7</span>
+          <span class="author">Brandon Runnells</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">5 months ago</span>
+        </div>
+        <p class="review-text">Mitchell, was my service tech for my garbage disposal and he did amazing job. He was very professional and explained the entire process with me.  He was definitely not what I was expecting/use to from a plumbing company. He got the problem diagnosed and corrected right away and I am very satisfied with his work.  Highly recommend Gardner plumbing! Thank you again for saving the day!</p>
+        
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 8</span>
+          <span class="author">Vivckie Richsrds</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">7 months ago</span>
+        </div>
+        <p class="review-text">TJ Beers was my technician to fix my faucet for my shower very pleasant took care of business actually showed me what he was doing cleaned up after himself now I think he did a real excellent job and if I need any more plumbing from you guys, I hope it’s him thank you Vickie Richards</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Vivckie Richsrds
+4 reviews • 0 photos
+starstarstarstarstar 2 weeks ago New … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 9</span>
+          <span class="author">Paul Martinez</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a year ago</span>
+        </div>
+        <p class="review-text">Jerome from Gardener Plumbing Co.  did great work at installing the Moen shut-off valve (leak detection) unit.  He helped with Moen app set-up.  He also relocated the piping and faucet.  It was a big improvement from before and after, clean and nice appearance next to the front door.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Paul,
+
+Thank you for the detailed and thoughtful review! We're so glad to hear Jerome … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 10</span>
+          <span class="author">Kristyn Soholt</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a day ago</span>
+        </div>
+        <p class="review-text">Jerome I believe is the service man came out was very knowledgeable, explained everything carefully, was very polite and very nice. I had to get new homeowners insurance and they required that I put in an automatic shut off water leak detection.  I would recommend this company</p>
+        
+      </div>
+    </section>
+
+    <section class="theme" id="maintenance-inspection">
+      <h2>MAINTENANCE PLAN / ANNUAL INSPECTION / SHIELD<a class="back-top" href="#top">↑ Back to top</a></h2>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 1</span>
+          <span class="author">Andrew Lopez</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">Hello my name is Andrew Lopez IV and I live in Yucaipa California, and I had a plumbing issue that needed immediate attention, so I called my homeowners insurance, America Home Shield and they referred me the best plumbing company with a 5.9 star rating GARDNER PLUMBING CO. i’m so happy with this company from the beginning they called and schedule for the inspection and they sent me the BEST technician his name is ANDREW DELGADO. He was on time, Professional, and extremely knowledgeable. He sat down with me and explained the problem, gave an honest price, and he fixed everything quickly and cleanly. He was so clean he didn’t leave a mess or a trace. You can tell he takes pride in his work. Highly recommend him if you want reliable, Quality, plumbing, done right the first time. He was awesome and a total professional. Gardner Plumbing Company is my Company for LIFE. I will recommend them and especially Andrew to all my friends and family. THANK YOU, ANDREW AND THANK YOU GARDNER PLUMBING COMPANY!!!!!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Andrew,
+
+Reading your review truly means a lot to our entire team. We’re so glad American Home Shield connected you with us and that Andrew Delgado was able to take care of your plumbing issue quickly and professionally.
+
+Andrew takes a great deal of pride in his work, and it’s wonderful to hear that his punctuality, clear communication, honest pricing, and clean workmanship stood out to you. W...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 2</span>
+          <span class="author">Pamela Blevins</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 months ago</span>
+        </div>
+        <p class="review-text">I had a great experience with Gardner Plumbing, the technician,  Mitchell Beers came out to install the Moen device and replace a part that needed replaced on the pipe prior to the installation, he was very professional, explained everything in detail and installed the device and replacement on the pipe with no problem.   He was also able to help setup my phone with the Moen App and went through each detail of the app with the explanation of what to look for.  Thank you Mitchell for your expertise and professionalism.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for the wonderful review, Pamela. We’re glad Mitchell provided professional, thorough service installing your Moen device, replacing the pipe part, and walking you through the app. I will share your kind words with Mitchell and the team. We appreciate your business and look forward to helping with any future plumbing needs.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 3</span>
+          <span class="author">Pam</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">Edited 4 months ago</span>
+        </div>
+        <p class="review-text">Great experience with Gardner plumbing. Our old house had many plumbing issues (corroded valves, old pressure release valve, hard water, etc). Wyatt came to our house to do a full inspection. He was very responsive to our questions and gave us several plan options. He and Michael were punctual, respectful of the home, very clean work and worked quite fast to finish all the work in a day. They were also very thorough. After the work was done, they checked and rechecked for leaks. They made sure to walk through and teach us how to operate the water softener and made a list of things that may need to be done next year. I am glad that our friend referred us to them. Definitely plumbers that you can trust.</p>
+        
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 4</span>
+          <span class="author">Gail Valentin</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a year ago</span>
+        </div>
+        <p class="review-text">Gardner Plumbing was assigned by our home warranty company. TJ was assigned and arrived on time. He explained what was the issue, it was a quick fix and how we could fix in the future.  He also recommended and explained a maintenance plan that is offered by Gardner Plumbing to consider for future. Thanks for the great service</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for your wonderful review, Gail! We're thrilled to hear that TJ provided timely and informative service. It's great to know that he was able to offer solutions and recommendations for the future. Your satisfaction is our priority, and we hope to assist you again!</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 5</span>
+          <span class="author">Erica Nunes</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">7 months ago</span>
+        </div>
+        <p class="review-text">Cody has been our go-to plumber for almost a year now. He helped us when we first moved into our house to make our plumbing and gas meter system insurance compliance. Since then we have used him for maintenance of our plumbing system. He is always on time and extremely professional. I highly recommend this company.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Erica,
+
+Thank you so much for your continued trust and kind words! We’re thrilled to … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 6</span>
+          <span class="author">Larry Smalley</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">Edited 2 years ago</span>
+        </div>
+        <p class="review-text">Tankless water heater flushing.<br><br>Wyatt did and outstanding job! Clean, professional and explained the service and process. I am going to sign up for bi-annual service. I would happily recommend them to others.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for choosing Gardner Plumbing Company, Larry! We are so glad that Wyatt was able to provide you with exceptional service during your tankless water heater flushing. Our team strives to always be clean, professional, and … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 7</span>
+          <span class="author">MaryLou Young</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">6 months ago</span>
+        </div>
+        <p class="review-text">I love this plumbing company.  I have called several nearby. But this is the best. We plan to renovate and do work on another home. Gardner is the best and we only ask for Jake. He is professional, skillful, and very know ledgeable.  He is the best!!!! We will only work with Gardner!!!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi MaryLou,
+
+Wow — thank you for such a heartfelt review! 💛 We’re thrilled to hear that Jake … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 8</span>
+          <span class="author">Anna Jewell</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a year ago</span>
+        </div>
+        <p class="review-text">I open a claim with American Home Shield and Gardner Plumbing was assigned as my provider.  Even though they were not able to help me right away because they were pretty booked, Paolo (the person who answer the phone) went out of his way to …</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Anna,
+
+Thank you for sharing your experience! We’re glad we could assist you through … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 9</span>
+          <span class="author">Betsy Whedon</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">7 months ago</span>
+        </div>
+        <p class="review-text">We’ve used Gardner Plumbing for years for clogs and leaks. Recently, they did a whole house repipe for us. Wyatt was a pleasure to work with! He let us know what to expect and followed through every step of the plan with no surprises. We …</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Betsy,
+
+We’re so grateful for your continued trust over the years — it truly means a lot … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 10</span>
+          <span class="author">Lisa Roan</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">Andrew was amazing. He is highly professional, yet pleasant and easy to talk to. Even the dog liked him, and she is old and cranky. He replaced my garbage disposal quickly, and gave me excellent advice about general care and maintenance.</p>
+        
+      </div>
+    </section>
+
+    <section class="theme" id="clean-visit">
+      <h2>CLEAN VISIT / SHOE COVERS / DROP CLOTHS / CLEANED UP<a class="back-top" href="#top">↑ Back to top</a></h2>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 1</span>
+          <span class="author">Andrew Lopez</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">Hello my name is Andrew Lopez IV and I live in Yucaipa California, and I had a plumbing issue that needed immediate attention, so I called my homeowners insurance, America Home Shield and they referred me the best plumbing company with a 5.9 star rating GARDNER PLUMBING CO. i’m so happy with this company from the beginning they called and schedule for the inspection and they sent me the BEST technician his name is ANDREW DELGADO. He was on time, Professional, and extremely knowledgeable. He sat down with me and explained the problem, gave an honest price, and he fixed everything quickly and cleanly. He was so clean he didn’t leave a mess or a trace. You can tell he takes pride in his work. Highly recommend him if you want reliable, Quality, plumbing, done right the first time. He was awesome and a total professional. Gardner Plumbing Company is my Company for LIFE. I will recommend them and especially Andrew to all my friends and family. THANK YOU, ANDREW AND THANK YOU GARDNER PLUMBING COMPANY!!!!!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Andrew,
+
+Reading your review truly means a lot to our entire team. We’re so glad American Home Shield connected you with us and that Andrew Delgado was able to take care of your plumbing issue quickly and professionally.
+
+Andrew takes a great deal of pride in his work, and it’s wonderful to hear that his punctuality, clear communication, honest pricing, and clean workmanship stood out to you. W...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 2</span>
+          <span class="author">Alicia Harrison</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a month ago</span>
+        </div>
+        <p class="review-text">Went through my home warranty service for a broken water pressure regulator.  The technician was on time, explained everything, confirmed the issue as was able to get my PRV repair approved and replaced the same day.  His repair was thorough and he cleaned up the work area as if he had never been there.<br><br>Hard to find good plumbers and now I will be using these guys for future plumbing issues, regardless of whether its covered or not.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Alicia, for taking the time to share your experience. We're glad the technician arrived on time, clearly explained the issue, and completed the PRV repair and cleanup to your satisfaction. We appreciate your trust and are honored you'll call on us for future plumbing needs, covered or not. Please contact our office anytime you need assistance.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 3</span>
+          <span class="author">kerry eastland</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">3 months ago</span>
+        </div>
+        <p class="review-text">Jerome M. is a friendly, knowledgeable plumber. He worked so hard and diligently and left a very clean work area. He was so focused on the work and doing the best job. He gave me all my options and was honest and up-front about the cost. I had a Moen auto shut-off switch and water pressure regulator installed and we could not be more satisfied with his work and the price tag. 100% recommendation!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for taking the time to leave this excellent review. We’re thrilled Jerome provided friendly, thorough, and transparent service and that the Moen auto shut-off switch and pressure regulator met your expectations. We appreciate your 100% recommendation and look forward to assisting you with any future plumbing needs.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 4</span>
+          <span class="author">Jovan Fonseca</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">3 weeks ago</span>
+        </div>
+        <p class="review-text">GREAT Service . My technician was named Mitchell Beers. He came to do a automatic shut off vavle using the Moen shut off system that was requiredfor my house insurance. Came, he did a fantastic job. Explained to me how my system would work. Helped me download the app i needed for the system and helped me set it up. Fully explained to me how to use it and what to monitor l. Went above and beyond explaining it to were I understood it more then me just messing around with the app alone. Did a very clean job with installation. Couldnt have ask for anything better. Very polite and easy to talk to would recommend them to everyone.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for the fantastic 5-star review, Jovan. We're thrilled Mitchell Beers provided a clean, professional installation of the Moen automatic shut-off valve and that he took the time to set up the app and clearly explain how the system works. We appreciate your recommendation and are glad he went above and beyond to make everything easy to understand. If you need any further assistance with th...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 5</span>
+          <span class="author">Bonny Martinez</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a month ago</span>
+        </div>
+        <p class="review-text">Andrew Is top notch service hands down!!he explained the process step-by-step  from beginning to end to where I could understand it. I am a complete dummy when it comes to understanding certain services but with Andrew he made it clear where I can understand and I am able to Explain it. Super professional, very knowledgeable! He knows is  work he’s fast, clean and efficient, I highly recommend him🙏🏻 one of the best service, very satisfied.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Bonny, for the wonderful review and recommendation. We’re thrilled Andrew provided clear, professional, and efficient service and that you felt comfortable throughout the process. I will be sure to pass your compliments along to him. We appreciate your trust and look forward to assisting you again whenever you need us.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 6</span>
+          <span class="author">Sherice Moss</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">5 months ago</span>
+        </div>
+        <p class="review-text">Mitchell's technician was courteous, knowledgeable, and arrived on time. He repaired my shower handle quickly and explained the issue in a way I could understand. He cleaned up the area afterward and made sure I was happy with the repair. I would definitely recommend him and request his service again. He was very polite and professional.</p>
+        
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 7</span>
+          <span class="author">Kenneth Mann</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 months ago</span>
+        </div>
+        <p class="review-text">Their Technician Jerome Martinez was very professional. He fully explained what the cause of the problem was, all of the possible solutions with the pros and cons of each solution, and then completely repaired the problem in a timely and cleanly manner. The repairs were fully covered under my insurance policy.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for the wonderful review, Kenneth. We’re glad Jerome Martinez provided a clear explanation of the cause and all solution options, and that he completed the repair promptly and cleanly. It’s great to hear your repairs were fully covered by your insurance. We appreciate you sharing your experience and will pass your kind words along to Jerome.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 8</span>
+          <span class="author">Stefan Donawa</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">6 months ago</span>
+        </div>
+        <p class="review-text">Mitchell did an amazing job. He was on time, professional, and fixed both my toilets and sinks quickly with zero hassle. The work was clean, the price was fair, and he explained everything in a way that actually made sense. I’d recommend Mitchell to anyone who wants the job done right the first time.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Stefan,
+
+We’re so glad to hear Mitchell delivered such a smooth and professional … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 9</span>
+          <span class="author">Marcella Radford</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">I had the pleasure of meeting Mr Jerome Martinez, he installed Moen FloWater shutoff on today. He very knowledgeable reliable a very neat and clean worker. For your plumbing needs give this young man a call.@Gardner Plumbing Co.com. You will be glad that you did. He also replaced so water knobs that were old and rusty. My out door water system now is so pretty. Thank you again Jerome.</p>
+        
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 10</span>
+          <span class="author">Cecilia Flores</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 weeks ago</span>
+        </div>
+        <p class="review-text">We had a great experience with this plumbing company. TJ came out a couple of weeks ago to assess our leaking shower valve and provided an estimate for the repair. He was very informative, professional, and never pushy, which we really appreciated.<br><br>Mitchell came out today to complete the repair, and I couldn’t be happier with the service. He was courteous, efficient, and left everything clean when the job was finished. Our new shower valve is working great, and the entire process was smooth from start to finish.<br><br>I would highly recommend them for any plumbing needs and will definitely be calling them again if we have any future plumbing issues. Thank you, TJ and Mitchell, for the excellent service!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Cecilia, for the wonderful review. We’re thrilled TJ and Mitchell provided informative, professional, and efficient service and that your new shower valve is working well. We appreciate your recommendation and look forward to helping with any future plumbing needs. If anything else comes up, please don’t hesitate to call.
+
+Thank You From Gardner Plumbing Company</div>
+      </div>
+    </section>
+
+    <section class="theme" id="transparent-pricing">
+      <h2>TRANSPARENT PRICING / UPFRONT QUOTE / NO SURPRISE FEES<a class="back-top" href="#top">↑ Back to top</a></h2>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 1</span>
+          <span class="author">Andrew Lopez</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">Hello my name is Andrew Lopez IV and I live in Yucaipa California, and I had a plumbing issue that needed immediate attention, so I called my homeowners insurance, America Home Shield and they referred me the best plumbing company with a 5.9 star rating GARDNER PLUMBING CO. i’m so happy with this company from the beginning they called and schedule for the inspection and they sent me the BEST technician his name is ANDREW DELGADO. He was on time, Professional, and extremely knowledgeable. He sat down with me and explained the problem, gave an honest price, and he fixed everything quickly and cleanly. He was so clean he didn’t leave a mess or a trace. You can tell he takes pride in his work. Highly recommend him if you want reliable, Quality, plumbing, done right the first time. He was awesome and a total professional. Gardner Plumbing Company is my Company for LIFE. I will recommend them and especially Andrew to all my friends and family. THANK YOU, ANDREW AND THANK YOU GARDNER PLUMBING COMPANY!!!!!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Andrew,
+
+Reading your review truly means a lot to our entire team. We’re so glad American Home Shield connected you with us and that Andrew Delgado was able to take care of your plumbing issue quickly and professionally.
+
+Andrew takes a great deal of pride in his work, and it’s wonderful to hear that his punctuality, clear communication, honest pricing, and clean workmanship stood out to you. W...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 2</span>
+          <span class="author">kerry eastland</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">3 months ago</span>
+        </div>
+        <p class="review-text">Jerome M. is a friendly, knowledgeable plumber. He worked so hard and diligently and left a very clean work area. He was so focused on the work and doing the best job. He gave me all my options and was honest and up-front about the cost. I had a Moen auto shut-off switch and water pressure regulator installed and we could not be more satisfied with his work and the price tag. 100% recommendation!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for taking the time to leave this excellent review. We’re thrilled Jerome provided friendly, thorough, and transparent service and that the Moen auto shut-off switch and pressure regulator met your expectations. We appreciate your 100% recommendation and look forward to assisting you with any future plumbing needs.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 3</span>
+          <span class="author">Ting L</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">6 days ago</span>
+        </div>
+        <p class="review-text">Jacob is my plumber today to install Moen shutoff Flo. He did an excellent work for me! He explained everything before he started the work, answered all my questions. Everything is clear for me. He is patient, polite, honest. He also told me how to download insurance letter, showed me how the emergency tools work if I have to shut off Moen device manually. Definitely I'll come back. I am so happy that I found a reliable plumber in my area!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you for your kind review, Ting. We’re thrilled Jacob provided excellent, patient, and clear service during your Moen shutoff Flo installation and took the time to show you the emergency tools and insurance letter download. We’ll share your compliments with Jacob. We appreciate you choosing us and look forward to helping you again.
+
+Thank You From Gardner Plumbing Company</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 4</span>
+          <span class="author">Johanna Lomeli</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 months ago</span>
+        </div>
+        <p class="review-text">We are extremely happy with the wonderful and outstanding service and support provided by Mitchell B! Thank you so much Mitchell for being very patient and explaining everything very carefully. Mitchell installed the Moen Smart Water device for us and everything was done very professionally. He is very honest and knowledgeable and he answered all our questions! We are super happy and will now continue to reach out to you for all our plumbing needs, thanks again!! 100% recommend!!!</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you so much for your glowing review, Johanna. We’re thrilled Mitchell provided professional, patient, and knowledgeable service during your Moen Smart Water device installation. We appreciate your 100% recommendation and look forward to assisting with all your future plumbing needs. We’ll be sure to share your kind words with Mitchell and the team.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 5</span>
+          <span class="author">Myrna Peets</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">I couldn't be happier with the service provided by Mitchell of Gardner Plumbing.  It was so refreshing to have a contractor that felt honest, reliable, competent, pleasant and easy to communicate with.  We had a Moen water shut off valve installed through the Moen/Safeco site and I will admit, I was nervous about who would be sent out.  Mitchell exceeded all my expectations with his knowledge, skill and advice on not only the shut off valve, but also our pressure valve and hot water tank timer. He came up with the best solution on how to install the device and went to work.  We were extremely happy with the work and the communication before and throughout the job.  We have definitely found our new reliable plumber!!  Thank you Mitchell and Gardner Plumbing.</p>
+        
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 6</span>
+          <span class="author">Bobbi Calvin</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 months ago</span>
+        </div>
+        <p class="review-text">I had a water leak detection system installed today and Jacob Kinman was my technician. He was knowledgeable and professional. He explained everything that needed to be done before so there were no surprises. He cleaned up after himself and answered all my questions. I’m very happy with the work he did and would definitely recommend him and  his company.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Bobbi, for your kind review. We’re glad Jacob provided knowledgeable, professional service and made the process clear with no surprises. We appreciate your recommendation and are pleased you’re happy with the installation. Please contact us any time if you need further assistance.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 7</span>
+          <span class="author">Ellecia Purvis</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">4 months ago</span>
+        </div>
+        <p class="review-text">Codi and his partner were on time, focused and sought out the best way to repair my leak issue. He was very knowledgble and kept me informed thru-out the repair process. I really appreciated his honesty and thoughtfulness.  I would definitely recommend Gardner Plumbing for all things plumbing.  They are trustworthly.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Ellecia,
+
+We truly appreciate you taking the time to share such a thoughtful review! It’s great to hear that Cody and his partner were punctual, transparent, and thorough throughout the repair process. Keeping homeowners informed and providing honest recommendations is something we take a lot of pride in.
+
+Thank you for trusting Gardner Plumbing with your leak repairs and for recommending us so...</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 8</span>
+          <span class="author">Hazel Ortega</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">a week ago</span>
+        </div>
+        <p class="review-text">Jerome Martinez was the tech who came to my rescue. He was very polite &amp; informative as to different options i could do to improve my situation with my toilets. I really appreciate his honesty &amp; helpfulness.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you, Hazel, for the wonderful review. We are glad Jerome was able to assist and provide clear, honest options to improve your toilet situation. We will share your kind words with him—he’ll be pleased to know his politeness and helpfulness made a difference. Thank you for choosing our services.
+
+Thank You From Gardner Plumbing Company</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 9</span>
+          <span class="author">Keith Ramirez</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">Edited 5 months ago</span>
+        </div>
+        <p class="review-text">Super easy process. Professional, honest, and timing with everything worked out perfect. They explained everything that was going to be done. Job completion was awesome.</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Hi Keith,
+
+Thank you for the awesome review! We’re so glad to hear that you had a great … More</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <span class="option-tag">OPTION 10</span>
+          <span class="author">Matthew Smith</span>
+          <span class="stars">★★★★★</span>
+          <span class="date">2 years ago</span>
+        </div>
+        <p class="review-text">I am a Home Inspector and see all different plumbing issues as you can imagine. I have referred Gardner Plumbing to multiple clients and agents and have had nothing but positive feedback. Troy Beers who runs thier operation is honest, trust …</p>
+        <div class="owner-response"><strong>Owner reply:</strong> Thank you Matthew! We appreciate the kind words and trust in our team!</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

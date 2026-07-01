@@ -4,12 +4,12 @@ export const metadata = {
   title: "Industrial Plumbing & Process Piping",
   description: "Specialized industrial plumbing services for manufacturing, warehouses, and processing facilities in Riverside County. Safety-focused solutions for process piping, utility lines, and shutdowns.",
   alternates: {
-    canonical: '/services/industrial-plumbing'
+    canonical: '/services/plumbing/industrial-plumbing'
   },
   openGraph: {
     title: "Industrial Plumbing & Process Piping | Gardner Plumbing Co.",
     description: "Specialized industrial plumbing services for manufacturing and processing facilities.",
-    url: '/services/industrial-plumbing',
+    url: '/services/plumbing/industrial-plumbing',
     images: ['/gardner_logo.webp']
   }
 };

@@ -4,12 +4,12 @@ export const metadata = {
   title: "Moen Flo Installation",
   description: "Professional Moen Flo smart water monitoring system installation and setup to protect your home from leaks in Riverside County.",
   alternates: {
-    canonical: '/services/moen-flo-installation'
+    canonical: '/services/plumbing/moen-flo-installation'
   },
   openGraph: {
     title: "Moen Flo Installation | Gardner Plumbing Co.",
     description: "Professional Moen Flo installation and setup to protect your home from leaks.",
-    url: '/services/moen-flo-installation',
+    url: '/services/plumbing/moen-flo-installation',
     images: ['/gardner_logo.webp']
   }
 };

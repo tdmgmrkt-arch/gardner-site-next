@@ -3,14 +3,14 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Temecula Drain Cleaning | Fast, Professional Service | Gardner Plumbing",
-  description: "Expert drain cleaning in Temecula, CA. Serving Old Town, Redhawk, Harveston & all neighborhoods. Same-day service, 24/7 emergency. Call (951) 428-5551.",
+  description: "Expert drain cleaning in Temecula, CA. Serving Old Town, Redhawk, Harveston & all neighborhoods. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
-    canonical: '/services/temecula-drain-cleaning'
+    canonical: '/services/plumbing/temecula-drain-cleaning'
   },
   openGraph: {
     title: "Temecula Drain Cleaning | Gardner Plumbing Co.",
     description: "Professional drain cleaning serving all of Temecula. Fast response, licensed technicians, 30+ years experience.",
-    url: '/services/temecula-drain-cleaning',
+    url: '/services/plumbing/temecula-drain-cleaning',
     images: ['/gardner_logo.webp']
   }
 };
@@ -47,7 +47,7 @@ const faqs = [
 const breadcrumbs = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
-  { name: "Temecula Drain Cleaning", url: "/services/temecula-drain-cleaning" }
+  { name: "Temecula Drain Cleaning", url: "/services/plumbing/temecula-drain-cleaning" }
 ];
 
 // Generate FAQ Schema
@@ -85,7 +85,7 @@ const serviceSchema = {
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",
-    "telephone": "+1-951-428-5551",
+    "telephone": "+1-951-246-4337",
     "url": "https://gardnerplumbingco.com",
     "address": {
       "@type": "PostalAddress",

@@ -33,6 +33,8 @@ import {
   AlertTriangle,
   Zap
 } from "lucide-react";
+import { GardnerPromise } from "./GardnerPromise";
+import { CleanVisitPromise } from "./CleanVisitPromise";
 
 const cityLinks: Record<string, string> = {
   Temecula: "https://temeculaca.gov",
@@ -49,7 +51,11 @@ const cityLinks: Record<string, string> = {
   Wildomar: "https://cityofwildomar.org",
 };
 
-export function BurstPipes() {
+type BurstPipesProps = {
+  reviewCount?: string;
+};
+
+export function BurstPipes({ reviewCount = "900+" }: BurstPipesProps = {}) {
 const [isModalOpen, setIsModalOpen] = useState(false);
 
 const emergencyReasons = [
@@ -495,7 +501,7 @@ const emergencyReasons = [
                       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 drop-shadow-lg leading-tight">
                           24/7 Burst Pipe <span className="text-gradient bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent">Emergency</span> Response
                       </h2>
-                      <p className="text-lg text-gray-300 mb-8 leading-relaxed">A burst pipe is a true <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency</Link>. Our teams are available 24/7/365 to provide immediate assistance, stop the <Link href="/services/water-damage" className="text-red-400 hover:text-red-300 underline">water damage</Link>, and begin repairs following <a href="https://www.iicrc.org/consumers/care/water-damage/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">IICRC standards</a>.</p>
+                      <p className="text-lg text-gray-300 mb-8 leading-relaxed">A burst pipe is a true <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency</Link>. Our teams are available 24/7/365 to provide immediate assistance, stop the <Link href="/services/plumbing/water-damage" className="text-red-400 hover:text-red-300 underline">water damage</Link>, and begin repairs following <a href="https://www.iicrc.org/consumers/care/water-damage/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">IICRC standards</a>.</p>
                       <div className="mb-8">
                           <h3 className="text-xl font-bold text-white mb-6">Signs You Have a Pipe Emergency:</h3>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -522,6 +528,12 @@ const emergencyReasons = [
               </div>
           </div>
       </section>
+
+      {/* Gardner Promise */}
+      <GardnerPromise reviewCount={reviewCount} />
+
+      {/* Clean Visit Promise */}
+      <CleanVisitPromise reviewCount={reviewCount} />
 
       {/* Final CTA Section */}
       <section className="relative overflow-hidden">

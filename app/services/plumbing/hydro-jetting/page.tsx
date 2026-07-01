@@ -4,12 +4,12 @@ export const metadata = {
   title: "Hydro Jetting Services",
   description: "Powerful hydro jetting services to clear tough clogs and restore your pipes. Advanced drain cleaning in Riverside County.",
   alternates: {
-    canonical: '/services/hydro-jetting'
+    canonical: '/services/plumbing/hydro-jetting'
   },
   openGraph: {
     title: "Hydro Jetting Services | Gardner Plumbing Co.",
     description: "Powerful hydro jetting services to clear tough clogs and restore your pipes.",
-    url: '/services/hydro-jetting',
+    url: '/services/plumbing/hydro-jetting',
     images: ['/gardner_logo.webp']
   }
 };

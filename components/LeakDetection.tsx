@@ -11,13 +11,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-import { 
-  Droplets, 
-  Clock, 
-  Shield, 
-  CheckCircle, 
-  ArrowRight, 
-  Phone, 
+import {
+  Droplets,
+  Clock,
+  Shield,
+  CheckCircle,
+  ArrowRight,
+  Phone,
   DollarSign,
   Wrench,
   Calendar,
@@ -30,6 +30,8 @@ import {
   Star,
   AlertTriangle
 } from "lucide-react";
+import { GardnerPromise } from "./GardnerPromise";
+import { CleanVisitPromise } from "./CleanVisitPromise";
 
 const cityLinks: Record<string, string> = {
   Temecula: "https://temeculaca.gov",
@@ -46,7 +48,11 @@ const cityLinks: Record<string, string> = {
   Wildomar: "https://cityofwildomar.org",
 };
 
-export function LeakDetection() {
+type LeakDetectionProps = {
+  reviewCount?: string;
+};
+
+export function LeakDetection({ reviewCount = "900+" }: LeakDetectionProps = {}) {
 const emergencyReasons = [
     "Major water leak detected",
     "Sudden water pressure drop",
@@ -843,11 +849,17 @@ const services = [
               </div>
             </section>
 
+      {/* Gardner Promise */}
+      <GardnerPromise reviewCount={reviewCount} />
+
+      {/* Clean Visit Promise */}
+      <CleanVisitPromise reviewCount={reviewCount} />
+
       {/* Final CTA Section */}
       <section className="relative overflow-hidden">
-        <div 
+        <div
           className="py-12 sm:py-16"
-          style={{ 
+          style={{
             background: `
               radial-gradient(ellipse at center, #1f2937 0%, #111827 50%, #000000 100%),
               linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
@@ -859,7 +871,7 @@ const services = [
               0 8px 24px rgba(31, 41, 55, 0.5),
               inset 0 1px 0 rgba(255, 255, 255, 0.1),
               inset 0 -1px 0 rgba(0, 0, 0, 0.2)
-            `
+            `,
           }}
         >
           <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

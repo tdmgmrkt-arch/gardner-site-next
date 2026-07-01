@@ -157,7 +157,7 @@ export function SanJacintoDrainCleaning() {
                     items={[
                       { label: "Home", href: "/" },
                       { label: "Services", href: "/services" },
-                      { label: "Drain Cleaning", href: "/services/drain-cleaning" },
+                      { label: "Drain Cleaning", href: "/services/plumbing/drain-cleaning" },
                       { label: "San Jacinto" }
                     ]}
                   />
@@ -192,11 +192,11 @@ export function SanJacintoDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button size="lg" className="min-w-[220px] bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Call (951) 428-5551
+                      Call (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -253,11 +253,11 @@ export function SanJacintoDrainCleaning() {
                 </span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                <Link href="tel:9514285551">
+                <Link href="tel:9512464337">
                   <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
                     <Phone className="h-5 w-5 text-red-100" />
                     <span className="text-white font-bold text-lg">
-                      (951) 428-5551
+                      (951) 246-4337
                     </span>
                   </div>
                 </Link>
@@ -291,13 +291,13 @@ export function SanJacintoDrainCleaning() {
                 San Jacinto represents a distinct valley community within Riverside County, characterized by established residential neighborhoods, family-oriented development, and a close relationship with neighboring Hemet that creates an integrated valley region. Gardner Plumbing Company serves San Jacinto as part of our comprehensive Hemet Valley coverage, understanding that residents often think of the area as a unified community rather than separate municipalities. Our service approach reflects San Jacinto's predominantly residential character and the specific drainage challenges that valley geography creates. From Soboba Springs to valley-wide residential areas, we provide drain cleaning solutions calibrated to local conditions rather than generic one-size-fits-all approaches.
               </p>
               <p>
-                The San Jacinto Valley's flat topography creates drainage characteristics that differ significantly from hillside or coastal communities. Valley drainage systems rely heavily on proper pipe grade and flow rather than natural elevation changes to move waste water. The valley floor retains moisture longer after seasonal rains, affecting soil conditions around drain lines and sometimes creating temporary water table elevation. Extreme summer heat causes valley soil to contract and dry, shifting pipes and creating stress points where problems develop. Our <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning services</Link> account for these valley-specific factors, using techniques appropriate for the local environment and seasonal patterns that San Jacinto residents experience year after year.
+                The San Jacinto Valley's flat topography creates drainage characteristics that differ significantly from hillside or coastal communities. Valley drainage systems rely heavily on proper pipe grade and flow rather than natural elevation changes to move waste water. The valley floor retains moisture longer after seasonal rains, affecting soil conditions around drain lines and sometimes creating temporary water table elevation. Extreme summer heat causes valley soil to contract and dry, shifting pipes and creating stress points where problems develop. Our <Link href="/services/plumbing/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning services</Link> account for these valley-specific factors, using techniques appropriate for the local environment and seasonal patterns that San Jacinto residents experience year after year.
               </p>
               <p>
-                Mature valley landscaping presents ongoing challenges for San Jacinto drainage systems. Trees throughout the valley have adapted to survive hot, dry summers by developing extensive root systems that aggressively seek any available moisture source. Sewer lines provide consistent water that attracts roots, especially during the driest summer months when other moisture sources disappear. Roots can penetrate tiny cracks in older pipes and then expand, creating blockages that worsen progressively until professional cleaning becomes necessary. Our <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting equipment</Link> cuts through and removes tree roots while thoroughly scouring pipes clean of accumulated debris. Video camera inspections identify exactly where roots have invaded and assess whether underlying pipe damage requires attention beyond cleaning.
+                Mature valley landscaping presents ongoing challenges for San Jacinto drainage systems. Trees throughout the valley have adapted to survive hot, dry summers by developing extensive root systems that aggressively seek any available moisture source. Sewer lines provide consistent water that attracts roots, especially during the driest summer months when other moisture sources disappear. Roots can penetrate tiny cracks in older pipes and then expand, creating blockages that worsen progressively until professional cleaning becomes necessary. Our <Link href="/services/plumbing/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting equipment</Link> cuts through and removes tree roots while thoroughly scouring pipes clean of accumulated debris. Video camera inspections identify exactly where roots have invaded and assess whether underlying pipe damage requires attention beyond cleaning.
               </p>
               <p>
-                Emergency drain situations demand immediate professional response regardless of timing or location within San Jacinto Valley. A backed-up sewer line creates stress for any family, particularly when it occurs during evening hours, weekends, or holidays when many service companies are unavailable. Our <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency plumbing service</Link> covers all of San Jacinto with rapid response and complete equipment to resolve urgent drainage problems. Our valley-wide coverage means the same experienced technicians serve both San Jacinto and Hemet with no service differences or boundary charges. When inspection reveals damaged pipes requiring replacement rather than cleaning, we provide comprehensive <Link href="/services/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair and replacement</Link> services. For questions or to schedule service in San Jacinto, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our valley service team</Link> today.
+                Emergency drain situations demand immediate professional response regardless of timing or location within San Jacinto Valley. A backed-up sewer line creates stress for any family, particularly when it occurs during evening hours, weekends, or holidays when many service companies are unavailable. Our <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency plumbing service</Link> covers all of San Jacinto with rapid response and complete equipment to resolve urgent drainage problems. Our valley-wide coverage means the same experienced technicians serve both San Jacinto and Hemet with no service differences or boundary charges. When inspection reveals damaged pipes requiring replacement rather than cleaning, we provide comprehensive <Link href="/services/plumbing/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair and replacement</Link> services. For questions or to schedule service in San Jacinto, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our valley service team</Link> today.
               </p>
             </div>
           </div>
@@ -538,14 +538,14 @@ export function SanJacintoDrainCleaning() {
           <div className="glassmorphism-dark rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 shadow-luxury text-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Need Drain Help in San Jacinto?</h3>
             <p className="text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-              Our San Jacinto Valley drain experts are ready to solve your drainage problems. For urgent situations, we provide <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
+              Our San Jacinto Valley drain experts are ready to solve your drainage problems. For urgent situations, we provide <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="tel:9514285551">
+              <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </Link>
@@ -615,14 +615,14 @@ export function SanJacintoDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
                   >
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Emergency: (951) 428-5551
+                      Emergency: (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -675,11 +675,11 @@ export function SanJacintoDrainCleaning() {
               Serving Soboba Springs and all San Jacinto Valley residential areas with expert drain solutions and family-friendly service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a href="tel:9514285551">
+              <a href="tel:9512464337">
                 <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </a>

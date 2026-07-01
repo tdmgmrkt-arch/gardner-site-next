@@ -3,14 +3,14 @@ import Script from "next/script";
 
 export const metadata = {
   title: "San Jacinto Drain Cleaning | Professional Service | Gardner Plumbing",
-  description: "Expert drain cleaning in San Jacinto, CA. Serving valley-wide areas, Soboba Springs & all neighborhoods. Same-day service, 24/7 emergency. Call (951) 428-5551.",
+  description: "Expert drain cleaning in San Jacinto, CA. Serving valley-wide areas, Soboba Springs & all neighborhoods. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
-    canonical: '/services/san-jacinto-drain-cleaning'
+    canonical: '/services/plumbing/san-jacinto-drain-cleaning'
   },
   openGraph: {
     title: "San Jacinto Drain Cleaning | Gardner Plumbing Co.",
     description: "Professional drain cleaning throughout San Jacinto. Fast response, licensed technicians, 30+ years experience.",
-    url: '/services/san-jacinto-drain-cleaning',
+    url: '/services/plumbing/san-jacinto-drain-cleaning',
     images: ['/gardner_logo.webp']
   }
 };
@@ -47,7 +47,7 @@ const faqs = [
 const breadcrumbs = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
-  { name: "San Jacinto Drain Cleaning", url: "/services/san-jacinto-drain-cleaning" }
+  { name: "San Jacinto Drain Cleaning", url: "/services/plumbing/san-jacinto-drain-cleaning" }
 ];
 
 // Generate FAQ Schema
@@ -85,7 +85,7 @@ const serviceSchema = {
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",
-    "telephone": "+1-951-428-5551",
+    "telephone": "+1-951-246-4337",
     "url": "https://gardnerplumbingco.com",
     "address": {
       "@type": "PostalAddress",

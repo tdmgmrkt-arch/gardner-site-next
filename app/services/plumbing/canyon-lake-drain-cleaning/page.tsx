@@ -3,14 +3,14 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Canyon Lake Drain Cleaning | Gated Community Specialists | Gardner Plumbing",
-  description: "Expert drain cleaning in Canyon Lake, CA. Serving lakefront & hillside properties, septic & sewer systems. 24/7 emergency. Call (951) 428-5551.",
+  description: "Expert drain cleaning in Canyon Lake, CA. Serving lakefront & hillside properties, septic & sewer systems. 24/7 emergency. Call (951) 246-4337.",
   alternates: {
-    canonical: '/services/canyon-lake-drain-cleaning'
+    canonical: '/services/plumbing/canyon-lake-drain-cleaning'
   },
   openGraph: {
     title: "Canyon Lake Drain Cleaning | Gardner Plumbing Co.",
     description: "Professional drain cleaning for Canyon Lake's gated community. Specialized service for unique property needs.",
-    url: '/services/canyon-lake-drain-cleaning',
+    url: '/services/plumbing/canyon-lake-drain-cleaning',
     images: ['/gardner_logo.webp']
   }
 };
@@ -47,7 +47,7 @@ const faqs = [
 const breadcrumbs = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
-  { name: "Canyon Lake Drain Cleaning", url: "/services/canyon-lake-drain-cleaning" }
+  { name: "Canyon Lake Drain Cleaning", url: "/services/plumbing/canyon-lake-drain-cleaning" }
 ];
 
 // Generate FAQ Schema
@@ -85,7 +85,7 @@ const serviceSchema = {
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",
-    "telephone": "+1-951-428-5551",
+    "telephone": "+1-951-246-4337",
     "url": "https://gardnerplumbingco.com",
     "address": {
       "@type": "PostalAddress",

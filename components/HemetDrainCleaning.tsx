@@ -157,7 +157,7 @@ export function HemetDrainCleaning() {
                     items={[
                       { label: "Home", href: "/" },
                       { label: "Services", href: "/services" },
-                      { label: "Drain Cleaning", href: "/services/drain-cleaning" },
+                      { label: "Drain Cleaning", href: "/services/plumbing/drain-cleaning" },
                       { label: "Hemet" }
                     ]}
                   />
@@ -192,11 +192,11 @@ export function HemetDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button size="lg" className="min-w-[220px] bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Call (951) 428-5551
+                      Call (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -253,11 +253,11 @@ export function HemetDrainCleaning() {
                 </span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                <Link href="tel:9514285551">
+                <Link href="tel:9512464337">
                   <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
                     <Phone className="h-5 w-5 text-red-100" />
                     <span className="text-white font-bold text-lg">
-                      (951) 428-5551
+                      (951) 246-4337
                     </span>
                   </div>
                 </Link>
@@ -291,13 +291,13 @@ export function HemetDrainCleaning() {
                 Hemet Valley represents a unique community within Riverside County, characterized by a substantial retirement population, established residential neighborhoods, and infrastructure that reflects the city's settled, mature character. Many Hemet residents are seniors who have lived in their homes for decades, caring for properties that hold deep personal significance. This demographic profile shapes our service approach at Gardner Plumbing Company. We understand that many Hemet customers are on fixed retirement incomes, value clear communication, and appreciate patient, respectful service. Our technicians are trained not just in plumbing technology but in the courtesy and professionalism that Hemet's senior community deserves and expects.
               </p>
               <p>
-                Hemet's established neighborhoods throughout Seven Hills, Diamond Valley, Valle Vista, and along the Florida Avenue corridor feature homes with aging plumbing infrastructure that presents specific challenges. Older cast iron and clay sewer lines that have served faithfully for decades now show normal wear, requiring specialized cleaning approaches that preserve remaining pipe integrity while clearing blockages. Hemet Valley's extreme summer heat accelerates aging in these systems, causing expansion and contraction that stresses joints and connections. Mature landscaping with extensive root systems seeks moisture from sewer lines during hot, dry months. Our <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning services</Link> address these age-related and climate-related challenges with techniques specifically calibrated for older infrastructure throughout Hemet.
+                Hemet's established neighborhoods throughout Seven Hills, Diamond Valley, Valle Vista, and along the Florida Avenue corridor feature homes with aging plumbing infrastructure that presents specific challenges. Older cast iron and clay sewer lines that have served faithfully for decades now show normal wear, requiring specialized cleaning approaches that preserve remaining pipe integrity while clearing blockages. Hemet Valley's extreme summer heat accelerates aging in these systems, causing expansion and contraction that stresses joints and connections. Mature landscaping with extensive root systems seeks moisture from sewer lines during hot, dry months. Our <Link href="/services/plumbing/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning services</Link> address these age-related and climate-related challenges with techniques specifically calibrated for older infrastructure throughout Hemet.
               </p>
               <p>
-                Preventive maintenance becomes increasingly valuable as plumbing systems age, making regular drain service particularly beneficial for Hemet homeowners. Annual or semi-annual drain cleaning removes accumulating mineral deposits and debris before they cause complete blockages, extending system life and preventing emergency situations. Our <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting equipment</Link> is pressure-adjustable to safely clean aging pipes without causing damage. Video camera inspections provide documentation of pipe condition and identify developing problems while they remain manageable and affordable to address. For seniors on fixed incomes, predictable maintenance costs are far preferable to unexpected emergency repairs, making scheduled preventive service an investment in peace of mind.
+                Preventive maintenance becomes increasingly valuable as plumbing systems age, making regular drain service particularly beneficial for Hemet homeowners. Annual or semi-annual drain cleaning removes accumulating mineral deposits and debris before they cause complete blockages, extending system life and preventing emergency situations. Our <Link href="/services/plumbing/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting equipment</Link> is pressure-adjustable to safely clean aging pipes without causing damage. Video camera inspections provide documentation of pipe condition and identify developing problems while they remain manageable and affordable to address. For seniors on fixed incomes, predictable maintenance costs are far preferable to unexpected emergency repairs, making scheduled preventive service an investment in peace of mind.
               </p>
               <p>
-                Emergency drain situations require compassionate, professional response regardless of timing. A backed-up sewer creates stress for any homeowner, but particularly for senior residents who may have mobility limitations or health concerns. Our <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency plumbing service</Link> covers all of Hemet Valley with technicians who understand that emergencies demand both technical expertise and respectful, patient service. When camera inspection reveals pipes damaged beyond effective cleaning, we provide comprehensive <Link href="/services/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer repair and replacement services</Link> with clear explanations and fair pricing. To schedule service or discuss your Hemet property's drainage needs, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our experienced team</Link> today.
+                Emergency drain situations require compassionate, professional response regardless of timing. A backed-up sewer creates stress for any homeowner, but particularly for senior residents who may have mobility limitations or health concerns. Our <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency plumbing service</Link> covers all of Hemet Valley with technicians who understand that emergencies demand both technical expertise and respectful, patient service. When camera inspection reveals pipes damaged beyond effective cleaning, we provide comprehensive <Link href="/services/plumbing/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer repair and replacement services</Link> with clear explanations and fair pricing. To schedule service or discuss your Hemet property's drainage needs, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our experienced team</Link> today.
               </p>
             </div>
           </div>
@@ -538,14 +538,14 @@ export function HemetDrainCleaning() {
           <div className="glassmorphism-dark rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 shadow-luxury text-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Need Drain Help in Hemet?</h3>
             <p className="text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-              Our Hemet drain experts are ready to solve your drainage problems with respectful, professional service. For urgent situations, we provide <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
+              Our Hemet drain experts are ready to solve your drainage problems with respectful, professional service. For urgent situations, we provide <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="tel:9514285551">
+              <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </Link>
@@ -615,14 +615,14 @@ export function HemetDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
                   >
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Emergency: (951) 428-5551
+                      Emergency: (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -675,11 +675,11 @@ export function HemetDrainCleaning() {
               Serving Seven Hills, Diamond Valley, Valle Vista, Florida Avenue area, San Jacinto River neighborhoods, and all of Hemet Valley with expert drain solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a href="tel:9514285551">
+              <a href="tel:9512464337">
                 <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </a>

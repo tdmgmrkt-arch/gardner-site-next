@@ -46,16 +46,16 @@ export function NotFoundContent() {
         <div className="bg-gray-800/50 rounded-xl p-6 mb-8">
           <h3 className="text-xl font-bold mb-4">Popular Pages</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
-            <Link href="/services/emergency-service" className="text-gray-300 hover:text-red-400 transition-colors">
+            <Link href="/services/plumbing/emergency-service" className="text-gray-300 hover:text-red-400 transition-colors">
               → Emergency Service
             </Link>
-            <Link href="/services/water-heater-service" className="text-gray-300 hover:text-red-400 transition-colors">
+            <Link href="/services/plumbing/water-heater-service" className="text-gray-300 hover:text-red-400 transition-colors">
               → Water Heater Service
             </Link>
-            <Link href="/services/drain-cleaning" className="text-gray-300 hover:text-red-400 transition-colors">
+            <Link href="/services/plumbing/drain-cleaning" className="text-gray-300 hover:text-red-400 transition-colors">
               → Drain Cleaning
             </Link>
-            <Link href="/services/leak-detection" className="text-gray-300 hover:text-red-400 transition-colors">
+            <Link href="/services/plumbing/leak-detection" className="text-gray-300 hover:text-red-400 transition-colors">
               → Leak Detection
             </Link>
             <Link href="/blog" className="text-gray-300 hover:text-red-400 transition-colors">

@@ -1,4 +1,6 @@
-import {Breadcrumbs} from "@/components/Breadcrumbs"; // 
+import {Breadcrumbs} from "@/components/Breadcrumbs";
+import { getGoogleReviews, formatRating, formatReviewCount } from "@/lib/google-reviews";
+import { siteConfig } from "@/lib/site-config";
 import { SchedulerModal } from "./SchedulerModal";
 import { Button } from "./ui/button";
 import Image from "next/image";
@@ -182,7 +184,26 @@ export const whyCustomersChooseUs = [
   "30+ years of proven experience"
 ];
 
-export function FullReviews() {
+export async function FullReviews() {
+  const reviewData = await getGoogleReviews();
+  const liveGoogleRating =
+    reviewData.rating ?? siteConfig.googleRatingFallback.rating;
+  const liveGoogleCount =
+    reviewData.userRatingCount != null
+      ? `${formatReviewCount(reviewData.userRatingCount)}+`
+      : `${formatReviewCount(siteConfig.googleRatingFallback.count)}+`;
+  const liveRatingLabel =
+    formatRating(reviewData.rating) ??
+    formatRating(siteConfig.googleRatingFallback.rating) ??
+    "4.9";
+
+  // Merge live Google data into the platforms array
+  const livePlatforms = platforms.map((p) =>
+    p.name === "Google Reviews"
+      ? { ...p, rating: liveGoogleRating, reviews: liveGoogleCount }
+      : p
+  );
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -289,8 +310,8 @@ export function FullReviews() {
                       <Star className="h-4 w-4 text-white" />
                     </div>
                     <div>
-                      <div className="text-white font-bold text-sm">5.0 Stars</div>
-                      <div className="text-gray-300 text-xs">1,200+ Reviews</div>
+                      <div className="text-white font-bold text-sm">{liveRatingLabel} Stars</div>
+                      <div className="text-gray-300 text-xs">{liveGoogleCount} Google Reviews</div>
                     </div>
                   </div>
                 </div>
@@ -405,7 +426,7 @@ export function FullReviews() {
         <div className="glassmorphism-dark rounded-3xl p-8 border border-white/10 shadow-luxury">
           <h3 className="text-2xl font-bold text-white mb-8 text-center">Trusted Across All Major Review Platforms</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {platforms.map((platform, index) => {
+            {livePlatforms.map((platform, index) => {
               // Define platform-specific styling
               const getPlatformIcon = (platformName: string) => {
                 switch (platformName) {
@@ -758,63 +779,6 @@ export function FullReviews() {
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="py-16 sm:py-20 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div 
-            className="absolute inset-0"
-            style={{ 
-              background: `
-                radial-gradient(ellipse at center, #1f2937 0%, #111827 50%, #000000 100%),
-                linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
-              `
-            }}
-          />
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
-            <Star className="h-5 w-5 text-red-400" />
-            <span className="text-red-400 font-semibold text-sm uppercase tracking-wider">Join Our Satisfied Customers</span>
-          </div>
-          
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 drop-shadow-lg">
-            Ready to Experience <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">5-Star Service?</span>
-          </h2>
-          
-          <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">
-            Join over 1,200 satisfied customers who trust Gardner Plumbing for reliable, professional plumbing services throughout Riverside County.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <a href = "tel:9512464337">
-            <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-10 py-4 rounded-xl shadow-lg border border-red-400/20 group">
-              <span className="flex items-center justify-center gap-3">
-                <Phone className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
-                Call (951) 246-4337 Now
-              </span>
-            </Button>
-            </a>
-             <SchedulerModal/>
-          </div>
-
-          <div className="mt-12 pt-8 border-t border-gray-700">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-400">
-              <div className="flex items-center gap-2">
-                <Clock className="h-5 w-5 text-green-400" />
-                <span>Same-Day Service Available</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Shield className="h-5 w-5 text-blue-400" />
-                <span>Licensed & Insured</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Award className="h-5 w-5 text-yellow-400" />
-                <span>30+ Years Experience</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

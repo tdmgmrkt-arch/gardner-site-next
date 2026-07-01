@@ -215,7 +215,7 @@ const emergencyReasons = [
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Reliable solutions for sewer line backups, septic tank maintenance, and <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">drain cleaning</Link> throughout Riverside County.
+                Reliable solutions for sewer line backups, septic tank maintenance, and <Link href="/services/plumbing/drain-cleaning" className="text-red-400 hover:text-red-300 underline">drain cleaning</Link> throughout Riverside County.
               </p>
 
               {/* Key Benefits */}
@@ -782,7 +782,7 @@ const emergencyReasons = [
               </h2>
               
               <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                Don't let a sewer backup or septic failure cause major damage. We provide <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency services</Link> throughout Riverside County with rapid response times.
+                Don't let a sewer backup or septic failure cause major damage. We provide <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency services</Link> throughout Riverside County with rapid response times.
               </p>
 
               <div className="mb-8">

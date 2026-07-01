@@ -15,13 +15,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-import { 
-  Droplets, 
-  Clock, 
-  Shield, 
-  CheckCircle, 
-  ArrowRight, 
-  Phone, 
+import {
+  Droplets,
+  Clock,
+  Shield,
+  CheckCircle,
+  ArrowRight,
+  Phone,
   DollarSign,
   Wrench,
   Calendar,
@@ -36,6 +36,8 @@ import {
   Thermometer,
   Truck,
 } from "lucide-react";
+import { GardnerPromise } from "./GardnerPromise";
+import { CleanVisitPromise } from "./CleanVisitPromise";
 
 const cityLinks: Record<string, string> = {
   Temecula: "https://temeculaca.gov",
@@ -52,7 +54,11 @@ const cityLinks: Record<string, string> = {
   Wildomar: "https://cityofwildomar.org",
 };
 
-export function WaterHeaterPage() {
+type WaterHeaterPageProps = {
+  reviewCount?: string;
+};
+
+export function WaterHeaterPage({ reviewCount = "900+" }: WaterHeaterPageProps = {}) {
 const [isModalOpen, setIsModalOpen] = useState(false);
 
 const emergencyReasons = [
@@ -385,7 +391,7 @@ const services = [
               Complete <span className="text-gradient bg-gradient-to-r from-blue-400 to-green-600 bg-clip-text text-transparent">Water Heater</span> Solutions
             </h2>
             <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-              From new installations to <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency repairs</Link>, our experienced technicians provide comprehensive water heater services for all brands and models.
+              From new installations to <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency repairs</Link>, our experienced technicians provide comprehensive water heater services for all brands and models.
             </p>
           </div>
 
@@ -897,11 +903,17 @@ const services = [
 </section>
 
 
+      {/* Gardner Promise */}
+      <GardnerPromise reviewCount={reviewCount} />
+
+      {/* Clean Visit Promise */}
+      <CleanVisitPromise reviewCount={reviewCount} />
+
       {/* Final CTA Section */}
       <section className="relative overflow-hidden">
-        <div 
+        <div
           className="py-12 sm:py-16"
-          style={{ 
+          style={{
             background: `
               radial-gradient(ellipse at center, #1f2937 0%, #111827 50%, #000000 100%),
               linear-gradient(135deg, #202020 0%, #374151 50%, #1f2937 100%)
@@ -913,7 +925,7 @@ const services = [
               0 8px 24px rgba(31, 41, 55, 0.5),
               inset 0 1px 0 rgba(255, 255, 255, 0.1),
               inset 0 -1px 0 rgba(0, 0, 0, 0.2)
-            `
+            `,
           }}
         >
           <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

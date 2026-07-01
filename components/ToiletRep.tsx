@@ -220,7 +220,7 @@ const emergencyReasons = [
               </h1>
 
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Fast, clean installs and reliable repairs for running, leaking, or clogged toilets—done right the first time. Need <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency service</Link>?
+                Fast, clean installs and reliable repairs for running, leaking, or clogged toilets—done right the first time. Need <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency service</Link>?
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">

@@ -157,7 +157,7 @@ export function WildomarDrainCleaning() {
                     items={[
                       { label: "Home", href: "/" },
                       { label: "Services", href: "/services" },
-                      { label: "Drain Cleaning", href: "/services/drain-cleaning" },
+                      { label: "Drain Cleaning", href: "/services/plumbing/drain-cleaning" },
                       { label: "Wildomar" }
                     ]}
                   />
@@ -192,11 +192,11 @@ export function WildomarDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button size="lg" className="min-w-[220px] bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group">
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Call (951) 428-5551
+                      Call (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -253,11 +253,11 @@ export function WildomarDrainCleaning() {
                 </span>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-                <Link href="tel:9514285551">
+                <Link href="tel:9512464337">
                   <div className="flex items-center gap-2 bg-black/20 rounded-full px-4 py-2">
                     <Phone className="h-5 w-5 text-red-100" />
                     <span className="text-white font-bold text-lg">
-                      (951) 428-5551
+                      (951) 246-4337
                     </span>
                   </div>
                 </Link>
@@ -291,13 +291,13 @@ export function WildomarDrainCleaning() {
                 Wildomar represents one of Southwest Riverside County's newer and fastest-growing cities, characterized by modern residential development, family-oriented neighborhoods, and expanding infrastructure along the I-15 corridor. This growing community features predominantly newer construction with contemporary plumbing systems that differ from the aging infrastructure found in more established Inland Empire cities. Gardner Plumbing Company has grown alongside Wildomar, developing expertise in the specific needs of newer developments while maintaining the rapid response and professional service that growing communities require. From Windsong Valley to Trilogy and throughout Wildomar's expanding residential areas, we provide drain cleaning solutions designed for modern family homes.
               </p>
               <p>
-                Wildomar's newer plumbing infrastructure creates both advantages and specific considerations for drain service. Modern PVC drain lines respond excellently to professional cleaning techniques and generally prove more durable than older pipe materials. However, newer homes aren't immune to drainage problems. Construction debris from building can lodge in pipes and surface months or years after completion. Families moving into new homes may not yet understand their plumbing system's limitations or proper drain care practices. Establishing preventive maintenance habits early prevents problems from developing as homes age. Our <Link href="/services/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning services</Link> address both immediate problems and long-term preventive care, helping Wildomar families protect their investment from day one.
+                Wildomar's newer plumbing infrastructure creates both advantages and specific considerations for drain service. Modern PVC drain lines respond excellently to professional cleaning techniques and generally prove more durable than older pipe materials. However, newer homes aren't immune to drainage problems. Construction debris from building can lodge in pipes and surface months or years after completion. Families moving into new homes may not yet understand their plumbing system's limitations or proper drain care practices. Establishing preventive maintenance habits early prevents problems from developing as homes age. Our <Link href="/services/plumbing/drain-cleaning" className="text-red-400 hover:text-red-300 underline">professional drain cleaning services</Link> address both immediate problems and long-term preventive care, helping Wildomar families protect their investment from day one.
               </p>
               <p>
-                The family-oriented character of Wildomar's residential development shapes our service approach throughout the community. Active households with children create different drainage demands than adult-only homes, with higher usage levels and occasionally unexpected items entering drain systems. We schedule service around family routines, work efficiently to minimize disruption, and communicate clearly so homeowners understand what we're doing and why. Our <Link href="/services/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting equipment</Link> is calibrated appropriately for modern PVC systems, providing thorough cleaning without the damage risks that older pipe materials present. Video camera inspections verify proper installation in newer homes and document your system's condition for future reference.
+                The family-oriented character of Wildomar's residential development shapes our service approach throughout the community. Active households with children create different drainage demands than adult-only homes, with higher usage levels and occasionally unexpected items entering drain systems. We schedule service around family routines, work efficiently to minimize disruption, and communicate clearly so homeowners understand what we're doing and why. Our <Link href="/services/plumbing/hydro-jetting" className="text-red-400 hover:text-red-300 underline">hydro-jetting equipment</Link> is calibrated appropriately for modern PVC systems, providing thorough cleaning without the damage risks that older pipe materials present. Video camera inspections verify proper installation in newer homes and document your system's condition for future reference.
               </p>
               <p>
-                Emergency drain situations require immediate professional response regardless of location within Wildomar's expanding boundaries. A backed-up sewer line creates stress for any family, particularly when young children are involved or the problem occurs during evening hours or weekends. Our <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency plumbing service</Link> covers all of Wildomar including established neighborhoods and newer expansion areas with rapid response times. We understand that growing communities sometimes face infrastructure challenges, and we're committed to serving Wildomar families regardless of where you're located. When inspection reveals damaged pipes requiring repair rather than cleaning, we provide comprehensive <Link href="/services/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair and replacement services</Link>. To schedule service or discuss your Wildomar property's drainage needs, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our team</Link> today.
+                Emergency drain situations require immediate professional response regardless of location within Wildomar's expanding boundaries. A backed-up sewer line creates stress for any family, particularly when young children are involved or the problem occurs during evening hours or weekends. Our <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency plumbing service</Link> covers all of Wildomar including established neighborhoods and newer expansion areas with rapid response times. We understand that growing communities sometimes face infrastructure challenges, and we're committed to serving Wildomar families regardless of where you're located. When inspection reveals damaged pipes requiring repair rather than cleaning, we provide comprehensive <Link href="/services/plumbing/sewer-and-septic" className="text-red-400 hover:text-red-300 underline">sewer line repair and replacement services</Link>. To schedule service or discuss your Wildomar property's drainage needs, <Link href="/contact-us" className="text-red-400 hover:text-red-300 underline">contact our team</Link> today.
               </p>
             </div>
           </div>
@@ -538,14 +538,14 @@ export function WildomarDrainCleaning() {
           <div className="glassmorphism-dark rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 shadow-luxury text-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Need Drain Help in Wildomar?</h3>
             <p className="text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-              Our Wildomar drain experts are ready to solve your drainage problems. For urgent situations, we provide <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
+              Our Wildomar drain experts are ready to solve your drainage problems. For urgent situations, we provide <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">24/7 emergency service</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="tel:9514285551">
+              <Link href="tel:9512464337">
                 <Button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </Link>
@@ -615,14 +615,14 @@ export function WildomarDrainCleaning() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:9514285551">
+                <a href="tel:9512464337">
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg border border-red-400/20 group"
                   >
                     <span className="flex items-center justify-center gap-3">
                       <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                      Emergency: (951) 428-5551
+                      Emergency: (951) 246-4337
                     </span>
                   </Button>
                 </a>
@@ -675,11 +675,11 @@ export function WildomarDrainCleaning() {
               Serving Windsong Valley, Trilogy, I-15 corridor properties, and all expanding Wildomar residential areas with expert drain solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a href="tel:9514285551">
+              <a href="tel:9512464337">
                 <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-4 rounded-xl shadow-lg">
                   <span className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
-                    Call (951) 428-5551
+                    Call (951) 246-4337
                   </span>
                 </Button>
               </a>

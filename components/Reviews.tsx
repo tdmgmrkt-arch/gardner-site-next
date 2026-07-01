@@ -15,7 +15,9 @@ import {
   CheckCircle,
 } from "lucide-react";
 
-export function Reviews() {
+type ReviewsProps = { reviewCount?: string; ratingLabel?: string };
+
+export function Reviews({ reviewCount = "500+", ratingLabel = "4.9" }: ReviewsProps = {}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const reviews = [
@@ -288,7 +290,7 @@ export function Reviews() {
                               ))}
                             </div>
                             <span className="text-xs sm:text-sm font-bold text-white">
-                              4.9
+                              {ratingLabel}
                             </span>
                             <div className="text-[10px] sm:text-xs text-gray-300 font-medium">
                               Google
@@ -340,7 +342,7 @@ export function Reviews() {
 
                     <div className="text-center">
                       <div className="text-[10px] sm:text-xs text-gray-400 font-medium">
-                        500+ Reviews
+                        {reviewCount} Reviews
                       </div>
                       <div className="text-[9px] sm:text-xs text-gray-500">
                         Live Ratings

@@ -96,10 +96,10 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
   };
 
   const emergencyServices = [
-    { icon: Wrench, service: "Burst Pipes", response: "30 min response", href: "/services/burst-pipes" },
-    { icon: Home, service: "Water Heater Failure", response: "Same day service", href: "/services/no-hot-water" },
-    { icon: Building, service: "Sewer Backup", response: "Emergency cleanup", href: "/services/backups" },
-    { icon: Phone, service: "Gas Line Issues", response: "Immediate response", href: "/services/gas-lines" }
+    { icon: Wrench, service: "Burst Pipes", response: "30 min response", href: "/services/plumbing/burst-pipes" },
+    { icon: Home, service: "Water Heater Failure", response: "Same day service", href: "/services/plumbing/no-hot-water" },
+    { icon: Building, service: "Sewer Backup", response: "Emergency cleanup", href: "/services/plumbing/backups" },
+    { icon: Phone, service: "Gas Line Issues", response: "Immediate response", href: "/services/plumbing/gas-lines" }
   ];
 
   // State for form data

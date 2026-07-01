@@ -3,14 +3,14 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Perris Drain Cleaning | Professional Plumbing Services | Gardner Plumbing",
-  description: "Expert drain cleaning in Perris, CA. Fast response, advanced equipment, 24/7 emergency service. Same-day appointments available. Call (951) 428-5551.",
+  description: "Expert drain cleaning in Perris, CA. Fast response, advanced equipment, 24/7 emergency service. Same-day appointments available. Call (951) 246-4337.",
   alternates: {
-    canonical: '/services/perris-drain-cleaning'
+    canonical: '/services/plumbing/perris-drain-cleaning'
   },
   openGraph: {
     title: "Perris Drain Cleaning | Gardner Plumbing Co.",
     description: "Professional drain cleaning throughout Perris. 30+ years experience, licensed technicians, guaranteed results.",
-    url: '/services/perris-drain-cleaning',
+    url: '/services/plumbing/perris-drain-cleaning',
     images: ['/gardner_logo.webp']
   }
 };
@@ -47,7 +47,7 @@ const faqs = [
 const breadcrumbs = [
   { name: "Home", url: "/" },
   { name: "Services", url: "/services" },
-  { name: "Perris Drain Cleaning", url: "/services/perris-drain-cleaning" }
+  { name: "Perris Drain Cleaning", url: "/services/plumbing/perris-drain-cleaning" }
 ];
 
 // Generate FAQ Schema
@@ -85,7 +85,7 @@ const serviceSchema = {
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",
-    "telephone": "+1-951-428-5551",
+    "telephone": "+1-951-246-4337",
     "url": "https://gardnerplumbingco.com",
     "address": {
       "@type": "PostalAddress",

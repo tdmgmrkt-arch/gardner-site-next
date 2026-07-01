@@ -31,21 +31,21 @@ export function ServicesFull() {
       title: "Drain\nCleaning",
       description: "Professional drain clearing and maintenance services to keep your plumbing flowing smoothly.",
       features: ["Hydro-Jetting", "Video Inspection", "Root Removal", "Preventive Maintenance"],
-      link: "/services/drain-cleaning"
+      link: "/services/plumbing/drain-cleaning"
     },
     {
       icon: Wrench,
       title: "Leak Detection/\nRepair",
       description: "Advanced leak detection technology and expert repair services for quick, efficient solutions.",
       features: ["Electronic Detection", "Slab Leak Repair", "Pipe Replacement", "Emergency Service"],
-      link: "/services/leak-detection"
+      link: "/services/plumbing/leak-detection"
     },
     {
       icon: Zap,
       title: "Water Heater Service",
       description: "Complete water heater installation, repair, and maintenance for optimal performance.",
       features: ["Tank & Tankless", "Energy Efficient", "Same-Day Service", "Warranty Included"],
-      link: "/services/water-heater-service"
+      link: "/services/plumbing/water-heater-service"
     },
     {
       icon: Home,
@@ -64,7 +64,7 @@ export function ServicesFull() {
       title: "Pipe\nReplacement",
       description: "Complete pipe replacement services using modern materials and techniques.",
       features: ["Copper Piping", "PEX Installation", "Slab Repairs", "Whole House Repiping"],
-      link: "/services/piping-and-repiping"
+      link: "/services/plumbing/piping-and-repiping"
     },
     {
       icon: Thermometer,
@@ -86,14 +86,14 @@ export function ServicesFull() {
       title: "Commercial Plumbing",
       description: "Professional plumbing solutions for businesses and commercial properties.",
       features: ["System Design", "Maintenance Plans", "Emergency Service", "Code Compliance"],
-      link: "/services/commercial-plumbing"
+      link: "/services/plumbing/commercial-plumbing"
     },
     {
       icon: Wrench,
       title: "Hydro-Jetting",
       description: "High-pressure water jetting for thorough pipe cleaning and blockage removal.",
       features: ["Eco-Friendly", "Root Cutting", "Grease Removal", "Video Verification"],
-      link: "/services/hydro-jetting"
+      link: "/services/plumbing/hydro-jetting"
     },
     {
       icon: Hammer,
@@ -115,21 +115,21 @@ export function ServicesFull() {
       title: "Sewer Line\nRepair",
       description: "Complete sewer line inspection, cleaning, and repair services.",
       features: ["Trenchless Repair", "Full Replacement", "Root Removal", "Video Inspection"],
-      link: "/services/sewer-and-septic"
+      link: "/services/plumbing/sewer-and-septic"
     },
     {
       icon: MapPin,
       title: "Gas Line\nServices",
       description: "Safe and professional gas line installation and repair services.",
       features: ["Leak Detection", "Line Installation", "Pressure Testing", "Safety Inspections"],
-      link: "/services/gas-lines"
+      link: "/services/plumbing/gas-lines"
     },
     {
       icon: Shield,
       title: "Water Quality\nSolutions",
       description: "Comprehensive water testing and filtration system installation.",
       features: ["Water Testing", "Filtration Systems", "Softener Installation", "UV Sterilization"],
-      link: "/services/water-filtration-system"
+      link: "/services/plumbing/water-filtration-system"
     },
     {
       icon: Settings,
@@ -199,7 +199,7 @@ export function ServicesFull() {
                   Professional <span className="text-white">Plumbing</span> <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Services</span>
                 </h1>
                 <p className="text-lg text-gray-300 leading-relaxed max-w-xl">
-                  From routine maintenance to <Link href="/services/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency repairs</Link>, Gardner Plumbing Co. provides comprehensive plumbing solutions for homes and businesses throughout Temecula, Murrieta, Perris, Menifee, Canyon Lake, Lake Elsinore, Corona, Moreno Valley, Riverside, and surrounding Riverside County communities.
+                  From routine maintenance to <Link href="/services/plumbing/emergency-service" className="text-red-400 hover:text-red-300 underline">emergency repairs</Link>, Gardner Plumbing Co. provides comprehensive plumbing solutions for homes and businesses throughout Temecula, Murrieta, Perris, Menifee, Canyon Lake, Lake Elsinore, Corona, Moreno Valley, Riverside, and surrounding Riverside County communities.
                 </p>
               </div>
               

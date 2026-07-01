@@ -4,12 +4,12 @@ export const metadata = {
   title: "Certified Backflow Testing & Prevention",
   description: "Protect your water supply with certified backflow testing, repair, and installation services in Riverside County. We handle all compliance and paperwork with your local water district.",
   alternates: {
-    canonical: '/services/backflow-prevention'
+    canonical: '/services/plumbing/backflow-prevention'
   },
   openGraph: {
     title: "Certified Backflow Testing & Prevention | Gardner Plumbing Co.",
     description: "Certified backflow testing, repair, and installation services. Full compliance assistance.",
-    url: '/services/backflow-prevention',
+    url: '/services/plumbing/backflow-prevention',
     images: ['/gardner_logo.webp']
   }
 };
