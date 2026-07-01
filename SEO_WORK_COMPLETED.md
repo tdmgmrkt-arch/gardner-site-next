@@ -53,27 +53,27 @@ All service pages updated with:
 - Improved meta descriptions with location keywords
 
 1. ✅ `/services` - Services hub
-2. ✅ `/services/emergency-service`
-3. ✅ `/services/hydro-jetting`
-4. ✅ `/services/gas-lines`
-5. ✅ `/services/toilet-installation-and-repair`
-6. ✅ `/services/water-filtration-system`
-7. ✅ `/services/water-heater-service`
-8. ✅ `/services/drain-cleaning`
-9. ✅ `/services/commercial-plumbing`
-10. ✅ `/services/piping-and-repiping`
-11. ✅ `/services/garbage-disposal-service`
+2. ✅ `/services/plumbing/emergency-service`
+3. ✅ `/services/plumbing/hydro-jetting`
+4. ✅ `/services/plumbing/gas-lines`
+5. ✅ `/services/plumbing/toilet-installation-and-repair`
+6. ✅ `/services/plumbing/water-filtration-system`
+7. ✅ `/services/plumbing/water-heater-service`
+8. ✅ `/services/plumbing/drain-cleaning`
+9. ✅ `/services/plumbing/commercial-plumbing`
+10. ✅ `/services/plumbing/piping-and-repiping`
+11. ✅ `/services/plumbing/garbage-disposal-service`
 12. ✅ `/services/maintenance-plans`
-13. ✅ `/services/sewer-and-septic`
-14. ✅ `/services/leak-detection`
-15. ✅ `/services/moen-flo-installation`
-16. ✅ `/services/65-point-inspection`
-17. ✅ `/services/burst-pipes`
-18. ✅ `/services/water-damage`
-19. ✅ `/services/backups`
-20. ✅ `/services/no-hot-water`
-21. ✅ `/services/backflow-prevention`
-22. ✅ `/services/industrial-plumbing`
+13. ✅ `/services/plumbing/sewer-and-septic`
+14. ✅ `/services/plumbing/leak-detection`
+15. ✅ `/services/plumbing/moen-flo-installation`
+16. ✅ `/services/plumbing/65-point-inspection`
+17. ✅ `/services/plumbing/burst-pipes`
+18. ✅ `/services/plumbing/water-damage`
+19. ✅ `/services/plumbing/backups`
+20. ✅ `/services/plumbing/no-hot-water`
+21. ✅ `/services/plumbing/backflow-prevention`
+22. ✅ `/services/plumbing/industrial-plumbing`
 
 #### Blog Pages (10 pages)
 23. ✅ `/blog` - Blog listing
@@ -253,27 +253,27 @@ All 3 sitemaps updated to current date:
 
 **Service Pages (26):**
 - `app/services/page.tsx`
-- `app/services/emergency-service/page.tsx`
-- `app/services/hydro-jetting/page.tsx`
-- `app/services/gas-lines/page.tsx`
-- `app/services/toilet-installation-and-repair/page.tsx`
-- `app/services/water-filtration-system/page.tsx`
-- `app/services/water-heater-service/page.tsx`
-- `app/services/drain-cleaning/page.tsx`
-- `app/services/commercial-plumbing/page.tsx`
-- `app/services/piping-and-repiping/page.tsx`
-- `app/services/garbage-disposal-service/page.tsx`
+- `app/services/plumbing/emergency-service/page.tsx`
+- `app/services/plumbing/hydro-jetting/page.tsx`
+- `app/services/plumbing/gas-lines/page.tsx`
+- `app/services/plumbing/toilet-installation-and-repair/page.tsx`
+- `app/services/plumbing/water-filtration-system/page.tsx`
+- `app/services/plumbing/water-heater-service/page.tsx`
+- `app/services/plumbing/drain-cleaning/page.tsx`
+- `app/services/plumbing/commercial-plumbing/page.tsx`
+- `app/services/plumbing/piping-and-repiping/page.tsx`
+- `app/services/plumbing/garbage-disposal-service/page.tsx`
 - `app/services/maintenance-plans/page.tsx`
-- `app/services/sewer-and-septic/page.tsx`
-- `app/services/leak-detection/page.tsx`
-- `app/services/moen-flo-installation/page.tsx`
-- `app/services/65-point-inspection/page.tsx`
-- `app/services/burst-pipes/page.tsx`
-- `app/services/water-damage/page.tsx`
-- `app/services/backups/page.tsx`
-- `app/services/no-hot-water/page.tsx`
-- `app/services/backflow-prevention/page.tsx`
-- `app/services/industrial-plumbing/page.tsx`
+- `app/services/plumbing/sewer-and-septic/page.tsx`
+- `app/services/plumbing/leak-detection/page.tsx`
+- `app/services/plumbing/moen-flo-installation/page.tsx`
+- `app/services/plumbing/65-point-inspection/page.tsx`
+- `app/services/plumbing/burst-pipes/page.tsx`
+- `app/services/plumbing/water-damage/page.tsx`
+- `app/services/plumbing/backups/page.tsx`
+- `app/services/plumbing/no-hot-water/page.tsx`
+- `app/services/plumbing/backflow-prevention/page.tsx`
+- `app/services/plumbing/industrial-plumbing/page.tsx`
 
 **Blog Pages (2):**
 - `app/blog/page.tsx`

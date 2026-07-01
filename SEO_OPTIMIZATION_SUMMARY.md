@@ -86,7 +86,7 @@
 ---
 
 ### 7. Emergency Service Page Enhancement ✅
-**File:** `app/services/emergency-service/page.tsx`
+**File:** `app/services/plumbing/emergency-service/page.tsx`
 
 **Changes Made:**
 - Added canonical URL
@@ -121,26 +121,26 @@ export const metadata = {
 
 #### Service Pages (25 remaining):
 1. `/services/page.tsx` → `/services`
-2. `/services/hydro-jetting/page.tsx` → `/services/hydro-jetting`
-3. `/services/gas-lines/page.tsx` → `/services/gas-lines`
-4. `/services/toilet-installation-and-repair/page.tsx` → `/services/toilet-installation-and-repair`
-5. `/services/water-filtration-system/page.tsx` → `/services/water-filtration-system`
-6. `/services/water-heater-service/page.tsx` → `/services/water-heater-service`
-7. `/services/drain-cleaning/page.tsx` → `/services/drain-cleaning`
-8. `/services/commercial-plumbing/page.tsx` → `/services/commercial-plumbing`
-9. `/services/piping-and-repiping/page.tsx` → `/services/piping-and-repiping`
-10. `/services/garbage-disposal-service/page.tsx` → `/services/garbage-disposal-service`
+2. `/services/plumbing/hydro-jetting/page.tsx` → `/services/plumbing/hydro-jetting`
+3. `/services/plumbing/gas-lines/page.tsx` → `/services/plumbing/gas-lines`
+4. `/services/plumbing/toilet-installation-and-repair/page.tsx` → `/services/plumbing/toilet-installation-and-repair`
+5. `/services/plumbing/water-filtration-system/page.tsx` → `/services/plumbing/water-filtration-system`
+6. `/services/plumbing/water-heater-service/page.tsx` → `/services/plumbing/water-heater-service`
+7. `/services/plumbing/drain-cleaning/page.tsx` → `/services/plumbing/drain-cleaning`
+8. `/services/plumbing/commercial-plumbing/page.tsx` → `/services/plumbing/commercial-plumbing`
+9. `/services/plumbing/piping-and-repiping/page.tsx` → `/services/plumbing/piping-and-repiping`
+10. `/services/plumbing/garbage-disposal-service/page.tsx` → `/services/plumbing/garbage-disposal-service`
 11. `/services/maintenance-plans/page.tsx` → `/services/maintenance-plans`
-12. `/services/sewer-and-septic/page.tsx` → `/services/sewer-and-septic`
-13. `/services/leak-detection/page.tsx` → `/services/leak-detection`
-14. `/services/moen-flo-installation/page.tsx` → `/services/moen-flo-installation`
-15. `/services/65-point-inspection/page.tsx` → `/services/65-point-inspection`
-16. `/services/burst-pipes/page.tsx` → `/services/burst-pipes`
-17. `/services/water-damage/page.tsx` → `/services/water-damage`
-18. `/services/backups/page.tsx` → `/services/backups`
-19. `/services/no-hot-water/page.tsx` → `/services/no-hot-water`
-20. `/services/backflow-prevention/page.tsx` → `/services/backflow-prevention`
-21. `/services/industrial-plumbing/page.tsx` → `/services/industrial-plumbing`
+12. `/services/plumbing/sewer-and-septic/page.tsx` → `/services/plumbing/sewer-and-septic`
+13. `/services/plumbing/leak-detection/page.tsx` → `/services/plumbing/leak-detection`
+14. `/services/plumbing/moen-flo-installation/page.tsx` → `/services/plumbing/moen-flo-installation`
+15. `/services/plumbing/65-point-inspection/page.tsx` → `/services/plumbing/65-point-inspection`
+16. `/services/plumbing/burst-pipes/page.tsx` → `/services/plumbing/burst-pipes`
+17. `/services/plumbing/water-damage/page.tsx` → `/services/plumbing/water-damage`
+18. `/services/plumbing/backups/page.tsx` → `/services/plumbing/backups`
+19. `/services/plumbing/no-hot-water/page.tsx` → `/services/plumbing/no-hot-water`
+20. `/services/plumbing/backflow-prevention/page.tsx` → `/services/plumbing/backflow-prevention`
+21. `/services/plumbing/industrial-plumbing/page.tsx` → `/services/plumbing/industrial-plumbing`
 
 #### Other Pages (8 remaining):
 1. `/about-us/page.tsx` → `/about-us`

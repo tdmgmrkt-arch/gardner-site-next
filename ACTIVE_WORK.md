@@ -1,12 +1,21 @@
 # Gardner Plumbing — Active Work Log
 
-_Last updated: 2026-06-12_
+_Last updated: 2026-06-30_
 
 ---
 
 ## In Progress
 
-- **HVAC Phase 1 — page builds COMPLETE (2026-06-12).** All 18 HVAC pages built and live in local repo (1 vertical hub + 3 sub-hubs + 14 leaves). Build passes 98/98 static routes. Real hero image live on AC Repair (`/public/acrepairhero.webp`); 17 other pages have visible Gemini prompt placeholders ready for user to generate. NOT yet committed.
+- **Clean Visit Promise — COMPLETE in local repo (2026-06-30).** Closes R&R cleanliness citation gap (19 vs 2). New `/clean-visit-promise` page + reusable `<CleanVisitPromise />` 6-pillar section (glassmorphism, sibling to Gardner Promise). Section dropped on homepage, Drain, WaterHeater, LeakDetection, BurstPipes, Emergency. WebPage + FAQPage + BreadcrumbList JSON-LD inline. Sitemap updated. Build passes (100 routes). Owner-approved: name "The Clean Visit Promise", accountability recourse Option A (same-day return free), Behavior 7 (photo handoff) dropped — not operationally live. **NOT yet committed.**
+
+- **AI Visibility Priority 1 — COMPLETE in local repo (2026-06-29).** Three pages shipped to target the biggest AI-citation gaps (Pricing 0 vs 18, Emergency 1 vs 27, Warranty turned positive). Build passes 99/99 static routes. NOT yet committed.
+  - `/transparent-pricing` — NEW. 13 sections, 5 pricing tables, 11 FAQ items, Service + FAQPage + BreadcrumbList JSON-LD. Source: `knowledge base/gardner_transparent_pricing (1).pdf`. (`components/TransparentPricing.tsx`, `app/transparent-pricing/page.tsx`, sitemap updated.)
+  - `/services/plumbing/emergency-service` — REWRITE. 10 sections w/ 45-min arrival commitment, 25-city coverage grid (Riverside + San Bernardino + Coachella), 5-step process, 7-FAQ accordion. Source: `knowledge base/gardner_emergency_plumbing (1).pdf`. (`components/Emergency.tsx` rewritten, page metadata + schema upgraded.)
+  - **The Gardner Promise** — NEW BRAND. `components/GardnerPromise.tsx` reusable section (4 pillars, trust strip, CTAs). Dropped on homepage (between WhyChooseUs and Reviews), Drain.tsx, WaterHeaterPage.tsx, LeakDetection.tsx, BurstPipes.tsx. `/guarantee` page rewritten end-to-end with deep-dive pillar subsections + 7-FAQ accordion. Brand spec lives in `seo/content-facts.md`.
+
+- **Tech debt flagged:** Emergency rewrite agent embedded a hand-coded Gardner Promise block inline in `Emergency.tsx` rather than importing `<GardnerPromise />`. Gardner Promise agent skipped its insertion to avoid duplicate. Swap to canonical component in a small follow-up so the section stays in sync site-wide.
+
+- **HVAC Phase 1 — page builds COMPLETE (2026-06-12).** All 18 HVAC pages built and live in local repo (1 vertical hub + 3 sub-hubs + 14 leaves). Real hero image live on AC Repair (`/public/acrepairhero.webp`); 17 other pages have visible Gemini prompt placeholders ready for user to generate. NOT yet committed.
 - **Electrical Phase 1 — page builds pending.** 18 stub routes live, awaiting same pipeline that just finished for HVAC.
 
 ## Up Next — Phase 2 Blockers

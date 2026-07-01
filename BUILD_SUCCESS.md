@@ -22,27 +22,27 @@
 ### Service Pages (26 pages)
 All with canonical URLs + Open Graph:
 - ✅ `/services` - Hub page
-- ✅ `/services/emergency-service` - 15.5 kB
-- ✅ `/services/hydro-jetting` - 7.51 kB
-- ✅ `/services/gas-lines` - 7.38 kB
-- ✅ `/services/toilet-installation-and-repair` - 7.58 kB
-- ✅ `/services/water-filtration-system` - 21 kB
-- ✅ `/services/water-heater-service` - 7.69 kB
-- ✅ `/services/drain-cleaning` - 8.01 kB
-- ✅ `/services/commercial-plumbing`
-- ✅ `/services/piping-and-repiping` - 7.57 kB
-- ✅ `/services/garbage-disposal-service` - 7.58 kB
+- ✅ `/services/plumbing/emergency-service` - 15.5 kB
+- ✅ `/services/plumbing/hydro-jetting` - 7.51 kB
+- ✅ `/services/plumbing/gas-lines` - 7.38 kB
+- ✅ `/services/plumbing/toilet-installation-and-repair` - 7.58 kB
+- ✅ `/services/plumbing/water-filtration-system` - 21 kB
+- ✅ `/services/plumbing/water-heater-service` - 7.69 kB
+- ✅ `/services/plumbing/drain-cleaning` - 8.01 kB
+- ✅ `/services/plumbing/commercial-plumbing`
+- ✅ `/services/plumbing/piping-and-repiping` - 7.57 kB
+- ✅ `/services/plumbing/garbage-disposal-service` - 7.58 kB
 - ✅ `/services/maintenance-plans` - 38.3 kB
-- ✅ `/services/sewer-and-septic` - 8.14 kB
-- ✅ `/services/leak-detection` - 17.1 kB
-- ✅ `/services/moen-flo-installation`
-- ✅ `/services/65-point-inspection`
-- ✅ `/services/burst-pipes` - 7.43 kB
-- ✅ `/services/water-damage` - 7.14 kB
-- ✅ `/services/backups` - 20.2 kB
-- ✅ `/services/no-hot-water` - 6.58 kB
-- ✅ `/services/backflow-prevention`
-- ✅ `/services/industrial-plumbing`
+- ✅ `/services/plumbing/sewer-and-septic` - 8.14 kB
+- ✅ `/services/plumbing/leak-detection` - 17.1 kB
+- ✅ `/services/plumbing/moen-flo-installation`
+- ✅ `/services/plumbing/65-point-inspection`
+- ✅ `/services/plumbing/burst-pipes` - 7.43 kB
+- ✅ `/services/plumbing/water-damage` - 7.14 kB
+- ✅ `/services/plumbing/backups` - 20.2 kB
+- ✅ `/services/plumbing/no-hot-water` - 6.58 kB
+- ✅ `/services/plumbing/backflow-prevention`
+- ✅ `/services/plumbing/industrial-plumbing`
 
 ### Blog Pages (10 pages)
 All with Article schema:

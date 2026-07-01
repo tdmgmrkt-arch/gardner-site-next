@@ -15,6 +15,25 @@
 
 - **Phone:** (951) 246-4337 / `tel:9512464337`
 - **Hours:** Office Mon–Fri 8 AM–4 PM · Service Mon–Fri 8 AM–5 PM · Sat/Sun emergency only · 24/7 emergency available
+- **CSLB License:** **1073177** (C-36 Plumbing — confirmed 2026-06-29 by owner)
+- **Years in business:** 30+ years (best estimate — not yet verified by owner)
+- **Reviews:** 900+ five-star Google reviews (point-in-time figure 2026-06-29; will become dynamic later)
+
+## Service Area (confirmed 2026-06-29 — supersedes earlier list)
+
+Riverside County + eastern San Bernardino County + Coachella Valley. 25 cities:
+
+Banning · Beaumont · Calimesa · Cathedral City · Cherry Valley · Corona · Eastvale · Garnet · Hemet · Jurupa Valley · Lake Elsinore · Menifee · Mentone · Moreno Valley · Murrieta · North Palm Springs · Palm Springs · Palm Desert · Pedley · Perris · Redlands · Riverside · San Jacinto · Temecula · Yucaipa
+
+## The Gardner Promise (brand decision 2026-06-29)
+
+Umbrella name: **"The Gardner Promise"** · Tagline: **"We Own It"**. Four pillars:
+1. **30-Day Callback Guarantee** — if the same issue recurs within 30 days, we return free; parts and labor covered.
+2. **Written Estimate Before Work Begins** — price you see = price you pay; changes only with your approval.
+3. **No Trip Fees, No Pressure** — free in-home estimates.
+4. **Fully Licensed, Bonded & Insured** — CSLB #1073177.
+
+Use as reusable `<FixPromise />` (or `<GardnerPromise />`) section on homepage + top service pages.
 
 ## Brand
 
