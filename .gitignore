@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# playwright MCP debug snapshots
+/.playwright-mcp/
+
+# claude code local state
+/.claude/scheduled_tasks.lock
+
+# reference material — kept locally, not tracked
+/knowledge base/
