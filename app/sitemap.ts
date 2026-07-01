@@ -62,6 +62,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/plumbing/wildomar-drain-cleaning',
   ];
 
+  // Plumbing Help scenario pages
+  const plumbingHelpPages = [
+    '/plumbing-help/pipe-burst-what-to-do',
+    '/plumbing-help/drain-clog-what-to-do',
+    '/plumbing-help/slab-leak-what-to-do',
+    '/plumbing-help/plumbing-inspection-checklist',
+  ];
+
   const currentDate = new Date().toISOString();
 
   return [
@@ -87,6 +95,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
+    })),
+
+    // Plumbing Help scenario pages
+    ...plumbingHelpPages.map((url) => ({
+      url: `${baseUrl}${url}`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
     })),
   ];
 }

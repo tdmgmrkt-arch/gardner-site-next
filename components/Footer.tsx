@@ -157,6 +157,10 @@ export function Footer() {
                     { name: "Financing", desc: "Payment options", link: "/financing" },
                     { name: "Warranty Info", desc: "Coverage details", link: "/warranty" },
                     { name: "Transparent Pricing", desc: "Upfront flat rates", link: "/transparent-pricing" },
+                    { name: "Pipe Burst — What to Do", desc: "Emergency guide", link: "/plumbing-help/pipe-burst-what-to-do" },
+                    { name: "Drain Clog — What to Do", desc: "Step-by-step help", link: "/plumbing-help/drain-clog-what-to-do" },
+                    { name: "Slab Leak — What to Do", desc: "Signs & next steps", link: "/plumbing-help/slab-leak-what-to-do" },
+                    { name: "Plumbing Inspection Checklist", desc: "Home buyer's guide", link: "/plumbing-help/plumbing-inspection-checklist" },
                   ].map((item, index) => (
                     <li key={index}>
                       <a
@@ -220,6 +224,10 @@ export function Footer() {
                     { name: "Financing", desc: "Payment options", link: "/financing" },
                     { name: "Warranty Info", desc: "Coverage details", link: "/warranty" },
                     { name: "Transparent Pricing", desc: "Upfront flat rates", link: "/transparent-pricing" },
+                    { name: "Pipe Burst — What to Do", desc: "Emergency guide", link: "/plumbing-help/pipe-burst-what-to-do" },
+                    { name: "Drain Clog — What to Do", desc: "Step-by-step help", link: "/plumbing-help/drain-clog-what-to-do" },
+                    { name: "Slab Leak — What to Do", desc: "Signs & next steps", link: "/plumbing-help/slab-leak-what-to-do" },
+                    { name: "Plumbing Inspection Checklist", desc: "Home buyer's guide", link: "/plumbing-help/plumbing-inspection-checklist" },
                   ].map((item, index) => (
                     <li key={index}>
                       <a
