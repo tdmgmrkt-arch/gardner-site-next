@@ -531,14 +531,14 @@ These are the natural bridge points. Do not force links — only use where there
 | /services/hvac/heating/hvac-maintenance-plans | /services/maintenance-plans | "plumbing maintenance plan", "add plumbing protection to your home comfort plan" | Strongest natural bridge — same subscription model, same customer |
 | /services/hvac/heating/furnace-maintenance | /services/maintenance-plans | "plumbing maintenance plan", "protect your whole home" | Annual maintenance upsell |
 | /services/hvac/ac/ac-maintenance | /services/maintenance-plans | "plumbing maintenance plan", "bundle home maintenance" | Same upsell logic |
-| /services/hvac/indoor-air-quality/air-duct-cleaning | /services/water-damage | "water damage", "if mold is present — check for plumbing leaks too" | Mold/moisture cross-link; relevant only in body copy context |
-| /services/hvac/indoor-air-quality/whole-home-dehumidifier | /services/water-damage | "water damage restoration", "excess moisture can signal a plumbing issue" | Same mold/moisture logic |
-| /services/hvac/heating/heat-pump | /services/water-heater-service | "water heater service", "many heat pump systems include water heating" | Relevant for heat pump water heater upsell |
+| /services/hvac/indoor-air-quality/air-duct-cleaning | /services/plumbing/water-damage | "water damage", "if mold is present — check for plumbing leaks too" | Mold/moisture cross-link; relevant only in body copy context |
+| /services/hvac/indoor-air-quality/whole-home-dehumidifier | /services/plumbing/water-damage | "water damage restoration", "excess moisture can signal a plumbing issue" | Same mold/moisture logic |
+| /services/hvac/heating/heat-pump | /services/plumbing/water-heater-service | "water heater service", "many heat pump systems include water heating" | Relevant for heat pump water heater upsell |
 
 **Reverse bridges (plumbing pages linking to HVAC):**  
 The seo-writer should add a brief HVAC callout module to:
 - /services/maintenance-plans → links to /services/hvac/heating/hvac-maintenance-plans ("Add HVAC coverage")
-- /services/water-damage → links to /services/hvac/indoor-air-quality ("Poor indoor air quality after water damage?")
+- /services/plumbing/water-damage → links to /services/hvac/indoor-air-quality ("Poor indoor air quality after water damage?")
 
 ---
 

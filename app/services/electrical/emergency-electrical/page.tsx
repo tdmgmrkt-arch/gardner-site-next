@@ -51,7 +51,7 @@ const faqs = [
     question:
       "What if my electrical emergency also involves water damage or a burst pipe?",
     answer:
-      "Water and electricity in the same space must be treated as a combined emergency. De-energizing the affected circuits is always the first step — water conducts electricity and wet wiring is a shock hazard. Our team coordinates with our plumbing side for situations involving burst pipes near electrical panels or wiring. See our water damage service at /services/water-damage for the full combined-response protocol. Call (951) 246-4337 and describe both the electrical and water situation — the dispatcher routes the right team.",
+      "Water and electricity in the same space must be treated as a combined emergency. De-energizing the affected circuits is always the first step — water conducts electricity and wet wiring is a shock hazard. Our team coordinates with our plumbing side for situations involving burst pipes near electrical panels or wiring. See our water damage service at /services/plumbing/water-damage for the full combined-response protocol. Call (951) 246-4337 and describe both the electrical and water situation — the dispatcher routes the right team.",
   },
 ];
 

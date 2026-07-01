@@ -403,4 +403,4 @@ Heat pump installation across Murrieta, Temecula, and the Inland Empire. All-ele
 6. **Schema:** `FAQPage` JSON-LD + `Service` JSON-LD — flag to web-developer.
 7. **`lastUpdated` field:** Developer binds `lastUpdated: "June 2026"` to visible line.
 8. **Breadcrumbs:** `Home > Services > HVAC > Heating > Heat Pump Systems`.
-9. **Cross-vertical bridge opportunity:** `hvac-cluster-architecture.md` notes a potential link from Heat Pump Systems → `/services/water-heater-service` ("many heat pump systems include water heating" — heat pump water heaters). If Gardner offers heat pump water heaters, add this link. Flag to client.
+9. **Cross-vertical bridge opportunity:** `hvac-cluster-architecture.md` notes a potential link from Heat Pump Systems → `/services/plumbing/water-heater-service` ("many heat pump systems include water heating" — heat pump water heaters). If Gardner offers heat pump water heaters, add this link. Flag to client.

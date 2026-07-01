@@ -41,7 +41,7 @@ const faqs = [
   {
     question: "At what humidity level does mold start growing?",
     answer:
-      "Mold colonization becomes active above approximately 60% relative humidity when combined with organic material (wood, drywall paper, carpet padding). Sustained conditions above 60% — common in enclosed pool rooms, water-damaged spaces, and below-grade areas without vapor control — are the standard threshold where remediation specialists and HVAC contractors both recommend dehumidification. Maintaining indoor humidity below 55% eliminates the conditions that support mold growth. A calibrated humidistat set to 45–50% provides an adequate buffer. If mold is already visible, call our water damage services team at /services/water-damage before installing dehumidification — active mold requires remediation before you close the space back up.",
+      "Mold colonization becomes active above approximately 60% relative humidity when combined with organic material (wood, drywall paper, carpet padding). Sustained conditions above 60% — common in enclosed pool rooms, water-damaged spaces, and below-grade areas without vapor control — are the standard threshold where remediation specialists and HVAC contractors both recommend dehumidification. Maintaining indoor humidity below 55% eliminates the conditions that support mold growth. A calibrated humidistat set to 45–50% provides an adequate buffer. If mold is already visible, call our water damage services team at /services/plumbing/water-damage before installing dehumidification — active mold requires remediation before you close the space back up.",
   },
   {
     question: "Can my AC system handle dehumidification on its own?",

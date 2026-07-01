@@ -230,7 +230,7 @@ const faqs = [
         humidistat set to 45–50% provides an adequate buffer. If mold is already
         visible, call our{" "}
         <Link
-          href="/services/water-damage"
+          href="/services/plumbing/water-damage"
           className="text-red-400 hover:text-red-300 underline"
         >
           water damage services
@@ -718,7 +718,7 @@ export function WholeHomeDehumidifiers() {
                 dehumidification that addresses the actual moisture load. When
                 moisture traces to a plumbing issue, we bridge directly to our{" "}
                 <Link
-                  href="/services/water-damage"
+                  href="/services/plumbing/water-damage"
                   className="text-red-400 hover:text-red-300 underline"
                 >
                   water damage services

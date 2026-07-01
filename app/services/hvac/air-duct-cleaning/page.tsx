@@ -53,7 +53,7 @@ const faqs = [
   {
     question: "How do I know if mold is growing in my ducts?",
     answer:
-      "Common signs include a musty or damp smell when the system runs, visible dark staining around supply registers, or occupants reporting allergy symptoms that improve when the HVAC is off. Mold in ductwork typically traces back to a moisture source — a condensate drain issue, a duct leak near an unconditioned attic space, or high indoor humidity. Our camera inspection identifies whether growth is present and where. If mold is found, we address it and flag the moisture source. For plumbing-related moisture issues, our team bridges to our water damage services at /services/water-damage.",
+      "Common signs include a musty or damp smell when the system runs, visible dark staining around supply registers, or occupants reporting allergy symptoms that improve when the HVAC is off. Mold in ductwork typically traces back to a moisture source — a condensate drain issue, a duct leak near an unconditioned attic space, or high indoor humidity. Our camera inspection identifies whether growth is present and where. If mold is found, we address it and flag the moisture source. For plumbing-related moisture issues, our team bridges to our water damage services at /services/plumbing/water-damage.",
   },
 ];
 

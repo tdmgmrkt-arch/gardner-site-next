@@ -4,7 +4,7 @@
 **Last updated:** June 2026
 **Status:** Ready for developer copy-paste
 **Template note:** Canonical template is `seo/hvac-page-content/ac-repair.md`. This page follows the same 9-section structure.
-**Emergency intent note:** This is the highest-emergency-intent electrical page on the site — second only to `/services/emergency-service` (plumbing) in urgency framing. Lead every section with phone + response time. Phone number repeated throughout.
+**Emergency intent note:** This is the highest-emergency-intent electrical page on the site — second only to `/services/plumbing/emergency-service` (plumbing) in urgency framing. Lead every section with phone + response time. Phone number repeated throughout.
 
 > **FLAG — C-10 License:** The CSLB C-10 (Electrical) contractor license number is unknown at time of writing. All instances of `{{CSLB_C10_LICENSE_TBD}}` must be replaced with the actual license number before this page goes live. This placeholder appears TWICE on this page per the brand-vertical dissonance rule for Emergency Electrical. `local-seo` flagged this as a pending item.
 
@@ -135,7 +135,7 @@ Electrical emergencies don't follow business hours. A sparking outlet at 11 PM, 
 **Card 4**
 - Icon: `Droplets`
 - Title: `Water & Electrical Contact`
-- Description: `Water and electricity in the same space is a life-safety emergency — no exceptions. Storm flooding near a panel, a burst pipe near wiring, or a pooling water event near outlets requires immediate de-energizing before any other work begins. Cross-reference our [water damage service](/services/water-damage) for coordinated response.`
+- Description: `Water and electricity in the same space is a life-safety emergency — no exceptions. Storm flooding near a panel, a burst pipe near wiring, or a pooling water event near outlets requires immediate de-energizing before any other work begins. Cross-reference our [water damage service](/services/plumbing/water-damage) for coordinated response.`
 - Features:
   1. Immediate Circuit De-Energization
   2. Water Intrusion Assessment
@@ -285,7 +285,7 @@ A: Yes — regularly. Murrieta and the surrounding Inland Empire experience summ
 
 **Q6: What if my electrical emergency also involves water damage or a burst pipe?**
 
-A: Water and electricity in the same space must be treated as a combined emergency. De-energizing the affected circuits is always the first step — water conducts electricity and wet wiring is a shock hazard. Our team coordinates with our plumbing side for situations involving burst pipes near electrical panels or wiring. See our [water damage service](/services/water-damage) page for the full combined-response protocol. Call (951) 246-4337 and describe both the electrical and water situation — the dispatcher routes the right team.
+A: Water and electricity in the same space must be treated as a combined emergency. De-energizing the affected circuits is always the first step — water conducts electricity and wet wiring is a shock hazard. Our team coordinates with our plumbing side for situations involving burst pipes near electrical panels or wiring. See our [water damage service](/services/plumbing/water-damage) page for the full combined-response protocol. Call (951) 246-4337 and describe both the electrical and water situation — the dispatcher routes the right team.
 
 *(80 words)*
 
@@ -363,7 +363,7 @@ Licensed emergency electrician serving Murrieta, Temecula, and the Inland Empire
 ### Optional [O]
 | Anchor Text | href | Section |
 |---|---|---|
-| "water damage service" | `/services/water-damage` | Card 4 body (already written above) + FAQ Q6 (already written above) |
+| "water damage service" | `/services/plumbing/water-damage` | Card 4 body (already written above) + FAQ Q6 (already written above) |
 | "financing options" | `/financing` | Why Choose Us or final CTA |
 
 ---
@@ -400,5 +400,5 @@ Licensed emergency electrician serving Murrieta, Temecula, and the Inland Empire
 3. **Schema:** `FAQPage` JSON-LD + `Service` JSON-LD with `areaServed` + emergency availability hours. Flag to web-developer.
 4. **`lastUpdated` field:** Developer implements `lastUpdated: "June 2026"` bound to visible rendered line.
 5. **Breadcrumbs:** `Home > Services > Repairs & Safety > Emergency Electrical`
-6. **Cross-link confirmation:** `/services/water-damage` — confirm this page exists at this exact slug before developer implements the link in Card 4 and FAQ Q6.
+6. **Cross-link confirmation:** `/services/plumbing/water-damage` — confirm this page exists at this exact slug before developer implements the link in Card 4 and FAQ Q6.
 7. **Phone beat density:** Phone number appears 10 times across the page — this is intentional for the highest-emergency-intent page. Do not reduce in implementation.

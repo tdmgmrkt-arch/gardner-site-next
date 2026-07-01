@@ -291,7 +291,7 @@ A: AC maintenance focuses on the mechanical equipment — the condenser unit, ev
 
 **Q6: How do I know if mold is growing in my ducts?**
 
-A: Common signs include a musty or damp smell when the system runs, visible dark staining around supply registers, or occupants reporting allergy symptoms that improve when the HVAC is off. Mold in ductwork typically traces back to a moisture source — a condensate drain issue, a duct leak near an unconditioned attic space, or high indoor humidity. Our camera inspection identifies whether growth is present and where. If mold is found, we address it and flag the moisture source. For plumbing-related moisture issues, our team bridges to our [water damage services](/services/water-damage).
+A: Common signs include a musty or damp smell when the system runs, visible dark staining around supply registers, or occupants reporting allergy symptoms that improve when the HVAC is off. Mold in ductwork typically traces back to a moisture source — a condensate drain issue, a duct leak near an unconditioned attic space, or high indoor humidity. Our camera inspection identifies whether growth is present and where. If mold is found, we address it and flag the moisture source. For plumbing-related moisture issues, our team bridges to our [water damage services](/services/plumbing/water-damage).
 
 *(95 words)*
 
@@ -367,7 +367,7 @@ Whole-home air duct cleaning across Murrieta, Temecula, and the Inland Empire. N
 ### Optional [O]
 | Anchor Text | href | Section to Place |
 |---|---|---|
-| "water damage services" | `/services/water-damage` | FAQ Q6 answer (already written in above — mold/moisture cross-vertical bridge) |
+| "water damage services" | `/services/plumbing/water-damage` | FAQ Q6 answer (already written in above — mold/moisture cross-vertical bridge) |
 
 ---
 

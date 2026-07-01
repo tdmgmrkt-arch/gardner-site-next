@@ -203,7 +203,7 @@ Gardner Plumbing Co. is a licensed HVAC contractor serving Murrieta, Temecula, M
 **Card 4**
 - Icon: `Link`
 - Title: `Bridge to Water Damage Services`
-- Description: `When excess moisture traces to a plumbing leak or past flood event, our team bridges directly to [water damage services](/services/water-damage) — no separate contractor to track down.`
+- Description: `When excess moisture traces to a plumbing leak or past flood event, our team bridges directly to [water damage services](/services/plumbing/water-damage) — no separate contractor to track down.`
 
 ### Achievement Badge
 ```
@@ -275,7 +275,7 @@ A: A portable dehumidifier covers a single room and requires the drain bucket to
 
 **Q4: At what humidity level does mold start growing?**
 
-A: Mold colonization becomes active above approximately 60% relative humidity when combined with organic material (wood, drywall paper, carpet padding). Sustained conditions above 60% — common in enclosed pool rooms, water-damaged spaces, and below-grade areas without vapor control — are the standard threshold where remediation specialists and HVAC contractors both recommend dehumidification. Maintaining indoor humidity below 55% eliminates the conditions that support mold growth. A calibrated humidistat set to 45–50% provides an adequate buffer. If mold is already visible, call our [water damage services](/services/water-damage) team before installing dehumidification — active mold requires remediation before you close the space back up.
+A: Mold colonization becomes active above approximately 60% relative humidity when combined with organic material (wood, drywall paper, carpet padding). Sustained conditions above 60% — common in enclosed pool rooms, water-damaged spaces, and below-grade areas without vapor control — are the standard threshold where remediation specialists and HVAC contractors both recommend dehumidification. Maintaining indoor humidity below 55% eliminates the conditions that support mold growth. A calibrated humidistat set to 45–50% provides an adequate buffer. If mold is already visible, call our [water damage services](/services/plumbing/water-damage) team before installing dehumidification — active mold requires remediation before you close the space back up.
 
 *(103 words)*
 
@@ -367,7 +367,7 @@ Whole home dehumidifier installation across Murrieta, Temecula, and the Inland E
 ### Optional [O]
 | Anchor Text | href | Section to Place |
 |---|---|---|
-| "water damage services" | `/services/water-damage` | Why Choose Us Card 4 and FAQ Q4 answer (already written in above — plumbing cross-vertical bridge) |
+| "water damage services" | `/services/plumbing/water-damage` | Why Choose Us Card 4 and FAQ Q4 answer (already written in above — plumbing cross-vertical bridge) |
 | "financing page" | `/financing` | FAQ Q6 answer (already written in above) |
 
 ---
@@ -404,7 +404,7 @@ Whole home dehumidifier installation across Murrieta, Temecula, and the Inland E
 1. **`{{CSLB_C20_LICENSE_TBD}}`** — `local-seo` must supply before page goes live.
 2. **`{{TEAM_HERO_IMG_PROMPT}}`** and **`{{TEAM_BEFOREAFTER_IMG_PROMPT}}`** — creative-director handles. Hero: tech with a whole-home dehumidifier unit near an air handler or utility space. Before/after: humidity gauge at 70%+ and condensation vs. humidity gauge at 45% and clear surfaces.
 3. **Meta description length:** 174 chars — trim before publishing (see trimmed version in Section 1 note).
-4. **Water damage cross-vertical link:** This page has the strongest plumbing cross-link rationale of all 4 IAQ pages (excess moisture often traces to plumbing failures). Make sure `/services/water-damage` is a live, indexed page before this page launches — or the link should be temporarily removed.
+4. **Water damage cross-vertical link:** This page has the strongest plumbing cross-link rationale of all 4 IAQ pages (excess moisture often traces to plumbing failures). Make sure `/services/plumbing/water-damage` is a live, indexed page before this page launches — or the link should be temporarily removed.
 5. **Schema:** `FAQPage` JSON-LD for all 6 FAQs + `Service` JSON-LD with `areaServed` for all 10 cities. Flag to web-developer.
 6. **`lastUpdated` field:** Developer binds `lastUpdated: "June 2026"` to visible "Last Updated: June 2026" line.
 7. **Breadcrumbs:** `Home > Services > Indoor Air Quality > Whole-Home Dehumidifiers`.

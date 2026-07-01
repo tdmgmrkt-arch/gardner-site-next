@@ -246,7 +246,7 @@ const faqs = [
         found, we address it and flag the moisture source. For plumbing-related
         moisture issues, our team bridges to our{" "}
         <Link
-          href="/services/water-damage"
+          href="/services/plumbing/water-damage"
           className="text-red-400 hover:text-red-300 underline"
         >
           water damage services

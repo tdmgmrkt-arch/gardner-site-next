@@ -138,7 +138,7 @@ const services = [
         pooling water event near outlets requires immediate de-energizing before
         any other work begins. Cross-reference our{" "}
         <Link
-          href="/services/water-damage"
+          href="/services/plumbing/water-damage"
           className="text-red-400 hover:text-red-300 underline"
         >
           water damage service
@@ -259,7 +259,7 @@ const faqs = [
         coordinates with our plumbing side for situations involving burst pipes
         near electrical panels or wiring. See our{" "}
         <Link
-          href="/services/water-damage"
+          href="/services/plumbing/water-damage"
           className="text-red-400 hover:text-red-300 underline"
         >
           water damage service
