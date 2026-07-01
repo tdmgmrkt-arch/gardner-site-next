@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ImagePromptPlaceholder } from "@/components/ImagePromptPlaceholder";
+import { ProtectHomeBanner } from "@/components/ProtectHomeBanner";
 import {
   Accordion,
   AccordionContent,
@@ -20,6 +21,10 @@ import {
   Shield,
   FileText,
   Wrench,
+  Droplets,
+  TrendingUp,
+  ClipboardList,
+  Home,
 } from "lucide-react";
 
 // ─── Image prompt constants (sourced from seo/scenario-image-prompts/pipe-burst-*.md) ───
@@ -69,19 +74,17 @@ function SectionBadge({
 }: {
   icon: React.ElementType;
   text: string;
-  color?: "red" | "blue" | "green" | "yellow";
+  color?: "red" | "blue" | "green";
 }) {
   const colorMap = {
     red: "from-red-600/20 to-red-500/20 border-red-500/30",
     blue: "from-blue-600/20 to-blue-500/20 border-blue-500/30",
     green: "from-green-600/20 to-green-500/20 border-green-500/30",
-    yellow: "from-yellow-600/20 to-yellow-500/20 border-yellow-500/30",
   };
   const iconColorMap = {
     red: "text-red-400",
     blue: "text-blue-400",
     green: "text-green-400",
-    yellow: "text-yellow-400",
   };
   return (
     <div
@@ -191,53 +194,122 @@ export function PipeBurstScenario() {
             />
           </nav>
 
-          <SectionBadge icon={AlertTriangle} text="Emergency Guide" color="red" />
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left: text + CTAs */}
+            <div className="lg:col-span-7">
+              <SectionBadge icon={AlertTriangle} text="Emergency Guide" color="red" />
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg leading-tight max-w-4xl">
-            Pipe Burst in Your Riverside County Home —{" "}
-            <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-              What to Do Right Now
-            </span>
-          </h1>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+                Pipe Burst in Your Riverside County Home —{" "}
+                <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                  What to Do Right Now
+                </span>
+              </h1>
 
-          <p className="text-lg sm:text-xl text-gray-300 mb-4 leading-relaxed max-w-5xl">
-            Shut off your main water valve immediately — it is usually in your front yard near the street, in a garage utility closet, or at the side of the house. Then call Gardner Plumbing Co. at{" "}
-            <a href={PHONE_HREF} className="text-red-400 font-semibold hover:text-red-300 transition-colors">
-              {PHONE_DISPLAY}
-            </a>. Live dispatch runs 24 hours a day, 7 days a week. Every hour of uncontrolled water flow causes an average of $150 – $300 in additional damage, so the valve comes first and everything else comes second.
-          </p>
+              <p className="text-lg sm:text-xl text-gray-300 mb-4 leading-relaxed">
+                Shut off your main water valve immediately — it is usually in your front yard near the street, in a garage utility closet, or at the side of the house. Then call Gardner Plumbing Co. at{" "}
+                <a href={PHONE_HREF} className="text-red-400 font-semibold hover:text-red-300 transition-colors">
+                  {PHONE_DISPLAY}
+                </a>. Live dispatch runs 24 hours a day, 7 days a week. Every hour of uncontrolled water flow causes an average of $150 – $300 in additional damage, so the valve comes first and everything else comes second.
+              </p>
 
-          <p className="text-sm text-gray-500 mb-10">Last Updated: June 2026</p>
+              <p className="text-sm text-gray-500 mb-8">Last Updated: June 2026</p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href={PHONE_HREF}>
-              <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg border border-red-400/20 transition-all duration-300 group">
-                <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
-                Call {PHONE_DISPLAY} — 24/7
-              </button>
-            </a>
-            <Link href="/contact-us">
-              <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 font-semibold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 group bg-transparent">
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-0.5 transition-transform duration-300" aria-hidden="true" />
-                Request Service Online
-              </button>
-            </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href={PHONE_HREF}>
+                  <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg border border-red-400/20 transition-all duration-300 group">
+                    <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
+                    Call {PHONE_DISPLAY} — 24/7
+                  </button>
+                </a>
+                <Link href="/contact-us">
+                  <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 font-semibold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 group bg-transparent">
+                    <ArrowRight className="h-5 w-5 group-hover:translate-x-0.5 transition-transform duration-300" aria-hidden="true" />
+                    Request Service Online
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right: hero image */}
+            <div className="lg:col-span-5">
+              <div className="relative w-full aspect-[4/5] lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-luxury border border-white/10">
+                <ImagePromptPlaceholder
+                  slot="hero"
+                  aspectRatio="4/5"
+                  targetWidth={1200}
+                  targetHeight={1500}
+                  targetFileName="pipe-burst-hero.webp"
+                  prompt={HERO_PROMPT}
+                  negativePrompt={HERO_NEGATIVE}
+                  referenceImageNote={HERO_REF}
+                  altText="Gardner Plumbing technician arriving at a flooded garage in Riverside County for emergency burst pipe repair"
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          {/* Hero image placeholder */}
-          <div className="mt-10 min-h-80">
-            <ImagePromptPlaceholder
-              slot="hero"
-              aspectRatio="3/2"
-              targetWidth={1200}
-              targetHeight={800}
-              targetFileName="pipe-burst-hero.webp"
-              prompt={HERO_PROMPT}
-              negativePrompt={HERO_NEGATIVE}
-              referenceImageNote={HERO_REF}
-              altText="Gardner Plumbing technician arriving at a flooded garage in Riverside County for emergency burst pipe repair"
-              className="w-full rounded-3xl min-h-80"
-            />
+      {/* ── SITE-WIDE PROTECT-HOME BANNER ─────────────────────────────── */}
+      <ProtectHomeBanner />
+
+      {/* ── COST COMPARISON CALLOUT ─────────────────────────────────── */}
+      <section className="py-12 sm:py-14 lg:py-16 relative overflow-hidden">
+        <div className="absolute inset-0" style={darkBg} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
+              <TrendingUp className="h-3.5 w-3.5 text-red-400" aria-hidden="true" />
+              <span className="text-red-400 font-semibold text-xs uppercase tracking-widest">
+                The Math
+              </span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white leading-tight max-w-3xl mx-auto">
+              Every hour with water flowing{" "}
+              <span className="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
+                costs money.
+              </span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
+            {/* Emergency call */}
+            <div className="relative rounded-2xl border border-green-500/30 overflow-hidden shadow-luxury">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 via-green-500/5 to-transparent" />
+              <div className="relative z-10 p-6 sm:p-8 text-center">
+                <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-green-500/15 border border-green-500/30 rounded-full">
+                  <Phone className="h-3.5 w-3.5 text-green-400" aria-hidden="true" />
+                  <span className="text-xs font-bold text-green-300 uppercase tracking-wider">
+                    Emergency Call
+                  </span>
+                </div>
+                <p className="text-4xl sm:text-5xl font-bold text-white mb-2 tracking-tight">
+                  $450 – $900
+                </p>
+                <p className="text-gray-400 text-sm">
+                  60-min arrival window + repair on the spot
+                </p>
+              </div>
+            </div>
+            {/* Wait 6 hours */}
+            <div className="relative rounded-2xl border border-red-500/30 overflow-hidden shadow-luxury">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 via-red-500/5 to-transparent" />
+              <div className="relative z-10 p-6 sm:p-8 text-center">
+                <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-red-500/15 border border-red-500/30 rounded-full">
+                  <AlertTriangle className="h-3.5 w-3.5 text-red-400" aria-hidden="true" />
+                  <span className="text-xs font-bold text-red-300 uppercase tracking-wider">
+                    Wait 6 Hours
+                  </span>
+                </div>
+                <p className="text-4xl sm:text-5xl font-bold text-white mb-2 tracking-tight">
+                  $3,000 – $15,000+
+                </p>
+                <p className="text-gray-400 text-sm">
+                  Water damage restoration, flooring, drywall, mold remediation
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -259,7 +331,7 @@ export function PipeBurstScenario() {
             </p>
           </div>
 
-          <ol className="space-y-5 max-w-5xl mx-auto">
+          <ol className="space-y-5">
             {steps.map((step) => (
               <li
                 key={step.num}
@@ -351,7 +423,7 @@ export function PipeBurstScenario() {
                     The Inland Empire has a large stock of homes built between 1975 and 1995. Many of those homes used Schedule 40 PVC for interior supply lines and polybutylene for branch lines. PVC becomes brittle over decades and can crack suddenly under normal water pressure. Polybutylene — a gray plastic pipe widely recalled in the 1990s — deteriorates from the inside out.
                   </p>
                   <p>
-                    The region's hard water is the second major factor. Riverside County water runs high in calcium and magnesium, depositing inside copper fittings and at soldered joints over time. A fitting that looks fine from the outside can have a nearly closed bore from scaling on the inside.
+                    The region&apos;s hard water is the second major factor. Riverside County water runs high in calcium and magnesium, depositing inside copper fittings and at soldered joints over time. A fitting that looks fine from the outside can have a nearly closed bore from scaling on the inside.
                   </p>
                   <p>
                     Temperatures in the Coachella Valley, Hemet, and the mountain passes above Banning can drop into the mid-20s on winter nights. Exposed supply lines in garages, crawlspaces, and exterior walls freeze, expand, and split — often silently overnight.
@@ -384,7 +456,7 @@ export function PipeBurstScenario() {
             </div>
 
             {/* Mid image placeholder — burst pipe close-up */}
-            <div className="mt-10">
+            <div className="lg:col-span-12 mt-4">
               <ImagePromptPlaceholder
                 slot="before-after"
                 aspectRatio="3/2"
@@ -471,32 +543,102 @@ export function PipeBurstScenario() {
       <section className="py-14 sm:py-16 lg:py-20 relative overflow-hidden">
         <div className="absolute inset-0" style={darkBg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionBadge icon={FileText} text="Related Resources" color="blue" />
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8 drop-shadow-lg">Related Resources</h2>
+          <div className="text-center mb-10">
+            <SectionBadge icon={FileText} text="Related Resources" color="blue" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg">
+              Keep Reading
+            </h2>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { href: "/services/plumbing/burst-pipes", label: "Burst Pipe Repair — Full Service Page", desc: "What Gardner Plumbing repairs, materials used, and service area detail." },
-              { href: "/services/plumbing/emergency-service", label: "24/7 Emergency Plumbing Service", desc: "All emergency scenarios, not just burst pipes." },
-              { href: "/services/plumbing/leak-detection", label: "Leak Detection", desc: "When the source of water isn't obvious." },
-              { href: "/gardner-shield", label: "Gardner Shield Prevention Plan", desc: "Annual inspection and priority dispatch to prevent the next emergency." },
-              { href: "/plumbing-help/drain-clog-what-to-do", label: "What to Do When a Drain Clogs", desc: "Step-by-step guide for drain emergencies." },
-              { href: "/plumbing-help/slab-leak-what-to-do", label: "What to Do When You Have a Slab Leak", desc: "Signs, causes, and what to do next." },
-            ].map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="group relative rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-5 shadow-luxury hover:border-red-500/40 transition-all duration-300 overflow-hidden block"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative z-10 flex gap-3 items-start">
-                  <ArrowRight className="h-4 w-4 text-red-400 flex-shrink-0 mt-1 group-hover:translate-x-0.5 transition-transform duration-300" aria-hidden="true" />
-                  <div>
-                    <p className="text-white font-semibold text-sm mb-1 group-hover:text-red-300 transition-colors duration-300">{link.label}</p>
-                    <p className="text-gray-500 text-xs leading-relaxed">{link.desc}</p>
+              {
+                href: "/services/plumbing/burst-pipes",
+                label: "Burst Pipe Repair — Full Service Page",
+                desc: "What Gardner Plumbing repairs, materials used, and service area detail.",
+                icon: Wrench,
+                accent: "red",
+              },
+              {
+                href: "/services/plumbing/emergency-service",
+                label: "24/7 Emergency Plumbing Service",
+                desc: "All emergency scenarios, not just burst pipes.",
+                icon: AlertTriangle,
+                accent: "red",
+              },
+              {
+                href: "/services/plumbing/leak-detection",
+                label: "Leak Detection",
+                desc: "When the source of water isn't obvious.",
+                icon: Droplets,
+                accent: "blue",
+              },
+              {
+                href: "/gardner-shield",
+                label: "Gardner Shield Prevention Plan",
+                desc: "Annual inspection and priority dispatch to prevent the next emergency.",
+                icon: Shield,
+                accent: "green",
+              },
+              {
+                href: "/plumbing-help/drain-clog-what-to-do",
+                label: "What to Do When a Drain Clogs",
+                desc: "Step-by-step guide for drain emergencies.",
+                icon: Droplets,
+                accent: "blue",
+              },
+              {
+                href: "/plumbing-help/slab-leak-what-to-do",
+                label: "What to Do When You Have a Slab Leak",
+                desc: "Signs, causes, and what to do next.",
+                icon: Home,
+                accent: "red",
+              },
+            ].map((link) => {
+              const Icon = link.icon;
+              const accentClasses: Record<string, { border: string; iconBg: string; iconText: string; titleHover: string }> = {
+                green: {
+                  border: "hover:border-green-500/50",
+                  iconBg: "bg-gradient-to-br from-green-600/30 to-green-500/20 border-green-500/30",
+                  iconText: "text-green-400",
+                  titleHover: "group-hover:text-green-300",
+                },
+                red: {
+                  border: "hover:border-red-500/50",
+                  iconBg: "bg-gradient-to-br from-red-600/30 to-red-500/20 border-red-500/30",
+                  iconText: "text-red-400",
+                  titleHover: "group-hover:text-red-300",
+                },
+                blue: {
+                  border: "hover:border-blue-500/50",
+                  iconBg: "bg-gradient-to-br from-blue-600/30 to-blue-500/20 border-blue-500/30",
+                  iconText: "text-blue-400",
+                  titleHover: "group-hover:text-blue-300",
+                },
+              };
+              const styles = accentClasses[link.accent];
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`group relative rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-5 shadow-luxury ${styles.border} hover:-translate-y-0.5 transition-all duration-300 overflow-hidden block`}
+                >
+                  <div className="relative z-10 flex gap-4 items-start">
+                    <div className={`flex-shrink-0 w-10 h-10 rounded-lg ${styles.iconBg} border flex items-center justify-center mt-0.5`}>
+                      <Icon className={`h-5 w-5 ${styles.iconText}`} aria-hidden="true" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <p className={`text-white font-semibold text-sm ${styles.titleHover} transition-colors duration-300`}>
+                          {link.label}
+                        </p>
+                        <ArrowRight className={`h-3.5 w-3.5 ${styles.iconText} opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-300`} aria-hidden="true" />
+                      </div>
+                      <p className="text-gray-500 text-xs leading-relaxed">{link.desc}</p>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

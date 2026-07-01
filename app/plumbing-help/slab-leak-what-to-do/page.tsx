@@ -1,6 +1,5 @@
 import { SlabLeakScenario } from "@/components/scenarios/SlabLeakScenario";
 import { GardnerPromise } from "@/components/GardnerPromise";
-import { CleanVisitPromise } from "@/components/CleanVisitPromise";
 import { StoryTestimonials, STORIES_GUARANTEE } from "@/components/StoryTestimonials";
 import { FinalCallCta } from "@/components/FinalCallCta";
 import type { Metadata } from "next";
@@ -213,13 +212,12 @@ export default async function SlabLeakPage() {
       />
       <main>
         <SlabLeakScenario />
-        <GardnerPromise reviewCount={reviewCount} />
-        <CleanVisitPromise reviewCount={reviewCount} />
         <StoryTestimonials
           heading="Standing Behind Every Slab Leak Job"
           subheading="What customers wrote about Gardner Plumbing's transparency, follow-through, and quality on complex jobs."
           stories={STORIES_GUARANTEE}
         />
+        <GardnerPromise reviewCount={reviewCount} />
         <FinalCallCta
           heading="Call Gardner Plumbing Co. Now"
           subheading="Slab leak detection and repair throughout Riverside County, eastern San Bernardino County, and the Coachella Valley. CSLB #1073177. 900+ five-star Google reviews. No trip fees. Written estimate before work begins."

@@ -1,6 +1,5 @@
 import { PlumbingInspectionChecklist } from "@/components/scenarios/PlumbingInspectionChecklist";
 import { GardnerPromise } from "@/components/GardnerPromise";
-import { CleanVisitPromise } from "@/components/CleanVisitPromise";
 import { StoryTestimonials, STORIES_GENERAL } from "@/components/StoryTestimonials";
 import { FinalCallCta } from "@/components/FinalCallCta";
 import type { Metadata } from "next";
@@ -199,13 +198,12 @@ export default async function PlumbingInspectionChecklistPage() {
       />
       <main>
         <PlumbingInspectionChecklist />
-        <GardnerPromise reviewCount={reviewCount} />
-        <CleanVisitPromise reviewCount={reviewCount} />
         <StoryTestimonials
           heading="What Homeowners Say After a Gardner Inspection"
           subheading="Thorough inspections, written reports, and technicians who walk you through every finding."
           stories={STORIES_GENERAL}
         />
+        <GardnerPromise reviewCount={reviewCount} />
         <FinalCallCta
           heading="Book a Pre-Purchase Plumbing Inspection"
           subheading="Gardner Plumbing Co. serves homebuyers, real estate agents, and homeowners across Riverside County, the Coachella Valley, and eastern San Bernardino County. A 65-point evaluation, a written report, and a technician walkthrough of every finding. No trip fee. No pressure to proceed with repairs. CSLB #1073177."

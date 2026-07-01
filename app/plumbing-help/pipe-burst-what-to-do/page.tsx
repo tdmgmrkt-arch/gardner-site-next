@@ -1,6 +1,5 @@
 import { PipeBurstScenario } from "@/components/scenarios/PipeBurstScenario";
 import { GardnerPromise } from "@/components/GardnerPromise";
-import { CleanVisitPromise } from "@/components/CleanVisitPromise";
 import { StoryTestimonials, STORIES_EMERGENCY } from "@/components/StoryTestimonials";
 import { FinalCallCta } from "@/components/FinalCallCta";
 import type { Metadata } from "next";
@@ -211,13 +210,12 @@ export default async function PipeBurstPage() {
       />
       <main>
         <PipeBurstScenario />
-        <GardnerPromise reviewCount={reviewCount} />
-        <CleanVisitPromise reviewCount={reviewCount} />
         <StoryTestimonials
           heading="When Every Minute Counted"
           subheading="What Gardner Plumbing customers wrote about emergency calls — response time, professionalism, and getting the water stopped fast."
           stories={STORIES_EMERGENCY}
         />
+        <GardnerPromise reviewCount={reviewCount} />
         <FinalCallCta
           heading="Stop the Water. Call Now."
           subheading="Gardner Plumbing Co. dispatches licensed plumbers to homes across Riverside County, eastern San Bernardino County, and the Coachella Valley — 24 hours a day, 7 days a week. No trip fees. Written estimate before work begins. CSLB #1073177."

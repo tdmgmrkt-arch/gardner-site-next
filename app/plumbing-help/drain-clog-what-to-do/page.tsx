@@ -1,6 +1,5 @@
 import { DrainClogScenario } from "@/components/scenarios/DrainClogScenario";
 import { GardnerPromise } from "@/components/GardnerPromise";
-import { CleanVisitPromise } from "@/components/CleanVisitPromise";
 import { StoryTestimonials, STORIES_GENERAL } from "@/components/StoryTestimonials";
 import { FinalCallCta } from "@/components/FinalCallCta";
 import type { Metadata } from "next";
@@ -199,13 +198,12 @@ export default async function DrainClogPage() {
       />
       <main>
         <DrainClogScenario />
-        <GardnerPromise reviewCount={reviewCount} />
-        <CleanVisitPromise reviewCount={reviewCount} />
         <StoryTestimonials
           heading="Real Stories From Real Customers"
           subheading="What Riverside County homeowners wrote after Gardner Plumbing fixed their drain and sewer problems."
           stories={STORIES_GENERAL}
         />
+        <GardnerPromise reviewCount={reviewCount} />
         <FinalCallCta
           heading="Ready to Fix It Today?"
           subheading="Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley. No trip fee. No service-call fee. Written price before any work begins. CSLB #1073177."

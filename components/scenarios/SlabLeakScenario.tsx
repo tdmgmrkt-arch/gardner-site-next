@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ImagePromptPlaceholder } from "@/components/ImagePromptPlaceholder";
+import { ProtectHomeBanner } from "@/components/ProtectHomeBanner";
 import {
   Accordion,
   AccordionContent,
@@ -19,6 +20,10 @@ import {
   Wrench,
   FileText,
   Shield,
+  Droplets,
+  Home,
+  TrendingUp,
+  ClipboardList,
 } from "lucide-react";
 
 // ─── Image prompt constants (sourced from seo/scenario-image-prompts/slab-leak-*.md) ───
@@ -68,19 +73,17 @@ function SectionBadge({
 }: {
   icon: React.ElementType;
   text: string;
-  color?: "red" | "blue" | "green" | "yellow";
+  color?: "red" | "blue" | "green";
 }) {
   const colorMap = {
     red: "from-red-600/20 to-red-500/20 border-red-500/30",
     blue: "from-blue-600/20 to-blue-500/20 border-blue-500/30",
     green: "from-green-600/20 to-green-500/20 border-green-500/30",
-    yellow: "from-yellow-600/20 to-yellow-500/20 border-yellow-500/30",
   };
   const iconColorMap = {
     red: "text-red-400",
     blue: "text-blue-400",
     green: "text-green-400",
-    yellow: "text-yellow-400",
   };
   return (
     <div
@@ -213,143 +216,127 @@ export function SlabLeakScenario() {
             />
           </nav>
 
-          <SectionBadge icon={AlertTriangle} text="Slab Leak Guide" color="red" />
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left: text + CTAs */}
+            <div className="lg:col-span-7">
+              <SectionBadge icon={AlertTriangle} text="Slab Leak Guide" color="red" />
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg leading-tight max-w-4xl">
-            How to Know If You Have a Slab Leak —{" "}
-            <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-              and What to Do Next
-            </span>
-          </h1>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+                How to Know If You Have a Slab Leak —{" "}
+                <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                  and What to Do Next
+                </span>
+              </h1>
 
-          <p className="text-lg sm:text-xl text-gray-300 mb-4 leading-relaxed max-w-5xl">
-            A slab leak is a break in a water line running beneath your home&apos;s concrete foundation. The three most common warning signs are a water bill that spiked without explanation, a warm or damp spot on your floor, and the sound of running water when every faucet and fixture in the house is off. If you notice any one of these, don&apos;t wait — call a licensed plumber for professional detection before the leak weakens your foundation or drives water into your walls.
-          </p>
+              <p className="text-lg sm:text-xl text-gray-300 mb-4 leading-relaxed">
+                A slab leak is a break in a water line running beneath your home&apos;s concrete foundation. The three most common warning signs are a water bill that spiked without explanation, a warm or damp spot on your floor, and the sound of running water when every faucet and fixture in the house is off. If you notice any one of these, don&apos;t wait — call a licensed plumber for professional detection before the leak weakens your foundation or drives water into your walls.
+              </p>
 
-          <p className="text-base text-gray-300 mb-4 leading-relaxed max-w-5xl">
-            Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Palm Springs, Palm Desert, Redlands, and Yucaipa. Call 24/7:{" "}
-            <a href={PHONE_HREF} className="text-red-400 font-semibold hover:text-red-300 transition-colors">
-              {PHONE_DISPLAY}
-            </a>.
-          </p>
+              <p className="text-base text-gray-300 mb-4 leading-relaxed">
+                Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Palm Springs, Palm Desert, Redlands, and Yucaipa. Call 24/7:{" "}
+                <a href={PHONE_HREF} className="text-red-400 font-semibold hover:text-red-300 transition-colors">
+                  {PHONE_DISPLAY}
+                </a>.
+              </p>
 
-          <p className="text-sm text-gray-500 mb-10">Last Updated: June 2026</p>
+              <p className="text-sm text-gray-500 mb-8">Last Updated: June 2026</p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href={PHONE_HREF}>
-              <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg border border-red-400/20 transition-all duration-300 group">
-                <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
-                Call {PHONE_DISPLAY} — 24/7
-              </button>
-            </a>
-            <Link href="/contact-us">
-              <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 font-semibold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 group bg-transparent">
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-0.5 transition-transform duration-300" aria-hidden="true" />
-                Request Service Online
-              </button>
-            </Link>
-          </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href={PHONE_HREF}>
+                  <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg border border-red-400/20 transition-all duration-300 group">
+                    <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
+                    Call {PHONE_DISPLAY} — 24/7
+                  </button>
+                </a>
+                <Link href="/contact-us">
+                  <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 font-semibold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 group bg-transparent">
+                    <ArrowRight className="h-5 w-5 group-hover:translate-x-0.5 transition-transform duration-300" aria-hidden="true" />
+                    Request Service Online
+                  </button>
+                </Link>
+              </div>
+            </div>
 
-          {/* Hero image placeholder */}
-          <div className="mt-10">
-            <ImagePromptPlaceholder
-              slot="hero"
-              aspectRatio="3/2"
-              targetWidth={1200}
-              targetHeight={800}
-              targetFileName="slab-leak-hero.webp"
-              prompt={HERO_PROMPT}
-              negativePrompt={HERO_NEGATIVE}
-              referenceImageNote={HERO_REF}
-              altText="Gardner Plumbing technician using acoustic leak detection equipment to locate a slab leak beneath a Riverside County home's kitchen floor"
-              className="w-full rounded-3xl min-h-80"
-            />
+            {/* Right: hero image */}
+            <div className="lg:col-span-5">
+              <div className="relative w-full aspect-[4/5] lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-luxury border border-white/10">
+                <ImagePromptPlaceholder
+                  slot="hero"
+                  aspectRatio="4/5"
+                  targetWidth={1200}
+                  targetHeight={1500}
+                  targetFileName="slab-leak-hero.webp"
+                  prompt={HERO_PROMPT}
+                  negativePrompt={HERO_NEGATIVE}
+                  referenceImageNote={HERO_REF}
+                  altText="Gardner Plumbing technician using acoustic leak detection equipment to locate a slab leak beneath a Riverside County home's kitchen floor"
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ── 7 SIGNS ──────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
-        <div className="absolute inset-0" style={altDarkBg} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <SectionBadge icon={AlertTriangle} text="Warning Signs" color="yellow" />
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-              7 Signs You Have a{" "}
-              <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                Slab Leak
-              </span>
-            </h2>
-            <p className="text-lg text-gray-300 max-w-5xl mx-auto leading-relaxed">
-              Each one is a standalone indicator — you don&apos;t need all seven to have a problem.
-            </p>
-          </div>
+      {/* ── SITE-WIDE PROTECT-HOME BANNER ─────────────────────────────── */}
+      <ProtectHomeBanner />
 
-          <ol className="space-y-5 max-w-5xl mx-auto">
-            {signs.map((sign) => (
-              <li
-                key={sign.num}
-                className="group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500"
-                style={{
-                  backgroundColor: "#202020",
-                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
-                }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
-                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
-                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-lg border border-yellow-400/40 mt-0.5">
-                    <span className="text-white font-bold text-base">{sign.num}</span>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{sign.title}</p>
-                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{sign.body}</p>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
-      {/* ── WHAT TO DO IN THE NEXT HOUR ──────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+      {/* ── COST COMPARISON CALLOUT ─────────────────────────────────── */}
+      <section className="py-12 sm:py-14 lg:py-16 relative overflow-hidden">
         <div className="absolute inset-0" style={darkBg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <SectionBadge icon={Clock} text="Act Now" color="red" />
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-              What to Do in the{" "}
-              <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-                Next Hour
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
+              <TrendingUp className="h-3.5 w-3.5 text-red-400" aria-hidden="true" />
+              <span className="text-red-400 font-semibold text-xs uppercase tracking-widest">
+                The Math
+              </span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white leading-tight max-w-3xl mx-auto">
+              Slab leaks get{" "}
+              <span className="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
+                more expensive by the week.
               </span>
             </h2>
           </div>
-
-          <ol className="space-y-5 max-w-5xl mx-auto">
-            {actionSteps.map((step) => (
-              <li
-                key={step.num}
-                className="group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500"
-                style={{
-                  backgroundColor: "#202020",
-                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
-                }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
-                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
-                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center shadow-lg border border-red-400/40 mt-0.5">
-                    <span className="text-white font-bold text-base">{step.num}</span>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{step.title}</p>
-                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{step.body}</p>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
+            {/* Detection + spot repair */}
+            <div className="relative rounded-2xl border border-green-500/30 overflow-hidden shadow-luxury">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 via-green-500/5 to-transparent" />
+              <div className="relative z-10 p-6 sm:p-8 text-center">
+                <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-green-500/15 border border-green-500/30 rounded-full">
+                  <Wrench className="h-3.5 w-3.5 text-green-400" aria-hidden="true" />
+                  <span className="text-xs font-bold text-green-300 uppercase tracking-wider">
+                    Detection + Spot Repair
+                  </span>
                 </div>
-              </li>
-            ))}
-          </ol>
+                <p className="text-4xl sm:text-5xl font-bold text-white mb-2 tracking-tight">
+                  $1,500 – $4,000
+                </p>
+                <p className="text-gray-400 text-sm">
+                  Acoustic detection isolates the leak to one foot
+                </p>
+              </div>
+            </div>
+            {/* Ignore it 90 days */}
+            <div className="relative rounded-2xl border border-red-500/30 overflow-hidden shadow-luxury">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 via-red-500/5 to-transparent" />
+              <div className="relative z-10 p-6 sm:p-8 text-center">
+                <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-red-500/15 border border-red-500/30 rounded-full">
+                  <AlertTriangle className="h-3.5 w-3.5 text-red-400" aria-hidden="true" />
+                  <span className="text-xs font-bold text-red-300 uppercase tracking-wider">
+                    Ignore It 90 Days
+                  </span>
+                </div>
+                <p className="text-4xl sm:text-5xl font-bold text-white mb-2 tracking-tight">
+                  $8,000 – $20,000+
+                </p>
+                <p className="text-gray-400 text-sm">
+                  Full repipe, flooring replacement, mold remediation
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -404,7 +391,7 @@ export function SlabLeakScenario() {
             </div>
 
             {/* Mid image placeholder — thermal imaging */}
-            <div className="mt-6 lg:col-span-1">
+            <div className="flex items-center">
               <ImagePromptPlaceholder
                 slot="before-after"
                 aspectRatio="3/2"
@@ -456,7 +443,7 @@ export function SlabLeakScenario() {
                     </ul>
                   </div>
                   <div className="pt-2 border-t border-white/10">
-                    <p className="text-gray-400 text-sm">Most standard homeowner's insurance policies cover water damage from a slab leak but not the pipe repair itself. Gardner Plumbing Co. provides detailed documentation for insurance claims. See <Link href="/guarantee" className="text-red-400 hover:text-red-300 transition-colors">our guarantee</Link> for written commitments on every job.</p>
+                    <p className="text-gray-400 text-sm">Most standard homeowner&apos;s insurance policies cover water damage from a slab leak but not the pipe repair itself. Gardner Plumbing Co. provides detailed documentation for insurance claims. See <Link href="/guarantee" className="text-red-400 hover:text-red-300 transition-colors">our guarantee</Link> for written commitments on every job.</p>
                   </div>
                 </div>
               </div>
@@ -486,6 +473,93 @@ export function SlabLeakScenario() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── 7 SIGNS ──────────────────────────────────────────────────── */}
+      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0" style={darkBg} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <SectionBadge icon={AlertTriangle} text="Warning Signs" color="red" />
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+              7 Signs You Have a{" "}
+              <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                Slab Leak
+              </span>
+            </h2>
+            <p className="text-lg text-gray-300 max-w-5xl mx-auto leading-relaxed">
+              Each one is a standalone indicator — you don&apos;t need all seven to have a problem.
+            </p>
+          </div>
+
+          <ol className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5">
+            {signs.map((sign, i) => (
+              <li
+                key={sign.num}
+                className={`group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500 ${
+                  i === signs.length - 1 ? "lg:col-span-2" : ""
+                }`}
+                style={{
+                  backgroundColor: "#202020",
+                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
+                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center shadow-lg border border-red-400/40 mt-0.5">
+                    <span className="text-white font-bold text-base">{sign.num}</span>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{sign.title}</p>
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{sign.body}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* ── WHAT TO DO IN THE NEXT HOUR ──────────────────────────────── */}
+      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0" style={altDarkBg} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <SectionBadge icon={Clock} text="Act Now" color="red" />
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+              What to Do in the{" "}
+              <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                Next Hour
+              </span>
+            </h2>
+          </div>
+
+          <ol className="space-y-5">
+            {actionSteps.map((step) => (
+              <li
+                key={step.num}
+                className="group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500"
+                style={{
+                  backgroundColor: "#202020",
+                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
+                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center shadow-lg border border-red-400/40 mt-0.5">
+                    <span className="text-white font-bold text-base">{step.num}</span>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{step.title}</p>
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{step.body}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
@@ -559,32 +633,102 @@ export function SlabLeakScenario() {
       <section className="py-14 sm:py-16 lg:py-20 relative overflow-hidden">
         <div className="absolute inset-0" style={altDarkBg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionBadge icon={FileText} text="Related Resources" color="blue" />
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8 drop-shadow-lg">Related Resources</h2>
+          <div className="text-center mb-10">
+            <SectionBadge icon={FileText} text="Related Resources" color="blue" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg">
+              Keep Reading
+            </h2>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { href: "/plumbing-help/pipe-burst-what-to-do", label: "What to Do If a Pipe Bursts", desc: "Step-by-step for active flooding." },
-              { href: "/services/plumbing/leak-detection", label: "Leak Detection Service", desc: "How Gardner's detection process works, equipment, and service area." },
-              { href: "/services/plumbing/moen-flo-installation", label: "Moen Flo Installation", desc: "Whole-home water monitoring that detects slab leaks before they become emergencies." },
-              { href: "/gardner-shield", label: "Gardner Shield Maintenance Plan", desc: "Annual plumbing inspections and priority scheduling." },
-              { href: "/guarantee", label: "The Gardner Promise", desc: "Written commitments on every service call." },
-              { href: "/plumbing-help/plumbing-inspection-checklist", label: "Plumbing Inspection Checklist", desc: "What to check before you buy a home." },
-            ].map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="group relative rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-5 shadow-luxury hover:border-red-500/40 transition-all duration-300 overflow-hidden block"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative z-10 flex gap-3 items-start">
-                  <ArrowRight className="h-4 w-4 text-red-400 flex-shrink-0 mt-1 group-hover:translate-x-0.5 transition-transform duration-300" aria-hidden="true" />
-                  <div>
-                    <p className="text-white font-semibold text-sm mb-1 group-hover:text-red-300 transition-colors duration-300">{link.label}</p>
-                    <p className="text-gray-500 text-xs leading-relaxed">{link.desc}</p>
+              {
+                href: "/plumbing-help/pipe-burst-what-to-do",
+                label: "What to Do If a Pipe Bursts",
+                desc: "Step-by-step for active flooding.",
+                icon: AlertTriangle,
+                accent: "red",
+              },
+              {
+                href: "/services/plumbing/leak-detection",
+                label: "Leak Detection Service",
+                desc: "How Gardner's detection process works, equipment, and service area.",
+                icon: Droplets,
+                accent: "blue",
+              },
+              {
+                href: "/gardner-shield",
+                label: "Gardner Shield Maintenance Plan",
+                desc: "Annual plumbing inspections and priority scheduling.",
+                icon: Shield,
+                accent: "green",
+              },
+              {
+                href: "/guarantee",
+                label: "The Gardner Promise",
+                desc: "Written commitments on every service call.",
+                icon: CheckCircle,
+                accent: "green",
+              },
+              {
+                href: "/plumbing-help/plumbing-inspection-checklist",
+                label: "Plumbing Inspection Checklist",
+                desc: "What to check before you buy a home.",
+                icon: ClipboardList,
+                accent: "blue",
+              },
+              {
+                href: "/plumbing-help/drain-clog-what-to-do",
+                label: "Drain Clog: What to Do",
+                desc: "Signs, steps, and when to call a pro.",
+                icon: Home,
+                accent: "red",
+              },
+            ].map((link) => {
+              const Icon = link.icon;
+              const accentClasses: Record<string, { border: string; iconBg: string; iconText: string; titleHover: string }> = {
+                green: {
+                  border: "hover:border-green-500/50",
+                  iconBg: "bg-gradient-to-br from-green-600/30 to-green-500/20 border-green-500/30",
+                  iconText: "text-green-400",
+                  titleHover: "group-hover:text-green-300",
+                },
+                red: {
+                  border: "hover:border-red-500/50",
+                  iconBg: "bg-gradient-to-br from-red-600/30 to-red-500/20 border-red-500/30",
+                  iconText: "text-red-400",
+                  titleHover: "group-hover:text-red-300",
+                },
+                blue: {
+                  border: "hover:border-blue-500/50",
+                  iconBg: "bg-gradient-to-br from-blue-600/30 to-blue-500/20 border-blue-500/30",
+                  iconText: "text-blue-400",
+                  titleHover: "group-hover:text-blue-300",
+                },
+              };
+              const styles = accentClasses[link.accent];
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`group relative rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-5 shadow-luxury ${styles.border} hover:-translate-y-0.5 transition-all duration-300 overflow-hidden block`}
+                >
+                  <div className="relative z-10 flex gap-4 items-start">
+                    <div className={`flex-shrink-0 w-10 h-10 rounded-lg ${styles.iconBg} border flex items-center justify-center mt-0.5`}>
+                      <Icon className={`h-5 w-5 ${styles.iconText}`} aria-hidden="true" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <p className={`text-white font-semibold text-sm ${styles.titleHover} transition-colors duration-300`}>
+                          {link.label}
+                        </p>
+                        <ArrowRight className={`h-3.5 w-3.5 ${styles.iconText} opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-300`} aria-hidden="true" />
+                      </div>
+                      <p className="text-gray-500 text-xs leading-relaxed">{link.desc}</p>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
