@@ -215,9 +215,20 @@ const services = [
                 Professional <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Drain Cleaning</span> Services
               </h1>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
+              <p className="text-xl text-gray-300 mb-6 leading-relaxed max-w-xl">
                 Fast, effective drain cleaning throughout Riverside County. Same-day service available with 30+ years of experience clearing even the toughest clogs. Our methods comply with <a href="https://www.epa.gov/watersense" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">EPA WaterSense standards</a>.
               </p>
+              <Link
+                href="/plumbing-help/drain-clog-what-to-do"
+                className="group inline-flex items-center gap-2 mb-8 text-sm sm:text-base text-red-300 hover:text-red-200 border-b border-red-500/40 hover:border-red-400 pb-0.5 transition-colors max-w-xl"
+              >
+                <AlertTriangle className="h-4 w-4 shrink-0" aria-hidden="true" />
+                <span>
+                  <span className="font-semibold text-white">Drain backing up right now?</span>{" "}
+                  Read our DIY-safe step-by-step guide
+                </span>
+                <ArrowRight className="h-4 w-4 shrink-0 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
+              </Link>
 
               {/* Key Benefits */}
               <div className="grid grid-cols-2 gap-4 mb-8">

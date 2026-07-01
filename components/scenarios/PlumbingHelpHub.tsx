@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ProtectHomeBanner } from "@/components/ProtectHomeBanner";
 import {
   Zap,
   Droplet,
@@ -12,7 +14,6 @@ import {
   BookOpen,
   DollarSign,
   Wrench,
-  Bell,
 } from "lucide-react";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -80,6 +81,9 @@ const scenarios: {
   heading: string;
   hook: string;
   href: string;
+  image: string;
+  imageAlt: string;
+  imagePosition: string;
 }[] = [
   {
     icon: Zap,
@@ -88,6 +92,9 @@ const scenarios: {
     heading: "Pipe Burst?",
     hook: "Shut off the main valve, then call. Every hour of water flow costs $150–300 in damage.",
     href: "/plumbing-help/pipe-burst-what-to-do",
+    image: "/pipe-burst-hero.webp",
+    imageAlt: "Gardner Plumbing technician responding to a burst pipe emergency in a Riverside County home",
+    imagePosition: "center 65%",
   },
   {
     icon: Droplet,
@@ -96,6 +103,9 @@ const scenarios: {
     heading: "Drain Won't Stop Backing Up?",
     hook: "One drain is a plunger job. Multiple drains = main line — don't DIY.",
     href: "/plumbing-help/drain-clog-what-to-do",
+    image: "/drain-clog-hero.webp",
+    imageAlt: "Gardner Plumbing technician reviewing camera inspection footage of a clogged drain line",
+    imagePosition: "center 60%",
   },
   {
     icon: Home,
@@ -104,6 +114,9 @@ const scenarios: {
     heading: "Think You Have a Slab Leak?",
     hook: "Warm spot on the floor + water bill spike = call for detection immediately.",
     href: "/plumbing-help/slab-leak-what-to-do",
+    image: "/slab-leak-hero.webp",
+    imageAlt: "Gardner Plumbing technician performing acoustic slab leak detection on a kitchen floor",
+    imagePosition: "center 70%",
   },
   {
     icon: ClipboardCheck,
@@ -112,6 +125,9 @@ const scenarios: {
     heading: "Buying or Selling a Home?",
     hook: "12-point plumbing inspection checklist. Catch issues before you sign.",
     href: "/plumbing-help/plumbing-inspection-checklist",
+    image: "/plumbing-inspection-hero.webp",
+    imageAlt: "Gardner Plumbing technician conducting a pre-purchase plumbing inspection with a clipboard",
+    imagePosition: "center 30%",
   },
 ];
 
@@ -169,40 +185,59 @@ export function PlumbingHelpHub() {
             />
           </nav>
 
-          <SectionBadge icon={BookOpen} text="Help Guides" color="red" />
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left: text + CTAs */}
+            <div className="lg:col-span-7">
+              <SectionBadge icon={BookOpen} text="Help Guides" color="red" />
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg leading-tight max-w-5xl">
-            Plumbing Help —{" "}
-            <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-              What to Do When Things Go Wrong
-            </span>
-          </h1>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+                Plumbing Help —{" "}
+                <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                  What to Do When Things Go Wrong
+                </span>
+              </h1>
 
-          <p className="text-lg sm:text-xl text-gray-300 mb-2 leading-relaxed max-w-5xl">
-            Gardner Plumbing Co. has published problem-answer guides for the most common plumbing
-            emergencies in Riverside County. Each guide walks you through what to do right now,
-            what it typically costs, and when to call. Written by our licensed technicians{" "}
-            <span className="text-gray-400">(CSLB #1073177)</span>.
-          </p>
+              <p className="text-lg text-gray-300 mb-4 leading-relaxed">
+                Gardner Plumbing Co. has published problem-answer guides for the most common plumbing emergencies in Riverside County. Each guide walks you through what to do right now, what it typically costs, and when to call. Written by our licensed technicians{" "}
+                <span className="text-gray-400">(CSLB #1073177)</span>.
+              </p>
 
-          <p className="text-sm text-gray-500 mb-10">Last Updated: June 2026</p>
+              <p className="text-sm text-gray-500 mb-8">Last Updated: June 2026</p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href={PHONE_HREF}>
-              <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg border border-red-400/20 transition-all duration-300 group">
-                <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
-                Emergency? Call {PHONE_DISPLAY}
-              </button>
-            </a>
-            <a href="#guides">
-              <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 font-semibold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 group bg-transparent">
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-0.5 transition-transform duration-300" aria-hidden="true" />
-                Browse Help Guides
-              </button>
-            </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href={PHONE_HREF}>
+                  <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg border border-red-400/20 transition-all duration-300 group">
+                    <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
+                    Emergency? Call {PHONE_DISPLAY}
+                  </button>
+                </a>
+                <a href="#guides">
+                  <button className="w-full sm:w-auto min-w-[220px] min-h-[44px] inline-flex items-center justify-center gap-3 border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 font-semibold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 group bg-transparent">
+                    <ArrowRight className="h-5 w-5 group-hover:translate-x-0.5 transition-transform duration-300" aria-hidden="true" />
+                    Browse Help Guides
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            {/* Right: hero image */}
+            <div className="lg:col-span-5">
+              <div className="relative w-full aspect-[4/5] lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-luxury border border-white/10">
+                <Image
+                  src="/GardnerTechVanTools.webp"
+                  alt="Gardner Plumbing Co. technician with service van and tools, ready for a Riverside County emergency call"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 480px, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <ProtectHomeBanner />
 
       {/* ── SCENARIO CARDS ─────────────────────────────────────────────── */}
       <section
@@ -249,19 +284,33 @@ export function PlumbingHelpHub() {
                   <div className="absolute left-0 top-4 bottom-4 w-0.5 bg-gradient-to-b from-transparent via-red-600/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
                   <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
 
-                  <div className="relative z-10 p-7 sm:p-8 flex flex-col h-full">
-                    {/* Top row: icon + badge */}
-                    <div className="flex items-start justify-between mb-5">
-                      <div className="w-14 h-14 bg-gradient-to-br from-red-600/30 to-red-500/20 rounded-xl flex items-center justify-center group-hover:from-red-600 group-hover:to-red-500 transition-all duration-500 shadow-lg border border-red-500/20 group-hover:border-red-500/60">
-                        <Icon className="h-7 w-7 text-red-400 group-hover:text-white transition-all duration-500" aria-hidden="true" />
+                  <div className="relative z-10 flex flex-col h-full">
+                    {/* Image banner with icon + badge overlaid */}
+                    <div className="relative w-full aspect-[3/2] overflow-hidden rounded-t-2xl">
+                      <Image
+                        src={card.image}
+                        alt={card.imageAlt}
+                        fill
+                        sizes="(min-width: 640px) 50vw, 100vw"
+                        style={{ objectPosition: card.imagePosition }}
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      />
+                      {/* Dark gradient overlay for icon/badge legibility */}
+                      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/30" />
+                      {/* Icon top-left */}
+                      <div className="absolute top-4 left-4 w-12 h-12 bg-gradient-to-br from-red-600/90 to-red-500/80 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg border border-red-400/40">
+                        <Icon className="h-6 w-6 text-white" aria-hidden="true" />
                       </div>
+                      {/* Badge top-right */}
                       <span
-                        className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider border ${badgeStyles[card.badgeVariant]}`}
+                        className={`absolute top-4 right-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider border backdrop-blur-sm ${badgeStyles[card.badgeVariant]}`}
                       >
                         {card.badge}
                       </span>
                     </div>
 
+                    {/* Text content */}
+                    <div className="p-6 sm:p-7 flex flex-col flex-1">
                     {/* Heading */}
                     <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-red-100 transition-colors duration-300 leading-snug">
                       {card.heading}
@@ -276,6 +325,7 @@ export function PlumbingHelpHub() {
                     <div className="flex items-center gap-2 text-red-400 font-semibold text-sm group-hover:text-red-300 transition-colors duration-300">
                       Read the guide
                       <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true" />
+                    </div>
                     </div>
                   </div>
                 </Link>
@@ -333,42 +383,6 @@ export function PlumbingHelpHub() {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* ── COMING SOON TEASER ─────────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
-        <div className="absolute inset-0" style={altDarkBg} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            className="relative overflow-hidden rounded-2xl border border-white/10 shadow-luxury px-8 py-10 sm:py-12 lg:py-14"
-            style={{
-              background: "linear-gradient(160deg, rgba(220,38,38,0.06) 0%, rgba(17,24,39,0.95) 60%, rgba(220,38,38,0.04) 100%)",
-            }}
-          >
-            {/* Subtle accent glow */}
-            <div
-              className="absolute -top-16 -right-16 w-64 h-64 rounded-full opacity-20 blur-3xl pointer-events-none"
-              style={{ background: "radial-gradient(circle, #DC2626 0%, transparent 70%)" }}
-              aria-hidden="true"
-            />
-            <div className="relative max-w-3xl">
-              <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-yellow-600/20 to-yellow-500/20 rounded-full border border-yellow-500/30 backdrop-blur-sm">
-                <Bell className="h-4 w-4 text-yellow-400" aria-hidden="true" />
-                <span className="text-yellow-400 font-semibold text-xs uppercase tracking-widest">
-                  More Guides Coming Soon
-                </span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 leading-tight">
-                More Guides Coming Soon
-              </h3>
-              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                Water heater life-cycle checks, seasonal maintenance for Coachella Valley homes,
-                and pre-storm plumbing prep are in the works. Bookmark this page or follow us
-                on Google for updates.
-              </p>
-            </div>
           </div>
         </div>
       </section>

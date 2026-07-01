@@ -11,6 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
+import Link from "next/link";
 import {
   Droplets,
   Clock,
@@ -207,9 +208,20 @@ const services = [
                 Professional <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Leak Detection</span> Services
               </h1>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
+              <p className="text-xl text-gray-300 mb-6 leading-relaxed max-w-xl">
                 Advanced leak detection throughout Riverside County. Save money on water bills and prevent costly damage with our precision detection technology.
               </p>
+              <Link
+                href="/plumbing-help/slab-leak-what-to-do"
+                className="group inline-flex items-center gap-2 mb-8 text-sm sm:text-base text-red-300 hover:text-red-200 border-b border-red-500/40 hover:border-red-400 pb-0.5 transition-colors max-w-xl"
+              >
+                <AlertTriangle className="h-4 w-4 shrink-0" aria-hidden="true" />
+                <span>
+                  <span className="font-semibold text-white">Think you have a slab leak?</span>{" "}
+                  See the 7 warning signs + what to do
+                </span>
+                <ArrowRight className="h-4 w-4 shrink-0 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
+              </Link>
 
               {/* Key Benefits */}
               <div className="grid grid-cols-2 gap-4 mb-8">

@@ -3,7 +3,7 @@
 import { SchedulerModal } from "./SchedulerModal";
 
 import { Button } from "./ui/button";
-import { Phone, Mail, Menu, MapPin, ChevronDown, Clock, Star, X, Wrench, Home, User, BanknoteIcon, Facebook, Instagram, Calendar, Snowflake, Zap, Info, ShieldCheck, Sparkles, Receipt, FileCheck, Shield } from "lucide-react";
+import { Phone, Mail, Menu, MapPin, ChevronDown, Clock, Star, X, Wrench, Home, User, BanknoteIcon, Facebook, Instagram, Calendar, Snowflake, Zap, Info, ShieldCheck, Sparkles, Receipt, FileCheck, Shield, Siren, BookOpen } from "lucide-react";
 import { useState, useCallback, useRef, useEffect } from "react";
 
 const logo = "/gardner_logo.webp";
@@ -66,7 +66,7 @@ export function Header({ ratingLabel, ratingBadge }: HeaderProps = {}) {
 
   const aboutLinks = [
     { href: "/about-us",                  label: "About Gardner Plumbing", desc: "Our story & 30+ years",         icon: Info },
-    { href: "/about-us#service-area",     label: "Service Areas",          desc: "25 cities we serve",           icon: MapPin },
+    { href: "/service-areas",              label: "Service Areas",          desc: "25 cities we serve",           icon: MapPin },
     { href: "/guarantee",                 label: "The Gardner Promise",     desc: "4-pillar commitment",          icon: ShieldCheck },
     { href: "/clean-visit-promise",       label: "The Clean Visit Promise", desc: "Clean-home standard",          icon: Sparkles },
     { href: "/gardner-shield",            label: "The Gardner Shield",      desc: "Membership program",           icon: Shield },
@@ -74,6 +74,7 @@ export function Header({ ratingLabel, ratingBadge }: HeaderProps = {}) {
     { href: "/warranty",                  label: "Warranty Info",           desc: "Coverage details",             icon: FileCheck },
     { href: "/financing",                 label: "Financing",               desc: "Payment options",              icon: BanknoteIcon },
     { href: "/reviews",                   label: "Customer Reviews",        desc: ratingLabel ? `${ratingLabel}★ rated · 900+ reviews` : "900+ five-star reviews", icon: Star },
+    { href: "/plumbing-help",             label: "Plumbing Help",          desc: "Emergency & problem guides",   icon: BookOpen },
   ];
 
   const commercialLinks: Record<string, string> = {
@@ -777,6 +778,24 @@ export function Header({ ratingLabel, ratingBadge }: HeaderProps = {}) {
                                           Emergency
                                         </h4>
                                       </a>
+
+                                      {/* Plumbing Help guides — sits above service links so panicked visitors spot it first */}
+                                      <a
+                                        href="/plumbing-help"
+                                        className="group flex items-center justify-between mb-4 px-3 py-2.5 rounded-lg border border-red-500/30 bg-gradient-to-r from-red-600/15 to-red-500/10 hover:from-red-600/25 hover:to-red-500/20 hover:border-red-500/60 transition-all duration-300"
+                                      >
+                                        <div>
+                                          <div className="text-sm font-bold text-white group-hover:text-red-100 transition-colors flex items-center gap-2">
+                                            <Siren className="h-4 w-4 text-red-400 group-hover:text-red-300 transition-colors" aria-hidden="true" />
+                                            Emergency &amp; Problem Guides
+                                          </div>
+                                          <div className="text-[11px] text-gray-400 group-hover:text-gray-300 transition-colors">
+                                            Step-by-step: what to do right now
+                                          </div>
+                                        </div>
+                                        <span className="text-red-400 text-lg group-hover:translate-x-0.5 transition-transform duration-300" aria-hidden="true">→</span>
+                                      </a>
+
                                       <ul className="grid grid-cols-2 gap-y-3">
                                         {[
                                           { name: "24/7 Service", desc: "Always available" },
@@ -832,9 +851,9 @@ export function Header({ ratingLabel, ratingBadge }: HeaderProps = {}) {
 
                                       <div className="relative text-center">
                                         <img
-                                          src="/GardnerPlumbingCoEmergencyTech.webp"
+                                          src="/gpemergencytech.webp"
                                           alt="Emergency Icon"
-                                          className="mx-auto mb-3 object-contain drop-shadow-md"
+                                          className="mx-auto mb-3 w-full h-36 object-cover drop-shadow-md rounded-md"
                                         />
                                         <div className="text-red-100 font-medium text-sm mb-2 drop-shadow-sm">
                                           Emergency? Call Now!
@@ -1442,19 +1461,39 @@ export function Header({ ratingLabel, ratingBadge }: HeaderProps = {}) {
                         </button>
 
                         {isMobileServicesOpen && (
-                          <ul className="mt-3 grid grid-cols-2 gap-2 bg-[#111827] p-1 rounded-lg border border-white/10 shadow-md">
-                            {Object.entries(serviceLinks).map(([name, href]) => (
-                              <li key={name}>
-                                <a
-                                  href={href}
-                                  onClick={() => setIsMenuOpen(false)}
-                                  className="flex items-center justify-center px-1 py-1 text-sm font-small text-gray-200 rounded-md bg-gradient-to-br from-[#1f2937] to-[#111827] border border-white/5 hover:from-red-600 hover:to-red-500 hover:text-white transition-all duration-300"
-                                >
-                                  {name}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
+                          <div className="mt-3 bg-[#111827] rounded-lg border border-white/10 shadow-md overflow-hidden">
+                            {/* Plumbing Help hub link — prominent, above service grid */}
+                            <div className="px-2 pt-2 pb-1">
+                              <a
+                                href="/plumbing-help"
+                                onClick={() => setIsMenuOpen(false)}
+                                className="group flex items-center justify-between px-3 py-2.5 rounded-lg border border-red-500/30 bg-gradient-to-r from-red-600/15 to-red-500/10 hover:from-red-600/25 hover:to-red-500/20 hover:border-red-500/60 transition-all duration-300"
+                              >
+                                <div>
+                                  <div className="text-sm font-bold text-white group-hover:text-red-100 transition-colors">
+                                    📖 Emergency &amp; Problem Guides
+                                  </div>
+                                  <div className="text-[11px] text-gray-400 group-hover:text-gray-300 transition-colors">
+                                    Step-by-step: what to do right now
+                                  </div>
+                                </div>
+                                <span className="text-red-400 text-lg group-hover:translate-x-0.5 transition-transform duration-300" aria-hidden="true">→</span>
+                              </a>
+                            </div>
+                            <ul className="grid grid-cols-2 gap-2 p-1">
+                              {Object.entries(serviceLinks).map(([name, href]) => (
+                                <li key={name}>
+                                  <a
+                                    href={href}
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="flex items-center justify-center px-1 py-1 text-sm font-small text-gray-200 rounded-md bg-gradient-to-br from-[#1f2937] to-[#111827] border border-white/5 hover:from-red-600 hover:to-red-500 hover:text-white transition-all duration-300"
+                                  >
+                                    {name}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
                         )}
                       </div>
 

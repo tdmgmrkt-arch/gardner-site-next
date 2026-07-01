@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ImagePromptPlaceholder } from "@/components/ImagePromptPlaceholder";
+import Image from "next/image";
 import { ProtectHomeBanner } from "@/components/ProtectHomeBanner";
 import {
   Accordion,
@@ -26,29 +26,6 @@ import {
   ClipboardList,
   Home,
 } from "lucide-react";
-
-// ─── Image prompt constants (sourced from seo/scenario-image-prompts/pipe-burst-*.md) ───
-
-const HERO_PROMPT =
-  "Documentary photograph of a plumbing technician arriving at a flooded suburban garage in Riverside County, California. The technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots, red Milwaukee tool bag on hip. The technician is standing in the open garage doorway, one hand gripping a pipe wrench and a Milwaukee tool bag at their side, eyes scanning the floor where water is pooling on a concrete garage floor — a visible wet streak runs from the wall toward the drain. Soft overcast daylight from the open garage door. Residential stucco exterior visible behind the technician. 50mm equivalent lens, documentary photography style, no studio lighting. Style and likeness of attached reference image.";
-
-const HERO_NEGATIVE =
-  "no stock photo look, no white lab coat, no safety vest, no cartoon, no illustration, no text overlay, no watermark, no excessive lens flare, no overly dramatic flood water (small puddle, not a river), no green lawn (wrong region), no snow, no city skyline, no mid-stride running pose";
-
-const HERO_REF =
-  "Attach the two real Gardner team reference photos (provided 2026-06-12) — uniform & face/likeness reference. Do not describe face, age, or ethnicity in the prompt.";
-
-const MID_PROMPT =
-  "Extreme macro close-up of a burst copper pipe section on a white surface or workbench, showing a fracture point with visible calcium and hard-water mineral scaling encrusting the pipe exterior around the break — chalky white-gray calcium deposits, the copper surface beneath showing oxidation and patina. Water beading and running off the fracture edge, catching soft directional light. The fracture is a clean split seam, not a dramatic explosion. Muted, flat overcast bench lighting. 50mm macro equivalent lens, technical documentation style. No people, no hands, no background clutter. The pipe itself is the entire subject.";
-
-const MID_NEGATIVE =
-  "no people, no hands visible, no text overlay, no cartoon, no watermark, no exaggerated Hollywood geyser, no dramatic steam, no CGI look, no stock photo softness, no plastic pipe (must be copper), no extreme close-up so tight the context is lost";
-
-const TRUST_PROMPT =
-  "Documentary photograph of a professional dispatcher in a small plumbing dispatch office, sitting at a desk with dual computer monitors showing a dispatch map and call log, wearing a headset with a small boom microphone. The dispatcher has a calm, focused expression, looking at the screens — not at the camera. Warm overhead office lighting with a cool monitor glow on the face. The desk shows a notepad with handwritten address notes, a coffee cup, normal office clutter. The room feels professional and functional, not sterile. No Gardner branding visible on screen — screens show generic map and list UI. 35mm equivalent lens, documentary photography style.";
-
-const TRUST_NEGATIVE =
-  "no cartoon, no illustration, no text overlay, no watermark, no exaggerated call-center rows of people, no headset with huge foam ear cups, no 911-style emergency room look, no fake smile at camera, no stock photo pose, no overly bright or overexposed lighting";
 
 const PHONE_DISPLAY = "(951) 246-4337";
 const PHONE_HREF = "tel:9512464337";
@@ -234,17 +211,13 @@ export function PipeBurstScenario() {
             {/* Right: hero image */}
             <div className="lg:col-span-5">
               <div className="relative w-full aspect-[4/5] lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-luxury border border-white/10">
-                <ImagePromptPlaceholder
-                  slot="hero"
-                  aspectRatio="4/5"
-                  targetWidth={1200}
-                  targetHeight={1500}
-                  targetFileName="pipe-burst-hero.webp"
-                  prompt={HERO_PROMPT}
-                  negativePrompt={HERO_NEGATIVE}
-                  referenceImageNote={HERO_REF}
-                  altText="Gardner Plumbing technician arriving at a flooded garage in Riverside County for emergency burst pipe repair"
-                  className="w-full h-full"
+                <Image
+                  src="/pipe-burst-hero.webp"
+                  alt="Gardner Plumbing technician arriving at a flooded garage in Riverside County for emergency burst pipe repair"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 480px, 100vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -255,9 +228,53 @@ export function PipeBurstScenario() {
       {/* ── SITE-WIDE PROTECT-HOME BANNER ─────────────────────────────── */}
       <ProtectHomeBanner />
 
+      {/* ── WHAT TO DO IN 15 MINUTES ────────────────────────────────── */}
+      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0" style={darkBg} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <SectionBadge icon={Clock} text="Act Now" color="red" />
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+              What to Do in the{" "}
+              <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                Next 15 Minutes
+              </span>
+            </h2>
+            <p className="text-lg text-gray-300 max-w-5xl mx-auto leading-relaxed">
+              Seven steps to limit damage before the technician arrives.
+            </p>
+          </div>
+
+          <ol className="space-y-5">
+            {steps.map((step) => (
+              <li
+                key={step.num}
+                className="group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500"
+                style={{
+                  backgroundColor: "#202020",
+                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
+                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center shadow-lg border border-red-400/40 mt-0.5">
+                    <span className="text-white font-bold text-base">{step.num}</span>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{step.title}</p>
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{step.body}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       {/* ── COST COMPARISON CALLOUT ─────────────────────────────────── */}
       <section className="py-12 sm:py-14 lg:py-16 relative overflow-hidden">
-        <div className="absolute inset-0" style={darkBg} />
+        <div className="absolute inset-0" style={altDarkBg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
@@ -311,50 +328,6 @@ export function PipeBurstScenario() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ── WHAT TO DO IN 15 MINUTES ────────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
-        <div className="absolute inset-0" style={altDarkBg} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <SectionBadge icon={Clock} text="Act Now" color="red" />
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-              What to Do in the{" "}
-              <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-                Next 15 Minutes
-              </span>
-            </h2>
-            <p className="text-lg text-gray-300 max-w-5xl mx-auto leading-relaxed">
-              Seven steps to limit damage before the technician arrives.
-            </p>
-          </div>
-
-          <ol className="space-y-5">
-            {steps.map((step) => (
-              <li
-                key={step.num}
-                className="group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500"
-                style={{
-                  backgroundColor: "#202020",
-                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
-                }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
-                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
-                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center shadow-lg border border-red-400/40 mt-0.5">
-                    <span className="text-white font-bold text-base">{step.num}</span>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{step.title}</p>
-                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{step.body}</p>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ol>
         </div>
       </section>
 
@@ -438,37 +411,63 @@ export function PipeBurstScenario() {
                   </a>
                 </div>
 
-                {/* Trust image placeholder — dispatcher */}
-                <div className="mt-6">
-                  <ImagePromptPlaceholder
-                    slot="before-after"
-                    aspectRatio="4/3"
-                    targetWidth={800}
-                    targetHeight={600}
-                    targetFileName="pipe-burst-dispatcher.webp"
-                    prompt={TRUST_PROMPT}
-                    negativePrompt={TRUST_NEGATIVE}
-                    altText="Live Gardner Plumbing Co. dispatcher answering emergency burst pipe calls 24 hours a day across Riverside County"
-                    className="w-full rounded-2xl min-h-48"
-                  />
-                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Mid image placeholder — burst pipe close-up */}
-            <div className="lg:col-span-12 mt-4">
-              <ImagePromptPlaceholder
-                slot="before-after"
-                aspectRatio="3/2"
-                targetWidth={1200}
-                targetHeight={800}
-                targetFileName="pipe-burst-scaling.webp"
-                prompt={MID_PROMPT}
-                negativePrompt={MID_NEGATIVE}
-                altText="Close-up of a burst copper pipe with hard-water calcium scaling at the fracture point, common in Riverside County homes"
-                className="w-full rounded-2xl min-h-64"
-              />
-            </div>
+      {/* ── "WHAT YOU GET" IMAGE SHOWCASE ─────────────────────────────── */}
+      <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+        <div className="absolute inset-0" style={altDarkBg} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 sm:mb-12">
+            <SectionBadge icon={FileText} text="What You Get" color="green" />
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 drop-shadow-lg leading-tight">
+              A Live Dispatcher &amp;{" "}
+              <span className="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
+                Real Diagnostic Evidence
+              </span>
+            </h2>
+            <p className="text-base text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              When you call Gardner Plumbing Co. for a burst pipe emergency, a real person answers within seconds — and the technician shows you exactly what failed and why.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {/* Left: live dispatcher */}
+            <figure className="relative rounded-2xl overflow-hidden shadow-luxury border border-white/10 group">
+              <div className="relative w-full aspect-[4/3]">
+                <Image
+                  src="/pipe-burst-dispatcher.webp"
+                  alt="Live Gardner Plumbing Co. dispatcher answering emergency burst pipe calls 24 hours a day across Riverside County"
+                  fill
+                  sizes="(min-width: 768px) 600px, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                />
+              </div>
+              <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-5 sm:p-6">
+                <p className="text-white font-bold text-base sm:text-lg mb-1">A Real Person Answers, 24/7</p>
+                <p className="text-gray-300 text-sm">No voicemail. No answering service. Live dispatcher confirms ETA and stays on the line until help arrives.</p>
+              </figcaption>
+            </figure>
+
+            {/* Right: burst pipe close-up */}
+            <figure className="relative rounded-2xl overflow-hidden shadow-luxury border border-white/10 group">
+              <div className="relative w-full aspect-[4/3]">
+                <Image
+                  src="/pipe-burst-scaling.webp"
+                  alt="Close-up of a burst copper pipe with hard-water calcium scaling at the fracture point, common in Riverside County homes"
+                  fill
+                  sizes="(min-width: 768px) 600px, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                />
+              </div>
+              <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-5 sm:p-6">
+                <p className="text-white font-bold text-base sm:text-lg mb-1">Evidence, Not a Guess</p>
+                <p className="text-gray-300 text-sm">The technician shows you the failed section — often hard-water scaling on copper — so you know what needs replacing.</p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

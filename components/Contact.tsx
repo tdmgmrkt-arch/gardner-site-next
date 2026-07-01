@@ -59,7 +59,7 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
     primary: "Riverside County",
     secondary: "Temecula, Murrieta & Surrounding",
     action: "View Coverage",
-    href: "/about-us#service-area"   // 📍 Internal route or map link
+    href: "/service-areas"   // 📍 Internal route or map link
   },
   {
     icon: Clock,

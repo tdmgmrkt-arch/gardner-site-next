@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ImagePromptPlaceholder } from "@/components/ImagePromptPlaceholder";
+import Image from "next/image";
 import { ProtectHomeBanner } from "@/components/ProtectHomeBanner";
 import {
   Accordion,
@@ -25,29 +25,6 @@ import {
   TrendingUp,
   ClipboardList,
 } from "lucide-react";
-
-// ─── Image prompt constants (sourced from seo/scenario-image-prompts/drain-clog-*.md) ───
-
-const HERO_PROMPT =
-  "Documentary photograph of a plumbing technician kneeling beside a kitchen island or counter, holding a tablet in both hands, reviewing camera inspection footage on the tablet screen. The tablet screen shows a drain pipe interior with visible root intrusion — the camera feed is legible as a circular pipe interior image with organic material inside. The technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots, red Milwaukee tool bag on hip. Focused expression, eyes on the tablet screen, not the camera. Modern suburban kitchen setting, natural window light from one side creating soft directional shadows. 50mm equivalent lens, documentary photography style, no studio lighting. Style and likeness of attached reference image.";
-
-const HERO_NEGATIVE =
-  "no stock photo look, no white lab coat, no safety vest, no cartoon, no illustration, no text overlay, no watermark, no posed smile at camera, no excessive lens flare, no green lawn or outdoor setting (kitchen scene), no snow, no city skyline, no mid-stride or action-hero pose";
-
-const HERO_REF =
-  "Attach the two real Gardner team reference photos (provided 2026-06-12) — uniform & face/likeness reference. Do not describe face, age, or ethnicity in the prompt.";
-
-const MID_PROMPT =
-  "Close-up action photograph of a hydro-jetting nozzle at the entrance of a drain cleanout, spraying a high-pressure fan of water into a dark pipe opening. The stainless-steel jetting nozzle is mounted on a black flexible hose, partially inserted into the cleanout. Water sprays in a tight, bright arc from the forward jets — the spray is crisp and real, not CGI. The cleanout and surrounding concrete or asphalt surface are wet. Flat overcast daylight or mixed shade lighting. Sharp focus on the nozzle and water stream; the pipe interior fades to dark. 35mm equivalent lens, documentary technical photography, no people, no hands in frame.";
-
-const MID_NEGATIVE =
-  "no people, no hands visible, no text overlay, no cartoon, no watermark, no CGI water simulation, no studio backdrop, no soft stock-photo blurriness, no indoor plumbing setting (this is a cleanout exterior shot), no exaggerated steam or fog";
-
-const TRUST_PROMPT =
-  "Still-life photograph of an immaculate modern kitchen sink, viewed from slightly above at a 30-degree angle. Water flows cleanly in a single steady stream from the faucet into the drain — the stream is clear and unobstructed. The sink basin is spotless stainless steel. The countertop around it is a neutral stone surface, clean and dry. Soft natural window light from the left side creates gentle shadows. No dirty dishes, no clutter. The subject is the drain and water flow — normalcy restored. 35mm equivalent lens, architectural still-life style, no people, no text.";
-
-const TRUST_NEGATIVE =
-  "no people, no hands visible, no text overlay, no cartoon, no watermark, no dirty dishes, no cluttered countertop, no harsh shadows, no exaggerated sparkle or overexposed highlights, no stock-photo perfection with fake-looking water, no CGI water";
 
 const PHONE_DISPLAY = "(951) 246-4337";
 const PHONE_HREF = "tel:9512464337";
@@ -223,17 +200,13 @@ export function DrainClogScenario() {
             {/* Right: hero image */}
             <div className="lg:col-span-5">
               <div className="relative w-full aspect-[4/5] lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-luxury border border-white/10">
-                <ImagePromptPlaceholder
-                  slot="hero"
-                  aspectRatio="4/5"
-                  targetWidth={1200}
-                  targetHeight={1500}
-                  targetFileName="drain-clog-hero.webp"
-                  prompt={HERO_PROMPT}
-                  negativePrompt={HERO_NEGATIVE}
-                  referenceImageNote={HERO_REF}
-                  altText="Gardner Plumbing technician reviewing camera inspection footage on a tablet showing tree root intrusion in a drain pipe"
-                  className="w-full h-full"
+                <Image
+                  src="/drain-clog-hero.webp"
+                  alt="Gardner Plumbing technician reviewing camera inspection footage on a tablet showing tree root intrusion in a drain pipe"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 480px, 100vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -244,9 +217,50 @@ export function DrainClogScenario() {
       {/* ── SITE-WIDE PROTECT-HOME BANNER ─────────────────────────────── */}
       <ProtectHomeBanner />
 
+      {/* ── STEPS ────────────────────────────────────────────────────── */}
+      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0" style={darkBg} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <SectionBadge icon={Clock} text="Act Now" color="red" />
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+              What to Do in the{" "}
+              <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                Next 15 Minutes
+              </span>
+            </h2>
+          </div>
+
+          <ol className="space-y-5">
+            {steps.map((step) => (
+              <li
+                key={step.num}
+                className="group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500"
+                style={{
+                  backgroundColor: "#202020",
+                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
+                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center shadow-lg border border-red-400/40 mt-0.5">
+                    <span className="text-white font-bold text-base">{step.num}</span>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{step.title}</p>
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{step.body}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       {/* ── COST COMPARISON CALLOUT ─────────────────────────────────── */}
       <section className="py-12 sm:py-14 lg:py-16 relative overflow-hidden">
-        <div className="absolute inset-0" style={darkBg} />
+        <div className="absolute inset-0" style={altDarkBg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
@@ -300,47 +314,6 @@ export function DrainClogScenario() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ── STEPS ────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
-        <div className="absolute inset-0" style={altDarkBg} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <SectionBadge icon={Clock} text="Act Now" color="red" />
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-              What to Do in the{" "}
-              <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-                Next 15 Minutes
-              </span>
-            </h2>
-          </div>
-
-          <ol className="space-y-5">
-            {steps.map((step) => (
-              <li
-                key={step.num}
-                className="group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500"
-                style={{
-                  backgroundColor: "#202020",
-                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
-                }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
-                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
-                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center shadow-lg border border-red-400/40 mt-0.5">
-                    <span className="text-white font-bold text-base">{step.num}</span>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{step.title}</p>
-                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{step.body}</p>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ol>
         </div>
       </section>
 
@@ -422,36 +395,62 @@ export function DrainClogScenario() {
                 </div>
               </div>
 
-              {/* Trust image placeholder — clean sink post-service */}
-              <div className="mt-6">
-                <ImagePromptPlaceholder
-                  slot="before-after"
-                  aspectRatio="4/3"
-                  targetWidth={800}
-                  targetHeight={600}
-                  targetFileName="drain-clog-clean-sink.webp"
-                  prompt={TRUST_PROMPT}
-                  negativePrompt={TRUST_NEGATIVE}
-                  altText="Clean kitchen sink with water draining freely after professional drain cleaning service by Gardner Plumbing"
-                  className="w-full rounded-2xl min-h-48"
-                />
-              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Mid image placeholder — hydro-jet nozzle */}
-          <div className="mt-10">
-            <ImagePromptPlaceholder
-              slot="before-after"
-              aspectRatio="3/2"
-              targetWidth={1200}
-              targetHeight={800}
-              targetFileName="drain-clog-hydrojet.webp"
-              prompt={MID_PROMPT}
-              negativePrompt={MID_NEGATIVE}
-              altText="Hydro-jetting nozzle spraying high-pressure water into a residential drain cleanout to clear a severe clog"
-              className="w-full rounded-2xl min-h-64"
-            />
+      {/* ── "WHAT YOU GET" IMAGE SHOWCASE ─────────────────────────────── */}
+      <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+        <div className="absolute inset-0" style={darkBg} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 sm:mb-12">
+            <SectionBadge icon={FileText} text="What You Get" color="green" />
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 drop-shadow-lg leading-tight">
+              Professional Equipment &amp;{" "}
+              <span className="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
+                a Drain That Actually Drains
+              </span>
+            </h2>
+            <p className="text-base text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Gardner Plumbing Co. brings the right tool for your specific clog — snake, hydro-jet, or camera — and leaves your fixtures cleaner than we found them.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {/* Left: hydro-jet in action */}
+            <figure className="relative rounded-2xl overflow-hidden shadow-luxury border border-white/10 group">
+              <div className="relative w-full aspect-[4/3]">
+                <Image
+                  src="/gardnerhydrojetservice.webp"
+                  alt="Gardner Plumbing Co. hydro-jetting service clearing a residential drain line with high-pressure water"
+                  fill
+                  sizes="(min-width: 768px) 600px, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                />
+              </div>
+              <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-5 sm:p-6">
+                <p className="text-white font-bold text-base sm:text-lg mb-1">Hydro-Jetting on Site</p>
+                <p className="text-gray-300 text-sm">3,500 PSI cuts through grease, roots, and mineral scale. No harsh chemicals.</p>
+              </figcaption>
+            </figure>
+
+            {/* Right: clean sink post-service */}
+            <figure className="relative rounded-2xl overflow-hidden shadow-luxury border border-white/10 group">
+              <div className="relative w-full aspect-[4/3]">
+                <Image
+                  src="/drain-clog-clean-sink.webp"
+                  alt="Clean kitchen sink with water draining freely after professional drain cleaning service by Gardner Plumbing"
+                  fill
+                  sizes="(min-width: 768px) 600px, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                />
+              </div>
+              <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-5 sm:p-6">
+                <p className="text-white font-bold text-base sm:text-lg mb-1">Freely Flowing Drains — Same Day</p>
+                <p className="text-gray-300 text-sm">Cleanup included. Fixtures polished. Camera confirmation the line is clear.</p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

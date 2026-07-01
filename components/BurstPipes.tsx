@@ -179,9 +179,20 @@ const emergencyReasons = [
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 drop-shadow-lg leading-tight">
                 Emergency <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Burst Pipe</span> Repair
               </h1>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
+              <p className="text-xl text-gray-300 mb-6 leading-relaxed max-w-xl">
                 24/7 rapid response for burst and leaking pipes. We stop the flood, repair the damage, and protect your home.
               </p>
+              <Link
+                href="/plumbing-help/pipe-burst-what-to-do"
+                className="group inline-flex items-center gap-2 mb-8 text-sm sm:text-base text-red-300 hover:text-red-200 border-b border-red-500/40 hover:border-red-400 pb-0.5 transition-colors max-w-xl"
+              >
+                <AlertTriangle className="h-4 w-4 shrink-0" aria-hidden="true" />
+                <span>
+                  <span className="font-semibold text-white">Emergency right now?</span>{" "}
+                  Read the 15-minute step-by-step guide
+                </span>
+                <ArrowRight className="h-4 w-4 shrink-0 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
+              </Link>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[{ icon: Clock, text: "24/7 Emergency" }, { icon: Shield, text: "Prevent Damage" }, { icon: Wrench, text: "All Pipe Types" }, { icon: Phone, text: "Immediate Dispatch" }].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3 text-gray-300"><item.icon className="h-5 w-5 text-green-400" /><span className="font-medium">{item.text}</span></div>

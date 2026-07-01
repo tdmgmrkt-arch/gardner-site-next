@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SchedulerModal } from "./SchedulerModal";
 import { Button } from "./ui/button";
@@ -259,6 +260,24 @@ export function Inspection() {
           </div>
         </div>
       </section>
+
+      {/* Scenario Guide Callout */}
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <Link
+          href="/plumbing-help/plumbing-inspection-checklist"
+          className="group flex items-center justify-between gap-4 px-5 py-4 rounded-2xl border border-red-500/40 bg-gradient-to-r from-red-950/60 to-red-900/40 hover:from-red-900/70 hover:to-red-800/50 hover:border-red-500/70 transition-all duration-300 w-full"
+        >
+          <div>
+            <div className="text-sm sm:text-base font-bold text-white leading-snug">
+              🏡 Buying or selling a home? See our 12-point Plumbing Inspection Checklist →
+            </div>
+            <div className="text-xs sm:text-sm text-red-300/80 mt-0.5">
+              Know what to look for — and what a failing inspection could cost you.
+            </div>
+          </div>
+          <span className="text-red-400 text-xl shrink-0 group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true">›</span>
+        </Link>
+      </div>
 
       {/* Alert Banner */}
       <section className="relative overflow-hidden">

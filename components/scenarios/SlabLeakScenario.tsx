@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ImagePromptPlaceholder } from "@/components/ImagePromptPlaceholder";
+import Image from "next/image";
 import { ProtectHomeBanner } from "@/components/ProtectHomeBanner";
 import {
   Accordion,
@@ -36,18 +36,6 @@ const HERO_NEGATIVE =
 
 const HERO_REF =
   "Attach the two real Gardner team reference photos (provided 2026-06-12) — uniform & face/likeness reference. Do not describe face, age, or ethnicity in the prompt.";
-
-const MID_PROMPT =
-  "Infrared thermal imaging photograph of a residential kitchen tile floor, shot from standing height looking straight down at roughly 45 degrees. The thermal image shows a warm spot — a roughly oval gradient blooming from cool blue-green at the edges to warm amber and red at the center — indicating a hot-water pipe leaking beneath the slab. The rest of the floor is cool blue. The tile grout lines are faintly visible in the thermal data. The image has the characteristic flat, matte look of a real infrared camera output — not CGI color-grading. A small temperature scale bar or camera data overlay in the corner is acceptable and realistic. No people visible, no hands. Pure infrared camera POV.";
-
-const MID_NEGATIVE =
-  "no people, no hands visible, no CGI glow effects, no cartoon, no watermark, no over-saturated neon colors (must look like real thermal camera output), no visible water on the floor surface (the leak is under the slab), no dramatic fire-red everywhere — only a subtle warm spot surrounded by cool tones";
-
-const TRUST_PROMPT =
-  "Documentary photograph of a plumbing technician standing in a well-lit kitchen, pointing to a hand-drawn diagram on a sheet of white paper held between both hands. A homeowner — a middle-aged adult in casual home clothing — stands beside the technician, looking down at the diagram with a focused expression. Both figures are looking at the paper, not at the camera. The diagram on the paper shows a rough sketch of a floor plan with a circle or X indicating a leak location — simple, hand-drawn. The technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots. Natural window light from one side. Warm, calm, professional atmosphere. 50mm equivalent lens, documentary photography style. Style and likeness of attached reference image for the technician only.";
-
-const TRUST_NEGATIVE =
-  "no stock photo handshake, no fake smile at camera, no white lab coat, no safety vest, no cartoon, no illustration, no text overlay, no watermark, no tablet or phone screen replacing the paper diagram, no posed corporate portrait stance";
 
 const PHONE_DISPLAY = "(951) 246-4337";
 const PHONE_HREF = "tel:9512464337";
@@ -260,17 +248,13 @@ export function SlabLeakScenario() {
             {/* Right: hero image */}
             <div className="lg:col-span-5">
               <div className="relative w-full aspect-[4/5] lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-luxury border border-white/10">
-                <ImagePromptPlaceholder
-                  slot="hero"
-                  aspectRatio="4/5"
-                  targetWidth={1200}
-                  targetHeight={1500}
-                  targetFileName="slab-leak-hero.webp"
-                  prompt={HERO_PROMPT}
-                  negativePrompt={HERO_NEGATIVE}
-                  referenceImageNote={HERO_REF}
-                  altText="Gardner Plumbing technician using acoustic leak detection equipment to locate a slab leak beneath a Riverside County home's kitchen floor"
-                  className="w-full h-full"
+                <Image
+                  src="/slab-leak-hero.webp"
+                  alt="Gardner Plumbing technician using acoustic leak detection equipment to locate a slab leak beneath a Riverside County home's kitchen floor"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 480px, 100vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -280,6 +264,93 @@ export function SlabLeakScenario() {
 
       {/* ── SITE-WIDE PROTECT-HOME BANNER ─────────────────────────────── */}
       <ProtectHomeBanner />
+
+      {/* ── 7 SIGNS ──────────────────────────────────────────────────── */}
+      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0" style={altDarkBg} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <SectionBadge icon={AlertTriangle} text="Warning Signs" color="red" />
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+              7 Signs You Have a{" "}
+              <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                Slab Leak
+              </span>
+            </h2>
+            <p className="text-lg text-gray-300 max-w-5xl mx-auto leading-relaxed">
+              Each one is a standalone indicator — you don&apos;t need all seven to have a problem.
+            </p>
+          </div>
+
+          <ol className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5">
+            {signs.map((sign, i) => (
+              <li
+                key={sign.num}
+                className={`group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500 ${
+                  i === signs.length - 1 ? "lg:col-span-2" : ""
+                }`}
+                style={{
+                  backgroundColor: "#202020",
+                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
+                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center shadow-lg border border-red-400/40 mt-0.5">
+                    <span className="text-white font-bold text-base">{sign.num}</span>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{sign.title}</p>
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{sign.body}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* ── WHAT TO DO IN THE NEXT HOUR ──────────────────────────────── */}
+      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute inset-0" style={darkBg} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <SectionBadge icon={Clock} text="Act Now" color="red" />
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+              What to Do in the{" "}
+              <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+                Next Hour
+              </span>
+            </h2>
+          </div>
+
+          <ol className="space-y-5">
+            {actionSteps.map((step) => (
+              <li
+                key={step.num}
+                className="group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500"
+                style={{
+                  backgroundColor: "#202020",
+                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
+                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center shadow-lg border border-red-400/40 mt-0.5">
+                    <span className="text-white font-bold text-base">{step.num}</span>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{step.title}</p>
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{step.body}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
 
       {/* ── COST COMPARISON CALLOUT ─────────────────────────────────── */}
       <section className="py-12 sm:py-14 lg:py-16 relative overflow-hidden">
@@ -340,12 +411,12 @@ export function SlabLeakScenario() {
         </div>
       </section>
 
-      {/* ── HOW GARDNER DETECTS + COSTS ─────────────────────────────── */}
+      {/* ── HOW GARDNER DETECTS ─────────────────────────────────────── */}
       <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
         <div className="absolute inset-0" style={altDarkBg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
-            {/* Detection */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            {/* Detection — text left */}
             <div>
               <SectionBadge icon={Wrench} text="Precision Detection" color="red" />
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
@@ -390,176 +461,154 @@ export function SlabLeakScenario() {
               </div>
             </div>
 
-            {/* Mid image placeholder — thermal imaging */}
-            <div className="flex items-center">
-              <ImagePromptPlaceholder
-                slot="before-after"
-                aspectRatio="3/2"
-                targetWidth={1200}
-                targetHeight={800}
-                targetFileName="slab-leak-thermal.webp"
-                prompt={MID_PROMPT}
-                negativePrompt={MID_NEGATIVE}
-                altText="Thermal imaging scan of a kitchen floor showing a warm-spot heat signature from a hot-water slab leak beneath the concrete foundation"
-                className="w-full rounded-2xl min-h-64"
-              />
-            </div>
-
-            {/* Costs */}
-            <div>
-              <SectionBadge icon={Shield} text="What It Costs" color="green" />
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-                What Does Slab Leak Repair{" "}
-                <span className="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
-                  Actually Cost?
-                </span>
-              </h2>
-              <div
-                className="rounded-2xl p-6 sm:p-8 border border-white/10 shadow-luxury"
-                style={{
-                  background: "linear-gradient(160deg, rgba(22,163,74,0.08) 0%, rgba(17,24,39,0.95) 60%, rgba(22,163,74,0.04) 100%)",
-                }}
-              >
-                <div className="space-y-5 text-gray-300 text-sm sm:text-base leading-relaxed">
-                  <div>
-                    <p className="text-white font-bold mb-1">Detection: $250 – $450</p>
-                    <p>Covers acoustic listening, electronic amplification, pressure testing, and a pinpointed leak location. Gardner Plumbing Co. provides a written estimate before any work begins.</p>
-                  </div>
-                  <div>
-                    <p className="text-white font-bold mb-2">Repair: Three main approaches</p>
-                    <ul className="space-y-3">
-                      <li className="flex gap-3 items-start">
-                        <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                        <span><strong className="text-white">Spot repair ($1,500 – $2,500):</strong> Targeted section of pipe exposed, the damaged section cut out and replaced, concrete patched. Best for a single isolated break on an otherwise sound pipe.</span>
-                      </li>
-                      <li className="flex gap-3 items-start">
-                        <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                        <span><strong className="text-white">Pipe reroute ($2,000 – $4,000):</strong> New supply line run above the slab — through walls or ceiling — bypassing the under-slab pipe entirely.</span>
-                      </li>
-                      <li className="flex gap-3 items-start">
-                        <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                        <span><strong className="text-white">Epoxy pipe lining ($3,000 – $5,000+):</strong> A resin liner pulled through the existing pipe, sealing the interior without excavation. Not appropriate for all pipe sizes or materials.</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="pt-2 border-t border-white/10">
-                    <p className="text-gray-400 text-sm">Most standard homeowner&apos;s insurance policies cover water damage from a slab leak but not the pipe repair itself. Gardner Plumbing Co. provides detailed documentation for insurance claims. See <Link href="/guarantee" className="text-red-400 hover:text-red-300 transition-colors">our guarantee</Link> for written commitments on every job.</p>
-                  </div>
+            {/* Right: stacked images — thermal on top, technician on bottom */}
+            <div className="space-y-6">
+              <figure className="relative rounded-2xl overflow-hidden shadow-luxury border border-white/10">
+                <div className="relative w-full aspect-[3/2]">
+                  <Image
+                    src="/slab-leak-thermal.webp"
+                    alt="Thermal imaging scan of a kitchen floor showing a warm-spot heat signature from a hot-water slab leak beneath the concrete foundation"
+                    fill
+                    sizes="(min-width: 1024px) 600px, 100vw"
+                    className="object-cover"
+                  />
                 </div>
-              </div>
-              <div className="mt-6">
-                <a href={PHONE_HREF}>
-                  <button className="w-full min-h-[44px] inline-flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-semibold px-6 py-4 rounded-xl shadow-lg border border-red-400/20 transition-all duration-300 group">
-                    <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
-                    Call Now — 24/7 Dispatch
-                  </button>
-                </a>
-              </div>
+                <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-4 sm:p-5">
+                  <p className="text-white font-bold text-sm sm:text-base">Thermal Imaging in Action</p>
+                  <p className="text-gray-300 text-xs sm:text-sm">Warm spot = pressurized hot-water leak beneath the slab.</p>
+                </figcaption>
+              </figure>
 
-              {/* Trust image placeholder — technician explaining to homeowner */}
-              <div className="mt-6">
-                <ImagePromptPlaceholder
-                  slot="before-after"
-                  aspectRatio="4/3"
-                  targetWidth={800}
-                  targetHeight={600}
-                  targetFileName="slab-leak-explain.webp"
-                  prompt={TRUST_PROMPT}
-                  negativePrompt={TRUST_NEGATIVE}
-                  referenceImageNote="Attach the two real Gardner team reference photos (provided 2026-06-12) for the technician face/likeness only. The homeowner figure should be a generic adult."
-                  altText="Gardner Plumbing technician explaining slab leak location to a Riverside County homeowner using a hand-drawn diagram"
-                  className="w-full rounded-2xl min-h-48"
-                />
-              </div>
+              <figure className="relative rounded-2xl overflow-hidden shadow-luxury border border-white/10">
+                <div className="relative w-full aspect-[4/3]">
+                  <Image
+                    src="/slab-leak-explain.1.webp"
+                    alt="Gardner Plumbing technician performing acoustic slab leak detection on a Riverside County home kitchen floor"
+                    fill
+                    sizes="(min-width: 1024px) 600px, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-4 sm:p-5">
+                  <p className="text-white font-bold text-sm sm:text-base">On-Site Detection</p>
+                  <p className="text-gray-300 text-xs sm:text-sm">Isolate the leak to within a foot before any concrete comes up.</p>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── 7 SIGNS ──────────────────────────────────────────────────── */}
+      {/* ── WHAT IT COSTS ─────────────────────────────────────────────── */}
       <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
         <div className="absolute inset-0" style={darkBg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <SectionBadge icon={AlertTriangle} text="Warning Signs" color="red" />
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-              7 Signs You Have a{" "}
-              <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-                Slab Leak
+          <div className="text-center mb-10 sm:mb-12">
+            <SectionBadge icon={Shield} text="What It Costs" color="green" />
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg leading-tight">
+              What Does Slab Leak Repair{" "}
+              <span className="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
+                Actually Cost?
               </span>
             </h2>
-            <p className="text-lg text-gray-300 max-w-5xl mx-auto leading-relaxed">
-              Each one is a standalone indicator — you don&apos;t need all seven to have a problem.
+            <p className="text-base text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Gardner Plumbing Co. gives you a written estimate before any work begins — three repair paths depending on what the detection finds.
             </p>
           </div>
-
-          <ol className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5">
-            {signs.map((sign, i) => (
-              <li
-                key={sign.num}
-                className={`group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500 ${
-                  i === signs.length - 1 ? "lg:col-span-2" : ""
-                }`}
-                style={{
-                  backgroundColor: "#202020",
-                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
-                }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
-                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
-                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center shadow-lg border border-red-400/40 mt-0.5">
-                    <span className="text-white font-bold text-base">{sign.num}</span>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{sign.title}</p>
-                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{sign.body}</p>
+          {/* 4-card pricing grid — 2 cols on md+, 1 col on mobile */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5">
+            {[
+              {
+                icon: Wrench,
+                label: "Step 1 — Detection",
+                title: "Pinpoint the Leak",
+                cost: "$250 – $450",
+                body: "Acoustic listening, electronic amplification, pressure testing, and a written estimate before any work begins. Gardner isolates the leak to within a foot before any concrete comes up.",
+              },
+              {
+                icon: CheckCircle,
+                label: "Repair Option A",
+                title: "Spot Repair",
+                cost: "$1,500 – $2,500",
+                body: "Targeted section of pipe exposed, damaged section cut out and replaced, concrete patched. Best for a single isolated break on an otherwise sound pipe.",
+              },
+              {
+                icon: ArrowRight,
+                label: "Repair Option B",
+                title: "Pipe Reroute",
+                cost: "$2,000 – $4,000",
+                body: "New supply line run above the slab — through walls or ceiling — bypassing the under-slab pipe entirely. Best when multiple failures suggest the buried line is at end of life.",
+              },
+              {
+                icon: Droplets,
+                label: "Repair Option C",
+                title: "Epoxy Pipe Lining",
+                cost: "$3,000 – $5,000+",
+                body: "A resin liner pulled through the existing pipe, sealing the interior without excavation. Not appropriate for all pipe sizes or materials — the detection determines candidacy.",
+              },
+            ].map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={i}
+                  className="group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500"
+                  style={{
+                    backgroundColor: "#202020",
+                    backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
+                  }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-600/10 via-transparent to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                  <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
+                  <div className="relative z-10 p-5 sm:p-6 flex flex-col h-full">
+                    {/* Header row: icon + cost pill */}
+                    <div className="flex items-start justify-between gap-3 mb-4">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-green-600 to-green-500 flex items-center justify-center shadow-lg border border-green-400/40">
+                        <Icon className="h-5 w-5 text-white" aria-hidden="true" />
+                      </div>
+                      <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green-500/10 border border-green-500/30 rounded-full flex-shrink-0">
+                        <span className="text-xs sm:text-sm font-bold text-green-300 whitespace-nowrap">
+                          {item.cost}
+                        </span>
+                      </div>
+                    </div>
+                    {/* Label */}
+                    <p className="text-xs font-bold text-green-400 uppercase tracking-widest mb-1.5">
+                      {item.label}
+                    </p>
+                    {/* Title */}
+                    <h3 className="text-white font-bold text-lg sm:text-xl mb-2 leading-snug">
+                      {item.title}
+                    </h3>
+                    {/* Body */}
+                    <p className="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors duration-300 flex-1">
+                      {item.body}
+                    </p>
                   </div>
                 </div>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
-      {/* ── WHAT TO DO IN THE NEXT HOUR ──────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
-        <div className="absolute inset-0" style={altDarkBg} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <SectionBadge icon={Clock} text="Act Now" color="red" />
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-              What to Do in the{" "}
-              <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-                Next Hour
-              </span>
-            </h2>
+              );
+            })}
           </div>
 
-          <ol className="space-y-5">
-            {actionSteps.map((step) => (
-              <li
-                key={step.num}
-                className="group relative border-none overflow-hidden rounded-2xl shadow-luxury transition-all duration-500"
-                style={{
-                  backgroundColor: "#202020",
-                  backgroundImage: "linear-gradient(145deg, #202020 0%, #1a1a1a 100%)",
-                }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
-                <div className="absolute inset-[1px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl" />
-                <div className="relative z-10 p-6 sm:p-7 flex gap-5 items-start">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center shadow-lg border border-red-400/40 mt-0.5">
-                    <span className="text-white font-bold text-base">{step.num}</span>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-white font-bold text-base sm:text-lg mb-2 leading-snug">{step.title}</p>
-                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">{step.body}</p>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ol>
+          {/* Insurance note — subtle callout below the grid */}
+          <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.02] p-5 sm:p-6">
+            <p className="text-gray-400 text-sm text-center leading-relaxed">
+              Most standard homeowner&apos;s insurance policies cover water damage from a slab leak but not the pipe repair itself. Gardner Plumbing Co. provides detailed documentation for insurance claims. See <Link href="/guarantee" className="text-red-400 hover:text-red-300 transition-colors">our guarantee</Link> for written commitments on every job.
+            </p>
+          </div>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+            <a href={PHONE_HREF} className="flex-1">
+              <button className="w-full min-h-[44px] inline-flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-semibold px-6 py-4 rounded-xl shadow-lg border border-red-400/20 transition-all duration-300 group">
+                <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
+                Call Now — 24/7 Dispatch
+              </button>
+            </a>
+            <Link href="/contact-us" className="flex-1">
+              <button className="w-full min-h-[44px] inline-flex items-center justify-center gap-3 border-2 border-white/60 text-white hover:bg-white hover:text-gray-900 font-semibold px-6 py-4 rounded-xl transition-all duration-300 group bg-transparent">
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-0.5 transition-transform duration-300" aria-hidden="true" />
+                Book Detection Online
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
 
