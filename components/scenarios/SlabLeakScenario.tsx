@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ImagePromptPlaceholder } from "@/components/ImagePromptPlaceholder";
 import {
   Accordion,
   AccordionContent,
@@ -19,6 +20,29 @@ import {
   FileText,
   Shield,
 } from "lucide-react";
+
+// ─── Image prompt constants (sourced from seo/scenario-image-prompts/slab-leak-*.md) ───
+
+const HERO_PROMPT =
+  "Documentary photograph of a plumbing technician crouched low on a residential kitchen tile floor, pressing a ground microphone acoustic listening device against the tile surface with one hand. The technician is wearing headphones over the dark navy ball cap, eyes focused downward on the floor, listening intently. The other hand rests flat on the floor for balance. The technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots, red Milwaukee tool bag visible beside them on the floor. Warm interior residential lighting — recessed lights and natural window light combined. The kitchen floor is standard residential tile. No visible water damage in frame. 50mm equivalent lens, documentary photography style, no studio lighting. Style and likeness of attached reference image.";
+
+const HERO_NEGATIVE =
+  "no stock photo look, no white lab coat, no safety vest, no cartoon, no illustration, no text overlay, no watermark, no posed smile at camera, no excessive lens flare, no visible flood water or damage in the hero frame, no mid-stride action pose, no jackhammer visible";
+
+const HERO_REF =
+  "Attach the two real Gardner team reference photos (provided 2026-06-12) — uniform & face/likeness reference. Do not describe face, age, or ethnicity in the prompt.";
+
+const MID_PROMPT =
+  "Infrared thermal imaging photograph of a residential kitchen tile floor, shot from standing height looking straight down at roughly 45 degrees. The thermal image shows a warm spot — a roughly oval gradient blooming from cool blue-green at the edges to warm amber and red at the center — indicating a hot-water pipe leaking beneath the slab. The rest of the floor is cool blue. The tile grout lines are faintly visible in the thermal data. The image has the characteristic flat, matte look of a real infrared camera output — not CGI color-grading. A small temperature scale bar or camera data overlay in the corner is acceptable and realistic. No people visible, no hands. Pure infrared camera POV.";
+
+const MID_NEGATIVE =
+  "no people, no hands visible, no CGI glow effects, no cartoon, no watermark, no over-saturated neon colors (must look like real thermal camera output), no visible water on the floor surface (the leak is under the slab), no dramatic fire-red everywhere — only a subtle warm spot surrounded by cool tones";
+
+const TRUST_PROMPT =
+  "Documentary photograph of a plumbing technician standing in a well-lit kitchen, pointing to a hand-drawn diagram on a sheet of white paper held between both hands. A homeowner — a middle-aged adult in casual home clothing — stands beside the technician, looking down at the diagram with a focused expression. Both figures are looking at the paper, not at the camera. The diagram on the paper shows a rough sketch of a floor plan with a circle or X indicating a leak location — simple, hand-drawn. The technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots. Natural window light from one side. Warm, calm, professional atmosphere. 50mm equivalent lens, documentary photography style. Style and likeness of attached reference image for the technician only.";
+
+const TRUST_NEGATIVE =
+  "no stock photo handshake, no fake smile at camera, no white lab coat, no safety vest, no cartoon, no illustration, no text overlay, no watermark, no tablet or phone screen replacing the paper diagram, no posed corporate portrait stance";
 
 const PHONE_DISPLAY = "(951) 246-4337";
 const PHONE_HREF = "tel:9512464337";
@@ -198,11 +222,11 @@ export function SlabLeakScenario() {
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-300 mb-4 leading-relaxed max-w-3xl">
+          <p className="text-lg sm:text-xl text-gray-300 mb-4 leading-relaxed max-w-5xl">
             A slab leak is a break in a water line running beneath your home&apos;s concrete foundation. The three most common warning signs are a water bill that spiked without explanation, a warm or damp spot on your floor, and the sound of running water when every faucet and fixture in the house is off. If you notice any one of these, don&apos;t wait — call a licensed plumber for professional detection before the leak weakens your foundation or drives water into your walls.
           </p>
 
-          <p className="text-base text-gray-300 mb-4 leading-relaxed max-w-3xl">
+          <p className="text-base text-gray-300 mb-4 leading-relaxed max-w-5xl">
             Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Palm Springs, Palm Desert, Redlands, and Yucaipa. Call 24/7:{" "}
             <a href={PHONE_HREF} className="text-red-400 font-semibold hover:text-red-300 transition-colors">
               {PHONE_DISPLAY}
@@ -225,6 +249,22 @@ export function SlabLeakScenario() {
               </button>
             </Link>
           </div>
+
+          {/* Hero image placeholder */}
+          <div className="mt-10">
+            <ImagePromptPlaceholder
+              slot="hero"
+              aspectRatio="3/2"
+              targetWidth={1200}
+              targetHeight={800}
+              targetFileName="slab-leak-hero.webp"
+              prompt={HERO_PROMPT}
+              negativePrompt={HERO_NEGATIVE}
+              referenceImageNote={HERO_REF}
+              altText="Gardner Plumbing technician using acoustic leak detection equipment to locate a slab leak beneath a Riverside County home's kitchen floor"
+              className="w-full rounded-3xl min-h-80"
+            />
+          </div>
         </div>
       </section>
 
@@ -240,12 +280,12 @@ export function SlabLeakScenario() {
                 Slab Leak
               </span>
             </h2>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-5xl mx-auto leading-relaxed">
               Each one is a standalone indicator — you don&apos;t need all seven to have a problem.
             </p>
           </div>
 
-          <ol className="space-y-5 max-w-3xl mx-auto">
+          <ol className="space-y-5 max-w-5xl mx-auto">
             {signs.map((sign) => (
               <li
                 key={sign.num}
@@ -286,7 +326,7 @@ export function SlabLeakScenario() {
             </h2>
           </div>
 
-          <ol className="space-y-5 max-w-3xl mx-auto">
+          <ol className="space-y-5 max-w-5xl mx-auto">
             {actionSteps.map((step) => (
               <li
                 key={step.num}
@@ -363,6 +403,21 @@ export function SlabLeakScenario() {
               </div>
             </div>
 
+            {/* Mid image placeholder — thermal imaging */}
+            <div className="mt-6 lg:col-span-1">
+              <ImagePromptPlaceholder
+                slot="before-after"
+                aspectRatio="3/2"
+                targetWidth={1200}
+                targetHeight={800}
+                targetFileName="slab-leak-thermal.webp"
+                prompt={MID_PROMPT}
+                negativePrompt={MID_NEGATIVE}
+                altText="Thermal imaging scan of a kitchen floor showing a warm-spot heat signature from a hot-water slab leak beneath the concrete foundation"
+                className="w-full rounded-2xl min-h-64"
+              />
+            </div>
+
             {/* Costs */}
             <div>
               <SectionBadge icon={Shield} text="What It Costs" color="green" />
@@ -412,6 +467,22 @@ export function SlabLeakScenario() {
                     Call Now — 24/7 Dispatch
                   </button>
                 </a>
+              </div>
+
+              {/* Trust image placeholder — technician explaining to homeowner */}
+              <div className="mt-6">
+                <ImagePromptPlaceholder
+                  slot="before-after"
+                  aspectRatio="4/3"
+                  targetWidth={800}
+                  targetHeight={600}
+                  targetFileName="slab-leak-explain.webp"
+                  prompt={TRUST_PROMPT}
+                  negativePrompt={TRUST_NEGATIVE}
+                  referenceImageNote="Attach the two real Gardner team reference photos (provided 2026-06-12) for the technician face/likeness only. The homeowner figure should be a generic adult."
+                  altText="Gardner Plumbing technician explaining slab leak location to a Riverside County homeowner using a hand-drawn diagram"
+                  className="w-full rounded-2xl min-h-48"
+                />
               </div>
             </div>
           </div>

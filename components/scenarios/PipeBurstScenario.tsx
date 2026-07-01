@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { ImagePromptPlaceholder } from "@/components/ImagePromptPlaceholder";
 import {
   Accordion,
   AccordionContent,
@@ -20,6 +21,29 @@ import {
   FileText,
   Wrench,
 } from "lucide-react";
+
+// ─── Image prompt constants (sourced from seo/scenario-image-prompts/pipe-burst-*.md) ───
+
+const HERO_PROMPT =
+  "Documentary photograph of a plumbing technician arriving at a flooded suburban garage in Riverside County, California. The technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots, red Milwaukee tool bag on hip. The technician is standing in the open garage doorway, one hand gripping a pipe wrench and a Milwaukee tool bag at their side, eyes scanning the floor where water is pooling on a concrete garage floor — a visible wet streak runs from the wall toward the drain. Soft overcast daylight from the open garage door. Residential stucco exterior visible behind the technician. 50mm equivalent lens, documentary photography style, no studio lighting. Style and likeness of attached reference image.";
+
+const HERO_NEGATIVE =
+  "no stock photo look, no white lab coat, no safety vest, no cartoon, no illustration, no text overlay, no watermark, no excessive lens flare, no overly dramatic flood water (small puddle, not a river), no green lawn (wrong region), no snow, no city skyline, no mid-stride running pose";
+
+const HERO_REF =
+  "Attach the two real Gardner team reference photos (provided 2026-06-12) — uniform & face/likeness reference. Do not describe face, age, or ethnicity in the prompt.";
+
+const MID_PROMPT =
+  "Extreme macro close-up of a burst copper pipe section on a white surface or workbench, showing a fracture point with visible calcium and hard-water mineral scaling encrusting the pipe exterior around the break — chalky white-gray calcium deposits, the copper surface beneath showing oxidation and patina. Water beading and running off the fracture edge, catching soft directional light. The fracture is a clean split seam, not a dramatic explosion. Muted, flat overcast bench lighting. 50mm macro equivalent lens, technical documentation style. No people, no hands, no background clutter. The pipe itself is the entire subject.";
+
+const MID_NEGATIVE =
+  "no people, no hands visible, no text overlay, no cartoon, no watermark, no exaggerated Hollywood geyser, no dramatic steam, no CGI look, no stock photo softness, no plastic pipe (must be copper), no extreme close-up so tight the context is lost";
+
+const TRUST_PROMPT =
+  "Documentary photograph of a professional dispatcher in a small plumbing dispatch office, sitting at a desk with dual computer monitors showing a dispatch map and call log, wearing a headset with a small boom microphone. The dispatcher has a calm, focused expression, looking at the screens — not at the camera. Warm overhead office lighting with a cool monitor glow on the face. The desk shows a notepad with handwritten address notes, a coffee cup, normal office clutter. The room feels professional and functional, not sterile. No Gardner branding visible on screen — screens show generic map and list UI. 35mm equivalent lens, documentary photography style.";
+
+const TRUST_NEGATIVE =
+  "no cartoon, no illustration, no text overlay, no watermark, no exaggerated call-center rows of people, no headset with huge foam ear cups, no 911-style emergency room look, no fake smile at camera, no stock photo pose, no overly bright or overexposed lighting";
 
 const PHONE_DISPLAY = "(951) 246-4337";
 const PHONE_HREF = "tel:9512464337";
@@ -176,7 +200,7 @@ export function PipeBurstScenario() {
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-300 mb-4 leading-relaxed max-w-3xl">
+          <p className="text-lg sm:text-xl text-gray-300 mb-4 leading-relaxed max-w-5xl">
             Shut off your main water valve immediately — it is usually in your front yard near the street, in a garage utility closet, or at the side of the house. Then call Gardner Plumbing Co. at{" "}
             <a href={PHONE_HREF} className="text-red-400 font-semibold hover:text-red-300 transition-colors">
               {PHONE_DISPLAY}
@@ -199,6 +223,22 @@ export function PipeBurstScenario() {
               </button>
             </Link>
           </div>
+
+          {/* Hero image placeholder */}
+          <div className="mt-10 min-h-80">
+            <ImagePromptPlaceholder
+              slot="hero"
+              aspectRatio="3/2"
+              targetWidth={1200}
+              targetHeight={800}
+              targetFileName="pipe-burst-hero.webp"
+              prompt={HERO_PROMPT}
+              negativePrompt={HERO_NEGATIVE}
+              referenceImageNote={HERO_REF}
+              altText="Gardner Plumbing technician arriving at a flooded garage in Riverside County for emergency burst pipe repair"
+              className="w-full rounded-3xl min-h-80"
+            />
+          </div>
         </div>
       </section>
 
@@ -214,12 +254,12 @@ export function PipeBurstScenario() {
                 Next 15 Minutes
               </span>
             </h2>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-5xl mx-auto leading-relaxed">
               Seven steps to limit damage before the technician arrives.
             </p>
           </div>
 
-          <ol className="space-y-5 max-w-3xl mx-auto">
+          <ol className="space-y-5 max-w-5xl mx-auto">
             {steps.map((step) => (
               <li
                 key={step.num}
@@ -325,7 +365,37 @@ export function PipeBurstScenario() {
                     </button>
                   </a>
                 </div>
+
+                {/* Trust image placeholder — dispatcher */}
+                <div className="mt-6">
+                  <ImagePromptPlaceholder
+                    slot="before-after"
+                    aspectRatio="4/3"
+                    targetWidth={800}
+                    targetHeight={600}
+                    targetFileName="pipe-burst-dispatcher.webp"
+                    prompt={TRUST_PROMPT}
+                    negativePrompt={TRUST_NEGATIVE}
+                    altText="Live Gardner Plumbing Co. dispatcher answering emergency burst pipe calls 24 hours a day across Riverside County"
+                    className="w-full rounded-2xl min-h-48"
+                  />
+                </div>
               </div>
+            </div>
+
+            {/* Mid image placeholder — burst pipe close-up */}
+            <div className="mt-10">
+              <ImagePromptPlaceholder
+                slot="before-after"
+                aspectRatio="3/2"
+                targetWidth={1200}
+                targetHeight={800}
+                targetFileName="pipe-burst-scaling.webp"
+                prompt={MID_PROMPT}
+                negativePrompt={MID_NEGATIVE}
+                altText="Close-up of a burst copper pipe with hard-water calcium scaling at the fracture point, common in Riverside County homes"
+                className="w-full rounded-2xl min-h-64"
+              />
             </div>
           </div>
         </div>

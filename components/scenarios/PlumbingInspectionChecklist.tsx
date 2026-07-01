@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ImagePromptPlaceholder } from "@/components/ImagePromptPlaceholder";
 import {
   Accordion,
   AccordionContent,
@@ -18,6 +19,29 @@ import {
   FileText,
   Home,
 } from "lucide-react";
+
+// ─── Image prompt constants (sourced from seo/scenario-image-prompts/plumbing-inspection-*.md) ───
+
+const HERO_PROMPT =
+  "Documentary photograph of a plumbing technician standing in a residential utility or laundry room, holding a professional clipboard with a checklist form visible on it. The technician is standing beside a water heater — a standard tank-style residential unit — with the main water shut-off valve and supply lines visible in the background. The technician's pen is touching the checklist, mid-notation, eyes on the clipboard. The technician is wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo, black work boots, red Milwaukee tool bag or tool belt visible. Warm interior residential lighting — a mix of overhead fluorescent and warm incandescent spill. Lived-in utility room — a dryer visible at the edge of frame, pipes on the wall, normal wear on the floor. 50mm equivalent lens, documentary photography style, no studio lighting. Style and likeness of attached reference image.";
+
+const HERO_NEGATIVE =
+  "no stock photo look, no white lab coat, no safety vest, no cartoon, no illustration, no text overlay, no watermark, no posed smile at camera, no excessively clean or staged utility room, no mid-stride action pose, no empty room with nothing but the water heater";
+
+const HERO_REF =
+  "Attach the two real Gardner team reference photos (provided 2026-06-12) — uniform & face/likeness reference. Do not describe face, age, or ethnicity in the prompt.";
+
+const MID_PROMPT =
+  "Close-up still-life photograph of a printed plumbing inspection checklist document on a white desk surface. The paper has a professional letterhead header area at the top — the logo area is intentionally small and non-specific, just a placeholder block, not a real logo. Below the header is a columnar checklist with printed line items and small checkboxes. Several items have been checked off with pen marks — a mix of checkmarks and initials. A black ballpoint pen rests diagonally across the lower portion of the paper. Soft, even natural desk lighting from a window to one side — no harsh shadows. The rest of the desk surface is visible at the edges, clean and neutral. 50mm equivalent macro lens, flat lay documentary style, no people, no hands.";
+
+const MID_NEGATIVE =
+  "no people, no hands visible, no real or legible logo text on the document, no cartoon, no watermark, no harsh shadows, no stock-photo fake-clipboard look, no bright colored forms (white paper only), no CGI rendering, no tablet replacing the paper";
+
+const TRUST_PROMPT =
+  "Documentary photograph of three adults seated around a kitchen table reviewing a printed inspection report together. On one side of the table sits a couple — two adults in casual home-buying attire, looking engaged and attentive. Across from them sits a plumbing technician wearing a light gray button-up work shirt with a red Gardner Plumbing Co. patch on the left chest, navy work pants, dark navy ball cap with red Gardner logo visible. The technician is pointing to a specific item on a printed report document spread on the table. All three are looking at the document, not the camera. Natural window light from one side. The kitchen setting is a clean, well-lit modern residential kitchen. 50mm equivalent lens, documentary photography style. Style and likeness of attached reference image for the technician only.";
+
+const TRUST_NEGATIVE =
+  "no stock photo handshake, no fake smiles at camera, no white lab coat, no safety vest, no cartoon, no illustration, no text overlay, no watermark, no laptop replacing the paper report, no corporate conference room setting (must be a home kitchen), no posed group portrait";
 
 const PHONE_DISPLAY = "(951) 246-4337";
 const PHONE_HREF = "tel:9512464337";
@@ -227,11 +251,11 @@ export function PlumbingInspectionChecklist() {
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-300 mb-4 leading-relaxed max-w-3xl">
+          <p className="text-lg sm:text-xl text-gray-300 mb-4 leading-relaxed max-w-5xl">
             A standard home inspection covers plumbing in about 20 minutes. A licensed plumber doing a dedicated plumbing inspection spends 60 to 90 minutes on the same system — and finds things a general inspector isn&apos;t trained or equipped to catch. A pre-purchase plumbing inspection typically costs $200 – $350. Catching a slab leak or corroded main line after closing costs $3,000 – $8,000 or more.
           </p>
 
-          <p className="text-base text-gray-300 mb-4 leading-relaxed max-w-3xl">
+          <p className="text-base text-gray-300 mb-4 leading-relaxed max-w-5xl">
             Gardner Plumbing Co. performs pre-purchase plumbing inspections across Riverside County, the Coachella Valley, and eastern San Bernardino County, and delivers a written report you can hand to your real estate agent or use in seller concession negotiations.
           </p>
 
@@ -251,6 +275,22 @@ export function PlumbingInspectionChecklist() {
               </button>
             </Link>
           </div>
+
+          {/* Hero image placeholder */}
+          <div className="mt-10">
+            <ImagePromptPlaceholder
+              slot="hero"
+              aspectRatio="3/2"
+              targetWidth={1200}
+              targetHeight={800}
+              targetFileName="plumbing-inspection-hero.webp"
+              prompt={HERO_PROMPT}
+              negativePrompt={HERO_NEGATIVE}
+              referenceImageNote={HERO_REF}
+              altText="Gardner Plumbing technician conducting a 65-point plumbing inspection at a residential water heater and shutoff valve in Riverside County"
+              className="w-full rounded-3xl min-h-80"
+            />
+          </div>
         </div>
       </section>
 
@@ -266,12 +306,12 @@ export function PlumbingInspectionChecklist() {
                 Inspection Should Cover
               </span>
             </h2>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-5xl mx-auto leading-relaxed">
               A thorough plumbing inspection covers every point where water enters, moves through, or leaves the home.
             </p>
           </div>
 
-          <ol className="space-y-5 max-w-3xl mx-auto">
+          <ol className="space-y-5 max-w-5xl mx-auto">
             {checklistItems.map((item) => (
               <li
                 key={item.num}
@@ -310,12 +350,12 @@ export function PlumbingInspectionChecklist() {
                 (or Trigger a Seller Concession)
               </span>
             </h2>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-5xl mx-auto leading-relaxed">
               Most plumbing issues are negotiating chips. These five are different — they represent systemic problems that affect the safety, livability, or insurability of the home.
             </p>
           </div>
 
-          <ol className="space-y-5 max-w-3xl mx-auto">
+          <ol className="space-y-5 max-w-5xl mx-auto">
             {redFlags.map((flag) => (
               <li
                 key={flag.num}
@@ -398,6 +438,21 @@ export function PlumbingInspectionChecklist() {
                   </button>
                 </Link>
               </div>
+
+              {/* Mid image placeholder — checklist document close-up */}
+              <div className="mt-6">
+                <ImagePromptPlaceholder
+                  slot="before-after"
+                  aspectRatio="3/2"
+                  targetWidth={1200}
+                  targetHeight={800}
+                  targetFileName="plumbing-inspection-checklist-doc.webp"
+                  prompt={MID_PROMPT}
+                  negativePrompt={MID_NEGATIVE}
+                  altText="Gardner Plumbing Co. 65-point plumbing inspection checklist with items checked off during a pre-purchase home inspection in Riverside County"
+                  className="w-full rounded-2xl min-h-64"
+                />
+              </div>
             </div>
 
             {/* SoCal context */}
@@ -426,6 +481,22 @@ export function PlumbingInspectionChecklist() {
                     Homes in Palm Springs, Cathedral City, and Palm Desert show accelerated mineral wear on every fixture. Buyers of 1970s through 1990s homes in Corona, Hemet, Perris, and San Jacinto should specifically ask about pipe material and supply line age — that era&apos;s housing stock used galvanized pipe into the mid-1980s and original copper that is now 35 to 50 years old.
                   </p>
                 </div>
+              </div>
+
+              {/* Trust image placeholder — homebuyer group review */}
+              <div className="mt-6">
+                <ImagePromptPlaceholder
+                  slot="before-after"
+                  aspectRatio="4/3"
+                  targetWidth={800}
+                  targetHeight={600}
+                  targetFileName="plumbing-inspection-review.webp"
+                  prompt={TRUST_PROMPT}
+                  negativePrompt={TRUST_NEGATIVE}
+                  referenceImageNote="Attach the two real Gardner team reference photos (provided 2026-06-12) for the technician face/likeness only. The homebuyer couple should be generic adults."
+                  altText="Gardner Plumbing technician reviewing a plumbing inspection report with homebuyers at a kitchen table before purchase in Riverside County"
+                  className="w-full rounded-2xl min-h-48"
+                />
               </div>
             </div>
           </div>

@@ -62,7 +62,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/plumbing/wildomar-drain-cleaning',
   ];
 
-  // Plumbing Help scenario pages
+  // Plumbing Help hub + scenario pages
+  const plumbingHelpHub = [
+    { url: '/plumbing-help', priority: 0.8, changeFrequency: 'monthly' as const },
+  ];
+
   const plumbingHelpPages = [
     '/plumbing-help/pipe-burst-what-to-do',
     '/plumbing-help/drain-clog-what-to-do',
@@ -95,6 +99,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
+    })),
+
+    // Plumbing Help hub
+    ...plumbingHelpHub.map((page) => ({
+      url: `${baseUrl}${page.url}`,
+      lastModified: currentDate,
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
     })),
 
     // Plumbing Help scenario pages
