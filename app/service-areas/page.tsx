@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { ServiceAreas } from "@/components/ServiceAreas";
+import { ServiceAreasPage as ServiceAreas } from "@/components/ServiceAreasPage";
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 

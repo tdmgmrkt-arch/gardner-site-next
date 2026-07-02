@@ -6,7 +6,7 @@ import { Hero } from "./Hero";
 import { TrustBadges } from "./TrustBadges";
 import { Services } from "./Services";
 import { WhyChooseUs } from "./WhyChooseUs";
-import { ServiceAreas } from "./ServiceAreas";
+import ServiceAreas from "./ServiceAreas";
 import { LeakDetection } from "./LeakDetection";
 import { GardnerPromise } from "./GardnerPromise";
 import { CleanVisitPromise } from "./CleanVisitPromise";

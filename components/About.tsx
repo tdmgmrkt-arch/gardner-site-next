@@ -687,11 +687,11 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="tel:9512464337">
+                <Link href="/service-areas">
                 <Button className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 transition-all duration-300 rounded-xl shadow-lg group">
                   <span className="flex items-center justify-center gap-3">
-                    <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                    Call (951) 246-4337
+                    <MapPin className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+                    See Our Full Service Area
                   </span>
                 </Button>
                 </Link>
