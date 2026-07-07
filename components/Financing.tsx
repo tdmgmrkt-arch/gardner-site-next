@@ -64,27 +64,37 @@ const Card: FC<React.HTMLAttributes<HTMLDivElement>> = ({
     {...props}
   />
 );
-const CardHeader: FC<React.HTMLAttributes<HTMLDivElement>> = ({
-  className,
-  ...props
-}) => <div className={`flex flex-col space-y-1.5 p-6 ${className}`} {...props} />;
-const CardContent: FC<React.HTMLAttributes<HTMLDivElement>> = ({
-  className,
-  ...props
-}) => <div className={`p-6 pt-0 ${className}`} {...props} />;
+
+// Equal Housing Lender logo
+const EqualHousingLenderBadge: FC = () => (
+  <img
+    src="/EHLLOGO.webp"
+    alt="Equal Housing Lender"
+    width={56}
+    height={64}
+    className="inline-block h-10 w-auto"
+  />
+);
+
+// GreenSky required legal disclosure paragraph (per Marketing Compliance Guide, April 2026)
+const GREENSKY_LEGAL_DISCLOSURE = (
+  <>
+    Loans for the GreenSky® consumer loan program are offered and made by federally insured,
+    federal or state chartered financial institutions providing credit without regard to age,
+    race, color, religion, national origin, gender, disability, or familial status. A list of
+    financial institutions currently providing loans through the GreenSky® Program is available
+    at <a href="https://www.greensky.com/bank-partners" target="_blank" rel="noopener noreferrer" className="underline">www.greensky.com/bank-partners</a>. GreenSky Servicing, LLC services the loans on behalf
+    of your lender, NMLS #1416362. <a href="https://www.nmlsconsumeraccess.org" target="_blank" rel="noopener noreferrer" className="underline">www.nmlsconsumeraccess.org</a>.
+    GreenSky® is a registered trademark of GreenSky, LLC and is licensed to banks and other
+    financial institutions for their use in connection with that consumer loan program. GreenSky
+    Servicing, LLC is a financial technology company that manages the GreenSky® consumer loan
+    program by providing origination and servicing support to banks and other financial
+    institutions that make or hold program loans. GreenSky, LLC and GreenSky Servicing, LLC are
+    not lenders. All credit decisions and loan terms are determined by program lenders.
+  </>
+);
 
 export function Financing() {
-
-  const greenSkyPromoContent = [
-    {
-      title: "Reduced Rate 11.99% for 180 months",
-      description: "Subject to credit approval. Fixed APR of 11.99% for 180 months. Payment example: for $10,000 purchase on approval date, 180 payments of $119.95."
-    },
-    {
-      title: "No Interest if Paid in Full in 12 Months",
-      description: "Subject to credit approval. Minimum monthly payments required. Interest is billed during the promotional period but all interest is waived if the purchase amount is paid in full within 12 months. Making minimum monthly payments will not pay off the entire purchase balance before the end of the promotional period."
-    }
-  ];
 
   const processSteps = [
     {
@@ -95,50 +105,55 @@ export function Financing() {
     {
       step: "02",
       title: "Apply in Minutes",
-      description: "Choose a lender and fill out a quick, secure digital application.",
+      description: "Choose a financing option and fill out a quick, secure digital application.",
     },
     {
       step: "03",
-      title: "Instant Decision",
-      description: "Receive a credit decision in seconds so you can move forward without delay.",
+      title: "Fast Credit Decision",
+      description: "Applications typically return a credit decision quickly so you can move forward without long delays.",
     },
     {
       step: "04",
       title: "Start Your Project",
-      description: "Once approved, we schedule and begin your plumbing work immediately.",
+      description: "Once approved, we schedule and begin your plumbing work.",
     },
   ];
 
   const faqs = [
     {
-      question: "Which financing partner should I choose?",
+      question: "Which financing option should I choose?",
       answer:
-        "Both GreenSky® and Service Finance Company are trusted national lenders we've vetted and partnered with. GreenSky® is well known for promotional plans like no-interest-if-paid-in-full and long-term fixed-rate options. Service Finance Company is an FHA Title I approved lender that specializes in home improvement financing. We recommend applying with whichever feels like the better fit — you can also apply with both to compare the offers you receive.",
+        "The GreenSky® Program is a home improvement financing program whose loans are made by federally insured bank partners. Service Finance Company, LLC is an FHA Title I approved lender that specializes in home improvement financing. Both are national programs we've worked with for years. We recommend applying with whichever feels like the better fit — you can also apply with both to compare offers.",
     },
     {
       question: "What are the interest rates for financing?",
       answer:
-        "Interest rates vary based on your credit score, the loan amount, and the term length. Both of our lender partners offer a variety of plans, including promotional terms, and we'll work with you to find the most competitive and affordable option available.",
+        "Rates vary based on your credit profile, the loan amount, and the term length. Both programs offer a variety of plans, and we'll help you review the plan options currently available for your project.",
     },
     {
       question: "Is a credit check required?",
       answer:
-        "Yes. Both GreenSky® and Service Finance Company require a credit check as part of the application process to determine eligibility and the terms of your financing offer.",
+        "Yes. Both programs require a credit check as part of the application process to determine eligibility and the terms of your financing offer.",
     },
     {
       question: "How long does the application process take?",
       answer:
-        "Both applications are digital and typically take only a few minutes to complete. Most applicants receive a credit decision almost instantly.",
+        "Both applications are digital and typically take only a few minutes to complete. Most applicants receive a credit decision shortly after submitting.",
     },
     {
       question: "Can I finance smaller plumbing repairs?",
       answer:
-        "Financing is generally designed for larger projects like water heater replacements, repipes, or major sewer line work. However, some promotions may be available for smaller jobs. Please ask your technician for current options.",
+        "Financing is generally designed for larger projects like water heater replacements, repipes, or major sewer line work. However, some plans may accommodate smaller jobs. Please ask your technician for current options.",
     },
     {
-      question: "Can I pay off the loan early without penalties?",
+      question: "Do I need to be a homeowner to apply?",
       answer:
-        "In most cases, yes — the financing plans offered through both of our lender partners typically allow you to pay off your loan at any time without prepayment penalties. Confirm the specific terms with the lender you apply with.",
+        "Yes. GreenSky® Program financing is intended for homeowners for improvements made to the property at the installation address on the application. Please confirm eligibility details with the lender when you apply.",
+    },
+    {
+      question: "Can I pay off the loan early?",
+      answer:
+        "In most cases, yes — the financing plans offered through both programs typically allow you to pay off the loan balance ahead of schedule without prepayment penalties. Confirm the specific terms with the lender that approves your loan.",
     },
   ];
 
@@ -174,8 +189,8 @@ export function Financing() {
             Flexible Financing For Your Plumbing Project
           </h1>
           <p className="text-base sm:text-lg text-gray-300 mb-8 max-w-2xl mx-auto animate-slide-up">
-            Don&apos;t let unexpected plumbing costs disrupt your budget. Gardner Plumbing Co. partners with
-            two trusted lenders — <span className="text-white font-semibold">GreenSky®</span> and{" "}
+            Don&apos;t let unexpected plumbing costs disrupt your budget. Gardner Plumbing Co. works with
+            two trusted programs — <span className="text-white font-semibold">the GreenSky® Program</span> and{" "}
             <span className="text-white font-semibold">Service Finance Company</span> — so you can pick the plan that fits
             your needs.
           </p>
@@ -254,11 +269,11 @@ export function Financing() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-14 lg:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Choose Your Financing Partner
+              Choose Your Financing Option
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Two trusted lenders, one goal — helping you get the plumbing work you need without delay.
-              Pick the lender that works best for you and apply in minutes.
+              Two trusted financing programs, one goal — helping you get the plumbing work you need without delay.
+              Pick the option that works best for you and apply in minutes.
             </p>
           </div>
 
@@ -278,27 +293,43 @@ export function Financing() {
                   <TrendingUp className="h-8 w-8 text-green-400" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">GreenSky®</h3>
-                  <p className="text-sm text-gray-400">Consumer loan program · Synovus Bank</p>
+                  <h3 className="text-2xl font-bold text-white">The GreenSky® Program</h3>
+                  <p className="text-sm text-gray-400">Home improvement financing program</p>
                 </div>
               </div>
 
               <p className="text-gray-300 mb-6">
-                A long-standing Gardner Plumbing partner offering competitive rates and promotional plans for home
-                improvement projects.
+                A home improvement financing program whose loans are made by federally insured bank
+                partners. Offers a range of promotional and long-term plans for home improvement projects.
               </p>
 
-              <div className="space-y-4 mb-8 flex-1">
-                <h4 className="text-sm font-semibold text-green-400 uppercase tracking-wider">Current Promotional Plans</h4>
-                {greenSkyPromoContent.map((promo, index) => (
-                  <div
-                    key={index}
-                    className="p-4 rounded-lg border border-green-500/20 bg-black/30"
-                  >
-                    <h5 className="text-base font-semibold text-white mb-1">{promo.title}</h5>
-                    <p className="text-xs text-gray-400 leading-relaxed">{promo.description}</p>
-                  </div>
-                ))}
+              <div className="space-y-3 mb-6 flex-1">
+                <h4 className="text-sm font-semibold text-green-400 uppercase tracking-wider">Current Plans</h4>
+
+                {/* Promo Plan 1 — No Interest if Paid in Full (Deferred Interest) */}
+                <div className="p-3 rounded-lg border border-green-500/20 bg-black/30">
+                  <h5 className="text-base font-semibold text-white mb-1">
+                    No Interest if Paid in Full in 12 Months<sup>1</sup>
+                  </h5>
+                  <p className="text-xs text-gray-300 italic leading-snug">
+                    Interest is billed during promo period but will be waived if the amount financed is paid in full before promo period expires.
+                  </p>
+                </div>
+
+                {/* Promo Plan 2 — Fixed Rate */}
+                <div className="p-3 rounded-lg border border-green-500/20 bg-black/30">
+                  <h5 className="text-base font-semibold text-white mb-1">
+                    11.99% APR Fixed for 180 Months<sup>2</sup>
+                  </h5>
+                  <p className="text-xs text-gray-300 leading-snug">
+                    Fixed rate financing with equal monthly payments over the loan term.
+                  </p>
+                </div>
+
+                {/* Homeowner requirement */}
+                <p className="text-xs text-yellow-200/90 leading-snug px-1">
+                  <strong>Applicant must be a homeowner.</strong> Financing is for improvements to the property at the installation address.
+                </p>
               </div>
 
               <div className="flex flex-col gap-3 mt-auto">
@@ -312,7 +343,7 @@ export function Financing() {
                     className="w-full bg-transparent border-2 border-green-500/60 text-white py-6 rounded-xl shadow-lg text-base hover:bg-green-500/10"
                   >
                     <span className="flex items-center justify-center gap-2">
-                      Apply — No Interest if Paid in 12 mo
+                      Apply for No Interest Promo Plan
                       <ArrowRight className="h-4 w-4" />
                     </span>
                   </Button>
@@ -327,17 +358,19 @@ export function Financing() {
                     className="w-full bg-gradient-to-r from-green-600 to-green-500 text-white py-6 rounded-xl shadow-lg text-base"
                   >
                     <span className="flex items-center justify-center gap-2">
-                      Apply — 11.99% Fixed (180 mo)
+                      Apply for Fixed Rate Plan
                       <ArrowRight className="h-4 w-4" />
                     </span>
                   </Button>
                 </a>
               </div>
 
-              <p className="text-[10px] text-gray-500 mt-4 leading-relaxed">
-                Subject to credit approval. Loans provided by Synovus Bank, Member FDIC, NMLS #408043.
-                GreenSky® is a registered trademark of GreenSky, LLC. Serviced by GreenSky Servicing, LLC, NMLS #1416362.
-              </p>
+              <a
+                href="#financing-terms"
+                className="mt-4 text-xs text-green-400 underline hover:text-green-300 text-center"
+              >
+                See important financing terms &amp; disclosures below
+              </a>
             </Card>
 
             {/* Service Finance Company Card */}
@@ -370,7 +403,7 @@ export function Financing() {
                 <ul className="space-y-3">
                   <li className="p-4 rounded-lg border border-blue-500/20 bg-black/30">
                     <h5 className="text-base font-semibold text-white mb-1">Quick &amp; Secure Application</h5>
-                    <p className="text-xs text-gray-400 leading-relaxed">Fill out a short online form and get a credit decision fast.</p>
+                    <p className="text-xs text-gray-400 leading-relaxed">Fill out a short online form and receive a credit decision.</p>
                   </li>
                   <li className="p-4 rounded-lg border border-blue-500/20 bg-black/30">
                     <h5 className="text-base font-semibold text-white mb-1">Flexible Home Improvement Terms</h5>
@@ -404,15 +437,75 @@ export function Financing() {
                 </Button>
               </form>
 
-              <p className="text-[10px] text-gray-500 mt-4 leading-relaxed">
-                Subject to credit approval. Service Finance Company, LLC — 555 S. Federal Highway Suite 200,
-                Boca Raton, FL 33432 · (866) 393-0033. FHA Title I Lender · svcfin.com.
-              </p>
+              <a
+                href="#financing-terms"
+                className="mt-4 text-xs text-blue-400 underline hover:text-blue-300 text-center"
+              >
+                See important financing terms &amp; disclosures below
+              </a>
             </Card>
+          </div>
+
+          {/* Important Financing Terms — required disclosures for both programs */}
+          <div
+            id="financing-terms"
+            className="mt-12 sm:mt-16 p-6 sm:p-8 rounded-2xl border border-gray-700/60 bg-black/40 scroll-mt-24"
+          >
+            <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
+              Important Financing Terms &amp; Disclosures
+            </h3>
+
+            <div className="space-y-5 text-[13px] text-gray-300 leading-relaxed">
+              {/* GreenSky plan disclosures */}
+              <div>
+                <h4 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-2">
+                  The GreenSky® Program
+                </h4>
+                <div className="space-y-3">
+                  <p>
+                    <sup>1</sup> <strong className="text-white">No Interest if Paid in Full in 12 Months (Plan 2613).</strong>{" "}
+                    Subject to credit approval. [XX.XX]% APR (Interest rate of [XX.XX]%). 12-month promotional
+                    period (&ldquo;Promo Period&rdquo;) during which interest is billed but will be waived if the amount
+                    financed is paid in full before Promo Period expires. Monthly payments are required during
+                    the Promo Period but making only the required monthly payments will not pay off the amount
+                    financed by Promo Period expiration date. Any unpaid balance and amounts owed after Promo
+                    Period will be paid over the remaining loan term. Actual payment amounts based on amount
+                    and timing of purchases.
+                  </p>
+                  <p>
+                    <sup>2</sup> <strong className="text-white">11.99% APR Fixed for 180 Months (Plan 1519).</strong>{" "}
+                    Subject to credit approval. Loan term is 180 months. Fixed 11.99% APR (periodic interest rate
+                    of 11.99%). Example: for every $10,000 financed at 11.99% APR, 180 monthly payments of
+                    $119.95. This example is an estimate only. Actual payment amounts and APR may vary. An
+                    origination fee may apply.
+                  </p>
+                  <p>Call 866-936-0602 for financing costs and terms.</p>
+                  <p>{GREENSKY_LEGAL_DISCLOSURE}</p>
+                </div>
+              </div>
+
+              {/* Service Finance disclosure */}
+              <div className="pt-4 border-t border-gray-700/60">
+                <div className="flex items-center justify-between gap-4">
+                  <div className="flex-1">
+                    <h4 className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">
+                      Service Finance Company
+                    </h4>
+                    <p>
+                      Subject to credit approval. Service Finance Company, LLC — 555 S. Federal Highway Suite 200,
+                      Boca Raton, FL 33432 · (866) 393-0033. FHA Title I Lender · svcfin.com.
+                    </p>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <EqualHousingLenderBadge />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      
+
       {/* FAQ Section */}
       <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
         <div className="absolute inset-0">
@@ -547,7 +640,7 @@ export function Financing() {
               Ready to Start Your Project?
             </h2>
             <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
-              Don't wait. View your financing options today and get the peace of mind
+              Don&apos;t wait. View your financing options today and get the peace of mind
               that comes with a professionally completed plumbing project.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">
