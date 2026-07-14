@@ -270,7 +270,7 @@ export function GardnerShield({
               <div className="grid grid-cols-2 gap-4 mb-10">
                 {[
                   { icon: ShieldCheck, text: "Priority emergency access" },
-                  { icon: TrendingDown, text: "Up to 20% repair discount" },
+                  { icon: TrendingDown, text: "up to 10% repair discount" },
                   { icon: Wrench, text: "Proactive maintenance" },
                   { icon: Award, text: "Extended warranty coverage" },
                 ].map((item, idx) => (
