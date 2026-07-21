@@ -8,14 +8,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "24/7 Emergency Plumbing Services | Gardner Plumbing Co.",
   description:
-    "Gardner Plumbing Co. provides 24/7 emergency plumbing across Riverside County, San Bernardino County, and the Coachella Valley. Live dispatchers, 45-min arrival window, CSLB #1073177.",
+    "Gardner Plumbing Co. provides 24/7 emergency plumbing across Riverside County and neighboring communities. Live dispatchers, 45-min arrival window, CSLB #1073177.",
   alternates: {
     canonical: "/services/plumbing/emergency-service",
   },
   openGraph: {
     title: "24/7 Emergency Plumbing Services | Gardner Plumbing Co.",
     description:
-      "Around-the-clock emergency plumbing in Riverside County, eastern San Bernardino County, and the Coachella Valley. Live dispatchers, 45-minute arrival window in core areas. CSLB #1073177.",
+      "Around-the-clock emergency plumbing in Riverside County and neighboring communities. Live dispatchers, 45-minute arrival window in core areas. CSLB #1073177.",
     url: "/services/plumbing/emergency-service",
     images: ["/gardner_logo.webp"],
     type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "24/7 Emergency Plumbing Services | Gardner Plumbing Co.",
     description:
-      "Around-the-clock emergency plumbing in Riverside County, San Bernardino County, and the Coachella Valley. 45-min arrival window. CSLB #1073177.",
+      "Around-the-clock emergency plumbing in Riverside County and neighboring communities. 45-min arrival window. CSLB #1073177.",
     images: ["/gardner_logo.webp"],
   },
 };
@@ -37,7 +37,7 @@ const serviceSchema = {
   serviceType: "Emergency Plumbing",
   name: "24/7 Emergency Plumbing Services",
   description:
-    "Gardner Plumbing Co. provides around-the-clock emergency plumbing services throughout Riverside County, eastern San Bernardino County, and the Coachella Valley. Live dispatchers, 45-minute arrival window in core areas, CSLB #1073177.",
+    "Gardner Plumbing Co. provides around-the-clock emergency plumbing services throughout Riverside County and neighboring communities. Live dispatchers, 45-minute arrival window in core areas, CSLB #1073177.",
   provider: {
     "@type": "Plumber",
     name: "Gardner Plumbing Co.",
@@ -125,7 +125,7 @@ const faqSchema = {
       name: "How quickly does Gardner Plumbing respond to emergency calls?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Within Gardner Plumbing's core service area — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, and surrounding cities across Riverside County, eastern San Bernardino County, and the Coachella Valley — technicians typically arrive within a 45-minute window from the time of the call. Response times to outlying communities depend on traffic conditions and technician location at the time of dispatch.",
+        text: "Within Gardner Plumbing's core service area — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, and surrounding cities across Riverside County and neighboring communities — technicians typically arrive within a 45-minute window from the time of the call. Response times to outlying communities depend on traffic conditions and technician location at the time of dispatch.",
       },
     },
     {
@@ -240,7 +240,7 @@ export default async function EmergencyPage() {
         />
         <FinalCallCta
           heading="24/7 Emergency Line — Call Now"
-          subheading="A live dispatcher answers any hour. 45-minute arrival window in core service areas across Riverside &amp; San Bernardino County."
+          subheading="A live dispatcher answers any hour. 45-minute arrival window in core service areas across Riverside County and neighboring communities."
           primaryLabel="Call Emergency Line (951) 246-4337"
         />
       </main>

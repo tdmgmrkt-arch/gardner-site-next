@@ -192,8 +192,8 @@ Gardner Plumbing Co. is a licensed electrical contractor serving Murrieta, Temec
 
 **Card 2**
 - Icon: `Shield`
-- Title: `Licensed, Permitted Work`
-- Description: `All pool electrical work in Murrieta requires a permit. We pull permits, coordinate the inspection, and provide you with a signed-off job — no open permits left behind.`
+- Title: `Licensed, Code-Compliant Work`
+- Description: `All pool electrical work in Murrieta requires a permit. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote.`
 
 **Card 3**
 - Icon: `Clock`
@@ -283,7 +283,7 @@ A: Yes. A pool pump that repeatedly trips its circuit breaker is drawing more cu
 
 **Q5: Do I need a permit to add electrical to my pool in Murrieta?**
 
-A: Yes — always. The City of Murrieta requires permits for all pool electrical work, including sub-panel installation, new circuits, bonding grid installation, and equipment hookup. Unpermitted pool electrical is a significant liability issue when selling a home and can result in your homeowner's insurance denying claims related to pool incidents. Our electricians pull all required permits, coordinate the inspection with the City of Murrieta Building & Safety Division, and obtain final sign-off. An [electrical safety inspection](/services/electrical/electrical-safety-inspection) before any new pool electrical work also documents the pre-existing condition of the system.
+A: Yes — always. The City of Murrieta requires permits for all pool electrical work, including sub-panel installation, new circuits, bonding grid installation, and equipment hookup. Unpermitted pool electrical is a significant liability issue when selling a home and can result in your homeowner's insurance denying claims related to pool incidents. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. An [electrical safety inspection](/services/electrical/electrical-safety-inspection) before any new pool electrical work also documents the pre-existing condition of the system.
 
 *(90 words)*
 
@@ -334,7 +334,7 @@ Ready to Wire Your Pool or Spa the Right Way?
 
 ### Supporting Paragraph
 ```
-NEC 680-compliant pool and spa wiring across Murrieta, Temecula, and the Inland Empire. Bonding grids, GFCI circuits, sub-panel installation, and fault diagnosis — licensed electricians, upfront pricing, permitted work. Call now or schedule online.
+NEC 680-compliant pool and spa wiring across Murrieta, Temecula, and the Inland Empire. Bonding grids, GFCI circuits, sub-panel installation, and fault diagnosis — licensed electricians, upfront pricing, code-compliant work. Call now or schedule online.
 ```
 *(36 words)*
 

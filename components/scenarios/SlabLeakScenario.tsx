@@ -221,7 +221,7 @@ export function SlabLeakScenario() {
               </p>
 
               <p className="text-base text-gray-300 mb-4 leading-relaxed">
-                Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Palm Springs, Palm Desert, Redlands, and Yucaipa. Call 24/7:{" "}
+                Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore. Call 24/7:{" "}
                 <a href={PHONE_HREF} className="text-red-400 font-semibold hover:text-red-300 transition-colors">
                   {PHONE_DISPLAY}
                 </a>.

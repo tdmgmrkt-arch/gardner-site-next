@@ -122,7 +122,7 @@ const services = [
     icon: Home,
     title: "ADU & Room Addition Wiring",
     description:
-      "Accessory dwelling units and room additions in Riverside County require a separate electrical permit and often a sub-panel. We handle the full scope from permit application to final inspection — including SCE coordination for ADUs with separate meters.",
+      "Accessory dwelling units and room additions in Riverside County require a separate electrical permit and often a sub-panel. We handle the full electrical scope from rough-in to final inspection — including SCE coordination for ADUs with separate meters. Permit fees are listed as a pass-through line on your quote.",
     features: [
       "ADU Sub-Panel Installation",
       "Separate Meter Coordination",
@@ -155,7 +155,7 @@ const benefits = [
     icon: Shield,
     title: "Licensed Electricians",
     description:
-      "Every tech holds a valid CA C-10 electrical license. Permit applications go under our license number — inspection is straightforward.",
+      "Every tech holds a valid CA C-10 electrical license. When permits are required, we coordinate the application process — inspection scheduling is handled as part of the job.",
   },
   {
     icon: Users,
@@ -184,8 +184,10 @@ const faqs = [
         rough-in inspection (before drywall) and a final inspection (after finish
         wiring) — both are required for the permit to close. Unpermitted remodel
         electrical creates problems at resale and may not be covered if a wiring
-        fault causes a loss. We pull the permit as part of every remodel electrical
-        scope. See also our note on{" "}
+        fault causes a loss. Permits are the homeowner&apos;s responsibility
+        under California law; we coordinate the paperwork when needed and list
+        any permit fees as a pass-through line on your quote. See also our note
+        on{" "}
         <Link
           href="/services/electrical/home-rewiring"
           className="text-red-400 hover:text-red-300 underline"
@@ -236,7 +238,7 @@ const faqs = [
   {
     question: "What electrical work does an ADU require in Riverside County?",
     answer:
-      "An ADU (accessory dwelling unit) in Riverside County requires its own electrical permit, separate from the main home's existing permit history. Typically this includes: a dedicated sub-panel fed from the main service (or a separate meter from SCE for a detached ADU), circuits for all habitable spaces per CA Title 24 energy code, GFCI protection in kitchens and bathrooms per NEC, arc-fault circuit interrupter (AFCI) protection in sleeping areas, and smoke/CO detector wiring per California residential code. Detached ADUs often require SCE coordination for the service connection. We handle the full scope — sub-panel, permit, inspection, and utility coordination — so the ADU electrical is complete and signed off before the county issues the certificate of occupancy.",
+      "An ADU (accessory dwelling unit) in Riverside County requires its own electrical permit, separate from the main home's existing permit history. Typically this includes: a dedicated sub-panel fed from the main service (or a separate meter from SCE for a detached ADU), circuits for all habitable spaces per CA Title 24 energy code, GFCI protection in kitchens and bathrooms per NEC, arc-fault circuit interrupter (AFCI) protection in sleeping areas, and smoke/CO detector wiring per California residential code. Detached ADUs often require SCE coordination for the service connection. We handle the full electrical scope — sub-panel installation and utility coordination. Permits are the property owner's responsibility under California law; we coordinate the paperwork and list permit fees as a pass-through line on your quote.",
   },
   {
     question:
@@ -275,7 +277,7 @@ const faqs = [
         Remodel electrical cost depends on scope. A standard kitchen remodel
         electrical package — new circuits for refrigerator, dishwasher, microwave,
         and counter outlets plus recessed lighting rough-in — typically runs $2,500
-        to $5,000, permit included. A bathroom addition with exhaust fan, GFCI
+        to $5,000 for labor and materials (permit fees are listed as a pass-through line on your quote). A bathroom addition with exhaust fan, GFCI
         circuits, and light fixture wiring typically runs $800 to $2,000. An ADU
         with sub-panel installation runs $3,000 to $7,000 depending on distance
         from the main panel and whether a separate SCE meter is required. All
@@ -520,8 +522,8 @@ export function RemodelingElectrical() {
               installed, fixtures connected, circuits tested. Missing the rough-in
               window adds cost and damage to finished walls. Our electricians
               schedule around your project timeline, coordinate with your other
-              trades, and pull the permit so inspection happens on your schedule,
-              not around it. View our{" "}
+              trades, and coordinate permit paperwork so inspection happens on
+              your schedule. View our{" "}
               <Link
                 href="/services/electrical/power"
                 className="text-red-400 hover:text-red-300 underline"
@@ -597,7 +599,7 @@ export function RemodelingElectrical() {
                     "Finish devices installed to spec — outlets, switches, and fixtures all tested",
                     "Panel capacity confirmed to support new load without affecting existing circuits",
                     "ADU or addition sub-panel installed and metered per SCE requirements",
-                    "Full permit closed with city — project record updated for county and insurance purposes",
+                    "Permit coordination handled where required — project record updated for county and insurance purposes",
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />

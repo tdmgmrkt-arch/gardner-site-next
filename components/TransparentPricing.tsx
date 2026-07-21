@@ -192,7 +192,7 @@ const pricingConcerns = [
   {
     question: "Why do plumbing prices vary so much between companies?",
     answer:
-      "Several factors explain the range. Licensing and insurance cost money, and companies that carry proper coverage charge accordingly. The quality of parts matters — a low-cost repair using substandard materials may need to be redone within a year. Experience also affects pricing; a technician who has handled hundreds of similar jobs in Riverside County, eastern San Bernardino County, and the Coachella Valley works more efficiently and is less likely to cause additional damage.",
+      "Several factors explain the range. Licensing and insurance cost money, and companies that carry proper coverage charge accordingly. The quality of parts matters — a low-cost repair using substandard materials may need to be redone within a year. Experience also affects pricing; a technician who has handled hundreds of similar jobs in Riverside County and neighboring communities works more efficiently and is less likely to cause additional damage.",
   },
   {
     question: "Is it cheaper to hire an unlicensed plumber?",
@@ -213,9 +213,9 @@ const pricingConcerns = [
 
 const faqs = [
   {
-    question: "How much does a plumber cost in Riverside County, eastern San Bernardino County, and the Coachella Valley?",
+    question: "How much does a plumber cost in Riverside County and neighboring communities?",
     answer:
-      "For most standard service calls in Riverside County, eastern San Bernardino County, and the Coachella Valley, homeowners pay between $125 and $600. The average service call for a common repair such as a drain clearing or toilet fix typically falls between $150 and $450. More complex projects — water heater replacements, sewer line repairs, and slab leaks — range from $1,200 to $20,000 depending on scope.",
+      "For most standard service calls in Riverside County and neighboring communities, homeowners pay between $125 and $600. The average service call for a common repair such as a drain clearing or toilet fix typically falls between $150 and $450. More complex projects — water heater replacements, sewer line repairs, and slab leaks — range from $1,200 to $20,000 depending on scope.",
   },
   {
     question: "Does Gardner Plumbing Co. charge a trip fee?",
@@ -260,7 +260,7 @@ const faqs = [
   {
     question: "Does plumbing work require a permit in Southern California?",
     answer:
-      "Many plumbing projects in Southern California require a permit, including water heater replacements, sewer line work, gas line modifications, and whole-home repiping. Gardner Plumbing Co. handles all required permits as part of the project. Permit fees, which typically range from $75 to $250, are included in the written estimate.",
+      "Many plumbing projects in Southern California require a permit, including water heater replacements, sewer line work, gas line modifications, and whole-home repiping. Permits and city inspections are the property owner's responsibility under California law. When your job requires them, we'll tell you upfront and can coordinate the paperwork on your behalf — permit fees appear as a separate pass-through line on your quote.",
   },
   {
     question: "What is flat-rate plumbing pricing?",
@@ -407,8 +407,8 @@ export function TransparentPricing({ reviewCount = "900+", ratingLabel = "4.9" }
 
               <p className="text-xl text-gray-300 mb-4 leading-relaxed">
                 Gardner Plumbing Co. provides upfront, written pricing for all plumbing repairs and
-                installations in Riverside County, eastern San Bernardino County, and the Coachella
-                Valley. You know the full cost before any work begins — every time.
+                installations across Riverside County and neighboring communities.
+                You know the full cost before any work begins — every time.
               </p>
 
               {/* Trust strip */}
@@ -622,7 +622,7 @@ export function TransparentPricing({ reviewCount = "900+", ratingLabel = "4.9" }
               The foundation of how Gardner Plumbing Co. has earned the trust of homeowners
               across{" "}
               <span className="text-white font-semibold">
-                Riverside County, eastern San Bernardino County, and the Coachella Valley
+                Riverside County and neighboring communities
               </span>{" "}
               for more than{" "}
               <span className="text-red-400 font-bold">30 years</span>.
@@ -738,8 +738,8 @@ export function TransparentPricing({ reviewCount = "900+", ratingLabel = "4.9" }
               to Other Companies
             </SectionHeading>
             <p className="text-[16px] text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              The plumbing industry in Riverside County, eastern San Bernardino County, and the
-              Coachella Valley has a well-known problem with hidden fees and unclear pricing.
+              The plumbing industry across Riverside County and neighboring communities
+              has a well-known problem with hidden fees and unclear pricing.
               Understanding the difference helps homeowners make confident decisions.
             </p>
           </div>
@@ -800,7 +800,7 @@ export function TransparentPricing({ reviewCount = "900+", ratingLabel = "4.9" }
                   The price ranges throughout this page represent average costs for common
                   plumbing services across{" "}
                   <span className="text-white font-semibold">
-                    Riverside County, eastern San Bernardino County, and the Coachella Valley
+                    Riverside County and neighboring communities
                   </span>{" "}
                   — provided for general reference only. Every home is different, and the only
                   way to get an accurate number is through a free in-home estimate. Gardner
@@ -916,8 +916,8 @@ export function TransparentPricing({ reviewCount = "900+", ratingLabel = "4.9" }
               </span>
             </SectionHeading>
             <p className="text-[16px] text-gray-300 max-w-3xl leading-relaxed mb-4">
-              Drain and sewer problems are among the most common plumbing calls in Riverside County,
-              eastern San Bernardino County, and the Coachella Valley. Pricing varies based on the
+              Drain and sewer problems are among the most common plumbing calls across
+              Riverside County and neighboring communities. Pricing varies based on the
               location of the blockage, the method required to clear it, and whether the main sewer
               line is involved.
             </p>
@@ -984,8 +984,8 @@ export function TransparentPricing({ reviewCount = "900+", ratingLabel = "4.9" }
               <div>
                 <p className="text-white font-semibold mb-2">What affects leak repair cost in Southern California</p>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Slab leaks are particularly common in Riverside County, eastern San Bernardino
-                  County, and the Coachella Valley because of the region's shifting soil and seismic
+                  Slab leaks are particularly common across Riverside County and neighboring
+                  communities because of the region's shifting soil and seismic
                   activity, which stresses underground pipes over time. Homes built on slab
                   foundations — the majority of homes in the area — require concrete cutting to
                   access pipes beneath the floor. The extent of the damage and whether pipe
@@ -1129,7 +1129,7 @@ export function TransparentPricing({ reviewCount = "900+", ratingLabel = "4.9" }
             </SectionHeading>
             <p className="text-[16px] text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Straightforward answers to the most common questions about plumbing costs in
-              Riverside County, eastern San Bernardino County, and the Coachella Valley.
+              Riverside County and neighboring communities.
             </p>
           </div>
 

@@ -135,12 +135,12 @@ const services = [
     title: "EV Charger Installation",
     href: "/services/electrical/ev-charger-installation",
     description:
-      "Level 2 home EV charger installation with panel assessment, dedicated circuit, and permit filing — the highest-demand electrical upgrade in Murrieta right now.",
+      "Level 2 home EV charger installation with panel assessment, dedicated circuit, and code-compliant wiring — the highest-demand electrical upgrade in Murrieta right now.",
     features: [
       "Level 2 Charger Installation",
       "Panel Capacity Check",
       "Dedicated 240V Circuit",
-      "Permit Filing Included",
+      "Code-Compliant Installation",
     ],
   },
 ];
@@ -187,8 +187,8 @@ const faqs = [
         license classes for a reason — a C-10 license requires passing a trade
         exam on electrical code, safety, and installation standards. The company
         name reflects our origins, not our current scope. Our electrical team
-        operates as a licensed electrical contractor, handles its own permits,
-        and signs work under the C-10 license. Ask for the license number before
+        operates as a licensed electrical contractor and signs work under the
+        C-10 license. Ask for the license number before
         booking any electrician in the Inland Empire — licensed or not is a
         meaningful difference.
       </>
@@ -228,7 +228,7 @@ const faqs = [
     question:
       "Do I need a permit for common electrical jobs in Murrieta?",
     answer:
-      "Most panel upgrades, EV charger installations, new circuit runs, and service entrance work require a permit through the City of Murrieta Building & Safety division or Riverside County Building Department. Straightforward like-for-like fixture replacements (swapping a light fixture, replacing an outlet) generally do not. Our team files permits on your behalf for all work that requires them — the permit process is built into the job, not an add-on. Unpermitted electrical work creates problems when you sell the home and voids equipment warranties.",
+      "Most panel upgrades, EV charger installations, new circuit runs, and service entrance work require a permit through the City of Murrieta Building & Safety division or Riverside County Building Department. Straightforward like-for-like fixture replacements (swapping a light fixture, replacing an outlet) generally do not. Permits are the homeowner's responsibility under California law; when your job requires one, we'll tell you upfront and can coordinate the paperwork on your behalf — permit fees are listed as a pass-through line on your quote. Unpermitted electrical work creates problems when you sell the home and voids equipment warranties.",
   },
   {
     question:
@@ -573,7 +573,7 @@ export function ElectricalHub() {
                     "Wiring that meets current NEC code — not the 1990s standard the house was built to",
                     "A whole-home surge protector standing between your electronics and the next SCE grid event",
                     "Pool, spa, and outdoor electrical that meets NEC Article 680 bonding and GFCI requirements",
-                    "One licensed electrical contractor who pulled a permit and signed the work — no gray-market installs",
+                    "One licensed electrical contractor who signed the work — no gray-market installs",
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
@@ -685,9 +685,8 @@ export function ElectricalHub() {
                 </span>
                 ). Our electrical team has completed over 2,200 jobs across
                 Riverside County — from panel upgrades in Hemet to EV charger
-                installations in Wildomar. Every job is permitted where required,
-                quoted upfront, and completed by a licensed electrician — not a
-                subcontractor.
+                installations in Wildomar. Every job is quoted upfront and
+                completed by a licensed electrician — not a subcontractor.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -1135,8 +1134,8 @@ export function ElectricalHub() {
               </h2>
               <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
                 Complete electrical services across Murrieta, Temecula, and the
-                Inland Empire. Licensed electricians, upfront pricing, permitted
-                work, and a 24/7 emergency line. Call now or schedule online —
+                Inland Empire. Licensed electricians, upfront pricing, and a
+                24/7 emergency line. Call now or schedule online —
                 our electrical team picks up.
               </p>
             </div>

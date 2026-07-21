@@ -115,12 +115,11 @@ Most Inland Empire homes run their furnaces fewer than 100 days a year — but t
 **Card 2**
 - Icon: `Zap`
 - Title: `Gas Furnace Installation`
-- Description: `High-efficiency gas furnace installation for Inland Empire homes with existing gas service. We handle the gas line connection, flue venting, and city permit pull.`
+- Description: `High-efficiency gas furnace installation for Inland Empire homes with existing gas service. Includes gas line connection and flue venting. Where a city permit is required, coordination is available as a pass-through line on your quote.`
 - Features:
   1. 80% & 96% AFUE Options
   2. Gas Line Connection
   3. Flue Venting & Exhaust
-  4. Permit Coordination
 
 **Card 3**
 - Icon: `Droplets`
@@ -188,7 +187,7 @@ Gardner Plumbing Co. is a licensed HVAC contractor serving Murrieta, Temecula, M
 **Card 2**
 - Icon: `Shield`
 - Title: `Licensed HVAC Technicians`
-- Description: `Every technician carries a valid CA HVAC license. We pull permits where required and schedule city inspections.`
+- Description: `Every technician carries a valid CA HVAC license. Permit coordination is available where required and inspection scheduling is handled as part of the job.`
 
 **Card 3**
 - Icon: `DollarSign`
@@ -278,7 +277,7 @@ A: For most Inland Empire homes with existing gas service, a high-efficiency gas
 
 **Q5: Do I need a permit for furnace installation in Murrieta?**
 
-A: Yes. The City of Murrieta requires a mechanical permit for HVAC equipment installation, including furnace replacement. Our team pulls the permit before work begins and coordinates the final inspection with the city. Do not use a contractor who skips the permit — an unpermitted system can void your homeowner's insurance, complicate a home sale, and leave you without a code-compliant installation. Permit fees are included in our upfront written quote.
+A: Yes. The City of Murrieta requires a mechanical permit for HVAC equipment installation, including furnace replacement. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. Do not use a contractor who skips the permit — an unpermitted system can void your homeowner's insurance, complicate a home sale, and leave you without a code-compliant installation.
 
 *(73 words)*
 

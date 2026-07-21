@@ -21,9 +21,11 @@
 
 ## Service Area (confirmed 2026-06-29 — supersedes earlier list)
 
-Riverside County + eastern San Bernardino County + Coachella Valley. 25 cities:
+25 specific cities across Riverside County and neighboring communities:
 
 Banning · Beaumont · Calimesa · Cathedral City · Cherry Valley · Corona · Eastvale · Garnet · Hemet · Jurupa Valley · Lake Elsinore · Menifee · Mentone · Moreno Valley · Murrieta · North Palm Springs · Palm Springs · Palm Desert · Pedley · Perris · Redlands · Riverside · San Jacinto · Temecula · Yucaipa
+
+**IMPORTANT — regional framing rule (2026-07-20):** Do NOT market as "Coachella Valley," "San Bernardino County," or any county/region label besides Riverside County. Gardner serves specific named cities within those regions — not the regions wholesale. Always name the specific cities OR use the default phrase *"across Riverside County and neighboring communities."* Never say "eastern San Bernardino County" or "the Coachella Valley" in copy.
 
 ## The Gardner Promise (brand decision 2026-06-29)
 

@@ -110,12 +110,12 @@ const services = [
     title: "EV Charger Installation",
     href: "/services/electrical/ev-charger-installation",
     description:
-      "Level 2 home EV charger installation with dedicated 240V circuit, panel capacity check, and permit filing — Murrieta's most-requested electrical upgrade.",
+      "Level 2 home EV charger installation with dedicated 240V circuit and panel capacity check — Murrieta's most-requested electrical upgrade.",
     features: [
       "Level 2 (240V) Circuit",
       "Panel Capacity Assessment",
       "Tesla, ChargePoint & Universal",
-      "Permit Filing Included",
+      "NEC 625 Compliant",
     ],
   },
   {
@@ -128,7 +128,7 @@ const services = [
       "Aluminum Wiring Replacement",
       "Full & Partial Rewires",
       "Updated to NEC Standards",
-      "Permit & Inspection Included",
+      "Code-Compliant Installation",
     ],
   },
   {
@@ -157,7 +157,7 @@ const benefits = [
     icon: Shield,
     title: "Licensed, Bonded & Insured",
     description:
-      "Every electrician holds a valid CA C-10 contractor license. We pull permits, coordinate with SCE, and schedule inspections — the job is done right and documented.",
+      "Every electrician holds a valid CA C-10 contractor license. Every job is done right and documented.",
   },
   {
     icon: DollarSign,
@@ -244,7 +244,7 @@ const faqs = [
     question:
       "Do I need a permit to upgrade my panel or install an EV charger in Murrieta?",
     answer:
-      "Yes to both. A panel upgrade (200-amp service upgrade) requires a permit through the City of Murrieta Building & Safety or Riverside County Building Department, plus inspection by the local electrical inspector. Level 2 EV charger installation on a new circuit also requires a permit. Our electricians handle the permit filing and schedule the inspection — it's part of the job, not an add-on. Unpermitted panel work creates open permit issues that surface during home sales and can void homeowner's insurance coverage.",
+      "Yes to both. A panel upgrade (200-amp service upgrade) requires a permit through the City of Murrieta Building & Safety or Riverside County Building Department, plus inspection by the local electrical inspector. Level 2 EV charger installation on a new circuit also requires a permit. Permits are the homeowner's responsibility under California law; we can coordinate the paperwork on your behalf and list permit fees as a pass-through line on your quote. Unpermitted panel work creates open permit issues that surface during home sales and can void homeowner's insurance coverage.",
   },
   {
     question: "Does my home need a generator, and what type makes sense?",
@@ -587,7 +587,7 @@ export function PowerHub() {
                     "200-amp service provides headroom for solar, battery storage, and future load additions",
                     "Generator transfer switch installed — no more manually running extension cords during SCE outages",
                     "All circuits labeled, properly sized, and load-balanced across the panel",
-                    "Permit closed and utility inspection signed off — no open permits at sale time",
+                    "Installation documented and utility inspection signed off — no open permit issues at sale time",
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
@@ -700,8 +700,8 @@ export function PowerHub() {
                 ). Our electrical team has completed over 550 power system jobs
                 across Riverside County — from 200-amp panel upgrades in Menifee
                 to EV charger installations in Wildomar. Every major upgrade is
-                permitted, utility-coordinated where required, and completed by a
-                licensed electrician who signs the work.
+                code-compliant, utility-coordinated where required, and completed
+                by a licensed electrician who signs the work.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -1143,9 +1143,9 @@ export function PowerHub() {
               <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
                 Electrical panel upgrades, EV charger installation, home
                 rewiring, and generator hookups across Murrieta, Temecula, and
-                the Inland Empire. Licensed electricians, permitted work, upfront
-                pricing. Call now or schedule online — our electrical team picks
-                up.
+                the Inland Empire. Licensed electricians, code-compliant work,
+                upfront pricing. Call now or schedule online — our electrical
+                team picks up.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">

@@ -51,7 +51,7 @@ const faqs = [
     question:
       "Do I need a permit for AC installation in Murrieta or Riverside County?",
     answer:
-      "In most cases, yes. Riverside County and the City of Murrieta require a mechanical permit for new AC installations and replacements that involve refrigerant line work or electrical modifications. We handle permit coordination as part of the installation process — you don't need to file anything separately. The permit ensures the installation is inspected by a licensed building inspector, which also protects your homeowner's insurance coverage and future resale value. Ask about permit requirements when you call for your quote.",
+      "In most cases, yes. Riverside County and the City of Murrieta require a mechanical permit for new AC installations and replacements that involve refrigerant line work or electrical modifications. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. The permit ensures the installation is inspected by a licensed building inspector, which also protects your homeowner's insurance coverage and future resale value. Ask about permit requirements when you call for your quote.",
   },
 ];
 

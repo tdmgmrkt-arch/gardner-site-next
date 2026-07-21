@@ -209,7 +209,7 @@ const faqs = [
     question:
       "Does pool wiring require special permits and inspections in Murrieta?",
     answer:
-      "Yes. Pool and spa electrical falls under NEC Article 680, which has specific requirements for bonding, GFCI protection, wire clearances, and underwater fixture ratings. The City of Murrieta and Riverside County both require a permit and inspection for pool electrical work. Unpermitted pool wiring is a safety issue — improperly bonded pools have caused electrocution incidents nationally. Our electricians pull the permit, complete the bonding and GFCI work, and schedule the inspection as part of the job.",
+      "Yes. Pool and spa electrical falls under NEC Article 680, which has specific requirements for bonding, GFCI protection, wire clearances, and underwater fixture ratings. The City of Murrieta and Riverside County both require a permit and inspection for pool electrical work. Unpermitted pool wiring is a safety issue — improperly bonded pools have caused electrocution incidents nationally. Permits are the homeowner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote.",
   },
   {
     question:
@@ -534,7 +534,7 @@ export function FixturesHub() {
                     "Outdoor fixtures and outlets rated for Inland Empire heat and UV exposure",
                     "No double-tapped breakers or overloaded circuits from the installation",
                     "Clean finish work — no exposed wire, no drywall damage left open after rough-in",
-                    "Permit closed and inspection passed where the city requires it",
+                    "Permit coordination available where the city requires it — listed as a pass-through line on your quote",
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
@@ -647,8 +647,8 @@ export function FixturesHub() {
                 ). Our electrical team has completed over 1,400 fixture
                 installations across Riverside County — from recessed lighting
                 remodels in Temecula to pool wiring projects in Canyon Lake.
-                Every installation is quoted upfront, permitted where required,
-                and completed by a licensed electrician.
+                Every installation is quoted upfront and completed by a licensed
+                electrician. Permit coordination is available where required.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -1088,8 +1088,8 @@ export function FixturesHub() {
               </h2>
               <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
                 Licensed electrical installation across Murrieta, Temecula, and
-                the Inland Empire. Upfront pricing, permitted work, and same-day
-                service availability. Call now or schedule online — our
+                the Inland Empire. Upfront pricing, code-compliant work, and
+                same-day service availability. Call now or schedule online — our
                 electrical team picks up.
               </p>
             </div>

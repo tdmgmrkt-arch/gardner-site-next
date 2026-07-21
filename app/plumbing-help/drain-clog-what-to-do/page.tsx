@@ -206,7 +206,7 @@ export default async function DrainClogPage() {
         <GardnerPromise reviewCount={reviewCount} />
         <FinalCallCta
           heading="Ready to Fix It Today?"
-          subheading="Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley. No trip fee. No service-call fee. Written price before any work begins. CSLB #1073177."
+          subheading="Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities. No trip fee. No service-call fee. Written price before any work begins. CSLB #1073177."
         />
       </main>
     </div>

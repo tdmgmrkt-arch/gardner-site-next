@@ -96,7 +96,7 @@ Remodeling Electrical Services in the Inland Empire
 
 ### Section Intro Paragraph (62 words)
 ```
-Remodels move in phases — and so does the electrical work. Rough-in wiring happens before drywall: new circuits routed, boxes set, panel capacity confirmed. Finish wiring comes after drywall: devices installed, fixtures connected, circuits tested. Missing the rough-in window adds cost and damage to finished walls. Our electricians schedule around your project timeline, coordinate with your other trades, and pull the permit so inspection happens on your schedule, not around it.
+Remodels move in phases — and so does the electrical work. Rough-in wiring happens before drywall: new circuits routed, boxes set, panel capacity confirmed. Finish wiring comes after drywall: devices installed, fixtures connected, circuits tested. Missing the rough-in window adds cost and damage to finished walls. Our electricians schedule around your project timeline, coordinate with your other trades, and coordinate permit paperwork so inspection happens on your schedule.
 ```
 
 ### 4 Service Cards
@@ -244,7 +244,7 @@ Find answers to common questions about remodel and new construction electrical i
 
 **Q1: Do I need a permit for electrical work during a kitchen or bathroom remodel in Murrieta?**
 
-A: Yes. Any new circuit, panel modification, or wiring change in a remodel requires a permit from the City of Murrieta Building Department. That includes new outlet circuits in a kitchen remodel, exhaust fan wiring in a bathroom, or a dedicated circuit for a new appliance. The permit triggers a rough-in inspection (before drywall) and a final inspection (after finish wiring) — both are required for the permit to close. Unpermitted remodel electrical creates problems at resale and may not be covered if a wiring fault causes a loss. We pull the permit as part of every remodel electrical scope. See also our note on [home rewiring](/services/electrical/home-rewiring) if the remodel exposes outdated wiring that needs replacement.
+A: Yes. Any new circuit, panel modification, or wiring change in a remodel requires a permit from the City of Murrieta Building Department. That includes new outlet circuits in a kitchen remodel, exhaust fan wiring in a bathroom, or a dedicated circuit for a new appliance. The permit triggers a rough-in inspection (before drywall) and a final inspection (after finish wiring) — both are required for the permit to close. Unpermitted remodel electrical creates problems at resale and may not be covered if a wiring fault causes a loss. Permits are the property owner’s responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. See also our note on [home rewiring](/services/electrical/home-rewiring) if the remodel exposes outdated wiring that needs replacement.
 
 *(127 words)*
 
@@ -284,7 +284,7 @@ A: Yes — that's the scenario where our multi-trade structure saves the most ti
 
 **Q6: How much does remodel electrical work cost in Murrieta?**
 
-A: Remodel electrical cost depends on scope. A standard kitchen remodel electrical package — new circuits for refrigerator, dishwasher, microwave, and counter outlets plus recessed lighting rough-in — typically runs $2,500 to $5,000, permit included. A bathroom addition with exhaust fan, GFCI circuits, and light fixture wiring typically runs $800 to $2,000. An ADU with sub-panel installation runs $3,000 to $7,000 depending on distance from the main panel and whether a separate SCE meter is required. All quotes are written and issued per phase — rough-in and finish — before work begins. [Panel upgrades](/services/electrical/electrical-panel-upgrade) may be required if the remodel adds significant load; we flag that in the assessment.
+A: Remodel electrical cost depends on scope. A standard kitchen remodel electrical package — new circuits for refrigerator, dishwasher, microwave, and counter outlets plus recessed lighting rough-in — typically runs $2,500 to $5,000 for labor and materials (permit fees listed separately as a pass-through line where required). A bathroom addition with exhaust fan, GFCI circuits, and light fixture wiring typically runs $800 to $2,000. An ADU with sub-panel installation runs $3,000 to $7,000 depending on distance from the main panel and whether a separate SCE meter is required. All quotes are written and issued per phase — rough-in and finish — before work begins. [Panel upgrades](/services/electrical/electrical-panel-upgrade) may be required if the remodel adds significant load; we flag that in the assessment.
 
 *(120 words)*
 

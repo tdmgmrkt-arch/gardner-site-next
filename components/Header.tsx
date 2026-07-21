@@ -890,7 +890,6 @@ export function Header({ ratingLabel, ratingBadge }: HeaderProps = {}) {
                     className="flex items-center gap-1 text-white hover:text-red-400 font-medium transition-all duration-300 hover-lift drop-shadow-sm py-4 px-1"
                   >
                     HVAC
-                    <span className="inline xl:hidden">HVAC</span>
                     <ChevronDown
                       className="h-4 w-4 transition-transform duration-300"
                       style={{ transform: isHvacOpen ? "rotate(180deg)" : "rotate(0deg)" }}
@@ -1121,7 +1120,6 @@ export function Header({ ratingLabel, ratingBadge }: HeaderProps = {}) {
                     className="flex items-center gap-1 text-white hover:text-red-400 font-medium transition-all duration-300 hover-lift drop-shadow-sm py-4 px-1"
                   >
                     Electrical
-                    <span className="inline xl:hidden">Electrical</span>
                     <ChevronDown
                       className="h-4 w-4 transition-transform duration-300"
                       style={{ transform: isElectricalOpen ? "rotate(180deg)" : "rotate(0deg)" }}

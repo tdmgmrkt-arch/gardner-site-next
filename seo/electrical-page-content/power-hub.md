@@ -117,12 +117,12 @@ Most Murrieta and Temecula homes were built in the 1990s and 2000s with 100–15
 - Icon: `Car`
 - Title: `EV Charger Installation`
 - URL: `/services/electrical/ev-charger-installation`
-- Description: `Level 2 home EV charger installation with dedicated 240V circuit, panel capacity check, and permit filing — Murrieta's most-requested electrical upgrade.`
+- Description: `Level 2 home EV charger installation with dedicated 240V circuit, panel capacity check, and NEC 625 compliant wiring — Murrieta's most-requested electrical upgrade.`
 - Features:
   1. Level 2 (240V) Circuit
   2. Panel Capacity Assessment
   3. Tesla, ChargePoint & Universal
-  4. Permit Filing Included
+  4. NEC-Compliant Wiring
 
 **Card 3**
 - Icon: `Cable`
@@ -133,7 +133,7 @@ Most Murrieta and Temecula homes were built in the 1990s and 2000s with 100–15
   1. Aluminum Wiring Replacement
   2. Full & Partial Rewires
   3. Updated to NEC Standards
-  4. Permit & Inspection Included
+  4. Updated to Current Code
 
 **Card 4**
 - Icon: `Battery`
@@ -196,7 +196,7 @@ Gardner Plumbing Co. is a licensed electrical contractor serving Murrieta, Temec
 **Card 2**
 - Icon: `Shield`
 - Title: `Licensed, Bonded & Insured`
-- Description: `Every electrician holds a valid CA C-10 contractor license. We pull permits, coordinate with SCE, and schedule inspections — the job is done right and documented.`
+- Description: `Every electrician holds a valid CA C-10 contractor license. Work is documented and code-compliant. Permit coordination is available when required.`
 
 **Card 3**
 - Icon: `DollarSign`
@@ -278,7 +278,7 @@ A: Level 1 charging uses a standard 120-volt outlet — the cord that comes with
 
 **Q4: Do I need a permit to upgrade my panel or install an EV charger in Murrieta?**
 
-A: Yes to both. A panel upgrade (200-amp service upgrade) requires a permit through the City of Murrieta Building & Safety or Riverside County Building Department, plus inspection by the local electrical inspector. Level 2 EV charger installation on a new circuit also requires a permit. Our electricians handle the permit filing and schedule the inspection — it's part of the job, not an add-on. Unpermitted panel work creates open permit issues that surface during home sales and can void homeowner's insurance coverage.
+A: Yes to both. A panel upgrade (200-amp service upgrade) requires a permit through the City of Murrieta Building & Safety or Riverside County Building Department, plus inspection by the local electrical inspector. Level 2 EV charger installation on a new circuit also requires a permit. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. Unpermitted panel work creates open permit issues that surface during home sales and can void homeowner's insurance coverage.
 
 *(83 words)*
 
@@ -337,7 +337,7 @@ Ready to Upgrade Your Electrical System in Murrieta?
 
 ### Supporting Paragraph
 ```
-Electrical panel upgrades, EV charger installation, home rewiring, and generator hookups across Murrieta, Temecula, and the Inland Empire. Licensed electricians, permitted work, upfront pricing. Call now or schedule online — our electrical team picks up.
+Electrical panel upgrades, EV charger installation, home rewiring, and generator hookups across Murrieta, Temecula, and the Inland Empire. Licensed electricians, code-compliant work, upfront pricing. Call now or schedule online — our electrical team picks up.
 ```
 *(35 words)*
 

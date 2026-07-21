@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title:
       "Electrical Panel Upgrade Murrieta, CA | 200A Service Upgrades | Gardner Plumbing Co.",
     description:
-      "Licensed electricians upgrade panels from 100A to 200A across Murrieta and the Inland Empire. Permitted work, SCE coordination, upfront pricing. Call (951) 246-4337.",
+      "Licensed electricians upgrade panels from 100A to 200A across Murrieta and the Inland Empire. Code-compliant work, SCE coordination, upfront pricing. Call (951) 246-4337.",
     url: "https://gardnerplumbingco.com/services/electrical/electrical-panel-upgrade",
   },
   alternates: {
@@ -29,17 +29,17 @@ const faqs = [
   {
     question: "What does a 200-amp panel upgrade cost in Murrieta?",
     answer:
-      "Most 100A to 200A residential panel upgrades in Murrieta run between $2,500 and $4,500 all-in, including the permit, inspection, and SCE coordination. That range moves based on whether the meter base needs replacing, how much service entrance conductor work is involved, and whether any branch circuit corrections are required to pass inspection. We provide a written quote after the load calculation — you see the full number before we schedule the work. SCE rebates may also apply depending on your service type; we note any eligible programs in your quote.",
+      "Most 100A to 200A residential panel upgrades in Murrieta run between $2,500 and $4,500, including labor and SCE coordination — permit fees are listed as a pass-through line on your quote. That range moves based on whether the meter base needs replacing, how much service entrance conductor work is involved, and whether any branch circuit corrections are required to pass inspection. We provide a written quote after the load calculation — you see the full number before we schedule the work. SCE rebates may also apply depending on your service type; we note any eligible programs in your quote.",
   },
   {
     question: "Do I need a permit for a panel upgrade in Murrieta?",
     answer:
-      "Yes. A panel upgrade is a major electrical service change and requires a permit from the City of Murrieta Building Department plus a final inspection before SCE restores power. Unpermitted panel work is a liability issue: it typically voids your homeowner's insurance for fire-related claims and must be disclosed (and corrected) during any home sale. Every upgrade our electrical team completes is fully permitted and inspection-ready. If you've had unpermitted panel work done previously, we can assess the situation and bring it into compliance.",
+      "Yes. A panel upgrade is a major electrical service change and requires a permit from the City of Murrieta Building Department plus a final inspection before SCE restores power. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. Unpermitted panel work is a liability issue: it typically voids your homeowner's insurance for fire-related claims and must be disclosed (and corrected) during any home sale. If you've had unpermitted panel work done previously, we can assess the situation and bring it into compliance.",
   },
   {
     question: "How long does an electrical panel upgrade take?",
     answer:
-      "Most residential panel upgrades — 100A to 200A, standard conditions — take one full day on-site. Our electricians arrive in the morning, coordinate the SCE utility disconnect, swap the panel, dress the circuits, label the directory, and have the city inspection scheduled before we leave. Total time from permit application to final inspection is typically 5 to 10 business days depending on city permit processing. SCE reconnect after the inspection is generally the same day or next morning. Your home will have a planned outage only during the swap itself — usually 4 to 6 hours.",
+      "Most residential panel upgrades — 100A to 200A, standard conditions — take one full day on-site. Our electricians arrive in the morning, coordinate the SCE utility disconnect, swap the panel, dress the circuits, label the directory, and have the city inspection scheduled before we leave. Total time from permit processing to final inspection is typically 5 to 10 business days depending on city workload. SCE reconnect after the inspection is generally the same day or next morning. Your home will have a planned outage only during the swap itself — usually 4 to 6 hours.",
   },
   {
     question: "What panel brands do you install?",
@@ -92,7 +92,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Electrical Panel Upgrade",
   description:
-    "Professional electrical panel upgrade services for residential properties across Murrieta, Temecula, and the Inland Empire. 100A to 200A upgrades, breaker box replacement, SCE coordination, and permitted work.",
+    "Professional electrical panel upgrade services for residential properties across Murrieta, Temecula, and the Inland Empire. 100A to 200A upgrades, breaker box replacement, SCE coordination, and code-compliant work.",
   provider: {
     "@type": "Electrician",
     name: "Gardner Plumbing Co.",

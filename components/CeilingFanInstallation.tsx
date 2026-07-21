@@ -156,7 +156,7 @@ const benefits = [
     icon: Shield,
     title: "Licensed Electricians",
     description:
-      "Every technician is a licensed CA electrician. We pull permits when required and leave your ceiling closed and clean.",
+      "Every technician is a licensed CA electrician. We leave your ceiling closed and clean.",
   },
   {
     icon: Zap,

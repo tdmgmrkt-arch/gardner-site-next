@@ -98,7 +98,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
     {
       question: "Will you handle permits and inspections?",
       answer:
-        "Yes. We pull required permits, schedule inspections, and ensure all work meets Riverside County and city codes.",
+        "Permits are the homeowner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. All work meets Riverside County and city codes.",
     },
     {
       question: "Do you offer financing or phased options?",
@@ -164,9 +164,9 @@ const [isModalOpen, setIsModalOpen] = useState(false);
     },
     {
       icon: Award,
-      title: "Permits & Code",
+      title: "Code-Compliant Work",
       description:
-        "We handle permits/inspections and deliver fully code-compliant workmanship.",
+        "Permit coordination available when required. All workmanship meets Riverside County code.",
     },
   ];
 
@@ -535,7 +535,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 
               <p className="text-lg text-gray-300 mb-8 leading-relaxed text-[16px]">
                 We’ve helped thousands of homeowners replace failing pipes with clean, efficient
-                systems—handling permits, inspections, and warranty support start to finish.
+                systems—with code-compliant workmanship, permit coordination when needed, and warranty support start to finish.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">

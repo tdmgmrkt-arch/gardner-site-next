@@ -102,7 +102,7 @@ const services = [
       "Load Calculation First",
       "200A Main Panel Install",
       "SCE Meter Base Coordination",
-      "Permitted & Inspected",
+      "Code-Compliant Installation",
     ],
   },
   {
@@ -146,9 +146,9 @@ const services = [
 const benefits = [
   {
     icon: FileCheck,
-    title: "Permitted, Every Time",
+    title: "Code-Compliant, Every Time",
     description:
-      "Every panel upgrade we complete is pulled with a permit, inspected by the city, and logged with SCE. Unpermitted panel work voids homeowner's insurance and blocks home sales.",
+      "Every panel upgrade we complete is code-compliant, documented, and logged with SCE. Permits are the homeowner's responsibility under California law — we'll tell you upfront if your job requires one and can coordinate on your behalf. Unpermitted panel work voids homeowner's insurance and blocks home sales.",
   },
   {
     icon: Shield,
@@ -202,7 +202,7 @@ const faqs = [
   {
     question: "Do I need a permit for a panel upgrade in Murrieta?",
     answer:
-      "Yes. A panel upgrade is a major electrical service change and requires a permit from the City of Murrieta Building Department plus a final inspection before SCE restores power. Unpermitted panel work is a liability issue: it typically voids your homeowner's insurance for fire-related claims and must be disclosed (and corrected) during any home sale. Every upgrade our electrical team completes is fully permitted and inspection-ready. If you've had unpermitted panel work done previously, we can assess the situation and bring it into compliance.",
+      "Yes. A panel upgrade is a major electrical service change and requires a permit from the City of Murrieta Building Department plus a final inspection before SCE restores power. Permits are the homeowner's responsibility under California law. We'll tell you upfront and can coordinate the paperwork on your behalf — permit fees are listed as a pass-through line on your quote. Unpermitted panel work is a liability issue: it typically voids your homeowner's insurance for fire-related claims and must be disclosed (and corrected) during any home sale. If you've had unpermitted panel work done previously, we can assess the situation and bring it into compliance.",
   },
   {
     question: "How long does an electrical panel upgrade take?",
@@ -330,14 +330,14 @@ export function ElectricalPanelUpgrade() {
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
                 Inland Empire homes built in the 1990s and 2000s run on 100-amp
                 panels. EV chargers, heat pumps, and ADUs need more. Our licensed
-                electricians upgrade your service and pull the permits — so
+                electricians upgrade your service to code — so
                 you&apos;re ready for whatever you&apos;re adding next.
               </p>
 
               {/* Key Benefits */}
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
-                  { icon: Clock, text: "Fast Permit Turnaround" },
+                  { icon: Clock, text: "Fast Scheduling" },
                   { icon: Shield, text: "Licensed & Insured" },
                   { icon: DollarSign, text: "Upfront Pricing" },
                   { icon: Phone, text: "Same-Week Scheduling" },
@@ -450,7 +450,7 @@ export function ElectricalPanelUpgrade() {
                   </div>
                 </Link>
                 <span className="text-red-100 font-semibold text-sm sm:text-base">
-                  Panel assessment same week · permits fast
+                  Panel assessment same week · fast scheduling
                 </span>
               </div>
             </div>
@@ -1100,7 +1100,7 @@ export function ElectricalPanelUpgrade() {
               </h2>
               <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
                 Panel upgrades across Murrieta, Temecula, and the Inland Empire.
-                Permitted work, SCE coordination, and upfront written quotes. Call
+                SCE coordination, code-compliant work, and upfront written quotes. Call
                 now or schedule online — our electrical team picks up.
               </p>
             </div>
@@ -1131,7 +1131,7 @@ export function ElectricalPanelUpgrade() {
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-center text-sm max-w-2xl mx-auto">
               <div className="flex items-center gap-2">
                 <FileCheck className="h-4 w-4 text-green-400" />
-                <span className="text-gray-300">Permitted Work</span>
+                <span className="text-gray-300">Code-Compliant Work</span>
               </div>
               <div className="flex items-center gap-2">
                 <Shield className="h-4 w-4 text-green-400" />

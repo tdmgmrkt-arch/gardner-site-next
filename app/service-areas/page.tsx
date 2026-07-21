@@ -7,21 +7,21 @@ import { ServiceAreasPage as ServiceAreas } from "@/components/ServiceAreasPage"
 export const metadata: Metadata = {
   title: "Service Areas — Gardner Plumbing Co. Riverside County",
   description:
-    "Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley. 30+ years, CSLB #1073177.",
+    "Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities. 30+ years, CSLB #1073177.",
   alternates: {
     canonical: "/service-areas",
   },
   openGraph: {
     title: "Service Areas — Gardner Plumbing Co. Riverside County",
     description:
-      "Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley. 30+ years, CSLB #1073177.",
+      "Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities. 30+ years, CSLB #1073177.",
     url: "/service-areas",
     images: [
       {
         url: "/GardnerTechVanTools.webp",
         width: 1200,
         height: 630,
-        alt: "Gardner Plumbing Co. technician with service van — serving 25 cities across Riverside County and the Coachella Valley",
+        alt: "Gardner Plumbing Co. technician with service van — serving 25 cities across Riverside County and neighboring communities",
       },
     ],
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Service Areas — Gardner Plumbing Co. Riverside County",
     description:
-      "25 cities served across Riverside County, eastern San Bernardino County, and the Coachella Valley. CSLB #1073177.",
+      "25 cities served across Riverside County and neighboring communities. CSLB #1073177.",
   },
 };
 
@@ -65,7 +65,7 @@ const webPageSchema = {
   "@type": "WebPage",
   name: "Service Areas — Gardner Plumbing Co. Riverside County",
   description:
-    "Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley. Licensed under CSLB #1073177 with 30+ years of experience.",
+    "Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities. Licensed under CSLB #1073177 with 30+ years of experience.",
   url: "https://gardnerplumbingco.com/service-areas",
   inLanguage: "en-US",
   isPartOf: {
@@ -183,7 +183,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Do you provide emergency plumbing service in the Coachella Valley?",
+      name: "Do you provide emergency plumbing service to Palm Springs and surrounding cities?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Yes. Gardner Plumbing Co. provides 24/7 emergency dispatch to Palm Springs, North Palm Springs, Cathedral City, Palm Desert, and Garnet. Emergency calls receive the same priority dispatch process regardless of location.",
@@ -210,7 +210,7 @@ const faqSchema = {
       name: "Does Gardner Plumbing serve HOA communities and multi-family properties?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Gardner Plumbing Co. works with HOAs, property management companies, and multi-family properties throughout Riverside County and eastern San Bernardino County. We handle everything from individual unit repairs to common-area plumbing and main-line maintenance.",
+        text: "Yes. Gardner Plumbing Co. works with HOAs, property management companies, and multi-family properties throughout Riverside County and neighboring communities. We handle everything from individual unit repairs to common-area plumbing and main-line maintenance.",
       },
     },
   ],

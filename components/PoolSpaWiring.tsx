@@ -153,9 +153,9 @@ const benefits = [
   },
   {
     icon: Shield,
-    title: "Licensed, Permitted Work",
+    title: "Licensed, Code-Compliant Work",
     description:
-      "All pool electrical work in Murrieta requires a permit. We pull permits, coordinate the inspection, and provide you with a signed-off job — no open permits left behind.",
+      "All pool electrical work in Murrieta requires a permit. Permits are the property owner's responsibility under California law; we coordinate the paperwork on your behalf and list any permit fees as a pass-through line on your quote.",
   },
   {
     icon: Clock,
@@ -218,10 +218,10 @@ const faqs = [
         electrical work, including sub-panel installation, new circuits, bonding
         grid installation, and equipment hookup. Unpermitted pool electrical is a
         significant liability issue when selling a home and can result in your
-        homeowner&apos;s insurance denying claims related to pool incidents. Our
-        electricians pull all required permits, coordinate the inspection with
-        the City of Murrieta Building & Safety Division, and obtain final
-        sign-off. An{" "}
+        homeowner&apos;s insurance denying claims related to pool incidents.
+        Permits are the homeowner&apos;s responsibility under California law;
+        we can coordinate the paperwork when needed and will list any permit
+        fees as a pass-through line on your quote. An{" "}
         <Link
           href="/services/electrical/electrical-safety-inspection"
           className="text-red-400 hover:text-red-300 underline"
@@ -1119,7 +1119,7 @@ export function PoolSpaWiring() {
                 NEC 680-compliant pool and spa wiring across Murrieta, Temecula,
                 and the Inland Empire. Bonding grids, GFCI circuits, sub-panel
                 installation, and fault diagnosis — licensed electricians, upfront
-                pricing, permitted work. Call now or schedule online.
+                pricing, code-compliant work. Call now or schedule online.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">

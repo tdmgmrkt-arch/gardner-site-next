@@ -124,7 +124,7 @@ const services = [
     features: [
       "All Circuits Replaced",
       "Panel Upgrade Coordinated",
-      "Permitted & City-Inspected",
+      "Code-Compliant & Inspected",
       "New Circuit Directory",
     ],
   },
@@ -147,7 +147,7 @@ const benefits = [
     icon: FileCheck,
     title: "Code Compliance, Documented",
     description:
-      "Every rewire we complete is permitted, inspected, and documented for your insurance carrier and county records. We provide the paperwork you need to reinstate coverage.",
+      "Every rewire we complete is code-compliant, inspected, and documented for your insurance carrier and county records. We provide the paperwork you need to reinstate coverage. Permits are the homeowner's responsibility under California law — we coordinate on your behalf and list fees as a pass-through line.",
   },
   {
     icon: Shield,
@@ -196,7 +196,7 @@ const faqs = [
   {
     question: "How long does a full home rewire take?",
     answer:
-      "A full rewire on a typical Inland Empire single-family home — 1,500 to 2,500 square feet — takes 3 to 7 days of electrical work, depending on access conditions and panel status. Permit processing adds 3 to 7 business days before we can start. Total project timeline from signed scope to final inspection runs 2 to 3 weeks in most cases. Partial rewires (single room or zone) typically take 1 to 2 days on-site. We schedule city inspections as part of the project — homeowners do not need to manage that step independently. If you're also doing a panel upgrade, we coordinate both at the same time.",
+      "A full rewire on a typical Inland Empire single-family home — 1,500 to 2,500 square feet — takes 3 to 7 days of electrical work, depending on access conditions and panel status. Permit processing adds 3 to 7 business days before we can start. Total project timeline from signed scope to final inspection runs 2 to 3 weeks in most cases. Partial rewires (single room or zone) typically take 1 to 2 days on-site. When city inspections are required, permits and inspections are the homeowner's responsibility — we can coordinate the paperwork on your behalf when needed. If you're also doing a panel upgrade, we coordinate both at the same time.",
   },
   {
     question: "Does a home rewire require opening the walls?",
@@ -257,7 +257,7 @@ const faqs = [
         Costs vary significantly based on scope. A single-circuit addition or
         correction runs $300 to $800. A partial rewire covering one room or zone
         typically ranges from $1,500 to $4,000. A full home rewire — all circuits
-        replaced, permit pulled, inspection completed — generally runs $8,000 to
+        replaced, code-compliant and inspection-ready — generally runs $8,000 to
         $18,000 for a standard Inland Empire single-family home, with cost driven
         by square footage, access conditions, and whether a panel upgrade is
         included. We provide itemized written quotes after the assessment visit.
@@ -503,7 +503,7 @@ export function HomeRewiring() {
               wiring was not designed for modern electrical loads, does not meet
               current NEC standards, and is frequently cited as the reason
               insurance carriers decline or cancel coverage. Our electricians
-              handle the full scope: assessment, scope definition, permitting,
+              handle the full scope: assessment, scope definition,
               rewiring, and final inspection. View our{" "}
               <Link
                 href="/services/electrical/power"
@@ -580,7 +580,7 @@ export function HomeRewiring() {
                     "Insurance carrier receives documentation of code-compliant wiring",
                     "Breakers sized correctly for each circuit — no more overloaded runs",
                     "Aluminum or knob-and-tube wiring fully removed and disposed of",
-                    "City inspection signed off — permit closed, record updated with county",
+                    "City inspection signed off — work record updated with county",
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
@@ -1105,7 +1105,7 @@ export function HomeRewiring() {
               </h2>
               <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
                 Home rewiring across Murrieta, Temecula, and the Inland Empire.
-                Written scopes, permitted work, and insurance-ready documentation.
+                Written scopes, code-compliant work, and insurance-ready documentation.
                 Call now or schedule a wiring assessment — our electrical team
                 picks up.
               </p>
@@ -1137,7 +1137,7 @@ export function HomeRewiring() {
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-center text-sm max-w-2xl mx-auto">
               <div className="flex items-center gap-2">
                 <FileCheck className="h-4 w-4 text-green-400" />
-                <span className="text-gray-300">Permitted Work</span>
+                <span className="text-gray-300">Code-Compliant Work</span>
               </div>
               <div className="flex items-center gap-2">
                 <Shield className="h-4 w-4 text-green-400" />

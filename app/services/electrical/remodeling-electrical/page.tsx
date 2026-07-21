@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title:
       "Electrical Contractor Murrieta Remodel | Rough-In & Finish Wiring | Gardner Plumbing Co.",
     description:
-      "Licensed remodeling electrician in Murrieta and the Inland Empire. Rough-in, finish wiring, permits, and multi-trade coordination with plumbing and HVAC. Call (951) 246-4337.",
+      "Licensed remodeling electrician in Murrieta and the Inland Empire. Rough-in, finish wiring, permit coordination, and multi-trade coordination with plumbing and HVAC. Call (951) 246-4337.",
     url: "https://gardnerplumbingco.com/services/electrical/remodeling-electrical",
   },
   alternates: {
@@ -25,7 +25,7 @@ const faqs = [
     question:
       "Do I need a permit for electrical work during a kitchen or bathroom remodel in Murrieta?",
     answer:
-      "Yes. Any new circuit, panel modification, or wiring change in a remodel requires a permit from the City of Murrieta Building Department. That includes new outlet circuits in a kitchen remodel, exhaust fan wiring in a bathroom, or a dedicated circuit for a new appliance. The permit triggers a rough-in inspection (before drywall) and a final inspection (after finish wiring) — both are required for the permit to close. Unpermitted remodel electrical creates problems at resale and may not be covered if a wiring fault causes a loss. We pull the permit as part of every remodel electrical scope. See also our note on home rewiring at /services/electrical/home-rewiring if the remodel exposes outdated wiring that needs replacement.",
+      "Yes. Any new circuit, panel modification, or wiring change in a remodel requires a permit from the City of Murrieta Building Department. That includes new outlet circuits in a kitchen remodel, exhaust fan wiring in a bathroom, or a dedicated circuit for a new appliance. The permit triggers a rough-in inspection (before drywall) and a final inspection (after finish wiring) — both are required for the permit to close. Unpermitted remodel electrical creates problems at resale and may not be covered if a wiring fault causes a loss. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. See also our note on home rewiring at /services/electrical/home-rewiring if the remodel exposes outdated wiring that needs replacement.",
   },
   {
     question:
@@ -42,18 +42,18 @@ const faqs = [
   {
     question: "What electrical work does an ADU require in Riverside County?",
     answer:
-      "An ADU (accessory dwelling unit) in Riverside County requires its own electrical permit, separate from the main home's existing permit history. Typically this includes: a dedicated sub-panel fed from the main service (or a separate meter from SCE for a detached ADU), circuits for all habitable spaces per CA Title 24 energy code, GFCI protection in kitchens and bathrooms per NEC, arc-fault circuit interrupter (AFCI) protection in sleeping areas, and smoke/CO detector wiring per California residential code. Detached ADUs often require SCE coordination for the service connection. We handle the full scope — sub-panel, permit, inspection, and utility coordination — so the ADU electrical is complete and signed off before the county issues the certificate of occupancy.",
+      "An ADU (accessory dwelling unit) in Riverside County requires its own electrical permit, separate from the main home's existing permit history. Typically this includes: a dedicated sub-panel fed from the main service (or a separate meter from SCE for a detached ADU), circuits for all habitable spaces per CA Title 24 energy code, GFCI protection in kitchens and bathrooms per NEC, arc-fault circuit interrupter (AFCI) protection in sleeping areas, and smoke/CO detector wiring per California residential code. Detached ADUs often require SCE coordination for the service connection. We handle the full electrical scope — sub-panel installation and utility coordination. Permits are the property owner's responsibility; we can coordinate the paperwork and will list any permit fees as a pass-through line on your quote.",
   },
   {
     question:
       "Can you handle the electrical if we're also adding plumbing and HVAC to the remodel?",
     answer:
-      "Yes — that's the scenario where our multi-trade structure saves the most time. Kitchen remodels requiring new gas lines or water supply changes, bathroom additions needing drain rough-in alongside electrical, or new HVAC mini-split systems needing dedicated circuits — we coordinate all three trades on the same project. One schedule, one point of contact, one permit coordinator. Our HVAC services at /services/hvac/ac-installation include mini-split and heat pump installations that require dedicated electrical circuits, which our electricians rough-in and finish as part of the same job. If the remodel also exposes outdated wiring, our home rewiring page at /services/electrical/home-rewiring outlines how we handle that scope.",
+      "Yes — that's the scenario where our multi-trade structure saves the most time. Kitchen remodels requiring new gas lines or water supply changes, bathroom additions needing drain rough-in alongside electrical, or new HVAC mini-split systems needing dedicated circuits — we coordinate all three trades on the same project. One schedule, one point of contact. Our HVAC services at /services/hvac/ac-installation include mini-split and heat pump installations that require dedicated electrical circuits, which our electricians rough-in and finish as part of the same job. If the remodel also exposes outdated wiring, our home rewiring page at /services/electrical/home-rewiring outlines how we handle that scope.",
   },
   {
     question: "How much does remodel electrical work cost in Murrieta?",
     answer:
-      "Remodel electrical cost depends on scope. A standard kitchen remodel electrical package — new circuits for refrigerator, dishwasher, microwave, and counter outlets plus recessed lighting rough-in — typically runs $2,500 to $5,000, permit included. A bathroom addition with exhaust fan, GFCI circuits, and light fixture wiring typically runs $800 to $2,000. An ADU with sub-panel installation runs $3,000 to $7,000 depending on distance from the main panel and whether a separate SCE meter is required. All quotes are written and issued per phase — rough-in and finish — before work begins. Panel upgrades at /services/electrical/electrical-panel-upgrade may be required if the remodel adds significant load; we flag that in the assessment.",
+      "Remodel electrical cost depends on scope. A standard kitchen remodel electrical package — new circuits for refrigerator, dishwasher, microwave, and counter outlets plus recessed lighting rough-in — typically runs $2,500 to $5,000 for labor and materials (permit fees listed separately as a pass-through line where required). A bathroom addition with exhaust fan, GFCI circuits, and light fixture wiring typically runs $800 to $2,000. An ADU with sub-panel installation runs $3,000 to $7,000 depending on distance from the main panel and whether a separate SCE meter is required. All quotes are written and issued per phase — rough-in and finish — before work begins. Panel upgrades at /services/electrical/electrical-panel-upgrade may be required if the remodel adds significant load; we flag that in the assessment.",
   },
 ];
 

@@ -125,7 +125,7 @@ const services = [
       "Old Unit Removal & Disposal",
       "Refrigerant Line Upgrade",
       "R-410A / R-32 Systems",
-      "Permit Coordination",
+      "Code-Compliant Installation",
     ],
   },
   {
@@ -153,7 +153,7 @@ const benefits = [
     icon: Shield,
     title: "Licensed HVAC Technicians",
     description:
-      "Every technician carries a valid CA HVAC license and passes background verification. Installation is permitted and inspected where Riverside County requires it.",
+      "Every technician carries a valid CA HVAC license and passes background verification. All installations meet Riverside County code requirements.",
   },
   {
     icon: DollarSign,
@@ -165,7 +165,7 @@ const benefits = [
     icon: Award,
     title: "30+ Years Serving the IE",
     description:
-      "Three decades in Riverside County means we know local permit requirements, utility rebate programs, and which systems hold up best in IE summer conditions.",
+      "Three decades in Riverside County means we know local code requirements, utility rebate programs, and which systems hold up best in IE summer conditions.",
   },
 ];
 
@@ -248,7 +248,7 @@ const faqs = [
     question:
       "Do I need a permit for AC installation in Murrieta or Riverside County?",
     answer:
-      "In most cases, yes. Riverside County and the City of Murrieta require a mechanical permit for new AC installations and replacements that involve refrigerant line work or electrical modifications. We handle permit coordination as part of the installation process — you don't need to file anything separately. The permit ensures the installation is inspected by a licensed building inspector, which also protects your homeowner's insurance coverage and future resale value. Ask about permit requirements when you call for your quote.",
+      "In most cases, yes. Riverside County and the City of Murrieta require a mechanical permit for new AC installations and replacements that involve refrigerant line work or electrical modifications. Permits are the homeowner's responsibility under California law. We'll tell you upfront if your job requires one and can coordinate the paperwork on your behalf — permit fees appear as a separate pass-through line on your quote. A properly permitted installation is inspected by a licensed building inspector, which protects your homeowner's insurance coverage and future resale value.",
   },
 ];
 
@@ -567,7 +567,7 @@ export function AcInstallation() {
                     "All electrical connections torqued and confirmed at disconnect and breaker",
                     "Airflow balanced across every supply register before we leave",
                     "Thermostat programmed and tested through a full cooling cycle",
-                    "Permit filed and inspection scheduled (where required by Riverside County)",
+                    "City permit coordination available where Riverside County requires it — listed as a pass-through line on your quote",
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />

@@ -139,12 +139,12 @@ Inland Empire homes run on more electrical load than ever — EV chargers, smart
 - Icon: `Car`
 - Title: `EV Charger Installation`
 - URL: `/services/electrical/ev-charger-installation`
-- Description: `Level 2 home EV charger installation with panel assessment, dedicated circuit, and permit filing — the highest-demand electrical upgrade in Murrieta right now.`
+- Description: `Level 2 home EV charger installation with panel assessment, dedicated circuit, and NEC 625 compliant wiring — the highest-demand electrical upgrade in Murrieta right now.`
 - Features:
   1. Level 2 Charger Installation
   2. Panel Capacity Check
   3. Dedicated 240V Circuit
-  4. Permit Filing Included
+  4. Code-Compliant Installation
 
 ### Before/After Section
 
@@ -159,7 +159,7 @@ What a Properly Upgraded Electrical System Does for Your Home
 3. Wiring that meets current NEC code — not the 1990s standard the house was built to
 4. A whole-home surge protector standing between your electronics and the next SCE grid event
 5. Pool, spa, and outdoor electrical that meets NEC Article 680 bonding and GFCI requirements
-6. One licensed electrical contractor who pulled a permit and signed the work — no gray-market installs
+6. One licensed electrical contractor who signs the work under a C-10 license — no gray-market installs
 
 ### Before/After Image Placeholder
 ```
@@ -337,7 +337,7 @@ Ready to Schedule Electrical Service in Murrieta?
 
 ### Supporting Paragraph
 ```
-Complete electrical services across Murrieta, Temecula, and the Inland Empire. Licensed electricians, upfront pricing, permitted work, and a 24/7 emergency line. Call now or schedule online — our electrical team picks up.
+Complete electrical services across Murrieta, Temecula, and the Inland Empire. Licensed electricians, upfront pricing, code-compliant work, and a 24/7 emergency line. Call now or schedule online — our electrical team picks up.
 ```
 *(33 words)*
 

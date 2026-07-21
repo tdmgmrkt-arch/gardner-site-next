@@ -31,7 +31,7 @@ const pillars = [
     icon: BadgeCheck,
     title: "Fully Licensed, Bonded & Insured",
     description:
-      "CSLB #1073177, fully bonded, fully insured. We pull permits and handle inspections on every job that requires them.",
+      "CSLB #1073177, fully bonded, fully insured.",
   },
 ];
 

@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "How long does a full home rewire take?",
     answer:
-      "A full rewire on a typical Inland Empire single-family home — 1,500 to 2,500 square feet — takes 3 to 7 days of electrical work, depending on access conditions and panel status. Permit processing adds 3 to 7 business days before we can start. Total project timeline from signed scope to final inspection runs 2 to 3 weeks in most cases. Partial rewires (single room or zone) typically take 1 to 2 days on-site. We schedule city inspections as part of the project — homeowners do not need to manage that step independently. If you're also doing a panel upgrade, we coordinate both at the same time.",
+      "A full rewire on a typical Inland Empire single-family home — 1,500 to 2,500 square feet — takes 3 to 7 days of electrical work, depending on access conditions and panel status. Permit processing (if required) adds 3 to 7 business days before electrical work can begin. Total project timeline from signed scope to final inspection runs 2 to 3 weeks in most cases. Partial rewires (single room or zone) typically take 1 to 2 days on-site. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed. If you're also doing a panel upgrade, we coordinate both at the same time.",
   },
   {
     question: "Does a home rewire require opening the walls?",
@@ -49,7 +49,7 @@ const faqs = [
   {
     question: "How much does home rewiring cost in Murrieta?",
     answer:
-      "Costs vary significantly based on scope. A single-circuit addition or correction runs $300 to $800. A partial rewire covering one room or zone typically ranges from $1,500 to $4,000. A full home rewire — all circuits replaced, permit pulled, inspection completed — generally runs $8,000 to $18,000 for a standard Inland Empire single-family home, with cost driven by square footage, access conditions, and whether a panel upgrade is included. We provide itemized written quotes after the assessment visit. There is no charge for the assessment on rewiring projects. For projects where cost is a concern, our financing page at /financing covers available payment options — including 0% deferred financing on qualifying electrical work.",
+      "Costs vary significantly based on scope. A single-circuit addition or correction runs $300 to $800. A partial rewire covering one room or zone typically ranges from $1,500 to $4,000. A full home rewire — all circuits replaced, inspection completed — generally runs $8,000 to $18,000 for a standard Inland Empire single-family home, with cost driven by square footage, access conditions, and whether a panel upgrade is included. Permit fees are listed as a pass-through line on your quote where required. We provide itemized written quotes after the assessment visit. There is no charge for the assessment on rewiring projects. For projects where cost is a concern, our financing page at /financing covers available payment options — including 0% deferred financing on qualifying electrical work.",
   },
 ];
 

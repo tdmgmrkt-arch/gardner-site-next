@@ -162,7 +162,7 @@ const benefits = [
     icon: Shield,
     title: "Licensed HVAC Technicians",
     description:
-      "Every installation is performed by a licensed CA HVAC technician. Refrigerant handling is EPA 608 certified. Electrical work is permitted where required.",
+      "Every installation is performed by a licensed CA HVAC technician. Refrigerant handling is EPA 608 certified. Permit coordination is available where required.",
   },
   {
     icon: Award,

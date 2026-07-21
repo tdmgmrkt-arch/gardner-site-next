@@ -158,7 +158,7 @@ const benefits = [
     icon: DollarSign,
     title: "Upfront Installation Pricing",
     description:
-      "Full itemized quote — equipment, labor, electrical work, permit, and haul-away — before any work begins. Financing available for qualified homeowners.",
+      "Full itemized quote — equipment, labor, electrical work, and haul-away — before any work begins. Permit fees listed separately as a pass-through line where required. Financing available for qualified homeowners.",
   },
   {
     icon: Award,

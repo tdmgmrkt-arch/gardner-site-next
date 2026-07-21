@@ -62,7 +62,7 @@ const coverageGroups = [
     ],
   },
   {
-    label: "Coachella Valley",
+    label: "Extended Service Area",
     cities: [
       "Palm Springs",
       "Palm Desert",
@@ -71,11 +71,11 @@ const coverageGroups = [
       "Banning",
       "Beaumont",
       "Cherry Valley",
+      "Redlands",
+      "Yucaipa",
+      "Mentone",
+      "Calimesa",
     ],
-  },
-  {
-    label: "Eastern San Bernardino County",
-    cities: ["Redlands", "Yucaipa", "Mentone", "Calimesa"],
   },
 ];
 
@@ -208,7 +208,7 @@ const promise = [
   {
     icon: Shield,
     title: "Fully Licensed, Bonded & Insured",
-    desc: "CSLB #1073177, fully bonded, fully insured. We pull permits and handle inspections on every job that requires them.",
+    desc: "CSLB #1073177, fully bonded, fully insured.",
   },
 ];
 
@@ -216,7 +216,7 @@ const faqs = [
   {
     question: "How quickly does Gardner Plumbing respond to emergency calls?",
     answer:
-      "Within Gardner Plumbing's core service area — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, and surrounding cities across Riverside County, eastern San Bernardino County, and the Coachella Valley — technicians typically arrive within a 45-minute window from the time of the call. Response times to outlying communities depend on traffic conditions and technician location at the time of dispatch.",
+      "Within Gardner Plumbing's core service area — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, and surrounding cities across Riverside County and neighboring communities — technicians typically arrive within a 45-minute window from the time of the call. Response times to outlying communities depend on traffic conditions and technician location at the time of dispatch.",
   },
   {
     question: "Does someone always answer the phone, even at 3 a.m.?",
@@ -357,7 +357,7 @@ export function Emergency({ reviewCount = "900+", ratingLabel = "4.9" }: Emergen
               </h1>
 
               <p className="text-xl text-gray-300 mb-6 leading-relaxed max-w-xl">
-                Gardner Plumbing Co. provides around-the-clock emergency plumbing across Riverside County, eastern San Bernardino County, and the Coachella Valley. With{" "}
+                Gardner Plumbing Co. provides around-the-clock emergency plumbing across Riverside County and neighboring communities. With{" "}
                 <strong className="text-white">30+ years</strong> of experience,{" "}
                 <strong className="text-white">{reviewCount} five-star Google reviews</strong>, and a{" "}
                 <strong className="text-white">45-minute arrival window</strong> in our core service area — a trained technician can be at your door fast.
@@ -602,11 +602,11 @@ export function Emergency({ reviewCount = "900+", ratingLabel = "4.9" }: Emergen
               </span>
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Palm Springs, Palm Desert, Redlands, and Yucaipa. If your city is not listed below, call us directly — coverage for surrounding communities may be available.
+              Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore. If your city is not listed below, call us directly — coverage for surrounding communities may be available.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             {coverageGroups.map((group) => (
               <div
                 key={group.label}

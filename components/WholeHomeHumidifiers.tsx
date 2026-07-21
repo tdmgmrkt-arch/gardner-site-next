@@ -162,7 +162,7 @@ const benefits = [
     icon: Shield,
     title: "Licensed HVAC Installation",
     description:
-      "Humidifier wiring and plenum penetration require a licensed HVAC technician. Every install is permitted where required by Riverside County code.",
+      "Humidifier wiring and plenum penetration require a licensed HVAC technician. Permit coordination is available where required by Riverside County code.",
   },
   {
     icon: LinkIcon,

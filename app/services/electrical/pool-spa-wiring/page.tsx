@@ -44,7 +44,7 @@ const faqs = [
   {
     question: "Do I need a permit to add electrical to my pool in Murrieta?",
     answer:
-      "Yes — always. The City of Murrieta requires permits for all pool electrical work, including sub-panel installation, new circuits, bonding grid installation, and equipment hookup. Unpermitted pool electrical is a significant liability issue when selling a home and can result in your homeowner's insurance denying claims related to pool incidents. Our electricians pull all required permits, coordinate the inspection with the City of Murrieta Building & Safety Division, and obtain final sign-off. An electrical safety inspection before any new pool electrical work also documents the pre-existing condition of the system.",
+      "Yes — always. The City of Murrieta requires permits for all pool electrical work, including sub-panel installation, new circuits, bonding grid installation, and equipment hookup. Unpermitted pool electrical is a significant liability issue when selling a home and can result in your homeowner's insurance denying claims related to pool incidents. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. An electrical safety inspection before any new pool electrical work also documents the pre-existing condition of the system.",
   },
   {
     question: "Can I add pool lighting to an existing pool?",

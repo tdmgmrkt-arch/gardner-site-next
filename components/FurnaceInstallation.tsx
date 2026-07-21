@@ -108,12 +108,12 @@ const services = [
     icon: Zap,
     title: "Gas Furnace Installation",
     description:
-      "High-efficiency gas furnace installation for Inland Empire homes with existing gas service. We handle the gas line connection, flue venting, and city permit pull.",
+      "High-efficiency gas furnace installation for Inland Empire homes with existing gas service. We handle the gas line connection and flue venting — code-compliant installation every time.",
     features: [
       "80% & 96% AFUE Options",
       "Gas Line Connection",
       "Flue Venting & Exhaust",
-      "Permit Coordination",
+      "Code-Compliant Installation",
     ],
   },
   {
@@ -153,7 +153,7 @@ const benefits = [
     icon: Shield,
     title: "Licensed HVAC Technicians",
     description:
-      "Every technician carries a valid CA HVAC license. We pull permits where required and schedule city inspections.",
+      "Every technician carries a valid CA HVAC license. All installations are code-compliant and documented.",
   },
   {
     icon: DollarSign,
@@ -240,7 +240,7 @@ const faqs = [
   {
     question: "Do I need a permit for furnace installation in Murrieta?",
     answer:
-      "Yes. The City of Murrieta requires a mechanical permit for HVAC equipment installation, including furnace replacement. Our team pulls the permit before work begins and coordinates the final inspection with the city. Do not use a contractor who skips the permit — an unpermitted system can void your homeowner's insurance, complicate a home sale, and leave you without a code-compliant installation. Permit fees are included in our upfront written quote.",
+      "Yes. The City of Murrieta requires a mechanical permit for HVAC equipment installation, including furnace replacement. Permits are the homeowner's responsibility under California law. We'll tell you upfront if your job requires one and can coordinate the paperwork on your behalf — permit fees appear as a separate pass-through line on your quote. Do not use a contractor who skips the permit — an unpermitted system can void your homeowner's insurance and complicate a home sale.",
   },
   {
     question: "How long does furnace installation take?",

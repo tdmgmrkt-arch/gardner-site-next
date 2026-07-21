@@ -27,7 +27,7 @@ export function MaintenanceAgreement() {
   const maintenanceFeatures = [
     { icon: Wrench, title: "Up to 56 PT\nTune-Up", description: "Comprehensive system inspection and maintenance to keep your plumbing running smoothly.", features: ["Full System Check", "Performance Testing", "Safety Inspection", "Written Report"] },
     { icon: Clock, title: "24 Hour\nResponse Time", description: "Priority emergency service with guaranteed rapid response when you need it most.", features: ["Priority Service", "Emergency Response", "Weekend Coverage", "Holiday Service"] },
-    { icon: DollarSign, title: "Up to 25%\nDiscount on Repairs", description: "Significant savings on all repair services and parts with your maintenance agreement.", features: ["Repair Discounts", "Parts Savings", "Labor Discounts", "Equipment Savings"] },
+    { icon: DollarSign, title: "10%\nDiscount on Services", description: "10% off every plumbing, HVAC, or electrical service call on your membership.", features: ["Repair Discounts", "Parts Savings", "Labor Discounts", "Equipment Savings"] },
     { icon: Shield, title: "Extended\nWarranty", description: "Enhanced warranty coverage on all repairs and maintenance work performed.", features: ["Extended Coverage", "Parts Warranty", "Labor Warranty", "Peace of Mind"] }
   ];
 
@@ -39,24 +39,18 @@ export function MaintenanceAgreement() {
   ];
 
   const includedServices = [
-    "Up to 56 PT Tune-Up",
+    "2 plumbing maintenance visits per year",
+    "10% off plumbing services",
+    "1 free drain cleaning per year (with accessible cleanout)",
+    "Priority service — front of the dispatch queue",
+    "No emergency overtime charges (24/7)",
+    "Annual plumbing safety inspection",
+    "Written maintenance report",
     "Extend equipment life",
-    "24 hour response time",
-    "Priority Service",
-    "Fully Transferable",
-    "Annual Water heater flush",
-    "Never a premium charge",
-    "Up to 25% Discount on Repairs",
     "Maximize energy efficiency",
-    "Multi Year/Unit Discount",
-    "Annual Plumbing safety inspection",
-    "Comfort Guarantee (Hotel Stay)",
-    "Up to 10% Discount on new equipment purchases",
-    "Maintenance/Safety Inspections per year",
-    "Periodic specials and promotions",
-    "Extended warranty on repairs",
-    "One free drain clearing per year",
-    "Written Maintenance Report"
+    "Optional HVAC coverage add-on (+$99/yr)",
+    "Optional Electrical coverage add-on (+$49/yr)",
+    "Periodic specials and promotions"
   ];
 
   return (
@@ -121,7 +115,7 @@ export function MaintenanceAgreement() {
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
                   { icon: Clock, text: "Priority Service" },
-                  { icon: Shield, text: "25% Discount" },
+                  { icon: Shield, text: "10% Off Services" },
                   { icon: DollarSign, text: "Cost Savings" },
                   { icon: Phone, text: "24/7 Response" }
                 ].map((item, idx) => (
@@ -372,9 +366,10 @@ export function MaintenanceAgreement() {
                     <SelectValue placeholder="Select a plan" />
                   </SelectTrigger>
                   <SelectContent className="bg-gray-800 border-gray-700">
-                    <SelectItem value="bronze" className="text-white hover:bg-gray-700">Bronze - 1 Visit Per Year $99</SelectItem>
-                    <SelectItem value="silver" className="text-white hover:bg-gray-700">Silver - 2 Visits Per Year $179</SelectItem>
-                    <SelectItem value="gold" className="text-white hover:bg-gray-700">Gold - 3 Visits Per Year $249</SelectItem>
+                    <SelectItem value="plumbing" className="text-white hover:bg-gray-700">Plumbing Shield — $249/yr</SelectItem>
+                    <SelectItem value="plumbing-hvac" className="text-white hover:bg-gray-700">Plumbing + HVAC Shield — $348/yr</SelectItem>
+                    <SelectItem value="plumbing-electrical" className="text-white hover:bg-gray-700">Plumbing + Electrical Shield — $298/yr</SelectItem>
+                    <SelectItem value="plumbing-hvac-electrical" className="text-white hover:bg-gray-700">Plumbing + HVAC + Electrical Shield — $397/yr</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

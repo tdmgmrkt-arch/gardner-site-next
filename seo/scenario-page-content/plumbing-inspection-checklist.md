@@ -29,7 +29,7 @@ gbp_services_used:
 
 # Plumbing Inspection Checklist: What to Check Before You Buy (or Sign On) a Home
 
-A standard home inspection covers plumbing in about 20 minutes. A licensed plumber doing a dedicated plumbing inspection spends 60 to 90 minutes on the same system — and finds things a general inspector isn't trained or equipped to catch. A pre-purchase plumbing inspection typically costs $200 – $350. Catching a slab leak or corroded main line after closing costs $3,000 – $8,000 or more. Gardner Plumbing Co. performs pre-purchase plumbing inspections across Riverside County, the Coachella Valley, and eastern San Bernardino County, and delivers a written report you can hand to your real estate agent or use in seller concession negotiations.
+A standard home inspection covers plumbing in about 20 minutes. A licensed plumber doing a dedicated plumbing inspection spends 60 to 90 minutes on the same system — and finds things a general inspector isn't trained or equipped to catch. A pre-purchase plumbing inspection typically costs $200 – $350. Catching a slab leak or corroded main line after closing costs $3,000 – $8,000 or more. Gardner Plumbing Co. performs pre-purchase plumbing inspections across Riverside County and neighboring communities, and delivers a written report you can hand to your real estate agent or use in seller concession negotiations.
 
 _Last Updated: June 2026_
 
@@ -51,7 +51,7 @@ Residential water pressure should read between 40 and 80 PSI. Pressure above 80 
 The supply lines and drain lines are identified and documented: copper, PEX, PVC, CPVC, cast iron, or galvanized steel. Galvanized pipe is the major concern — it corrodes from the inside out, restricts flow, and can shed rust into the water supply. Homes in Corona, Hemet, and Perris built before 1985 frequently still have galvanized supply lines. That's a repiping conversation, and buyers deserve to know before they sign.
 
 **4. Water Heater — Age, Type, and Venting**
-A tank water heater has an 8- to 12-year service life. A unit 10 or more years old with signs of corrosion around the base or T&P valve is a near-term replacement. Inspectors note the serial number (manufacturer date is encoded in it), the fuel type, and whether the venting is intact and correctly pitched. Tankless units get checked for scale buildup — in hard-water Coachella Valley cities like Palm Springs and Palm Desert, an uncleaned tankless unit can lose 25 – 40% of its heating efficiency within 3 years.
+A tank water heater has an 8- to 12-year service life. A unit 10 or more years old with signs of corrosion around the base or T&P valve is a near-term replacement. Inspectors note the serial number (manufacturer date is encoded in it), the fuel type, and whether the venting is intact and correctly pitched. Tankless units get checked for scale buildup — in hard-water desert cities like Palm Springs and Palm Desert, an uncleaned tankless unit can lose 25 – 40% of its heating efficiency within 3 years.
 
 **5. Drain Flow Test — Every Fixture**
 Each sink, tub, and shower drain gets water run through it. Slow drains indicate partial blockages in the branch lines. A drain that backs up during a simple flow test signals a bigger obstruction in the main line — which requires a camera to diagnose properly. Don't skip a single fixture: drain problems are additive, and sellers know which bathroom runs slow.
@@ -66,7 +66,7 @@ This is the single most important item on this list. A sewer camera inspection r
 The isolation valves under every sink and behind every toilet are operated manually. Old compression valves — common in homes built before 2000 — frequently seize open or develop slow drips when turned. A seized valve means you can't isolate a leak without shutting off the main. Replacement is straightforward, but buyers should know the scope.
 
 **9. Hose Bibs and Outdoor Fixtures**
-Outdoor hose bibs are checked for drip leaks and freeze damage. This matters more than buyers expect in the Coachella Valley: Cathedral City, Palm Springs, and the eastern desert cities see enough cold snaps that non-freeze-resistant hose bibs crack. Split bibs are a common deferred repair that sellers miss.
+Outdoor hose bibs are checked for drip leaks and freeze damage. This matters more than buyers expect in the desert cities: Cathedral City, Palm Springs, and other eastern desert areas see enough cold snaps that non-freeze-resistant hose bibs crack. Split bibs are a common deferred repair that sellers miss.
 
 **10. Evidence of Past Slab Leaks**
 Riverside County and the Inland Empire sit predominantly on slab foundations. A history of slab leaks leaves physical evidence: mismatched flooring sections, fresh tile patches in otherwise worn floors, baseboards with water staining, or a water meter that moves when all fixtures are off. One prior slab leak is manageable. Multiple slab leak patches in the same home suggest a systemic supply-line failure — and a repiping estimate belongs in the buyer's pocket before close.
@@ -117,7 +117,7 @@ The 65-point inspection is more thorough than the plumbing portion of a standard
 
 ## Southern California-Specific Plumbing Concerns
 
-Riverside County homes present a specific set of plumbing risks that don't apply the same way in most other U.S. markets. Nearly all residential construction in the Inland Empire and Coachella Valley sits on a concrete slab — no crawl space, no basement. That means every supply line and drain line runs through or under the slab, making any leak a potential jackhammer job and making visual inspection of those lines impossible without a camera or electronic leak detection equipment. Soil movement is common in the desert-adjacent east county cities (Banning, Beaumont, Yucaipa), and that movement stresses embedded copper over time.
+Riverside County homes present a specific set of plumbing risks that don't apply the same way in most other U.S. markets. Nearly all residential construction across the Inland Empire and desert cities sits on a concrete slab — no crawl space, no basement. That means every supply line and drain line runs through or under the slab, making any leak a potential jackhammer job and making visual inspection of those lines impossible without a camera or electronic leak detection equipment. Soil movement is common in the desert-adjacent east county cities (Banning, Beaumont, Yucaipa), and that movement stresses embedded copper over time.
 
 The region's water supply is also among the hardest in California. Water from the Colorado River and Eastern Municipal Water District sources carries high calcium and magnesium concentrations. Over years, that mineral load calcifies inside water heaters, narrows supply valves, attacks copper soldering joints, and reduces tankless heater efficiency significantly. Homes in Palm Springs, Cathedral City, and Palm Desert show accelerated mineral wear on every fixture. Buyers of 1970s through 1990s homes in Corona, Hemet, Perris, and San Jacinto should specifically ask about pipe material and supply line age — that era's housing stock used galvanized pipe into the mid-1980s and original copper that is now 35 to 50 years old.
 
@@ -129,7 +129,7 @@ Gardner Plumbing Co. backs every inspection with The Gardner Promise — written
 
 **CSLB #1073177 · 900+ five-star Google reviews · 30+ years serving Southern California**
 
-Riverside County · San Bernardino County · Coachella Valley
+Serving 25 cities across Riverside County and neighboring communities
 
 ---
 
@@ -161,7 +161,7 @@ In California, the buyer typically pays for the plumbing inspection as part of d
 
 ### What if the inspection finds problems after I've already bought the house?
 
-Gardner Plumbing Co. serves homeowners at every stage — not just buyers in escrow. If you moved into a home and discovered plumbing problems that weren't disclosed, a licensed plumber can document the condition, estimate repair costs, and provide a written report that supports a disclosure complaint or legal claim. More practically: knowing what you have lets you prioritize repairs correctly and budget for them. Call (951) 246-4337 for a post-purchase plumbing inspection. Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley.
+Gardner Plumbing Co. serves homeowners at every stage — not just buyers in escrow. If you moved into a home and discovered plumbing problems that weren't disclosed, a licensed plumber can document the condition, estimate repair costs, and provide a written report that supports a disclosure complaint or legal claim. More practically: knowing what you have lets you prioritize repairs correctly and budget for them. Call (951) 246-4337 for a post-purchase plumbing inspection. Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities.
 
 ---
 
@@ -177,7 +177,7 @@ Gardner Plumbing Co. serves homeowners at every stage — not just buyers in esc
 
 ## Book a Pre-Purchase Plumbing Inspection
 
-Gardner Plumbing Co. serves homebuyers, real estate agents, and homeowners across Riverside County, the Coachella Valley, and eastern San Bernardino County — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Palm Springs, Palm Desert, Redlands, and Yucaipa.
+Gardner Plumbing Co. serves homebuyers, real estate agents, and homeowners across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore.
 
 A pre-purchase plumbing inspection from Gardner Plumbing Co. includes a 65-point evaluation, a written report, and a technician walkthrough of every finding. No trip fee. No pressure to proceed with repairs.
 

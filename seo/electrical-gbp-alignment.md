@@ -114,7 +114,7 @@ With HVAC, the brand-name hesitation is real but has precedent — plumbers and 
 **Reviews are the trust bridge.** The practical mitigation sequence:
 
 - HVAC reviews first. Get 5–8 HVAC-specific reviews on the profile before electrical launches — coordinate with ghl-engineer on the HVAC review request trigger post-job-completion. This establishes that Gardner does more than plumbing.
-- Electrical photos at launch. Upload at minimum 8–10 electrical-specific photos (panel work, EV charger installs, electrical permits pulled) the day electrical services go live. Google's photo context signals matter for query-surface matching.
+- Electrical photos at launch. Upload at minimum 8–10 electrical-specific photos (panel work, EV charger installs, code-compliant work documented) the day electrical services go live. Google's photo context signals matter for query-surface matching.
 - Electrical reviews as quickly as possible post-launch. Do not let the electrical vertical run for more than 30 days without at least 2–3 reviews mentioning electrical work by name.
 
 **Recommended launch sequence:**
@@ -180,7 +180,7 @@ If the client pushes back on the delay, the minimum viable sequential gap is 30 
 - [ ] Add GBP Services entries for all 14 electrical leaf pages using names from Section 3 above (split panel/service upgrade into two entries)
 - [ ] DBA conversation — flag to client-comms before electrical launch: "Gardner Home Services" or "Gardner Plumbing, Electric and Air" as options
 - [ ] Coordinate with ghl-engineer on HVAC review request trigger (prerequisite for electrical launch)
-- [ ] Upload 8–10 electrical-specific photos at electrical launch (panel upgrades, EV charger installs, permitted work)
+- [ ] Upload 8–10 electrical-specific photos at electrical launch (panel upgrades, EV charger installs, code-compliant work)
 - [ ] Update auto-poster `industry_context` in two phases: HVAC phase first, electrical phase only after electrical category is live in GBP
 - [ ] Flag "Remodeling and New Construction" page H1 to seo-writer — current name is context, not a service; consider "Electrical for Home Remodels and New Construction"
 - [ ] Flag "Smart Home Solutions" page H1 to seo-writer — rename to "Smart Home Wiring" or "Smart Home Electrical" for GBP coherence and search alignment

@@ -25,7 +25,7 @@ const faqs = [
     question:
       "Your name says 'Plumbing' — are you actually licensed to do electrical work?",
     answer:
-      "Yes. Gardner Plumbing Co. holds a California CSLB C-10 (Electrical) contractor license (license number {{CSLB_C10_LICENSE_TBD}}), separate from the C-36 plumbing license. California issues specific license classes for a reason — a C-10 license requires passing a trade exam on electrical code, safety, and installation standards. The company name reflects our origins, not our current scope. Our electrical team operates as a licensed electrical contractor, handles its own permits, and signs work under the C-10 license. Ask for the license number before booking any electrician in the Inland Empire — licensed or not is a meaningful difference.",
+      "Yes. Gardner Plumbing Co. holds a California CSLB C-10 (Electrical) contractor license (license number {{CSLB_C10_LICENSE_TBD}}), separate from the C-36 plumbing license. California issues specific license classes for a reason — a C-10 license requires passing a trade exam on electrical code, safety, and installation standards. The company name reflects our origins, not our current scope. Our electrical team operates as a licensed electrical contractor and signs work under the C-10 license. Ask for the license number before booking any electrician in the Inland Empire — licensed or not is a meaningful difference.",
   },
   {
     question: "What types of electrical work do you handle?",
@@ -36,7 +36,7 @@ const faqs = [
     question:
       "Do I need a permit for common electrical jobs in Murrieta?",
     answer:
-      "Most panel upgrades, EV charger installations, new circuit runs, and service entrance work require a permit through the City of Murrieta Building & Safety division or Riverside County Building Department. Straightforward like-for-like fixture replacements (swapping a light fixture, replacing an outlet) generally do not. Our team files permits on your behalf for all work that requires them — the permit process is built into the job, not an add-on. Unpermitted electrical work creates problems when you sell the home and voids equipment warranties.",
+      "Most panel upgrades, EV charger installations, new circuit runs, and service entrance work require a permit through the City of Murrieta Building & Safety division or Riverside County Building Department. Straightforward like-for-like fixture replacements (swapping a light fixture, replacing an outlet) generally do not. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. Unpermitted electrical work creates problems when you sell the home and voids equipment warranties.",
   },
   {
     question:

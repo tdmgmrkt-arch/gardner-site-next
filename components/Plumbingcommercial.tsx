@@ -69,7 +69,7 @@ export function Plumbingcommercial() {
       icon: Wrench,
       title: "Full-System Design & Install",
       desc: "Code-compliant design/build for new construction and tenant improvements.",
-      bullets: ["Value engineering", "Permit support", "As-builts & closeout"],
+      bullets: ["Value engineering", "As-builts & closeout"],
       link: "/contact-us",
     },
     {
@@ -140,7 +140,7 @@ export function Plumbingcommercial() {
     },
     {
       q: "Are permits and inspections included?",
-      a: "We coordinate permitting and inspections when required and include those costs in our proposals unless otherwise noted.",
+      a: "Permits are the property owner's responsibility under California law. We coordinate permitting and inspections when required and list those costs as a pass-through line in our proposals.",
     },
   ];
 

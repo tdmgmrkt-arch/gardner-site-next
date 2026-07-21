@@ -117,13 +117,11 @@ const services = [
   },
   {
     icon: FileCheck,
-    title: "Permitted EV Charger Installation",
+    title: "Code-Compliant EV Charger Installation",
     description:
-      "Riverside County and the City of Murrieta require a permit for Level 2 EV charger installation. We pull the permit as part of every installation — no unpermitted work, ever. The permit protects your insurance and confirms the installation meets NEC Article 625.",
+      "Riverside County and the City of Murrieta require a permit for Level 2 EV charger installation. Permits are the homeowner's responsibility under California law — we coordinate the paperwork on your behalf, and permit fees appear as a pass-through line on your quote. Every installation meets NEC Article 625.",
     features: [
-      "City Permit Pulled",
       "NEC 625 Compliant Install",
-      "City Inspection Included",
       "Documentation Provided",
     ],
   },
@@ -144,15 +142,15 @@ const services = [
 const benefits = [
   {
     icon: FileCheck,
-    title: "Permits Pulled, Always",
+    title: "Code-Compliant, Always",
     description:
-      "Every EV charger installation we complete is permitted and inspected. An unpermitted charger is a homeowner's insurance gap and a problem at resale. We handle the permit — it's part of the installation, not an add-on.",
+      "Every EV charger installation we complete meets NEC Article 625 and is inspection-ready. An unpermitted charger is a homeowner's insurance gap and a problem at resale. Permits are the homeowner's responsibility under California law — we coordinate on your behalf and list fees as a pass-through line.",
   },
   {
     icon: Activity,
     title: "Panel Assessment First",
     description:
-      "We check your panel capacity before scheduling the installation. If a panel upgrade is needed, we tell you upfront with a combined quote — not after we've already pulled the permit for just the charger.",
+      "We check your panel capacity before scheduling the installation. If a panel upgrade is needed, we tell you upfront with a combined quote — before any permit coordination begins.",
   },
   {
     icon: Shield,
@@ -164,7 +162,7 @@ const benefits = [
     icon: DollarSign,
     title: "Upfront Pricing",
     description:
-      "You receive a written quote that covers the circuit, the permit, the inspection, and the charger mounting — before we schedule. No add-ons after the job starts.",
+      "You receive a written quote that covers the circuit, any permit fees as a pass-through line, and the charger mounting — before we schedule. No add-ons after the job starts.",
   },
 ];
 
@@ -172,7 +170,7 @@ const faqs = [
   {
     question: "Do I need a permit to install a Level 2 EV charger in Murrieta?",
     answer:
-      "Yes. The City of Murrieta requires a permit for Level 2 (240V) EV charger installation. The permit triggers an electrical inspection to confirm the circuit meets NEC Article 625 — the code section governing EV charging equipment. This applies whether you're installing a hardwired unit or a NEMA 14-50 outlet. Unpermitted 240V circuits void homeowner's insurance for any fire or electrical damage claim originating from that circuit, and must be disclosed as unpermitted work during a home sale. Every installation our electrical team completes includes the permit and the inspection — it is built into our pricing, not billed as a separate item.",
+      "Yes. The City of Murrieta requires a permit for Level 2 (240V) EV charger installation. The permit triggers an electrical inspection to confirm the circuit meets NEC Article 625 — the code section governing EV charging equipment. This applies whether you're installing a hardwired unit or a NEMA 14-50 outlet. Unpermitted 240V circuits void homeowner's insurance for any fire or electrical damage claim originating from that circuit, and must be disclosed as unpermitted work during a home sale. Permits are the homeowner's responsibility under California law; we can coordinate the paperwork on your behalf and list permit fees as a separate pass-through line on your quote.",
   },
   {
     question:
@@ -340,7 +338,7 @@ export function EvChargerInstallation() {
                 {[
                   { icon: Zap, text: "Level 2 (240V) Installation" },
                   { icon: Shield, text: "Licensed & Insured" },
-                  { icon: FileCheck, text: "Permits Pulled — Always" },
+                  { icon: FileCheck, text: "NEC 625 Compliant" },
                   { icon: DollarSign, text: "Upfront Pricing" },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3 text-gray-300">
@@ -445,7 +443,7 @@ export function EvChargerInstallation() {
                   </div>
                 </Link>
                 <span className="text-red-100 font-semibold text-sm sm:text-base">
-                  Panel assessed · installation scheduled · permit included
+                  Panel assessed · installation scheduled · NEC 625 compliant
                 </span>
               </div>
             </div>
@@ -488,8 +486,8 @@ export function EvChargerInstallation() {
               outlet charges at 3 to 5 miles per hour. That is not a practical
               daily charger. A Level 2 (240V) installation charges at 20 to 30
               miles per hour. Our electricians assess your panel capacity, install
-              the dedicated circuit, and pull the permit — so the installation is
-              done right and ready for the city inspector. View our{" "}
+              the dedicated circuit, and ensure the work is code-compliant and
+              inspection-ready. View our{" "}
               <Link
                 href="/services/electrical/power"
                 className="text-red-400 hover:text-red-300 underline"
@@ -562,7 +560,7 @@ export function EvChargerInstallation() {
                   {[
                     "20–30 miles of range added per hour — full overnight charge for most EVs",
                     "Dedicated 240V circuit — no shared load with other appliances",
-                    "City permit closed — installation is on record and insurance-compliant",
+                    "Installation on record and insurance-compliant — permit coordination available as a pass-through service",
                     "Charger mounted at the right height and location for daily convenience",
                     "NEMA 14-50 outlet or hardwired connection per manufacturer spec",
                     "Panel capacity verified — no breaker trips from charger draw",
@@ -1080,7 +1078,7 @@ export function EvChargerInstallation() {
               </h2>
               <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
                 EV charger installation across Murrieta, Temecula, and the Inland
-                Empire. Panel assessment first, permits pulled, licensed
+                Empire. Panel assessment first, code-compliant wiring, licensed
                 electricians. Call now or schedule online — our electrical team
                 picks up.
               </p>
@@ -1112,7 +1110,7 @@ export function EvChargerInstallation() {
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-center text-sm max-w-2xl mx-auto">
               <div className="flex items-center gap-2">
                 <FileCheck className="h-4 w-4 text-green-400" />
-                <span className="text-gray-300">Permitted Work</span>
+                <span className="text-gray-300">NEC 625 Compliant</span>
               </div>
               <div className="flex items-center gap-2">
                 <Shield className="h-4 w-4 text-green-400" />

@@ -22,11 +22,15 @@ Mentone · Moreno Valley · Murrieta · North Palm Springs · Palm Springs ·
 Palm Desert · Pedley · Perris · Redlands · Riverside · San Jacinto ·
 Temecula · Yucaipa
 
-Geographic framing: "Riverside County, eastern San Bernardino County, and
-the Coachella Valley." Replace any PDF references to "Inland Empire and
-adjacent Orange County" with this framing — the older Orange County list
-(Yorba Linda, Anaheim Hills, Brea, Placentia, Fullerton, Orange, Villa
-Park, Diamond Bar, Walnut) is OUT.
+Geographic framing: "across Riverside County and neighboring communities."
+Do NOT use "eastern San Bernardino County," "the Coachella Valley," or any
+regional/county label beyond Riverside County. Gardner serves specific named
+cities within those regions — not the regions wholesale. When more detail is
+needed, name 3–5 specific in-scope cities instead of using a region label.
+Replace any PDF references to "Inland Empire and adjacent Orange County"
+with this framing — the older Orange County list (Yorba Linda, Anaheim
+Hills, Brea, Placentia, Fullerton, Orange, Villa Park, Diamond Bar, Walnut)
+is OUT.
 
 ## The Gardner Promise (brand)
 
@@ -44,8 +48,7 @@ Four pillars (use these exact labels):
 3. **No Trip Fees, No Pressure** — Free in-home estimates. No dispatch
    fee, no service-call fee, no obligation to proceed.
 4. **Fully Licensed, Bonded & Insured** — CSLB #1073177, fully bonded,
-   fully insured. We pull permits and handle inspections on every job
-   that requires them.
+   fully insured. Permit coordination is available where required; permit fees are listed as a pass-through line on your quote.
 
 ## Style rules
 
@@ -62,10 +65,10 @@ Four pillars (use these exact labels):
 ## Service area mention pattern
 
 Long form (use once near top of a page):
-"Gardner Plumbing Co. serves 25 cities across Riverside County, eastern
-San Bernardino County, and the Coachella Valley — including Murrieta,
-Temecula, Menifee, Riverside, Corona, Eastvale, Palm Springs, Palm
-Desert, Redlands, and Yucaipa."
+"Gardner Plumbing Co. serves 25 cities across Riverside County and
+neighboring communities — including Murrieta, Temecula, Menifee,
+Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake
+Elsinore."
 
 Short form (use in trust strips, footers, schema):
-"Riverside County · San Bernardino County · Coachella Valley"
+"Serving 25 cities across Riverside County and neighboring communities"

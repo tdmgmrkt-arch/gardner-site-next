@@ -55,7 +55,7 @@ const faqCategories = [
       { question: "When should I consider a whole-home repipe?", answer: "If you have frequent leaks, low water pressure, rusty water, or old galvanized/polybutylene piping." },
       { question: "What pipe materials do you install for repiping?", answer: "We primarily use high-quality Copper (Type L) and PEX (A/B) piping, depending on your home's needs and local codes." },
       { question: "How long does a repipe take?", answer: "Most single-family homes are completed in 1–3 days, plus time for any necessary wall patching." },
-      { question: "Will you handle permits and inspections for a repipe?", answer: "Yes, we manage all required permits and schedule inspections to ensure all work meets local codes." },
+      { question: "Will you handle permits and inspections for a repipe?", answer: "Whole-home repiping in Riverside County typically requires a building permit and a final inspection. Permits are the homeowner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote." },
       { question: "Is a repipe messy?", answer: "We take great care to minimize mess by using dust control measures and floor protection. We keep openings as small as possible and patch them after inspections." },
     ]
   },

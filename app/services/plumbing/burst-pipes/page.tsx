@@ -85,7 +85,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Emergency Burst Pipe Repair",
-  "description": "24/7 emergency burst pipe repair, leak detection, slab leak repair, frozen pipe thawing, and whole-home repiping for residential and commercial properties across Riverside County, eastern San Bernardino County, and the Coachella Valley.",
+  "description": "24/7 emergency burst pipe repair, leak detection, slab leak repair, frozen pipe thawing, and whole-home repiping for residential and commercial properties across Riverside County and neighboring communities.",
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",

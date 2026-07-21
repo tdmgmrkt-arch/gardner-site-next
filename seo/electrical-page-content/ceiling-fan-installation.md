@@ -191,7 +191,7 @@ Gardner Plumbing Co. is a licensed electrical contractor serving Murrieta, Temec
 **Card 2**
 - Icon: `Shield`
 - Title: `Licensed Electricians`
-- Description: `Every technician is a licensed CA electrician. We pull permits when required and leave your ceiling closed and clean.`
+- Description: `Every technician is a licensed CA electrician. We leave your ceiling closed and clean. Permit coordination is available where required.`
 
 **Card 3**
 - Icon: `Zap`

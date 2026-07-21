@@ -42,7 +42,7 @@ const faqs = [
     question:
       "Does pool wiring require special permits and inspections in Murrieta?",
     answer:
-      "Yes. Pool and spa electrical falls under NEC Article 680, which has specific requirements for bonding, GFCI protection, wire clearances, and underwater fixture ratings. The City of Murrieta and Riverside County both require a permit and inspection for pool electrical work. Unpermitted pool wiring is a safety issue — improperly bonded pools have caused electrocution incidents nationally. Our electricians pull the permit, complete the bonding and GFCI work, and schedule the inspection as part of the job.",
+      "Yes. Pool and spa electrical falls under NEC Article 680, which has specific requirements for bonding, GFCI protection, wire clearances, and underwater fixture ratings. The City of Murrieta and Riverside County both require a permit and inspection for pool electrical work. Unpermitted pool wiring is a safety issue — improperly bonded pools have caused electrocution incidents nationally. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote.",
   },
   {
     question:

@@ -8,14 +8,14 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata = {
   title: "Transparent Pricing",
   description:
-    "Gardner Plumbing Co. provides upfront, written pricing for all plumbing repairs and installations in Riverside County, San Bernardino County, and the Coachella Valley. No trip fees, no hidden charges — ever.",
+    "Gardner Plumbing Co. provides upfront, written pricing for all plumbing repairs and installations in Riverside County and neighboring communities. No trip fees, no hidden charges — ever.",
   alternates: {
     canonical: "/transparent-pricing",
   },
   openGraph: {
     title: "Transparent Pricing | Gardner Plumbing Co.",
     description:
-      "Gardner Plumbing Co. provides upfront, written pricing for all plumbing repairs and installations in Riverside County, San Bernardino County, and the Coachella Valley. No trip fees, no hidden charges — ever.",
+      "Gardner Plumbing Co. provides upfront, written pricing for all plumbing repairs and installations in Riverside County and neighboring communities. No trip fees, no hidden charges — ever.",
     url: "/transparent-pricing",
     images: ["/gardner_logo.webp"],
   },
@@ -23,7 +23,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Transparent Pricing | Gardner Plumbing Co.",
     description:
-      "Upfront, written plumbing pricing with no trip fees. Serving Riverside County, San Bernardino County, and the Coachella Valley for 30+ years.",
+      "Upfront, written plumbing pricing with no trip fees. Serving Riverside County and neighboring communities for 30+ years.",
   },
 };
 
@@ -53,7 +53,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Transparent Plumbing Pricing",
   description:
-    "Gardner Plumbing Co. provides free in-home estimates with written, flat-rate pricing for all plumbing services in Riverside County, eastern San Bernardino County, and the Coachella Valley. No trip fees, no surprise charges.",
+    "Gardner Plumbing Co. provides free in-home estimates with written, flat-rate pricing for all plumbing services in Riverside County and neighboring communities. No trip fees, no surprise charges.",
   provider: {
     "@type": "Plumber",
     name: "Gardner Plumbing Co.",
@@ -117,10 +117,10 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "How much does a plumber cost in Riverside County, eastern San Bernardino County, and the Coachella Valley?",
+      name: "How much does a plumber cost in Riverside County and neighboring communities?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For most standard service calls in Riverside County, eastern San Bernardino County, and the Coachella Valley, homeowners pay between $125 and $600. The average service call for a common repair such as a drain clearing or toilet fix typically falls between $150 and $450. More complex projects — water heater replacements, sewer line repairs, and slab leaks — range from $1,200 to $20,000 depending on scope.",
+        text: "For most standard service calls in Riverside County and neighboring communities, homeowners pay between $125 and $600. The average service call for a common repair such as a drain clearing or toilet fix typically falls between $150 and $450. More complex projects — water heater replacements, sewer line repairs, and slab leaks — range from $1,200 to $20,000 depending on scope.",
       },
     },
     {
@@ -192,7 +192,7 @@ const faqSchema = {
       name: "Does plumbing work require a permit in Southern California?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Many plumbing projects in Southern California require a permit, including water heater replacements, sewer line work, gas line modifications, and whole-home repiping. Gardner Plumbing Co. handles all required permits as part of the project. Permit fees, which typically range from $75 to $250, are included in the written estimate.",
+        text: "Many plumbing projects in Southern California require a permit, including water heater replacements, sewer line work, gas line modifications, and whole-home repiping. Permits and city inspections are the property owner's responsibility under California law. When your job requires them, we'll tell you upfront and can coordinate the paperwork on your behalf — permit fees appear as a separate pass-through line on your quote.",
       },
     },
     {

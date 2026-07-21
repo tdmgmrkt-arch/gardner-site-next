@@ -273,7 +273,7 @@ A: LED retrofit kits screw directly into an existing recessed can housing — th
 
 **Q4: Do I need a permit for lighting installation in Murrieta?**
 
-A: Adding new circuits or moving a circuit breaker for lighting requires a permit from the City of Murrieta Building & Safety Division. Replacing like-for-like fixtures on existing circuits generally does not. Our electricians pull all required permits before work begins — we handle the paperwork, the inspection scheduling, and the final sign-off. You don't need to coordinate with the city separately.
+A: Adding new circuits or moving a circuit breaker for lighting requires a permit from the City of Murrieta Building & Safety Division. Replacing like-for-like fixtures on existing circuits generally does not. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote.
 
 *(63 words)*
 

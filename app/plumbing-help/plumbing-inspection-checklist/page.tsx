@@ -206,7 +206,7 @@ export default async function PlumbingInspectionChecklistPage() {
         <GardnerPromise reviewCount={reviewCount} />
         <FinalCallCta
           heading="Book a Pre-Purchase Plumbing Inspection"
-          subheading="Gardner Plumbing Co. serves homebuyers, real estate agents, and homeowners across Riverside County, the Coachella Valley, and eastern San Bernardino County. A 65-point evaluation, a written report, and a technician walkthrough of every finding. No trip fee. No pressure to proceed with repairs. CSLB #1073177."
+          subheading="Gardner Plumbing Co. serves homebuyers, real estate agents, and homeowners across Riverside County and neighboring communities. A 65-point evaluation, a written report, and a technician walkthrough of every finding. No trip fee. No pressure to proceed with repairs. CSLB #1073177."
         />
       </main>
     </div>

@@ -29,21 +29,24 @@ import {
   Phone,
   Calendar,
   Award,
-  Star,
   Wrench,
-  FileText,
   ArrowRight,
   ArrowDown,
   HelpCircle,
   Zap,
   Home,
   TrendingDown,
+  Star,
 } from "lucide-react";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
 const PHONE_DISPLAY = "(951) 246-4337";
 const PHONE_HREF = "tel:9512464337";
+
+const BASE_PRICE = 249;
+const HVAC_ADD_PRICE = 99;
+const ELECTRICAL_ADD_PRICE = 49;
 
 // ─── Shared visual helpers ────────────────────────────────────────────────────
 
@@ -100,28 +103,28 @@ function SectionBadge({
 
 const pillars = [
   {
-    icon: FileText,
-    title: "Annual System Inspection",
+    icon: Calendar,
+    title: "Scheduled Maintenance Visits",
     description:
-      "A licensed Gardner Plumbing technician conducts a comprehensive plumbing health check of every accessible fixture, valve, drain, and supply line. You receive a written report — not just a verbal summary.",
-  },
-  {
-    icon: Wrench,
-    title: "Scheduled Maintenance",
-    description:
-      "Proactive care on a set schedule: water heater flush, drain health check, fixture tune-up, and pressure test. We catch small problems before they turn into emergency calls.",
+      "Two proactive plumbing tune-ups per year — done on a set schedule so small problems get caught before they turn into emergency calls.",
   },
   {
     icon: Zap,
-    title: "Priority Emergency Access",
+    title: "Priority Service",
     description:
       "Shield members go to the front of the dispatch queue, 24 hours a day, 7 days a week. When the water is running where it shouldn't be, you don't wait behind the general queue.",
   },
   {
-    icon: ShieldCheck,
-    title: "Extended Warranty Coverage",
+    icon: Clock,
+    title: "No Emergency Overtime",
     description:
-      "Parts and labor on covered repairs are backed beyond the standard warranty window. The tier you hold determines how many years of extended coverage you receive.",
+      "Nights, weekends, and holidays are billed at standard rates for Shield members. The surcharge that non-members pay for after-hours work is waived.",
+  },
+  {
+    icon: TrendingDown,
+    title: "Member Discounts",
+    description:
+      "10% off every repair or service call, plus one free drain cleaning per year with an accessible cleanout. The membership pays for itself on a single mid-size repair.",
   },
 ];
 
@@ -129,17 +132,17 @@ const howItWorksSteps = [
   {
     title: "Sign Up",
     detail:
-      "Call us or complete the contact form. We confirm your tier, address, and billing — takes about five minutes.",
+      "Call us or complete the contact form. We confirm your plan, address, and billing — takes about five minutes.",
   },
   {
-    title: "First Inspection Scheduled",
+    title: "First Visit Scheduled",
     detail:
-      "We reach out within one business day to book your first annual inspection at a time that works for you.",
+      "We reach out within one business day to book your first maintenance visit at a time that works for you.",
   },
   {
     title: "Shield Welcome Packet",
     detail:
-      "You receive your member card and written summary of what's covered, your inspection report, and your maintenance schedule.",
+      "You receive your member confirmation and a written summary of what's covered, your inspection report, and your maintenance schedule.",
   },
   {
     title: "Maintenance on Auto-Schedule",
@@ -148,41 +151,71 @@ const howItWorksSteps = [
   },
 ];
 
+const bronzeIncludes = [
+  "2 plumbing maintenance visits per year",
+  "10% off plumbing services",
+  "1 free drain cleaning per year (with accessible cleanout)",
+  "Priority service — front of the dispatch queue",
+  "No emergency overtime charges (24/7)",
+  "Annual plumbing safety inspection",
+  "Written inspection report",
+];
+
+const silverIncludes = [
+  "Everything in Bronze (full plumbing coverage)",
+  "2 HVAC tune-ups per year (spring AC + fall heating)",
+  "10% off HVAC services",
+  "Priority HVAC service",
+  "No emergency overtime on HVAC calls",
+  "Refrigerant level check every tune-up",
+  "Priority scheduling during summer AC failures",
+];
+
+const goldIncludes = [
+  "Everything in Silver (plumbing + HVAC coverage)",
+  "Annual electrical safety inspection",
+  "10% off electrical services",
+  "Priority electrical service",
+  "No emergency overtime on electrical calls",
+  "Priority response after storms & outages",
+  "Whole-home electrical safety report",
+];
+
 const faqs = [
   {
     question: "What does The Gardner Shield include?",
     answer:
-      "Every Gardner Shield membership includes an annual plumbing system inspection with a written report, scheduled maintenance visits (frequency depends on your tier), priority emergency dispatch, and extended warranty coverage on parts and labor for covered repairs. Silver Shield and Gold Shield members receive additional visits per year — 2 and 3 visits respectively.",
+      "The base Plumbing Shield ($249/year) includes two plumbing maintenance visits, one free drain cleaning per year (with an accessible cleanout), 10% off plumbing services, priority service, and no emergency overtime charges. You can add HVAC coverage (+$99/year) and/or Electrical coverage (+$49/year) at any time to extend the same benefits to those trades.",
   },
   {
     question: "How is The Gardner Shield different from a warranty?",
     answer:
-      "A warranty is reactive — it kicks in after something breaks. The Gardner Shield is proactive. It bundles scheduled maintenance designed to prevent failures in the first place, plus priority access and discounts when repairs are needed. The extended warranty component is one layer of the Shield, not the whole thing.",
+      "A warranty is reactive — it kicks in after something breaks. The Gardner Shield is proactive. It bundles scheduled maintenance designed to prevent failures in the first place, plus priority access, no overtime charges, and 10% off repairs when they are needed.",
+  },
+  {
+    question: "Can I add HVAC or Electrical coverage later?",
+    answer:
+      "Yes. You can start with the base Plumbing Shield and add HVAC (+$99/year) or Electrical (+$49/year) at any point during your membership year. The add-ons are prorated so you only pay for the remaining months.",
   },
   {
     question: "Can I cancel my Gardner Shield membership?",
     answer:
-      "Yes. Month-to-month memberships can be cancelled at any time with 30 days notice. Annual memberships paid up front can be cancelled for a prorated refund of unused months, minus any discounts already applied to repairs during the membership period. Call our office at (951) 246-4337 for details.",
+      "Yes. Annual memberships can be cancelled for a prorated refund of unused months, minus any member discounts already applied to repairs during the membership period. Call our office at (951) 246-4337 for details.",
   },
   {
     question: "Does The Gardner Shield cover emergency repairs?",
     answer:
-      "The Shield guarantees priority dispatch for emergency calls — you move to the front of the queue immediately. Repair costs are billed at your member discount rate. The Shield does not cover the cost of every emergency repair, but your tier discount and extended warranty apply to eligible work.",
-  },
-  {
-    question: "Can I transfer my Gardner Shield membership to a new home?",
-    answer:
-      "Gold Shield memberships are fully transferable to a new home address within our service area, which makes them a selling point when you list your property. Bronze Shield and Silver Shield memberships can be transferred for a $50 administration fee. Call us to process a transfer.",
+      "The Shield guarantees priority dispatch for emergency calls — you move to the front of the queue immediately — and there is no overtime charge for after-hours work. Repair costs are billed at your 10% member discount rate. The Shield does not pay for the full cost of every emergency repair, but the discount and no-overtime benefit apply to eligible work.",
   },
   {
     question: "What if I already have a home warranty?",
     answer:
-      "Home warranties and The Gardner Shield serve different purposes and work well together. Home warranties are insurance products that require claim filings, deductibles, and third-party contractor dispatch — often with service delays. The Gardner Shield gives you a direct relationship with a licensed plumber you already trust, proactive maintenance your home warranty won't provide, and faster service when you need it.",
+      "Home warranties and The Gardner Shield serve different purposes and work well together. Home warranties are insurance products that require claim filings, deductibles, and third-party contractor dispatch — often with service delays. The Gardner Shield gives you a direct relationship with a licensed contractor you already trust, proactive maintenance your home warranty won't provide, and faster service when you need it.",
   },
   {
     question: "What isn't covered by The Gardner Shield?",
     answer:
-      "The Shield is focused on plumbing system maintenance and covered repairs — a few things sit outside that scope: pre-existing conditions at sign-up (unless flagged in your inspection report), damage from third-party work or DIY repairs, cosmetic damage to fixtures or finishes, slab leak repairs (inspections are covered; repairs are billed at your member rate), appliances not connected to plumbing, and code-upgrade work required by city permit. If you're not sure whether something is covered, call us before the work — we'll tell you straight.",
+      "The Shield is focused on system maintenance and member pricing on repairs — a few things sit outside that scope: pre-existing conditions at sign-up (unless flagged in your inspection report), damage from third-party work or DIY repairs, cosmetic damage to fixtures or finishes, slab leak repairs (inspections are covered; repairs are billed at your member rate), appliances not connected to plumbing, and code-upgrade work required by city permit. If you're not sure whether something is covered, call us before the work — we'll tell you straight.",
   },
 ];
 
@@ -257,7 +290,7 @@ export function GardnerShield({
               </h1>
 
               <p className="text-xl text-gray-300 mb-4 leading-relaxed">
-                Year-Round Protection for Your Home&rsquo;s Plumbing
+                Year-Round Home Systems Protection — Plumbing, HVAC &amp; Electrical
               </p>
 
               {/* Trust strip */}
@@ -269,10 +302,10 @@ export function GardnerShield({
               {/* Key benefits grid */}
               <div className="grid grid-cols-2 gap-4 mb-10">
                 {[
-                  { icon: ShieldCheck, text: "Priority emergency access" },
-                  { icon: TrendingDown, text: "up to 10% repair discount" },
+                  { icon: ShieldCheck, text: "Priority service, 24/7" },
+                  { icon: TrendingDown, text: "10% off every service" },
+                  { icon: Clock, text: "No emergency overtime" },
                   { icon: Wrench, text: "Proactive maintenance" },
-                  { icon: Award, text: "Extended warranty coverage" },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3 text-gray-300">
                     <item.icon
@@ -361,7 +394,7 @@ export function GardnerShield({
               </span>
             </h2>
             <p className="text-lg sm:text-xl text-white font-semibold leading-relaxed max-w-4xl mx-auto">
-              Most homeowners only call a plumber when something breaks.{" "}
+              Most homeowners only call when something breaks.{" "}
               <span className="text-red-400">
                 The Gardner Shield is built on the opposite idea.
               </span>
@@ -377,24 +410,23 @@ export function GardnerShield({
                 <div className="space-y-5 text-gray-300 text-[16px] lg:text-[17px] leading-relaxed">
                   <p>
                     The Gardner Shield is Gardner Plumbing Co.&rsquo;s named membership program
-                    for Riverside County homeowners. It bundles annual inspections, scheduled
-                    maintenance visits, priority emergency dispatch, and extended warranty
-                    coverage into <span className="text-white font-semibold">one simple annual membership</span> — so your
-                    plumbing is being looked after on a regular schedule, not just when something
-                    goes wrong.
+                    for Riverside County homeowners. It starts with the Plumbing Shield at{" "}
+                    <span className="text-white font-semibold">${BASE_PRICE}/year</span> and lets
+                    you add HVAC or Electrical coverage as you need it — so your whole home is
+                    being looked after on a regular schedule, not just when something goes wrong.
                   </p>
                   <p>
                     This is <span className="text-white font-semibold">not a warranty plan</span>.
                     It&rsquo;s not a service contract with fine print designed to avoid paying out.
-                    It&rsquo;s a direct relationship with the same licensed plumbing company that&rsquo;s
+                    It&rsquo;s a direct relationship with the same licensed contractor that&rsquo;s
                     been serving Murrieta, Temecula, and the greater Riverside County area for
                     <span className="text-red-400 font-semibold"> 30+ years</span> — now on a schedule,
                     not just on a crisis.
                   </p>
                   <p>
-                    Shield members get better pricing on repairs, faster response on emergencies,
-                    and the peace of mind that comes from knowing a professional has actually
-                    looked at your plumbing system in the last twelve months.
+                    Shield members get 10% off every repair, priority service 24/7, no emergency
+                    overtime charges, and the peace of mind that comes from knowing a professional
+                    has actually looked at your systems in the last twelve months.
                   </p>
                 </div>
               </div>
@@ -406,7 +438,7 @@ export function GardnerShield({
                 {
                   icon: Calendar,
                   title: "Scheduled, Not Reactive",
-                  body: "Annual inspections and maintenance visits on a set cadence — not a panic call.",
+                  body: "Maintenance visits on a set cadence — not a panic call.",
                 },
                 {
                   icon: Zap,
@@ -415,13 +447,13 @@ export function GardnerShield({
                 },
                 {
                   icon: TrendingDown,
-                  title: "Better Pricing on Repairs",
-                  body: "Member rates on every repair, plus extended warranty coverage on the work.",
+                  title: "10% Off Every Service",
+                  body: "Universal member rate on plumbing, HVAC, and electrical work — no overtime charges either.",
                 },
                 {
                   icon: Home,
                   title: "Built for Riverside County Homes",
-                  body: "Designed around the plumbing systems and water conditions we see every day locally.",
+                  body: "Designed around the systems and conditions we see every day locally.",
                 },
               ].map((item, i) => {
                 const Icon = item.icon;
@@ -465,8 +497,8 @@ export function GardnerShield({
               </span>
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Every Gardner Shield tier — Bronze, Silver, and Gold — is built on
-              these four commitments.
+              Every Gardner Shield membership — whether plumbing-only or with HVAC and
+              Electrical stacked on — is built on these four commitments.
             </p>
           </div>
 
@@ -617,14 +649,14 @@ export function GardnerShield({
               </span>
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Three tiers. Every one includes the 4 Shield Pillars. Choose the level
-              of coverage that fits your home.
+              Three tiers. Start with plumbing and stack HVAC or full home coverage
+              as you need it. Every tier includes the 4 Shield Pillars.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
 
-            {/* Shield Bronze */}
+            {/* Bronze — Plumbing Shield */}
             <div
               className="relative rounded-2xl shadow-luxury overflow-hidden flex flex-col"
               style={{
@@ -637,16 +669,16 @@ export function GardnerShield({
                 <div className="mb-6 flex items-start justify-between gap-4">
                   <div>
                     <p className="text-xs font-bold text-amber-600 uppercase tracking-widest mb-2">
-                      Entry Tier
+                      Plumbing Only
                     </p>
                     <h3 className="text-2xl font-bold text-white mb-1 whitespace-nowrap">
                       Bronze Shield
                     </h3>
                     <div className="flex items-baseline gap-2 mt-4 mb-1">
-                      <span className="text-4xl font-bold text-white">$99</span>
+                      <span className="text-4xl font-bold text-white">${BASE_PRICE}</span>
                       <span className="text-gray-400 text-sm">/year</span>
                     </div>
-                    <p className="text-gray-500 text-xs">1 Visit Per Year</p>
+                    <p className="text-gray-500 text-xs">Plumbing Shield</p>
                   </div>
                   <Image
                     src="/bronzesheild.png"
@@ -658,14 +690,7 @@ export function GardnerShield({
                 </div>
 
                 <ul className="space-y-3 flex-1 mb-8">
-                  {[
-                    "Annual plumbing system inspection",
-                    "Written inspection report",
-                    "Up to 56 PT tune-up",
-                    "Priority booking (non-emergency)",
-                    "Up to 25% discount on repairs",
-                    "Extended warranty on covered repairs",
-                  ].map((item) => (
+                  {bronzeIncludes.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm">
                       <CheckCircle
                         className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5"
@@ -695,7 +720,7 @@ export function GardnerShield({
               </div>
             </div>
 
-            {/* Shield Silver — MOST POPULAR */}
+            {/* Silver — Plumbing + HVAC — MOST POPULAR */}
             <div
               className="relative rounded-2xl overflow-hidden flex flex-col border-2 border-red-500 lg:scale-105 lg:z-10 transform-gpu"
               style={{
@@ -705,31 +730,33 @@ export function GardnerShield({
                   "0 0 0 1px rgba(248, 113, 113, 0.25), 0 25px 60px -15px rgba(220, 38, 38, 0.55), 0 12px 30px -10px rgba(0, 0, 0, 0.65)",
               }}
             >
-              {/* Most Popular badge */}
+              <div className="absolute inset-[1px] bg-gradient-to-br from-gray-900 to-gray-950 rounded-2xl" />
+
+              {/* Most Popular badge — rendered above inner overlay */}
               <div
-                className="absolute top-0 inset-x-0 flex justify-center"
+                className="absolute top-0 inset-x-0 flex justify-center z-20"
                 aria-label="Most Popular"
               >
                 <span className="bg-gradient-to-r from-red-600 to-red-500 text-white text-xs font-bold uppercase tracking-widest px-6 py-1.5 rounded-b-xl shadow-lg">
                   Most Popular
                 </span>
               </div>
-
-              <div className="absolute inset-[1px] bg-gradient-to-br from-gray-900 to-gray-950 rounded-2xl" />
               <div className="relative z-10 p-7 sm:p-8 flex flex-col flex-1 pt-12">
                 <div className="mb-6 flex items-start justify-between gap-4">
                   <div>
                     <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-2">
-                      Recommended
+                      Plumbing + HVAC
                     </p>
                     <h3 className="text-2xl font-bold text-white mb-1 whitespace-nowrap">
                       Silver Shield
                     </h3>
                     <div className="flex items-baseline gap-2 mt-4 mb-1">
-                      <span className="text-4xl font-bold text-white">$179</span>
+                      <span className="text-4xl font-bold text-white">
+                        ${BASE_PRICE + HVAC_ADD_PRICE}
+                      </span>
                       <span className="text-gray-400 text-sm">/year</span>
                     </div>
-                    <p className="text-gray-500 text-xs">2 Visits Per Year</p>
+                    <p className="text-gray-500 text-xs">Plumbing + HVAC Shield</p>
                   </div>
                   <Image
                     src="/silversheild.png"
@@ -741,14 +768,7 @@ export function GardnerShield({
                 </div>
 
                 <ul className="space-y-3 flex-1 mb-8">
-                  {[
-                    "Everything in Bronze Shield",
-                    "2 maintenance visits per year",
-                    "24-hour response time guarantee",
-                    "Priority emergency dispatch — 24/7",
-                    "Never a premium charge",
-                    "Annual water heater flush",
-                  ].map((item) => (
+                  {silverIncludes.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm">
                       <CheckCircle
                         className="h-4 w-4 text-red-400 flex-shrink-0 mt-0.5"
@@ -778,7 +798,7 @@ export function GardnerShield({
               </div>
             </div>
 
-            {/* Shield Gold */}
+            {/* Gold — Full Shield (Plumbing + HVAC + Electrical) */}
             <div
               className="relative rounded-2xl shadow-luxury overflow-hidden flex flex-col"
               style={{
@@ -791,16 +811,20 @@ export function GardnerShield({
                 <div className="mb-6 flex items-start justify-between gap-4">
                   <div>
                     <p className="text-xs font-bold text-yellow-400 uppercase tracking-widest mb-2">
-                      Premium Tier
+                      Whole-Home Coverage
                     </p>
                     <h3 className="text-2xl font-bold text-white mb-1 whitespace-nowrap">
                       Gold Shield
                     </h3>
                     <div className="flex items-baseline gap-2 mt-4 mb-1">
-                      <span className="text-4xl font-bold text-white">$249</span>
+                      <span className="text-4xl font-bold text-white">
+                        ${BASE_PRICE + HVAC_ADD_PRICE + ELECTRICAL_ADD_PRICE}
+                      </span>
                       <span className="text-gray-400 text-sm">/year</span>
                     </div>
-                    <p className="text-gray-500 text-xs">3 Visits Per Year</p>
+                    <p className="text-gray-500 text-xs">
+                      Plumbing + HVAC + Electrical
+                    </p>
                   </div>
                   <Image
                     src="/goldsheild.png"
@@ -812,15 +836,7 @@ export function GardnerShield({
                 </div>
 
                 <ul className="space-y-3 flex-1 mb-8">
-                  {[
-                    "Everything in Silver Shield",
-                    "3 maintenance visits per year",
-                    "One free drain clearing per year",
-                    "Up to 10% discount on new equipment",
-                    "Comfort Guarantee (Hotel Stay)",
-                    "Fully transferable on home sale",
-                    "Multi-year/unit discount available",
-                  ].map((item) => (
+                  {goldIncludes.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm">
                       <CheckCircle
                         className="h-4 w-4 text-yellow-400 flex-shrink-0 mt-0.5"
@@ -852,12 +868,22 @@ export function GardnerShield({
 
           </div>
 
+          {/* Custom bundle footnote — Plumbing + Electrical only */}
+          <p className="text-center text-sm text-gray-400 mt-10 max-w-2xl mx-auto">
+            Prefer just <span className="text-white font-semibold">Plumbing + Electrical</span>?{" "}
+            <span className="text-white font-semibold">$298/yr</span> — call{" "}
+            <a href={PHONE_HREF} className="text-red-400 hover:text-red-300 underline font-semibold">
+              {PHONE_DISPLAY}
+            </a>{" "}
+            to enroll.
+          </p>
+
           {/* Sign-up form (inside same section as tiers to avoid background seam) */}
           <div id="enroll-form" className="scroll-mt-24 pt-20 sm:pt-24 lg:pt-28">
             <div className="text-center mb-16 sm:mb-20">
               <div className="inline-flex items-center gap-3 mb-8 px-5 py-2.5 bg-gradient-to-r from-green-600/20 to-green-500/20 rounded-full border border-green-500/30 backdrop-blur-sm">
                 <span className="text-green-400 font-semibold text-sm">
-                  Selected your tier? Sign up below
+                  Selected your plan? Sign up below
                 </span>
                 <ArrowDown className="h-4 w-4 text-green-400" aria-hidden="true" />
               </div>
@@ -868,11 +894,12 @@ export function GardnerShield({
               </span>
             </h2>
             <p className="text-lg text-gray-300 text-center max-w-3xl mx-auto leading-relaxed">
-              Join our maintenance program and secure your home&rsquo;s plumbing future with comprehensive coverage and peace of mind.
+              Join The Gardner Shield and secure year-round protection for your home&rsquo;s
+              plumbing — with optional HVAC and Electrical coverage.
             </p>
           </div>
 
-          {/* Form Container — matches tier-card styling */}
+          {/* Form Container — matches base-card styling */}
           <div
             className="relative rounded-3xl overflow-hidden shadow-luxury"
             style={{
@@ -933,23 +960,23 @@ export function GardnerShield({
               </div>
 
               <div className="space-y-3">
-                <Label htmlFor="gs-plan" className="text-white font-medium">Type of Plan</Label>
+                <Label htmlFor="gs-plan" className="text-white font-medium">Selected Tier</Label>
                 <Select value={selectedTier} onValueChange={setSelectedTier}>
                   <SelectTrigger
                     id="gs-plan"
                     className="bg-white/5 border-white/20 text-white h-12 rounded-xl focus:border-green-500 transition-all duration-300"
                   >
-                    <SelectValue placeholder="Select a plan" />
+                    <SelectValue placeholder="Select a tier" />
                   </SelectTrigger>
                   <SelectContent className="bg-gray-800 border-gray-700">
                     <SelectItem value="bronze" className="text-white hover:bg-gray-700">
-                      Bronze Shield - 1 Visit Per Year $99
+                      Bronze Shield — Plumbing $249/yr
                     </SelectItem>
                     <SelectItem value="silver" className="text-white hover:bg-gray-700">
-                      Silver Shield - 2 Visits Per Year $179
+                      Silver Shield — Plumbing + HVAC $348/yr
                     </SelectItem>
                     <SelectItem value="gold" className="text-white hover:bg-gray-700">
-                      Gold Shield - 3 Visits Per Year $249
+                      Gold Shield — Plumbing + HVAC + Electrical $397/yr
                     </SelectItem>
                   </SelectContent>
                 </Select>
@@ -1209,7 +1236,7 @@ export function GardnerShield({
 
         {/* Last Updated */}
         <p className="text-center text-gray-600 text-xs mt-12">
-          Last Updated: June 2026
+          Last Updated: July 2026
         </p>
       </section>
 

@@ -85,7 +85,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Leak Detection Services",
-  "description": "Non-invasive water leak detection using acoustic sensors, thermal imaging, and electronic equipment. Specialists in slab leaks, hidden pipe leaks, and emergency leak response across Riverside County, eastern San Bernardino County, and the Coachella Valley.",
+  "description": "Non-invasive water leak detection using acoustic sensors, thermal imaging, and electronic equipment. Specialists in slab leaks, hidden pipe leaks, and emergency leak response across Riverside County and neighboring communities.",
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",

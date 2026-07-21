@@ -278,7 +278,7 @@ A: Traditional fixtures run on standard on/off switches with no remote control o
 
 **Q4: Does pool wiring require special permits and inspections in Murrieta?**
 
-A: Yes. Pool and spa electrical falls under NEC Article 680, which has specific requirements for bonding, GFCI protection, wire clearances, and underwater fixture ratings. The City of Murrieta and Riverside County both require a permit and inspection for pool electrical work. Unpermitted pool wiring is a safety issue — improperly bonded pools have caused electrocution incidents nationally. Our electricians pull the permit, complete the bonding and GFCI work, and schedule the inspection as part of the job.
+A: Yes. Pool and spa electrical falls under NEC Article 680, which has specific requirements for bonding, GFCI protection, wire clearances, and underwater fixture ratings. The City of Murrieta and Riverside County both require a permit and inspection for pool electrical work. Unpermitted pool wiring is a safety issue — improperly bonded pools have caused electrocution incidents nationally. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote.
 
 *(80 words)*
 
@@ -337,7 +337,7 @@ Ready to Schedule Electrical Installation in Murrieta?
 
 ### Supporting Paragraph
 ```
-Licensed electrical installation across Murrieta, Temecula, and the Inland Empire. Upfront pricing, permitted work, and same-day service availability. Call now or schedule online — our electrical team picks up.
+Licensed electrical installation across Murrieta, Temecula, and the Inland Empire. Upfront pricing, code-compliant work, and same-day service availability. Call now or schedule online — our electrical team picks up.
 ```
 *(30 words)*
 

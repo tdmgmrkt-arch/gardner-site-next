@@ -19,11 +19,11 @@
 export const metadata: Metadata = {
   title: "EV Charger Installation Murrieta, CA | Level 2 Home Charging",
   description:
-    "EV charger installation in Murrieta, Temecula & the Inland Empire. Level 2 (240V) home charging, dedicated circuits, permits pulled. Call (951) 246-4337.",
+    "EV charger installation in Murrieta, Temecula & the Inland Empire. Level 2 (240V) home charging, dedicated circuits, NEC 625 compliant. Call (951) 246-4337.",
   openGraph: {
     title: "EV Charger Installation Murrieta, CA | Level 2 Home Charging | Gardner Plumbing Co.",
     description:
-      "Licensed electricians install Level 2 EV chargers across Murrieta and the Inland Empire. Dedicated circuits, panel assessment, permitted work. Call (951) 246-4337.",
+      "Licensed electricians install Level 2 EV chargers across Murrieta and the Inland Empire. Dedicated circuits, panel assessment, NEC 625 compliant. Call (951) 246-4337.",
     url: "https://gardnerplumbingco.com/services/electrical/ev-charger-installation",
   },
   alternates: {
@@ -64,7 +64,7 @@ Line 2: Murrieta & Inland Empire
 |---|---|
 | `Zap` | Level 2 (240V) Installation |
 | `Shield` | Licensed & Insured |
-| `FileCheck` | Permits Pulled — Always |
+| `FileCheck` | NEC 625 Compliant |
 | `DollarSign` | Upfront Pricing |
 
 ### CTA Buttons
@@ -96,7 +96,7 @@ EV Charger Installation Services in the Inland Empire
 
 ### Section Intro Paragraph (66 words)
 ```
-Murrieta, Temecula, and the broader Inland Empire are car-dependent suburbs. EV adoption in Riverside County is growing fast — and most homeowners who buy an electric vehicle discover their Level 1 (120V) outlet charges at 3 to 5 miles per hour. That is not a practical daily charger. A Level 2 (240V) installation charges at 20 to 30 miles per hour. Our electricians assess your panel capacity, install the dedicated circuit, and pull the permit — so the installation is done right and ready for the city inspector.
+Murrieta, Temecula, and the broader Inland Empire are car-dependent suburbs. EV adoption in Riverside County is growing fast — and most homeowners who buy an electric vehicle discover their Level 1 (120V) outlet charges at 3 to 5 miles per hour. That is not a practical daily charger. A Level 2 (240V) installation charges at 20 to 30 miles per hour. Our electricians assess your panel capacity and install the dedicated circuit — so the installation is done right and code-compliant.
 ```
 
 ### 4 Service Cards
@@ -123,12 +123,12 @@ Murrieta, Temecula, and the broader Inland Empire are car-dependent suburbs. EV 
 
 **Card 3**
 - Icon: `FileCheck`
-- Title: `Permitted EV Charger Installation`
-- Description: `Riverside County and the City of Murrieta require a permit for Level 2 EV charger installation. We pull the permit as part of every installation — no unpermitted work, ever. The permit protects your insurance and confirms the installation meets NEC Article 625.`
+- Title: `Code-Compliant EV Charger Installation`
+- Description: `Riverside County and the City of Murrieta require a permit for Level 2 EV charger installation. Permits are the property owner’s responsibility under California law; we coordinate the paperwork when needed and list permit fees as a pass-through line on your quote. The permit confirms the installation meets NEC Article 625.`
 - Features:
-  1. City Permit Pulled
+  1. NEC Article 625 Wiring
   2. NEC 625 Compliant Install
-  3. City Inspection Included
+  3. Load Calculation Documented
   4. Documentation Provided
 
 **Card 4**
@@ -180,8 +180,8 @@ Gardner Plumbing Co. is a licensed electrical contractor serving Murrieta, Temec
 
 **Card 1**
 - Icon: `FileCheck`
-- Title: `Permits Pulled, Always`
-- Description: `Every EV charger installation we complete is permitted and inspected. An unpermitted charger is a homeowner's insurance gap and a problem at resale. We handle the permit — it's part of the installation, not an add-on.`
+- Title: `NEC 625 Compliant`
+- Description: `EV charger installations often require a city permit and inspection. Permits are the homeowner's responsibility under California law; we can coordinate the paperwork when required, and any permit fees appear as a pass-through line on your quote. Skipping a required permit can create insurance and resale complications for the homeowner.`
 
 **Card 2**
 - Icon: `Activity`
@@ -244,7 +244,7 @@ Find answers to common questions about EV charger installation in Murrieta and t
 
 **Q1: Do I need a permit to install a Level 2 EV charger in Murrieta?**
 
-A: Yes. The City of Murrieta requires a permit for Level 2 (240V) EV charger installation. The permit triggers an electrical inspection to confirm the circuit meets NEC Article 625 — the code section governing EV charging equipment. This applies whether you're installing a hardwired unit or a NEMA 14-50 outlet. Unpermitted 240V circuits void homeowner's insurance for any fire or electrical damage claim originating from that circuit, and must be disclosed as unpermitted work during a home sale. Every installation our electrical team completes includes the permit and the inspection — it is built into our pricing, not billed as a separate item.
+A: Yes. The City of Murrieta requires a permit for Level 2 (240V) EV charger installation. The permit triggers an electrical inspection to confirm the circuit meets NEC Article 625 — the code section governing EV charging equipment. This applies whether you're installing a hardwired unit or a NEMA 14-50 outlet. Unpermitted 240V circuits void homeowner's insurance for any fire or electrical damage claim originating from that circuit, and must be disclosed as unpermitted work during a home sale. Permits are the property owner’s responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote.
 
 *(109 words)*
 
@@ -327,7 +327,7 @@ Ready to Install Your Home EV Charger?
 
 ### Supporting Paragraph
 ```
-EV charger installation across Murrieta, Temecula, and the Inland Empire. Panel assessment first, permits pulled, licensed electricians. Call now or schedule online — our electrical team picks up.
+EV charger installation across Murrieta, Temecula, and the Inland Empire. Panel assessment first, NEC 625 compliant installation, licensed electricians. Call now or schedule online — our electrical team picks up.
 ```
 *(30 words)*
 

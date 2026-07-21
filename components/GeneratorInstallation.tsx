@@ -139,7 +139,7 @@ const services = [
       "Generator Inlet Box Install",
       "Interlock Kit or Transfer Switch",
       "Standby Circuit Selection",
-      "Permitted & Inspected",
+      "NEC 702 Compliant",
     ],
   },
 ];
@@ -153,9 +153,9 @@ const benefits = [
   },
   {
     icon: FileCheck,
-    title: "Permitted Every Time",
+    title: "NEC 702 Compliant, Every Time",
     description:
-      "Generator hookup is a permit-required electrical project in Murrieta. The permit triggers a city inspection that confirms your transfer switch and disconnect meet NEC 702. We pull the permit as standard — it's part of the job.",
+      "Generator hookup is a permit-required electrical project in Murrieta. The permit triggers a city inspection that confirms your transfer switch and disconnect meet NEC 702. Permits are the homeowner's responsibility under California law — we coordinate on your behalf and list fees as a pass-through line on your quote.",
   },
   {
     icon: Cpu,
@@ -167,7 +167,7 @@ const benefits = [
     icon: DollarSign,
     title: "Upfront Written Quotes",
     description:
-      "You receive a written quote covering the transfer switch, inlet box or ATS, permit, and inspection — before we schedule. No mid-project add-ons after the panel is open.",
+      "You receive a written quote covering the transfer switch, inlet box or ATS, and any permit fees as a pass-through line — before we schedule. No mid-project add-ons after the panel is open.",
   },
 ];
 
@@ -175,7 +175,7 @@ const faqs = [
   {
     question: "What does a generator installation electrician actually do?",
     answer:
-      "Our scope is the electrical connection between the generator and your home's circuits — not the generator itself. Specifically: we install the transfer switch (manual or automatic) that safely disconnects your home from SCE's grid when the generator is running, run the wiring from the transfer switch to selected critical circuits, and install the inlet box or ATS connection point where the generator plugs in. We also pull the permit and handle the city inspection. What we do not do: recommend which generator to buy, deliver or set up the generator unit, supply fuel, or service the generator engine. That side belongs to the generator dealer or a qualified service tech.",
+      "Our scope is the electrical connection between the generator and your home's circuits — not the generator itself. Specifically: we install the transfer switch (manual or automatic) that safely disconnects your home from SCE's grid when the generator is running, run the wiring from the transfer switch to selected critical circuits, and install the inlet box or ATS connection point where the generator plugs in. We also coordinate the permit process on your behalf (permit fees are listed as a pass-through line on your quote). What we do not do: recommend which generator to buy, deliver or set up the generator unit, supply fuel, or service the generator engine. That side belongs to the generator dealer or a qualified service tech.",
   },
   {
     question: "What is a transfer switch and why is it required?",
@@ -221,7 +221,7 @@ const faqs = [
   {
     question: "Does generator hookup require a permit in Murrieta?",
     answer:
-      "Yes. Generator hookup — whether standby or portable inlet box — is a permit-required electrical project in Murrieta and throughout Riverside County. The permit triggers a city inspection that confirms the transfer switch, disconnect, and wiring meet NEC 702. Unpermitted generator hookups are a liability issue: they void the electrical portion of your homeowner's insurance and put you at risk if a back-feed event damages utility equipment. Permit processing in Murrieta typically takes 3 to 7 business days. We submit the permit application as part of scheduling — homeowners do not need to manage the permit process independently. The inspection is scheduled and attended by our electricians.",
+      "Yes. Generator hookup — whether standby or portable inlet box — is a permit-required electrical project in Murrieta and throughout Riverside County. The permit triggers a city inspection that confirms the transfer switch, disconnect, and wiring meet NEC 702. Unpermitted generator hookups are a liability issue: they void the electrical portion of your homeowner's insurance and put you at risk if a back-feed event damages utility equipment. Permits are the homeowner's responsibility under California law; we can coordinate the paperwork on your behalf — permit fees are listed as a pass-through line on your quote. Permit processing in Murrieta typically takes 3 to 7 business days.",
   },
   {
     question: "How much does generator electrical hookup cost in Murrieta?",
@@ -334,7 +334,7 @@ export function GeneratorInstallation() {
                 {[
                   { icon: Zap, text: "Transfer Switch Install" },
                   { icon: Shield, text: "Licensed & Insured" },
-                  { icon: FileCheck, text: "Permitted Hookup" },
+                  { icon: FileCheck, text: "NEC 702 Compliant" },
                   { icon: Activity, text: "Load Management Wiring" },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3 text-gray-300">
@@ -558,7 +558,7 @@ export function GeneratorInstallation() {
                     "Transfer switch installed — generator cannot back-feed onto SCE utility lines",
                     "Critical circuits confirmed: HVAC, refrigerator, lighting, medical equipment where applicable",
                     "Load management configured — generator runs within rated output without overload",
-                    "Permit closed with city — installation is on record and code-compliant",
+                    "Installation documented and code-compliant — permit coordination handled as a pass-through service",
                     "Generator interlock or ATS tested under simulated grid loss before sign-off",
                     "Homeowner briefed on transfer switch operation — manual switch users know the sequence",
                   ].map((item, idx) => (
@@ -670,8 +670,8 @@ export function GeneratorInstallation() {
                 installations across Riverside County — including transfer switch
                 installations in Murrieta ahead of PSPS season, ATS installs for
                 all-electric homes with heat pumps, and portable generator inlet
-                boxes for homeowners who want a safe, permitted connection without
-                a full standby system.
+                boxes for homeowners who want a safe, code-compliant connection
+                without a full standby system.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -980,10 +980,10 @@ export function GeneratorInstallation() {
               <p className="text-lg text-gray-300 mb-8 leading-relaxed">
                 SCE PSPS events in the Inland Empire are seasonal — they happen in
                 fall and early winter when Santa Ana winds peak. Homeowners who
-                call after the outage starts cannot get a permitted hookup
-                completed during the outage. Our electricians schedule generator
-                hookup installations year-round — before outage season is the
-                right time to call.
+                call after the outage starts cannot get a code-compliant hookup
+                permitted and inspected during the outage. Our electricians
+                schedule generator hookup installations year-round — before
+                outage season is the right time to call.
               </p>
 
               <div className="mb-8">
@@ -1079,9 +1079,9 @@ export function GeneratorInstallation() {
               </h2>
               <p className="text-lg text-gray-300 mb-6 max-w-lg mx-auto">
                 Generator electrical hookup across Murrieta, Temecula, and the
-                Inland Empire. Transfer switches, load management, and permitted
-                installation before outage season. Call now or schedule online —
-                our electrical team picks up.
+                Inland Empire. Transfer switches, load management, and
+                code-compliant installation before outage season. Call now or
+                schedule online — our electrical team picks up.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6 max-w-xl mx-auto">
@@ -1111,7 +1111,7 @@ export function GeneratorInstallation() {
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-center text-sm max-w-2xl mx-auto">
               <div className="flex items-center gap-2">
                 <FileCheck className="h-4 w-4 text-green-400" />
-                <span className="text-gray-300">Permitted Work</span>
+                <span className="text-gray-300">NEC 702 Compliant</span>
               </div>
               <div className="flex items-center gap-2">
                 <Shield className="h-4 w-4 text-green-400" />

@@ -185,7 +185,7 @@ Gardner Plumbing Co. uses two layers of floor protection on every visit. Technic
 
 ## Schedule a Service Call
 
-Gardner Plumbing Co. serves Murrieta, Temecula, Menifee, Wildomar, Lake Elsinore, Hemet, Riverside, and 18 surrounding cities across Riverside and San Bernardino Counties.
+Gardner Plumbing Co. serves Murrieta, Temecula, Menifee, Wildomar, Lake Elsinore, Hemet, Riverside, and 18 surrounding cities across Riverside County and neighboring communities.
 
 CSLB #1073177 · 900+ five-star Google reviews · 30+ years in business
 

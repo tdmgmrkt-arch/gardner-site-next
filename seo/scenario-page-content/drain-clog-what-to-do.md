@@ -85,7 +85,7 @@ Gardner Plumbing Co. backs every drain cleaning service call with four written c
 - **No Trip Fees, No Pressure** — Free in-home estimates. No dispatch fee, no service-call fee, no obligation to proceed.
 - **Fully Licensed, Bonded & Insured** — CSLB #1073177, fully bonded, fully insured.
 
-Trust strip: CSLB #1073177 · 900+ five-star Google reviews · 30+ years serving Riverside County · Riverside County · San Bernardino County · Coachella Valley
+Trust strip: CSLB #1073177 · 900+ five-star Google reviews · 30+ years serving Riverside County · 25 cities across Riverside County and neighboring communities
 
 ---
 
@@ -136,7 +136,7 @@ Four practical steps: (1) Put a fine-mesh hair catcher over every tub and shower
 
 ## Ready to Fix It Today?
 
-Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Palm Springs, Palm Desert, Redlands, and Yucaipa. CSLB #1073177. 900+ five-star Google reviews. 30+ years serving Southern California.
+Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore. CSLB #1073177. 900+ five-star Google reviews. 30+ years serving Southern California.
 
 **Call (951) 246-4337 — 24/7 emergency dispatch available every day.**
 

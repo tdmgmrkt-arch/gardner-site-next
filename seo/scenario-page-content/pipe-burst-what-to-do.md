@@ -58,7 +58,7 @@ Electronics, rugs, documents, and furniture absorb water fast. Move anything off
 Take photos and a short video of standing water, the visible break, and any damaged belongings. Your homeowner's insurance adjuster will need this. Do not mop up or remove debris until you have documentation.
 
 **Step 7: Call Gardner Plumbing Co. at (951) 246-4337.**
-Gardner Plumbing Co. dispatches licensed technicians across Riverside County, eastern San Bernardino County, and the Coachella Valley around the clock. Give the dispatcher your address and describe what you see — the technician on the way will already know what to bring.
+Gardner Plumbing Co. dispatches licensed technicians across Riverside County and neighboring communities around the clock. Give the dispatcher your address and describe what you see — the technician on the way will already know what to bring.
 
 <!-- END HOWTO SCHEMA BLOCK -->
 
@@ -66,7 +66,7 @@ Gardner Plumbing Co. dispatches licensed technicians across Riverside County, ea
 
 ## When Gardner Plumbing Arrives
 
-Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Palm Springs, Palm Desert, Redlands, and Yucaipa. Here is what happens after you call:
+Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore. Here is what happens after you call:
 
 - **Live dispatcher, not a voicemail.** A real person answers at (951) 246-4337 every hour of every day. They confirm your address, ask what you are seeing, and route the nearest available technician.
 - **ETA confirmation before the truck rolls.** The dispatcher gives you an arrival window. For most Riverside County addresses, the technician is on site within 60 – 90 minutes of your call.
@@ -81,7 +81,7 @@ Gardner Plumbing Co. handles burst pipe calls across Riverside County year-round
 
 The Inland Empire has a large stock of homes built between 1975 and 1995. Many of those homes used Schedule 40 PVC for interior supply lines and polybutylene for branch lines. PVC becomes brittle over decades and can crack suddenly under normal water pressure. Polybutylene — a gray plastic pipe widely recalled in the 1990s — deteriorates from the inside out. A homeowner in Moreno Valley or Perris with no recent plumbing history may be living on original pipe that is 30+ years old and well past safe service life.
 
-The region's hard water is the second major factor. Riverside County water runs high in calcium and magnesium, and that mineral content deposits inside copper fittings and at soldered joints over time. A fitting that looks fine from the outside can have a nearly closed bore from scaling on the inside, raising line pressure until a weakened joint blows. Cold snaps complicate this further. Temperatures in the Coachella Valley, Hemet, and the mountain passes above Banning can drop into the mid-20s on winter nights. Exposed supply lines in garages, crawlspaces, and exterior walls freeze, expand, and split — often silently overnight. The homeowner discovers the damage when they turn on the kitchen tap in the morning.
+The region's hard water is the second major factor. Riverside County water runs high in calcium and magnesium, and that mineral content deposits inside copper fittings and at soldered joints over time. A fitting that looks fine from the outside can have a nearly closed bore from scaling on the inside, raising line pressure until a weakened joint blows. Cold snaps complicate this further. Winter temperatures across the desert cities, Hemet, and the mountain passes above Banning can drop into the mid-20s on winter nights. Exposed supply lines in garages, crawlspaces, and exterior walls freeze, expand, and split — often silently overnight. The homeowner discovers the damage when they turn on the kitchen tap in the morning.
 
 ---
 
@@ -128,7 +128,7 @@ Gardner Plumbing Co. runs 24/7 emergency dispatch every day of the year — even
 
 ### How do I prevent this from happening again?
 
-The most effective step is a whole-home plumbing inspection, especially for homes built before 1995. A licensed plumber can identify polybutylene or galvanized pipe that is near failure, assess hard-water scaling inside copper fittings, and spot exposed lines in garages or crawlspaces that are at risk during cold snaps. Gardner Plumbing Co. offers the Gardner Shield — an annual maintenance plan that includes a full inspection and priority dispatch. Ask about it when you call, or visit [/gardner-shield](/gardner-shield). Pipe insulation on any line in an unconditioned space costs under $50 in materials and is the single highest-return preventative measure for Coachella Valley and pass-area homes.
+The most effective step is a whole-home plumbing inspection, especially for homes built before 1995. A licensed plumber can identify polybutylene or galvanized pipe that is near failure, assess hard-water scaling inside copper fittings, and spot exposed lines in garages or crawlspaces that are at risk during cold snaps. Gardner Plumbing Co. offers the Gardner Shield — an annual maintenance plan that includes a full inspection and priority dispatch. Ask about it when you call, or visit [/gardner-shield](/gardner-shield). Pipe insulation on any line in an unconditioned space costs under $50 in materials and is the single highest-return preventative measure for homes in the desert and pass areas.
 
 ---
 
@@ -145,7 +145,7 @@ The most effective step is a whole-home plumbing inspection, especially for home
 
 ## Stop the Water. Call Now.
 
-Gardner Plumbing Co. dispatches licensed plumbers to homes across Riverside County, eastern San Bernardino County, and the Coachella Valley — 24 hours a day, 7 days a week.
+Gardner Plumbing Co. dispatches licensed plumbers to homes across Riverside County and neighboring communities — 24 hours a day, 7 days a week.
 
 **Call (951) 246-4337 — live dispatch, every hour.**
 

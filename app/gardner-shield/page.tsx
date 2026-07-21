@@ -6,26 +6,26 @@ import { siteConfig } from "@/lib/site-config";
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "The Gardner Shield — Year-Round Plumbing Protection | Gardner Plumbing Co.",
+  title: "The Gardner Shield — Year-Round Home Systems Protection | Gardner Plumbing Co.",
   description:
-    "The Gardner Shield is Gardner Plumbing Co.'s membership program: annual inspections, scheduled maintenance, priority emergency dispatch, and extended warranty for Riverside County homeowners.",
+    "The Gardner Shield is Gardner Plumbing Co.'s membership program: Plumbing Shield $249/yr with optional HVAC (+$99) and Electrical (+$49) add-ons. Scheduled maintenance, priority service, 10% off repairs, no emergency overtime.",
   alternates: {
     canonical: "/gardner-shield",
   },
   openGraph: {
     title:
-      "The Gardner Shield — Year-Round Plumbing Protection | Gardner Plumbing Co.",
+      "The Gardner Shield — Year-Round Home Systems Protection | Gardner Plumbing Co.",
     description:
-      "The Gardner Shield is Gardner Plumbing Co.'s membership program: annual inspections, scheduled maintenance, priority emergency dispatch, and extended warranty for Riverside County homeowners.",
+      "The Gardner Shield is Gardner Plumbing Co.'s membership program: Plumbing Shield $249/yr with optional HVAC (+$99) and Electrical (+$49) add-ons. Scheduled maintenance, priority service, 10% off repairs, no emergency overtime.",
     url: "/gardner-shield",
     images: ["/gardner_logo.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "The Gardner Shield — Year-Round Plumbing Protection | Gardner Plumbing Co.",
+      "The Gardner Shield — Year-Round Home Systems Protection | Gardner Plumbing Co.",
     description:
-      "The Gardner Shield is Gardner Plumbing Co.'s membership program: annual inspections, scheduled maintenance, priority emergency dispatch, and extended warranty for Riverside County homeowners.",
+      "The Gardner Shield is Gardner Plumbing Co.'s membership program: Plumbing Shield $249/yr with optional HVAC (+$99) and Electrical (+$49) add-ons. Scheduled maintenance, priority service, 10% off repairs, no emergency overtime.",
   },
 };
 
@@ -38,9 +38,9 @@ function buildSchemas(reviewCount: string, ratingLabel: string) {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "The Gardner Shield — Year-Round Plumbing Protection",
+    name: "The Gardner Shield — Year-Round Home Systems Protection",
     description:
-      "Gardner Plumbing Co.'s membership program bundling annual inspections, scheduled maintenance, priority emergency dispatch, and extended warranty coverage for Riverside County homeowners.",
+      "Gardner Plumbing Co.'s membership program: Plumbing Shield ($249/yr) plus optional HVAC (+$99) and Electrical (+$49) add-ons. Scheduled maintenance, priority service, 10% off repairs, and no emergency overtime charges for Riverside County homeowners.",
     url: "https://gardnerplumbingco.com/gardner-shield",
     breadcrumb: {
       "@type": "BreadcrumbList",
@@ -66,7 +66,7 @@ function buildSchemas(reviewCount: string, ratingLabel: string) {
     "@type": "Service",
     name: "The Gardner Shield Membership Program",
     description:
-      "Annual plumbing membership program offering inspections, scheduled maintenance, priority emergency dispatch, member repair discounts, and extended warranty coverage.",
+      "Annual home systems membership program: Plumbing Shield ($249/yr) with optional HVAC (+$99) and Electrical (+$49) add-ons. Scheduled maintenance, priority service, 10% off repairs, and no emergency overtime charges.",
     provider: {
       "@type": "Plumber",
       name: "Gardner Plumbing Co.",
@@ -94,13 +94,25 @@ function buildSchemas(reviewCount: string, ratingLabel: string) {
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Gardner Shield Membership Tiers",
+      name: "Gardner Shield Membership Plans",
       itemListElement: [
         {
           "@type": "Offer",
-          name: "Shield Bronze",
+          name: "Plumbing Shield",
           description:
-            "Annual plumbing inspection, written report, up to 56 PT tune-up, up to 25% repair discount, priority booking, extended warranty on covered repairs. 1 visit per year.",
+            "Base membership: 2 plumbing maintenance visits per year, 10% off plumbing services, 1 free drain cleaning per year (with accessible cleanout), priority service, no emergency overtime charges, annual plumbing safety inspection with written report.",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "249.00",
+            priceCurrency: "USD",
+            unitText: "ANN",
+          },
+        },
+        {
+          "@type": "Offer",
+          name: "HVAC Coverage Add-On",
+          description:
+            "Optional add-on to the Plumbing Shield: 2 HVAC tune-ups per year (spring AC + fall heating), 10% off HVAC services, priority HVAC service, no emergency overtime on HVAC calls.",
           priceSpecification: {
             "@type": "UnitPriceSpecification",
             price: "99.00",
@@ -110,24 +122,12 @@ function buildSchemas(reviewCount: string, ratingLabel: string) {
         },
         {
           "@type": "Offer",
-          name: "Shield Silver",
+          name: "Electrical Coverage Add-On",
           description:
-            "Everything in Bronze plus a second maintenance visit per year, 24-hour response time guarantee, 24/7 priority emergency dispatch, no premium charges, annual water heater flush. 2 visits per year.",
+            "Optional add-on to the Plumbing Shield: annual electrical safety inspection, 10% off electrical services, priority electrical service, no emergency overtime on electrical calls.",
           priceSpecification: {
             "@type": "UnitPriceSpecification",
-            price: "179.00",
-            priceCurrency: "USD",
-            unitText: "ANN",
-          },
-        },
-        {
-          "@type": "Offer",
-          name: "Shield Gold",
-          description:
-            "Everything in Silver plus a third maintenance visit, one free drain clearing per year, up to 10% discount on new equipment, Comfort Guarantee (hotel stay), fully transferable on home sale, multi-year/unit discount available. 3 visits per year.",
-          priceSpecification: {
-            "@type": "UnitPriceSpecification",
-            price: "249.00",
+            price: "49.00",
             priceCurrency: "USD",
             unitText: "ANN",
           },
@@ -145,7 +145,7 @@ function buildSchemas(reviewCount: string, ratingLabel: string) {
         name: "What does The Gardner Shield include?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Every Gardner Shield membership includes an annual plumbing system inspection with a written report, scheduled maintenance visits (frequency depends on your tier), priority emergency dispatch, and extended warranty coverage on parts and labor for covered repairs. Shield Silver and Shield Gold members receive additional visits per year — 2 and 3 visits respectively.",
+          text: "The base Plumbing Shield ($249/year) includes two plumbing maintenance visits, one free drain cleaning per year (with an accessible cleanout), 10% off plumbing services, priority service, and no emergency overtime charges. You can add HVAC coverage (+$99/year) and/or Electrical coverage (+$49/year) at any time to extend the same benefits to those trades.",
         },
       },
       {
@@ -153,7 +153,15 @@ function buildSchemas(reviewCount: string, ratingLabel: string) {
         name: "How is The Gardner Shield different from a warranty?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "A warranty is reactive — it kicks in after something breaks. The Gardner Shield is proactive. It bundles scheduled maintenance designed to prevent failures in the first place, plus priority access and discounts when repairs are needed. The extended warranty component is one layer of the Shield, not the whole thing.",
+          text: "A warranty is reactive — it kicks in after something breaks. The Gardner Shield is proactive. It bundles scheduled maintenance designed to prevent failures in the first place, plus priority access, no overtime charges, and 10% off repairs when they are needed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I add HVAC or Electrical coverage later?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. You can start with the base Plumbing Shield and add HVAC (+$99/year) or Electrical (+$49/year) at any point during your membership year. The add-ons are prorated so you only pay for the remaining months.",
         },
       },
       {
@@ -161,7 +169,7 @@ function buildSchemas(reviewCount: string, ratingLabel: string) {
         name: "Can I cancel my Gardner Shield membership?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Month-to-month memberships can be cancelled at any time with 30 days notice. Annual memberships paid up front can be cancelled for a prorated refund of unused months, minus any discounts already applied to repairs during the membership period. Call our office at (951) 246-4337 for details.",
+          text: "Yes. Annual memberships can be cancelled for a prorated refund of unused months, minus any member discounts already applied to repairs during the membership period. Call our office at (951) 246-4337 for details.",
         },
       },
       {
@@ -169,15 +177,7 @@ function buildSchemas(reviewCount: string, ratingLabel: string) {
         name: "Does The Gardner Shield cover emergency repairs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The Shield guarantees priority dispatch for emergency calls — you move to the front of the queue immediately. Repair costs are billed at your member discount rate. The Shield does not cover the cost of every emergency repair, but your tier discount and extended warranty apply to eligible work.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can I transfer my Gardner Shield membership to a new home?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Shield Gold memberships are fully transferable to a new home address within our service area. Shield Bronze and Shield Silver memberships can be transferred for a $50 administration fee. Call us to process a transfer.",
+          text: "The Shield guarantees priority dispatch for emergency calls — you move to the front of the queue immediately — and there is no overtime charge for after-hours work. Repair costs are billed at your 10% member discount rate. The Shield does not pay for the full cost of every emergency repair, but the discount and no-overtime benefit apply to eligible work.",
         },
       },
       {
@@ -185,7 +185,7 @@ function buildSchemas(reviewCount: string, ratingLabel: string) {
         name: "What if I already have a home warranty?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Home warranties and The Gardner Shield serve different purposes and work well together. Home warranties are insurance products that require claim filings, deductibles, and third-party contractor dispatch — often with service delays. The Gardner Shield gives you a direct relationship with a licensed plumber you already trust, proactive maintenance your home warranty won't provide, and faster service when you need it.",
+          text: "Home warranties and The Gardner Shield serve different purposes and work well together. Home warranties are insurance products that require claim filings, deductibles, and third-party contractor dispatch — often with service delays. The Gardner Shield gives you a direct relationship with a licensed contractor you already trust, proactive maintenance your home warranty won't provide, and faster service when you need it.",
         },
       },
     ],

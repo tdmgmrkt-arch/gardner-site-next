@@ -78,17 +78,17 @@ const pillars = [
     id: "licensed",
     icon: BadgeCheck,
     title: "Fully Licensed, Bonded & Insured",
-    tagline: "CSLB #1073177. Permits pulled on every job that requires them.",
+    tagline: "CSLB #1073177. Fully licensed, bonded, and insured.",
     summary:
-      "CSLB #1073177, fully bonded, fully insured. We pull permits and handle inspections on every job that requires them.",
+      "CSLB #1073177, fully bonded, fully insured.",
     mechanics: [
       "Our California State License Board license number is #1073177 — verify it at cslb.ca.gov at any time.",
       "Every technician dispatched to your home works under this license and meets CSLB qualification standards.",
       "We carry full liability insurance and workers' compensation — your property and our team are covered.",
-      "For jobs that require a permit (water heater replacements, repiping, sewer line work, and similar), we pull the permit and coordinate the inspection. You never have to chase the city.",
+      "Permits and city inspections are the property owner's responsibility under California law. When your job requires them, we'll tell you upfront and can coordinate the paperwork on your behalf — permit fees appear as a separate pass-through line on your quote.",
     ],
     scenario:
-      "Example: A water heater replacement in Murrieta requires a city permit and inspection. We handle the permit application, schedule the inspection around your availability, and provide you with the closed-out permit for your home records.",
+      "Example: A water heater replacement in Murrieta requires a city permit and inspection. Permit fees are listed as a separate pass-through line on your written quote. We coordinate the process on your behalf and provide you with the closed-out permit record for your home files.",
   },
 ];
 

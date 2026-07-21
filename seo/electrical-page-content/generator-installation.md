@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Generator Installation Murrieta, CA | Transfer Switch & Hookup | Gardner Plumbing Co.",
     description:
-      "Licensed electricians connect standby generators across Murrieta and the Inland Empire. Transfer switch installation, load management, permitted hookup. Call (951) 246-4337.",
+      "Licensed electricians connect standby generators across Murrieta and the Inland Empire. Transfer switch installation, load management, NEC 702 compliant hookup. Call (951) 246-4337.",
     url: "https://gardnerplumbingco.com/services/electrical/generator-installation",
   },
   alternates: {
@@ -64,7 +64,7 @@ Line 2: Murrieta & Inland Empire
 |---|---|
 | `Zap` | Transfer Switch Install |
 | `Shield` | Licensed & Insured |
-| `FileCheck` | Permitted Hookup |
+| `FileCheck` | NEC 702 Compliant |
 | `Activity` | Load Management Wiring |
 
 ### CTA Buttons
@@ -185,8 +185,8 @@ Gardner Plumbing Co. is a licensed electrical contractor serving Murrieta, Temec
 
 **Card 2**
 - Icon: `FileCheck`
-- Title: `Permitted Every Time`
-- Description: `Generator hookup is a permit-required electrical project in Murrieta. The permit triggers a city inspection that confirms your transfer switch and disconnect meet NEC 702. We pull the permit as standard — it's part of the job.`
+- Title: `NEC 702 Compliant Every Time`
+- Description: `Generator hookup is a permit-required electrical project in Murrieta. The permit triggers a city inspection that confirms your transfer switch and disconnect meet NEC 702. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote.`
 
 **Card 3**
 - Icon: `Cpu`
@@ -245,7 +245,7 @@ Find answers to common questions about generator electrical hookup in Murrieta a
 
 **Q1: What does a generator installation electrician actually do?**
 
-A: Our scope is the electrical connection between the generator and your home's circuits — not the generator itself. Specifically: we install the transfer switch (manual or automatic) that safely disconnects your home from SCE's grid when the generator is running, run the wiring from the transfer switch to selected critical circuits, and install the inlet box or ATS connection point where the generator plugs in. We also pull the permit and handle the city inspection. What we do not do: recommend which generator to buy, deliver or set up the generator unit, supply fuel, or service the generator engine. That side belongs to the generator dealer or a qualified service tech.
+A: Our scope is the electrical connection between the generator and your home's circuits — not the generator itself. Specifically: we install the transfer switch (manual or automatic) that safely disconnects your home from SCE's grid when the generator is running, run the wiring from the transfer switch to selected critical circuits, and install the inlet box or ATS connection point where the generator plugs in. Permit coordination is available where required — permit fees are listed as a pass-through line on your quote. What we do not do: recommend which generator to buy, deliver or set up the generator unit, supply fuel, or service the generator engine. That side belongs to the generator dealer or a qualified service tech.
 
 *(116 words)*
 
@@ -328,7 +328,7 @@ Ready to Connect Your Generator the Right Way?
 
 ### Supporting Paragraph
 ```
-Generator electrical hookup across Murrieta, Temecula, and the Inland Empire. Transfer switches, load management, and permitted installation before outage season. Call now or schedule online — our electrical team picks up.
+Generator electrical hookup across Murrieta, Temecula, and the Inland Empire. Transfer switches, load management, and NEC 702 compliant installation before outage season. Call now or schedule online — our electrical team picks up.
 ```
 *(33 words)*
 

@@ -109,7 +109,7 @@ const steps = [
   {
     num: 7,
     title: "Call Gardner Plumbing Co. at (951) 246-4337.",
-    body: "Gardner Plumbing Co. dispatches licensed technicians across Riverside County, eastern San Bernardino County, and the Coachella Valley around the clock. Give the dispatcher your address and describe what you see — the technician on the way will already know what to bring.",
+    body: "Gardner Plumbing Co. dispatches licensed technicians across Riverside County and neighboring communities around the clock. Give the dispatcher your address and describe what you see — the technician on the way will already know what to bring.",
   },
 ];
 
@@ -140,7 +140,7 @@ const faqs = [
   },
   {
     q: "How do I prevent this from happening again?",
-    a: "The most effective step is a whole-home plumbing inspection, especially for homes built before 1995. A licensed plumber can identify polybutylene or galvanized pipe that is near failure, assess hard-water scaling inside copper fittings, and spot exposed lines in garages or crawlspaces that are at risk during cold snaps. Gardner Plumbing Co. offers the Gardner Shield — an annual maintenance plan that includes a full inspection and priority dispatch. Ask about it when you call, or visit our Gardner Shield page. Pipe insulation on any line in an unconditioned space costs under $50 in materials and is the single highest-return preventative measure for Coachella Valley and pass-area homes.",
+    a: "The most effective step is a whole-home plumbing inspection, especially for homes built before 1995. A licensed plumber can identify polybutylene or galvanized pipe that is near failure, assess hard-water scaling inside copper fittings, and spot exposed lines in garages or crawlspaces that are at risk during cold snaps. Gardner Plumbing Co. offers the Gardner Shield — an annual maintenance plan that includes a full inspection and priority dispatch. Ask about it when you call, or visit our Gardner Shield page. Pipe insulation on any line in an unconditioned space costs under $50 in materials and is the single highest-return preventative measure for homes in the desert and pass areas.",
   },
 ];
 
@@ -345,7 +345,7 @@ export function PipeBurstScenario() {
                 </span>
               </h2>
               <p className="text-gray-300 text-base leading-relaxed mb-6">
-                Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Palm Springs, Palm Desert, Redlands, and Yucaipa.
+                Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore.
               </p>
               <div className="space-y-4">
                 {[
@@ -399,7 +399,7 @@ export function PipeBurstScenario() {
                     The region&apos;s hard water is the second major factor. Riverside County water runs high in calcium and magnesium, depositing inside copper fittings and at soldered joints over time. A fitting that looks fine from the outside can have a nearly closed bore from scaling on the inside.
                   </p>
                   <p>
-                    Temperatures in the Coachella Valley, Hemet, and the mountain passes above Banning can drop into the mid-20s on winter nights. Exposed supply lines in garages, crawlspaces, and exterior walls freeze, expand, and split — often silently overnight.
+                    Winter temperatures across the desert cities, Hemet, and the mountain passes above Banning can drop into the mid-20s on winter nights. Exposed supply lines in garages, crawlspaces, and exterior walls freeze, expand, and split — often silently overnight.
                   </p>
                 </div>
                 <div className="mt-8">

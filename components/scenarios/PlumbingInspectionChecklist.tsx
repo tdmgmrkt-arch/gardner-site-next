@@ -95,7 +95,7 @@ const checklistItems = [
   {
     num: 4,
     title: "Water Heater — Age, Type, and Venting",
-    body: "A tank water heater has an 8- to 12-year service life. A unit 10 or more years old with signs of corrosion around the base or T&P valve is a near-term replacement. Inspectors note the serial number (manufacturer date is encoded in it), the fuel type, and whether the venting is intact and correctly pitched. Tankless units get checked for scale buildup — in hard-water Coachella Valley cities like Palm Springs and Palm Desert, an uncleaned tankless unit can lose 25 – 40% of its heating efficiency within 3 years.",
+    body: "A tank water heater has an 8- to 12-year service life. A unit 10 or more years old with signs of corrosion around the base or T&P valve is a near-term replacement. Inspectors note the serial number (manufacturer date is encoded in it), the fuel type, and whether the venting is intact and correctly pitched. Tankless units get checked for scale buildup — in hard-water desert cities like Palm Springs and Palm Desert, an uncleaned tankless unit can lose 25 – 40% of its heating efficiency within 3 years.",
   },
   {
     num: 5,
@@ -120,7 +120,7 @@ const checklistItems = [
   {
     num: 9,
     title: "Hose Bibs and Outdoor Fixtures",
-    body: "Outdoor hose bibs are checked for drip leaks and freeze damage. This matters more than buyers expect in the Coachella Valley: Cathedral City, Palm Springs, and the eastern desert cities see enough cold snaps that non-freeze-resistant hose bibs crack. Split bibs are a common deferred repair that sellers miss.",
+    body: "Outdoor hose bibs are checked for drip leaks and freeze damage. This matters more than buyers expect in the desert cities: Cathedral City, Palm Springs, and other eastern desert areas see enough cold snaps that non-freeze-resistant hose bibs crack. Split bibs are a common deferred repair that sellers miss.",
   },
   {
     num: 10,
@@ -199,7 +199,7 @@ const faqs = [
   },
   {
     q: "What if the inspection finds problems after I've already bought the house?",
-    a: "Gardner Plumbing Co. serves homeowners at every stage — not just buyers in escrow. If you moved into a home and discovered plumbing problems that weren't disclosed, a licensed plumber can document the condition, estimate repair costs, and provide a written report that supports a disclosure complaint or legal claim. More practically: knowing what you have lets you prioritize repairs correctly and budget for them. Call (951) 246-4337 for a post-purchase plumbing inspection. Gardner Plumbing Co. serves 25 cities across Riverside County, eastern San Bernardino County, and the Coachella Valley.",
+    a: "Gardner Plumbing Co. serves homeowners at every stage — not just buyers in escrow. If you moved into a home and discovered plumbing problems that weren't disclosed, a licensed plumber can document the condition, estimate repair costs, and provide a written report that supports a disclosure complaint or legal claim. More practically: knowing what you have lets you prioritize repairs correctly and budget for them. Call (951) 246-4337 for a post-purchase plumbing inspection. Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities.",
   },
 ];
 
@@ -247,7 +247,7 @@ export function PlumbingInspectionChecklist() {
               </p>
 
               <p className="text-base text-gray-400 mb-4 leading-relaxed">
-                Gardner Plumbing Co. performs pre-purchase plumbing inspections across Riverside County, the Coachella Valley, and eastern San Bernardino County, and delivers a written report you can hand to your real estate agent or use in seller concession negotiations.
+                Gardner Plumbing Co. performs pre-purchase plumbing inspections across Riverside County and neighboring communities, and delivers a written report you can hand to your real estate agent or use in seller concession negotiations.
               </p>
 
               <p className="text-sm text-gray-500 mb-8">Last Updated: June 2026</p>
@@ -480,7 +480,7 @@ export function PlumbingInspectionChecklist() {
                   {
                     icon: Home,
                     title: "Slab foundations, no crawl space.",
-                    body: "Nearly all residential construction in the Inland Empire and Coachella Valley sits on a concrete slab. Every supply line runs through or under it — making any leak a potential jackhammer job and requiring camera or electronic detection to find.",
+                    body: "Nearly all residential construction across the Inland Empire and desert cities sits on a concrete slab. Every supply line runs through or under it — making any leak a potential jackhammer job and requiring camera or electronic detection to find.",
                   },
                   {
                     icon: Droplets,

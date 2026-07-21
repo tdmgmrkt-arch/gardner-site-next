@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Electrical Panel Upgrade Murrieta, CA | 200A Service Upgrades | Gardner Plumbing Co.",
     description:
-      "Licensed electricians upgrade panels from 100A to 200A across Murrieta and the Inland Empire. Permitted work, SCE coordination, upfront pricing. Call (951) 246-4337.",
+      "Licensed electricians upgrade panels from 100A to 200A across Murrieta and the Inland Empire. Code-compliant work, SCE coordination, upfront pricing. Call (951) 246-4337.",
     url: "https://gardnerplumbingco.com/services/electrical/electrical-panel-upgrade",
   },
   alternates: {
@@ -46,7 +46,7 @@ Electrical Panel Upgrade in Murrieta — 200A Service for Modern Homes
 
 ### Subheadline
 ```
-Inland Empire homes built in the 1990s and 2000s run on 100-amp panels. EV chargers, heat pumps, and ADUs need more. Our licensed electricians upgrade your service and pull the permits — so you're ready for whatever you're adding next.
+Inland Empire homes built in the 1990s and 2000s run on 100-amp panels. EV chargers, heat pumps, and ADUs need more. Our licensed electricians upgrade your service — so you're ready for whatever you're adding next.
 ```
 *(42 words)*
 
@@ -60,7 +60,7 @@ Line 2: Murrieta & Inland Empire
 
 | Icon (Lucide) | Text |
 |---|---|
-| `Clock` | Fast Permit Turnaround |
+| `Clock` | Fast Inspection Scheduling |
 | `Shield` | Licensed & Insured |
 | `DollarSign` | Upfront Pricing |
 | `Phone` | Same-Week Scheduling |
@@ -178,8 +178,8 @@ Gardner Plumbing Co. is a licensed electrical contractor serving Murrieta, Temec
 
 **Card 1**
 - Icon: `FileCheck`
-- Title: `Permitted, Every Time`
-- Description: `Every panel upgrade we complete is pulled with a permit, inspected by the city, and logged with SCE. Unpermitted panel work voids homeowner's insurance and blocks home sales.`
+- Title: `Code-Compliant, Every Time`
+- Description: `Every panel upgrade we complete is code-compliant and inspection-ready. Permits are the property owner's responsibility; we coordinate the paperwork and list permit fees as a pass-through line on your quote. Unpermitted panel work voids homeowner's insurance and blocks home sales.`
 
 **Card 2**
 - Icon: `Shield`
@@ -325,7 +325,7 @@ Ready to Upgrade Your Electrical Panel?
 
 ### Supporting Paragraph
 ```
-Panel upgrades across Murrieta, Temecula, and the Inland Empire. Permitted work, SCE coordination, and upfront written quotes. Call now or schedule online — our electrical team picks up.
+Panel upgrades across Murrieta, Temecula, and the Inland Empire. Code-compliant work, SCE coordination, and upfront written quotes. Call now or schedule online — our electrical team picks up.
 ```
 *(31 words)*
 
@@ -336,7 +336,7 @@ Panel upgrades across Murrieta, Temecula, and the Inland Empire. Permitted work,
 ### Trust Strip (3 items)
 | Icon | Label |
 |---|---|
-| `FileCheck` | Permitted Work |
+| `FileCheck` | Code-Compliant Work |
 | `Shield` | Licensed & Insured |
 | `Star` | 4.9 Star Rating |
 

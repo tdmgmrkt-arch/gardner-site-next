@@ -225,7 +225,7 @@ const faqs = [
         degraded, removing aluminum wiring from connection points, or updating
         the entire home from an older wiring standard to current NEC code.
         Repairs are typically completed in a single visit. Rewiring is a
-        multi-day project involving permit and inspection. Our electricians will
+        multi-day project involving permit coordination and inspection. Our electricians will
         tell you clearly at diagnosis which category your situation falls into.
         See our{" "}
         <Link

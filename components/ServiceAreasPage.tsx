@@ -146,23 +146,23 @@ const centralNorthernRiverside: City[] = [
   { name: "Pedley", descriptor: "NW Riverside County" },
 ];
 
-const coachellaEastSB: City[] = [
-  { name: "Palm Springs", descriptor: "Coachella Valley" },
-  { name: "North Palm Springs", descriptor: "Coachella Valley" },
-  { name: "Cathedral City", descriptor: "Coachella Valley" },
-  { name: "Palm Desert", descriptor: "Coachella Valley" },
-  { name: "Garnet", descriptor: "Coachella Valley" },
-  { name: "Beaumont", descriptor: "Eastern San Bernardino Co." },
-  { name: "Banning", descriptor: "Eastern San Bernardino Co." },
-  { name: "Cherry Valley", descriptor: "Eastern San Bernardino Co." },
-  { name: "Calimesa", descriptor: "Eastern San Bernardino Co." },
-  { name: "Redlands", descriptor: "Eastern San Bernardino Co." },
-  { name: "Yucaipa", descriptor: "Eastern San Bernardino Co." },
-  { name: "Mentone", descriptor: "Eastern San Bernardino Co." },
+const extendedServiceArea: City[] = [
+  { name: "Palm Springs", descriptor: "Extended service area" },
+  { name: "North Palm Springs", descriptor: "Extended service area" },
+  { name: "Cathedral City", descriptor: "Extended service area" },
+  { name: "Palm Desert", descriptor: "Extended service area" },
+  { name: "Garnet", descriptor: "Extended service area" },
+  { name: "Beaumont", descriptor: "Extended service area" },
+  { name: "Banning", descriptor: "Extended service area" },
+  { name: "Cherry Valley", descriptor: "Extended service area" },
+  { name: "Calimesa", descriptor: "Extended service area" },
+  { name: "Redlands", descriptor: "Extended service area" },
+  { name: "Yucaipa", descriptor: "Extended service area" },
+  { name: "Mentone", descriptor: "Extended service area" },
 ];
 
 const TOTAL_CITIES =
-  swRiversideCounty.length + centralNorthernRiverside.length + coachellaEastSB.length;
+  swRiversideCounty.length + centralNorthernRiverside.length + extendedServiceArea.length;
 
 // ─── Stat Cards ───────────────────────────────────────────────────────────────
 
@@ -171,7 +171,7 @@ const stats = [
     icon: MapPin,
     value: "25",
     label: "Cities Served",
-    sub: "Riverside County, Coachella Valley & eastern San Bernardino County",
+    sub: "Across Riverside County and neighboring communities",
     color: "blue" as const,
   },
   {
@@ -209,8 +209,8 @@ const faqs = [
     a: "Yes. Unincorporated communities within Riverside County — including Garnet, Pedley, Mentone, and Cherry Valley — fall inside our service area. If you have a Riverside County address but aren't sure whether it's incorporated, call us. Dispatchers serve on geography, not city-limit lines.",
   },
   {
-    q: "Do you provide emergency plumbing service in the Coachella Valley?",
-    a: "Yes. Gardner Plumbing Co. provides 24/7 emergency dispatch to Palm Springs, North Palm Springs, Cathedral City, Palm Desert, and Garnet. Response times in the Coachella Valley may run slightly longer than in our core SW Riverside County area, but emergency calls receive the same priority dispatch process.",
+    q: "Do you provide emergency plumbing service to Palm Springs and surrounding cities?",
+    a: "Yes. Gardner Plumbing Co. provides 24/7 emergency dispatch to Palm Springs, North Palm Springs, Cathedral City, Palm Desert, and Garnet. Response times to these cities may run slightly longer than in our core Southwest Riverside County area, but emergency calls receive the same priority dispatch process.",
   },
   {
     q: "Is there a trip charge for cities farther from Murrieta?",
@@ -222,7 +222,7 @@ const faqs = [
   },
   {
     q: "Does Gardner Plumbing serve HOA communities and multi-family properties?",
-    a: "Yes. Gardner Plumbing Co. works with HOAs, property management companies, and multi-family properties throughout Riverside County and eastern San Bernardino County. We handle everything from individual unit repairs to common-area plumbing and main-line maintenance.",
+    a: "Yes. Gardner Plumbing Co. works with HOAs, property management companies, and multi-family properties throughout Riverside County and neighboring communities. We handle everything from individual unit repairs to common-area plumbing and main-line maintenance.",
   },
 ];
 
@@ -391,22 +391,22 @@ export function ServiceAreasPage() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
                 Serving {TOTAL_CITIES} Cities Across{" "}
                 <span className="bg-linear-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-                  Riverside County &amp; the Coachella Valley
+                  Riverside County &amp; Neighboring Communities
                 </span>
               </h1>
 
               <p className="text-lg text-gray-300 mb-4 leading-relaxed">
-                Gardner Plumbing Co. serves {TOTAL_CITIES} cities across Riverside County, eastern San
-                Bernardino County, and the Coachella Valley — including Murrieta, Temecula,
-                Menifee, Riverside, Corona, Eastvale, Palm Springs, Palm Desert, Redlands,
-                and Yucaipa. With 30+ years of experience and a Murrieta-based crew,
+                Gardner Plumbing Co. serves {TOTAL_CITIES} cities across Riverside County
+                and neighboring communities — including Murrieta, Temecula, Menifee,
+                Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake
+                Elsinore. With 30+ years of experience and a Murrieta-based crew,
                 we reach most core service areas within a 45-minute arrival window.
               </p>
 
               <p className="text-base text-gray-400 mb-8 leading-relaxed">
                 Licensed under CSLB #1073177, Gardner Plumbing Co. dispatches 24/7 for
                 emergencies across the full service area — from emergency pipe repair in
-                Corona to water heater service in Palm Desert.
+                Corona to water heater service in Hemet.
               </p>
 
               <p className="text-sm text-gray-500 mb-8">Last Updated: June 2026</p>
@@ -438,7 +438,7 @@ export function ServiceAreasPage() {
               <div className="relative w-full aspect-4/5 lg:aspect-3/4 rounded-3xl overflow-hidden shadow-luxury border border-white/10">
                 <Image
                   src="/service-areas-hero.webp"
-                  alt={`Gardner Plumbing Co. service van driving through a Southern California residential neighborhood serving ${TOTAL_CITIES} cities across Riverside County and the Coachella Valley`}
+                  alt={`Gardner Plumbing Co. service van driving through a Southern California residential neighborhood serving ${TOTAL_CITIES} cities across Riverside County and neighboring communities`}
                   fill
                   priority
                   sizes="(min-width: 1024px) 480px, 100vw"
@@ -518,7 +518,7 @@ export function ServiceAreasPage() {
               25 Cities We Serve
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              Riverside County · San Bernardino County · Coachella Valley
+              Across Riverside County and neighboring communities
             </p>
           </div>
 
@@ -536,9 +536,9 @@ export function ServiceAreasPage() {
               accentColor="green"
             />
             <RegionColumn
-              heading="Coachella Valley &amp; Eastern San Bernardino"
-              subheading="Desert &amp; Mountain Region"
-              cities={coachellaEastSB}
+              heading="Extended Service Area"
+              subheading="Neighboring Communities"
+              cities={extendedServiceArea}
               accentColor="blue"
             />
           </div>
@@ -570,8 +570,7 @@ export function ServiceAreasPage() {
                 Gardner Plumbing Co. is headquartered in Murrieta, CA, at the heart of our
                 service footprint. From here, licensed technicians reach core Southwest
                 Riverside County neighborhoods within roughly 45 minutes — and dispatch
-                daily to communities throughout the Coachella Valley and eastern San
-                Bernardino County.
+                daily to neighboring communities across the region.
               </p>
               <p className="text-base text-gray-400 mb-8 leading-relaxed">
                 Whether you&apos;re in Eastvale to the north, Palm Desert to the east, or San
@@ -599,7 +598,7 @@ export function ServiceAreasPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Gardner Plumbing Co. Service Area Map — Riverside County, Coachella Valley, Eastern San Bernardino County"
+                  title="Gardner Plumbing Co. Service Area Map — Riverside County and Neighboring Communities"
                   className="w-full h-80 sm:h-96 lg:h-[520px] object-cover group-hover:scale-105 transition-transform duration-700 rounded-3xl"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl pointer-events-none" />
@@ -611,7 +610,7 @@ export function ServiceAreasPage() {
                     </div>
                     <div>
                       <div className="text-white font-bold text-sm">Full Coverage</div>
-                      <div className="text-gray-300 text-xs">25 Cities · 3 Regions</div>
+                      <div className="text-gray-300 text-xs">25 Cities Served</div>
                     </div>
                   </div>
                 </div>
@@ -637,8 +636,8 @@ export function ServiceAreasPage() {
                 Don&apos;t See Your City?
               </h2>
               <p className="text-gray-300 leading-relaxed">
-                We regularly serve neighboring communities throughout the Inland Empire and
-                eastern San Bernardino County. Call{" "}
+                We regularly serve neighboring communities throughout the Inland Empire.
+                Call{" "}
                 <a
                   href={PHONE_HREF}
                   className="text-blue-400 hover:text-blue-300 font-semibold underline-offset-2 hover:underline"

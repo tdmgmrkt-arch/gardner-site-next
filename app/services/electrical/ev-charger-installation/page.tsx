@@ -5,12 +5,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "EV Charger Installation Murrieta, CA | Level 2 Home Charging",
   description:
-    "EV charger installation in Murrieta, Temecula & the Inland Empire. Level 2 (240V) home charging, dedicated circuits, permits pulled. Call (951) 246-4337.",
+    "EV charger installation in Murrieta, Temecula & the Inland Empire. Level 2 (240V) home charging, dedicated circuits, NEC 625 compliant. Call (951) 246-4337.",
   openGraph: {
     title:
       "EV Charger Installation Murrieta, CA | Level 2 Home Charging | Gardner Plumbing Co.",
     description:
-      "Licensed electricians install Level 2 EV chargers across Murrieta and the Inland Empire. Dedicated circuits, panel assessment, permitted work. Call (951) 246-4337.",
+      "Licensed electricians install Level 2 EV chargers across Murrieta and the Inland Empire. Dedicated circuits, panel assessment, NEC 625 compliant. Call (951) 246-4337.",
     url: "https://gardnerplumbingco.com/services/electrical/ev-charger-installation",
   },
   alternates: {
@@ -25,7 +25,7 @@ const faqs = [
     question:
       "Do I need a permit to install a Level 2 EV charger in Murrieta?",
     answer:
-      "Yes. The City of Murrieta requires a permit for Level 2 (240V) EV charger installation. The permit triggers an electrical inspection to confirm the circuit meets NEC Article 625 — the code section governing EV charging equipment. This applies whether you're installing a hardwired unit or a NEMA 14-50 outlet. Unpermitted 240V circuits void homeowner's insurance for any fire or electrical damage claim originating from that circuit, and must be disclosed as unpermitted work during a home sale. Every installation our electrical team completes includes the permit and the inspection — it is built into our pricing, not billed as a separate item.",
+      "Yes. The City of Murrieta requires a permit for Level 2 (240V) EV charger installation. The permit triggers an electrical inspection to confirm the circuit meets NEC Article 625 — the code section governing EV charging equipment. This applies whether you're installing a hardwired unit or a NEMA 14-50 outlet. Unpermitted 240V circuits void homeowner's insurance for any fire or electrical damage claim originating from that circuit, and must be disclosed as unpermitted work during a home sale. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote.",
   },
   {
     question: "Does my current electrical panel support a Level 2 EV charger?",
@@ -45,12 +45,12 @@ const faqs = [
   {
     question: "How long does EV charger installation take?",
     answer:
-      "Most straightforward installations — panel has available capacity, garage has accessible wire runs to the panel — take 3 to 5 hours on-site. The permit is typically approved within 3 to 7 business days depending on city processing, so the total timeline from quote to energized charger is usually 1 to 2 weeks. If a panel upgrade is also required, the panel work adds a day and the permit timeline overlaps with the charger permit. We schedule both together to avoid two separate permit windows. For homes where the garage is detached from the main panel by a long run, we assess wire routing options during the quote visit.",
+      "Most straightforward installations — panel has available capacity, garage has accessible wire runs to the panel — take 3 to 5 hours on-site. Permit processing typically takes 3 to 7 business days depending on city workload, so the total timeline from quote to energized charger is usually 1 to 2 weeks. If a panel upgrade is also required, the panel work adds a day and the permit timelines can be coordinated together. For homes where the garage is detached from the main panel by a long run, we assess wire routing options during the quote visit.",
   },
   {
     question: "How much does EV charger installation cost in Murrieta?",
     answer:
-      "A standard Level 2 EV charger installation — dedicated 240V circuit, 40-amp breaker, NEMA 14-50 outlet or hardwire connection, permit, and inspection — typically runs $700 to $1,500 in Murrieta, depending on the distance from the panel to the garage and the complexity of the wire run. If a panel upgrade is also needed, that adds $2,500 to $4,500 to the project (see our panel upgrade page at /services/electrical/electrical-panel-upgrade for panel-specific cost context). Financing is available for combined installations; see our financing page at /financing. Some utility and state incentive programs may reduce the net cost — we note applicable programs in the quote visit.",
+      "A standard Level 2 EV charger installation — dedicated 240V circuit, 40-amp breaker, NEMA 14-50 outlet or hardwire connection — typically runs $700 to $1,500 in Murrieta, depending on the distance from the panel to the garage and the complexity of the wire run. Permit fees are listed as a pass-through line on your quote where required. If a panel upgrade is also needed, that adds $2,500 to $4,500 to the project (see our panel upgrade page at /services/electrical/electrical-panel-upgrade for panel-specific cost context). Financing is available for combined installations; see our financing page at /financing. Some utility and state incentive programs may reduce the net cost — we note applicable programs in the quote visit.",
   },
 ];
 
@@ -93,7 +93,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "EV Charger Installation",
   description:
-    "Professional Level 2 EV charger installation services for residential properties across Murrieta, Temecula, and the Inland Empire. Dedicated 240V circuits, panel assessment, permitted work.",
+    "Professional Level 2 EV charger installation services for residential properties across Murrieta, Temecula, and the Inland Empire. Dedicated 240V circuits, panel assessment, NEC 625 compliant.",
   provider: {
     "@type": "Electrician",
     name: "Gardner Plumbing Co.",

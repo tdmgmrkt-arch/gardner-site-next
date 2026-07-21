@@ -14,6 +14,69 @@ export type Post = {
 
 export const posts: Post[] = [
  {
+  slug: "4000-moen-flo-installs-inland-empire",
+  category: "Smart Home Plumbing",
+  title: "4,000+ Moen Flo Installs: Inland Empire's Trusted Installer",
+  author: "Gardner Plumbing Co.",
+  date: "July 20, 2026",
+  readTime: "6 min read",
+  image: "/moenfloinstalls.webp",
+  excerpt:
+    "Gardner Plumbing Co. has completed over 4,000 Moen Flo Smart Water Shutoff installations across Riverside County — more than any other plumber in the Inland Empire.",
+  content: `
+    <h2 class="text-2xl font-bold text-red-400 mb-4">4,000 Reasons Inland Empire Homeowners Choose Gardner Plumbing Co.</h2>
+    <p>Gardner Plumbing Co. has now completed more than 4,000 Moen Flo Smart Water Shutoff installations across Riverside County and neighboring communities. That number is not a marketing figure — it is a record of jobs done, pipes protected, and homeowners who trusted us with one of the most consequential upgrades a home can get. No other plumber in the region has installed more Moen Flo devices. This post explains what earned that position and why it matters if you are looking for a <a href="/services/plumbing/moen-flo-installation" class="text-blue-400 hover:text-blue-300 underline">Moen Flo installer in Riverside County</a>.</p>
+
+    <h2 class="text-2xl font-bold text-red-400 mt-10 mb-4">Why Volume of Installs Actually Matters</h2>
+    <p>Any plumber can sell a smart water shutoff. Very few have installed enough of them to have seen every configuration, every pipe material, every app-pairing issue, and every edge case the Moen Flo system can throw at you. After 4,000+ installations across cities like Murrieta, Temecula, Menifee, Corona, Moreno Valley, Hemet, Riverside, and Eastvale, Gardner Plumbing Co. has.</p>
+    <p class="mt-4">That depth of experience shows up in real ways: a tech who has pre-installed a hundred units in post-tension slab homes in Menifee knows exactly which shut-off location works and which one doesn't. A tech who has set up 50 units in older Redlands homes built in the 1970s knows what aging galvanized supply lines do to flow-rate readings. Volume creates pattern recognition that no spec sheet can replicate.</p>
+    <p class="mt-4">Gardner Plumbing Co. is also backed by 30+ years in business, CSLB #1073177, and 900+ five-star Google reviews with a 4.9-star average. That track record predates Moen Flo by decades — the smart water shutoff expertise is built on top of a foundation that was already there.</p>
+
+    <h2 class="text-2xl font-bold text-red-400 mt-10 mb-4">What Does a Smart Water Shutoff Actually Prevent?</h2>
+    <p>The Moen Flo monitors every gallon of water moving through your home's main line, 24 hours a day. It detects slow drips, pinhole leaks, running toilets, and full pipe failures — and it can cut off your water supply automatically before damage spreads. According to the <a href="https://www.epa.gov/watersense/fix-leak-week" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline">EPA's Fix a Leak Week campaign</a>, household leaks waste nearly 1 trillion gallons of water in the United States each year. A single slow leak left undetected for weeks can rot subfloor, fuel mold growth, and result in <a href="/services/plumbing/water-damage" class="text-blue-400 hover:text-blue-300 underline">water damage</a> repair bills that run well into five figures.</p>
+    <p class="mt-4">The Moen Flo protects against:</p>
+    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300">
+      <li>Slow drips and pinhole leaks in supply lines</li>
+      <li>Slab leaks — a chronic problem in Inland Empire homes</li>
+      <li>Running toilets wasting hundreds of gallons per day</li>
+      <li>Appliance failures (water heater, refrigerator ice maker, dishwasher)</li>
+      <li>Pipe bursts during sudden pressure spikes</li>
+      <li>Water loss while the home is vacant (travel, vacation, snowbird season)</li>
+    </ul>
+    <p class="mt-4">If you want the full breakdown of how the device works before deciding, see the <a href="/blog/should-i-install-moen-flo" class="text-blue-400 hover:text-blue-300 underline">existing Moen Flo guide</a> that covers product features in detail. This post is about who installs it best and why that choice matters.</p>
+
+    <h2 class="text-2xl font-bold text-red-400 mt-10 mb-4">Why Inland Empire Homes Are Especially Vulnerable to Water Damage</h2>
+    <p>Riverside County is not an average market for water risk. Several local factors combine to make a smart shutoff more valuable here than in most other parts of California.</p>
+    <p class="mt-4"><strong>Slab construction dominates.</strong> The majority of homes in Murrieta, Temecula, Menifee, and the surrounding communities are built on concrete slab foundations. When a supply line runs under or through that slab and develops a pinhole leak, you often will not see or hear it for months. By the time the water bill spikes or flooring starts to buckle, the damage is already significant. A Moen Flo unit catches the anomaly in the flow data within days — sometimes hours. Homes with serious slab leak history may also benefit from reviewing <a href="/services/plumbing/piping-and-repiping" class="text-blue-400 hover:text-blue-300 underline">repiping options</a> alongside a smart shutoff installation.</p>
+    <p class="mt-4"><strong>Aging pipe stock.</strong> Neighborhoods in Riverside, Perris, San Jacinto, Hemet, and Redlands include homes built in the 1960s through 1980s with galvanized steel or early copper plumbing that is now at or past its design life. Those pipes corrode from the inside. A <a href="/services/plumbing/leak-detection" class="text-blue-400 hover:text-blue-300 underline">professional leak detection</a> inspection paired with a Moen Flo installation is a strong combination for these homes.</p>
+    <p class="mt-4"><strong>Thermal stress and Santa Ana conditions.</strong> Inland Empire summers regularly push past 105°F. Exposed supply lines — in attics, garages, and crawl spaces — expand and contract dramatically. Santa Ana wind events drop humidity fast and can stress flex connections. These conditions accelerate wear on fittings and joints that might last decades in a milder climate.</p>
+    <p class="mt-4"><strong>Water pressure variation.</strong> Supply pressure across Riverside County can range from under 40 PSI in some hillside zones to over 100 PSI in areas with aggressive municipal supply. Excess pressure is one of the leading causes of pinhole leaks and appliance hose failures. The Moen Flo tracks pressure patterns over time and can flag abnormal readings before they cause damage.</p>
+
+    <h2 class="text-2xl font-bold text-red-400 mt-10 mb-4">Who Is the Best Moen Flo Installer in Riverside County?</h2>
+    <p>Gardner Plumbing Co. is the most experienced Moen Flo installer in Riverside County, with more than 4,000 smart water shutoff installations completed across the Inland Empire and neighboring communities. Licensed under CSLB #1073177 and in continuous operation for 30+ years, Gardner Plumbing Co. serves Murrieta, Temecula, Menifee, Corona, Moreno Valley, Riverside, Hemet, Lake Elsinore, and 17 additional cities throughout the region. Average review score is 4.9 stars across more than 900 Google reviews.</p>
+
+    <h2 class="text-2xl font-bold text-red-400 mt-10 mb-4">What to Expect from a Gardner Moen Flo Installation</h2>
+    <p>The install itself takes most technicians about two hours in a typical single-family home. Here is what Gardner Plumbing Co. brings to that appointment:</p>
+    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-300">
+      <li>Written estimate before any work begins — the price on your estimate is the price on your invoice</li>
+      <li>No trip fee and no service-call fee for the in-home estimate visit</li>
+      <li>Main line shutoff assessment to confirm the best install location for your home's layout</li>
+      <li>Device mounting, connection, and pressure calibration</li>
+      <li>Full Moen Flo app setup and walk-through on your phone</li>
+      <li>Flow baseline run so the device learns your home's normal usage patterns</li>
+      <li>30-Day Callback Guarantee — if anything related to the installation needs attention within 30 days, a Gardner tech returns at no charge, parts and labor covered</li>
+    </ul>
+    <p class="mt-4">If during the estimate visit a tech identifies a pressure issue, corroded shutoff valve, or supply line condition that should be addressed before installation, you will hear about it on the spot with options — not after the invoice arrives. That is the Written Estimate Before Work Begins commitment in practice.</p>
+    <p class="mt-4">Gardner Plumbing Co. also offers <a href="/services/maintenance-plans" class="text-blue-400 hover:text-blue-300 underline">annual maintenance plans</a> that pair well with a Moen Flo installation — combining the device's real-time monitoring with a yearly professional inspection of supply lines, shutoff valves, and water heater connections.</p>
+
+    <p class="mt-6 p-4 border border-red-400 rounded text-white">Ready for a free in-home Moen Flo estimate? Call <a href="tel:9512464337" class="text-blue-400 hover:text-blue-300 underline">(951) 246-4337</a> — no trip fees, no obligation. Gardner Plumbing Co. serves Murrieta, Temecula, Menifee, Corona, Riverside, and 20 additional cities across Riverside County.</p>
+
+    <h2 class="text-2xl font-bold text-red-400 mt-10 mb-4">4,000 Installs. One Standard of Work.</h2>
+    <p>Milestones are only meaningful if the work behind them held up. Every one of those 4,000+ Moen Flo installations was completed by a licensed Gardner Plumbing Co. technician under the same guarantee structure: written estimate, no trip fees, 30-day callback coverage, and a license number — CSLB #1073177 — that is verifiable on the California State License Board website. If you are comparing Moen Flo installers in Murrieta, Temecula, or anywhere across Riverside County, that is the standard to measure against. <a href="/services/plumbing/moen-flo-installation" class="text-blue-400 hover:text-blue-300 underline">Learn more about Gardner's Moen Flo installation service</a> or <a href="/contact-us" class="text-blue-400 hover:text-blue-300 underline">contact us to schedule your free estimate</a>.</p>
+  `,
+},
+
+ {
   slug: "plumbing-upgrades-boost-home-value",
   category: "Home Improvement",
   title: "Plumbing Upgrades That Boost Home Value",

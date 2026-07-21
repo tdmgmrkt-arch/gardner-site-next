@@ -220,7 +220,7 @@ export default async function SlabLeakPage() {
         <GardnerPromise reviewCount={reviewCount} />
         <FinalCallCta
           heading="Call Gardner Plumbing Co. Now"
-          subheading="Slab leak detection and repair throughout Riverside County, eastern San Bernardino County, and the Coachella Valley. CSLB #1073177. 900+ five-star Google reviews. No trip fees. Written estimate before work begins."
+          subheading="Slab leak detection and repair throughout Riverside County and neighboring communities. CSLB #1073177. 900+ five-star Google reviews. No trip fees. Written estimate before work begins."
         />
       </main>
     </div>

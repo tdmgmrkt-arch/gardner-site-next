@@ -83,7 +83,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "65-Point Plumbing Inspection",
-  "description": "Comprehensive 65-point plumbing inspection covering pipes, fixtures, water heaters, and gas lines. Detailed written report and expert recommendations. Serving Riverside County, eastern San Bernardino County, and the Coachella Valley.",
+  "description": "Comprehensive 65-point plumbing inspection covering pipes, fixtures, water heaters, and gas lines. Detailed written report and expert recommendations. Serving Riverside County and neighboring communities.",
   "provider": {
     "@type": "Plumber",
     "name": "Gardner Plumbing Co.",

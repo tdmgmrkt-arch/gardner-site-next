@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "How much does furnace installation cost in Murrieta?",
     answer:
-      "A standard gas furnace installation in Murrieta typically ranges from $2,500 to $5,500 depending on unit efficiency (80% vs. 96% AFUE), brand, home size, and whether new flue venting or gas line work is required. Electric furnace installations are generally on the lower end of that range. We provide a written itemized quote — equipment, labor, permit, and haul-away — before any work starts. Financing is available for qualified homeowners through our financing options at /financing.",
+      "A standard gas furnace installation in Murrieta typically ranges from $2,500 to $5,500 depending on unit efficiency (80% vs. 96% AFUE), brand, home size, and whether new flue venting or gas line work is required. Electric furnace installations are generally on the lower end of that range. We provide a written itemized quote — equipment, labor, haul-away, and any permit fees listed separately as a pass-through line — before any work starts. Financing is available for qualified homeowners through our financing options at /financing.",
   },
   {
     question: "Should I get a gas furnace or a heat pump?",
@@ -44,7 +44,7 @@ const faqs = [
   {
     question: "Do I need a permit for furnace installation in Murrieta?",
     answer:
-      "Yes. The City of Murrieta requires a mechanical permit for HVAC equipment installation, including furnace replacement. Our team pulls the permit before work begins and coordinates the final inspection with the city. Do not use a contractor who skips the permit — an unpermitted system can void your homeowner's insurance, complicate a home sale, and leave you without a code-compliant installation. Permit fees are included in our upfront written quote.",
+      "Yes. The City of Murrieta requires a mechanical permit for HVAC equipment installation, including furnace replacement. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. Do not use a contractor who skips the permit — an unpermitted system can void your homeowner's insurance, complicate a home sale, and leave you without a code-compliant installation.",
   },
   {
     question: "How long does furnace installation take?",

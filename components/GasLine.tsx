@@ -101,7 +101,7 @@ const emergencyReasons = [
       question:
         "Are you licensed for gas line work?",
       answer:
-        "Absolutely! We are fully licensed and certified for gas line installation, repair, and inspection. All work meets local codes and safety standards with proper permits.",
+        "Absolutely! We are fully licensed and certified for gas line installation, repair, and inspection. All work meets local codes and safety standards.",
     },
     {
       question: "Do you guarantee your gas line work?",
@@ -448,7 +448,7 @@ const services = [
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
-                    <span>Licensed installation with proper permits</span>
+                    <span>Licensed, code-compliant installation</span>
                   </div>
                 </div>
               </div>

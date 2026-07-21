@@ -232,17 +232,17 @@ const faqs = [
         Adding a new circuit or extending wiring to a new outlet location
         typically requires a permit from the City of Murrieta Building & Safety
         Division. Replacing an existing outlet on the same circuit generally
-        does not. Our electricians pull all required permits, schedule the
-        inspection, and handle sign-off before calling the job complete. You
-        don&apos;t coordinate with the city separately. For larger electrical
-        projects — like adding outlets alongside new{" "}
+        does not. Permits are the homeowner&apos;s responsibility under
+        California law; we can coordinate the paperwork when needed and will
+        list any permit fees as a pass-through line on your quote. For larger
+        electrical projects — like adding outlets alongside new{" "}
         <Link
           href="/services/electrical/lighting-installation"
           className="text-red-400 hover:text-red-300 underline"
         >
           lighting installation
         </Link>{" "}
-        — we pull a combined permit that covers the full scope.
+        — permit coordination can be handled together for the full scope.
       </>
     ),
   },

@@ -129,7 +129,6 @@ Installing a new AC system in an Inland Empire home takes more than swapping har
   1. Old Unit Removal & Disposal
   2. Refrigerant Line Upgrade
   3. R-410A / R-32 Systems
-  4. Permit Coordination
 
 **Card 4**
 - Icon: `CheckCircle`

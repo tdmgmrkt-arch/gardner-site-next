@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title:
       "Generator Installation Murrieta, CA | Transfer Switch & Hookup | Gardner Plumbing Co.",
     description:
-      "Licensed electricians connect standby generators across Murrieta and the Inland Empire. Transfer switch installation, load management, permitted hookup. Call (951) 246-4337.",
+      "Licensed electricians connect standby generators across Murrieta and the Inland Empire. Transfer switch installation, load management, NEC 702 compliant hookup. Call (951) 246-4337.",
     url: "https://gardnerplumbingco.com/services/electrical/generator-installation",
   },
   alternates: {
@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "What does a generator installation electrician actually do?",
     answer:
-      "Our scope is the electrical connection between the generator and your home's circuits — not the generator itself. Specifically: we install the transfer switch (manual or automatic) that safely disconnects your home from SCE's grid when the generator is running, run the wiring from the transfer switch to selected critical circuits, and install the inlet box or ATS connection point where the generator plugs in. We also pull the permit and handle the city inspection. What we do not do: recommend which generator to buy, deliver or set up the generator unit, supply fuel, or service the generator engine. That side belongs to the generator dealer or a qualified service tech.",
+      "Our scope is the electrical connection between the generator and your home's circuits — not the generator itself. Specifically: we install the transfer switch (manual or automatic) that safely disconnects your home from SCE's grid when the generator is running, run the wiring from the transfer switch to selected critical circuits, and install the inlet box or ATS connection point where the generator plugs in. Permit coordination is available where required — permit fees are listed as a pass-through line on your quote. What we do not do: recommend which generator to buy, deliver or set up the generator unit, supply fuel, or service the generator engine. That side belongs to the generator dealer or a qualified service tech.",
   },
   {
     question: "What is a transfer switch and why is it required?",
@@ -46,12 +46,12 @@ const faqs = [
   {
     question: "Does generator hookup require a permit in Murrieta?",
     answer:
-      "Yes. Generator hookup — whether standby or portable inlet box — is a permit-required electrical project in Murrieta and throughout Riverside County. The permit triggers a city inspection that confirms the transfer switch, disconnect, and wiring meet NEC 702. Unpermitted generator hookups are a liability issue: they void the electrical portion of your homeowner's insurance and put you at risk if a back-feed event damages utility equipment. Permit processing in Murrieta typically takes 3 to 7 business days. We submit the permit application as part of scheduling — homeowners do not need to manage the permit process independently. The inspection is scheduled and attended by our electricians.",
+      "Yes. Generator hookup — whether standby or portable inlet box — is a permit-required electrical project in Murrieta and throughout Riverside County. The permit triggers a city inspection that confirms the transfer switch, disconnect, and wiring meet NEC 702. Unpermitted generator hookups are a liability issue: they void the electrical portion of your homeowner's insurance and put you at risk if a back-feed event damages utility equipment. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. Permit processing in Murrieta typically takes 3 to 7 business days.",
   },
   {
     question: "How much does generator electrical hookup cost in Murrieta?",
     answer:
-      "A portable generator inlet box with interlock kit — the most common entry-level hookup — typically runs $800 to $1,500, permit and inspection included. A manual transfer switch with selected critical circuits runs $1,500 to $3,000 depending on the number of circuits included. An automatic transfer switch (ATS) for a whole-home standby generator runs $2,500 to $5,000 for the electrical work, not including the generator unit itself. All quotes are written before work begins. If the hookup also requires a panel upgrade at /services/electrical/electrical-panel-upgrade — which some standby systems do depending on amperage — we scope both together. Financing is available; see our financing page at /financing.",
+      "A portable generator inlet box with interlock kit — the most common entry-level hookup — typically runs $800 to $1,500 for labor and materials (permit fees listed separately as a pass-through line where required). A manual transfer switch with selected critical circuits runs $1,500 to $3,000 depending on the number of circuits included. An automatic transfer switch (ATS) for a whole-home standby generator runs $2,500 to $5,000 for the electrical work, not including the generator unit itself. All quotes are written before work begins. If the hookup also requires a panel upgrade at /services/electrical/electrical-panel-upgrade — which some standby systems do depending on amperage — we scope both together. Financing is available; see our financing page at /financing.",
   },
 ];
 

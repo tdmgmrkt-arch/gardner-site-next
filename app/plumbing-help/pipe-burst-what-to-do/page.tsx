@@ -113,7 +113,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 7,
       name: "Call Gardner Plumbing Co. at (951) 246-4337",
-      text: "Gardner Plumbing Co. dispatches licensed technicians across Riverside County, eastern San Bernardino County, and the Coachella Valley around the clock.",
+      text: "Gardner Plumbing Co. dispatches licensed technicians across Riverside County and neighboring communities around the clock.",
     },
   ],
 };
@@ -218,7 +218,7 @@ export default async function PipeBurstPage() {
         <GardnerPromise reviewCount={reviewCount} />
         <FinalCallCta
           heading="Stop the Water. Call Now."
-          subheading="Gardner Plumbing Co. dispatches licensed plumbers to homes across Riverside County, eastern San Bernardino County, and the Coachella Valley — 24 hours a day, 7 days a week. No trip fees. Written estimate before work begins. CSLB #1073177."
+          subheading="Gardner Plumbing Co. dispatches licensed plumbers to homes across Riverside County and neighboring communities — 24 hours a day, 7 days a week. No trip fees. Written estimate before work begins. CSLB #1073177."
         />
       </main>
     </div>

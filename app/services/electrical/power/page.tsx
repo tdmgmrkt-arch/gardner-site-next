@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title:
       "Electrical Panel Upgrade Murrieta, CA | Power & EV Chargers | Gardner Plumbing Co.",
     description:
-      "Panel upgrades, rewiring, EV chargers, and generator installation across Murrieta and the Inland Empire. Licensed, permitted, upfront pricing. Call (951) 246-4337.",
+      "Panel upgrades, rewiring, EV chargers, and generator installation across Murrieta and the Inland Empire. Licensed, code-compliant, upfront pricing. Call (951) 246-4337.",
     url: "https://gardnerplumbingco.com/services/electrical/power",
   },
   alternates: {
@@ -42,7 +42,7 @@ const faqs = [
     question:
       "Do I need a permit to upgrade my panel or install an EV charger in Murrieta?",
     answer:
-      "Yes to both. A panel upgrade (200-amp service upgrade) requires a permit through the City of Murrieta Building & Safety or Riverside County Building Department, plus inspection by the local electrical inspector. Level 2 EV charger installation on a new circuit also requires a permit. Our electricians handle the permit filing and schedule the inspection — it's part of the job, not an add-on. Unpermitted panel work creates open permit issues that surface during home sales and can void homeowner's insurance coverage.",
+      "Yes to both. A panel upgrade (200-amp service upgrade) requires a permit through the City of Murrieta Building & Safety or Riverside County Building Department, plus inspection by the local electrical inspector. Level 2 EV charger installation on a new circuit also requires a permit. Permits are the property owner's responsibility under California law; we can coordinate the paperwork when needed and will list any permit fees as a pass-through line on your quote. Unpermitted panel work creates open permit issues that surface during home sales and can void homeowner's insurance coverage.",
   },
   {
     question: "Does my home need a generator, and what type makes sense?",
