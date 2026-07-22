@@ -337,6 +337,19 @@ export function Footer() {
                 </button>
               </div>
             </div>
+            <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-white/10 text-center">
+              <p className="text-gray-500 text-[11px] sm:text-xs">
+                Designed &amp; Developed by{" "}
+                <a
+                  href="https://tdmarketinggroup.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-red-400 transition-colors duration-300"
+                >
+                  TD Marketing Group
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
