@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Blog } from "@/components/Blog";
 
 export const metadata = {
@@ -17,7 +18,9 @@ export const metadata = {
 export default function BlogPage() {
   return (
     <div className="bg-background text-foreground min-h-screen">
-      <Blog />
+      <Suspense fallback={null}>
+        <Blog />
+      </Suspense>
     </div>
   );
 }

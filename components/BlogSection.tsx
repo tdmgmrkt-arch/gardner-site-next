@@ -7,8 +7,10 @@ import Link from "next/link";
 import { posts } from "@/data/blogPosts"; // <-- import your central data
 
 export function BlogSection() {
-  // Grab the latest 4 posts (sorted by date if needed)
-  const latestPosts = posts.slice(0, 4);
+  const latestPosts = posts
+    .slice()
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 4);
 
   return (
     <section className="py-12 sm:py-16 lg:py-28 relative overflow-hidden">

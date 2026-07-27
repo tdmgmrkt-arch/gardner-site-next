@@ -1,10 +1,12 @@
 # Gardner Plumbing — Active Work Log
 
-_Last updated: 2026-06-30_
+_Last updated: 2026-07-24_
 
 ---
 
 ## In Progress
+
+- **52-Post Blog Series — ALL 4 BATCHES COMPLETE in local repo (2026-07-24).** 52 total posts added to `data/blogPosts.ts` spanning May 20 2025 → July 24 2026 (evenly spaced ~8-day cadence with 8 seasonal pins). Build clean at 160/160 static pages. All posts hit min 3 internal + 1 external link floor (Batch 2 initially shipped 7 under-spec, backfilled same session; Batch 3 initially shipped ~700-word posts, expanded same session to 900–1,050). All 52 `/public/blog/<slug>.webp` images sourced from Pexels + sharp-converted, all under 300 KB. Blog listing + BlogSection now sort by date desc (fixed `components/Blog.tsx` + `components/BlogSection.tsx`). 3 posts were written from scratch to fill PDF content gaps (Summer Tips, Water Pressure Problems, Spring Checklist) + 1 re-angled (Red Flags vs the batch-1 "How to Choose"). **Loose ends:** (1) batch-1 posts `repair-vs-replace-leaky-faucet` + `understanding-home-plumbing-system` still have 0 external links; (2) 8 batch-4 posts run 1,100–1,532 words (over target ceiling, accepted as substantive); (3) leftover utility `scripts/download-batch4-images.mjs` can be deleted. **NOT yet committed.**
 
 - **Clean Visit Promise — COMPLETE in local repo (2026-06-30).** Closes R&R cleanliness citation gap (19 vs 2). New `/clean-visit-promise` page + reusable `<CleanVisitPromise />` 6-pillar section (glassmorphism, sibling to Gardner Promise). Section dropped on homepage, Drain, WaterHeater, LeakDetection, BurstPipes, Emergency. WebPage + FAQPage + BreadcrumbList JSON-LD inline. Sitemap updated. Build passes (100 routes). Owner-approved: name "The Clean Visit Promise", accountability recourse Option A (same-day return free), Behavior 7 (photo handoff) dropped — not operationally live. **NOT yet committed.**
 
