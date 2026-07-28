@@ -37,7 +37,7 @@ const faqs = [
     question:
       "When is the best time to schedule HVAC service in the Inland Empire?",
     answer:
-      "For AC service, schedule in February or March — before the first heat wave hits Murrieta in April or May. Demand surges in June through September and booking windows shrink. For furnace service, schedule in September or October before cold nights arrive. If you're on an HVAC maintenance plan at /services/hvac/heating/hvac-maintenance-plans, the plan automatically schedules both tune-ups at the right time of year. Waiting until a system fails costs more than annual preventive service.",
+      "For AC service, schedule in February or March — before the first heat wave hits Murrieta in April or May. Demand surges in June through September and booking windows shrink. For furnace service, schedule in September or October before cold nights arrive. If you're on an HVAC maintenance plan at /services/hvac/hvac-maintenance-plans, the plan automatically schedules both tune-ups at the right time of year. Waiting until a system fails costs more than annual preventive service.",
   },
   {
     question:

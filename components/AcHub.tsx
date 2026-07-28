@@ -95,7 +95,7 @@ const services = [
   {
     icon: Wrench,
     title: "AC Repair",
-    href: "/services/hvac/ac/ac-repair",
+    href: "/services/hvac/ac-repair",
     description:
       "Same-day diagnosis and repair for capacitor failures, refrigerant leaks, frozen coils, and compressor issues — the most common AC failures in IE heat.",
     features: [
@@ -108,7 +108,7 @@ const services = [
   {
     icon: Zap,
     title: "AC Installation",
-    href: "/services/hvac/ac/ac-installation",
+    href: "/services/hvac/ac-installation",
     description:
       "New central AC system sizing, installation, and commissioning — matched to your home's square footage, duct layout, and Inland Empire climate demands.",
     features: [
@@ -121,7 +121,7 @@ const services = [
   {
     icon: CalendarCheck,
     title: "AC Maintenance",
-    href: "/services/hvac/ac/ac-maintenance",
+    href: "/services/hvac/ac-maintenance",
     description:
       "Annual tune-ups before the summer heat wave — coil cleaning, refrigerant check, electrical testing, and a full-system inspection to prevent mid-summer failures.",
     features: [
@@ -134,7 +134,7 @@ const services = [
   {
     icon: Snowflake,
     title: "Mini-Split AC",
-    href: "/services/hvac/ac/mini-split-ac",
+    href: "/services/hvac/mini-split-ac",
     description:
       "Ductless mini-split installation for room additions, garages, and homes without existing ductwork — zoned cooling without tearing into walls.",
     features: [
@@ -187,7 +187,7 @@ const faqs = [
         Our technicians give you both numbers — repair cost vs. replacement cost
         — before you decide. See our{" "}
         <Link
-          href="/services/hvac/ac/ac-installation"
+          href="/services/hvac/ac-installation"
           className="text-red-400 hover:text-red-300 underline"
         >
           AC installation page
@@ -209,7 +209,7 @@ const faqs = [
         Booking in winter means shorter wait times and a confirmed-ready system
         before the season peaks. Our{" "}
         <Link
-          href="/services/hvac/ac/ac-maintenance"
+          href="/services/hvac/ac-maintenance"
           className="text-red-400 hover:text-red-300 underline"
         >
           AC maintenance service
@@ -475,7 +475,7 @@ export function AcHub() {
               Five services under one roof, all dispatched same-day from our
               Murrieta base across Riverside County. We also handle{" "}
               <Link
-                href="/services/hvac/ac/thermostat-installation"
+                href="/services/hvac/thermostat-installation"
                 className="text-red-400 hover:text-red-300 underline"
               >
                 thermostat installation

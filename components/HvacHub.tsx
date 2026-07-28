@@ -133,7 +133,7 @@ const services = [
   {
     icon: CalendarCheck,
     title: "HVAC Maintenance Plans",
-    href: "/services/hvac/heating/hvac-maintenance-plans",
+    href: "/services/hvac/hvac-maintenance-plans",
     description:
       "Preventive service contracts that cover both AC and heating — scheduled tune-ups, priority dispatch, and no surprise repair bills.",
     features: [
@@ -205,7 +205,7 @@ const faqs = [
         September and booking windows shrink. For furnace service, schedule in
         September or October before cold nights arrive. If you&apos;re on an{" "}
         <Link
-          href="/services/hvac/heating/hvac-maintenance-plans"
+          href="/services/hvac/hvac-maintenance-plans"
           className="text-red-400 hover:text-red-300 underline"
         >
           HVAC maintenance plan
@@ -666,7 +666,7 @@ export function HvacHub() {
                 replacement in Hemet to a mini-split installation in Wildomar.
                 Explore our{" "}
                 <Link
-                  href="/services/hvac/heating/hvac-maintenance-plans"
+                  href="/services/hvac/hvac-maintenance-plans"
                   className="text-red-400 hover:text-red-300 underline"
                 >
                   HVAC maintenance plans

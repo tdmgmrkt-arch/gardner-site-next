@@ -24,13 +24,13 @@ const faqs = [
   {
     question: "How do I know if I should repair or replace my AC system?",
     answer:
-      "The threshold most HVAC technicians use: if the repair cost exceeds half the price of a new unit AND your system is over 12 years old, replacement is usually the smarter financial decision. Inland Empire AC systems run harder than units in coastal climates — the heat accelerates wear on capacitors, compressors, and refrigerant lines. A system showing multiple failures in the same summer is a strong replacement candidate. Our technicians give you both numbers — repair cost vs. replacement cost — before you decide. See our AC installation page at /services/hvac/ac/ac-installation for replacement options.",
+      "The threshold most HVAC technicians use: if the repair cost exceeds half the price of a new unit AND your system is over 12 years old, replacement is usually the smarter financial decision. Inland Empire AC systems run harder than units in coastal climates — the heat accelerates wear on capacitors, compressors, and refrigerant lines. A system showing multiple failures in the same summer is a strong replacement candidate. Our technicians give you both numbers — repair cost vs. replacement cost — before you decide. See our AC installation page at /services/hvac/ac-installation for replacement options.",
   },
   {
     question:
       "What does an AC tune-up include, and when should I schedule one?",
     answer:
-      "An AC tune-up covers coil cleaning (evaporator and condenser), refrigerant level check, electrical component testing (capacitors, contactors, wiring), thermostat calibration, airflow measurement, and a full visual inspection of the system. Schedule it in February or March — before the first Inland Empire heat wave arrives in late April or May. Booking in winter means shorter wait times and a confirmed-ready system before the season peaks. Our AC maintenance service at /services/hvac/ac/ac-maintenance covers all of the above in a single visit.",
+      "An AC tune-up covers coil cleaning (evaporator and condenser), refrigerant level check, electrical component testing (capacitors, contactors, wiring), thermostat calibration, airflow measurement, and a full visual inspection of the system. Schedule it in February or March — before the first Inland Empire heat wave arrives in late April or May. Booking in winter means shorter wait times and a confirmed-ready system before the season peaks. Our AC maintenance service at /services/hvac/ac-maintenance covers all of the above in a single visit.",
   },
   {
     question: "What AC brands does your team service and install?",

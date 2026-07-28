@@ -94,7 +94,7 @@ const services = [
   {
     icon: Wind,
     title: "Air Duct Cleaning",
-    href: "/services/hvac/indoor-air-quality/air-duct-cleaning",
+    href: "/services/hvac/air-duct-cleaning",
     description:
       "Whole-home duct cleaning that removes years of accumulated dust, debris, pet dander, and allergens — improving airflow and the quality of every breath you take.",
     features: [
@@ -109,7 +109,7 @@ const services = [
   {
     icon: Filter,
     title: "Air Filtration Systems",
-    href: "/services/hvac/indoor-air-quality/air-filtration-systems",
+    href: "/services/hvac/air-filtration-systems",
     description:
       "Whole-home air purifiers and high-efficiency filtration systems installed in your HVAC — capturing airborne particles, allergens, VOCs, and wildfire smoke particulates.",
     features: [
@@ -124,7 +124,7 @@ const services = [
   {
     icon: Droplets,
     title: "Whole-Home Humidifiers",
-    href: "/services/hvac/indoor-air-quality/whole-home-humidifiers",
+    href: "/services/hvac/whole-home-humidifiers",
     description:
       "Whole-home humidifier installation integrated with your HVAC system — consistent humidity throughout every room without portable unit hassle.",
     features: [
@@ -139,7 +139,7 @@ const services = [
   {
     icon: Thermometer,
     title: "Whole-Home Dehumidifiers",
-    href: "/services/hvac/indoor-air-quality/whole-home-dehumidifiers",
+    href: "/services/hvac/whole-home-dehumidifiers",
     description:
       "Whole-home dehumidifier installation for homes with excess moisture — eliminating musty smells, protecting structure, and reducing mold risk.",
     features: [
@@ -193,7 +193,7 @@ const faqs = [
         baseline. Upgrade to a MERV 11 or higher filter first. If your ducts
         haven&apos;t been cleaned in 5 or more years, schedule{" "}
         <Link
-          href="/services/hvac/indoor-air-quality/air-duct-cleaning"
+          href="/services/hvac/air-duct-cleaning"
           className="text-red-400 hover:text-red-300 underline"
         >
           air duct cleaning
@@ -220,7 +220,7 @@ const faqs = [
         automatically in every room. Portable units work for one room; whole-home
         units work for the house. See our{" "}
         <Link
-          href="/services/hvac/indoor-air-quality/whole-home-humidifiers"
+          href="/services/hvac/whole-home-humidifiers"
           className="text-red-400 hover:text-red-300 underline"
         >
           whole-home humidifier service
@@ -243,7 +243,7 @@ const faqs = [
         on registers or surfaces, or anyone in the household has respiratory
         sensitivities. Our{" "}
         <Link
-          href="/services/hvac/indoor-air-quality/air-duct-cleaning"
+          href="/services/hvac/air-duct-cleaning"
           className="text-red-400 hover:text-red-300 underline"
         >
           air duct cleaning service
@@ -272,7 +272,7 @@ const faqs = [
         particles from wildfire smoke or pet dander, a high-MERV filter or
         whole-home{" "}
         <Link
-          href="/services/hvac/indoor-air-quality/air-filtration-systems"
+          href="/services/hvac/air-filtration-systems"
           className="text-red-400 hover:text-red-300 underline"
         >
           air filtration system
@@ -522,7 +522,7 @@ export function IndoorAirQualityHub() {
               look at a whole-home humidifier. If you notice excessive dust on
               surfaces even after cleaning — start with{" "}
               <Link
-                href="/services/hvac/indoor-air-quality/air-duct-cleaning"
+                href="/services/hvac/air-duct-cleaning"
                 className="text-red-400 hover:text-red-300 underline"
               >
                 air duct cleaning

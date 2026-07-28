@@ -95,7 +95,7 @@ const services = [
   {
     icon: Wrench,
     title: "Furnace Repair",
-    href: "/services/hvac/heating/furnace-repair",
+    href: "/services/hvac/furnace-repair",
     description:
       "Same-day diagnosis and repair for furnaces that won't ignite, blow cold air, short-cycle, or trip the breaker — fast response for Inland Empire homes.",
     features: [
@@ -108,7 +108,7 @@ const services = [
   {
     icon: Zap,
     title: "Furnace Installation",
-    href: "/services/hvac/heating/furnace-installation",
+    href: "/services/hvac/furnace-installation",
     description:
       "New gas furnace sizing, installation, and commissioning — matched to your home's square footage, existing ductwork, and Inland Empire climate profile.",
     features: [
@@ -121,7 +121,7 @@ const services = [
   {
     icon: CalendarCheck,
     title: "Furnace Maintenance",
-    href: "/services/hvac/heating/furnace-maintenance",
+    href: "/services/hvac/furnace-maintenance",
     description:
       "Annual furnace tune-ups before the cold season — burner cleaning, heat exchanger inspection, safety check, and airflow testing to prevent winter failures.",
     features: [
@@ -134,7 +134,7 @@ const services = [
   {
     icon: Flame,
     title: "Heat Pump Systems",
-    href: "/services/hvac/heating/heat-pump-systems",
+    href: "/services/hvac/heat-pump-systems",
     description:
       "Heat pump installation and service — efficient heating and cooling in a single system, well-suited to the Inland Empire's mild winters and hot summers.",
     features: [
@@ -189,7 +189,7 @@ const faqs = [
         you&apos;re starting fresh or want to reduce gas use, a heat pump is
         worth pricing out. See our{" "}
         <Link
-          href="/services/hvac/heating/heat-pump-systems"
+          href="/services/hvac/heat-pump-systems"
           className="text-red-400 hover:text-red-300 underline"
         >
           heat pump systems page
@@ -209,7 +209,7 @@ const faqs = [
         heat exchangers develop stress from thermal cycling. A pre-season
         tune-up finds these issues before they cause a failure in December. Our{" "}
         <Link
-          href="/services/hvac/heating/furnace-maintenance"
+          href="/services/hvac/furnace-maintenance"
           className="text-red-400 hover:text-red-300 underline"
         >
           furnace maintenance service
@@ -478,7 +478,7 @@ export function HeatingHub() {
               avoid mid-winter failures, our HVAC team covers every heating
               scenario. We also offer{" "}
               <Link
-                href="/services/hvac/heating/hvac-maintenance-plans"
+                href="/services/hvac/hvac-maintenance-plans"
                 className="text-red-400 hover:text-red-300 underline"
               >
                 HVAC maintenance plans

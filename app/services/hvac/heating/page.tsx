@@ -25,13 +25,13 @@ const faqs = [
     question:
       "Furnace or heat pump — which is better for the Inland Empire climate?",
     answer:
-      "Both work well in the Inland Empire, and the right choice depends on your home and your utility setup. Heat pumps are the more efficient choice for the IE's mild winters — they move heat rather than generate it, which uses less energy when outdoor temperatures stay above freezing. Gas furnaces heat faster and feel warmer during the rare cold nights in Hemet or San Jacinto. If you have existing gas lines and ductwork, a gas furnace is often the lower-cost installation. If you're starting fresh or want to reduce gas use, a heat pump is worth pricing out. See our heat pump systems page at /services/hvac/heating/heat-pump-systems for a side-by-side comparison.",
+      "Both work well in the Inland Empire, and the right choice depends on your home and your utility setup. Heat pumps are the more efficient choice for the IE's mild winters — they move heat rather than generate it, which uses less energy when outdoor temperatures stay above freezing. Gas furnaces heat faster and feel warmer during the rare cold nights in Hemet or San Jacinto. If you have existing gas lines and ductwork, a gas furnace is often the lower-cost installation. If you're starting fresh or want to reduce gas use, a heat pump is worth pricing out. See our heat pump systems page at /services/hvac/heat-pump-systems for a side-by-side comparison.",
   },
   {
     question:
       "How often should a furnace be serviced in the Inland Empire?",
     answer:
-      "Once per year, ideally in September or October before the first cold nights arrive. Inland Empire furnaces sit unused for 6–7 months during the cooling season — dust accumulates on burners, igniters weaken, and heat exchangers develop stress from thermal cycling. A pre-season tune-up finds these issues before they cause a failure in December. Our furnace maintenance service at /services/hvac/heating/furnace-maintenance covers a full inspection, burner cleaning, heat exchanger check, and carbon monoxide safety test in a single visit.",
+      "Once per year, ideally in September or October before the first cold nights arrive. Inland Empire furnaces sit unused for 6–7 months during the cooling season — dust accumulates on burners, igniters weaken, and heat exchangers develop stress from thermal cycling. A pre-season tune-up finds these issues before they cause a failure in December. Our furnace maintenance service at /services/hvac/furnace-maintenance covers a full inspection, burner cleaning, heat exchanger check, and carbon monoxide safety test in a single visit.",
   },
   {
     question:
