@@ -2,7 +2,7 @@ import { MenifeeDrainCleaning } from "@/components/MenifeeDrainCleaning";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Menifee Drain Cleaning | Expert Plumbing Service | Gardner Plumbing",
+  title: "Menifee Drain Cleaning",
   description: "Professional drain cleaning in Menifee, CA. Serving Sun City, Quail Valley, Heritage Lake & all areas. 24/7 emergency service. Call (951) 246-4337.",
   alternates: {
     canonical: '/services/plumbing/menifee-drain-cleaning'

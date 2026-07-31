@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HVAC Maintenance Plan Murrieta, CA | Service Agreement",
+  title: "HVAC Maintenance Plan Murrieta, CA",
   description:
     "HVAC maintenance plans in Murrieta, Temecula & the Inland Empire. Annual heating + cooling tune-ups, priority service, and plan-member repair discounts. Call (951) 246-4337.",
   openGraph: {

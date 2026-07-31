@@ -2,7 +2,7 @@ import { MurrietaDrainCleaning } from "@/components/MurrietaDrainCleaning";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Murrieta Drain Cleaning | Professional Service | Gardner Plumbing",
+  title: "Murrieta Drain Cleaning",
   description: "Expert drain cleaning in Murrieta, CA. Serving Greer Ranch, Spencer's Crossing, The Village & all areas. 24/7 emergency service. Call (951) 246-4337.",
   alternates: {
     canonical: '/services/plumbing/murrieta-drain-cleaning'

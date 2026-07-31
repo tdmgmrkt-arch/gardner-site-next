@@ -2,7 +2,7 @@ import { TemeculaDrainCleaning } from "@/components/TemeculaDrainCleaning";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Temecula Drain Cleaning | Fast, Professional Service | Gardner Plumbing",
+  title: "Temecula Drain Cleaning",
   description: "Expert drain cleaning in Temecula, CA. Serving Old Town, Redhawk, Harveston & all neighborhoods. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
     canonical: '/services/plumbing/temecula-drain-cleaning'

@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Electrical Panel Upgrade Murrieta, CA | 200A Service Upgrades",
+  title: "Electrical Panel Upgrade Murrieta, CA",
   description:
     "Electrical panel upgrade in Murrieta, Temecula & the Inland Empire. 100A to 200A upgrades, breaker box replacement, SCE service entrance work. Call (951) 246-4337.",
   openGraph: {

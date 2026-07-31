@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Indoor Air Quality Services Murrieta, CA | IAQ Solutions",
+  title: "Indoor Air Quality Murrieta, CA",
   description:
     "Indoor air quality services in Murrieta, Temecula & the Inland Empire. Air duct cleaning, whole-home filtration, humidifiers, and dehumidifiers. Call (951) 246-4337.",
   openGraph: {

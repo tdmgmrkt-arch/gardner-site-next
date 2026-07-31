@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Generator Installation Murrieta, CA | Transfer Switch & Hookup",
+  title: "Generator Installation Murrieta, CA",
   description:
     "Generator installation in Murrieta, Temecula & the Inland Empire. Transfer switch, load management, sub-panel hookup, and code-compliant wiring. Call (951) 246-4337.",
   openGraph: {

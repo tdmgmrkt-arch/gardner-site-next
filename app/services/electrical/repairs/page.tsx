@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Electrical Repair Murrieta, CA | 24/7 Emergency Electrician",
+  title: "24/7 Electrical Repair Murrieta, CA",
   description:
     "Electrical repairs, 24/7 emergency electrician, safety inspections & surge protection in Murrieta, Temecula & the Inland Empire. Call (951) 246-4337 now.",
   openGraph: {

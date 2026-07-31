@@ -2,7 +2,7 @@ import { CoronaDrainCleaning } from "@/components/CoronaDrainCleaning";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Corona Drain Cleaning | Fast Professional Service | Gardner Plumbing",
+  title: "Corona Drain Cleaning | Fast Service",
   description: "Expert drain cleaning in Corona, CA. Serving Corona Hills, Eagle Glen, South Corona & Historic Downtown. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
     canonical: '/services/plumbing/corona-drain-cleaning'

@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "The Gardner Shield — Year-Round Home Systems Protection | Gardner Plumbing Co.",
+  title: "The Gardner Shield — Home Protection",
   description:
     "The Gardner Shield is Gardner Plumbing Co.'s membership program: Plumbing Shield $249/yr with optional HVAC (+$99) and Electrical (+$49) add-ons. Scheduled maintenance, priority service, 10% off repairs, no emergency overtime.",
   alternates: {

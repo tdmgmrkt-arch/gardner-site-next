@@ -2,7 +2,7 @@ import { CanyonLakeDrainCleaning } from "@/components/CanyonLakeDrainCleaning";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Canyon Lake Drain Cleaning | Gated Community Specialists | Gardner Plumbing",
+  title: "Canyon Lake Drain Cleaning",
   description: "Expert drain cleaning in Canyon Lake, CA. Serving lakefront & hillside properties, septic & sewer systems. 24/7 emergency. Call (951) 246-4337.",
   alternates: {
     canonical: '/services/plumbing/canyon-lake-drain-cleaning'

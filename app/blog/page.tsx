@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { Blog } from "@/components/Blog";
+import { BlogHero } from "@/components/BlogHero";
 
 export const metadata = {
   title: "Plumbing Blog & Tips",
@@ -18,6 +19,7 @@ export const metadata = {
 export default function BlogPage() {
   return (
     <div className="bg-background text-foreground min-h-screen">
+      <BlogHero />
       <Suspense fallback={null}>
         <Blog />
       </Suspense>

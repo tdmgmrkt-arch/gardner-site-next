@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Furnace Tune-Up Murrieta, CA | Annual Furnace Maintenance",
+  title: "Furnace Tune-Up Murrieta, CA",
   description:
     "Furnace tune-up in Murrieta, Temecula & the Inland Empire. Annual safety inspection, burner cleaning, combustion analysis. Schedule before first cold snap. Call (951) 246-4337.",
   openGraph: {

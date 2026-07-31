@@ -102,6 +102,26 @@ const nextConfig: NextConfig = {
       { source: '/services/san-jacinto-drain-cleaning', destination: '/services/plumbing/san-jacinto-drain-cleaning', permanent: true },
       { source: '/services/temecula-drain-cleaning', destination: '/services/plumbing/temecula-drain-cleaning', permanent: true },
       { source: '/services/wildomar-drain-cleaning', destination: '/services/plumbing/wildomar-drain-cleaning', permanent: true },
+
+      // HVAC nested → flat URL restructure (AC sub-hub)
+      { source: '/services/hvac/ac/ac-repair', destination: '/services/hvac/ac-repair', permanent: true },
+      { source: '/services/hvac/ac/ac-installation', destination: '/services/hvac/ac-installation', permanent: true },
+      { source: '/services/hvac/ac/ac-maintenance', destination: '/services/hvac/ac-maintenance', permanent: true },
+      { source: '/services/hvac/ac/thermostat-installation', destination: '/services/hvac/thermostat-installation', permanent: true },
+      { source: '/services/hvac/ac/mini-split-ac', destination: '/services/hvac/mini-split-ac', permanent: true },
+
+      // HVAC nested → flat URL restructure (Heating sub-hub)
+      { source: '/services/hvac/heating/furnace-repair', destination: '/services/hvac/furnace-repair', permanent: true },
+      { source: '/services/hvac/heating/furnace-installation', destination: '/services/hvac/furnace-installation', permanent: true },
+      { source: '/services/hvac/heating/furnace-maintenance', destination: '/services/hvac/furnace-maintenance', permanent: true },
+      { source: '/services/hvac/heating/heat-pump-systems', destination: '/services/hvac/heat-pump-systems', permanent: true },
+      { source: '/services/hvac/heating/hvac-maintenance-plans', destination: '/services/hvac/hvac-maintenance-plans', permanent: true },
+
+      // HVAC nested → flat URL restructure (Indoor Air Quality sub-hub)
+      { source: '/services/hvac/indoor-air-quality/air-filtration-systems', destination: '/services/hvac/air-filtration-systems', permanent: true },
+      { source: '/services/hvac/indoor-air-quality/whole-home-humidifiers', destination: '/services/hvac/whole-home-humidifiers', permanent: true },
+      { source: '/services/hvac/indoor-air-quality/whole-home-dehumidifiers', destination: '/services/hvac/whole-home-dehumidifiers', permanent: true },
+      { source: '/services/hvac/indoor-air-quality/air-duct-cleaning', destination: '/services/hvac/air-duct-cleaning', permanent: true },
     ];
   },
 };

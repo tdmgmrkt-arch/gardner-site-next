@@ -249,7 +249,7 @@ const services = [
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Professional water heater installation and repair throughout Riverside County. Same-day service available with 30+ years of experience serving all brands and models. Our installations meet <a href="https://www.energy.gov/energysaver/water-heating" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">Energy Star efficiency standards</a>.
+                Professional water heater installation and repair throughout Riverside County. Same-day service available with 30+ years of experience serving all brands and models. Our installations meet <a href="https://www.energystar.gov/products/water_heaters" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">ENERGY STAR efficiency standards</a>.
               </p>
 
               {/* Key Benefits */}

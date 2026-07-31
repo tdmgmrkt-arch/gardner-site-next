@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Outlet Installation Murrieta, CA | GFCI, USB & Switches",
+  title: "Outlets & Switches Murrieta, CA",
   description:
     "Outlet and switch installation in Murrieta, Temecula & the Inland Empire. GFCI outlets, USB ports, dimmer switches & smart switches. Call (951) 246-4337.",
   openGraph: {

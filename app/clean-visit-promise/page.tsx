@@ -6,7 +6,7 @@ import { getGoogleReviews, formatRating, formatReviewCount } from "@/lib/google-
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "The Clean Visit Promise — How Gardner Plumbing Protects Your Home",
+  title: "The Clean Visit Promise",
   description:
     "Gardner Plumbing Co. follows a 6-step Clean Visit Promise on every call — shoe covers, drop cloths, haul-away, and a real recourse if we miss a step.",
   alternates: {

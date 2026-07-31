@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site-config";
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Plumbing Help & Emergency Guides — Gardner Plumbing Co.",
+  title: "Plumbing Help & Emergency Guides",
   description:
     "Free plumbing help guides for Riverside County homeowners. What to do when pipes burst, drains back up, or you spot a slab leak. Written by licensed CSLB #1073177 technicians.",
   alternates: {

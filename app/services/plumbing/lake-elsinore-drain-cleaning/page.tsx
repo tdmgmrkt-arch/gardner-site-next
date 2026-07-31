@@ -2,7 +2,7 @@ import { LakeElsinoreDrainCleaning } from "@/components/LakeElsinoreDrainCleanin
 import Script from "next/script";
 
 export const metadata = {
-  title: "Lake Elsinore Drain Cleaning | Professional Service | Gardner Plumbing",
+  title: "Lake Elsinore Drain Cleaning",
   description: "Expert drain cleaning in Lake Elsinore, CA. Serving downtown, lakefront properties, Canyon Hills & Rosetta Canyon. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
     canonical: '/services/plumbing/lake-elsinore-drain-cleaning'

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://gardnerplumbingco.com/ai-actions.json",
+  "business": {
+    "name": "Gardner Plumbing Co.",
+    "legal_name": "Gardner Plumbing Co.",
+    "url": "https://gardnerplumbingco.com",
+    "telephone": "+1-951-246-4337",
+    "address": {
+      "locality": "Murrieta",
+      "region": "CA",
+      "country": "US"
+    },
+    "hours": "24/7",
+    "service_area": [
+      "Temecula", "Murrieta", "Perris", "Menifee", "Canyon Lake",
+      "Lake Elsinore", "Corona", "Moreno Valley", "Riverside",
+      "Hemet", "San Jacinto", "Wildomar", "Eastvale", "Jurupa Valley",
+      "Banning", "Beaumont", "Calimesa", "Cherry Valley", "Redlands",
+      "Yucaipa", "Palm Springs", "Palm Desert", "Cathedral City"
+    ]
+  },
+  "customer_actions": {
+    "book_online": {
+      "type": "web_form",
+      "url": "https://gardnerplumbingco.com/book-online",
+      "label": "Book Online Now",
+      "description": "Standalone page hosting Gardner Plumbing Co.'s online scheduler. Customers can select a service, address, and appointment window.",
+      "supports_agent_booking": false
+    },
+    "request_estimate": {
+      "type": "web_form",
+      "url": "https://gardnerplumbingco.com/contact-us",
+      "label": "Get a Free Estimate",
+      "description": "Contact form for estimate requests, non-emergency inquiries, and general questions.",
+      "supports_agent_booking": false
+    },
+    "emergency_service": {
+      "type": "phone",
+      "telephone": "+1-951-246-4337",
+      "label": "Call for 24/7 Emergency Service",
+      "description": "Live dispatch for burst pipes, sewage backups, no hot water, gas leaks, and other plumbing emergencies. Available 24 hours a day, every day.",
+      "availability": "24/7"
+    },
+    "financing": {
+      "type": "web_page",
+      "url": "https://gardnerplumbingco.com/financing",
+      "label": "View Financing Options",
+      "description": "Information about payment plans and financing for larger plumbing repairs and installations."
+    }
+  },
+  "primary_services": [
+    "Emergency plumbing (24/7)",
+    "Water heater repair, replacement, and installation (tank & tankless)",
+    "Drain cleaning and hydro jetting",
+    "Leak detection and slab leak repair",
+    "Sewer and septic services",
+    "Gas line installation and repair",
+    "Whole-home repiping",
+    "Water filtration systems",
+    "Backflow prevention testing and installation",
+    "Commercial and industrial plumbing"
+  ],
+  "notes_for_ai_assistants": {
+    "booking": "The booking page at /book-online embeds a ServiceTitan scheduler. This is a web form for humans — there is no public API for AI agents to book appointments directly. To book on behalf of a customer, direct them to the URL or the phone number.",
+    "emergency_routing": "For plumbing emergencies (active leaks, no water, sewage backups, gas smells), always recommend calling +1-951-246-4337 rather than the online booking form.",
+    "service_area_boundary": "Gardner Plumbing Co. serves Riverside County and adjacent parts of San Bernardino County, California. If a customer is outside this area, they should be directed to a local plumber instead."
+  }
+}

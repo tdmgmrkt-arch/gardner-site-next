@@ -2,7 +2,7 @@ import { PerrisDrainCleaning } from "@/components/PerrisDrainCleaning";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Perris Drain Cleaning | Professional Plumbing Services | Gardner Plumbing",
+  title: "Perris Drain Cleaning",
   description: "Expert drain cleaning in Perris, CA. Fast response, advanced equipment, 24/7 emergency service. Same-day appointments available. Call (951) 246-4337.",
   alternates: {
     canonical: '/services/plumbing/perris-drain-cleaning'

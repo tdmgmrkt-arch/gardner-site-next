@@ -2,7 +2,7 @@ import { HemetDrainCleaning } from "@/components/HemetDrainCleaning";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Hemet Drain Cleaning | Professional Service | Gardner Plumbing",
+  title: "Hemet Drain Cleaning",
   description: "Expert drain cleaning in Hemet, CA. Serving Seven Hills, Diamond Valley, Valle Vista & Florida Avenue. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
     canonical: '/services/plumbing/hemet-drain-cleaning'

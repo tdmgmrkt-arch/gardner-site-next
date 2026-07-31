@@ -5,7 +5,7 @@ import { ServiceAreasPage as ServiceAreas } from "@/components/ServiceAreasPage"
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Service Areas — Gardner Plumbing Co. Riverside County",
+  title: "Service Areas — Riverside County",
   description:
     "Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities. 30+ years, CSLB #1073177.",
   alternates: {

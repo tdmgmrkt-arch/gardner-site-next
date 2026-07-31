@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Electrical Inspection Murrieta, CA | Safety & Code Audit",
+  title: "Electrical Inspection Murrieta, CA",
   description:
     "Electrical inspection in Murrieta, Temecula & the Inland Empire. Pre-sale, pre-purchase, insurance, and code compliance inspections. Licensed electricians. Call (951) 246-4337.",
   openGraph: {

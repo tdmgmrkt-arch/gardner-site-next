@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Smart Home Electrician Murrieta, CA | Wiring & Circuits",
+  title: "Smart Home Electrician Murrieta, CA",
   description:
     "Smart home wiring in Murrieta & the Inland Empire. Dedicated circuits, smart switch wiring, hub low-voltage cabling & smart thermostat hookup. Call (951) 246-4337.",
   openGraph: {

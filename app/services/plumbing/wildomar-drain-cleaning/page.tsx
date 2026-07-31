@@ -2,7 +2,7 @@ import { WildomarDrainCleaning } from "@/components/WildomarDrainCleaning";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Wildomar Drain Cleaning | Professional Service | Gardner Plumbing",
+  title: "Wildomar Drain Cleaning",
   description: "Expert drain cleaning in Wildomar, CA. Serving Windsong Valley, Trilogy & I-15 corridor areas. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
     canonical: '/services/plumbing/wildomar-drain-cleaning'

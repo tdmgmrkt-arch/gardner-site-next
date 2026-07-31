@@ -65,43 +65,6 @@ const articleSchema = {
   },
 };
 
-const checklistItemListSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "12 Things Every Plumbing Inspection Should Cover",
-  description: "The 12 areas Gardner Plumbing technicians evaluate on every pre-purchase plumbing inspection in Riverside County.",
-  numberOfItems: 12,
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Main Water Shut-Off — Location and Function", description: "Confirm the main shut-off opens and closes fully and doesn't show signs of corrosion or calcification." },
-    { "@type": "ListItem", position: 2, name: "Water Pressure — Measured at the Tap", description: "Residential water pressure should read between 40 and 80 PSI. Measured with a gauge, not by feel." },
-    { "@type": "ListItem", position: 3, name: "Pipe Material Throughout the Home", description: "Supply lines and drain lines identified and documented: copper, PEX, PVC, CPVC, cast iron, or galvanized steel." },
-    { "@type": "ListItem", position: 4, name: "Water Heater — Age, Type, and Venting", description: "Tank water heaters have an 8- to 12-year service life. Serial number checked, venting inspected, fuel type noted." },
-    { "@type": "ListItem", position: 5, name: "Drain Flow Test — Every Fixture", description: "Each sink, tub, and shower drain gets water run through it. Slow drains indicate partial blockages." },
-    { "@type": "ListItem", position: 6, name: "Toilet Flush and Fill Mechanisms", description: "Every toilet flushed. Flapper seal, fill valve, and base stability checked." },
-    { "@type": "ListItem", position: 7, name: "Sewer Line Camera Inspection — Main Line Health", description: "Camera run through main line to confirm it's clear of root intrusion, debris, and bellied sections." },
-    { "@type": "ListItem", position: 8, name: "Supply Valve Condition Under Sinks and Behind Toilets", description: "Isolation valves operated manually. Old compression valves frequently seize open or develop slow drips." },
-    { "@type": "ListItem", position: 9, name: "Hose Bibs and Outdoor Fixtures", description: "Outdoor hose bibs checked for drip leaks and freeze damage." },
-    { "@type": "ListItem", position: 10, name: "Evidence of Past Slab Leaks", description: "Mismatched flooring, fresh tile patches, baseboards with water staining, or a moving meter when fixtures are off." },
-    { "@type": "ListItem", position: 11, name: "Hard-Water Damage on Fixtures and Appliances", description: "Mineral buildup on showerheads, aerators, and dishwasher connections assessed." },
-    { "@type": "ListItem", position: 12, name: "Sewer Clean-Out Access", description: "A capped access point that lets a plumber clear a main-line blockage without digging up the yard." },
-  ],
-};
-
-const redFlagsItemListSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "5 Plumbing Red Flags That Should Kill a Deal or Trigger a Seller Concession",
-  description: "Systemic plumbing problems that affect the safety, livability, or insurability of a home.",
-  numberOfItems: 5,
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "No Accessible Main Water Shut-Off", description: "If a licensed plumber cannot locate and operate the main water shut-off during inspection, the home cannot be safely serviced." },
-    { "@type": "ListItem", position: 2, name: "Sewer Camera Shows Root Intrusion or Pipe Bellies", description: "Either condition points toward a partial or full sewer line replacement at $4,000 – $12,000 depending on length and depth." },
-    { "@type": "ListItem", position: 3, name: "Galvanized Supply Lines Throughout the Home", description: "A home with all-galvanized supply lines needs a full repipe — typically $4,500 – $9,000 in Riverside County." },
-    { "@type": "ListItem", position: 4, name: "Multiple Slab Leak Repairs in the Same Home", description: "Two or three slab leak patches indicates systemic copper supply line failure. A full repipe runs $6,000 – $12,000." },
-    { "@type": "ListItem", position: 5, name: "Water Heater 12+ Years Old with Corrosion", description: "At risk of failure. Budget $1,200 – $2,800 for a tank replacement or $2,500 – $4,500 for a tankless conversion." },
-  ],
-};
-
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -183,14 +146,6 @@ export default async function PlumbingInspectionChecklistPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(checklistItemListSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(redFlagsItemListSchema) }}
       />
       <script
         type="application/ld+json"

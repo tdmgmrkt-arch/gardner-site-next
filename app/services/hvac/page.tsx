@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HVAC Services Murrieta, CA | Heating, Cooling & Air Quality",
+  title: "HVAC Services Murrieta, CA",
   description:
     "HVAC services in Murrieta, Temecula & the Inland Empire. AC repair, furnace service, heat pumps, and indoor air quality. Licensed contractor. Call (951) 246-4337.",
   openGraph: {

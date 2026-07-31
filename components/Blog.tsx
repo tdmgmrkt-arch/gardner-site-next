@@ -9,7 +9,6 @@ import {
   ArrowRight,
   Calendar,
   User,
-  BookOpen,
   ChevronLeft,
   ChevronRight,
   Search,
@@ -75,9 +74,8 @@ export function Blog() {
     setCurrentPage((prev) => (prev > 1 ? prev - 1 : prev));
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden">
-        {/* Background gradients */}
+    <div className="bg-gray-900 text-white">
+      <section className="pb-16 sm:pb-20 lg:pb-28 pt-4 relative overflow-hidden">
         <div className="absolute inset-0">
           <div
             className="absolute inset-0"
@@ -100,26 +98,6 @@ export function Blog() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header */}
-          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
-            <div className="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">
-              <BookOpen className="h-5 w-5 text-red-400" />
-              <span className="text-red-400 font-semibold text-sm uppercase tracking-wider">
-                Gardner Plumbing Blog
-              </span>
-            </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-              Expert Insights &{" "}
-              <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
-                Plumbing Tips
-              </span>
-            </h1>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-              Your trusted resource for plumbing advice, maintenance tips, and the
-              latest in home water management from the experts at <Link href="/about-us" className="text-red-400 hover:text-red-300 underline">Gardner Plumbing Co</Link>. Our content follows <a href="https://www.phccweb.org/find-a-contractor/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">industry best practices</a>.
-            </p>
-          </div>
-
           {/* Search + Filters */}
           <div
             className="mb-16 p-6 bg-gray-800/20 border border-white/10 rounded-2xl shadow-lg animate-fade-in space-y-4"

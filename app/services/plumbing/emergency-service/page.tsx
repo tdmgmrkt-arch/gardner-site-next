@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "24/7 Emergency Plumbing Services | Gardner Plumbing Co.",
+  title: "24/7 Emergency Plumbing Services",
   description:
     "Gardner Plumbing Co. provides 24/7 emergency plumbing across Riverside County and neighboring communities. Live dispatchers, 45-min arrival window, CSLB #1073177.",
   alternates: {

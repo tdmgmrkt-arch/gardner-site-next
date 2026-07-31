@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "EV Charger Installation Murrieta, CA | Level 2 Home Charging",
+  title: "EV Charger Installation Murrieta, CA",
   description:
     "EV charger installation in Murrieta, Temecula & the Inland Empire. Level 2 (240V) home charging, dedicated circuits, NEC 625 compliant. Call (951) 246-4337.",
   openGraph: {

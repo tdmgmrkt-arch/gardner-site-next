@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ceiling Fan Installation Murrieta, CA | Install & Replace",
+  title: "Ceiling Fan Installation Murrieta, CA",
   description:
     "Ceiling fan installation in Murrieta, Temecula & the Inland Empire. New installs, fan replacements & smart fan wiring. Reduce AC load this summer. Call (951) 246-4337.",
   openGraph: {

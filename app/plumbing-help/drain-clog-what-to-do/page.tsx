@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site-config";
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Drain Won't Stop Backing Up? What to Do | Gardner Plumbing",
+  title: "Drain Backing Up? What to Do",
   description:
     "Drain backing up in Riverside County? Here's exactly what to do right now — what to try yourself, when to call, and why chemical cleaners make it worse.",
   alternates: {

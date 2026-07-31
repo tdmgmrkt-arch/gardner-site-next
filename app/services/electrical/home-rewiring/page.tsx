@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home Rewiring Murrieta, CA | Knob-and-Tube & Aluminum Wiring",
+  title: "Home Rewiring Murrieta, CA",
   description:
     "Home rewiring in Murrieta, Temecula & the Inland Empire. Knob-and-tube removal, aluminum wiring replacement, partial and full rewires. Call (951) 246-4337.",
   openGraph: {

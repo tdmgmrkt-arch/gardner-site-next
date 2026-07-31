@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/about-us', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/service-areas', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/contact-us', priority: 0.9, changeFrequency: 'monthly' as const },
+    { url: '/book-online', priority: 0.9, changeFrequency: 'monthly' as const },
     { url: '/reviews', priority: 0.6, changeFrequency: 'weekly' as const },
     { url: '/blog', priority: 0.6, changeFrequency: 'weekly' as const },
     { url: '/financing', priority: 0.7, changeFrequency: 'monthly' as const },

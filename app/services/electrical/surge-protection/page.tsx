@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Surge Protection Murrieta, CA | Whole-Home Surge Protector",
+  title: "Surge Protection Murrieta, CA",
   description:
     "Whole-home surge protection in Murrieta, Temecula & the Inland Empire. Panel-mounted SPD installation protects your EV charger, AC, appliances & smart home. Call (951) 246-4337.",
   openGraph: {

@@ -2,7 +2,7 @@ import { SanJacintoDrainCleaning } from "@/components/SanJacintoDrainCleaning";
 import Script from "next/script";
 
 export const metadata = {
-  title: "San Jacinto Drain Cleaning | Professional Service | Gardner Plumbing",
+  title: "San Jacinto Drain Cleaning",
   description: "Expert drain cleaning in San Jacinto, CA. Serving valley-wide areas, Soboba Springs & all neighborhoods. Same-day service, 24/7 emergency. Call (951) 246-4337.",
   alternates: {
     canonical: '/services/plumbing/san-jacinto-drain-cleaning'

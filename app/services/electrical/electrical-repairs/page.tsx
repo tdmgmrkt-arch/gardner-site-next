@@ -3,7 +3,7 @@ import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Electrical Repair Murrieta, CA | Diagnostics & Fast Fixes",
+  title: "Electrical Repair Murrieta, CA",
   description:
     "Electrical repair in Murrieta, Temecula & the Inland Empire. Breakers tripping, outlets dead, dimming lights — licensed electricians diagnose the root cause. Call (951) 246-4337.",
   openGraph: {

@@ -65,23 +65,6 @@ const articleSchema = {
   },
 };
 
-const signsItemListSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "7 Signs You Have a Slab Leak",
-  description: "The most common and most diagnostic symptoms of a slab leak in Riverside County homes.",
-  numberOfItems: 7,
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Water bill spiked with no obvious cause", description: "A water bill that jumps $50 – $200 in a single billing cycle, with no change in household usage, points strongly to a pressurized leak under the slab." },
-    { "@type": "ListItem", position: 2, name: "Warm or hot spot on your floor", description: "Slab leaks on hot-water lines raise the temperature of the concrete directly above the break. Walk barefoot and note any section that feels noticeably warmer than the rest of the floor." },
-    { "@type": "ListItem", position: 3, name: "Water running sound when everything is off", description: "Turn off every faucet, appliance, and irrigation zone. A faint hissing or rushing sound suggests water is moving through a pipe it shouldn't be." },
-    { "@type": "ListItem", position: 4, name: "Sudden drop in water pressure", description: "A pressurized line that's breached bleeds pressure before water reaches your fixtures." },
-    { "@type": "ListItem", position: 5, name: "Mildew smell in one specific area", description: "Water escaping a slab pipe wicks upward through concrete and subfloor, creating conditions for mold within 24 – 48 hours." },
-    { "@type": "ListItem", position: 6, name: "Flooring buckling, cracking, or separating", description: "Prolonged moisture from a slab leak softens the subfloor and causes tile grout to crack, hardwood planks to buckle, or carpet to develop damp patches." },
-    { "@type": "ListItem", position: 7, name: "Cracks in walls or door frames that no longer close squarely", description: "Water under a slab changes the soil's load-bearing capacity, which in Riverside County's expansive-clay areas can shift a slab enough to crack drywall or rack a door frame." },
-  ],
-};
-
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
@@ -197,10 +180,6 @@ export default async function SlabLeakPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(signsItemListSchema) }}
       />
       <script
         type="application/ld+json"

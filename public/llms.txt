@@ -1,6 +1,8 @@
 # Gardner Plumbing Co.
 
-> Gardner Plumbing Co. is a licensed, insured plumbing company serving Riverside County, California for over 30 years. Available 24/7 for emergency services. Phone: (951) 428-5551. Based in Temecula/Murrieta area.
+> Gardner Plumbing Co. is a licensed, insured plumbing company serving Riverside County, California for over 30 years. Available 24/7 for emergency services. Phone: (951) 246-4337. Based in Temecula/Murrieta area.
+
+For structured, machine-readable customer actions (book online, request estimate, emergency phone), see: https://gardnerplumbingco.com/ai-actions.json
 
 ## About
 
@@ -11,6 +13,7 @@ Service areas include: Temecula, Murrieta, Perris, Menifee, Canyon Lake, Lake El
 ## Core Pages
 
 - [Home](https://gardnerplumbingco.com/): Main landing page with service overview and booking options
+- [Book Online](https://gardnerplumbingco.com/book-online): Online appointment scheduling — pick a service, address, and time
 - [About Us](https://gardnerplumbingco.com/about-us): Company history, values, and team information
 - [Contact Us](https://gardnerplumbingco.com/contact-us): Contact form, phone numbers, and service area map
 - [Reviews](https://gardnerplumbingco.com/reviews): Customer testimonials and ratings
@@ -20,39 +23,58 @@ Service areas include: Temecula, Murrieta, Perris, Menifee, Canyon Lake, Lake El
 ## Services
 
 - [All Services](https://gardnerplumbingco.com/services): Complete list of plumbing services offered
-- [Emergency Service](https://gardnerplumbingco.com/services/emergency-service): 24/7 emergency plumbing repairs
-- [Water Heater Service](https://gardnerplumbingco.com/services/water-heater-service): Water heater repair, replacement, and installation
-- [Drain Cleaning](https://gardnerplumbingco.com/services/drain-cleaning): Professional drain cleaning and clog removal
-- [Hydro Jetting](https://gardnerplumbingco.com/services/hydro-jetting): High-pressure water jetting for stubborn clogs
-- [Leak Detection](https://gardnerplumbingco.com/services/leak-detection): Advanced leak detection services
-- [Sewer and Septic](https://gardnerplumbingco.com/services/sewer-and-septic): Sewer line and septic system services
-- [Gas Lines](https://gardnerplumbingco.com/services/gas-lines): Gas line installation and repair
-- [Piping and Repiping](https://gardnerplumbingco.com/services/piping-and-repiping): Whole-home repiping services
-- [Water Filtration](https://gardnerplumbingco.com/services/water-filtration-system): Water filtration system installation
-- [Commercial Plumbing](https://gardnerplumbingco.com/services/commercial-plumbing): Services for businesses and commercial properties
-- [Industrial Plumbing](https://gardnerplumbingco.com/services/industrial-plumbing): Industrial-scale plumbing solutions
-- [Backflow Prevention](https://gardnerplumbingco.com/services/backflow-prevention): Backflow testing and prevention devices
-- [Maintenance Plans](https://gardnerplumbingco.com/services/maintenance-plans): Preventive maintenance subscriptions
+- [Emergency Service](https://gardnerplumbingco.com/services/plumbing/emergency-service): 24/7 emergency plumbing repairs
+- [Water Heater Service](https://gardnerplumbingco.com/services/plumbing/water-heater-service): Water heater repair, replacement, and installation
+- [Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/drain-cleaning): Professional drain cleaning and clog removal
+- [Hydro Jetting](https://gardnerplumbingco.com/services/plumbing/hydro-jetting): High-pressure water jetting for stubborn clogs
+- [Leak Detection](https://gardnerplumbingco.com/services/plumbing/leak-detection): Advanced leak detection services
+- [Sewer and Septic](https://gardnerplumbingco.com/services/plumbing/sewer-and-septic): Sewer line and septic system services
+- [Gas Lines](https://gardnerplumbingco.com/services/plumbing/gas-lines): Gas line installation and repair
+- [Piping and Repiping](https://gardnerplumbingco.com/services/plumbing/piping-and-repiping): Whole-home repiping services
+- [Water Filtration](https://gardnerplumbingco.com/services/plumbing/water-filtration-system): Water filtration system installation
+- [Commercial Plumbing](https://gardnerplumbingco.com/services/plumbing/commercial-plumbing): Services for businesses and commercial properties
+- [Industrial Plumbing](https://gardnerplumbingco.com/services/plumbing/industrial-plumbing): Industrial-scale plumbing solutions
+- [Backflow Prevention](https://gardnerplumbingco.com/services/plumbing/backflow-prevention): Backflow testing and prevention devices
+- [Toilet Installation and Repair](https://gardnerplumbingco.com/services/plumbing/toilet-installation-and-repair): Toilet repair, replacement, and installation
+- [Garbage Disposal Service](https://gardnerplumbingco.com/services/plumbing/garbage-disposal-service): Garbage disposal repair and installation
+- [Moen Flo Installation](https://gardnerplumbingco.com/services/plumbing/moen-flo-installation): Smart water leak detection and shutoff device
+- [65-Point Plumbing Inspection](https://gardnerplumbingco.com/services/plumbing/65-point-inspection): Comprehensive whole-home plumbing inspection
+- [Burst Pipes](https://gardnerplumbingco.com/services/plumbing/burst-pipes): Burst pipe repair and replacement
+- [Water Damage](https://gardnerplumbingco.com/services/plumbing/water-damage): Plumbing-related water damage response
+- [Backups](https://gardnerplumbingco.com/services/plumbing/backups): Sewer and drain backup response
+- [No Hot Water](https://gardnerplumbingco.com/services/plumbing/no-hot-water): Troubleshooting and repair for no hot water
+- [Gardner Shield Membership](https://gardnerplumbingco.com/gardner-shield): Preventive plumbing maintenance membership program
 
 ## City-Specific Drain Cleaning
 
-- [Temecula Drain Cleaning](https://gardnerplumbingco.com/services/temecula-drain-cleaning): Drain cleaning services in Temecula
-- [Murrieta Drain Cleaning](https://gardnerplumbingco.com/services/murrieta-drain-cleaning): Drain cleaning services in Murrieta
-- [Corona Drain Cleaning](https://gardnerplumbingco.com/services/corona-drain-cleaning): Drain cleaning services in Corona
-- [Riverside Drain Cleaning](https://gardnerplumbingco.com/services/riverside-drain-cleaning): Drain cleaning services in Riverside
-- [Menifee Drain Cleaning](https://gardnerplumbingco.com/services/menifee-drain-cleaning): Drain cleaning services in Menifee
-- [Moreno Valley Drain Cleaning](https://gardnerplumbingco.com/services/moreno-valley-drain-cleaning): Drain cleaning services in Moreno Valley
+- [Temecula Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/temecula-drain-cleaning): Drain cleaning services in Temecula
+- [Murrieta Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/murrieta-drain-cleaning): Drain cleaning services in Murrieta
+- [Corona Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/corona-drain-cleaning): Drain cleaning services in Corona
+- [Riverside Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/riverside-drain-cleaning): Drain cleaning services in Riverside
+- [Menifee Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/menifee-drain-cleaning): Drain cleaning services in Menifee
+- [Moreno Valley Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/moreno-valley-drain-cleaning): Drain cleaning services in Moreno Valley
+- [Perris Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/perris-drain-cleaning): Drain cleaning in Perris
+- [Canyon Lake Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/canyon-lake-drain-cleaning): Drain cleaning in Canyon Lake
+- [Lake Elsinore Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/lake-elsinore-drain-cleaning): Drain cleaning in Lake Elsinore
+- [Hemet Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/hemet-drain-cleaning): Drain cleaning in Hemet
+- [San Jacinto Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/san-jacinto-drain-cleaning): Drain cleaning in San Jacinto
+- [Wildomar Drain Cleaning](https://gardnerplumbingco.com/services/plumbing/wildomar-drain-cleaning): Drain cleaning in Wildomar
+
+## Plumbing Help
+
+- [Plumbing Help Hub](https://gardnerplumbingco.com/plumbing-help): Homeowner guides for common plumbing emergencies and situations
+- [Pipe Burst — What To Do](https://gardnerplumbingco.com/plumbing-help/pipe-burst-what-to-do): Emergency steps for a burst pipe
+- [Drain Clog — What To Do](https://gardnerplumbingco.com/plumbing-help/drain-clog-what-to-do): Homeowner steps before calling a plumber
+- [Slab Leak — What To Do](https://gardnerplumbingco.com/plumbing-help/slab-leak-what-to-do): Signs, next steps, and repair options for slab leaks
+- [Plumbing Inspection Checklist](https://gardnerplumbingco.com/plumbing-help/plumbing-inspection-checklist): DIY inspection walkthrough
 
 ## Optional
 
+- [Service Areas](https://gardnerplumbingco.com/service-areas): Full list of cities and neighborhoods served
+- [Transparent Pricing](https://gardnerplumbingco.com/transparent-pricing): How pricing works — flat-rate, upfront estimates
+- [Clean Visit Promise](https://gardnerplumbingco.com/clean-visit-promise): Cleanliness standards for every service visit
 - [Guarantee](https://gardnerplumbingco.com/guarantee): Service guarantee details
 - [Warranty](https://gardnerplumbingco.com/warranty): Warranty information
 - [Blog](https://gardnerplumbingco.com/blog): Plumbing tips and articles
 - [Privacy Policy](https://gardnerplumbingco.com/privacy-policy): Privacy policy
 - [Terms of Service](https://gardnerplumbingco.com/terms-and-services): Terms and conditions
-- [Perris Drain Cleaning](https://gardnerplumbingco.com/services/perris-drain-cleaning): Drain cleaning in Perris
-- [Canyon Lake Drain Cleaning](https://gardnerplumbingco.com/services/canyon-lake-drain-cleaning): Drain cleaning in Canyon Lake
-- [Lake Elsinore Drain Cleaning](https://gardnerplumbingco.com/services/lake-elsinore-drain-cleaning): Drain cleaning in Lake Elsinore
-- [Hemet Drain Cleaning](https://gardnerplumbingco.com/services/hemet-drain-cleaning): Drain cleaning in Hemet
-- [San Jacinto Drain Cleaning](https://gardnerplumbingco.com/services/san-jacinto-drain-cleaning): Drain cleaning in San Jacinto
-- [Wildomar Drain Cleaning](https://gardnerplumbingco.com/services/wildomar-drain-cleaning): Drain cleaning in Wildomar
