@@ -150,7 +150,7 @@ export function Footer() {
                 {/* Quick Links */}
                 <ul className="space-y-3 sm:space-y-4">
                   {[
-                    { name: "Request Service", desc: "Schedule appointment", link: "/contact-us" },
+                    { name: "Book Online", desc: "Schedule appointment", link: "/book-online" },
                     { name: "Emergency Service", desc: "24/7 urgent help", link: "/services/plumbing/emergency-service" },
                     { name: "FAQ", desc: "Common questions", link: "/frequently-asked-questions" },
                     { name: "Blog", desc: "Tips & insights", link: "/blog" },
@@ -214,7 +214,7 @@ export function Footer() {
                 <h4 className="text-base sm:text-lg text-white mb-4 sm:mb-6 pb-2 sm:pb-3 border-b-2 border-red-600 drop-shadow-sm">Quick Links</h4>
                 <ul className="space-y-3 sm:space-y-4">
                   {[
-                    { name: "Request Service", desc: "Schedule appointment", link: "/contact-us" },
+                    { name: "Book Online", desc: "Schedule appointment", link: "/book-online" },
                     { name: "Emergency Service", desc: "24/7 urgent help", link: "/services/plumbing/emergency-service" },
                     { name: "FAQ", desc: "Common questions", link: "/frequently-asked-questions" },
                     { name: "Blog", desc: "Tips & insights", link: "/blog" },

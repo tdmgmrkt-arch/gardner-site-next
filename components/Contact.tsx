@@ -276,6 +276,13 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
               </Link>
             </div>
 
+            <p className="text-gray-300 mt-6 text-base">
+              Prefer to book online?{" "}
+              <Link href="/book-online" className="text-blue-400 hover:text-blue-300 underline font-semibold">
+                Schedule your appointment here →
+              </Link>
+            </p>
+
           </div>
 
           {/* Right Column - Contact Information Cards */}

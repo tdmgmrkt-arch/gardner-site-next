@@ -1386,10 +1386,16 @@ export function Header({ ratingLabel, ratingBadge }: HeaderProps = {}) {
                         <span>Call Us</span>
                       </a>
 
-                      {/* Book Online button via SchedulerModal */}
-                      <div className="flex-1">
-                        <SchedulerModal />
-                      </div>
+                      {/* Book Online — direct link to standalone page (better for SEO & AI crawlers) */}
+                      <a
+                        href="/book-online"
+                        onClick={() => setIsMenuOpen(false)}
+                        className="flex-1 min-w-[220px] w-full justify-center sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg border border-blue-400/20 flex items-center gap-3 transition group"
+                      >
+                        <span className="flex items-center justify-center gap-3">
+                          📅 Book Online
+                        </span>
+                      </a>
                     </div>
 
 
