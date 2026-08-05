@@ -46,6 +46,13 @@ export const metadata: Metadata = {
   verification: {
     google: 'Ji8WKO1-htmsFEGwW2zGn19UbNqnWxM1v4q6EN4-Pok',
   },
+  alternates: {
+    types: {
+      "application/json": [
+        { url: "/ai-actions.json", title: "Gardner Plumbing Co. AI Service Menu" },
+      ],
+    },
+  },
 };
 
 export default function RootLayout({

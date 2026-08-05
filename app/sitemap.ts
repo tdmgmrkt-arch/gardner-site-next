@@ -118,5 +118,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
+
+    // AI agent discovery
+    {
+      url: `${baseUrl}/ai-actions.json`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    },
   ];
 }
