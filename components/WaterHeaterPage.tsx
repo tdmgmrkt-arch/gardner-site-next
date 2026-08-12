@@ -248,8 +248,11 @@ const services = [
                 Professional <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Water Heater</span> Services
               </h1>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
+              <p className="text-xl text-gray-300 mb-6 leading-relaxed max-w-xl">
                 Professional water heater installation and repair throughout Riverside County. Same-day service available with 30+ years of experience serving all brands and models. Our installations meet <a href="https://www.energystar.gov/products/water_heaters" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">ENERGY STAR efficiency standards</a>.
+              </p>
+              <p className="text-sm sm:text-base text-gray-400 mb-8 leading-relaxed max-w-xl">
+                Every install and repair is backed by <Link href="/guarantee" className="text-red-300 hover:text-red-200 underline underline-offset-2">The Gardner Promise</Link> — written estimate, no trip fee, 30-day callback guarantee — and our <Link href="/clean-visit-promise" className="text-red-300 hover:text-red-200 underline underline-offset-2">Clean Visit Promise</Link> so your garage, closet, or utility room stays clean.
               </p>
 
               {/* Key Benefits */}
