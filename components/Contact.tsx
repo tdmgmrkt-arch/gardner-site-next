@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader } from "./ui/card";
 import { Input } from "./ui/input";
 import Image from "next/image";
 import { Checkbox } from "./ui/checkbox";
+import { SmsConsentText } from "./SmsConsentText";
 import { Textarea } from "./ui/textarea";
 import { useState, type FormEvent, type ChangeEvent } from "react"; 
 import { Label } from "./ui/label";
@@ -612,20 +613,11 @@ const [schedulerOpen, setSchedulerOpen] = useState(false);
                     className="mt-0.5 border-2 border-gray-500 data-[state=checked]:bg-red-600 data-[state=checked]:border-red-600 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded shadow-sm hover:border-red-400 transition-colors bg-gray-800/50 flex-shrink-0"
                     required
                   />
-                  <div className="flex flex-col gap-1.5">
-                    <Label htmlFor="smsConsent" className="text-[10px] sm:text-xs text-gray-300 leading-relaxed">
-                      By submitting this form and signing up for texts, you agree to receive informational (appointment reminders, account notifications, etc.) and marketing (offers and promotions, etc.) messages from Gardner Plumbing at the number provided. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe. Reply HELP for help. Customer opt-in data will not be shared or sold to third parties for marketing purposes.
-                    </Label>
-                    <div className="flex items-center gap-2 text-[10px] sm:text-xs">
-                      <a href="/privacy-policy" className="text-red-400 underline hover:text-red-300">
-                        Privacy Policy
-                      </a>
-                      <span className="text-gray-500">|</span>
-                      <a href="/terms-and-services" className="text-red-400 underline hover:text-red-300">
-                        Terms & Conditions
-                      </a>
-                    </div>
-                  </div>
+                  <Label htmlFor="smsConsent" className="text-[10px] sm:text-xs text-gray-300 leading-relaxed block!">
+                    <span>
+                      <SmsConsentText linkClassName="text-red-400 underline hover:text-red-300" />
+                    </span>
+                  </Label>
                 </div>
 
                 {/* Submit */}

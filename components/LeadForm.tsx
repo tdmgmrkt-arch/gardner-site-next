@@ -6,6 +6,7 @@ import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Checkbox } from "./ui/checkbox";
 import { Phone } from "lucide-react";
+import { SmsConsentText } from "./SmsConsentText";
 
 // Extend window type for reCAPTCHA Enterprise
 declare global {
@@ -329,29 +330,14 @@ export function LeadForm() {
             className="mt-0.5 border-gray-500 data-[state=checked]:bg-blue-600 data-[state=checked]:border-blue-600 flex-shrink-0"
             required
           />
-          <div className="flex flex-col gap-1.5">
-            <Label
-              htmlFor="smsConsent"
-              className="text-[10px] sm:text-xs text-gray-300 leading-relaxed"
-            >
-              By submitting this form and signing up for texts, you agree to receive informational (appointment reminders, account notifications, etc.) and marketing (offers and promotions, etc.) messages from Gardner Plumbing at the number provided. Message frequency may vary. Msg & data rates may apply. Reply STOP to unsubscribe. Reply HELP for help. Customer opt-in data will not be shared or sold to third parties for marketing purposes.
-            </Label>
-            <div className="flex items-center gap-2 text-[10px] sm:text-xs">
-              <a
-                href="/privacy-policy"
-                className="text-blue-400 underline hover:text-blue-300"
-              >
-                Privacy Policy
-              </a>
-              <span className="text-gray-500">|</span>
-              <a
-                href="/terms-and-services"
-                className="text-blue-400 underline hover:text-blue-300"
-              >
-                Terms & Conditions
-              </a>
-            </div>
-          </div>
+          <Label
+            htmlFor="smsConsent"
+            className="text-[10px] sm:text-xs text-gray-300 leading-relaxed block!"
+          >
+            <span>
+              <SmsConsentText linkClassName="text-blue-400 underline hover:text-blue-300" />
+            </span>
+          </Label>
         </div>
 
         {/* Submit */}
