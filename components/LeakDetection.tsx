@@ -211,6 +211,9 @@ const services = [
               <p className="text-xl text-gray-300 mb-6 leading-relaxed max-w-xl">
                 Advanced leak detection throughout Riverside County. Save money on water bills and prevent costly damage with our precision detection technology.
               </p>
+              <p className="text-sm sm:text-base text-gray-400 mb-6 leading-relaxed max-w-xl">
+                Every detection call is backed by <Link href="/guarantee" className="text-red-300 hover:text-red-200 underline underline-offset-2">The Gardner Promise</Link> — written estimate, no trip fee, 30-day callback guarantee — and our <Link href="/clean-visit-promise" className="text-red-300 hover:text-red-200 underline underline-offset-2">Clean Visit Promise</Link> so your floors and finishes stay protected during diagnostics.
+              </p>
               <Link
                 href="/plumbing-help/slab-leak-what-to-do"
                 className="group inline-flex items-center gap-2 mb-8 text-sm sm:text-base text-red-300 hover:text-red-200 border-b border-red-500/40 hover:border-red-400 pb-0.5 transition-colors max-w-xl"

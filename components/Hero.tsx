@@ -193,6 +193,10 @@ export function Hero({ reviewCount, ratingLabel, ratingBadge }: HeroProps = {}) 
         <div className="text-center animate-fade-in">
           {/* Heading Section */}
           <div className="mb-6 sm:mb-8 animate-slide-up">
+            <p className="text-xs sm:text-sm md:text-base font-semibold tracking-[0.15em] uppercase text-red-400/90 mb-3 sm:mb-4
+              drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
+              Family-Owned · Trusted in Riverside County Since 1995
+            </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-3 sm:mb-4 text-white
               drop-shadow-[0_3px_8px_rgba(0,0,0,0.9)] tracking-tight">
               Gardner Plumbing Co.
@@ -206,8 +210,9 @@ export function Hero({ reviewCount, ratingLabel, ratingBadge }: HeroProps = {}) 
 
             <p className="text-base sm:text-lg lg:text-xl text-gray-100 leading-relaxed mb-6 max-w-2xl mx-auto
               drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
-              Need trusted plumbing professionals for your home or business? Gardner Plumbing Co. is your local,
-              licensed team ready for repairs, installs, or remodels. From leaky pipes to major projects, we're just a call away.
+              Serving homes, HOAs, restaurants, and small-to-mid commercial properties across Riverside County.
+              Gardner Plumbing Co. is your local, licensed team for repairs, installs, and remodels &mdash;
+              from a leaky faucet to a full commercial re-pipe.
             </p>
           </div>
 
@@ -268,25 +273,29 @@ export function Hero({ reviewCount, ratingLabel, ratingBadge }: HeroProps = {}) 
             </a>
           </div>
 
-          {/* Trust Badges */}
-          <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-gray-400 text-sm sm:text-base">
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+          {/* Trust Badges — proof strip */}
+          <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-gray-300 text-xs sm:text-sm">
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+              <svg className="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Licensed & Insured</span>
+              <span className="whitespace-nowrap">Family-Owned</span>
             </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>30+ Years Experience</span>
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+              <Star className="w-4 h-4 text-yellow-400 fill-yellow-400 flex-shrink-0" />
+              <span className="whitespace-nowrap">{reviewCount ?? "900+"} 5-Star Google Reviews</span>
             </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+              <svg className="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>24/7 Emergency Service</span>
+              <span className="whitespace-nowrap">30+ Years Local</span>
+            </div>
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+              <svg className="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span className="whitespace-nowrap">24/7 Emergency</span>
             </div>
           </div>
         </div>

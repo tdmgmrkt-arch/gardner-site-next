@@ -218,6 +218,9 @@ const services = [
               <p className="text-xl text-gray-300 mb-6 leading-relaxed max-w-xl">
                 Fast, effective drain cleaning throughout Riverside County. Same-day service available with 30+ years of experience clearing even the toughest clogs. Our methods comply with <a href="https://www.epa.gov/watersense" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">EPA WaterSense standards</a>.
               </p>
+              <p className="text-sm sm:text-base text-gray-400 mb-6 leading-relaxed max-w-xl">
+                Every visit is backed by <Link href="/guarantee" className="text-red-300 hover:text-red-200 underline underline-offset-2">The Gardner Promise</Link> — written estimate, no trip fee, 30-day callback guarantee — and our <Link href="/clean-visit-promise" className="text-red-300 hover:text-red-200 underline underline-offset-2">Clean Visit Promise</Link> so your floors and finishes stay protected.
+              </p>
               <Link
                 href="/plumbing-help/drain-clog-what-to-do"
                 className="group inline-flex items-center gap-2 mb-8 text-sm sm:text-base text-red-300 hover:text-red-200 border-b border-red-500/40 hover:border-red-400 pb-0.5 transition-colors max-w-xl"

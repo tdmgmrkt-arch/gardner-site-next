@@ -137,7 +137,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
         </div>
         
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
-          Three Decades of <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Plumbing Excellence</span>
+          Family-Owned Plumbing. <span className="text-gradient bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">Three Decades in Riverside County.</span>
         </h1>
 
         {/* 👇 Mobile Image (with floating badge, hidden on desktop) */}
@@ -172,7 +172,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
         </div>
 
         <p className="text-lg text-gray-300 leading-relaxed max-w-xl mb-8">
-          Since 1995, Gardner Plumbing Company has been the trusted choice for residential and commercial plumbing services throughout Riverside County. Based in Murrieta, CA, our commitment to quality, integrity, and customer satisfaction has made us a cornerstone of the community.
+          Founded in 1995 as Nootbar Plumbing and family-owned by the Gardner family since 2020, we've spent three decades serving homes, HOAs, and small-to-mid commercial properties throughout Riverside County. Based in Murrieta, our same-team, same-values approach is why 15,000+ neighbors trust us — and why our 900+ five-star Google reviews sound like they're written by family.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">
