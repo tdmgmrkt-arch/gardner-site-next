@@ -360,7 +360,7 @@ export function OurGuarantee({ reviewCount = "900+", ratingLabel = "4.9" }: OurG
               />
             </div>
 
-            <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               {/* Pillar header */}
               <div className="mb-10">
                 <div className="inline-flex items-center gap-3 mb-6 px-5 py-2.5 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-full border border-red-500/30 backdrop-blur-sm">

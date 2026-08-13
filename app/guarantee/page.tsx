@@ -8,14 +8,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "The Gardner Promise — Our 30-Day Callback Guarantee",
   description:
-    "If the same issue recurs within 30 days of our service visit, a Gardner Plumbing Co. technician returns at no charge. Parts and labor covered. CSLB #1073177.",
+    "Written estimates, no trip fees, clean visits, and a 30-day guarantee — or we come back free. Gardner Plumbing Co. covers parts and labor. CSLB #1073177.",
   alternates: {
     canonical: "/guarantee",
   },
   openGraph: {
     title: "The Gardner Promise — 30-Day Callback Guarantee | Gardner Plumbing Co.",
     description:
-      "If the same issue recurs within 30 days of our service visit, a Gardner Plumbing Co. technician returns at no charge. Parts and labor covered. CSLB #1073177.",
+      "Written estimates, no trip fees, clean visits, and a 30-day guarantee — or we come back free. Gardner Plumbing Co. covers parts and labor. CSLB #1073177.",
     url: "/guarantee",
     images: ["/gardner_logo.webp"],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Gardner Promise — 30-Day Callback Guarantee | Gardner Plumbing Co.",
     description:
-      "If the same issue recurs within 30 days of our service visit, a Gardner Plumbing Co. technician returns at no charge. Parts and labor covered. CSLB #1073177.",
+      "Written estimates, no trip fees, clean visits, and a 30-day guarantee — or we come back free. Gardner Plumbing Co. covers parts and labor. CSLB #1073177.",
   },
 };
 
