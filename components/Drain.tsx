@@ -218,8 +218,11 @@ const services = [
               <p className="text-xl text-gray-300 mb-6 leading-relaxed max-w-xl">
                 Fast, effective drain cleaning throughout Riverside County. Same-day service available with 30+ years of experience clearing even the toughest clogs. Our methods comply with <a href="https://www.epa.gov/watersense" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">EPA WaterSense standards</a>.
               </p>
-              <p className="text-sm sm:text-base text-gray-400 mb-6 leading-relaxed max-w-xl">
+              <p className="text-sm sm:text-base text-gray-400 mb-3 leading-relaxed max-w-xl">
                 Every visit is backed by <Link href="/guarantee" className="text-red-300 hover:text-red-200 underline underline-offset-2">The Gardner Promise</Link> — written estimate, no trip fee, 30-day callback guarantee — and our <Link href="/clean-visit-promise" className="text-red-300 hover:text-red-200 underline underline-offset-2">Clean Visit Promise</Link> so your floors and finishes stay protected.
+              </p>
+              <p className="text-sm sm:text-base text-gray-400 mb-6 leading-relaxed max-w-xl">
+                Typical drain jobs run <span className="text-white font-semibold">$150 – $800</span> depending on scope. See our <Link href="/transparent-pricing" className="text-red-300 hover:text-red-200 underline underline-offset-2">Transparent Pricing</Link> page for the full flat-rate breakdown before you call.
               </p>
               <Link
                 href="/plumbing-help/drain-clog-what-to-do"
