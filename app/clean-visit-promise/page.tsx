@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "The Clean Visit Promise",
   description:
-    "Gardner Plumbing Co. follows a 6-step Clean Visit Promise on every call — shoe covers, drop cloths, haul-away, and a real recourse if we miss a step.",
+    "Written estimates, no trip fees, clean visits, and a 30-day guarantee — or we come back free. Every Gardner Plumbing Co. call follows a 6-step Clean Visit Promise.",
   alternates: {
     canonical: "/clean-visit-promise",
   },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title:
       "The Clean Visit Promise — How Gardner Plumbing Protects Your Home | Gardner Plumbing Co.",
     description:
-      "Gardner Plumbing Co. follows a 6-step Clean Visit Promise on every call — shoe covers, drop cloths, haul-away, and a real recourse if we miss a step.",
+      "Written estimates, no trip fees, clean visits, and a 30-day guarantee — or we come back free. Every Gardner Plumbing Co. call follows a 6-step Clean Visit Promise.",
     url: "/clean-visit-promise",
     images: ["/gardner_logo.webp"],
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title:
       "The Clean Visit Promise — How Gardner Plumbing Protects Your Home | Gardner Plumbing Co.",
     description:
-      "Gardner Plumbing Co. follows a 6-step Clean Visit Promise on every call — shoe covers, drop cloths, haul-away, and a real recourse if we miss a step.",
+      "Written estimates, no trip fees, clean visits, and a 30-day guarantee — or we come back free. Every Gardner Plumbing Co. call follows a 6-step Clean Visit Promise.",
   },
 };
 

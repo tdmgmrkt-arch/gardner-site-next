@@ -5,13 +5,13 @@ import { siteConfig } from "@/lib/site-config";
 
 export const metadata = {
   title: "Gardner Plumbing Co. | Reliable Plumbing Services in Riverside County",
-  description: "Reliable plumbing services, water heater repair, and drain cleaning in Riverside County for over 30 years. Contact us for a free estimate!",
+  description: "Family-owned plumbing in Riverside County for 30+ years. Written estimates, no trip fees, clean visits, and a 30-day guarantee — or we come back free.",
   alternates: {
     canonical: '/'
   },
   openGraph: {
     title: "Gardner Plumbing Co. | Reliable Plumbing Services in Riverside County",
-    description: "Reliable plumbing services, water heater repair, and drain cleaning in Riverside County for over 30 years. Contact us for a free estimate!",
+    description: "Family-owned plumbing in Riverside County for 30+ years. Written estimates, no trip fees, clean visits, and a 30-day guarantee — or we come back free.",
     url: '/',
     images: ['/gardner_logo.webp']
   }

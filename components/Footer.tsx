@@ -42,9 +42,12 @@ export function Footer() {
           <div className="lg:col-span-5 lg:border-r lg:border-white/10 lg:pr-8">
             <div className="glassmorphism-dark rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-luxury hover-lift transition-all duration-500">
               <img src={logo} alt="Gardner Plumbing Co. logo" className="h-12 sm:h-14 w-auto mb-3 sm:mb-4 drop-shadow-lg" />
+              <p className="text-white mb-3 sm:mb-4 leading-snug text-sm sm:text-[15px] font-semibold drop-shadow-sm">
+                Written estimates, no trip fees, clean visits, and a 30-day guarantee — or we come back free.
+              </p>
               <p className="text-gray-300 mb-6 sm:mb-8 leading-relaxed text-xs sm:text-sm lg:text-[14px]">
-                Professional plumbing services backed by 30+ years of experience and a commitment to
-                excellence. Whether you need repairs, installations, or emergency service—we've got you covered.
+                Family-owned in Murrieta with 30+ years serving Riverside County homes, HOAs, and commercial
+                properties. That's <a href="/guarantee" className="text-red-400 hover:text-red-300 underline decoration-red-400/30 hover:decoration-red-300 transition-colors">The Gardner Standard</a> — one promise on every call.
               </p>
 
               {/* Contact Info */}
