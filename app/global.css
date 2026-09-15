@@ -212,3 +212,13 @@ html {
 html {
   scroll-padding-top: 80px; /* match your sticky header height */
 }
+
+/*
+  Rebrand notice: hide the in-flow mobile announcement bar before first paint
+  for visitors who already dismissed it this session. The .gpc-notice-seen
+  class is set by a blocking script in the document head (see app/layout.tsx).
+  Doing this in CSS rather than in React avoids a post-hydration layout shift.
+*/
+.gpc-notice-seen [data-gpc-rebrand-bar] {
+  display: none;
+}

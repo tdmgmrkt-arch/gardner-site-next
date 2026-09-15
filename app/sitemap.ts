@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/financing', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/guarantee', priority: 0.6, changeFrequency: 'monthly' as const },
     { url: '/clean-visit-promise', priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: '/now-gpc-home-pros', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/warranty', priority: 0.6, changeFrequency: 'monthly' as const },
     { url: '/frequently-asked-questions', priority: 0.6, changeFrequency: 'monthly' as const },
     { url: '/transparent-pricing', priority: 0.8, changeFrequency: 'monthly' as const },

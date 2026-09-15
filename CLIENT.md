@@ -6,7 +6,8 @@
 
 ## Business
 
-- **Legal/brand name:** Gardner Plumbing Co.
+- **Legal/brand name:** Gardner Plumbing Co. → **rebranding to "GPC Home Pros"** (2026-09-15, Kenneth). Rebrand is ALREADY LIVE externally — Instagram `@gardnerplumbingco` display name is "GPC Home Pros"; third-party listings describe GPC Home Pros as plumbing + HVAC + electrical. The **website was behind** and is now catching up. Domain stays `gardnerplumbingco.com` for now. Site-wide schema keeps `name: "Gardner Plumbing Co."` with `alternateName: ["GPC Home Pros", ...]` until GBP flips — then swap.
+  - **Open:** is "GPC Home Pros" a filed DBA? (This would resolve Phase-2 BLOCKER 3.) Kenneth said licenses are "fine" but CSLB classifications were NOT independently verified — lookup needs a live session.
 - **Industry:** Plumbing (primary) + HVAC (expanding 2026)
 - **Service area:** Greater Riverside County, CA — Murrieta, Temecula, Menifee, Wildomar, Lake Elsinore, Hemet, Riverside, Perris, Canyon Lake, San Jacinto, Moreno Valley, Corona
 - **Headquarters region:** Murrieta / Inland Empire

@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import Script from "next/script";
 import { AcsbScript } from "@/components/AcsbScript";
 import { CookieConsentBanner } from "@/components/CookieConsentBanner";
+import { RebrandAnnouncement } from "@/components/RebrandAnnouncement";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gardnerplumbingco.com'),
@@ -63,7 +64,12 @@ export default function RootLayout({
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "Plumber",
+    "@id": "https://gardnerplumbingco.com/#organization",
     "name": "Gardner Plumbing Co.",
+    // Rebrand to GPC Home Pros. Keeping the legal/legacy name as `name` until
+    // GBP + citations are switched over, with the new name as an alternate, so
+    // entity resolution holds during the transition. Swap these once GBP flips.
+    "alternateName": ["GPC Home Pros", "Gardner Plumbing Company"],
     "image": "https://gardnerplumbingco.com/gardner_logo.webp",
     "url": "https://gardnerplumbingco.com",
     "telephone": "+1-951-246-4337",
@@ -149,8 +155,24 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    // suppressHydrationWarning: the rebrand-notice script in <head> adds
+    // .gpc-notice-seen to <html> before React hydrates, which React would
+    // otherwise report as a server/client attribute mismatch. Scoped to this
+    // element's own attributes only — children still hydrate normally.
+    <html lang="en" suppressHydrationWarning>
       <head>
+        {/*
+          Rebrand-notice pre-paint gate. Must stay a plain blocking <script>,
+          not next/script — it has to run before first paint so the mobile
+          announcement bar is hidden for already-dismissed visitors without a
+          layout shift. Inserting the bar after hydration instead cost ~0.096
+          CLS against a 0.000 baseline.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var f=new URLSearchParams(location.search).get('rebrand')==='1';if(!f&&sessionStorage.getItem('gpc-rebrand-notice-v1')==='seen'){document.documentElement.className+=' gpc-notice-seen';}}catch(e){}})();`,
+          }}
+        />
         {/* Google Analytics 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Z0JKSKHPR3"
@@ -214,7 +236,15 @@ export default function RootLayout({
       </head>
       <body className="bg-background text-foreground antialiased min-h-screen">
         <HeaderShell />
-        <main>{children}</main>
+        {/* Rebrand notice. The mobile bar is absolutely positioned against this
+            wrapper, so it floats over the TOP OF THE PAGE CONTENT rather than
+            over the header — nothing in the layout moves, and the logo, nav,
+            and emergency phone number all stay visible and tappable. The
+            desktop modal is fixed-position and unaffected by this wrapper. */}
+        <div className="relative">
+          <RebrandAnnouncement />
+          <main>{children}</main>
+        </div>
         <Footer />
         <CookieConsentBanner />
         {/* TD Marketing Group Tracking */}
