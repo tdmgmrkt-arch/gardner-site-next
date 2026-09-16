@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { NowGpcHomePros, NOW_GPC_FAQS } from "@/components/NowGpcHomePros";
 
-const TITLE = "Gardner Plumbing Co. is Now GPC Home Pros";
+const TITLE = "Gardner Plumbing Co. is Becoming GPC Home Pros";
 const DESCRIPTION =
-  "Gardner Plumbing Co. has changed its name to GPC Home Pros. Same family-owned team, same technicians, same phone number (951) 246-4337 — now offering plumbing, HVAC, and electrical services across Riverside County.";
+  "Gardner Plumbing Co. is changing its name to GPC Home Pros. Same family-owned team, same technicians, same phone number (951) 246-4337 — already offering plumbing, HVAC, and electrical services across Riverside County.";
 
 export const metadata: Metadata = {
   // `absolute` bypasses the root layout's "%s | Gardner Plumbing Co." template,
@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: {
-    canonical: "/now-gpc-home-pros",
+    canonical: "/gpc-home-pros",
   },
   openGraph: {
     title: `${TITLE} | GPC Home Pros`,
     description: DESCRIPTION,
-    url: "/now-gpc-home-pros",
+    url: "/gpc-home-pros",
     images: ["/gardner_logo.webp"],
   },
   twitter: {
@@ -39,17 +39,17 @@ const webPageSchema = {
   "@type": "WebPage",
   name: TITLE,
   description: DESCRIPTION,
-  url: "https://gardnerplumbingco.com/now-gpc-home-pros",
+  url: "https://gardnerplumbingco.com/gpc-home-pros",
   datePublished: "2026-09-15",
   about: {
     "@type": "Organization",
     "@id": "https://gardnerplumbingco.com/#organization",
-    name: "GPC Home Pros",
-    alternateName: [
-      "Gardner Plumbing Co.",
-      "Gardner Plumbing Company",
-      "Gardner Plumbing",
-    ],
+    // Legal/primary name stays Gardner Plumbing Co. until the change actually
+    // takes effect — GBP, citations, and this field flip together, not early.
+    // GPC Home Pros rides as an alternate in the meantime so the association
+    // starts building now.
+    name: "Gardner Plumbing Co.",
+    alternateName: ["GPC Home Pros", "Gardner Plumbing Company"],
     url: "https://gardnerplumbingco.com",
     telephone: "+1-951-246-4337",
     logo: "https://gardnerplumbingco.com/gardner_logo.webp",
@@ -77,8 +77,8 @@ const webPageSchema = {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Gardner Plumbing Co. is Now GPC Home Pros",
-        item: "https://gardnerplumbingco.com/now-gpc-home-pros",
+        name: TITLE,
+        item: "https://gardnerplumbingco.com/gpc-home-pros",
       },
     ],
   },
