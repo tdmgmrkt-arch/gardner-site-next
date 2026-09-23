@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { posts } from '@/data/blogPosts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://gardnerplumbingco.com';
@@ -118,6 +119,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
+
+    // Blog posts come straight from the post data so new posts appear automatically.
+    // Each carries its own publish date as lastModified; an unparseable date falls
+    // back to the build date rather than dropping the URL.
+    ...posts.map((post) => {
+      const published = new Date(post.date);
+
+      return {
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: Number.isNaN(published.getTime())
+          ? currentDate
+          : published.toISOString(),
+        changeFrequency: 'yearly' as const,
+        priority: 0.6,
+      };
+    }),
 
     // AI agent discovery
     {
