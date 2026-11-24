@@ -212,3 +212,14 @@ html {
 html {
   scroll-padding-top: 80px; /* match your sticky header height */
 }
+
+/*
+  Thanksgiving closure banner (2026) — hidden before first paint once the
+  closure has passed or the visitor dismissed it. The class is set by the
+  blocking gate in app/layout.tsx, which also carries the end date.
+
+  Doing this in CSS rather than in React avoids a post-hydration layout shift.
+*/
+.gpc-holiday-hidden #gpc-holiday-banner {
+  display: none;
+}
