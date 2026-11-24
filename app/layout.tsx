@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import Script from "next/script";
 import { AcsbScript } from "@/components/AcsbScript";
 import { CookieConsentBanner } from "@/components/CookieConsentBanner";
+import { HolidayClosureBanner } from "@/components/HolidayClosureBanner";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gardnerplumbingco.com'),
@@ -151,6 +152,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/*
+          Thanksgiving closure banner — pre-paint gate. A plain blocking
+          <script>, not next/script, so the bar is hidden before first paint
+          with no layout shift.
+
+          It carries the END DATE, which is what lets the banner retire itself
+          without a deploy. The office is closed Thu Nov 26 through Sun Nov 29,
+          so 1796054400000 = Mon Nov 30 2026, 8:00 AM PT — the morning they
+          reopen. The date lives here rather than in the component because
+          pages are statically rendered: a server-side `new Date()` check would
+          be frozen at build time and the banner would never expire.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var h=Date.now()>1796054400000;if(!h){try{h=localStorage.getItem('gpc-holiday-thanksgiving-2026')==='1';}catch(e){}}if(h){document.documentElement.className+=' gpc-holiday-hidden';}}catch(e){}})();`,
+          }}
+        />
         {/* Google Analytics 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Z0JKSKHPR3"
@@ -213,6 +231,10 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-background text-foreground antialiased min-h-screen">
+        {/* Holiday closure notice. Sits above the header in normal flow: it
+            scrolls away with the page and the header's sticky <nav> still
+            pins to the top, so nothing covers the logo, menu, or phone. */}
+        <HolidayClosureBanner />
         <HeaderShell />
         <main>{children}</main>
         <Footer />
