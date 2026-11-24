@@ -16,11 +16,14 @@
 
 ## Service Area (use this list everywhere — do not paraphrase or truncate)
 
-Banning · Beaumont · Calimesa · Cathedral City · Cherry Valley · Corona ·
-Eastvale · Garnet · Hemet · Jurupa Valley · Lake Elsinore · Menifee ·
-Mentone · Moreno Valley · Murrieta · North Palm Springs · Palm Springs ·
-Palm Desert · Pedley · Perris · Redlands · Riverside · San Jacinto ·
-Temecula · Yucaipa
+Banning · Beaumont · Calimesa · Cherry Valley · Corona · Eastvale ·
+Hemet · Jurupa Valley · Lake Elsinore · Menifee · Mentone ·
+Moreno Valley · Murrieta · Pedley · Perris · Redlands · Riverside ·
+San Jacinto · Temecula · Yucaipa
+
+Nothing east of Banning is in scope (2026-11-24): Palm Springs, North Palm
+Springs, Cathedral City, Palm Desert, and Garnet were removed from the
+service area. Do not reintroduce them in copy, schema, or city lists.
 
 Geographic framing: "across Riverside County and neighboring communities."
 Do NOT use "eastern San Bernardino County," "the Coachella Valley," or any
@@ -65,10 +68,10 @@ Four pillars (use these exact labels):
 ## Service area mention pattern
 
 Long form (use once near top of a page):
-"Gardner Plumbing Co. serves 25 cities across Riverside County and
+"Gardner Plumbing Co. serves 20 cities across Riverside County and
 neighboring communities — including Murrieta, Temecula, Menifee,
 Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake
 Elsinore."
 
 Short form (use in trust strips, footers, schema):
-"Serving 25 cities across Riverside County and neighboring communities"
+"Serving 20 cities across Riverside County and neighboring communities"

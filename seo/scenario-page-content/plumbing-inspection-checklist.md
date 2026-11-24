@@ -51,7 +51,7 @@ Residential water pressure should read between 40 and 80 PSI. Pressure above 80 
 The supply lines and drain lines are identified and documented: copper, PEX, PVC, CPVC, cast iron, or galvanized steel. Galvanized pipe is the major concern — it corrodes from the inside out, restricts flow, and can shed rust into the water supply. Homes in Corona, Hemet, and Perris built before 1985 frequently still have galvanized supply lines. That's a repiping conversation, and buyers deserve to know before they sign.
 
 **4. Water Heater — Age, Type, and Venting**
-A tank water heater has an 8- to 12-year service life. A unit 10 or more years old with signs of corrosion around the base or T&P valve is a near-term replacement. Inspectors note the serial number (manufacturer date is encoded in it), the fuel type, and whether the venting is intact and correctly pitched. Tankless units get checked for scale buildup — in hard-water desert cities like Palm Springs and Palm Desert, an uncleaned tankless unit can lose 25 – 40% of its heating efficiency within 3 years.
+A tank water heater has an 8- to 12-year service life. A unit 10 or more years old with signs of corrosion around the base or T&P valve is a near-term replacement. Inspectors note the serial number (manufacturer date is encoded in it), the fuel type, and whether the venting is intact and correctly pitched. Tankless units get checked for scale buildup — in hard-water cities like Hemet and San Jacinto, an uncleaned tankless unit can lose 25 – 40% of its heating efficiency within 3 years.
 
 **5. Drain Flow Test — Every Fixture**
 Each sink, tub, and shower drain gets water run through it. Slow drains indicate partial blockages in the branch lines. A drain that backs up during a simple flow test signals a bigger obstruction in the main line — which requires a camera to diagnose properly. Don't skip a single fixture: drain problems are additive, and sellers know which bathroom runs slow.
@@ -66,7 +66,7 @@ This is the single most important item on this list. A sewer camera inspection r
 The isolation valves under every sink and behind every toilet are operated manually. Old compression valves — common in homes built before 2000 — frequently seize open or develop slow drips when turned. A seized valve means you can't isolate a leak without shutting off the main. Replacement is straightforward, but buyers should know the scope.
 
 **9. Hose Bibs and Outdoor Fixtures**
-Outdoor hose bibs are checked for drip leaks and freeze damage. This matters more than buyers expect in the desert cities: Cathedral City, Palm Springs, and other eastern desert areas see enough cold snaps that non-freeze-resistant hose bibs crack. Split bibs are a common deferred repair that sellers miss.
+Outdoor hose bibs are checked for drip leaks and freeze damage. This matters more than buyers expect inland: Banning, Beaumont, Cherry Valley, and Hemet see enough cold snaps that non-freeze-resistant hose bibs crack. Split bibs are a common deferred repair that sellers miss.
 
 **10. Evidence of Past Slab Leaks**
 Riverside County and the Inland Empire sit predominantly on slab foundations. A history of slab leaks leaves physical evidence: mismatched flooring sections, fresh tile patches in otherwise worn floors, baseboards with water staining, or a water meter that moves when all fixtures are off. One prior slab leak is manageable. Multiple slab leak patches in the same home suggest a systemic supply-line failure — and a repiping estimate belongs in the buyer's pocket before close.
@@ -117,9 +117,9 @@ The 65-point inspection is more thorough than the plumbing portion of a standard
 
 ## Southern California-Specific Plumbing Concerns
 
-Riverside County homes present a specific set of plumbing risks that don't apply the same way in most other U.S. markets. Nearly all residential construction across the Inland Empire and desert cities sits on a concrete slab — no crawl space, no basement. That means every supply line and drain line runs through or under the slab, making any leak a potential jackhammer job and making visual inspection of those lines impossible without a camera or electronic leak detection equipment. Soil movement is common in the desert-adjacent east county cities (Banning, Beaumont, Yucaipa), and that movement stresses embedded copper over time.
+Riverside County homes present a specific set of plumbing risks that don't apply the same way in most other U.S. markets. Nearly all residential construction across Riverside County and neighboring communities sits on a concrete slab — no crawl space, no basement. That means every supply line and drain line runs through or under the slab, making any leak a potential jackhammer job and making visual inspection of those lines impossible without a camera or electronic leak detection equipment. Soil movement is common in the desert-adjacent east county cities (Banning, Beaumont, Yucaipa), and that movement stresses embedded copper over time.
 
-The region's water supply is also among the hardest in California. Water from the Colorado River and Eastern Municipal Water District sources carries high calcium and magnesium concentrations. Over years, that mineral load calcifies inside water heaters, narrows supply valves, attacks copper soldering joints, and reduces tankless heater efficiency significantly. Homes in Palm Springs, Cathedral City, and Palm Desert show accelerated mineral wear on every fixture. Buyers of 1970s through 1990s homes in Corona, Hemet, Perris, and San Jacinto should specifically ask about pipe material and supply line age — that era's housing stock used galvanized pipe into the mid-1980s and original copper that is now 35 to 50 years old.
+The region's water supply is also among the hardest in California. Water from the Colorado River and Eastern Municipal Water District sources carries high calcium and magnesium concentrations. Over years, that mineral load calcifies inside water heaters, narrows supply valves, attacks copper soldering joints, and reduces tankless heater efficiency significantly. Buyers of 1970s through 1990s homes in Corona, Hemet, Perris, and San Jacinto should specifically ask about pipe material and supply line age — that era's housing stock used galvanized pipe into the mid-1980s and original copper that is now 35 to 50 years old.
 
 ---
 
@@ -129,7 +129,7 @@ Gardner Plumbing Co. backs every inspection with The Gardner Promise — written
 
 **CSLB #1073177 · 900+ five-star Google reviews · 30+ years serving Southern California**
 
-Serving 25 cities across Riverside County and neighboring communities
+Serving 20 cities across Riverside County and neighboring communities
 
 ---
 
@@ -161,7 +161,7 @@ In California, the buyer typically pays for the plumbing inspection as part of d
 
 ### What if the inspection finds problems after I've already bought the house?
 
-Gardner Plumbing Co. serves homeowners at every stage — not just buyers in escrow. If you moved into a home and discovered plumbing problems that weren't disclosed, a licensed plumber can document the condition, estimate repair costs, and provide a written report that supports a disclosure complaint or legal claim. More practically: knowing what you have lets you prioritize repairs correctly and budget for them. Call (951) 246-4337 for a post-purchase plumbing inspection. Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities.
+Gardner Plumbing Co. serves homeowners at every stage — not just buyers in escrow. If you moved into a home and discovered plumbing problems that weren't disclosed, a licensed plumber can document the condition, estimate repair costs, and provide a written report that supports a disclosure complaint or legal claim. More practically: knowing what you have lets you prioritize repairs correctly and budget for them. Call (951) 246-4337 for a post-purchase plumbing inspection. Gardner Plumbing Co. serves 20 cities across Riverside County and neighboring communities.
 
 ---
 
@@ -202,7 +202,7 @@ CSLB #1073177 · 900+ five-star Google reviews · 30+ years in Southern Californ
   3. ItemList JSON-LD (separate) — "5 Plumbing Red Flags" list.
   4. BreadcrumbList JSON-LD — Home > Plumbing Help > Plumbing Inspection Checklist.
   5. Service JSON-LD for the 65-point inspection service (provider = Gardner Plumbing Co.,
-     CSLB #1073177, areaServed = 25 cities list, priceRange noted).
+     CSLB #1073177, areaServed = 20 cities list, priceRange noted).
 
   Image alt text suggestions:
   - Hero image: "plumbing inspection checklist for home buyers in Riverside County"

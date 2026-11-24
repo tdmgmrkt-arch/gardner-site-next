@@ -75,10 +75,9 @@ export default function RootLayout({
       "addressCountry": "US"
     },
     "areaServed": [
-      "Banning", "Beaumont", "Calimesa", "Cathedral City", "Cherry Valley",
-      "Corona", "Eastvale", "Garnet", "Hemet", "Jurupa Valley",
-      "Lake Elsinore", "Menifee", "Mentone", "Moreno Valley", "Murrieta",
-      "North Palm Springs", "Palm Springs", "Palm Desert", "Pedley", "Perris",
+      "Banning", "Beaumont", "Calimesa", "Cherry Valley", "Corona",
+      "Eastvale", "Hemet", "Jurupa Valley", "Lake Elsinore", "Menifee",
+      "Mentone", "Moreno Valley", "Murrieta", "Pedley", "Perris",
       "Redlands", "Riverside", "San Jacinto", "Temecula", "Yucaipa"
     ],
     "geo": {

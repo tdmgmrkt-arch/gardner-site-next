@@ -7,21 +7,21 @@ import { ServiceAreasPage as ServiceAreas } from "@/components/ServiceAreasPage"
 export const metadata: Metadata = {
   title: "Service Areas — Riverside County",
   description:
-    "Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities. 30+ years, CSLB #1073177.",
+    "Gardner Plumbing Co. serves 20 cities across Riverside County and neighboring communities. 30+ years, CSLB #1073177.",
   alternates: {
     canonical: "/service-areas",
   },
   openGraph: {
     title: "Service Areas — Gardner Plumbing Co. Riverside County",
     description:
-      "Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities. 30+ years, CSLB #1073177.",
+      "Gardner Plumbing Co. serves 20 cities across Riverside County and neighboring communities. 30+ years, CSLB #1073177.",
     url: "/service-areas",
     images: [
       {
         url: "/GardnerTechVanTools.webp",
         width: 1200,
         height: 630,
-        alt: "Gardner Plumbing Co. technician with service van — serving 25 cities across Riverside County and neighboring communities",
+        alt: "Gardner Plumbing Co. technician with service van — serving 20 cities across Riverside County and neighboring communities",
       },
     ],
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Service Areas — Gardner Plumbing Co. Riverside County",
     description:
-      "25 cities served across Riverside County and neighboring communities. CSLB #1073177.",
+      "20 cities served across Riverside County and neighboring communities. CSLB #1073177.",
   },
 };
 
@@ -65,7 +65,7 @@ const webPageSchema = {
   "@type": "WebPage",
   name: "Service Areas — Gardner Plumbing Co. Riverside County",
   description:
-    "Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities. Licensed under CSLB #1073177 with 30+ years of experience.",
+    "Gardner Plumbing Co. serves 20 cities across Riverside County and neighboring communities. Licensed under CSLB #1073177 with 30+ years of experience.",
   url: "https://gardnerplumbingco.com/service-areas",
   inLanguage: "en-US",
   isPartOf: {
@@ -118,11 +118,9 @@ const localBusinessSchema = {
     { "@type": "City", name: "Banning", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Beaumont", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Calimesa", containedInPlace: { "@type": "State", name: "California" } },
-    { "@type": "City", name: "Cathedral City", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Cherry Valley", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Corona", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Eastvale", containedInPlace: { "@type": "State", name: "California" } },
-    { "@type": "City", name: "Garnet", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Hemet", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Jurupa Valley", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Lake Elsinore", containedInPlace: { "@type": "State", name: "California" } },
@@ -130,9 +128,6 @@ const localBusinessSchema = {
     { "@type": "City", name: "Mentone", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Moreno Valley", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Murrieta", containedInPlace: { "@type": "State", name: "California" } },
-    { "@type": "City", name: "North Palm Springs", containedInPlace: { "@type": "State", name: "California" } },
-    { "@type": "City", name: "Palm Springs", containedInPlace: { "@type": "State", name: "California" } },
-    { "@type": "City", name: "Palm Desert", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Pedley", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Perris", containedInPlace: { "@type": "State", name: "California" } },
     { "@type": "City", name: "Redlands", containedInPlace: { "@type": "State", name: "California" } },
@@ -170,7 +165,7 @@ const faqSchema = {
       name: "How far does Gardner Plumbing travel from Murrieta?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Gardner Plumbing Co. regularly travels up to roughly 45 miles from our Murrieta headquarters. That radius covers all 25 cities in our service area, from Eastvale and Corona to the north, Palm Desert to the east, and San Jacinto to the northeast. For exact coverage in your neighborhood, call (951) 246-4337.",
+        text: "Gardner Plumbing Co. regularly travels up to roughly 45 miles from our Murrieta headquarters. That radius covers all 20 cities in our service area, from Eastvale and Corona to the north, Banning to the east, and San Jacinto to the northeast. For exact coverage in your neighborhood, call (951) 246-4337.",
       },
     },
     {
@@ -178,15 +173,15 @@ const faqSchema = {
       name: "Do you serve unincorporated Riverside County?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Unincorporated communities within Riverside County — including Garnet, Pedley, Mentone, and Cherry Valley — fall inside our service area. Dispatchers serve on geography, not city-limit lines.",
+        text: "Yes. Unincorporated communities within Riverside County — including Pedley, Cherry Valley, and Mentone — fall inside our service area. Dispatchers serve on geography, not city-limit lines.",
       },
     },
     {
       "@type": "Question",
-      name: "Do you provide emergency plumbing service to Palm Springs and surrounding cities?",
+      name: "Do you provide emergency plumbing service to Banning, Beaumont, and nearby cities?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Gardner Plumbing Co. provides 24/7 emergency dispatch to Palm Springs, North Palm Springs, Cathedral City, Palm Desert, and Garnet. Emergency calls receive the same priority dispatch process regardless of location.",
+        text: "Yes. Gardner Plumbing Co. provides 24/7 emergency dispatch to Banning, Beaumont, Calimesa, Cherry Valley, Yucaipa, Redlands, and Mentone. Emergency calls receive the same priority dispatch process regardless of location.",
       },
     },
     {
@@ -194,7 +189,7 @@ const faqSchema = {
       name: "Is there a trip charge for cities farther from Murrieta?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. Gardner Plumbing Co. does not charge trip fees or service-call fees to any of our 25 service cities. The Gardner Promise includes free in-home estimates and no dispatch fee — regardless of whether the call is in Murrieta or Palm Desert.",
+        text: "No. Gardner Plumbing Co. does not charge trip fees or service-call fees to any of our 20 service cities. The Gardner Promise includes free in-home estimates and no dispatch fee — regardless of whether the call is in Murrieta or Banning.",
       },
     },
     {
@@ -202,7 +197,7 @@ const faqSchema = {
       name: "Do you serve commercial properties across the service area?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Gardner Plumbing Co. serves commercial and industrial properties throughout all 25 cities. Commercial plumbing, hydro jetting, backflow prevention, and industrial plumbing services are available across the full service area.",
+        text: "Yes. Gardner Plumbing Co. serves commercial and industrial properties throughout all 20 cities. Commercial plumbing, hydro jetting, backflow prevention, and industrial plumbing services are available across the full service area.",
       },
     },
     {

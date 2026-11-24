@@ -52,12 +52,11 @@ const breadcrumbs = [
 ];
 
 const serviceAreas = [
-  "Banning, CA", "Beaumont, CA", "Calimesa, CA", "Cathedral City, CA",
-  "Cherry Valley, CA", "Corona, CA", "Eastvale, CA", "Garnet, CA",
-  "Hemet, CA", "Jurupa Valley, CA", "Lake Elsinore, CA", "Menifee, CA",
-  "Mentone, CA", "Moreno Valley, CA", "Murrieta, CA", "North Palm Springs, CA",
-  "Palm Springs, CA", "Palm Desert, CA", "Pedley, CA", "Perris, CA",
-  "Redlands, CA", "Riverside, CA", "San Jacinto, CA", "Temecula, CA", "Yucaipa, CA"
+  "Banning, CA", "Beaumont, CA", "Calimesa, CA", "Cherry Valley, CA",
+  "Corona, CA", "Eastvale, CA", "Hemet, CA", "Jurupa Valley, CA",
+  "Lake Elsinore, CA", "Menifee, CA", "Mentone, CA", "Moreno Valley, CA",
+  "Murrieta, CA", "Pedley, CA", "Perris, CA", "Redlands, CA",
+  "Riverside, CA", "San Jacinto, CA", "Temecula, CA", "Yucaipa, CA"
 ];
 
 const faqSchema = {

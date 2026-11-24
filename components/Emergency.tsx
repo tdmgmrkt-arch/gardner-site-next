@@ -57,17 +57,12 @@ const coverageGroups = [
       "Eastvale",
       "Jurupa Valley",
       "Moreno Valley",
-      "Garnet",
       "Pedley",
     ],
   },
   {
     label: "Extended Service Area",
     cities: [
-      "Palm Springs",
-      "Palm Desert",
-      "Cathedral City",
-      "North Palm Springs",
       "Banning",
       "Beaumont",
       "Cherry Valley",
@@ -602,7 +597,7 @@ export function Emergency({ reviewCount = "900+", ratingLabel = "4.9" }: Emergen
               </span>
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore. If your city is not listed below, call us directly — coverage for surrounding communities may be available.
+              Gardner Plumbing Co. serves 20 cities across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore. If your city is not listed below, call us directly — coverage for surrounding communities may be available.
             </p>
           </div>
 

@@ -147,11 +147,6 @@ const centralNorthernRiverside: City[] = [
 ];
 
 const extendedServiceArea: City[] = [
-  { name: "Palm Springs", descriptor: "Extended service area" },
-  { name: "North Palm Springs", descriptor: "Extended service area" },
-  { name: "Cathedral City", descriptor: "Extended service area" },
-  { name: "Palm Desert", descriptor: "Extended service area" },
-  { name: "Garnet", descriptor: "Extended service area" },
   { name: "Beaumont", descriptor: "Extended service area" },
   { name: "Banning", descriptor: "Extended service area" },
   { name: "Cherry Valley", descriptor: "Extended service area" },
@@ -202,19 +197,19 @@ const stats = [
 const faqs = [
   {
     q: "How far does Gardner Plumbing travel from Murrieta?",
-    a: `Gardner Plumbing Co. regularly travels up to roughly 45 miles from our Murrieta headquarters. That radius covers all ${TOTAL_CITIES} cities in our service area, from Eastvale and Corona to the north, Palm Desert to the east, and San Jacinto to the northeast. For exact coverage in your neighborhood, call (951) 246-4337 — a dispatcher confirms in under a minute.`,
+    a: `Gardner Plumbing Co. regularly travels up to roughly 45 miles from our Murrieta headquarters. That radius covers all ${TOTAL_CITIES} cities in our service area, from Eastvale and Corona to the north, Banning to the east, and San Jacinto to the northeast. For exact coverage in your neighborhood, call (951) 246-4337 — a dispatcher confirms in under a minute.`,
   },
   {
     q: "Do you serve unincorporated Riverside County?",
-    a: "Yes. Unincorporated communities within Riverside County — including Garnet, Pedley, Mentone, and Cherry Valley — fall inside our service area. If you have a Riverside County address but aren't sure whether it's incorporated, call us. Dispatchers serve on geography, not city-limit lines.",
+    a: "Yes. Unincorporated communities within Riverside County — including Pedley, Cherry Valley, and Mentone — fall inside our service area. If you have a Riverside County address but aren't sure whether it's incorporated, call us. Dispatchers serve on geography, not city-limit lines.",
   },
   {
-    q: "Do you provide emergency plumbing service to Palm Springs and surrounding cities?",
-    a: "Yes. Gardner Plumbing Co. provides 24/7 emergency dispatch to Palm Springs, North Palm Springs, Cathedral City, Palm Desert, and Garnet. Response times to these cities may run slightly longer than in our core Southwest Riverside County area, but emergency calls receive the same priority dispatch process.",
+    q: "Do you provide emergency plumbing service to Banning, Beaumont, and nearby cities?",
+    a: "Yes. Gardner Plumbing Co. provides 24/7 emergency dispatch to Banning, Beaumont, Calimesa, Cherry Valley, Yucaipa, Redlands, and Mentone. Response times to these cities may run slightly longer than in our core Southwest Riverside County area, but emergency calls receive the same priority dispatch process.",
   },
   {
     q: "Is there a trip charge for cities farther from Murrieta?",
-    a: `No. Gardner Plumbing Co. does not charge trip fees or service-call fees to any of our ${TOTAL_CITIES} service cities. The Gardner Promise includes free in-home estimates and no dispatch fee — regardless of whether the call is in Murrieta or Palm Desert.`,
+    a: `No. Gardner Plumbing Co. does not charge trip fees or service-call fees to any of our ${TOTAL_CITIES} service cities. The Gardner Promise includes free in-home estimates and no dispatch fee — regardless of whether the call is in Murrieta or Banning.`,
   },
   {
     q: "Do you serve commercial properties across the service area?",
@@ -515,7 +510,7 @@ export function ServiceAreasPage() {
               id="cities-heading"
               className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg leading-tight"
             >
-              25 Cities We Serve
+              {TOTAL_CITIES} Cities We Serve
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
               Across Riverside County and neighboring communities
@@ -573,7 +568,7 @@ export function ServiceAreasPage() {
                 daily to neighboring communities across the region.
               </p>
               <p className="text-base text-gray-400 mb-8 leading-relaxed">
-                Whether you&apos;re in Eastvale to the north, Palm Desert to the east, or San
+                Whether you&apos;re in Eastvale to the north, Banning to the east, or San
                 Jacinto to the northeast, you&apos;re within our standard service radius.
                 Emergency calls receive priority dispatch regardless of city.
               </p>
@@ -610,7 +605,7 @@ export function ServiceAreasPage() {
                     </div>
                     <div>
                       <div className="text-white font-bold text-sm">Full Coverage</div>
-                      <div className="text-gray-300 text-xs">25 Cities Served</div>
+                      <div className="text-gray-300 text-xs">{TOTAL_CITIES} Cities Served</div>
                     </div>
                   </div>
                 </div>

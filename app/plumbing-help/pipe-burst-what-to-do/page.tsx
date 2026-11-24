@@ -159,7 +159,7 @@ const faqSchema = {
       name: "How fast can Gardner Plumbing get to my house?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For most service-area addresses — including Murrieta, Temecula, Menifee, Riverside, Corona, Hemet, Moreno Valley, Palm Springs, and Palm Desert — the average on-site arrival is 60 – 90 minutes after the call is placed.",
+        text: "For most service-area addresses — including Murrieta, Temecula, Menifee, Riverside, Corona, Hemet, Moreno Valley, Perris, and Lake Elsinore — the average on-site arrival is 60 – 90 minutes after the call is placed.",
       },
     },
     {

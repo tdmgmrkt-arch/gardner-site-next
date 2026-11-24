@@ -66,7 +66,7 @@ export function Header({ ratingLabel, ratingBadge }: HeaderProps = {}) {
 
   const aboutLinks = [
     { href: "/about-us",                  label: "About Gardner Plumbing", desc: "Our story & 30+ years",         icon: Info },
-    { href: "/service-areas",              label: "Service Areas",          desc: "25 cities we serve",           icon: MapPin },
+    { href: "/service-areas",              label: "Service Areas",          desc: "20 cities we serve",           icon: MapPin },
     { href: "/guarantee",                 label: "The Gardner Promise",     desc: "4-pillar commitment",          icon: ShieldCheck },
     { href: "/clean-visit-promise",       label: "The Clean Visit Promise", desc: "Clean-home standard",          icon: Sparkles },
     { href: "/gardner-shield",            label: "The Gardner Shield",      desc: "Membership program",           icon: Shield },

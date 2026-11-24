@@ -677,7 +677,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                 {[
                   "Temecula", "Murrieta", "Menifee", "Lake Elsinore",
                   "Canyon Lake", "Wildomar", "Perris", "Corona",
-                  "Eastvale", "Chino Hills", "Riverside", "Palm Springs"
+                  "Eastvale", "Chino Hills", "Riverside", "Banning"
                 ].map((city, index) => (
                   <div key={index} className="flex items-center gap-3 p-3 glassmorphism-dark rounded-lg border border-white/10 hover:border-blue-500/30 transition-all duration-300">
                     <CheckCircle className="h-5 w-5 text-blue-400" />

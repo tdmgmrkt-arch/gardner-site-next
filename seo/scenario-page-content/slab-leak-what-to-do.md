@@ -28,7 +28,7 @@ internal_links_suggested:
 
 A slab leak is a break in a water line running beneath your home's concrete foundation. The three most common warning signs are a water bill that spiked without explanation, a warm or damp spot on your floor, and the sound of running water when every faucet and fixture in the house is off. If you notice any one of these, don't wait — call a licensed plumber for professional detection before the leak weakens your foundation or drives water into your walls.
 
-Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore. Call 24/7: [(951) 246-4337](tel:9512464337).
+Gardner Plumbing Co. serves 20 cities across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore. Call 24/7: [(951) 246-4337](tel:9512464337).
 
 ---
 

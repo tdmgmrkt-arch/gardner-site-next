@@ -132,7 +132,7 @@ const faqs = [
   },
   {
     q: "How fast can Gardner Plumbing get to my house?",
-    a: "Gardner Plumbing Co. technicians are dispatched from locations across Riverside County. For most service-area addresses — including Murrieta, Temecula, Menifee, Riverside, Corona, Hemet, Moreno Valley, Palm Springs, and Palm Desert — the average on-site arrival is 60 – 90 minutes after the call is placed. Exact timing depends on current call volume and your location. The dispatcher gives you an honest window when you call.",
+    a: "Gardner Plumbing Co. technicians are dispatched from locations across Riverside County. For most service-area addresses — including Murrieta, Temecula, Menifee, Riverside, Corona, Hemet, Moreno Valley, Perris, and Lake Elsinore — the average on-site arrival is 60 – 90 minutes after the call is placed. Exact timing depends on current call volume and your location. The dispatcher gives you an honest window when you call.",
   },
   {
     q: "What if it's after hours or a weekend?",
@@ -345,7 +345,7 @@ export function PipeBurstScenario() {
                 </span>
               </h2>
               <p className="text-gray-300 text-base leading-relaxed mb-6">
-                Gardner Plumbing Co. serves 25 cities across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore.
+                Gardner Plumbing Co. serves 20 cities across Riverside County and neighboring communities — including Murrieta, Temecula, Menifee, Riverside, Corona, Eastvale, Hemet, Moreno Valley, Perris, and Lake Elsinore.
               </p>
               <div className="space-y-4">
                 {[
@@ -399,7 +399,7 @@ export function PipeBurstScenario() {
                     The region&apos;s hard water is the second major factor. Riverside County water runs high in calcium and magnesium, depositing inside copper fittings and at soldered joints over time. A fitting that looks fine from the outside can have a nearly closed bore from scaling on the inside.
                   </p>
                   <p>
-                    Winter temperatures across the desert cities, Hemet, and the mountain passes above Banning can drop into the mid-20s on winter nights. Exposed supply lines in garages, crawlspaces, and exterior walls freeze, expand, and split — often silently overnight.
+                    Winter temperatures across Hemet, San Jacinto, and the higher ground around Banning and Beaumont can drop into the mid-20s on winter nights. Exposed supply lines in garages, crawlspaces, and exterior walls freeze, expand, and split — often silently overnight.
                   </p>
                 </div>
                 <div className="mt-8">

@@ -19,11 +19,15 @@
 - **Years in business:** 30+ years (best estimate — not yet verified by owner)
 - **Reviews:** 900+ five-star Google reviews (point-in-time figure 2026-06-29; will become dynamic later)
 
-## Service Area (confirmed 2026-06-29 — supersedes earlier list)
+## Service Area (trimmed 2026-11-24 — supersedes the 2026-06-29 list)
 
-25 specific cities across Riverside County and neighboring communities:
+20 specific cities across Riverside County and neighboring communities.
 
-Banning · Beaumont · Calimesa · Cathedral City · Cherry Valley · Corona · Eastvale · Garnet · Hemet · Jurupa Valley · Lake Elsinore · Menifee · Mentone · Moreno Valley · Murrieta · North Palm Springs · Palm Springs · Palm Desert · Pedley · Perris · Redlands · Riverside · San Jacinto · Temecula · Yucaipa
+**Cut 2026-11-24:** everything east of Banning is out of the service area —
+Palm Springs, North Palm Springs, Cathedral City, Palm Desert, and Garnet.
+Banning itself stays and is now the eastern edge of coverage.
+
+Banning · Beaumont · Calimesa · Cherry Valley · Corona · Eastvale · Hemet · Jurupa Valley · Lake Elsinore · Menifee · Mentone · Moreno Valley · Murrieta · Pedley · Perris · Redlands · Riverside · San Jacinto · Temecula · Yucaipa
 
 **IMPORTANT — regional framing rule (2026-07-20):** Do NOT market as "Coachella Valley," "San Bernardino County," or any county/region label besides Riverside County. Gardner serves specific named cities within those regions — not the regions wholesale. Always name the specific cities OR use the default phrase *"across Riverside County and neighboring communities."* Never say "eastern San Bernardino County" or "the Coachella Valley" in copy.
 
