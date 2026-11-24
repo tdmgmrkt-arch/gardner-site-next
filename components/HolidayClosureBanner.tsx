@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, X } from "lucide-react";
+import { CalendarX, Phone, X } from "lucide-react";
 
 /** localStorage key. Bump the suffix if this banner is ever reused for another holiday. */
 const DISMISS_KEY = "gpc-holiday-thanksgiving-2026";
@@ -30,6 +30,17 @@ const DISMISS_KEY = "gpc-holiday-thanksgiving-2026";
  * and its <nav> is `sticky top-0`, so a bar above both scrolls away normally
  * and the sticky nav still pins to the top. Nothing overlaps the logo, the
  * menu, or the phone number.
+ *
+ * WHY THE PHONE NUMBER IS A PLAIN TEXT NODE WITH AN ORDINARY SPACE:
+ * ServiceTitan DNI (initialised in app/layout.tsx) rewrites tracking numbers by
+ * matching the rendered text against the configured number. The first version
+ * of this bar wrote `(951)&nbsp;246-4337`, and the non-breaking space meant DNI
+ * never matched it — the header strip swapped to the tracking number while this
+ * bar kept showing the raw one, so calls from the most urgent CTA on the page
+ * went unattributed. Keep the markup byte-identical to the header's:
+ * `<a href="tel:9512464337">(951) 246-4337</a>`, ordinary U+0020 space, number
+ * as the anchor's only child. Do not reintroduce `&nbsp;` or wrap the digits in
+ * a span.
  */
 export function HolidayClosureBanner() {
   function dismiss() {
@@ -47,32 +58,54 @@ export function HolidayClosureBanner() {
       id="gpc-holiday-banner"
       /* Charcoal, not red. The header's own utility strip directly below this
          is already red, and a red bar stacked on a red bar merges into one
-         block — the notice stopped reading as a notice. Dark ground with a
-         red top rule separates it and lets the phone pill be the one red
-         thing the eye lands on. */
-      className="relative z-[60] border-t-[3px] border-[#DC2626] bg-[#15171A] shadow-md"
+         block. The weight instead comes from height, type scale, the red icon
+         badge and the red CTA — so it reads as a notice rather than as part of
+         the dark nav chrome it sits against. */
+      className="relative z-[60] border-t-4 border-[#DC2626]"
+      style={{
+        background:
+          "linear-gradient(90deg, #0E1013 0%, #1B1F25 45%, #1B1F25 55%, #0E1013 100%)",
+        boxShadow:
+          "inset 0 1px 0 rgba(255,255,255,0.08), 0 4px 12px rgba(0,0,0,0.45)",
+      }}
     >
-      <div className="mx-auto flex max-w-7xl items-center gap-2 px-3 py-2 sm:gap-3 sm:px-4 sm:py-2.5">
-        <div className="flex flex-1 flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-center">
-          <span className="text-[12.5px] font-semibold leading-snug text-white sm:text-sm">
-            Closed for Thanksgiving Nov&nbsp;26&ndash;29 &mdash; emergency
-            service available 24/7
-          </span>
+      <div className="mx-auto flex max-w-7xl items-center gap-3 px-3 py-2.5 sm:gap-4 sm:px-4 sm:py-3">
+        {/* Icon badge — same treatment the site uses for emphasis elsewhere. */}
+        <div
+          className="hidden h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-red-600 to-red-500 shadow-lg sm:flex"
+          aria-hidden="true"
+        >
+          <CalendarX className="h-[18px] w-[18px] text-white" />
+        </div>
+
+        <div className="flex flex-1 flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-center sm:justify-start sm:text-left">
+          <div className="min-w-0">
+            <p className="text-[14px] font-bold leading-tight text-white sm:text-[15px]">
+              Closed for Thanksgiving &mdash; Nov&nbsp;26&ndash;29
+            </p>
+            <p className="mt-0.5 text-[12px] leading-tight text-gray-300 sm:text-[13px]">
+              Emergency service available 24/7 &middot; Back Monday Nov&nbsp;30
+              at 8&nbsp;AM
+            </p>
+          </div>
+
           {/* The number is the point of the notice, so it gets a real tap
-              target rather than being plain text inside the sentence. */}
+              target rather than being plain text inside the sentence.
+              Markup mirrors the header strip exactly so DNI swaps it. */}
           <a
             href="tel:9512464337"
-            className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-[#DC2626] px-3.5 py-1 text-[12.5px] font-bold text-white transition-colors hover:bg-[#b91c1c] focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:text-sm"
+            className="inline-flex shrink-0 items-center gap-2 rounded-xl border border-red-400/20 bg-gradient-to-r from-red-600 to-red-500 px-4 py-2 text-[14px] font-bold text-white shadow-lg transition-all duration-300 hover:from-red-700 hover:to-red-600 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:ml-auto sm:text-[15px]"
           >
-            <Phone className="h-3.5 w-3.5" aria-hidden="true" />
-            (951)&nbsp;246-4337
+            <Phone className="h-4 w-4 shrink-0" aria-hidden="true" />
+            (951) 246-4337
           </a>
         </div>
+
         <button
           type="button"
           onClick={dismiss}
           aria-label="Dismiss holiday notice"
-          className="shrink-0 rounded-full p-1.5 text-white/70 transition-colors hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          className="shrink-0 self-start rounded-full p-1.5 text-white/60 transition-colors hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white sm:self-center"
         >
           <X className="h-4 w-4" aria-hidden="true" />
         </button>
